@@ -1,0 +1,13 @@
+[package]
+name = "aletheia-egraph"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+aletheia-algebra = { path = "../aletheia-algebra" }
+aletheia-lattice = { path = "../aletheia-lattice" }
+num-traits.workspace = true
+smallvec.workspace = true
+thiserror.workspace = true

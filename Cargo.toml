@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/aletheia-algebra",
+    "crates/aletheia-lattice",
+    "crates/aletheia-egraph",
+    "crates/aletheia-rewriting",
+    "crates/aletheia-yoneda",
+    "crates/aletheia-epistemic",
+    "crates/aletheia-dna",
+    "crates/aletheia-core",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Aletheia Core Team"]
+license = "MIT OR Apache-2.0"
+rust-version = "1.75"
+
+[workspace.dependencies]
+num-rational = { version = "0.4", default-features = false, features = ["num-bigint"] }
+num-bigint = { version = "0.4", default-features = false }
+num-traits = { version = "0.2", default-features = false }
+smallvec = { version = "1.13", features = ["const_generics"] }
+thiserror = "2.0"

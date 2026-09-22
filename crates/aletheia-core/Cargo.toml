@@ -1,0 +1,22 @@
+[package]
+name = "aletheia-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+aletheia-algebra = { path = "../aletheia-algebra" }
+aletheia-lattice = { path = "../aletheia-lattice" }
+aletheia-egraph = { path = "../aletheia-egraph" }
+aletheia-rewriting = { path = "../aletheia-rewriting" }
+aletheia-yoneda = { path = "../aletheia-yoneda" }
+aletheia-epistemic = { path = "../aletheia-epistemic" }
+aletheia-dna = { path = "../aletheia-dna" }
+blake3 = "1.5"
+
+num-rational.workspace = true
+num-bigint.workspace = true
+num-traits.workspace = true
+thiserror.workspace = true
