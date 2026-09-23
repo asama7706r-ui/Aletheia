@@ -8,20 +8,24 @@
 //! - دفتر الأستاذ الرمزي وسقف ماكولاي البرهاني والتناقض الكمي والتراجع الذري
 //! - مستخلص نصل أوكام في حقل Q عبر استرخاء ديكسترا على الرسوم الفائقة (Hypergraph Dijkstra)
 
+pub mod bidirectional;
 pub mod error;
 pub mod extractor;
 pub mod pattern;
+pub mod planner;
 pub mod reachability;
 pub mod rule;
 pub mod ruleset;
 pub mod saturation;
 pub mod triejoin;
 
+pub use bidirectional::BidirectionalMeetInMiddle;
 pub use error::RewritingError;
 pub use extractor::{AstExtractor, Cost, ExtractedLawAST};
 pub use pattern::{Pattern, Subst};
-pub use reachability::{APrioriReachabilityFilter, SpectralVector};
-pub use rule::{KoszulParityGuard, RewriteRule, RuleGuard, RuleKind};
+pub use planner::{LyapunovAStarPlanner, ProofPlanResult};
+pub use reachability::{APrioriReachabilityFilter, RoadmapPlan, SpectralVector};
+pub use rule::{KoszulParityGuard, MacroRule, RewriteRule, RuleGuard, RuleKind};
 pub use ruleset::standard_algebraic_ruleset;
 pub use saturation::{
     DeficitContext, EmptyDeficitContext, SaturationConfig, SaturationEngine, SaturationReport,

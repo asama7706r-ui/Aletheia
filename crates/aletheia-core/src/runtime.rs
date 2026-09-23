@@ -6,7 +6,7 @@ use aletheia_dna::{
     OccamProofDag, ParetoLawCandidate, UniversalRecordPrefix, RECORD_PREFIX_SIZE,
     RECORD_STATUS_ACTIVE, RECORD_TYPE_SOVEREIGN_AXIOM,
 };
-use aletheia_egraph::TransactionalEGraph;
+use aletheia_egraph::{EClassId, TransactionalEGraph};
 use aletheia_epistemic::{
     AnchoringSieve, DomainBridge, DomainTag, EGraphPurgeEngine, EpistemicSovereigntyEngine,
     GedankenexperimentResult, LockReceipt, LockType, SovereignDnaPayload, SovereigntyOutcome,
@@ -296,11 +296,15 @@ impl AletheiaRuntime {
         };
 
         // 3. تشغيل دورة التشبع المتناوبة ومحرك المطابقة العلائقية (Axis 5)
-        let sat_config = SaturationConfig {
-            max_iterations: 10,
-            node_limit: 5_000,
-            early_exit_target: None,
-        };
+        // اشتقاق الحدود ديناميكياً وبرهانياً من محرك التشبع نفسه دون أي أرقام سحرية
+        let sat_config = SaturationConfig::derive(
+            self.egraph.node_count(),
+            &self.ruleset,
+            1, // في الاختزال الكنسي الخالص بدون عجز، سقف ماكولاي القياسي هو 1
+            0, // درجات حرية العجز = 0
+            None,
+            None,
+        );
         let sat_engine = SaturationEngine::new(sat_config);
         let sat_report = match sat_engine.run(
             &mut self.egraph,
@@ -371,17 +375,21 @@ impl AletheiaRuntime {
                     } else {
                         shadow.target_classes.clone()
                     };
+                    let deficit_bound = shadow.macaulay_ceiling.max(1);
                     let deficit_ctx = SimpleDeficitContext::new(
                         dof_int,
                         targets,
-                        shadow.macaulay_ceiling.max(10),
+                        deficit_bound,
                     );
 
-                    let deficit_sat_config = SaturationConfig {
-                        max_iterations: 10,
-                        node_limit: 10_000,
-                        early_exit_target: None,
-                    };
+                    let deficit_sat_config = SaturationConfig::derive(
+                        self.egraph.node_count(),
+                        &self.ruleset,
+                        deficit_bound,
+                        dof_int,
+                        None,
+                        Some((&hypothesis.expr, &extracted.ast)),
+                    );
                     let deficit_engine = SaturationEngine::new(deficit_sat_config);
                     let sat_res = deficit_engine.run(
                         &mut self.egraph,
@@ -798,7 +806,7 @@ impl AletheiaRuntime {
             ast.clone(),
             domain,
             dim.clone(),
-            Cost::default(),
+            Cost::from_expr(&ast),
             vec![],
             vec![],
             None,
@@ -981,16 +989,20 @@ impl AletheiaRuntime {
                     shadow.target_classes.clone()
                 };
 
+                let deficit_bound = shadow.macaulay_ceiling.max(1);
                 let deficit_ctx = SimpleDeficitContext::new(
                     dof_int,
                     targets,
-                    shadow.macaulay_ceiling.max(10),
+                    deficit_bound,
                 );
-                let deficit_sat_config = SaturationConfig {
-                    max_iterations: 10,
-                    node_limit: 10_000,
-                    early_exit_target: Some((lhs_class, rhs_class)),
-                };
+                let deficit_sat_config = SaturationConfig::derive(
+                    self.egraph.node_count(),
+                    &self.ruleset,
+                    deficit_bound,
+                    dof_int,
+                    Some((lhs_class, rhs_class)),
+                    Some((lhs_expr, rhs_expr)),
+                );
                 let deficit_engine = SaturationEngine::new(deficit_sat_config);
                 let _ = deficit_engine.run(
                     &mut self.egraph,
@@ -1341,18 +1353,14 @@ impl AletheiaRuntime {
                     LockReceipt::new(LockType::OntologicalAnchor, "Seal 4: Boundary & Gedankenexperiment", true, "Newton polygon and boundary checks passed", None),
                 ];
 
+                let cost = Cost::from_expr(&lhs);
                 let receipt = SovereignReceipt::issue_active(
                     law.law_name.clone(),
                     blake3::hash(law.law_name.as_bytes()).into(),
                     lhs,
                     DomainTag::UniversalAbstract,
                     lhs_dim,
-                    Cost {
-                        size: 1,
-                        degree: 1,
-                        bit_complexity: 1,
-                        transcendental: 0,
-                    },
+                    cost,
                     vec![law.record_id],
                     lock_receipts,
                     None,

@@ -36,6 +36,70 @@ impl Cost {
     pub fn is_infinity(&self) -> bool {
         self.size >= u64::MAX / 2
     }
+
+    /// حساب التكلفة الرياضية الدقيقة الصرفة لشجرة التعبيرات وفق نصل أوكام (MDL)
+    pub fn from_expr(expr: &CanonicalExpr) -> Self {
+        match expr {
+            CanonicalExpr::Const(c) => Self {
+                size: 1,
+                degree: 0,
+                bit_complexity: c.bitsize(),
+                transcendental: 0,
+            },
+            CanonicalExpr::Var(_) => Self {
+                size: 1,
+                degree: 1,
+                bit_complexity: 1,
+                transcendental: 0,
+            },
+            CanonicalExpr::Neg(inner) => {
+                let mut c = Self::from_expr(inner);
+                c.size = c.size.saturating_add(1);
+                c
+            }
+            CanonicalExpr::Add(args) => {
+                let mut total = Self { size: 1, ..Default::default() };
+                for a in args {
+                    let ac = Self::from_expr(a);
+                    total.size = total.size.saturating_add(ac.size);
+                    total.degree = total.degree.max(ac.degree);
+                    total.bit_complexity = total.bit_complexity.saturating_add(ac.bit_complexity);
+                    total.transcendental = total.transcendental.saturating_add(ac.transcendental);
+                }
+                total
+            }
+            CanonicalExpr::Mul(args) => {
+                let mut total = Self { size: 1, ..Default::default() };
+                for a in args {
+                    let ac = Self::from_expr(a);
+                    total.size = total.size.saturating_add(ac.size);
+                    total.degree = total.degree.saturating_add(ac.degree);
+                    total.bit_complexity = total.bit_complexity.saturating_add(ac.bit_complexity);
+                    total.transcendental = total.transcendental.saturating_add(ac.transcendental);
+                }
+                total
+            }
+            CanonicalExpr::Div(num, den) => {
+                let nc = Self::from_expr(num);
+                let dc = Self::from_expr(den);
+                Self {
+                    size: nc.size.saturating_add(dc.size).saturating_add(1),
+                    degree: nc.degree.max(dc.degree),
+                    bit_complexity: nc.bit_complexity.saturating_add(dc.bit_complexity),
+                    transcendental: nc.transcendental.saturating_add(dc.transcendental),
+                }
+            }
+            CanonicalExpr::Pow(base, exp) => {
+                let bc = Self::from_expr(base);
+                Self {
+                    size: bc.size.saturating_add(1),
+                    degree: bc.degree.saturating_mul(exp.unsigned_abs() as u64),
+                    bit_complexity: bc.bit_complexity.saturating_add(1),
+                    transcendental: bc.transcendental,
+                }
+            }
+        }
+    }
 }
 
 impl std::ops::Add for Cost {

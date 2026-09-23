@@ -105,6 +105,7 @@ fn test_canonical_reduction_and_early_exit() {
         max_iterations: 10,
         node_limit: 1000,
         early_exit_target: Some((id_lhs, id_rhs)),
+        roadmap_plan: None,
     };
 
     let engine = SaturationEngine::new(config);
@@ -143,6 +144,7 @@ fn test_speculative_ledger_macaulay_rollback() {
         max_iterations: 5,
         node_limit: 50,
         early_exit_target: None,
+        roadmap_plan: None,
     };
 
     let engine = SaturationEngine::new(config);
@@ -221,6 +223,7 @@ fn test_two_phase_distributivity_saturation() {
         max_iterations: 10,
         node_limit: 1000,
         early_exit_target: Some((id1, id2)),
+        roadmap_plan: None,
     };
 
     let engine = SaturationEngine::new(config);
@@ -283,6 +286,7 @@ fn test_commutative_zero_matching_with_inverted_ids() {
         max_iterations: 5,
         node_limit: 100,
         early_exit_target: Some((id_add, id_x)),
+        roadmap_plan: None,
     };
 
     let engine = SaturationEngine::new(config);
@@ -326,6 +330,7 @@ fn test_n_ary_slice_reduction() {
         max_iterations: 5,
         node_limit: 200,
         early_exit_target: Some((id_nary, id_ab)),
+        roadmap_plan: None,
     };
 
     let engine = SaturationEngine::new(config);
@@ -370,6 +375,7 @@ fn test_speculative_ledger_net_growth_with_preexisting_nodes() {
         max_iterations: 3,
         node_limit: 200,
         early_exit_target: None,
+        roadmap_plan: None,
     };
 
     let engine = SaturationEngine::new(config);
@@ -409,6 +415,7 @@ fn test_macro_rule_synthesis() {
         max_iterations: 10,
         node_limit: 1000,
         early_exit_target: Some((id1, id2)),
+        roadmap_plan: None,
     };
 
     let engine = SaturationEngine::new(config);
@@ -464,5 +471,63 @@ fn test_koszul_parity_guard_in_rewriting() {
         assert!(valid_fermionic_rule.check_guards(&egraph, &m.subst));
     }
 }
+
+#[test]
+fn test_roadmap_plan_guided_saturation() {
+    use aletheia_rewriting::LyapunovAStarPlanner;
+
+    let mut egraph = TransactionalEGraph::new();
+    let ctx = DimensionalContext::mathematical();
+
+    let x = VariableId(10);
+    // start: x + 0
+    let start_expr = CanonicalExpr::Add(vec![
+        CanonicalExpr::Var(x),
+        CanonicalExpr::Const(Rational::zero()),
+    ]);
+    // target: x
+    let target_expr = CanonicalExpr::Var(x);
+
+    let rules = standard_algebraic_ruleset();
+    let deficit = EmptyDeficitContext;
+
+    let planner = LyapunovAStarPlanner::new(10, 1000);
+    let plan_res = planner
+        .plan_equivalence(&mut egraph, &ctx, &start_expr, &target_expr, &rules, &deficit)
+        .unwrap();
+
+    assert!(plan_res.success);
+    assert_eq!(plan_res.final_energy, Rational::zero());
+}
+
+#[test]
+fn test_lyapunov_astar_and_bidirectional() {
+    use aletheia_rewriting::BidirectionalMeetInMiddle;
+
+    let mut egraph = TransactionalEGraph::new();
+    let ctx = DimensionalContext::mathematical();
+
+    let a = VariableId(1);
+    let b = VariableId(2);
+
+    // LHS: (a + b) + 0
+    let lhs = CanonicalExpr::Add(vec![
+        CanonicalExpr::Add(vec![CanonicalExpr::Var(a), CanonicalExpr::Var(b)]),
+        CanonicalExpr::Const(Rational::zero()),
+    ]);
+    // RHS: a + b
+    let rhs = CanonicalExpr::Add(vec![CanonicalExpr::Var(a), CanonicalExpr::Var(b)]);
+
+    let rules = standard_algebraic_ruleset();
+    let deficit = EmptyDeficitContext;
+
+    let bidi = BidirectionalMeetInMiddle::new(10, 1000);
+    let res = bidi
+        .search_intersection(&mut egraph, &ctx, &lhs, &rhs, &rules, None, &deficit)
+        .unwrap();
+
+    assert!(res.success);
+}
+
 
 

@@ -12,6 +12,7 @@
 pub mod eclass;
 pub mod egraph;
 pub mod error;
+pub mod ghost;
 pub mod id;
 pub mod node;
 pub mod transaction;
@@ -22,6 +23,7 @@ pub mod union_find;
 pub use eclass::EClass;
 pub use egraph::TransactionalEGraph;
 pub use error::EGraphError;
+pub use ghost::{GhostNode, GhostNodeManager};
 pub use id::EClassId;
 pub use node::ENode;
 pub use transaction::Transaction;

@@ -16,6 +16,7 @@ pub mod engine;
 pub mod error;
 pub mod header;
 pub mod hydration;
+pub mod macro_sealer;
 pub mod mmap_engine;
 pub mod occam_extractor;
 pub mod packed_enode;
@@ -28,6 +29,7 @@ pub use compactor::{safe_atomic_replace, CompactionReport, PhysicalCompactor};
 pub use embedded_seed::{generate_canonical_seed, get_embedded_seed};
 pub use engine::AletheiaDnaEngine;
 pub use error::DnaError;
+pub use macro_sealer::MacroRuleSealer;
 pub use header::{
     PackedDNAHeader, DIMENSION_RANK_MASK, FLAG_COMPACTED, FLAG_LITTLE_ENDIAN, FLAG_SEED_MODE,
     HEADER_SIZE, MAGIC_KDNA,

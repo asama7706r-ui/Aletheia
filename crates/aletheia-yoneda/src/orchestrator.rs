@@ -185,6 +185,84 @@ impl DeficitOrchestrator {
             Ok(ResolutionOutcome::Quarantined(latent_shadow))
         }
     }
+
+    /// استكشاف العجز الهيكلي عبر المعاملات التخمينية والعقد الشبحية والتخطيط متعدد الخطوات
+    pub fn resolve_speculative_with_ghost(
+        egraph: &mut TransactionalEGraph,
+        ctx: &DimensionalContext,
+        target: DeficitTarget,
+        candidate_bases: &[DimensionVector],
+        origin_law_id: &str,
+        rules: &[aletheia_rewriting::RewriteRule],
+    ) -> Result<ResolutionOutcome, YonedaError> {
+        let checkpoint = egraph.checkpoint();
+
+        // 1. الفحص المبدئي للعجز
+        let initial_outcome = Self::resolve_deficit(
+            egraph,
+            ctx,
+            DeficitTarget::new(target.lhs, target.rhs, target.lhs_sig, target.rhs_sig),
+            candidate_bases,
+            Vec::new(),
+            origin_law_id,
+        )?;
+
+        match initial_outcome {
+            ResolutionOutcome::ExactEntityResolved { .. } | ResolutionOutcome::Killed(_) => {
+                egraph.commit(checkpoint);
+                Ok(initial_outcome)
+            }
+            ResolutionOutcome::Quarantined(shadow) => {
+                // 2. محاولة سد فجوة العجز dof > 0 عبر عقدة شبحية ومعاملة تخمينية
+                let mut ghost_mgr = aletheia_egraph::GhostNodeManager::new();
+                let ghost = ghost_mgr.spawn_ghost(
+                    egraph,
+                    Some(aletheia_lattice::LatticeData::new(
+                        shadow.dim_deficit.clone(),
+                        aletheia_lattice::SemanticDomain::PhysicalCore,
+                    )),
+                );
+
+                let id_lhs = egraph.add_expr(target.lhs, ctx)?;
+                let id_rhs = egraph.add_expr(target.rhs, ctx)?;
+
+                // 3. تشغيل البحث ثنائي الاتجاه والتخطيط الاستدلالي
+                let bidi = aletheia_rewriting::BidirectionalMeetInMiddle::new(15, 2000);
+                let deficit_ctx = aletheia_rewriting::SimpleDeficitContext::new(
+                    1,
+                    vec![id_lhs, id_rhs, ghost.class_id],
+                    10,
+                );
+
+                let bidi_res = bidi.search_intersection(
+                    egraph,
+                    ctx,
+                    target.lhs,
+                    target.rhs,
+                    rules,
+                    None,
+                    &deficit_ctx,
+                );
+
+                let solved = if let Ok(ref res) = bidi_res {
+                    res.success || egraph.find(id_lhs) == egraph.find(id_rhs)
+                } else {
+                    egraph.find(id_lhs) == egraph.find(id_rhs)
+                };
+
+                if solved {
+                    ghost_mgr.materialize_ghost(ghost.ghost_id);
+                    egraph.commit(checkpoint);
+                    let symbol = format!("Speculative_GhostResolved_{}", hex_prefix(&shadow.shadow_id));
+                    Ok(ResolutionOutcome::ExactEntityResolved { symbol, shadow })
+                } else {
+                    // التراجع التام عند الفشل لإبقاء الـ E-Graph طاهراً 100%
+                    egraph.rollback(checkpoint);
+                    Ok(ResolutionOutcome::Quarantined(shadow))
+                }
+            }
+        }
+    }
 }
 
 fn hex_prefix(bytes: &[u8; 32]) -> String {

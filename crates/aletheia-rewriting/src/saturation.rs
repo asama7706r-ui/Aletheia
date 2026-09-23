@@ -73,6 +73,57 @@ pub struct SaturationConfig {
     pub max_iterations: usize,
     pub node_limit: usize,
     pub early_exit_target: Option<(EClassId, EClassId)>,
+    pub roadmap_plan: Option<crate::reachability::RoadmapPlan>,
+}
+
+impl SaturationConfig {
+    /// اشتقاق إعدادات التشبع ديناميكياً وبرهانياً وفق نظرية ماكولاي ومصفوفة الوقوع
+    /// يزيل تماماً أي حدود ثابتة أو أرقام سحرية
+    pub fn derive(
+        current_nodes: usize,
+        rules: &[RewriteRule],
+        macaulay_ceiling: usize,
+        remaining_dof: usize,
+        early_exit: Option<(EClassId, EClassId)>,
+        target_exprs: Option<(&aletheia_algebra::CanonicalExpr, &aletheia_algebra::CanonicalExpr)>,
+    ) -> Self {
+        let nodes = current_nodes.max(1);
+        let macaulay_bound = macaulay_ceiling.max(1);
+        let rules_count = rules.len().max(1);
+
+        // سقف ماكولاي للنمو البرهاني:
+        let allowed_growth = nodes.max(16).saturating_mul(macaulay_bound).saturating_mul(rules_count);
+        let node_limit = nodes.saturating_add(allowed_growth);
+
+        // استخراج خارطة الطريق الاستباقية من مصفوفة الوقوع إذا توفر الهدف والمقدمة
+        let (roadmap_plan, roadmap_steps) = if let Some((start, target)) = target_exprs {
+            let filter = crate::reachability::APrioriReachabilityFilter::from_rules(rules);
+            if let Some(plan) = filter.extract_roadmap_plan(start, target) {
+                let steps = plan.estimated_steps;
+                (Some(plan), Some(steps))
+            } else {
+                (None, None)
+            }
+        } else {
+            (None, None)
+        };
+
+        // الحد الأقصى للتكرارات:
+        let max_iterations = match roadmap_steps {
+            Some(steps) => steps.saturating_add(rules_count),
+            None => {
+                let dof_factor = remaining_dof.max(1);
+                dof_factor.saturating_mul(macaulay_bound).max(rules_count)
+            }
+        };
+
+        Self {
+            max_iterations,
+            node_limit,
+            early_exit_target: early_exit,
+            roadmap_plan,
+        }
+    }
 }
 
 impl Default for SaturationConfig {
@@ -81,6 +132,7 @@ impl Default for SaturationConfig {
             max_iterations: 30,
             node_limit: 10_000,
             early_exit_target: None,
+            roadmap_plan: None,
         }
     }
 }
@@ -98,6 +150,7 @@ pub struct SaturationReport {
 }
 
 /// دفتر الأستاذ الرمزي وسقف ماكولاي البرهاني (The Speculative Ledger)
+#[derive(Clone, Debug)]
 pub struct SpeculativeLedger {
     pub initial_local_cost: Cost,
     pub initial_total_nodes: usize,
@@ -135,7 +188,7 @@ impl SpeculativeLedger {
     }
 }
 
-/// محرك التشبع المتناوب ثنائي الطور (Two-Phase Equivalence Saturation Engine)
+/// محرك التشبع والمطابقة وإعادة الكتابة (Saturation Engine)
 pub struct SaturationEngine {
     config: SaturationConfig,
 }
@@ -145,7 +198,7 @@ impl SaturationEngine {
         Self { config }
     }
 
-    /// تشغيل دورة التشبع المتناوبة
+    /// تنفيذ دورة التشبع المتناوبة ثنائية الطور
     pub fn run(
         &self,
         egraph: &mut TransactionalEGraph,
@@ -182,14 +235,34 @@ impl SaturationEngine {
         let mut proved = false;
         let mut iter = 0;
 
-        // فصل القواعد إلى اختزالية كنسية وتوسعية موجهة
+        // فصل القواعد إلى اختزالية كنسية وتوسعية موجهة، مع تطبيق مرشح خارطة الطريق الاستباقية إن وُجد
         let canonical_rules: Vec<&RewriteRule> = rules
             .iter()
-            .filter(|r| r.kind == RuleKind::CanonicalReduction)
+            .enumerate()
+            .filter(|(idx, r)| {
+                r.kind == RuleKind::CanonicalReduction
+                    && self
+                        .config
+                        .roadmap_plan
+                        .as_ref()
+                        .map(|p| p.is_rule_active(*idx))
+                        .unwrap_or(true)
+            })
+            .map(|(_, r)| r)
             .collect();
         let expansion_rules: Vec<&RewriteRule> = rules
             .iter()
-            .filter(|r| r.kind == RuleKind::DemandExpansion)
+            .enumerate()
+            .filter(|(idx, r)| {
+                r.kind == RuleKind::DemandExpansion
+                    && self
+                        .config
+                        .roadmap_plan
+                        .as_ref()
+                        .map(|p| p.is_rule_active(*idx))
+                        .unwrap_or(true)
+            })
+            .map(|(_, r)| r)
             .collect();
 
         while iter < self.config.max_iterations {

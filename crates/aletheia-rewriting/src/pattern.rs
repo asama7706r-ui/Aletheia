@@ -126,6 +126,23 @@ impl Pattern {
         }
     }
 
+    /// تحويل النمط الرمزي إلى شجرة تعبير كنسية تقديرية لاستخراج المتجه الطيفي
+    pub fn to_canonical_dummy(&self) -> CanonicalExpr {
+        match self {
+            Pattern::Wildcard(v) => CanonicalExpr::Var(VariableId(*v)),
+            Pattern::LiteralVar(v) => CanonicalExpr::Var(*v),
+            Pattern::Const(c) => CanonicalExpr::Const(c.clone()),
+            Pattern::Neg(inner) => CanonicalExpr::Neg(Box::new(inner.to_canonical_dummy())),
+            Pattern::Add(ops) => CanonicalExpr::Add(ops.iter().map(|p| p.to_canonical_dummy()).collect()),
+            Pattern::Mul(ops) => CanonicalExpr::Mul(ops.iter().map(|p| p.to_canonical_dummy()).collect()),
+            Pattern::Div(num, den) => CanonicalExpr::Div(
+                Box::new(num.to_canonical_dummy()),
+                Box::new(den.to_canonical_dummy()),
+            ),
+            Pattern::Pow(base, exp) => CanonicalExpr::Pow(Box::new(base.to_canonical_dummy()), *exp),
+        }
+    }
+
     /// تجسيد النمط (RHS Instantiation) داخل الـ E-Graph استناداً إلى جدول التعويضات Subst
     /// وتمرير LatticeData الصحيحة لكل فئة مضافة
     pub fn instantiate(

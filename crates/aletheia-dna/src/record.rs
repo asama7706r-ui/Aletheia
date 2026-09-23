@@ -95,6 +95,22 @@ impl UniversalRecordPrefix {
         }
     }
 
+    /// إنشاء بادئة سجل حافة تكافؤ سيادية أو قاعدة كبرى مخلدة (Macro-Rule)
+    pub fn new_congruence_edge(domain_id: u16, payload_len: u32, payload_crc: u32) -> Self {
+        Self {
+            magic: *MAGIC_RECD,
+            record_type: RECORD_TYPE_CONGRUENCE_EDGE,
+            status: RECORD_STATUS_ACTIVE,
+            pad: 0,
+            payload_len,
+            domain_id,
+            group_id: 0,
+            basis_id: 0,
+            payload_crc,
+            extra_meta: 0,
+        }
+    }
+
     /// إنشاء بادئة سجل جسر بين مجالين
     pub fn new_bridge(
         source_domain: u16,
