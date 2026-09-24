@@ -138,6 +138,38 @@ pub type DimensionNamingCallback = Box<dyn FnMut(&NewDimensionDiscoveryReport) -
 /// نمط دالة رد النداء لتسمية المجال الجديد من قبل المستخدم: تعيد اسم المجال
 pub type DomainNamingCallback = Box<dyn FnMut(&DomainSpawningReport) -> String + Send + Sync>;
 
+/// تقرير المسار المعرفي لاكتشاف وتوليد ثابت اقتران فيزيائي جديد (Coupling Constant)
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct CouplingConstantDiscoveryReport {
+    /// المعرف العددي للثابت أو رتبته
+    pub constant_id: usize,
+    /// اسم القانون الذي انبثق منه الثابت
+    pub source_law_name: String,
+    /// التعبير الرياضي أو المعادلة التي تطلبت الثابت لسد الفجوة البعدية
+    pub source_equation: String,
+    /// متجه أبعاد ثابت الاقتران في Q^N
+    pub coupling_dimension: DimensionVector,
+    /// التمثيل الرمزي المنسق للأبعاد (مثل L^3 * M^-1 * T^-2)
+    pub formatted_dimension: String,
+    /// المجال المصدري الذي يربطه الثابت (إن وجد)
+    pub source_domain: Option<String>,
+    /// المجال الهدف الذي يربطه الثابت (إن وجد)
+    pub target_domain: Option<String>,
+    /// المسار المعرفي وسبب انبثاق الثابت لسد فجوة الأبعاد
+    pub derivation_trail: String,
+    /// الرمز المقترح افتراضياً (مثل G, ħ, k_B, إلخ)
+    pub suggested_symbol: String,
+    /// الاسم المقترح افتراضياً (مثل "NewtonianGravitationalCoupling")
+    pub suggested_name: String,
+    /// الرمز المعتمد نهائياً بعد تدخل المستخدم
+    pub chosen_symbol: String,
+    /// الاسم المعتمد نهائياً بعد تدخل المستخدم
+    pub chosen_name: String,
+}
+
+/// نمط دالة رد النداء لتسمية الثابت الجديد من قبل المستخدم: تعيد (الاسم، الرمز)
+pub type ConstantNamingCallback = Box<dyn FnMut(&CouplingConstantDiscoveryReport) -> (String, String) + Send + Sync>;
+
 /// تقرير شامل لإجهاد الثابت المكتشف وقوانينه المقترنة
 #[derive(Clone, Debug)]
 pub struct ConstantStressTestSummary {
@@ -149,6 +181,7 @@ pub struct ConstantStressTestSummary {
     pub spawned_dimensions: Vec<String>,
     pub spawned_dimension_reports: Vec<NewDimensionDiscoveryReport>,
     pub spawned_domain_reports: Vec<DomainSpawningReport>,
+    pub spawned_constant_reports: Vec<CouplingConstantDiscoveryReport>,
     pub ingested_axioms_count: usize,
 }
 
@@ -222,6 +255,7 @@ pub struct AletheiaRuntime {
     pub boot_latency_micros: u128,
     pub dimension_naming_hook: Option<DimensionNamingCallback>,
     pub domain_naming_hook: Option<DomainNamingCallback>,
+    pub constant_naming_hook: Option<ConstantNamingCallback>,
 }
 
 impl AletheiaRuntime {
@@ -319,6 +353,7 @@ impl AletheiaRuntime {
             boot_latency_micros,
             dimension_naming_hook: None,
             domain_naming_hook: None,
+            constant_naming_hook: None,
         })
     }
 
@@ -336,6 +371,71 @@ impl AletheiaRuntime {
         F: FnMut(&DomainSpawningReport) -> String + Send + Sync + 'static,
     {
         self.domain_naming_hook = Some(Box::new(hook));
+    }
+
+    /// تعيين دالة رد نداء لتسمية ثوابت الاقتران الجديدة ذاتياً عند اكتشافها
+    pub fn set_constant_naming_hook<F>(&mut self, hook: F)
+    where
+        F: FnMut(&CouplingConstantDiscoveryReport) -> (String, String) + Send + Sync + 'static,
+    {
+        self.constant_naming_hook = Some(Box::new(hook));
+    }
+
+    /// الإعلان عن اكتشاف ثابت اقتران فيزيائي جديد ومنح الإنسان السيادة لتسميته ووضع رمزه
+    pub fn discover_coupling_constant(
+        &mut self,
+        source_law_name: &str,
+        source_equation: &str,
+        coupling_dim: DimensionVector,
+        source_domain: Option<&str>,
+        target_domain: Option<&str>,
+        suggested_symbol: &str,
+        suggested_name: &str,
+    ) -> Result<CouplingConstantDiscoveryReport, CoreError> {
+        let formatted_dim = self.dim_registry.format_vector(&coupling_dim);
+        let derivation_trail = format!(
+            "Coupling constant discovered for law '{}' ({}). Reconciles dimensional gap: {}",
+            source_law_name, source_equation, formatted_dim
+        );
+
+        let mut const_rep = CouplingConstantDiscoveryReport {
+            constant_id: self.sovereignty_engine.bridge_registry.bridges().len() + 1,
+            source_law_name: source_law_name.to_string(),
+            source_equation: source_equation.to_string(),
+            coupling_dimension: coupling_dim.clone(),
+            formatted_dimension: formatted_dim,
+            source_domain: source_domain.map(|s| s.to_string()),
+            target_domain: target_domain.map(|s| s.to_string()),
+            derivation_trail,
+            suggested_symbol: suggested_symbol.to_string(),
+            suggested_name: suggested_name.to_string(),
+            chosen_symbol: suggested_symbol.to_string(),
+            chosen_name: suggested_name.to_string(),
+        };
+
+        if let Some(ref mut hook) = self.constant_naming_hook {
+            let (user_name, user_sym) = hook(&const_rep);
+            if !user_name.trim().is_empty() {
+                const_rep.chosen_name = user_name.trim().to_string();
+            }
+            if !user_sym.trim().is_empty() {
+                const_rep.chosen_symbol = user_sym.trim().to_string();
+            }
+        }
+
+        let src_id = source_domain.and_then(|s| s.parse::<u16>().ok()).unwrap_or(0);
+        let tgt_id = target_domain.and_then(|s| s.parse::<u16>().ok()).unwrap_or(1);
+        let bridge = DomainBridge::new(
+            const_rep.chosen_name.clone(),
+            DomainTag::from_id(src_id),
+            DomainTag::from_id(tgt_id),
+            const_rep.coupling_dimension.clone(),
+            Rational::one(),
+        );
+        self.sovereignty_engine.bridge_registry.register_bridge(bridge.clone());
+        self.sovereignty_engine.gatekeeper.bridge_registry.register_bridge(bridge);
+
+        Ok(const_rep)
     }
 
     /// مزامنة سجلات الحجر الصحي LatentBuffer إلى ملف quarantine.bin
@@ -964,6 +1064,7 @@ impl AletheiaRuntime {
             boot_latency_micros: self.boot_latency_micros,
             dimension_naming_hook: self.dimension_naming_hook,
             domain_naming_hook: self.domain_naming_hook,
+            constant_naming_hook: self.constant_naming_hook,
         })
     }
 
@@ -1481,6 +1582,7 @@ impl AletheiaRuntime {
         let mut spawned_dimensions = Vec::new();
         let mut spawned_dimension_reports = Vec::new();
         let mut spawned_domain_reports = Vec::new();
+        let mut spawned_constant_reports = Vec::new();
         let mut ingested_axioms_count = 0;
 
         let final_action = if all_passed {
@@ -1686,6 +1788,44 @@ impl AletheiaRuntime {
             let target_domain = if current_rank > 1 { current_rank - 1 } else { 1 };
             let _ = self.dna_engine.materialize_bridge(0, target_domain, Rational::one(), Rational::one());
 
+            if !report.carrier_dimension.is_dimensionless() {
+                let formatted_dim = self.dim_registry.format_vector(&report.carrier_dimension);
+                let first_law = report.freed_laws.first().map(|l| l.law_name.clone()).unwrap_or_else(|| "CoupledLaw".to_string());
+                let derivation_trail = format!(
+                    "Coupling constant discovered to reconcile {} coupled laws across domains. Resolved dimensional deficit: {}",
+                    report.freed_laws.len(),
+                    formatted_dim
+                );
+                let suggested_name = format!("CouplingConstant_{}", report.carrier_symbol);
+
+                let mut const_rep = CouplingConstantDiscoveryReport {
+                    constant_id: self.sovereignty_engine.bridge_registry.bridges().len() + 1,
+                    source_law_name: first_law,
+                    source_equation: "".to_string(),
+                    coupling_dimension: report.carrier_dimension.clone(),
+                    formatted_dimension: formatted_dim,
+                    source_domain: Some("UniversalAbstract".to_string()),
+                    target_domain: Some(format!("Domain_{}", target_domain)),
+                    derivation_trail,
+                    suggested_symbol: report.carrier_symbol.clone(),
+                    suggested_name: suggested_name.clone(),
+                    chosen_symbol: report.carrier_symbol.clone(),
+                    chosen_name: suggested_name.clone(),
+                };
+
+                if let Some(ref mut hook) = self.constant_naming_hook {
+                    let (user_name, user_sym) = hook(&const_rep);
+                    if !user_name.trim().is_empty() {
+                        const_rep.chosen_name = user_name.trim().to_string();
+                    }
+                    if !user_sym.trim().is_empty() {
+                        const_rep.chosen_symbol = user_sym.trim().to_string();
+                    }
+                }
+
+                spawned_constant_reports.push(const_rep);
+            }
+
             if !spawned_dimensions.is_empty() {
                 format!(
                     "Full sovereign validation: All coupled laws passed. Autonomous dimension expansion triggered (Q^{} -> Q^{})! Ingested {} sovereign axioms into DNA.",
@@ -1734,6 +1874,7 @@ impl AletheiaRuntime {
             spawned_dimensions,
             spawned_dimension_reports,
             spawned_domain_reports,
+            spawned_constant_reports,
             ingested_axioms_count,
         })
     }

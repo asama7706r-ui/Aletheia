@@ -13,7 +13,8 @@ pub use parser::{
 };
 pub use hypothesis::{HypothesisInput, HypothesisOutcome};
 pub use runtime::{
-    AletheiaRuntime, ConstantStressTestSummary, DimensionNamingCallback,
+    AletheiaRuntime, ConstantNamingCallback, ConstantStressTestSummary,
+    CouplingConstantDiscoveryReport, DimensionNamingCallback,
     DomainNamingCallback, DomainSpawningReport, IncompleteLawReport,
     NewDimensionDiscoveryReport, RuntimeStatus, SovereignMetaTheorem,
 };

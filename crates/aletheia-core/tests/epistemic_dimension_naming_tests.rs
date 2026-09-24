@@ -164,3 +164,41 @@ fn test_new_dimension_discovery_epistemic_trajectory_and_human_naming() {
     // Verify that DNA storage header rank expanded from 7 to 8
     assert_eq!(runtime.dna_engine.evolution_engine.storage.header.dimension_rank(), 8);
 }
+
+#[test]
+fn test_constant_discovery_and_human_naming() {
+    let mut runtime = AletheiaRuntime::boot_or_create(None, 7).unwrap();
+
+    // Hook to simulate human interaction for constant naming
+    runtime.set_constant_naming_hook(|rep| {
+        assert_eq!(rep.source_law_name, "newton_gravitation");
+        assert_eq!(rep.suggested_symbol, "G_candidate");
+        assert_eq!(rep.coupling_dimension, DimensionVector::from_integers(&[3, -1, -2]));
+        ("GravitationalCoupling".to_string(), "G".to_string())
+    });
+
+    let g_dim = DimensionVector::from_integers(&[3, -1, -2]);
+    let rep = runtime
+        .discover_coupling_constant(
+            "newton_gravitation",
+            r"F = G \frac{m_1 m_2}{r^2}",
+            g_dim.clone(),
+            Some("1"),
+            Some("0"),
+            "G_candidate",
+            "Candidate_G",
+        )
+        .expect("Must discover and report coupling constant");
+
+    assert_eq!(rep.chosen_name, "GravitationalCoupling");
+    assert_eq!(rep.chosen_symbol, "G");
+    assert_eq!(rep.coupling_dimension, g_dim);
+    assert!(rep.formatted_dimension.contains("[L]^3") || rep.formatted_dimension.contains("3"));
+
+    // Verify bridge registered in sovereignty engine
+    let bridges = runtime.sovereignty_engine.bridge_registry.bridges();
+    let g_bridge = bridges.iter().find(|b| b.name == "GravitationalCoupling");
+    assert!(g_bridge.is_some(), "Bridge for discovered constant must be registered");
+    let g_bridge = g_bridge.unwrap();
+    assert_eq!(g_bridge.coupling_dimension, g_dim);
+}

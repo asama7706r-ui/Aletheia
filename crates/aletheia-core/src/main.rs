@@ -193,12 +193,49 @@ fn handle_constant_discovery(args: &[String]) -> Result<(), Box<dyn std::error::
             let _ = io::stdout().flush();
             let mut dom_input = String::new();
             let _ = io::stdin().read_line(&mut dom_input);
-            println!("================================================================================\n");
             if dom_input.trim().is_empty() {
                 dom_rep.suggested_domain_name.clone()
             } else {
                 dom_input.trim().to_string()
             }
+        });
+
+        runtime.set_constant_naming_hook(|const_rep| {
+            println!("\n================================================================================");
+            println!("🔬 EPISTEMIC DISCOVERY: NEW PHYSICAL COUPLING CONSTANT SYNTHESIZED!");
+            println!("================================================================================");
+            println!("  Origin Law       : {}", const_rep.source_law_name);
+            if !const_rep.source_equation.is_empty() {
+                println!("  Equation         : {}", const_rep.source_equation);
+            }
+            println!("  Coupling Dim     : {} [{}]", const_rep.formatted_dimension, const_rep.coupling_dimension);
+            if let (Some(src), Some(tgt)) = (&const_rep.source_domain, &const_rep.target_domain) {
+                println!("  Bridge Domains   : {} ➔ {}", src, tgt);
+            }
+            println!("  Derivation Trail : {}", const_rep.derivation_trail);
+            println!("--------------------------------------------------------------------------------");
+            print!("  Enter Symbol for new constant (e.g. G, ħ, k_B, α) [default: {}]: ", const_rep.suggested_symbol);
+            let _ = io::stdout().flush();
+            let mut sym_input = String::new();
+            let _ = io::stdin().read_line(&mut sym_input);
+            let chosen_sym = if sym_input.trim().is_empty() {
+                const_rep.suggested_symbol.clone()
+            } else {
+                sym_input.trim().to_string()
+            };
+
+            print!("  Enter Full Name for new constant [default: {}]: ", const_rep.suggested_name);
+            let _ = io::stdout().flush();
+            let mut name_input = String::new();
+            let _ = io::stdin().read_line(&mut name_input);
+            println!("================================================================================\n");
+            let chosen_name = if name_input.trim().is_empty() {
+                const_rep.suggested_name.clone()
+            } else {
+                name_input.trim().to_string()
+            };
+
+            (chosen_name, chosen_sym)
         });
     }
 
@@ -547,6 +584,16 @@ fn handle_constant_discovery(args: &[String]) -> Result<(), Box<dyn std::error::
                     runtime.dna_engine.evolution_engine.storage.header.dimension_rank()
                 );
                 println!("     Lineage & Arena       : Sovereign axioms materialized in kernel.dna");
+            }
+            for const_rep in &stress_res.spawned_constant_reports {
+                println!("  🔬 Universal Coupling Constant Materialized:");
+                println!("     - Constant Symbol    : [{}]", const_rep.chosen_symbol);
+                println!("     - Constant Name      : {}", const_rep.chosen_name);
+                println!("     - Exact Dimension    : {} [{}]", const_rep.formatted_dimension, const_rep.coupling_dimension);
+                if let (Some(src), Some(tgt)) = (&const_rep.source_domain, &const_rep.target_domain) {
+                    println!("     - Bridged Domains    : {} ➔ {}", src, tgt);
+                }
+                println!("     - Epistemic Trail    : {}", const_rep.derivation_trail);
             }
             if stress_res.ingested_axioms_count > 0 {
                 println!("  📜 Sovereign Axioms Anchored : {} laws committed to DNA substrate", stress_res.ingested_axioms_count);
