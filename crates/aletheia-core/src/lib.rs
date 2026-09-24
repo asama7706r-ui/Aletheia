@@ -6,12 +6,17 @@ pub mod runtime;
 // Re-exports
 pub use error::CoreError;
 pub use parser::{
-    parse_candidate_bases, parse_dimension_str, parse_equation, parse_expr,
+    format_equation, format_expr, parse_candidate_bases, parse_dimension_str,
+    parse_dimension_str_with_registry, parse_equation, parse_expr,
     parse_variable_bindings, split_respecting_brackets, split_respecting_brackets_by,
     SymbolTable,
 };
 pub use hypothesis::{HypothesisInput, HypothesisOutcome};
-pub use runtime::{AletheiaRuntime, IncompleteLawReport, RuntimeStatus, SovereignMetaTheorem};
+pub use runtime::{
+    AletheiaRuntime, ConstantStressTestSummary, DimensionNamingCallback,
+    DomainNamingCallback, DomainSpawningReport, IncompleteLawReport,
+    NewDimensionDiscoveryReport, RuntimeStatus, SovereignMetaTheorem,
+};
 
 pub use aletheia_algebra::{CanonicalExpr, Rational, VariableId};
 pub use aletheia_dna::{OccamProofDag, ParetoLawCandidate};

@@ -12,6 +12,7 @@ pub struct DimensionId(pub usize);
 #[derive(Clone, Debug)]
 pub struct DimensionRegistry {
     dimension_names: Vec<String>,
+    dimension_symbols: Vec<String>,
 }
 
 impl DimensionRegistry {
@@ -36,6 +37,15 @@ impl DimensionRegistry {
                 "AmountOfSubstance".to_string(),
                 "LuminousIntensity".to_string(),
             ],
+            dimension_symbols: vec![
+                "L".to_string(),
+                "M".to_string(),
+                "T".to_string(),
+                "I".to_string(),
+                "Θ".to_string(),
+                "N".to_string(),
+                "J".to_string(),
+            ],
         }
     }
 
@@ -45,11 +55,32 @@ impl DimensionRegistry {
         self.dimension_names.len()
     }
 
+    /// قائمة أسماء الأبعاد المسجلة
+    pub fn dimension_names(&self) -> &[String] {
+        &self.dimension_names
+    }
+
+    /// قائمة رموز الأبعاد المسجلة (مثل L, M, T, ...)
+    pub fn dimension_symbols(&self) -> &[String] {
+        &self.dimension_symbols
+    }
+
     /// البحث عن بعد بالاسم
     pub fn find_dimension(&self, name: &str) -> Option<DimensionId> {
         self.dimension_names
             .iter()
             .position(|n| n.eq_ignore_ascii_case(name))
+            .map(DimensionId)
+    }
+
+    /// البحث عن بعد بالرمز (مثل L, M, T أو Theta)
+    pub fn find_by_symbol(&self, symbol: &str) -> Option<DimensionId> {
+        self.dimension_symbols
+            .iter()
+            .position(|s| {
+                s.eq_ignore_ascii_case(symbol)
+                    || (s == "Θ" && (symbol.eq_ignore_ascii_case("theta") || symbol == "θ"))
+            })
             .map(DimensionId)
     }
 
@@ -61,18 +92,47 @@ impl DimensionRegistry {
             .ok_or_else(|| LatticeError::DimensionNotFound(format!("ID {}", id.0)))
     }
 
-    /// التوسع المتعامد المباشر: إضافة بعد أولي جديد متعامد تماماً (Orthogonal Base Extension)
-    /// V_new = V_current ⊕ Q * e_new
+    /// الحصول على رمز البعد
+    pub fn get_symbol(&self, id: DimensionId) -> Result<&str, LatticeError> {
+        self.dimension_symbols
+            .get(id.0)
+            .map(|s| s.as_str())
+            .ok_or_else(|| LatticeError::DimensionNotFound(format!("ID {}", id.0)))
+    }
+
+    /// التوسع المتعامد المباشر: إضافة بعد أولي جديد مع رمز افتراضي (D{k})
     pub fn register_orthogonal(&mut self, name: &str) -> Result<DimensionId, LatticeError> {
+        let sym = format!("D{}", self.dimension_names.len());
+        self.register_orthogonal_with_symbol(name, &sym)
+    }
+
+    /// التوسع المتعامد السيادي: إضافة بعد أولي جديد مع اسم ورمز مخصصين من المستخدم (مثل B أو S)
+    pub fn register_orthogonal_with_symbol(
+        &mut self,
+        name: &str,
+        symbol: &str,
+    ) -> Result<DimensionId, LatticeError> {
         if self.find_dimension(name).is_some() {
             return Err(LatticeError::LinearDependence(format!(
                 "Dimension '{}' already exists in registry",
                 name
             )));
         }
+        if self.find_by_symbol(symbol).is_some() {
+            return Err(LatticeError::LinearDependence(format!(
+                "Dimension symbol '{}' already exists in registry",
+                symbol
+            )));
+        }
         let new_id = DimensionId(self.dimension_names.len());
         self.dimension_names.push(name.to_string());
+        self.dimension_symbols.push(symbol.to_string());
         Ok(new_id)
+    }
+
+    /// تنسيق متجه أبعاد باستخدام الرموز المسجلة حالياً في السجل
+    pub fn format_vector(&self, vec: &DimensionVector) -> String {
+        vec.format_with_symbols(&self.dimension_symbols)
     }
 
     /// توليد متجه الأساس المتعامد لبعد معين e_k

@@ -112,6 +112,37 @@ impl DimensionVector {
     pub fn coords(&self) -> &[Rational] {
         &self.coords
     }
+
+    /// تنسيق متجه الأبعاد باستخدام قائمة مخصصة لرموز الأبعاد الأساسية
+    pub fn format_with_symbols(&self, symbols: &[impl AsRef<str>]) -> String {
+        if self.is_dimensionless() {
+            return "[1]".to_string();
+        }
+
+        let mut parts = Vec::new();
+        for (i, coord) in self.coords.iter().enumerate() {
+            if coord.is_zero() {
+                continue;
+            }
+            let sym = if i < symbols.len() {
+                symbols[i].as_ref().to_string()
+            } else {
+                format!("D{}", i)
+            };
+
+            if coord.is_one() {
+                parts.push(format!("[{}]", sym));
+            } else {
+                parts.push(format!("[{}]^({})", sym, coord));
+            }
+        }
+
+        if parts.is_empty() {
+            "[1]".to_string()
+        } else {
+            parts.join(" * ")
+        }
+    }
 }
 
 // تطبيق قاعدة المقارنة مع التمدد الصفري الكنسي (Zero-Extension Equality)

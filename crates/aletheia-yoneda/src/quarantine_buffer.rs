@@ -117,6 +117,51 @@ impl LatentBuffer {
         self.records.values_mut()
     }
 
+    /// البحث عن معرفات السجلات التي تطابق متجهات أبعاد معينة (لحمايتها كجسور طوبولوجية)
+    pub fn find_records_matching_deficits(&self, deficits: &[DimensionVector]) -> Vec<[u8; 32]> {
+        let mut matching = Vec::new();
+        for rec in self.records.values() {
+            if deficits.iter().any(|d| &rec.shadow.dim_deficit == d) {
+                matching.push(rec.record_id);
+            }
+        }
+        matching
+    }
+
+    /// تنفيذ دورة صيانة الحجر الصحي: زيادة أعمار الفرضيات وتطبيق الخمول وحساب الإحصائيات
+    pub fn perform_maintenance(
+        &mut self,
+        max_age: usize,
+        protected_records: &[[u8; 32]],
+    ) -> (usize, usize, usize) {
+        // 1. زيادة عمر الفرضيات النشطة
+        for rec in self.records.values_mut() {
+            if !rec.is_dormant {
+                rec.increment_age();
+            }
+        }
+
+        // 2. تطبيق الخمول المؤقت
+        let newly_dormant = crate::dormancy::DormancyManager::apply_transient_dormancy(
+            self,
+            max_age,
+            protected_records,
+        );
+
+        // 3. حساب الإحصائيات (نشطة، خاملة، تحولت للخمول)
+        let mut active = 0;
+        let mut dormant = 0;
+        for rec in self.records.values() {
+            if rec.is_dormant {
+                dormant += 1;
+            } else {
+                active += 1;
+            }
+        }
+
+        (active, dormant, newly_dormant)
+    }
+
     /// حفظ كافة السجلات المحتجزة إلى الركيزة الجانبية quarantine.bin مع الترويسة السحرية ALETH_Q1
     pub fn save_to_file(&self, path: &Path) -> Result<(), YonedaError> {
         let file = File::create(path).map_err(|e| YonedaError::StorageError(e.to_string()))?;

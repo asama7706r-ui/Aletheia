@@ -1,12 +1,13 @@
 use crate::error::CoreError;
 use crate::hypothesis::{HypothesisInput, HypothesisOutcome};
+use crate::parser::{format_equation, SymbolTable};
 use aletheia_algebra::{CanonicalExpr, Rational, VariableId};
 use aletheia_dna::{
     verify_algebraic_independence, AletheiaDnaEngine, DnaStorageEngine, MetaTheorem,
     OccamProofDag, ParetoLawCandidate, UniversalRecordPrefix, RECORD_PREFIX_SIZE,
     RECORD_STATUS_ACTIVE, RECORD_TYPE_SOVEREIGN_AXIOM,
 };
-use aletheia_egraph::{EClassId, TransactionalEGraph};
+use aletheia_egraph::TransactionalEGraph;
 use aletheia_epistemic::{
     AnchoringSieve, DomainBridge, DomainTag, EGraphPurgeEngine, EpistemicSovereigntyEngine,
     GedankenexperimentResult, LockReceipt, LockType, SovereignDnaPayload, SovereigntyOutcome,
@@ -19,6 +20,7 @@ use aletheia_rewriting::{
 };
 use aletheia_yoneda::{
     correlation_hypergraph::CorrelationHypergraph,
+    dormancy::{DormancyManager, GraphMutationEvent, DEFAULT_MAX_SATURATION_AGE},
     neutrino_consolidator::NeutrinoConsolidator,
     orchestrator::{DeficitOrchestrator, DeficitTarget, ResolutionOutcome},
     tropical_newton::{NewtonPoint, NewtonPolygon},
@@ -84,6 +86,58 @@ pub enum StressTestVerdict {
     RefutedVoid { reason: String },
 }
 
+/// تقرير المسار المعرفي لاكتشاف وتوليد بعد فيزيائي/أنطولوجي جديد
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct NewDimensionDiscoveryReport {
+    /// الفهرس العددي للبعد الجديد في فضاء الشبكيات Q^N
+    pub dimension_index: usize,
+    /// اسم القانون غير المكتمل الذي انطلق منه الاكتشاف
+    pub source_law_name: String,
+    /// التعبير الرياضي للقانون غير المكتمل (LHS = RHS)
+    pub source_equation: String,
+    /// متجه العجز البعدي غير القابل للإسقاط في الفضاء القائم (Dimensional Deficit)
+    pub deficit_vector: DimensionVector,
+    /// بُعد الحامل الثابت المشترك
+    pub carrier_dimension: DimensionVector,
+    /// رتبة الفضاء القائم قبل التوسع (Q^N)
+    pub existing_subspace_rank: usize,
+    /// المسار المعرفي والرياضي الكامل لاشتقاق وتوليد البعد
+    pub derivation_trail: String,
+    /// برهان الاستقلال الخطي (Linear Independence Proof)
+    pub independence_proof: String,
+    /// الرمز المقترح افتراضياً قبل تدخل المستخدم
+    pub suggested_symbol: String,
+    /// الاسم المقترح افتراضياً قبل تدخل المستخدم
+    pub suggested_name: String,
+    /// الرمز المعتمد نهائياً بعد تدخل المستخدم أو القبول التلقائي
+    pub chosen_symbol: String,
+    /// الاسم المعتمد نهائياً بعد تدخل المستخدم أو القبول التلقائي
+    pub chosen_name: String,
+}
+
+/// تقرير توليد مجال معرفي جديد مصاحب للتوسع البعدي
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct DomainSpawningReport {
+    /// المعرف العددي للمجال الجديد
+    pub domain_id: u16,
+    /// فهرس البعد الأساسي المرتبط به
+    pub basis_dimension_index: usize,
+    /// رمز البعد المعتمد للمجال
+    pub dimension_symbol: String,
+    /// الاسم المقترح افتراضياً للمجال
+    pub suggested_domain_name: String,
+    /// الاسم المعتمد نهائياً بعد تدخل المستخدم
+    pub chosen_domain_name: String,
+    /// السياق المعرفي لسبب التوليد
+    pub rationale: String,
+}
+
+/// نمط دالة رد النداء لتسمية البعد الجديد من قبل المستخدم: تعيد (الاسم، الرمز)
+pub type DimensionNamingCallback = Box<dyn FnMut(&NewDimensionDiscoveryReport) -> (String, String) + Send + Sync>;
+
+/// نمط دالة رد النداء لتسمية المجال الجديد من قبل المستخدم: تعيد اسم المجال
+pub type DomainNamingCallback = Box<dyn FnMut(&DomainSpawningReport) -> String + Send + Sync>;
+
 /// تقرير شامل لإجهاد الثابت المكتشف وقوانينه المقترنة
 #[derive(Clone, Debug)]
 pub struct ConstantStressTestSummary {
@@ -93,6 +147,8 @@ pub struct ConstantStressTestSummary {
     pub law_reports: Vec<LawStressReport>,
     pub final_action: String,
     pub spawned_dimensions: Vec<String>,
+    pub spawned_dimension_reports: Vec<NewDimensionDiscoveryReport>,
+    pub spawned_domain_reports: Vec<DomainSpawningReport>,
     pub ingested_axioms_count: usize,
 }
 
@@ -121,6 +177,17 @@ pub struct RuntimeStatus {
     pub quarantined_count: usize,
     pub is_compacted: bool,
     pub boot_latency_micros: u128,
+}
+
+/// تقرير دورة الصيانة الدورية وتطهير الحجر الصحي
+#[derive(Clone, Debug, PartialEq, Eq)]
+pub struct MaintenanceReport {
+    pub total_quarantined: usize,
+    pub active_records: usize,
+    pub dormant_records: usize,
+    pub protected_bridge_records: usize,
+    pub newly_dormant: usize,
+    pub resurrected_count: usize,
 }
 
 /// النظرية الفوقية السيادية المقترنة بالأبعاد وجسور الاقتران الفيزيائي
@@ -153,6 +220,8 @@ pub struct AletheiaRuntime {
     pub law_expressions: HashMap<String, QuarantinedLawExprs>,
     pub quarantine_path: Option<PathBuf>,
     pub boot_latency_micros: u128,
+    pub dimension_naming_hook: Option<DimensionNamingCallback>,
+    pub domain_naming_hook: Option<DomainNamingCallback>,
 }
 
 impl AletheiaRuntime {
@@ -248,7 +317,25 @@ impl AletheiaRuntime {
             law_expressions,
             quarantine_path,
             boot_latency_micros,
+            dimension_naming_hook: None,
+            domain_naming_hook: None,
         })
+    }
+
+    /// تعيين دالة رد نداء لتسمية الأبعاد الجديدة ذاتياً عند اكتشافها
+    pub fn set_dimension_naming_hook<F>(&mut self, hook: F)
+    where
+        F: FnMut(&NewDimensionDiscoveryReport) -> (String, String) + Send + Sync + 'static,
+    {
+        self.dimension_naming_hook = Some(Box::new(hook));
+    }
+
+    /// تعيين دالة رد نداء لتسمية المجالات الجديدة ذاتياً عند توليدها
+    pub fn set_domain_naming_hook<F>(&mut self, hook: F)
+    where
+        F: FnMut(&DomainSpawningReport) -> String + Send + Sync + 'static,
+    {
+        self.domain_naming_hook = Some(Box::new(hook));
     }
 
     /// مزامنة سجلات الحجر الصحي LatentBuffer إلى ملف quarantine.bin
@@ -264,6 +351,98 @@ impl AletheiaRuntime {
         self.hypergraph.insert_record(record.clone());
         self.quarantine.admit(record);
         let _ = self.sync_quarantine();
+    }
+
+    /// تشغيل دورة الصيانة الدستورية للحجر الصحي:
+    /// 1. استخراج المجالات وصكوك السيادة وحواف الفرضيات العابرة للمجالات.
+    /// 2. اكتشاف الجسور الطوبولوجية الحرجة عبر خوارزمية تارجان في سجل الجسور (BridgeRegistry).
+    /// 3. مطابقة متجهات الأبعاد للجسور المحصنة لحماية الفرضيات المطابقة لها في الحجر.
+    /// 4. تطبيق الخمول المؤقت (Dormancy) وزيادة الأعمار وحساب الإحصائيات (LatentBuffer).
+    /// 5. مزامنة الحالة إلى quarantine.bin.
+    pub fn maintenance_cycle(&mut self, max_saturation_age: Option<usize>) -> MaintenanceReport {
+        let max_age = max_saturation_age.unwrap_or(DEFAULT_MAX_SATURATION_AGE);
+
+        // 1. استخراج المجالات من صكوك السيادة وحواف الفرضيات العابرة للمجالات
+        let extra_domains: Vec<DomainTag> = self
+            .sovereignty_engine
+            .sovereign_receipts
+            .values()
+            .map(|r| r.domain)
+            .collect();
+
+        let candidate_bridges: Vec<(DomainTag, DomainTag, [u8; 32])> = self
+            .quarantine
+            .records()
+            .filter(|r| r.shadow.origin_law_ids.len() >= 2)
+            .filter_map(|r| {
+                let d_a = self
+                    .sovereignty_engine
+                    .sovereign_receipts
+                    .get(&r.shadow.origin_law_ids[0])
+                    .map(|rc| rc.domain)
+                    .unwrap_or(DomainTag::UniversalAbstract);
+                let d_b = self
+                    .sovereignty_engine
+                    .sovereign_receipts
+                    .get(&r.shadow.origin_law_ids[1])
+                    .map(|rc| rc.domain)
+                    .unwrap_or(DomainTag::UniversalAbstract);
+                if d_a != d_b {
+                    Some((d_a, d_b, r.record_id))
+                } else {
+                    None
+                }
+            })
+            .collect();
+
+        // 2. اكتشاف الجسور الطوبولوجية الحرجة عبر خوارزمية تارجان في سجل الجسور
+        let (bridge_indices, mut protected_records) = self
+            .sovereignty_engine
+            .bridge_registry
+            .find_topological_bridges_with_candidates(&extra_domains, &candidate_bridges);
+
+        // 3. حماية الفرضيات التي تطابق الفجوة البعدية للجسور السيادية المحصنة
+        let bridge_dims: Vec<DimensionVector> = bridge_indices
+            .into_iter()
+            .filter_map(|idx| self.sovereignty_engine.bridge_registry.bridges().get(idx))
+            .map(|b| b.coupling_dimension.clone())
+            .filter(|d| !d.is_dimensionless())
+            .collect();
+
+        let matching_deficits = self.quarantine.find_records_matching_deficits(&bridge_dims);
+        for id in matching_deficits {
+            if !protected_records.contains(&id) {
+                protected_records.push(id);
+            }
+        }
+
+        // 4. تشغيل الصيانة وتطبيق الخمول وحساب الإحصائيات داخل حاوية الحجر
+        let (active_records, dormant_records, newly_dormant) =
+            self.quarantine.perform_maintenance(max_age, &protected_records);
+
+        let _ = self.sync_quarantine();
+
+        MaintenanceReport {
+            total_quarantined: self.quarantine.len(),
+            active_records,
+            dormant_records,
+            protected_bridge_records: protected_records.len(),
+            newly_dormant,
+            resurrected_count: 0,
+        }
+    }
+
+    /// إيقاظ الفرضيات الخاملة ذاتياً عند حدوث تحول معرفي (Paradigm Shift)
+    pub fn trigger_resurrection_on_mutation(&mut self, event: &GraphMutationEvent) -> Vec<[u8; 32]> {
+        let resurrected = DormancyManager::resurrect_on_mutation(
+            &mut self.quarantine,
+            &mut self.hypergraph,
+            event,
+        );
+        if !resurrected.is_empty() {
+            let _ = self.sync_quarantine();
+        }
+        resurrected
     }
 
     /// معالجة فرضية معرفية عبر خط الأنابيب الكوني الكامل والدستوري:
@@ -505,6 +684,11 @@ impl AletheiaRuntime {
                 // التثبيت الدائم في ركيزة الـ DNA
                 self.dna_engine.ingest_sovereign_payload(&payload)?;
 
+                let event = GraphMutationEvent::NewLawDiscovered {
+                    law_id: receipt.law_id.clone(),
+                };
+                let _ = self.trigger_resurrection_on_mutation(&event);
+
                 let class_id = self.dna_engine.evolution_engine.storage.header.total_classes;
                 Ok(HypothesisOutcome::SovereignAnchored {
                     receipt: Box::new(receipt),
@@ -652,7 +836,7 @@ impl AletheiaRuntime {
 
         // تحديث جدول الجسور الإبستمولوجي في بوابة السيادة
         let bridge = DomainBridge::new(
-            bridge_name,
+            bridge_name.clone(),
             DomainTag::from_id(source_domain),
             DomainTag::from_id(target_domain),
             coupling_dimension,
@@ -665,6 +849,11 @@ impl AletheiaRuntime {
             .gatekeeper
             .bridge_registry
             .register_bridge(bridge);
+
+        let event = GraphMutationEvent::NewLawDiscovered {
+            law_id: bridge_name,
+        };
+        let _ = self.trigger_resurrection_on_mutation(&event);
 
         Ok(const_class_id)
     }
@@ -773,6 +962,8 @@ impl AletheiaRuntime {
             law_expressions: self.law_expressions,
             quarantine_path: self.quarantine_path,
             boot_latency_micros: self.boot_latency_micros,
+            dimension_naming_hook: self.dimension_naming_hook,
+            domain_naming_hook: self.domain_naming_hook,
         })
     }
 
@@ -1116,6 +1307,11 @@ impl AletheiaRuntime {
                         rec.remaining_dof = Rational::zero();
                     }
 
+                    let event = GraphMutationEvent::ConsolidationOccurred {
+                        resolved_record_id: *member_id,
+                    };
+                    let _ = self.trigger_resurrection_on_mutation(&event);
+
                     // استخراج اسم القانون والعجز البعدي
                     let (law_name, member_deficit) = if let Some(rec) = self.hypergraph.records.get(member_id) {
                         let name = rec.shadow.origin_law_ids.first().cloned().unwrap_or_else(|| "unnamed_law".to_string());
@@ -1283,6 +1479,8 @@ impl AletheiaRuntime {
         // 2. Remand innocent incomplete laws to quarantine with restored DoF = 1.
         // 3. Reject and purge the refuted void hypothesis.
         let mut spawned_dimensions = Vec::new();
+        let mut spawned_dimension_reports = Vec::new();
+        let mut spawned_domain_reports = Vec::new();
         let mut ingested_axioms_count = 0;
 
         let final_action = if all_passed {
@@ -1314,25 +1512,134 @@ impl AletheiaRuntime {
                 let proposed = DimensionVector::unit_basis(dim_idx, dim_idx + 1);
 
                 if verify_algebraic_independence(&existing_basis, &proposed) {
-                    let dim_name = format!("D{}", dim_idx);
+                    // أ. استخلاص القانون المصدر ومسار الاشتقاق المعرفي
+                    let triggering_law = report.freed_laws.iter().find(|l| {
+                        l.dim_deficit.effective_len() > dim_idx || !l.dim_deficit.get_coord(dim_idx).is_zero()
+                    }).or_else(|| report.freed_laws.first());
+
+                    let (source_law_name, source_equation, deficit_vector) = if let Some(law) = triggering_law {
+                        let eq_str = if let Some(info) = self.law_expressions.get(&law.law_name) {
+                            let dummy_sym = SymbolTable::new();
+                            format_equation(&info.lhs_expr, &info.rhs_expr, &dummy_sym)
+                        } else {
+                            format!("{} [Δd: {}] = ?", law.law_name, law.dim_deficit)
+                        };
+                        (law.law_name.clone(), eq_str, law.dim_deficit.clone())
+                    } else {
+                        (
+                            "AutonomousInvariantSynthesis".to_string(),
+                            format!("Δd = {}", report.carrier_dimension),
+                            report.carrier_dimension.clone(),
+                        )
+                    };
+
+                    let derivation_trail = format!(
+                        "Incomplete law '{}' with formulation '{}' generated an irreducible dimensional deficit Δd = {}. \
+                        Synthesized carrier invariant dimension: {}. \
+                        The existing dimensional subspace Q^{} cannot span coordinate index {}, necessitating an orthogonal base expansion e_{} (Q^{} ➔ Q^{}).",
+                        source_law_name,
+                        source_equation,
+                        deficit_vector,
+                        report.carrier_dimension,
+                        dim_idx,
+                        dim_idx,
+                        dim_idx,
+                        dim_idx,
+                        dim_idx + 1
+                    );
+
+                    let independence_proof = format!(
+                        "Algebraic independence verified: Proposed unit vector e_{} satisfies verify_algebraic_independence against span(B_{}) in Q^{}. Rank increment: {} ➔ {}.",
+                        dim_idx,
+                        dim_idx,
+                        dim_idx + 1,
+                        dim_idx,
+                        dim_idx + 1
+                    );
+
+                    let suggested_symbol = format!("D{}", dim_idx);
+                    let suggested_name = format!("Dimension_{}", dim_idx);
+
+                    let mut dim_report = NewDimensionDiscoveryReport {
+                        dimension_index: dim_idx,
+                        source_law_name: source_law_name.clone(),
+                        source_equation: source_equation.clone(),
+                        deficit_vector: deficit_vector.clone(),
+                        carrier_dimension: report.carrier_dimension.clone(),
+                        existing_subspace_rank: dim_idx,
+                        derivation_trail,
+                        independence_proof,
+                        suggested_symbol: suggested_symbol.clone(),
+                        suggested_name: suggested_name.clone(),
+                        chosen_symbol: suggested_symbol.clone(),
+                        chosen_name: suggested_name.clone(),
+                    };
+
+                    // ب. منح الإنسان السيادة لتسمية ووضع رمز البعد الجديد عبر رد النداء
+                    if let Some(ref mut hook) = self.dimension_naming_hook {
+                        let (user_name, user_sym) = hook(&dim_report);
+                        if !user_name.trim().is_empty() {
+                            dim_report.chosen_name = user_name.trim().to_string();
+                        }
+                        if !user_sym.trim().is_empty() {
+                            dim_report.chosen_symbol = user_sym.trim().to_string();
+                        }
+                    }
+
+                    // ج. تثبيت البعد الجديد بالاسم والرمز المعتمدين في الـ DNA وفي سجل الأبعاد
                     self.dna_engine.evolution_engine.spawn_dimension_checked(
-                        &dim_name,
+                        &dim_report.chosen_name,
                         &proposed,
                         &existing_basis,
                     )?;
-                    if self.dim_registry.find_dimension(&dim_name).is_none() {
-                        let _ = self.dim_registry.register_orthogonal(&dim_name);
+                    if self.dim_registry.find_dimension(&dim_report.chosen_name).is_none() {
+                        let _ = self.dim_registry.register_orthogonal_with_symbol(
+                            &dim_report.chosen_name,
+                            &dim_report.chosen_symbol,
+                        );
                     }
+                    spawned_dimensions.push(format!("{} [{}]", dim_report.chosen_name, dim_report.chosen_symbol));
+
+                    // د. توليد وتسمية المجال المعرفي بسيادة المستخدم عبر رد النداء
                     let domain_id = dim_idx as u16;
                     let group_id = 1;
                     let basis_id = dim_idx as u32;
+                    let suggested_domain = format!("{}_Domain", dim_report.chosen_name);
+                    let domain_rationale = format!(
+                        "Ontological domain synthesized for dimension '{}' [{}] originating from law '{}'",
+                        dim_report.chosen_name, dim_report.chosen_symbol, source_law_name
+                    );
+
+                    let mut dom_report = DomainSpawningReport {
+                        domain_id,
+                        basis_dimension_index: dim_idx,
+                        dimension_symbol: dim_report.chosen_symbol.clone(),
+                        suggested_domain_name: suggested_domain.clone(),
+                        chosen_domain_name: suggested_domain.clone(),
+                        rationale: domain_rationale,
+                    };
+
+                    if let Some(ref mut dom_hook) = self.domain_naming_hook {
+                        let user_domain = dom_hook(&dom_report);
+                        if !user_domain.trim().is_empty() {
+                            dom_report.chosen_domain_name = user_domain.trim().to_string();
+                        }
+                    }
+
                     let _ = self.dna_engine.evolution_engine.materialize_domain_with_descriptor(
                         domain_id,
                         group_id,
                         basis_id,
-                        &dim_name,
+                        &dom_report.chosen_domain_name,
                     );
-                    spawned_dimensions.push(dim_name);
+
+                    spawned_dimension_reports.push(dim_report);
+                    spawned_domain_reports.push(dom_report);
+
+                    let event = GraphMutationEvent::DimensionalExpansion {
+                        added_dimension_index: dim_idx,
+                    };
+                    let _ = self.trigger_resurrection_on_mutation(&event);
                 }
                 current_rank += 1;
             }
@@ -1425,6 +1732,8 @@ impl AletheiaRuntime {
             law_reports,
             final_action,
             spawned_dimensions,
+            spawned_dimension_reports,
+            spawned_domain_reports,
             ingested_axioms_count,
         })
     }

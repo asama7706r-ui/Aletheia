@@ -32,7 +32,7 @@ OPTIONS:
     --source <DOMAIN>    Source domain: name, dimension ('[M,L,T]'), or ID (for route)
     --target <DOMAIN>    Target domain: name, dimension ('[M,L,T]'), or ID (for route)
     --laws, --law <SPEC> Incomplete law(s): "[name:] eq | vars" or preset: 'quantum', 'gravitation', 'relativity', 'all'
-    --candidates <BASES> Candidate physical constants for C_known, e.g. "c, G, hbar" (or 'none')
+    --candidates <BASES> Candidate physical constants for C_known, e.g. "c: L / T, G: L^3 / (M * T^2)" (or 'none')
     --bundle <NAME>      Physical cluster: 'quantum', 'gravitation', 'relativity', 'all'
     --interactive, -i    Interactive wizard mode for manual incomplete law input
 "#);
@@ -153,6 +153,55 @@ fn handle_constant_discovery(args: &[String]) -> Result<(), Box<dyn std::error::
 
     let is_interactive = args.iter().any(|a| a == "--interactive" || a == "-i");
 
+    if is_interactive {
+        runtime.set_dimension_naming_hook(|dim_rep| {
+            println!("\n================================================================================");
+            println!("🌟 EPISTEMIC DISCOVERY: NEW FUNDAMENTAL DIMENSION DETECTED!");
+            println!("================================================================================");
+            println!("  Origin Law       : {}", dim_rep.source_law_name);
+            println!("  Equation         : {}", dim_rep.source_equation);
+            println!("  Deficit Vector   : {}", dim_rep.deficit_vector);
+            println!("  Carrier Dim      : {}", dim_rep.carrier_dimension);
+            println!("  Derivation Trail : {}", dim_rep.derivation_trail);
+            println!("  Independence     : {}", dim_rep.independence_proof);
+            println!("--------------------------------------------------------------------------------");
+            print!("  Enter Symbol for new dimension (e.g. B, S, Φ) [default: {}]: ", dim_rep.suggested_symbol);
+            let _ = io::stdout().flush();
+            let mut sym_input = String::new();
+            let _ = io::stdin().read_line(&mut sym_input);
+            let chosen_sym = if sym_input.trim().is_empty() {
+                dim_rep.suggested_symbol.clone()
+            } else {
+                sym_input.trim().to_string()
+            };
+
+            print!("  Enter Full Name for new dimension [default: {}]: ", dim_rep.suggested_name);
+            let _ = io::stdout().flush();
+            let mut name_input = String::new();
+            let _ = io::stdin().read_line(&mut name_input);
+            let chosen_name = if name_input.trim().is_empty() {
+                dim_rep.suggested_name.clone()
+            } else {
+                name_input.trim().to_string()
+            };
+
+            (chosen_name, chosen_sym)
+        });
+
+        runtime.set_domain_naming_hook(|dom_rep| {
+            print!("  Enter Domain Name for ID 0x{:04x} [default: {}]: ", dom_rep.domain_id, dom_rep.suggested_domain_name);
+            let _ = io::stdout().flush();
+            let mut dom_input = String::new();
+            let _ = io::stdin().read_line(&mut dom_input);
+            println!("================================================================================\n");
+            if dom_input.trim().is_empty() {
+                dom_rep.suggested_domain_name.clone()
+            } else {
+                dom_input.trim().to_string()
+            }
+        });
+    }
+
     println!("================================================================================");
     println!("ALETHEIA AUTONOMOUS CONSTANT DISCOVERY & LAW RESOLUTION (AXIS 6 & 8)");
     println!("================================================================================");
@@ -181,7 +230,7 @@ fn handle_constant_discovery(args: &[String]) -> Result<(), Box<dyn std::error::
             let name = prompt(&format!("Law Name [default: law_{}]: ", i))?;
             let name = if name.is_empty() { format!("law_{}", i) } else { name };
             let eq = prompt("Equation (e.g. 'E = nu' or 'p = k'): ")?;
-            let vars = prompt("Variable dimensions (e.g. 'E:energy, nu:frequency'): ")?;
+            let vars = prompt("Variable dimensions (e.g. 'E: L^2 * M / T^2, nu: 1 / T' or 'p: [1, 1, -1]'): ")?;
 
             let mut symbols = SymbolTable::new();
             let (lhs, rhs) = parse_equation(&eq, &mut symbols)?;
@@ -476,6 +525,23 @@ fn handle_constant_discovery(args: &[String]) -> Result<(), Box<dyn std::error::
             if !stress_res.spawned_dimensions.is_empty() {
                 println!("  🌟 AUTONOMOUS ORTHOGONAL DIMENSION EXTENSION TRIGGERED!");
                 println!("     New Base Dimension(s) : {:?}", stress_res.spawned_dimensions);
+                for dim_rep in &stress_res.spawned_dimension_reports {
+                    println!("     ✦ Dimension Derivation Trajectory (Axis 6 & 8):");
+                    println!("       - Progenitor Law     : {}", dim_rep.source_law_name);
+                    println!("       - Formulation Eq     : {}", dim_rep.source_equation);
+                    println!("       - Deficit Invariant  : {}", dim_rep.deficit_vector);
+                    println!("       - Base Symbol Chosen : [{}]", dim_rep.chosen_symbol);
+                    println!("       - Base Name Chosen   : {}", dim_rep.chosen_name);
+                    println!("       - Epistemic Trail    : {}", dim_rep.derivation_trail);
+                    println!("       - Independence Proof : {}", dim_rep.independence_proof);
+                }
+                for dom_rep in &stress_res.spawned_domain_reports {
+                    println!("     ✦ Spawned Ontological Domain:");
+                    println!("       - Domain ID          : 0x{:04x}", dom_rep.domain_id);
+                    println!("       - Domain Name Chosen : {}", dom_rep.chosen_domain_name);
+                    println!("       - Associated Symbol  : [{}]", dom_rep.dimension_symbol);
+                    println!("       - Rationale          : {}", dom_rep.rationale);
+                }
                 println!("     Dimensional Rank      : Q^{} ➔ Q^{}",
                     runtime.dna_engine.evolution_engine.storage.header.dimension_rank() - stress_res.spawned_dimensions.len() as u16,
                     runtime.dna_engine.evolution_engine.storage.header.dimension_rank()

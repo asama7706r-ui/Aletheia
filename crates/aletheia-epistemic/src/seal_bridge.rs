@@ -1,8 +1,9 @@
 use crate::receipt::{LockReceipt, LockType};
 use aletheia_algebra::Rational;
 use aletheia_lattice::DimensionVector;
+use aletheia_yoneda::{KnowledgeGraph, TarjanBridgeDetector};
 use serde::{Deserialize, Serialize};
-use std::collections::{HashSet, VecDeque};
+use std::collections::{HashMap, HashSet, VecDeque};
 
 /// وسوم المجالات الأنطولوجية المعزولة
 #[derive(Copy, Clone, Debug, PartialEq, Eq, Hash, Serialize, Deserialize)]
@@ -359,6 +360,99 @@ impl BridgeRegistry {
         }
 
         None
+    }
+
+    /// بناء الرسم البياني الطوبولوجي للجسور المسجلة مع إمكانية دمج مجالات وحواف مرشحة إضافية
+    /// وإرجاع (مؤشرات جسور السجل المكتشفة كجسور تارجان، معرفات الحواف المرشحة المكتشفة كجسور تارجان)
+    pub fn find_topological_bridges_with_candidates<ID: Copy + Eq + std::hash::Hash>(
+        &self,
+        extra_domains: &[DomainTag],
+        candidates: &[(DomainTag, DomainTag, ID)],
+    ) -> (HashSet<usize>, Vec<ID>) {
+        let mut domain_to_node: HashMap<DomainTag, usize> = HashMap::new();
+        let mut next_node_id = 0;
+
+        let mut get_or_create_node = |domain: DomainTag| -> usize {
+            *domain_to_node.entry(domain).or_insert_with(|| {
+                let id = next_node_id;
+                next_node_id += 1;
+                id
+            })
+        };
+
+        for bridge in &self.bridges {
+            get_or_create_node(bridge.source);
+            get_or_create_node(bridge.target);
+        }
+
+        for &domain in extra_domains {
+            get_or_create_node(domain);
+        }
+
+        for (d1, d2, _) in candidates {
+            get_or_create_node(*d1);
+            get_or_create_node(*d2);
+        }
+
+        let num_nodes = next_node_id.max(2);
+        let mut graph = KnowledgeGraph::new(num_nodes);
+        let mut registry_edge_indices = Vec::new();
+
+        for (i, bridge) in self.bridges.iter().enumerate() {
+            if let (Some(&u), Some(&v)) = (domain_to_node.get(&bridge.source), domain_to_node.get(&bridge.target)) {
+                if u != v {
+                    let edge_idx = graph.add_edge(u, v);
+                    registry_edge_indices.push((edge_idx, i));
+                }
+            }
+        }
+
+        let mut candidate_edge_map: HashMap<usize, ID> = HashMap::new();
+        for (d1, d2, id) in candidates {
+            if let (Some(&u), Some(&v)) = (domain_to_node.get(d1), domain_to_node.get(d2)) {
+                if u != v {
+                    let edge_idx = graph.add_edge(u, v);
+                    candidate_edge_map.insert(edge_idx, *id);
+                }
+            }
+        }
+
+        let bridge_edges = TarjanBridgeDetector::find_all_bridges(&graph);
+
+        let mut detected_registry_bridges = HashSet::new();
+        for (edge_idx, reg_idx) in registry_edge_indices {
+            if bridge_edges.contains(&edge_idx) {
+                detected_registry_bridges.insert(reg_idx);
+            }
+        }
+
+        let mut detected_candidates = Vec::new();
+        for &edge_idx in &bridge_edges {
+            if let Some(&id) = candidate_edge_map.get(&edge_idx) {
+                if !detected_candidates.contains(&id) {
+                    detected_candidates.push(id);
+                }
+            }
+        }
+
+        (detected_registry_bridges, detected_candidates)
+    }
+
+    /// اكتشاف الجسور الطوبولوجية للجسور المسجلة فقط
+    pub fn find_topological_bridges(&self) -> HashSet<usize> {
+        let (bridges, _) = self.find_topological_bridges_with_candidates::<()>( &[], &[]);
+        bridges
+    }
+
+    /// استخراج متجهات الأبعاد المقترنة بكافة الجسور الطوبولوجية الحرجة (Tarjan Bridges)
+    pub fn get_topological_bridge_dimensions(&self) -> Vec<DimensionVector> {
+        let bridge_indices = self.find_topological_bridges();
+        bridge_indices
+            .into_iter()
+            .filter_map(|idx| self.bridges.get(idx))
+            .map(|b| b.coupling_dimension.clone())
+            .filter(|dim| !dim.is_dimensionless())
+            .collect()
     }
 }
 

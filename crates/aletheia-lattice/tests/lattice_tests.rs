@@ -52,16 +52,20 @@ fn test_dimension_registry_and_orthogonal_extension() {
     assert_eq!(energy.get_coord(DimensionRegistry::LENGTH_IDX), Rational::from_i64(2));
 
     // التوسع المتعامد: إضافة بعد المعلومات [Bit]
-    let bit_id = reg.register_orthogonal("InformationBit").unwrap();
+    let bit_id = reg.register_orthogonal_with_symbol("InformationBit", "B").unwrap();
     assert_eq!(reg.dimension_count(), 8);
     assert_eq!(bit_id.0, 7);
+    assert_eq!(reg.get_symbol(bit_id).unwrap(), "B");
+    assert_eq!(reg.find_by_symbol("B"), Some(bit_id));
 
     let bit_vec = reg.unit_basis(bit_id).unwrap();
     assert_eq!(bit_vec.get_coord(7), Rational::from_i64(1));
     assert_eq!(bit_vec.get_coord(DimensionRegistry::LENGTH_IDX), Rational::from_i64(0));
+    assert_eq!(reg.format_vector(&bit_vec), "[B]");
 
-    // رفض تكرار البعد
+    // رفض تكرار البعد أو الرمز
     assert!(reg.register_orthogonal("InformationBit").is_err());
+    assert!(reg.register_orthogonal_with_symbol("OtherBit", "B").is_err());
 }
 
 #[test]
