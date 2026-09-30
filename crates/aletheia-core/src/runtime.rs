@@ -9,14 +9,14 @@ use aletheia_dna::{
 };
 use aletheia_egraph::TransactionalEGraph;
 use aletheia_epistemic::{
-    AnchoringSieve, DomainBridge, DomainTag, EGraphPurgeEngine, EpistemicSovereigntyEngine,
-    GedankenexperimentResult, LockReceipt, LockType, SovereignDnaPayload, SovereigntyOutcome,
+    AnchoringSieve, CandidateBridge, DomainBridge, DomainTag, EGraphPurgeEngine, EpistemicSovereigntyEngine,
+    GedankenexperimentResult, LawStatus, LockReceipt, LockType, SovereignDnaPayload, SovereigntyOutcome,
     SovereignReceipt,
 };
 use aletheia_lattice::{DimensionRegistry, DimensionVector, DimensionalContext, SemanticGuard};
 use aletheia_rewriting::{
-    ruleset::standard_algebraic_ruleset, AstExtractor, Cost, EmptyDeficitContext, RewriteRule,
-    RewritingError, SaturationConfig, SaturationEngine, SimpleDeficitContext,
+    ruleset::standard_algebraic_ruleset, AstExtractor, Cost, EmptyDeficitContext,
+    RewriteRule, RewritingError, SaturationConfig, SaturationEngine, SimpleDeficitContext,
 };
 use aletheia_yoneda::{
     correlation_hypergraph::CorrelationHypergraph,
@@ -199,6 +199,43 @@ pub struct IncompleteLawReport {
     pub completed_expr: Option<CanonicalExpr>,
 }
 
+impl IncompleteLawReport {
+    /// إنشاء تقرير مباشر لقانون متوج ومعتمد مسبقاً في النواة السيادية
+    pub fn already_sovereign(
+        law_name: &str,
+        receipt: &SovereignReceipt,
+        lhs_expr: &CanonicalExpr,
+        lhs_dim: &DimensionVector,
+        rhs_expr: &CanonicalExpr,
+        rhs_dim: &DimensionVector,
+    ) -> Self {
+        Self {
+            law_name: law_name.to_string(),
+            lhs_expr: lhs_expr.clone(),
+            lhs_dim: lhs_dim.clone(),
+            rhs_expr: rhs_expr.clone(),
+            rhs_dim: rhs_dim.clone(),
+            deficit_vector: DimensionVector::dimensionless(),
+            candidate_solutions: Vec::new(),
+            outcome: ResolutionOutcome::ExactEntityResolved {
+                symbol: format!("SovereignAxiom({})", receipt.law_id),
+                shadow: LatentShadow {
+                    shadow_id: receipt.canonical_id,
+                    origin_law_ids: vec![receipt.law_id.clone()],
+                    dim_deficit: DimensionVector::dimensionless(),
+                    tensorial_rank: 0,
+                    dof: Rational::zero(),
+                    spectral_audit: Default::default(),
+                    coupling_carrier: None,
+                    target_classes: Vec::new(),
+                    macaulay_ceiling: 0,
+                },
+            },
+            completed_expr: Some(receipt.ast.clone()),
+        }
+    }
+}
+
 /// حالة النواة التشخيصية الموجزة
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct RuntimeStatus {
@@ -234,6 +271,22 @@ pub struct SovereignMetaTheorem {
     pub bridge_constant: Option<Rational>,
     pub left_substitution: HashMap<VariableId, CanonicalExpr>,
     pub right_substitution: HashMap<VariableId, CanonicalExpr>,
+}
+
+/// حساب البصمة الكنسية BLAKE3 للتعبير الرياضي والأبعاد بشكل مستقل تماماً عن أي أسماء لغوية
+#[inline]
+pub fn compute_canonical_ast_hash(ast: &CanonicalExpr, dim: &DimensionVector) -> [u8; 32] {
+    SovereignReceipt::compute_canonical_ast_hash(ast, dim)
+}
+
+/// حساب البصمة الكنسية BLAKE3 لمعادلة غير مكتملة (LHS = RHS مع العجز البعدي)
+#[inline]
+pub fn compute_canonical_equation_hash(
+    lhs: &CanonicalExpr,
+    rhs: &CanonicalExpr,
+    deficit: &DimensionVector,
+) -> [u8; 32] {
+    SovereignReceipt::compute_canonical_equation_hash(lhs, rhs, deficit)
 }
 
 /// المنسق السيادي الشامل للنواة المعرفية (Aletheia Cosmic Runtime)
@@ -299,6 +352,7 @@ impl AletheiaRuntime {
 
                     if prefix.record_type == RECORD_TYPE_SOVEREIGN_AXIOM && prefix.status == RECORD_STATUS_ACTIVE {
                         if let Ok(receipt) = SovereignReceipt::from_bytes(&buf[payload_start..payload_end]) {
+                            sovereignty_engine.arbitrator.register_law(&receipt.law_id, LawStatus::ActiveAxiom);
                             sovereignty_engine.sovereign_receipts.insert(receipt.law_id.clone(), receipt);
                         }
                     }
@@ -324,11 +378,28 @@ impl AletheiaRuntime {
             }
         }
 
+        // تنقية الحجر ومخطط الارتباط من أي قوانين أصبحت بديهيات سيادية معتمدة في الـ DNA
+        let sovereign_ids: Vec<[u8; 32]> = sovereignty_engine
+            .sovereign_receipts
+            .values()
+            .map(|r| r.canonical_id)
+            .collect();
+        for id in sovereign_ids {
+            quarantine.remove(&id);
+            hypergraph.remove_record(&id);
+        }
+
         let mut dim_registry = DimensionRegistry::new();
         let dim_context = DimensionalContext::new();
-        let egraph = TransactionalEGraph::new();
+        let mut egraph = TransactionalEGraph::new();
         let ruleset = standard_algebraic_ruleset();
         let law_expressions = HashMap::new();
+
+        // غرس البديهيات السيادية القائمة من الـ DNA في مصفوفة الـ E-Graph
+        for receipt in sovereignty_engine.sovereign_receipts.values() {
+            let _ = egraph.add_expr(&receipt.ast, &dim_context);
+        }
+        let _ = egraph.rebuild();
 
         let loaded_rank = dna_engine.evolution_engine.storage.header.dimension_rank();
         while (dim_registry.dimension_count() as u16) < loaded_rank {
@@ -397,6 +468,24 @@ impl AletheiaRuntime {
             "Coupling constant discovered for law '{}' ({}). Reconciles dimensional gap: {}",
             source_law_name, source_equation, formatted_dim
         );
+
+        if let Some(existing) = self.sovereignty_engine.bridge_registry.find_bridge_by_dimension(&coupling_dim) {
+            let const_rep = CouplingConstantDiscoveryReport {
+                constant_id: self.sovereignty_engine.bridge_registry.bridges().len(),
+                source_law_name: source_law_name.to_string(),
+                source_equation: source_equation.to_string(),
+                coupling_dimension: coupling_dim.clone(),
+                formatted_dimension: formatted_dim,
+                source_domain: source_domain.map(|s| s.to_string()),
+                target_domain: target_domain.map(|s| s.to_string()),
+                derivation_trail,
+                suggested_symbol: suggested_symbol.to_string(),
+                suggested_name: existing.name.clone(),
+                chosen_symbol: suggested_symbol.to_string(),
+                chosen_name: existing.name.clone(),
+            };
+            return Ok(const_rep);
+        }
 
         let mut const_rep = CouplingConstantDiscoveryReport {
             constant_id: self.sovereignty_engine.bridge_registry.bridges().len() + 1,
@@ -717,13 +806,7 @@ impl AletheiaRuntime {
         }
 
         // 6. توليد البصمة الكنسية BLAKE3 للقانون وبناء مرشح السيادة الحقيقي
-        let mut hasher = blake3::Hasher::new();
-        hasher.update(hypothesis.law_id.as_bytes());
-        hasher.update(format!("{:?}", extracted.ast).as_bytes());
-        for i in 0..hypothesis.dimension.len() {
-            hasher.update(hypothesis.dimension.get_coord(i).to_string().as_bytes());
-        }
-        let canonical_id = *hasher.finalize().as_bytes();
+        let canonical_id = compute_canonical_ast_hash(&extracted.ast, &hypothesis.dimension);
 
         let proof_trace: Vec<String> = if extracted.proof_trace.is_empty() {
             vec![
@@ -1083,6 +1166,28 @@ impl AletheiaRuntime {
         }
     }
 
+    /// دمج بديهية أو قانون سيادي متوج في نسيج المعرفة الحي للنواة (E-Graph & Rewrite Ruleset)
+    pub fn integrate_sovereign_law_into_live_substrate(
+        &mut self,
+        law_id: &str,
+        lhs: &CanonicalExpr,
+        rhs: &CanonicalExpr,
+    ) {
+        // 1. إضافة وتوحيد التعبيرين في الـ E-Graph وإغلاق التطابق المعاملاتي
+        if let (Ok(lhs_class), Ok(rhs_class)) = (
+            self.egraph.add_expr(lhs, &self.dim_context),
+            self.egraph.add_expr(rhs, &self.dim_context),
+        ) {
+            let _ = self.egraph.union(lhs_class, rhs_class);
+            let _ = self.egraph.rebuild();
+        }
+
+        // 2. إنشاء قواعد إعادة كتابة ثنائية الاتجاه عبر المكون الداخلي aletheia-rewriting
+        let (fwd_rule, rev_rule) = RewriteRule::from_sovereign_law(law_id, lhs, rhs);
+        self.ruleset.push(fwd_rule);
+        self.ruleset.push(rev_rule);
+    }
+
     /// تسجيل وتثبيت بديهية سيادية مباشرة في الشجرة المعرفية وركيزة الـ DNA
     pub fn register_sovereign_axiom(
         &mut self,
@@ -1091,7 +1196,7 @@ impl AletheiaRuntime {
         domain: DomainTag,
         dim: DimensionVector,
     ) -> Result<SovereignReceipt, CoreError> {
-        let canonical_id = [0u8; 32];
+        let canonical_id = compute_canonical_ast_hash(&ast, &dim);
         let receipt = SovereignReceipt::issue_active(
             law_id,
             canonical_id,
@@ -1115,6 +1220,7 @@ impl AletheiaRuntime {
 
         // إضافة التعبير إلى الـ EGraph وسياق الأبعاد
         let _ = self.egraph.add_expr(&ast, &self.dim_context);
+        let _ = self.egraph.rebuild();
 
         Ok(receipt)
     }
@@ -1156,6 +1262,34 @@ impl AletheiaRuntime {
             .unwrap_or_else(|_| rhs_dim.clone());
         let deficit_vector = &dim_lhs - &dim_rhs;
 
+        // 0. التحقق مما إذا كان القانون مسجلاً كبديهية سيادية بالفعل في النواة (عبر استعلام المحرك السيادي الهيكلي الصرف)
+        if let Some(existing_receipt) = self.sovereignty_engine.find_structurally_sovereign(lhs_expr, &dim_lhs, rhs_expr, &deficit_vector) {
+            self.egraph.rollback(checkpoint);
+            return Ok(IncompleteLawReport::already_sovereign(
+                law_name,
+                existing_receipt,
+                lhs_expr,
+                lhs_dim,
+                rhs_expr,
+                rhs_dim,
+            ));
+        }
+
+        // التحقق عبر إغلاق التطابق الرياضي في الـ E-Graph
+        if deficit_vector.is_dimensionless() && self.egraph.find(lhs_class) == self.egraph.find(rhs_class) {
+            if let Some(receipt) = self.sovereignty_engine.sovereign_receipts.values().next() {
+                self.egraph.rollback(checkpoint);
+                return Ok(IncompleteLawReport::already_sovereign(
+                    law_name,
+                    receipt,
+                    lhs_expr,
+                    lhs_dim,
+                    rhs_expr,
+                    rhs_dim,
+                ));
+            }
+        }
+
         // تسجيل تعبيرات القانون في سجل النواة لإعادة الفحص والاختبار اللاحق
         self.law_expressions.insert(
             law_name.to_string(),
@@ -1168,32 +1302,14 @@ impl AletheiaRuntime {
             },
         );
 
-        // 5. استخلاص الشجرة المعرفية القائمة (C_known) ودمجها مع القواعد المرشحة
-        let mut unified_bases: Vec<(String, DimensionVector, Option<CanonicalExpr>)> = Vec::new();
+        // 5. استخلاص الشجرة المعرفية القائمة (C_known)
+        // الأولوية لجسور الاقتران وثوابت الطبيعة (Bridges) كحوامل أبعاد أصيلة، تليها البديهيات السيادية القائمة
+        let canonical_id = compute_canonical_ast_hash(lhs_expr, &dim_lhs);
+        let eq_canonical_id = compute_canonical_equation_hash(lhs_expr, rhs_expr, &deficit_vector);
+        let mut unified_bases = self.sovereignty_engine.get_bridge_basis_candidates();
+        unified_bases.extend(self.sovereignty_engine.get_sovereign_basis_candidates(&canonical_id, &eq_canonical_id));
 
-        // أ. استحضار البديهيات والقوانين السيادية القائمة من الشجرة المعرفية (Sovereign Axioms)
-        for (law_id, receipt) in &self.sovereignty_engine.sovereign_receipts {
-            if !receipt.dimension.is_dimensionless() && law_id != law_name {
-                unified_bases.push((
-                    format!("Axiom({})", law_id),
-                    receipt.dimension.clone(),
-                    Some(receipt.ast.clone()),
-                ));
-            }
-        }
-
-        // ب. استحضار جسور الاقتران المسجلة في النواة
-        for bridge in self.sovereignty_engine.bridge_registry.bridges() {
-            if !bridge.coupling_dimension.is_dimensionless() {
-                unified_bases.push((
-                    bridge.name.clone(),
-                    bridge.coupling_dimension.clone(),
-                    None,
-                ));
-            }
-        }
-
-        // ج. دمج أي مرشحات مخصصة مررت صراحة في الاستدعاء
+        // دمج أي مرشحات مخصصة مررت صراحة في الاستدعاء
         for (name, dim) in candidate_bases {
             if !unified_bases.iter().any(|(n, d, _)| n == *name || d == dim) {
                 unified_bases.push((name.to_string(), dim.clone(), None));
@@ -1210,7 +1326,7 @@ impl AletheiaRuntime {
 
         // 7. استدعاء منسق العجز في فضاء يونيدا مع الفحص الطيفي للأقفال الأربعة
         let target = DeficitTarget::scalar(lhs_expr, rhs_expr);
-        let mut outcome = DeficitOrchestrator::resolve_deficit(
+        let outcome = DeficitOrchestrator::resolve_deficit(
             &self.egraph,
             &self.dim_context,
             target,
@@ -1223,7 +1339,7 @@ impl AletheiaRuntime {
         let mut candidate_solutions = Vec::new();
         let mut completed_expr = None;
 
-        match outcome {
+        let final_outcome = match outcome {
             ResolutionOutcome::ExactEntityResolved { symbol, shadow } => {
                 if let Some(ref sol) = linear_res.particular_solution {
                     let mut factors = vec![rhs_expr.clone()];
@@ -1270,63 +1386,91 @@ impl AletheiaRuntime {
                     completed_expr = Some(completed);
                 }
                 self.egraph.commit(checkpoint);
-                outcome = ResolutionOutcome::ExactEntityResolved { symbol, shadow };
+                ResolutionOutcome::ExactEntityResolved { symbol, shadow }
             }
             ResolutionOutcome::Quarantined(mut shadow) => {
-                // محاولة رتق العجز بالاشتقاقات والتوسع الموجه في الـ E-Graph قبل الحجر (Phase 2: Demand-Driven Deficit Expansion)
-                let dof_int = shadow.dof.to_i64().unwrap_or(1).max(1) as usize;
-                let targets = if shadow.target_classes.is_empty() {
-                    vec![lhs_class, rhs_class]
-                } else {
-                    shadow.target_classes.clone()
-                };
+                let mut resolved_opt = None;
+                if !deficit_vector.is_dimensionless() {
+                    // محاولة رتق العجز البعدي بالبحث الاستكشافي للظل السالب والعقد الشبحية في شجرة المعرفة القائمة (Speculative Yoneda Shadow with Ghost Node)
+                    let spec_target = DeficitTarget::scalar(lhs_expr, rhs_expr);
+                    let speculative_attempt = DeficitOrchestrator::resolve_speculative_with_ghost(
+                        &mut self.egraph,
+                        &self.dim_context,
+                        spec_target,
+                        &raw_bases,
+                        law_name,
+                        &self.ruleset,
+                    );
 
-                let deficit_bound = shadow.macaulay_ceiling.max(1);
-                let deficit_ctx = SimpleDeficitContext::new(
-                    dof_int,
-                    targets,
-                    deficit_bound,
-                );
-                let deficit_sat_config = SaturationConfig::derive(
-                    self.egraph.node_count(),
-                    &self.ruleset,
-                    deficit_bound,
-                    dof_int,
-                    Some((lhs_class, rhs_class)),
-                    Some((lhs_expr, rhs_expr)),
-                );
-                let deficit_engine = SaturationEngine::new(deficit_sat_config);
-                let _ = deficit_engine.run(
-                    &mut self.egraph,
-                    &self.dim_context,
-                    &self.ruleset,
-                    &deficit_ctx,
-                );
-
-                if self.egraph.find(lhs_class) == self.egraph.find(rhs_class) {
-                    shadow.dof = Rational::zero();
-                    let mut hex_id = String::with_capacity(8);
-                    for b in &shadow.shadow_id[0..4] {
-                        hex_id.push_str(&format!("{:02x}", b));
+                    if let Ok(ResolutionOutcome::ExactEntityResolved { symbol, shadow: spec_shadow }) = speculative_attempt {
+                        completed_expr = Some(rhs_expr.clone());
+                        self.egraph.commit(checkpoint);
+                        resolved_opt = Some(ResolutionOutcome::ExactEntityResolved {
+                            symbol,
+                            shadow: spec_shadow,
+                        });
                     }
-                    let symbol = format!("Entity_ExpansionResolved_{}", hex_id);
-                    outcome = ResolutionOutcome::ExactEntityResolved {
-                        symbol,
-                        shadow,
-                    };
-                    completed_expr = Some(rhs_expr.clone());
-                    self.egraph.commit(checkpoint);
+                }
+
+                if let Some(res) = resolved_opt {
+                    res
                 } else {
-                    let record = QuarantineRecord::new(shadow.clone());
-                    self.admit_to_quarantine(record);
-                    self.egraph.rollback(checkpoint);
-                    outcome = ResolutionOutcome::Quarantined(shadow);
+                    // محاولة رتق العجز بالاشتقاقات والتوسع الموجه في الـ E-Graph قبل الحجر (Phase 2: Demand-Driven Deficit Expansion)
+                    let dof_int = shadow.dof.to_i64().unwrap_or(1).max(1) as usize;
+                    let targets = if shadow.target_classes.is_empty() {
+                        vec![lhs_class, rhs_class]
+                    } else {
+                        shadow.target_classes.clone()
+                    };
+
+                    let deficit_bound = shadow.macaulay_ceiling.max(1);
+                    let deficit_ctx = SimpleDeficitContext::new(
+                        dof_int,
+                        targets,
+                        deficit_bound,
+                    );
+                    let deficit_sat_config = SaturationConfig::derive(
+                        self.egraph.node_count(),
+                        &self.ruleset,
+                        deficit_bound,
+                        dof_int,
+                        Some((lhs_class, rhs_class)),
+                        Some((lhs_expr, rhs_expr)),
+                    );
+                    let deficit_engine = SaturationEngine::new(deficit_sat_config);
+                    let _ = deficit_engine.run(
+                        &mut self.egraph,
+                        &self.dim_context,
+                        &self.ruleset,
+                        &deficit_ctx,
+                    );
+
+                    if self.egraph.find(lhs_class) == self.egraph.find(rhs_class) {
+                        shadow.dof = Rational::zero();
+                        let mut hex_id = String::with_capacity(8);
+                        for b in &shadow.shadow_id[0..4] {
+                            hex_id.push_str(&format!("{:02x}", b));
+                        }
+                        let symbol = format!("Entity_ExpansionResolved_{}", hex_id);
+                        completed_expr = Some(rhs_expr.clone());
+                        self.egraph.commit(checkpoint);
+                        ResolutionOutcome::ExactEntityResolved {
+                            symbol,
+                            shadow,
+                        }
+                    } else {
+                        let record = QuarantineRecord::new(shadow.clone());
+                        self.admit_to_quarantine(record);
+                        self.egraph.rollback(checkpoint);
+                        ResolutionOutcome::Quarantined(shadow)
+                    }
                 }
             }
-            ResolutionOutcome::Killed(_) => {
+            ResolutionOutcome::Killed(reason) => {
                 self.egraph.rollback(checkpoint);
+                ResolutionOutcome::Killed(reason)
             }
-        }
+        };
 
         Ok(IncompleteLawReport {
             law_name: law_name.to_string(),
@@ -1336,12 +1480,12 @@ impl AletheiaRuntime {
             rhs_dim: dim_rhs,
             deficit_vector,
             candidate_solutions,
-            outcome,
+            outcome: final_outcome,
             completed_expr,
         })
     }
 
-    /// حقن قانون غير مكتمل في النواة دون أي مرشحات مسبقة لإحالته للحجر ومخطط الارتباط
+    /// حقن قانون غير مكتمل في النواة دون أي مرشحات مسبقة لإحالته مباشرة للحجر ومخطط الارتباط
     pub fn inject_incomplete_law(
         &mut self,
         law_name: &str,
@@ -1350,7 +1494,62 @@ impl AletheiaRuntime {
         rhs_expr: &CanonicalExpr,
         rhs_dim: &DimensionVector,
     ) -> Result<IncompleteLawReport, CoreError> {
-        self.resolve_incomplete_law(law_name, lhs_expr, lhs_dim, rhs_expr, rhs_dim, &[])
+        let dim_lhs = SemanticGuard::infer_dimension(lhs_expr, &self.dim_context)
+            .unwrap_or_else(|_| lhs_dim.clone());
+        let dim_rhs = SemanticGuard::infer_dimension(rhs_expr, &self.dim_context)
+            .unwrap_or_else(|_| rhs_dim.clone());
+        let deficit_vector = &dim_lhs - &dim_rhs;
+
+        // التحقق الهيكلي مما إذا كان القانون مسجلاً كبديهية سيادية بالفعل في النواة (عبر المحرك السيادي)
+        if let Some(existing_receipt) = self.sovereignty_engine.find_structurally_sovereign(lhs_expr, &dim_lhs, rhs_expr, &deficit_vector) {
+            return Ok(IncompleteLawReport::already_sovereign(
+                law_name,
+                existing_receipt,
+                lhs_expr,
+                lhs_dim,
+                rhs_expr,
+                rhs_dim,
+            ));
+        }
+
+        let canonical_id = compute_canonical_ast_hash(lhs_expr, &dim_lhs);
+
+        self.law_expressions.insert(
+            law_name.to_string(),
+            QuarantinedLawExprs {
+                law_name: law_name.to_string(),
+                lhs_expr: lhs_expr.clone(),
+                lhs_dim: dim_lhs.clone(),
+                rhs_expr: rhs_expr.clone(),
+                rhs_dim: dim_rhs.clone(),
+            },
+        );
+
+        let shadow = LatentShadow {
+            shadow_id: canonical_id,
+            origin_law_ids: vec![law_name.to_string()],
+            dim_deficit: deficit_vector.clone(),
+            tensorial_rank: 0,
+            dof: Rational::one(),
+            spectral_audit: Default::default(),
+            coupling_carrier: None,
+            target_classes: Vec::new(),
+            macaulay_ceiling: 0,
+        };
+        let record = QuarantineRecord::new(shadow.clone());
+        self.admit_to_quarantine(record);
+
+        Ok(IncompleteLawReport {
+            law_name: law_name.to_string(),
+            lhs_expr: lhs_expr.clone(),
+            lhs_dim: dim_lhs,
+            rhs_expr: rhs_expr.clone(),
+            rhs_dim: dim_rhs,
+            deficit_vector,
+            candidate_solutions: Vec::new(),
+            outcome: ResolutionOutcome::Quarantined(shadow),
+            completed_expr: None,
+        })
     }
 
     /// تشغيل دورة الاستنباط والاكتشاف الذاتي للثوابت الكونية المشتركة (Autonomous Constant Discovery)
@@ -1359,7 +1558,7 @@ impl AletheiaRuntime {
     pub fn discover_and_consolidate_constants(
         &mut self,
     ) -> Result<Vec<ConstantDiscoveryReport>, CoreError> {
-        let mut reports = Vec::new();
+        let mut reports: Vec<ConstantDiscoveryReport> = Vec::new();
         let mut processed_records = HashSet::new();
 
         // استخراج كافة الحواف الفائقة المرشحة للدمج (تضم فرضيتين أو أكثر)
@@ -1439,15 +1638,24 @@ impl AletheiaRuntime {
                     });
                 }
 
-                reports.push(ConstantDiscoveryReport {
-                    hyperedge_id: hedge_id,
-                    carrier_symbol,
-                    carrier_dimension: carrier_dim,
-                    freed_count: consolidation_res.freed_records.len(),
-                    freed_laws,
-                    joint_rank: consolidation_res.joint_rank,
-                    final_dof: consolidation_res.remaining_dof,
-                });
+                if let Some(existing_rep) = reports.iter_mut().find(|r| r.carrier_dimension == carrier_dim) {
+                    for law in freed_laws {
+                        if !existing_rep.freed_laws.iter().any(|l| l.record_id == law.record_id) {
+                            existing_rep.freed_laws.push(law);
+                            existing_rep.freed_count += 1;
+                        }
+                    }
+                } else {
+                    reports.push(ConstantDiscoveryReport {
+                        hyperedge_id: hedge_id,
+                        carrier_symbol,
+                        carrier_dimension: carrier_dim,
+                        freed_count: consolidation_res.freed_records.len(),
+                        freed_laws,
+                        joint_rank: consolidation_res.joint_rank,
+                        final_dof: consolidation_res.remaining_dof,
+                    });
+                }
             }
         }
 
@@ -1749,10 +1957,10 @@ impl AletheiaRuntime {
             // 2. تجذير القوانين السيادية في ركيزة الـ DNA (Sovereign DNA Ingestion)
             let mut sovereign_receipts = Vec::new();
             for law in &report.freed_laws {
-                let (lhs, lhs_dim) = if let Some(info) = self.law_expressions.get(&law.law_name) {
-                    (info.lhs_expr.clone(), info.lhs_dim.clone())
+                let (lhs, lhs_dim, rhs_expr_opt) = if let Some(info) = self.law_expressions.get(&law.law_name) {
+                    (info.lhs_expr.clone(), info.lhs_dim.clone(), Some(info.rhs_expr.clone()))
                 } else {
-                    (CanonicalExpr::Var(VariableId(9990)), law.dim_deficit.clone())
+                    (CanonicalExpr::Var(VariableId(9990)), law.dim_deficit.clone(), None)
                 };
 
                 let lock_receipts = vec![
@@ -1763,10 +1971,11 @@ impl AletheiaRuntime {
                 ];
 
                 let cost = Cost::from_expr(&lhs);
+                let canonical_id = compute_canonical_ast_hash(&lhs, &lhs_dim);
                 let receipt = SovereignReceipt::issue_active(
                     law.law_name.clone(),
-                    blake3::hash(law.law_name.as_bytes()).into(),
-                    lhs,
+                    canonical_id,
+                    lhs.clone(),
                     DomainTag::UniversalAbstract,
                     lhs_dim,
                     cost,
@@ -1776,7 +1985,21 @@ impl AletheiaRuntime {
                     1,
                     0,
                 );
+                self.sovereignty_engine.arbitrator.register_law(&law.law_name, LawStatus::ActiveAxiom);
+                self.sovereignty_engine.sovereign_receipts.insert(law.law_name.clone(), receipt.clone());
                 sovereign_receipts.push(receipt);
+
+                // دمج القانون المتوج في النسيج الحي للنواة (E-Graph & Rewrite Ruleset)
+                if let Some(rhs) = rhs_expr_opt {
+                    self.integrate_sovereign_law_into_live_substrate(&law.law_name, &lhs, &rhs);
+                } else {
+                    let _ = self.egraph.add_expr(&lhs, &self.dim_context);
+                    let _ = self.egraph.rebuild();
+                }
+
+                // سحب الفرضية المتوجة من الحجر ومخطط الارتباط فور تتويجها (Axis 6: Sovereign Promotion & Eviction)
+                self.quarantine.remove(&law.record_id);
+                self.hypergraph.remove_record(&law.record_id);
             }
 
             if !sovereign_receipts.is_empty() {
@@ -1785,7 +2008,14 @@ impl AletheiaRuntime {
             }
 
             // 3. زرع ثابت الاقتران المكتشف كجسر في الـ DNA
-            let target_domain = if current_rank > 1 { current_rank - 1 } else { 1 };
+            let inferred_domain = DomainTag::infer_from_coupling_dimension(&report.carrier_dimension);
+            let target_domain = if inferred_domain != DomainTag::UniversalAbstract {
+                inferred_domain.id()
+            } else if current_rank > 1 {
+                current_rank - 1
+            } else {
+                1
+            };
             let _ = self.dna_engine.materialize_bridge(0, target_domain, Rational::one(), Rational::one());
 
             if !report.carrier_dimension.is_dimensionless() {
@@ -1796,32 +2026,70 @@ impl AletheiaRuntime {
                     report.freed_laws.len(),
                     formatted_dim
                 );
-                let suggested_name = format!("CouplingConstant_{}", report.carrier_symbol);
 
-                let mut const_rep = CouplingConstantDiscoveryReport {
-                    constant_id: self.sovereignty_engine.bridge_registry.bridges().len() + 1,
-                    source_law_name: first_law,
-                    source_equation: "".to_string(),
-                    coupling_dimension: report.carrier_dimension.clone(),
-                    formatted_dimension: formatted_dim,
-                    source_domain: Some("UniversalAbstract".to_string()),
-                    target_domain: Some(format!("Domain_{}", target_domain)),
-                    derivation_trail,
-                    suggested_symbol: report.carrier_symbol.clone(),
-                    suggested_name: suggested_name.clone(),
-                    chosen_symbol: report.carrier_symbol.clone(),
-                    chosen_name: suggested_name.clone(),
+                // فحص ما إذا كان الجسر مسجلاً بالفعل في السجل الإبستمولوجي لمنع التكرار وسؤال المستخدم عبثاً
+                let existing_bridge_opt = self.sovereignty_engine.bridge_registry.find_bridge_by_dimension(&report.carrier_dimension).cloned();
+
+                let const_rep = if let Some(existing) = existing_bridge_opt {
+                    CouplingConstantDiscoveryReport {
+                        constant_id: self.sovereignty_engine.bridge_registry.bridges().len(),
+                        source_law_name: first_law,
+                        source_equation: "".to_string(),
+                        coupling_dimension: report.carrier_dimension.clone(),
+                        formatted_dimension: formatted_dim,
+                        source_domain: Some("UniversalAbstract".to_string()),
+                        target_domain: Some(format!("{:?}", existing.target)),
+                        derivation_trail,
+                        suggested_symbol: report.carrier_symbol.clone(),
+                        suggested_name: existing.name.clone(),
+                        chosen_symbol: report.carrier_symbol.clone(),
+                        chosen_name: existing.name.clone(),
+                    }
+                } else {
+                    let suggested_name = format!("CouplingConstant_{}", report.carrier_symbol);
+
+                    let mut const_rep = CouplingConstantDiscoveryReport {
+                        constant_id: self.sovereignty_engine.bridge_registry.bridges().len() + 1,
+                        source_law_name: first_law,
+                        source_equation: "".to_string(),
+                        coupling_dimension: report.carrier_dimension.clone(),
+                        formatted_dimension: formatted_dim,
+                        source_domain: Some("UniversalAbstract".to_string()),
+                        target_domain: Some(format!("{:?}", DomainTag::from_id(target_domain))),
+                        derivation_trail,
+                        suggested_symbol: report.carrier_symbol.clone(),
+                        suggested_name: suggested_name.clone(),
+                        chosen_symbol: report.carrier_symbol.clone(),
+                        chosen_name: suggested_name.clone(),
+                    };
+
+                    if let Some(ref mut hook) = self.constant_naming_hook {
+                        let (user_name, user_sym) = hook(&const_rep);
+                        if !user_name.trim().is_empty() {
+                            const_rep.chosen_name = user_name.trim().to_string();
+                        }
+                        if !user_sym.trim().is_empty() {
+                            const_rep.chosen_symbol = user_sym.trim().to_string();
+                        }
+                    }
+
+                    // تدشين الجسر الميتا-معرفي عبر الأقفال الأربعة (Axis 7: Meta-Admission Protocol)
+                    let candidate = CandidateBridge::new(
+                        const_rep.chosen_name.clone(),
+                        DomainTag::from_id(0),
+                        DomainTag::from_id(target_domain),
+                        const_rep.coupling_dimension.clone(),
+                        Rational::one(),
+                    );
+                    let _ = self.sovereignty_engine.admit_bridge(
+                        &candidate,
+                        None,
+                        None,
+                        Some(&mut self.egraph),
+                    )?;
+
+                    const_rep
                 };
-
-                if let Some(ref mut hook) = self.constant_naming_hook {
-                    let (user_name, user_sym) = hook(&const_rep);
-                    if !user_name.trim().is_empty() {
-                        const_rep.chosen_name = user_name.trim().to_string();
-                    }
-                    if !user_sym.trim().is_empty() {
-                        const_rep.chosen_symbol = user_sym.trim().to_string();
-                    }
-                }
 
                 spawned_constant_reports.push(const_rep);
             }

@@ -3,6 +3,7 @@ use crate::mmap_engine::DnaStorageEngine;
 use crate::packed_enode::{ENODE_SIZE, FLAG_IMMUTABLE_CONST, PackedENode};
 use crate::record::{
     UniversalRecordPrefix, RECORD_PREFIX_SIZE, RECORD_STATUS_ACTIVE, RECORD_TYPE_BRIDGE_DEF,
+    RECORD_TYPE_SOVEREIGN_AXIOM,
 };
 use aletheia_algebra::Rational;
 use aletheia_epistemic::SovereignDnaPayload;
@@ -24,13 +25,18 @@ impl DirectBridgeRoutingMatrix {
         }
     }
 
-    /// تسجيل جسر أولي مباشر
+    /// تسجيل جسر أولي مباشر مع ضمان عدم التكرار (Idempotence)
     pub fn register_direct_bridge(
         &mut self,
         source: u16,
         target: u16,
         scale: Rational,
     ) {
+        if let Some((path, existing_scale)) = self.routes.get(&(source, target)) {
+            if path.len() == 2 && path[0] == source && path[1] == target && *existing_scale == scale {
+                return;
+            }
+        }
         self.routes.insert((source, target), (vec![source, target], scale.clone()));
         if !scale.is_zero() {
             let inv_scale = Rational::one() / scale;
@@ -195,6 +201,13 @@ impl AutonomousEvolutionEngine {
         target_domain: u16,
         scale: Rational,
     ) -> Result<u32, DnaError> {
+        // فحص ما إذا كان الجسر المباشر مسجلاً بالفعل بنفس المقياس لمنع التكرار في ركيزة الـ DNA
+        if let Some((path, k_cum)) = self.routing_matrix.query_route(source_domain, target_domain) {
+            if path.len() == 2 && path[0] == source_domain && path[1] == target_domain && k_cum == scale {
+                return Ok(0);
+            }
+        }
+
         let const_node_idx = self.storage.header.total_enodes;
         let const_class_id = self.storage.header.total_classes;
 
@@ -343,6 +356,43 @@ impl AutonomousEvolutionEngine {
             })?;
             let payload_crc = UniversalRecordPrefix::compute_crc(&receipt_bytes);
             let domain_id = receipt.domain.id();
+
+            // فحص ما إذا كان الصك السيادي مسجلاً مسبقاً في قطاع الـ Lineage لمنع التكرار (Idempotence)
+            let already_exists = {
+                let buf = self.storage.buffer();
+                let mut offset = self.storage.header.offset_lineage as usize;
+                let lineage_end = offset + self.storage.header.lineage_size as usize;
+                let mut found = false;
+
+                while offset + RECORD_PREFIX_SIZE <= lineage_end && offset + RECORD_PREFIX_SIZE <= buf.len() {
+                    if let Ok(prefix) = UniversalRecordPrefix::from_bytes(&buf[offset..offset + RECORD_PREFIX_SIZE]) {
+                        let p_start = offset + RECORD_PREFIX_SIZE;
+                        let p_end = p_start + prefix.payload_len as usize;
+                        if p_end > buf.len() || p_end > lineage_end {
+                            break;
+                        }
+
+                        if prefix.record_type == RECORD_TYPE_SOVEREIGN_AXIOM
+                            && prefix.status == RECORD_STATUS_ACTIVE
+                            && prefix.payload_crc == payload_crc
+                            && prefix.payload_len == receipt_bytes.len() as u32
+                        {
+                            if &buf[p_start..p_end] == receipt_bytes.as_slice() {
+                                found = true;
+                                break;
+                            }
+                        }
+                        offset = p_end;
+                    } else {
+                        break;
+                    }
+                }
+                found
+            };
+
+            if already_exists {
+                continue;
+            }
 
             let prefix = UniversalRecordPrefix::new_axiom(
                 receipt_bytes.len() as u32,

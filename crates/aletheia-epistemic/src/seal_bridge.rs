@@ -147,6 +147,26 @@ impl DomainTag {
         let target_dim = target.composite_dimension();
         &target_dim - &source_dim
     }
+
+    /// استنتاج المجال الفيزيائي الأنسب بناءً على البعد الكنسي لثابت الاقتران
+    pub fn infer_from_coupling_dimension(dim: &DimensionVector) -> DomainTag {
+        let coords = dim.coords();
+        if coords.len() >= 3 {
+            // [1, 0, -1] -> النسبية (سرعة الضوء c)
+            if coords[0] == Rational::one() && coords[1] == Rational::zero() && coords[2] == Rational::from_i64(-1) {
+                return DomainTag::Relativity;
+            }
+            // [2, 1, -1] -> ميكانيكا الكم (ثابت بلانك ħ)
+            if coords[0] == Rational::from_i64(2) && coords[1] == Rational::one() && coords[2] == Rational::from_i64(-1) {
+                return DomainTag::QuantumMechanics;
+            }
+            // [3, -1, -2] -> الميكانيكا الكلاسيكية / الجاذبية النيوتنية (ثابت الجذب العام G)
+            if coords[0] == Rational::from_i64(3) && coords[1] == Rational::from_i64(-1) && coords[2] == Rational::from_i64(-2) {
+                return DomainTag::ClassicalMechanics;
+            }
+        }
+        DomainTag::UniversalAbstract
+    }
 }
 
 impl From<u16> for DomainTag {
@@ -224,8 +244,26 @@ impl BridgeRegistry {
         }
     }
 
-    /// تسجيل جسر معتمد في السجل
+    /// البحث عن جسر معتمد بواسطة متجه أبعاد ثابت الاقتران
+    pub fn find_bridge_by_dimension(&self, dim: &DimensionVector) -> Option<&DomainBridge> {
+        self.bridges.iter().find(|b| &b.coupling_dimension == dim)
+    }
+
+    /// البحث عن جسر معتمد بواسطة اسم الجسر
+    pub fn find_bridge_by_name(&self, name: &str) -> Option<&DomainBridge> {
+        self.bridges.iter().find(|b| b.name.eq_ignore_ascii_case(name))
+    }
+
+    /// تسجيل جسر معتمد في السجل مع التحقق القطعي من عدم التكرار (Strict Idempotence)
     pub fn register_bridge(&mut self, bridge: DomainBridge) {
+        if let Some(existing) = self.bridges.iter_mut().find(|b| {
+            (b.source == bridge.source && b.target == bridge.target && b.coupling_dimension == bridge.coupling_dimension)
+            || (b.coupling_dimension == bridge.coupling_dimension && b.name.eq_ignore_ascii_case(&bridge.name))
+            || (b.coupling_dimension == bridge.coupling_dimension && (b.source == DomainTag::UniversalAbstract || bridge.source == DomainTag::UniversalAbstract))
+        }) {
+            existing.coupling_scale = bridge.coupling_scale;
+            return;
+        }
         self.bridges.push(bridge);
     }
 

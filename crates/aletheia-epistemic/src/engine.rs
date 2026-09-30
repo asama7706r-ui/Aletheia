@@ -5,11 +5,13 @@ use crate::dna_handshake::SovereignDnaPayload;
 use crate::error::EpistemicError;
 use crate::gatekeeper::EpistemicGatekeeper;
 use crate::logic::{AuditTarget, EpistemicStatus, GatekeeperMode};
+use crate::meta_admission::{CandidateBridge, MetaAdmissionProtocol};
 use crate::seal_anchoring::NoetherRegistry;
-use crate::seal_bridge::{BridgeRegistry, DomainTag};
+use crate::seal_bridge::{BridgeRegistry, DomainBridge, DomainTag};
 use crate::sovereign_receipt::SovereignReceipt;
-use aletheia_algebra::Rational;
+use aletheia_algebra::{CanonicalExpr, Rational};
 use aletheia_egraph::TransactionalEGraph;
+use aletheia_lattice::DimensionVector;
 use aletheia_yoneda::CandidateSovereignLawAST;
 use std::collections::{HashMap, HashSet};
 
@@ -59,6 +61,66 @@ impl EpistemicSovereigntyEngine {
     /// ربط بعد فيزيائي لمتغير في بوابة السيادة
     pub fn bind_variable(&mut self, var: aletheia_algebra::VariableId, dim: aletheia_lattice::DimensionVector) {
         self.gatekeeper.bind_variable(var, dim);
+    }
+
+    /// البحث عن صك سيادي بالبصمة الكنسية BLAKE3
+    pub fn find_sovereign_by_canonical_id(&self, canonical_id: &[u8; 32]) -> Option<&SovereignReceipt> {
+        self.sovereign_receipts.values().find(|r| &r.canonical_id == canonical_id)
+    }
+
+    /// التحقق الهيكلي مما إذا كان التعبير أو المعادلة مسجلة كبديهية سيادية مسبقاً
+    pub fn find_structurally_sovereign(
+        &self,
+        lhs: &CanonicalExpr,
+        lhs_dim: &DimensionVector,
+        rhs: &CanonicalExpr,
+        deficit: &DimensionVector,
+    ) -> Option<&SovereignReceipt> {
+        let canonical_id = SovereignReceipt::compute_canonical_ast_hash(lhs, lhs_dim);
+        let eq_canonical_id = SovereignReceipt::compute_canonical_equation_hash(lhs, rhs, deficit);
+
+        self.sovereign_receipts.values().find(|r| {
+            r.canonical_id == canonical_id
+                || r.canonical_id == eq_canonical_id
+                || (r.ast == *lhs && r.dimension == *lhs_dim)
+        })
+    }
+
+    /// استخراج البديهيات السيادية القائمة كقواعد مرشحة لحل العجز مع استبعاد القانون الحالي هيكلياً
+    pub fn get_sovereign_basis_candidates(
+        &self,
+        exclude_canonical_id: &[u8; 32],
+        exclude_eq_id: &[u8; 32],
+    ) -> Vec<(String, DimensionVector, Option<CanonicalExpr>)> {
+        let mut bases = Vec::new();
+        for (law_id, receipt) in &self.sovereign_receipts {
+            if !receipt.dimension.is_dimensionless()
+                && receipt.canonical_id != *exclude_canonical_id
+                && receipt.canonical_id != *exclude_eq_id
+            {
+                bases.push((
+                    format!("Axiom({})", law_id),
+                    receipt.dimension.clone(),
+                    Some(receipt.ast.clone()),
+                ));
+            }
+        }
+        bases
+    }
+
+    /// استخراج جسور الاقتران وثوابت الطبيعة المسجلة كقواعد مرشحة لحل العجز البعدي (C_known)
+    pub fn get_bridge_basis_candidates(&self) -> Vec<(String, DimensionVector, Option<CanonicalExpr>)> {
+        let mut bases = Vec::new();
+        for bridge in self.bridge_registry.bridges() {
+            if !bridge.coupling_dimension.is_dimensionless() {
+                bases.push((
+                    bridge.name.clone(),
+                    bridge.coupling_dimension.clone(),
+                    None,
+                ));
+            }
+        }
+        bases
     }
 
     /// تقييم مرشح سيادي قادم من الحجر الصحي وحسم مصيره الدستوري وتتويجه
@@ -286,6 +348,26 @@ impl EpistemicSovereigntyEngine {
             .values()
             .filter(|r| r.status == LawStatus::ActiveAxiom)
             .collect()
+    }
+
+    /// تدشين جسر أنطولوجي جديد عبر الأقفال الأربعة الميتا-معرفية واعتماده في السجل وبوابة السيادة
+    pub fn admit_bridge(
+        &mut self,
+        candidate: &CandidateBridge,
+        source_dim: Option<&DimensionVector>,
+        target_dim: Option<&DimensionVector>,
+        egraph_opt: Option<&mut TransactionalEGraph>,
+    ) -> Result<DomainBridge, EpistemicError> {
+        let bridge = MetaAdmissionProtocol::admit_bridge(
+            &self.bridge_registry,
+            candidate,
+            source_dim,
+            target_dim,
+            egraph_opt,
+        )?;
+        self.bridge_registry.register_bridge(bridge.clone());
+        self.gatekeeper.bridge_registry.register_bridge(bridge.clone());
+        Ok(bridge)
     }
 }
 

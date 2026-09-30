@@ -116,17 +116,22 @@ pub fn parse_math_to_ast(input: &str) -> Result<Expression, String> {
         return Err("Input mathematical expression is empty".to_string());
     }
 
-    // 1. Try standard LaTeX parser
-    if let Ok(expr) = mathlex::parse_latex(&clean) {
+    // 1. If LaTeX commands are present (contains backslash)
+    if clean.contains('\\') {
+        if let Ok(expr) = mathlex::parse_latex(&clean) {
+            return Ok(expr);
+        }
+    }
+
+    // 2. Try standard plain-text math parser first (handles `*`, `/`, `^`, identifiers, numbers)
+    if let Ok(expr) = mathlex::parse(&clean) {
         return Ok(expr);
     }
-    // 2. Try lenient LaTeX parser
-    let lenient = mathlex::parse_latex_lenient(&clean);
-    if let Some(expr) = lenient.expression {
-        return Ok(expr);
-    }
-    // 3. Fallback to plain text parser
-    mathlex::parse(&clean).map_err(|e| {
+
+    // 3. Fallback to LaTeX parser (e.g. for LaTeX syntax without backslashes)
+    // NOTE: We intentionally avoid mathlex::parse_latex_lenient because it contains
+    // an unbounded loop bug in mathlex-0.4.2 that exhausts memory (allocates >10GB) on non-LaTeX tokens.
+    mathlex::parse_latex(&clean).map_err(|e| {
         format!(
             "Failed to parse mathematical expression '{}': {:?}",
             input, e
@@ -418,7 +423,12 @@ pub fn parse_dimension_str_with_registry(
     }
 
     // 3. Algebraic / LaTeX dimensional expression of base dimensions
-    parse_dimensional_algebraic_expr_with_registry(s, registry)
+    let expr_to_parse = if s.starts_with('[') && s.ends_with(']') {
+        stripped.replace(',', " * ")
+    } else {
+        s.to_string()
+    };
+    parse_dimensional_algebraic_expr_with_registry(&expr_to_parse, registry)
 }
 
 /// Evaluates a LaTeX or algebraic dimensional expression (e.g. \frac{L^2 \cdot M}{T^2} or L^2 * M / T^2)

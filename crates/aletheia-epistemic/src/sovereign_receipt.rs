@@ -268,4 +268,38 @@ impl SovereignReceipt {
         let mut cursor = std::io::Cursor::new(bytes);
         crate::dna_handshake::SovereignDnaPayload::read_receipt(&mut cursor)
     }
+
+    /// حساب البصمة الكنسية BLAKE3 للتعبير الرياضي والأبعاد دون أي اعتماد على اسم القانون النصي
+    pub fn compute_canonical_ast_hash(ast: &CanonicalExpr, dim: &DimensionVector) -> [u8; 32] {
+        let mut hasher = Hasher::new();
+        hasher.update(b"ALETHEIA_CANONICAL_AST_V1");
+        hasher.update(format!("{:?}", ast).as_bytes());
+        for i in 0..dim.effective_len() {
+            hasher.update(dim.get_coord(i).to_string().as_bytes());
+        }
+        *hasher.finalize().as_bytes()
+    }
+
+    /// حساب البصمة الكنسية BLAKE3 لمعادلة غير مكتملة (LHS, RHS, Deficit)
+    pub fn compute_canonical_equation_hash(
+        lhs: &CanonicalExpr,
+        rhs: &CanonicalExpr,
+        deficit: &DimensionVector,
+    ) -> [u8; 32] {
+        let mut hasher = Hasher::new();
+        hasher.update(b"ALETHEIA_CANONICAL_EQUATION_V1");
+        let (first, second) = if format!("{:?}", lhs) <= format!("{:?}", rhs) {
+            (lhs, rhs)
+        } else {
+            (rhs, lhs)
+        };
+        hasher.update(format!("{:?}", first).as_bytes());
+        hasher.update(b"=");
+        hasher.update(format!("{:?}", second).as_bytes());
+        for i in 0..deficit.effective_len() {
+            hasher.update(deficit.get_coord(i).to_string().as_bytes());
+        }
+        *hasher.finalize().as_bytes()
+    }
 }
+

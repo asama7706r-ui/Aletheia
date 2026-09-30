@@ -535,3 +535,161 @@ fn test_demand_expansion_algebraic_deficit_resolution() {
     }
 }
 
+#[test]
+fn test_structural_identity_and_minimal_support_basis_resolution() {
+    let mut runtime = AletheiaRuntime::boot_or_create(None, 4)
+        .expect("In-memory kernel boot must succeed");
+
+    // 1. تعريف 4 ثوابت في القاعدة المرشحة (N = 4 > rank = 3)
+    let candidate_bases = vec![
+        ("c (Speed of Light)".to_string(), DimensionVector::from_integers(&[1, 0, -1, 0])),
+        ("G (Gravitational Constant)".to_string(), DimensionVector::from_integers(&[3, -1, -2, 0])),
+        ("ħ (Reduced Planck Constant)".to_string(), DimensionVector::from_integers(&[2, 1, -1, 0])),
+        ("k_B (Boltzmann Constant)".to_string(), DimensionVector::from_integers(&[2, 1, -2, -1])),
+    ];
+    let candidate_refs: Vec<(&str, DimensionVector)> = candidate_bases
+        .iter()
+        .map(|(n, d)| (n.as_str(), d.clone()))
+        .collect();
+
+    // 2. فحص قانون كومبتون: lambda * m = 1 -> العجز [L]^1 [M]^1
+    let var_lambda = VariableId(401);
+    let var_m = VariableId(402);
+    runtime.dim_context.bind(var_lambda, DimensionVector::from_integers(&[1, 0, 0, 0])); // L
+    runtime.dim_context.bind(var_m, DimensionVector::from_integers(&[0, 1, 0, 0]));      // M
+
+    let lhs_compton = CanonicalExpr::Mul(vec![CanonicalExpr::Var(var_lambda), CanonicalExpr::Var(var_m)]);
+    let rhs_compton = CanonicalExpr::Const(Rational::one());
+    let dim_lm = DimensionVector::from_integers(&[1, 1, 0, 0]);
+    let dim_one = DimensionVector::dimensionless();
+
+    let rep_compton = runtime
+        .resolve_incomplete_law("compton_user_label_1", &lhs_compton, &dim_lm, &rhs_compton, &dim_one, &candidate_refs)
+        .expect("Resolution must succeed");
+
+    // التحقق من أن خوارزمية أوكام (Minimal Support RREF) لم تقع في فخ تضخيم درجات الحرية (dof = 0)
+    match rep_compton.outcome {
+        ResolutionOutcome::ExactEntityResolved { symbol, shadow } => {
+            assert_eq!(shadow.dof, Rational::zero(), "DoF must be zero for minimal support solution");
+            assert!(symbol.contains("DeficitResolved"), "Must resolve deficit exactly");
+        }
+        other => panic!("Expected ExactEntityResolved for compton despite 4 bases, got {:?}", other),
+    }
+
+    // 3. فحص قانون شفارتزشيلد: r = m -> العجز [L]^1 [M]^-1
+    let var_r = VariableId(403);
+    let var_mass = VariableId(404);
+    runtime.dim_context.bind(var_r, DimensionVector::from_integers(&[1, 0, 0, 0]));    // L
+    runtime.dim_context.bind(var_mass, DimensionVector::from_integers(&[0, 1, 0, 0])); // M
+
+    let lhs_schwarz = CanonicalExpr::Var(var_r);
+    let rhs_schwarz = CanonicalExpr::Var(var_mass);
+    let dim_l = DimensionVector::from_integers(&[1, 0, 0, 0]);
+    let dim_m = DimensionVector::from_integers(&[0, 1, 0, 0]);
+
+    let rep_schwarz = runtime
+        .resolve_incomplete_law("schwarzschild_user_label_1", &lhs_schwarz, &dim_l, &rhs_schwarz, &dim_m, &candidate_refs)
+        .expect("Resolution must succeed");
+
+    match rep_schwarz.outcome {
+        ResolutionOutcome::ExactEntityResolved { shadow, .. } => {
+            assert_eq!(shadow.dof, Rational::zero(), "Schwarzschild DoF must be 0 with c^-2 * G");
+        }
+        other => panic!("Expected ExactEntityResolved for schwarzschild, got {:?}", other),
+    }
+
+    // 4. التحقق من الهوية الهيكلية: تقديم قانون مطابق تماماً ولكن باسم مستخدم مختلف تماماً
+    // يجب أن يتعرف عليه النظام هيكلياً دون الاعتماد على الاسم
+    let rep_duplicate = runtime
+        .resolve_incomplete_law("totally_different_label_2", &lhs_compton, &dim_lm, &rhs_compton, &dim_one, &candidate_refs)
+        .expect("Resolution must succeed");
+    assert!(matches!(rep_duplicate.outcome, ResolutionOutcome::ExactEntityResolved { .. }));
+}
+
+#[test]
+fn test_rel_energy_rejects_fractional_newton_and_resolves_with_c_squared() {
+    let mut runtime = AletheiaRuntime::boot_or_create(None, 7)
+        .expect("In-memory kernel boot must succeed");
+
+    // 1. تسجيل قانون نيوتن كبديهية سيادية ببعد القوة [L M T^-2]
+    let f_expr = CanonicalExpr::Var(VariableId(501));
+    let dim_f = DimensionVector::from_integers(&[1, 1, -2]); // Force [L M T^-2]
+    runtime.register_sovereign_axiom(
+        "newton_gravitation",
+        f_expr,
+        DomainTag::ClassicalMechanics,
+        dim_f,
+    ).expect("Newton axiom registration must succeed");
+
+    // 2. تسجيل ثابت الجاذبية G كجسر اقتران كوني ببعد [L^3 M^-1 T^-2]
+    let dim_g = DimensionVector::from_integers(&[3, -1, -2]);
+    let _ = runtime.discover_coupling_constant(
+        "newton_law",
+        "F = G m1 m2 / r^2",
+        dim_g,
+        None,
+        None,
+        "G",
+        "GravitationalConstant",
+    ).expect("G materialization must succeed");
+
+    // 3. تقديم قانون تكافؤ الكتلة والطاقة النسبي: E = m حيث العجز هو [L^2 T^-2]
+    // التحقق الصارم: يجب ألا يُحل عرضياً بالأسس الكسرية (Newton)^1/2 * G^1/2 بل يجب حجره فوراً!
+    let e_var = CanonicalExpr::Var(VariableId(601));
+    let m_var = CanonicalExpr::Var(VariableId(602));
+    let dim_e = DimensionVector::from_integers(&[2, 1, -2]); // [L^2 M T^-2]
+    let dim_m = DimensionVector::from_integers(&[0, 1, 0]);  // [M]
+
+    let rep = runtime.resolve_incomplete_law(
+        "rel_energy",
+        &e_var,
+        &dim_e,
+        &m_var,
+        &dim_m,
+        &[],
+    ).expect("Resolution attempt must succeed");
+
+    // التحقق: يجب أن يحال للحجر الصحي بسبب عدم وجود حل بالأعداد الصحيحة في شبكية Z^N
+    match rep.outcome {
+        ResolutionOutcome::Quarantined(shadow) => {
+            assert!(shadow.dof > Rational::zero(), "DoF must be positive (unresolved) without light speed c");
+        }
+        ResolutionOutcome::ExactEntityResolved { symbol, .. } => {
+            panic!("Spurious resolution detected! Matched fabricated combination: {}", symbol);
+        }
+        other => panic!("Expected Quarantined, got {:?}", other),
+    }
+
+    // 4. الآن، نسجل سرعة الضوء c كجسر اقتران حقيقي ببعد [L T^-1]
+    let dim_c = DimensionVector::from_integers(&[1, 0, -1]);
+    let _ = runtime.discover_coupling_constant(
+        "light_law",
+        "c = lambda nu",
+        dim_c,
+        None,
+        None,
+        "c",
+        "SpeedOfLight",
+    ).expect("Speed of light materialization must succeed");
+
+    // 5. إعادة تقديم القانون: الآن يجب أن ينحل بالكامل عبر c^2 (الأس الصحيح 2)
+    let rep_solved = runtime.resolve_incomplete_law(
+        "rel_energy",
+        &e_var,
+        &dim_e,
+        &m_var,
+        &dim_m,
+        &[],
+    ).expect("Resolution attempt must succeed");
+
+    match rep_solved.outcome {
+        ResolutionOutcome::ExactEntityResolved { shadow, .. } => {
+            assert_eq!(shadow.dof, Rational::zero(), "DoF must be 0 with c^2");
+            assert_eq!(rep_solved.candidate_solutions.len(), 1);
+            assert_eq!(rep_solved.candidate_solutions[0].0, "SpeedOfLight");
+            assert_eq!(rep_solved.candidate_solutions[0].1, Rational::from_i64(2)); // c^2
+        }
+        other => panic!("Expected ExactEntityResolved with SpeedOfLight^2, got {:?}", other),
+    }
+}
+

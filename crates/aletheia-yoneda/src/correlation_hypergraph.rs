@@ -161,11 +161,31 @@ impl CorrelationHypergraph {
         }
     }
 
-    /// استخراج كافة الحواف الفائقة المؤهلة لدمج النيوترينو (تضم فرضيتين أو أكثر)
+    /// إزالة فرضية تماماً من مخطط الارتباط الفائق عند ترقيتها سيادياً أو إبطالها
+    pub fn remove_record(&mut self, record_id: &[u8; 32]) {
+        if let Some(r) = self.records.remove(record_id) {
+            for hedge_id in &r.hyperedge_keys {
+                if let Some(hedge) = self.hyperedges.get_mut(hedge_id) {
+                    hedge.members.retain(|m| m != record_id);
+                }
+            }
+        }
+    }
+
+    /// استخراج كافة الحواف الفائقة المؤهلة لدمج النيوترينو (تضم فرضيتين أو أكثر نشطة وذات درجات حرية غير مصفّرة)
     pub fn consolidation_candidates(&self) -> Vec<&Hyperedge> {
         self.hyperedges
             .values()
-            .filter(|e| e.members.len() >= 2)
+            .filter(|e| {
+                let active_members_count = e.members.iter().filter(|m| {
+                    if let Some(r) = self.records.get(*m) {
+                        !r.remaining_dof.is_zero() && !r.is_dormant
+                    } else {
+                        false
+                    }
+                }).count();
+                active_members_count >= 2
+            })
             .collect()
     }
 }

@@ -113,6 +113,26 @@ impl RewriteRule {
         self
     }
 
+    /// توليد زوج قواعد ثنائي الاتجاه من قانون سيادي متوج (LHS = RHS)
+    /// 1. قاعدة اختزال كنسي (CanonicalReduction): LHS -> RHS
+    /// 2. قاعدة توسع موجه بالعجز (DemandExpansion): RHS -> LHS
+    pub fn from_sovereign_law(
+        law_id: &str,
+        lhs: &aletheia_algebra::CanonicalExpr,
+        rhs: &aletheia_algebra::CanonicalExpr,
+    ) -> (Self, Self) {
+        let pat_lhs = Pattern::from_canonical_expr(lhs);
+        let pat_rhs = Pattern::from_canonical_expr(rhs);
+
+        let fwd_name = Box::leak(format!("Rule_Sovereign_{}_Fwd", law_id).into_boxed_str());
+        let rev_name = Box::leak(format!("Rule_Sovereign_{}_Rev", law_id).into_boxed_str());
+
+        let fwd = RewriteRule::new(fwd_name, RuleKind::CanonicalReduction, pat_lhs.clone(), pat_rhs.clone());
+        let rev = RewriteRule::new(rev_name, RuleKind::DemandExpansion, pat_rhs, pat_lhs);
+
+        (fwd, rev)
+    }
+
     /// فحص كافة حراس القاعدة على التعويض المعطى
     pub fn check_guards(&self, egraph: &TransactionalEGraph, subst: &Subst) -> bool {
         for guard in &self.guards {

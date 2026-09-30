@@ -65,8 +65,149 @@ impl LinearRREFEngine {
     }
 
     /// حل النظام الخطي M_dim * x = delta_d فوق حقل الأعداد النسبية Q
-    #[allow(clippy::needless_range_loop)]
+    /// مع تطبيق نصل أوكام (Occam's Razor / MDL) للبحث عن الحد الأدنى من قواعد الأساس المستقلة خطياً
     pub fn solve_linear_system(
+        candidate_bases: &[DimensionVector],
+        target_deficit: &DimensionVector,
+    ) -> LinearResolutionResult {
+        let num_cols = candidate_bases.len();
+
+        if target_deficit.is_dimensionless() {
+            return LinearResolutionResult {
+                is_consistent: true,
+                rank: 0,
+                dof: Rational::zero(),
+                particular_solution: Some(vec![Rational::zero(); num_cols]),
+                nullspace_basis: Vec::new(),
+                deficit_vector: target_deficit.clone(),
+            };
+        }
+
+        if num_cols == 0 {
+            return LinearResolutionResult {
+                is_consistent: false,
+                rank: 0,
+                dof: Rational::from_i64(target_deficit.effective_len() as i64),
+                particular_solution: None,
+                nullspace_basis: Vec::new(),
+                deficit_vector: target_deficit.clone(),
+            };
+        }
+
+        // 1. فحص القواعد المفردة k = 1 (أبسط حل ممكن وفق نصل أوكام)
+        let mut best_k1 = None;
+        for i in 0..num_cols {
+            if let Some((sol, score)) = Self::solve_subset_rref(&[i], candidate_bases, target_deficit) {
+                if best_k1.as_ref().map_or(true, |(_, best_score)| score < *best_score) {
+                    best_k1 = Some((vec![(i, sol[0].clone())], score));
+                }
+            }
+        }
+        if let Some((sol_entries, _)) = best_k1 {
+            let mut particular = vec![Rational::zero(); num_cols];
+            for (idx, val) in sol_entries {
+                particular[idx] = val;
+            }
+            return LinearResolutionResult {
+                is_consistent: true,
+                rank: 1,
+                dof: Rational::zero(),
+                particular_solution: Some(particular),
+                nullspace_basis: Vec::new(),
+                deficit_vector: target_deficit.clone(),
+            };
+        }
+
+        // 2. فحص أزواج القواعد k = 2 (جسور الاقتران الثنائية مثل hbar/c أو G/c^2)
+        let mut best_k2 = None;
+        for i in 0..num_cols {
+            for j in (i + 1)..num_cols {
+                if let Some((sol, score)) = Self::solve_subset_rref(&[i, j], candidate_bases, target_deficit) {
+                    if best_k2.as_ref().map_or(true, |(_, best_score)| score < *best_score) {
+                        best_k2 = Some((vec![(i, sol[0].clone()), (j, sol[1].clone())], score));
+                    }
+                }
+            }
+        }
+        if let Some((sol_entries, _)) = best_k2 {
+            let mut particular = vec![Rational::zero(); num_cols];
+            for (idx, val) in sol_entries {
+                particular[idx] = val;
+            }
+            return LinearResolutionResult {
+                is_consistent: true,
+                rank: 2,
+                dof: Rational::zero(),
+                particular_solution: Some(particular),
+                nullspace_basis: Vec::new(),
+                deficit_vector: target_deficit.clone(),
+            };
+        }
+
+        // 3. فحص ثلاثيات القواعد k = 3 (الاقترانات الثلاثية المستقلة)
+        let mut best_k3 = None;
+        for i in 0..num_cols {
+            for j in (i + 1)..num_cols {
+                for l in (j + 1)..num_cols {
+                    if let Some((sol, score)) = Self::solve_subset_rref(&[i, j, l], candidate_bases, target_deficit) {
+                        if best_k3.as_ref().map_or(true, |(_, best_score)| score < *best_score) {
+                            best_k3 = Some((vec![(i, sol[0].clone()), (j, sol[1].clone()), (l, sol[2].clone())], score));
+                        }
+                    }
+                }
+            }
+        }
+        if let Some((sol_entries, _)) = best_k3 {
+            let mut particular = vec![Rational::zero(); num_cols];
+            for (idx, val) in sol_entries {
+                particular[idx] = val;
+            }
+            return LinearResolutionResult {
+                is_consistent: true,
+                rank: 3,
+                dof: Rational::zero(),
+                particular_solution: Some(particular),
+                nullspace_basis: Vec::new(),
+                deficit_vector: target_deficit.clone(),
+            };
+        }
+
+        // 4. إذا لم يوجد أي أساس جزئي مستقل يغلق العجز بـ dof = 0، نحل النظام الكامل
+        Self::solve_full_linear_system(candidate_bases, target_deficit)
+    }
+
+    /// حل نظام جزئي محدد والتحقق من رتبته واستقلاله التام (Rank == k => dof == 0)
+    fn solve_subset_rref(
+        indices: &[usize],
+        candidate_bases: &[DimensionVector],
+        target_deficit: &DimensionVector,
+    ) -> Option<(Vec<Rational>, (bool, i64, usize))> {
+        let subset_bases: Vec<DimensionVector> = indices.iter().map(|&i| candidate_bases[i].clone()).collect();
+        let res = Self::solve_full_linear_system(&subset_bases, target_deficit);
+
+        if res.is_consistent && res.rank == indices.len() {
+            if let Some(sol) = res.particular_solution {
+                let has_fractional = sol.iter().any(|r| !r.is_integer());
+                // الفيزيائية الدستورية الصارمة (Notion Axis 6 & Seal 1):
+                // ثوابت الاقتران لسد العجز البعدي في القوانين المادية يجب أن تكون أسساً صحيحة في Z^N
+                // الأسس الكسرية تمثل عجزاً غير مغلق بشبكية الثوابت وتتطلب حجراً صحياً أو رتبة طوبولوجية
+                if has_fractional {
+                    return None;
+                }
+                let abs_exponent_sum: i64 = sol
+                    .iter()
+                    .map(|r| r.to_i64().map(|v| v.abs()).unwrap_or(10))
+                    .sum();
+                let index_sum: usize = indices.iter().sum();
+                return Some((sol, (has_fractional, abs_exponent_sum, index_sum)));
+            }
+        }
+        None
+    }
+
+    /// حل النظام الخطي الكامل لجميع القواعد دون تقليم عبر الحذف الغاوسي-الأردني الصارم RREF
+    #[allow(clippy::needless_range_loop)]
+    pub fn solve_full_linear_system(
         candidate_bases: &[DimensionVector],
         target_deficit: &DimensionVector,
     ) -> LinearResolutionResult {
@@ -183,7 +324,13 @@ impl LinearRREFEngine {
         }
 
         let nullity = num_cols.saturating_sub(rank);
-        let dof = Rational::from_i64(nullity as i64);
+        let mut dof = Rational::from_i64(nullity as i64);
+
+        // إذا كان الحل الخاص يحتوي على أسس كسرية لثوابت الاقتران، فإنه لا ينتمي للشبكية الصحيحة Z^N
+        // وبالتالي لا يعتبر عجزاً مغلقاً (DoF >= 1) ويجب إحالته للحجر الصحي
+        if particular.iter().any(|r| !r.is_integer()) && dof.is_zero() {
+            dof = Rational::one();
+        }
 
         LinearResolutionResult {
             is_consistent: true,
