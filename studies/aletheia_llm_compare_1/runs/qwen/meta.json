@@ -1,0 +1,12 @@
+{
+ "name_as_shown": "Qwen3.8-Max",
+ "family": "Qwen",
+ "interface": "chat.qwen.ai",
+ "reasoning_option": "thinking",
+ "memory_off": true,
+ "web_search_off": false,
+ "code_execution": "used-in-batches: A1, A2, A4, A5",
+ "scored": true,
+ "first_run_date": "2026-09-30",
+ "notes": "using useless code formla:print(\"Sanity check passed\")\n # Result \nSanity check passed\nin A4"
+}

@@ -1,0 +1,26 @@
+{
+ "id": "dev-grassmann",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "t1",
+   "grade": 1
+  },
+  {
+   "name": "t2",
+   "grade": 1
+  }
+ ],
+ "variables": [
+  "a",
+  "b",
+  "c",
+  "d"
+ ],
+ "laws": [
+  "t1*t1 = 0",
+  "t2*t2 = 0",
+  "t1*t2 + t2*t1 = 0",
+  "(a*t1 + b*t2)*(c*t1 + d*t2) = (a*d - b*c)*t1*t2"
+ ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "E1-14",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "dx",
+      "grade": 1
+    },
+    {
+      "name": "dy",
+      "grade": 1
+    },
+    {
+      "name": "dz",
+      "grade": 1
+    }
+  ],
+  "variables": [
+    "s",
+    "t",
+    "u"
+  ],
+  "laws": [
+    "(s*dx + t*dy + u*dz)**2 = 0",
+    "(dx + s*dy)*(dy + s*dz)*(dz + s*dx) = (1 + s**3)*dx*dy*dz",
+    "dz*dx*dy = dx*dy*dz",
+    "(dx + dy + dz)*(dx - dy)*(dy - dz) = 3*dx*dy*dz"
+  ]
+}

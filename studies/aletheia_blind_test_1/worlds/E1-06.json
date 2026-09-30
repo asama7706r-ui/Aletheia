@@ -1,0 +1,23 @@
+{
+  "id": "E1-06",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "x",
+      "grade": 0
+    },
+    {
+      "name": "p",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "s"
+  ],
+  "laws": [
+    "p*x - x*p = 1",
+    "p*x**2 - x**2*p = 2*x",
+    "(x + s)**3 = s**3 + 3*s**2*x + 3*s*x**2",
+    "(p + x)**2 = p**2 + 2*x*p + x**2 + 1"
+  ]
+}

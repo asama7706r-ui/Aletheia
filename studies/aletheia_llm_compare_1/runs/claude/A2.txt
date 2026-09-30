@@ -1,0 +1,101 @@
+# World-by-world answers for Task Sheet A (A-07 to A-12)
+
+## A-07: FORK over comm and assoc
+
+**F_occ.** SUBSUMED is not viable, because z⁴+z³+z²+z+1 = 0 has no rational root. comm is viable: take z = ζ₅ in Q(ζ₅) and b = 0. So F_occ = comm.
+
+**Freest algebra.** Since Φ₅(z) = 0, we get z⁵ = 1, so z is invertible. The relation bz = σ(z)b holds with σ: ζ ↦ ζ², which is a field automorphism. So the freest algebra is Q(ζ)[b; σ]/(b²). This is 8-dimensional, and in it b ≠ 0.
+
+**Live and dead mentions.**
+- Live: z, z², z³, z⁴, b, b*z, z*z*b.
+- Dead: Φ₅(z) and b*b.
+
+**comm kills b.** If z and b commute, then zb = z²b, so z(z−1)b = 0. Because z is invertible, zb = b. Then Φ₅(z)b = 5b = 0, which forces b = 0.
+
+**Levels.** There is no graded level, since no generator is odd. So F_role = assoc, and the branches are comm and assoc.
+
+**Decisive set** for comm: `b`.
+
+## A-08: FORK over graded and assoc
+
+**Lower levels.** SUBSUMED forces a = b = 0, which kills the demand. comm forces ab − ba = 0, which also kills the demand.
+
+**graded is viable.** The exterior algebra works: ab − ba = 2ab ≠ 0. So F_occ = graded.
+
+**Freest algebra.** The only degree-2 relations are a² and b², so ab and ba are independent in the freest algebra.
+- Live: a, b, ab, ba, ab+ba.
+- Dead: a², b², (ab+ba)².
+
+**graded kills ab+ba.** Under the graded rule, ab+ba = 0. The freest algebra keeps it nonzero, so F_role = assoc.
+
+**Decisive set** for graded: `a*b + b*a`.
+
+## A-09: DETERMINED comm
+
+**The fifth law is redundant.** Since c is central, (sig−c)(sig+c) = sig² − c². So the fifth law is equivalent to the first for every value of c.
+
+**Freest algebra.** It is commutative and splits as Q(√2) × Q:
+- On the part where psi = 1, sig = √2.
+- On the part where psi = −1, sig = 0.
+
+**Levels.**
+- SUBSUMED fails. Either sig² = 2 has no rational solution, or sig = 0 kills the demand.
+- comm is viable, using the freest algebra itself.
+- In that algebra, every live mention is nonzero, including sig ± c and 1 + psi − c². The key fact is that 2 − c² ≠ 0 for every rational c.
+- There is no graded level.
+
+**Parameter check.** The answer is the same for every tested value of c.
+
+## A-10: CONTRADICTION
+
+**Law 1 gives a Clifford algebra.** Expanding law 1 for all x, y, z gives:
+- a² = b² = c² = 1, and
+- a, b, c pairwise anticommute.
+
+**This clashes with abc = 1.** In this Clifford algebra, (abc)² = −1. But abc = 1 gives (abc)² = 1. So 1 = −1, hence 2 = 0, hence 1 = 0 over Q.
+
+No level is viable.
+
+## A-11: FORK over SUBSUMED, comm and graded
+
+**SUBSUMED is viable.** Take k ∈ {0, 1} and f1 = f2 = 0. So F_occ = SUBSUMED.
+
+**Freest algebra.** It is nonzero: the exterior algebra Λ(f1, f2) with k = 1 satisfies every law.
+- Live: k, k*k, f1, f2, k*f1, k*f2, f1*f2, f2*f1.
+- Dead: f1*f1, f2*f2, f1*f2 + f2*f1.
+
+**What each lower level kills.**
+- SUBSUMED kills f1.
+- comm gives 2f1f2 = 0, so it kills f1*f2.
+- graded keeps every live mention nonzero, using Λ(f1, f2) with k = 1.
+
+So F_role = graded.
+
+**Decisive sets.**
+- For SUBSUMED: `f1`.
+- For comm: `f1*f2`.
+
+## A-12: FORK over comm, graded and assoc
+
+Write h = qr + rq. The third law says h is idempotent.
+
+**Levels.**
+- SUBSUMED forces q = r = 0, which kills the demand q + r ≠ 0.
+- comm is viable, for example Q[q,r]/(q², r², qr). In comm, h = 2qr is nilpotent and also idempotent, so h = 0. So F_occ = comm.
+- graded forces h = 0, but it is still viable (the exterior algebra satisfies the demand).
+- assoc works with 2×2 matrices: q = E₁₂ and r = E₂₁ give h = I. This keeps every live mention nonzero: q, r, qr, rq, h and h·h.
+
+So F_role = assoc.
+
+**Decisive sets.** For both comm and graded: `q*r + r*q`.
+
+```json
+[
+ {"id": "A-07", "label": "FORK", "branches": ["comm", "assoc"], "decisive": [["b"]]},
+ {"id": "A-08", "label": "FORK", "branches": ["graded", "assoc"], "decisive": [["a*b + b*a"]]},
+ {"id": "A-09", "label": "DETERMINED", "level": "comm"},
+ {"id": "A-10", "label": "CONTRADICTION"},
+ {"id": "A-11", "label": "FORK", "branches": ["SUBSUMED", "comm", "graded"], "decisive": [["f1"], ["f1*f2"]]},
+ {"id": "A-12", "label": "FORK", "branches": ["comm", "graded", "assoc"], "decisive": [["q*r + r*q"], ["q*r + r*q"]]}
+]
+```

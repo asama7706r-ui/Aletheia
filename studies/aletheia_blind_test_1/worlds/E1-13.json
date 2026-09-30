@@ -1,0 +1,24 @@
+{
+  "id": "E1-13",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "a",
+      "grade": 0
+    },
+    {
+      "name": "b",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "t",
+    "x",
+    "y"
+  ],
+  "laws": [
+    "(a*x + b*y)**2 = 4*x**2 - 4*x*y + y**2",
+    "(t + a*x)*(t + b*x) = t**2 + t*x - 2*x**2",
+    "(t + b*x)*(t + a*x) = (t + a*x)*(t + b*x)"
+  ]
+}

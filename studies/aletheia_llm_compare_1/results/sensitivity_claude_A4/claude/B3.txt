@@ -1,0 +1,54 @@
+## B-13: BOUNDED
+
+No reason applies. The coefficient form is free, and the velocity reversal leaves v⁴ unchanged, so it doesn't force λ = 0. There are no parameters. With m = 2, the base law is f = v² and h = 2v⁴.
+
+| v | r = output − f | d | h | interval for λ |
+|---|---|---|---|---|
+| 1 | 1/250 | 1/100 | 2 | [−3/1000, 7/1000] |
+| 3 | 3/100 | 1/20 | 162 | [−1/8100, 1/2025] |
+| 2 | −1/100 | 1/50 | 32 | [−3/3200, 1/3200] |
+
+The intersection is S = [−1/8100, 1/3200]. Since 0 ∈ S, the label is BOUNDED with B = 1/3200.
+
+## B-14: ACTIVE
+
+No reason applies. Under current reversal (cur → −cur, y → −y), the full law y = 2·cur + λ·cur·(tmp − 300) maps to itself for any λ.
+
+- **Observation 1** (tmp = 300): h = 0, and |501/250 − 2| = 1/250 ≤ 1/100, so there is no conflict.
+- **Observation 2**: h = 100 and r = 133/200 ± 1/100, which gives λ ∈ [131/20000, 27/4000].
+- **Observation 3**: h = −150 and r = −501/500 ± 1/100, which gives λ ∈ [62/9375, 253/37500].
+
+The intersection is S = [62/9375, 253/37500]. Since 0 ∉ S, the label is ACTIVE.
+
+## B-15: CONFLICT
+
+Because e = 0, h = 0 at every observation. At a = 2, f = 8, the output is 42/5, and |r| = 2/5 > 1/10. This observation misses the base law by more than its resolution, so the label is CONFLICT. That check comes before INCIDENTAL.
+
+## B-16: TYPE_IMPOSSIBLE
+
+The required dimension is dim(y) − dim(h) = M L² T⁻² mol⁻¹. The only declared constant is R, with dimension M L² T⁻² K⁻¹ mol⁻¹. No power of R can remove K⁻¹ while keeping M¹, so reason (1) applies.
+
+The feasible set has no conflict:
+- **Observation 1** gives λ ∈ [−1, 3].
+- **Observation 2** gives λ ∈ [−2/5, 14/15].
+
+So S = [−2/5, 14/15], which contains 0. The label is TYPE_IMPOSSIBLE.
+
+## B-17: UNCONSTRAINED
+
+The joint reversal leaves v·B unchanged, so reason (2) doesn't apply. Every observation has B = 0, so h = 0 for all of them. Their residuals all stay within resolution: 1/200 ≤ 1/100, 1/500 ≤ 1/100, and 1/20 ≤ 1/10. With no observation having h ≠ 0, the label is UNCONSTRAINED.
+
+## B-18: INCIDENTAL
+
+At n = 2, the factor n² − 3n + 2 equals 0, but it is not identically 0 as a function of n, so reason (3) applies. The base law is f = 3x². Both residuals are within resolution: 1/500 ≤ 1/100 and 1/20 ≤ 1/10. S is unconstrained and contains 0, so the label is INCIDENTAL.
+
+```json
+[
+ {"id": "B-13", "label": "BOUNDED", "bound": "1/3200"},
+ {"id": "B-14", "label": "ACTIVE", "interval": ["62/9375", "253/37500"]},
+ {"id": "B-15", "label": "CONFLICT"},
+ {"id": "B-16", "label": "TYPE_IMPOSSIBLE"},
+ {"id": "B-17", "label": "UNCONSTRAINED"},
+ {"id": "B-18", "label": "INCIDENTAL"}
+]
+```

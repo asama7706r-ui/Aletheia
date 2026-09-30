@@ -1,0 +1,110 @@
+{
+  "id": "E2-11",
+  "experiment": "E2",
+  "quantities": {
+    "phi": {
+      "L": 2,
+      "T": -2
+    },
+    "G": {
+      "M": -1,
+      "L": 3,
+      "T": -2
+    },
+    "Ma": {
+      "M": 1
+    },
+    "r": {
+      "L": 1
+    },
+    "Mb": {
+      "M": 1
+    },
+    "rb": {
+      "L": 1
+    }
+  },
+  "law_original": "phi = -G*Ma/r",
+  "filled_law": "phi = -G*Ma/r - G*Mb/rb",
+  "symmetries": [
+    {
+      "name": "coupling scaling",
+      "map": {
+        "G": "l*G",
+        "phi": "l*phi"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    },
+    {
+      "name": "mass-distance scaling",
+      "map": {
+        "Ma": "l*Ma",
+        "r": "l*r"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "G": "1",
+        "Ma": "2",
+        "r": "1",
+        "Mb": "0",
+        "rb": "1"
+      },
+      "output": "-2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "G": "2",
+        "Ma": "1",
+        "r": "2",
+        "Mb": "0",
+        "rb": "3"
+      },
+      "output": "-1",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "G": "1/2",
+        "Ma": "3",
+        "r": "3/2",
+        "Mb": "0",
+        "rb": "2"
+      },
+      "output": "-1",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "G": "1",
+      "Ma": "2",
+      "r": "1",
+      "Mb": "1",
+      "rb": "2"
+    },
+    "output": "-5/2",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "planet"
+  ],
+  "state_filled": [
+    "planet",
+    "moon"
+  ]
+}

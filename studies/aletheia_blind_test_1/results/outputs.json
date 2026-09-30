@@ -1,0 +1,1306 @@
+{
+ "E1-01": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B3": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION",
+   "stable": true
+  }
+ },
+ "E1-02": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 4,
+   "family": "comm",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-03": {
+  "B1": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/comm/4",
+    "SUBSUMED/None/1"
+   ]
+  },
+  "B2": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/assoc/2",
+    "NEW_KIND/assoc/4"
+   ]
+  },
+  "B3": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/comm/4",
+    "SUBSUMED/None/1"
+   ]
+  },
+  "procedure": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/comm/4",
+    "SUBSUMED/None/1"
+   ]
+  }
+ },
+ "E1-04": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ],
+    [
+     "3",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 6,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "1",
+     "0"
+    ],
+    [
+     "2",
+     "0"
+    ],
+    [
+     "3",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 6,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-05": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 8,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 8,
+   "family": "graded",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-06": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B3": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION",
+   "stable": true
+  }
+ },
+ "E1-07": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "B2": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "CONTRADICTION/None/0",
+    "NEW_KIND/assoc/4"
+   ]
+  },
+  "B3": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "CONTRADICTION/None/0",
+    "NEW_KIND/assoc/4"
+   ]
+  },
+  "procedure": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "CONTRADICTION/None/0",
+    "NEW_KIND/assoc/4"
+   ]
+  }
+ },
+ "E1-08": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2",
+     "2"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2",
+     "2"
+    ]
+   ]
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2",
+     "2"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "stable": true,
+   "values": [
+    [
+     "2",
+     "2"
+    ]
+   ]
+  }
+ },
+ "E1-09": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B3": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION",
+   "stable": true
+  }
+ },
+ "E1-10": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "1"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 3,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 3,
+   "family": "comm",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-11": {
+  "B1": {
+   "dim": 3,
+   "family": "comm",
+   "label": "NEW_KIND"
+  },
+  "B2": {
+   "dim": 3,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 3,
+   "family": "comm",
+   "label": "NEW_KIND"
+  },
+  "procedure": {
+   "dim": 3,
+   "family": "comm",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-12": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 6,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 6,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-13": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2",
+     "-1"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2",
+     "-1"
+    ]
+   ]
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2",
+     "-1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "stable": true,
+   "values": [
+    [
+     "2",
+     "-1"
+    ]
+   ]
+  }
+ },
+ "E1-14": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 8,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 8,
+   "family": "graded",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-15": {
+  "B1": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "CONTRADICTION/None/0",
+    "SUBSUMED/None/1"
+   ]
+  },
+  "B2": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "CONTRADICTION/None/0",
+    "NEW_KIND/assoc/2"
+   ]
+  },
+  "B3": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "CONTRADICTION/None/0",
+    "SUBSUMED/None/1"
+   ]
+  },
+  "procedure": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "CONTRADICTION/None/0",
+    "SUBSUMED/None/1"
+   ]
+  }
+ },
+ "E1-16": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1/2",
+     "-1/2"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 2,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1/2",
+     "-1/2"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "stable": true,
+   "values": [
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1/2",
+     "-1/2"
+    ]
+   ]
+  }
+ },
+ "E1-17": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 3,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "2"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "stable": true,
+   "values": [
+    [
+     "2"
+    ]
+   ]
+  }
+ },
+ "E1-18": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 8,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 8,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-19": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION",
+   "open_parameters": [
+    "m"
+   ]
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "open_parameters": [
+    "m"
+   ]
+  },
+  "B3": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "open_parameters": [
+    "m"
+   ]
+  },
+  "procedure": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "open_parameters": [
+    "m"
+   ],
+   "stable": true
+  }
+ },
+ "E1-20": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 16,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 16,
+   "family": "graded",
+   "label": "NEW_KIND",
+   "stable": false
+  }
+ },
+ "E1-21": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 3,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 3,
+   "family": "comm",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-22": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B3": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION",
+   "stable": true
+  }
+ },
+ "E1-23": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 16,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 16,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "procedure": {
+   "dim": 16,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "stable": false
+  }
+ },
+ "E1-24": {
+  "B1": {
+   "dim": 6,
+   "family": "comm",
+   "label": "NEW_KIND"
+  },
+  "B2": {
+   "dim": 8,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 6,
+   "family": "comm",
+   "label": "NEW_KIND"
+  },
+  "procedure": {
+   "dim": 8,
+   "family": "graded",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "E1-25": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 16,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 16,
+   "family": "graded",
+   "label": "NEW_KIND",
+   "stable": false
+  }
+ },
+ "E1-26": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "-1",
+     "1"
+    ],
+    [
+     "-1",
+     "1",
+     "-1"
+    ],
+    [
+     "1",
+     "-1",
+     "-1"
+    ],
+    [
+     "1",
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "-1",
+     "1"
+    ],
+    [
+     "-1",
+     "1",
+     "-1"
+    ],
+    [
+     "1",
+     "-1",
+     "-1"
+    ],
+    [
+     "1",
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "stable": true,
+   "values": [
+    [
+     "-1",
+     "-1",
+     "1"
+    ],
+    [
+     "-1",
+     "1",
+     "-1"
+    ],
+    [
+     "1",
+     "-1",
+     "-1"
+    ],
+    [
+     "1",
+     "1",
+     "1"
+    ]
+   ]
+  }
+ },
+ "E1-27": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "open_parameters": [
+    "k"
+   ]
+  },
+  "B2": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "open_parameters": [
+    "k"
+   ]
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "open_parameters": [
+    "k"
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "open_parameters": [
+    "k"
+   ],
+   "stable": true
+  }
+ },
+ "E1-28": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "procedure": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/assoc/4",
+    "NEW_KIND/comm/4",
+    "NEW_KIND/graded/4"
+   ]
+  }
+ },
+ "E2-01": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-02": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [
+    "symmetry:depth scaling",
+    "symmetry:gravity scaling"
+   ],
+   "label": "ANOTHER_LAW"
+  }
+ },
+ "E2-03": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [
+    "symmetry:Galilean boost"
+   ],
+   "label": "ANOTHER_LAW"
+  }
+ },
+ "E2-04": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "INVALID"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "INVALID"
+  }
+ },
+ "E2-05": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-06": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-07": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-08": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "INVALID"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "INVALID"
+  }
+ },
+ "E2-09": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-10": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-11": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-12": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "E2-13": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [
+    "validated[0]",
+    "validated[1]",
+    "validated[2]"
+   ],
+   "label": "ANOTHER_LAW"
+  }
+ },
+ "E2-14": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "INVALID"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "INVALID"
+  }
+ },
+ "E2-15": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [
+    "symmetry:exchange of the two bodies"
+   ],
+   "label": "ANOTHER_LAW"
+  }
+ },
+ "E2-16": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [
+    "validated[0]",
+    "validated[1]",
+    "validated[2]",
+    "symmetry:temperature scaling"
+   ],
+   "label": "ANOTHER_LAW"
+  }
+ }
+}

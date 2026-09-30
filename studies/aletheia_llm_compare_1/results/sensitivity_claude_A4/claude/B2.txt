@@ -1,0 +1,65 @@
+## B-07 (SYMMETRY_ZERO)
+
+- **Reason (1):** Does not apply, because the coefficient form is "free".
+- **Reason (2):** Apply the symmetry (φ1, φ2, y) → (−φ1, −φ2, −y) to the full law. It gives −y = −φ1 + φ2 + λφ1φ2, which is y = φ1 − φ2 − λφ1φ2. This matches the original full law only when λ = 0, so SYMMETRY_ZERO applies.
+- **Feasible set S:**
+  - Observation 1: r = 751/250 − 3 = 1/250 and h = 10, so u ∈ [−3/5000, 7/5000].
+  - Observation 2: r = −5003/1000 + 5 = −3/1000 and h = −4, so u ∈ [−7/4000, 13/4000].
+  - S = [−3/5000, 7/5000]. It is nonempty and contains 0.
+
+## B-08 (CONFLICT)
+
+- **Feasible set S:** Here h = v.
+  - Observation 1: f = 2, r = 1/5, h = 2, so u ∈ [19/200, 21/200].
+  - Observation 2: f = 8, r = 4/5, h = 4, so u ∈ [79/400, 81/400].
+- These two intervals do not overlap, so S is empty and the label is CONFLICT.
+
+## B-09 (TYPE_IMPOSSIBLE)
+
+- **Reason (1):** dim(y) − dim(h) = T²L⁻². Powers of g give LᵃT⁻²ᵃ. Matching L requires a = −2, but matching T requires a = −1. No power works, so TYPE_IMPOSSIBLE applies.
+- **Feasible set S:**
+  - Observation 1: r = 1/250 and h = 25, so u ∈ [−3/12500, 7/12500].
+  - Observation 2: r = −1/100, d = 1/50 and h = 400, so u ∈ [−3/40000, 1/40000].
+  - S = [−3/40000, 1/40000]. It contains 0, so the label is TYPE_IMPOSSIBLE.
+
+## B-10 (ACTIVE)
+
+- **Reasons (1)–(3):** None apply.
+- **Feasible set S:**
+  - Observation 1: f = −2, r = 997/1000, h = 2, so u ∈ [987/2000, 1007/2000].
+  - Observation 2: f = −3/2, r = 379/2000, h = 3/8, so u ∈ [359/750, 133/250].
+  - Observation 3: f = −1, r = 31/1000, h = 1/16, d = 1/1000, so u ∈ [12/25, 64/125].
+  - S = [987/2000, 1007/2000]. It does not contain 0, so the label is ACTIVE.
+
+## B-11 (ACTIVE)
+
+- **Reason (1):** dim(y) − dim(h) = L⁻²T² = dim(c⁻²). A valid coefficient exists, so this does not apply.
+- **Reason (2):** The full law contains only even powers of p, so it is invariant under p → −p for any λ. This does not apply.
+- **Reason (3):** Does not apply.
+- **Feasible set S:**
+  - Observation 1: f = 8, r = −317/1000, h = 256, so u ∈ [−327/256000, −307/256000].
+  - Observation 2: f = 9, r = −413/2000, h = 162, so u ∈ [−433/324000, −131/108000].
+  - Observation 3: f = 1/2, r = −1/1000, h = 1, d = 1/1000, so u ∈ [−1/500, 0].
+  - S = [−327/256000, −131/108000]. It does not contain 0, so the label is ACTIVE. This is consistent with the expected relativistic value λ = −1/(8c²) = −1/800.
+
+## B-12 (TYPE_IMPOSSIBLE)
+
+- **Reason (1):** dim(y) − dim(h) = M⁻¹L⁻¹T⁴I².
+  - Try q^a c^b ε₀^e. Matching M gives e = 1. Matching I gives a = 0. Matching L gives b = 2.
+  - The T exponent is then a − b + 4e = 2, but it needs to be 4. No combination works, so TYPE_IMPOSSIBLE applies.
+- **Feasible set S:**
+  - Observation 1: r = 3/1000, h = 1, so u ∈ [−7/1000, 13/1000].
+  - Observation 2: r = −1/1000, h = 25, so u ∈ [−11/25000, 9/25000].
+  - Observation 3: r = 1/200, d = 1/50, h = 100, so u ∈ [−3/20000, 1/4000].
+  - S = [−3/20000, 1/4000]. It contains 0, so the label is TYPE_IMPOSSIBLE.
+
+```json
+[
+ {"id": "B-07", "label": "SYMMETRY_ZERO"},
+ {"id": "B-08", "label": "CONFLICT"},
+ {"id": "B-09", "label": "TYPE_IMPOSSIBLE"},
+ {"id": "B-10", "label": "ACTIVE", "interval": ["987/2000", "1007/2000"]},
+ {"id": "B-11", "label": "ACTIVE", "interval": ["-327/256000", "-131/108000"]},
+ {"id": "B-12", "label": "TYPE_IMPOSSIBLE"}
+]
+```

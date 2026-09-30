@@ -1,0 +1,73 @@
+{
+ "id": "B-12",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 1,
+   "T": -2
+  },
+  "Ef": {
+   "M": 1,
+   "L": 1,
+   "T": -3,
+   "I": -1
+  }
+ },
+ "constants": {
+  "q": {
+   "value": "2",
+   "dims": {
+    "I": 1,
+    "T": 1
+   }
+  },
+  "c": {
+   "value": "10",
+   "dims": {
+    "L": 1,
+    "T": -1
+   }
+  },
+  "eps0": {
+   "value": "1/10",
+   "dims": {
+    "M": -1,
+    "L": -3,
+    "T": 4,
+    "I": 2
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = q*Ef",
+ "term": {
+  "expr": "lam*Ef**2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "constants",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "Ef": "1"
+   },
+   "output": "2003/1000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "Ef": "5"
+   },
+   "output": "9999/1000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "Ef": "10"
+   },
+   "output": "4001/200",
+   "resolution": "1/50"
+  }
+ ]
+}

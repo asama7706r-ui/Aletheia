@@ -1,0 +1,12 @@
+{
+ "name_as_shown": "cluade-opus-5.5",
+ "family": "claude",
+ "interface": "app",
+ "reasoning_option": "exrta",
+ "memory_off": true,
+ "web_search_off": true,
+ "code_execution": "on-but-unused",
+ "scored": true,
+ "first_run_date": "2026-09-30",
+ "notes": "there is a MAX reasoning but it cost alot tokens and time make him solve tests with nearly no meaning"
+}

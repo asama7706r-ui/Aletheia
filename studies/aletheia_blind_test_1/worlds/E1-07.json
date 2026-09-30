@@ -1,0 +1,28 @@
+{
+  "id": "E1-07",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "a",
+      "grade": 1
+    },
+    {
+      "name": "b",
+      "grade": 1
+    }
+  ],
+  "variables": [
+    "s",
+    "t"
+  ],
+  "parameters": [
+    "c"
+  ],
+  "laws": [
+    "a**2 = 0",
+    "b*b = 0",
+    "a*b + b*a = c**2 - c + 1",
+    "a*b*a = a",
+    "(1 + s*b*a)*(1 + t*b*a) = 1 + (s + t + s*t)*b*a"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+ "id": "B-11",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "m": {
+   "M": 1
+  },
+  "p": {
+   "M": 1,
+   "L": 1,
+   "T": -1
+  }
+ },
+ "constants": {
+  "c": {
+   "value": "10",
+   "dims": {
+    "L": 1,
+    "T": -1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = p**2/(2*m)",
+ "term": {
+  "expr": "lam*p**4/m**3",
+  "unknown": "lam"
+ },
+ "coefficient_form": "constants",
+ "symmetries": [
+  {
+   "name": "momentum reversal",
+   "map": {
+    "p": "-p",
+    "y": "y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "m": "1",
+    "p": "4"
+   },
+   "output": "7683/1000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "m": "2",
+    "p": "6"
+   },
+   "output": "17587/2000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "m": "1",
+    "p": "1"
+   },
+   "output": "499/1000",
+   "resolution": "1/1000"
+  }
+ ]
+}

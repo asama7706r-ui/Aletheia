@@ -1,0 +1,75 @@
+{
+ "id": "B-02",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": -1,
+   "T": -2
+  },
+  "n": {
+   "mol": 1
+  },
+  "tmp": {
+   "K": 1
+  },
+  "V": {
+   "L": 3
+  }
+ },
+ "constants": {
+  "R": {
+   "value": "8",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2,
+    "K": -1,
+    "mol": -1
+   }
+  },
+  "T0": {
+   "value": "273",
+   "dims": {
+    "K": 1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = n*R*tmp/V",
+ "term": {
+  "expr": "lam*n/V",
+  "unknown": "lam"
+ },
+ "coefficient_form": "constants",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "n": "1",
+    "tmp": "300",
+    "V": "1"
+   },
+   "output": "12002/5",
+   "resolution": "1"
+  },
+  {
+   "inputs": {
+    "n": "2",
+    "tmp": "250",
+    "V": "4"
+   },
+   "output": "10001/10",
+   "resolution": "1/2"
+  },
+  {
+   "inputs": {
+    "n": "4",
+    "tmp": "200",
+    "V": "2"
+   },
+   "output": "15999/5",
+   "resolution": "1"
+  }
+ ]
+}

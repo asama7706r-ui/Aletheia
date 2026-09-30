@@ -1,0 +1,18 @@
+{
+  "id": "E1-17",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "x",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "t"
+  ],
+  "laws": [
+    "x**3 = x + 6",
+    "(x - 1)*x*(x + 1) = 6",
+    "(t - x)*(t**2 + x*t + x**2 - 1) = t**3 - t - 6"
+  ]
+}

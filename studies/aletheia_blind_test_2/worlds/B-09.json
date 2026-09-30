@@ -1,0 +1,45 @@
+{
+ "id": "B-09",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "T": 2
+  },
+  "ht": {
+   "L": 1
+  }
+ },
+ "constants": {
+  "g": {
+   "value": "10",
+   "dims": {
+    "L": 1,
+    "T": -2
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = 2*ht/g",
+ "term": {
+  "expr": "lam*ht**2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "constants",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "ht": "5"
+   },
+   "output": "251/250",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "ht": "20"
+   },
+   "output": "399/100",
+   "resolution": "1/50"
+  }
+ ]
+}

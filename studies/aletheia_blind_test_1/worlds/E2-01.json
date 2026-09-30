@@ -1,0 +1,95 @@
+{
+  "id": "E2-01",
+  "experiment": "E2",
+  "quantities": {
+    "J": {
+      "M": 1,
+      "L": 2
+    },
+    "m": {
+      "M": 1
+    },
+    "r": {
+      "L": 1
+    },
+    "m2": {
+      "M": 1
+    },
+    "r2": {
+      "L": 1
+    }
+  },
+  "law_original": "J = m*r**2",
+  "filled_law": "J = m*r**2 + m2*r2**2",
+  "symmetries": [
+    {
+      "name": "mirror",
+      "map": {
+        "r": "-r"
+      },
+      "params": {}
+    },
+    {
+      "name": "mass-radius trade",
+      "map": {
+        "m": "l**2*m",
+        "r": "r/l"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "m": "2",
+        "r": "1",
+        "m2": "0",
+        "r2": "1"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "m": "1",
+        "r": "3",
+        "m2": "0",
+        "r2": "2"
+      },
+      "output": "9",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "m": "1/2",
+        "r": "2",
+        "m2": "0",
+        "r2": "1/2"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "m": "1",
+      "r": "1",
+      "m2": "2",
+      "r2": "1"
+    },
+    "output": "3",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "rotor"
+  ],
+  "state_filled": [
+    "rotor",
+    "added point mass"
+  ]
+}

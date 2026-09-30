@@ -1,0 +1,64 @@
+## A-19 DETERMINED, SUBSUMED
+
+Substitute c = 12 − a − b. The c² law gives ab + ba = a + b − 12, and the third law gives ab − 2ba = 14 − (a+b)2. Solving these two together gives ab = ba = (a+b)2 − 14, which is the same as (a − 12)(b − 12) = 0.
+
+So the freest algebra is commutative Q[a,b](a² − 14, b² − 14, (a−12)(b−12)) ≅ Q³. Its three points (a,b,c) are (12, 12, −12), (12, −12, 12) and (−12, 12, 12).
+
+At any one of these points, every live mention is nonzero. Single generators are ±12, products are ±14, and the sums a+b+c and ab+bc+ca equal 12 and −14. Since a rational assignment already keeps everything nonzero, F_occ = F_role = SUBSUMED.
+
+## A-20 DETERMINED, graded
+
+The law (ax + by)² = 0 must hold for all rational x and y, so a² = b² = 0 and ab + ba = 0.
+
+- SUBSUMED fails. A rational a with a² = 0 must be 0, which forces ab = 0 and violates the demand.
+- comm fails. If ab = ba, then ab = −ab, so 2ab = 0 and ab = 0.
+- graded works. The freest algebra already obeys the graded rule t commutes with a and b, a and b anticommute, and a² = b² = 0.
+
+Concretely, the freest algebra is the product of three pieces, one for each value of t at t = 0 and t = 2 it is Λ(a,b)(ab), and at t = 1 it is the full exterior algebra Λ(a,b). The t = 1 piece keeps ab ≠ 0, so this algebra keeps the demand and every live mention nonzero.
+
+## A-21 FORK [SUBSUMED, comm, assoc]
+
+The first three laws present the group Q8, because i⁴ = 1 and j⁴ = 1 make both generators invertible. So those laws give the group algebra Q[Q8] ≅ Q⁴ × ℍ_Q.
+
+The fourth law already holds in Q[Q8]. In the four 1-dimensional components, ij − ji = 0. In the quaternion component ℍ, i² + 1 = 0. So the freest algebra is exactly Q[Q8].
+
+The live mentions include ij − ji, which is nonzero only in ℍ, and i·i + 1, which is nonzero only in the Q components.
+
+- SUBSUMED is viable (i = j = 1), and so is comm. But both force ij − ji = 0.
+- assoc Q[Q8] keeps every live mention nonzero.
+
+So the decisive observation for both the SUBSUMED and comm branches is ij − ji.
+
+## A-22 FORK [SUBSUMED, comm]
+
+Since xy = yx = 1, the algebra is commutative with y = x⁻¹. The first law becomes (x²−1)(x²−2) = 0, and the fourth law reduces to the same equation. So the freest algebra is Q[x]((x²−1)(x²−2)) ≅ Q × Q × Q(√2).
+
+- SUBSUMED the rational solutions are x = y = ±1. These kill the live mention x − y, which is nonzero in the Q(√2) component.
+- comm the freest algebra is itself commutative, so it keeps every live mention nonzero, including both x − y and x·x − 2.
+
+The decisive observation for the SUBSUMED branch is x − y.
+
+## A-23 CONTRADICTION
+
+Right-multiply ijk = −1 by k. The left side becomes ij·k² = −ij, and the right side becomes −k. So ij = k in every associative algebra satisfying the laws. That forces the demand ij − k to be 0, so no level is viable.
+
+## A-24 FORK [SUBSUMED, comm, assoc]
+
+Since w² = 1, we have q = wpw, and the laws reduce to w² = 1, p² = p and pwp = 0. A Gröbner check gives the basis {1, w, p, wp, pw, wpw}. The algebra is M₂(Q) × Q × Q, with matrix units p, pw, wp and wpw. In the freest algebra, p, q, wp and qw are all nonzero.
+
+- SUBSUMED and comm w is invertible, so wp = qw = wq gives p = q. Then p = p² = pq = 0, which kills p (and q). Both levels are still viable, for example w = ±1 with p = q = 0.
+- graded is not viable w is odd, so w² = 0, and together with w² = 1 that gives 1 = 0.
+- assoc the freest algebra keeps all live mentions nonzero.
+
+The decisive observation for both the SUBSUMED and comm branches is p.
+
+```json
+[
+ {id A-19, label DETERMINED, level SUBSUMED},
+ {id A-20, label DETERMINED, level graded},
+ {id A-21, label FORK, branches [SUBSUMED, comm, assoc], decisive [[ij - ji], [ij - ji]]},
+ {id A-22, label FORK, branches [SUBSUMED, comm], decisive [[x - y]]},
+ {id A-23, label CONTRADICTION},
+ {id A-24, label FORK, branches [SUBSUMED, comm, assoc], decisive [[p], [p]]}
+]
+```

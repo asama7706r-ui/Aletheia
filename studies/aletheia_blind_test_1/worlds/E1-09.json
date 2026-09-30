@@ -1,0 +1,24 @@
+{
+  "id": "E1-09",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "x",
+      "grade": 0
+    },
+    {
+      "name": "y",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "s",
+    "t"
+  ],
+  "laws": [
+    "(s*x + t*y)**2 = s**2 + t**2",
+    "(x*y)**3 = x*y",
+    "x*y*x = -y",
+    "(1 + x)*(1 - x) = 0"
+  ]
+}

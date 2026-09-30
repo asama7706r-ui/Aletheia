@@ -1,0 +1,62 @@
+{
+ "id": "B-13",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "v": {
+   "L": 1,
+   "T": -1
+  }
+ },
+ "constants": {
+  "m": {
+   "value": "2",
+   "dims": {
+    "M": 1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = m*v**2/2",
+ "term": {
+  "expr": "lam*m*v**4",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "velocity reversal",
+   "map": {
+    "v": "-v",
+    "y": "y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "v": "1"
+   },
+   "output": "251/250",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "v": "3"
+   },
+   "output": "903/100",
+   "resolution": "1/20"
+  },
+  {
+   "inputs": {
+    "v": "2"
+   },
+   "output": "399/100",
+   "resolution": "1/50"
+  }
+ ]
+}

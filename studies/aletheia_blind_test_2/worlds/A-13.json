@@ -1,0 +1,32 @@
+{
+ "id": "A-13",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "jp",
+   "grade": 0
+  },
+  {
+   "name": "jm",
+   "grade": 0
+  },
+  {
+   "name": "h",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "h*jp - jp*h = 2*jp",
+  "h*jm - jm*h = -2*jm",
+  "jp*jm - jm*jp = h",
+  "h*(h - 2)*(h + 2) = 0"
+ ],
+ "observations": [
+  {
+   "expr": "h",
+   "status": "nonzero"
+  }
+ ]
+}

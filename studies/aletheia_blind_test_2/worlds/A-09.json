@@ -1,0 +1,31 @@
+{
+ "id": "A-09",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "sig",
+   "grade": 0
+  },
+  {
+   "name": "psi",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [
+  "c"
+ ],
+ "laws": [
+  "sig*sig = 1 + psi",
+  "psi*psi = 1",
+  "sig*psi = sig",
+  "psi*sig = sig",
+  "(sig - c)*(sig + c) = 1 + psi - c**2"
+ ],
+ "observations": [
+  {
+   "expr": "sig*sig",
+   "status": "nonzero"
+  }
+ ]
+}

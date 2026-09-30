@@ -1,0 +1,57 @@
+{
+ "id": "B-05",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "L": 1
+  },
+  "dT": {
+   "K": 1
+  }
+ },
+ "constants": {
+  "L0": {
+   "value": "2",
+   "dims": {
+    "L": 1
+   }
+  },
+  "al": {
+   "value": "1/1000",
+   "dims": {
+    "K": -1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = L0*(1 + al*dT)",
+ "term": {
+  "expr": "lam*L0*dT**2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "dT": "10"
+   },
+   "output": "2021/1000",
+   "resolution": "1/1000"
+  },
+  {
+   "inputs": {
+    "dT": "20"
+   },
+   "output": "1276/625",
+   "resolution": "1/500"
+  },
+  {
+   "inputs": {
+    "dT": "-10"
+   },
+   "output": "3961/2000",
+   "resolution": "1/1000"
+  }
+ ]
+}

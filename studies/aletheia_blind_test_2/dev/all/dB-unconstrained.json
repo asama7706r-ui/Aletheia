@@ -1,0 +1,23 @@
+{
+ "id": "dB-unconstrained",
+ "quantities": {
+  "y": {},
+  "x": {}
+ },
+ "law": "y = 2*x",
+ "term": {
+  "expr": "lam*(x - 1)",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "observations": [
+  {
+   "inputs": {
+    "x": "1"
+   },
+   "output": "2",
+   "resolution": "1/1000"
+  }
+ ],
+ "experiment": "B"
+}

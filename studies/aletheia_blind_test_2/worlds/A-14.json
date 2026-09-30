@@ -1,0 +1,22 @@
+{
+ "id": "A-14",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "a",
+   "grade": 0
+  },
+  {
+   "name": "b",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "a*a = a + 1",
+  "b*b = b + 1",
+  "a*b*a = b*a*b"
+ ],
+ "observations": []
+}

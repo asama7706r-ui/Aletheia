@@ -1,0 +1,24 @@
+{
+  "id": "E1-08",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "a",
+      "grade": 0
+    },
+    {
+      "name": "b",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "x"
+  ],
+  "laws": [
+    "a*a = 2*b",
+    "b**2 = 2*a",
+    "(a - 1)*(b - 1) = 1",
+    "a*b*a = b*a*b",
+    "(a + b*x)*(b + a*x) = 4*(1 + x)**2"
+  ]
+}

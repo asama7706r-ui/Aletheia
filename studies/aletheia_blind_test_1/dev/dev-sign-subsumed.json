@@ -1,0 +1,13 @@
+{
+ "id": "dev-sign-subsumed",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "u",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "u*u = 1"
+ ]
+}

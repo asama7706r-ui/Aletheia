@@ -1,0 +1,17 @@
+{
+ "id": "A-28",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "r",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "(r - 1)*(r**4 + r**3 + r**2 + r + 1) = 0",
+  "r**5 = 1"
+ ],
+ "observations": []
+}

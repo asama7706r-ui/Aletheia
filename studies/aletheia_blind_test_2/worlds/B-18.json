@@ -1,0 +1,49 @@
+{
+ "id": "B-18",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "x": {
+   "L": 1
+  }
+ },
+ "constants": {
+  "K": {
+   "value": "6",
+   "dims": {
+    "M": 1,
+    "T": -2
+   }
+  }
+ },
+ "parameters": {
+  "n": "2"
+ },
+ "law": "y = K*x**2/2",
+ "term": {
+  "expr": "lam*(n**2 - 3*n + 2)*K*x**3",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "x": "1"
+   },
+   "output": "1501/500",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "x": "2"
+   },
+   "output": "241/20",
+   "resolution": "1/10"
+  }
+ ]
+}

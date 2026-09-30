@@ -1,0 +1,60 @@
+{
+ "id": "B-07",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -3,
+   "I": -1
+  },
+  "phi1": {
+   "M": 1,
+   "L": 2,
+   "T": -3,
+   "I": -1
+  },
+  "phi2": {
+   "M": 1,
+   "L": 2,
+   "T": -3,
+   "I": -1
+  }
+ },
+ "constants": {},
+ "parameters": {},
+ "law": "y = phi1 - phi2",
+ "term": {
+  "expr": "lam*phi1*phi2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "global sign inversion",
+   "map": {
+    "phi1": "-phi1",
+    "phi2": "-phi2",
+    "y": "-y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "phi1": "5",
+    "phi2": "2"
+   },
+   "output": "751/250",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "phi1": "-1",
+    "phi2": "4"
+   },
+   "output": "-5003/1000",
+   "resolution": "1/100"
+  }
+ ]
+}

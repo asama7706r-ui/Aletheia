@@ -1,0 +1,1928 @@
+{
+ "A-01": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "2*x"
+    ]
+   ],
+   "label": "FORK",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "V1D": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "DETERMINED/SUBSUMED/1",
+    "DETERMINED/assoc/4",
+    "DETERMINED/assoc/5",
+    "DETERMINED/comm/6"
+   ]
+  },
+  "procedure": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "DETERMINED/SUBSUMED/1",
+    "FORK/SUBSUMED|comm",
+    "FORK/SUBSUMED|comm|assoc"
+   ]
+  }
+ },
+ "A-02": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "e*e"
+    ]
+   ],
+   "label": "FORK",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "V1D": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "DETERMINED/assoc/5",
+    "DETERMINED/comm/2",
+    "DETERMINED/comm/3"
+   ]
+  },
+  "procedure": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "FORK/SUBSUMED|comm",
+    "FORK/SUBSUMED|comm|assoc"
+   ]
+  }
+ },
+ "A-03": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1",
+     "-1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1",
+     "-1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1",
+     "-1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  }
+ },
+ "A-04": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "0"
+    ],
+    [
+     "1",
+     "0"
+    ]
+   ]
+  }
+ },
+ "A-05": {
+  "FORKALL": {
+   "label": "CONTRADICTION"
+  },
+  "OCC": {
+   "label": "CONTRADICTION"
+  },
+  "V1D": {
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "label": "CONTRADICTION",
+   "reason": "1 = 0 in the assoc mold"
+  }
+ },
+ "A-06": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 7,
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "V1D": {
+   "dim": 7,
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "procedure": {
+   "dim": 7,
+   "label": "DETERMINED",
+   "level": "graded"
+  }
+ },
+ "A-07": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "b*z"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "b*z",
+      "b",
+      "z*z*b"
+     ],
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "b*z"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-08": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "a*b + b*a"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "a*b + b*a"
+     ],
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [
+    {
+     "groups": [
+      {
+       "terms": [
+        [
+         "1",
+         [],
+         {
+          "pair": [
+           "a",
+           "b"
+          ],
+          "rule": "graded"
+         },
+         []
+        ]
+       ],
+       "varmono": {}
+      }
+     ],
+     "level": "graded",
+     "mention": "a*b + b*a"
+    }
+   ],
+   "decisive": [
+    [
+     "a*b + b*a"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-09": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "OCC": {
+   "dim": 3,
+   "label": "DETERMINED",
+   "level": "comm",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "V1D": {
+   "dim": 3,
+   "label": "DETERMINED",
+   "level": "comm",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "procedure": {
+   "dim": 3,
+   "label": "DETERMINED",
+   "level": "comm",
+   "open_parameters": [
+    "c"
+   ]
+  }
+ },
+ "A-10": {
+  "FORKALL": {
+   "label": "CONTRADICTION"
+  },
+  "OCC": {
+   "label": "CONTRADICTION"
+  },
+  "V1D": {
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "label": "CONTRADICTION",
+   "reason": "1 = 0 in the assoc mold"
+  }
+ },
+ "A-11": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "k*f1"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 5,
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "f1",
+      "f1*f2",
+      "f2",
+      "f2*f1",
+      "k",
+      "k*f1",
+      "k*f2",
+      "k*k"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "0",
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "0",
+       "0"
+      ]
+     ]
+    },
+    {
+     "killed": [
+      "f2*f1",
+      "f1*f2"
+     ],
+     "level": "comm"
+    },
+    {
+     "level": "graded"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "k*f1"
+    ],
+    [
+     "f2*f1"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-12": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "(q*r + r*q)*(q*r + r*q)"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 3,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "(q*r + r*q)*(q*r + r*q)",
+      "q*r + r*q",
+      "r*q",
+      "q*r"
+     ],
+     "level": "comm"
+    },
+    {
+     "killed": [
+      "(q*r + r*q)*(q*r + r*q)",
+      "q*r + r*q"
+     ],
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [
+    {
+     "groups": [
+      {
+       "terms": [
+        [
+         "1",
+         [],
+         {
+          "law": 2,
+          "varmono": {}
+         },
+         []
+        ],
+        [
+         "1",
+         [],
+         {
+          "pair": [
+           "q",
+           "r"
+          ],
+          "rule": "graded"
+         },
+         []
+        ]
+       ],
+       "varmono": {}
+      }
+     ],
+     "level": "graded",
+     "mention": "(q*r + r*q)*(q*r + r*q)"
+    }
+   ],
+   "decisive": [
+    [
+     "(q*r + r*q)*(q*r + r*q)"
+    ],
+    [
+     "(q*r + r*q)*(q*r + r*q)"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-13": {
+  "FORKALL": {
+   "dim": 10,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "OCC": {
+   "dim": 10,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "V1D": {
+   "dim": 10,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "dim": 10,
+   "label": "DETERMINED",
+   "level": "assoc"
+  }
+ },
+ "A-14": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 2,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 2,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "dim": 2,
+   "label": "DETERMINED",
+   "level": "comm"
+  }
+ },
+ "A-15": {
+  "FORKALL": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "OCC": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "V1D": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "assoc"
+  }
+ },
+ "A-16": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "comm"
+  }
+ },
+ "A-17": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "u*n"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 2,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "u*n",
+      "n",
+      "n*(1 - u)"
+     ],
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "u*n"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-18": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "comm"
+  }
+ },
+ "A-19": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1/2",
+     "1/2",
+     "1/2"
+    ],
+    [
+     "1/2",
+     "-1/2",
+     "1/2"
+    ],
+    [
+     "1/2",
+     "1/2",
+     "-1/2"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1/2",
+     "1/2",
+     "1/2"
+    ],
+    [
+     "1/2",
+     "-1/2",
+     "1/2"
+    ],
+    [
+     "1/2",
+     "1/2",
+     "-1/2"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1/2",
+     "1/2",
+     "1/2"
+    ],
+    [
+     "1/2",
+     "-1/2",
+     "1/2"
+    ],
+    [
+     "1/2",
+     "1/2",
+     "-1/2"
+    ]
+   ]
+  }
+ },
+ "A-20": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 10,
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "V1D": {
+   "dim": 10,
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "procedure": {
+   "dim": 10,
+   "label": "DETERMINED",
+   "level": "graded"
+  }
+ },
+ "A-21": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "i*j - j*i"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "-1"
+    ],
+    [
+     "-1",
+     "1"
+    ],
+    [
+     "1",
+     "-1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "i*j - j*i"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "-1",
+       "-1"
+      ],
+      [
+       "-1",
+       "1"
+      ],
+      [
+       "1",
+       "-1"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    },
+    {
+     "killed": [
+      "i*j - j*i"
+     ],
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "i*j - j*i"
+    ],
+    [
+     "i*j - j*i"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-22": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "x - y"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "-1"
+    ],
+    [
+     "1",
+     "1"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "x - y"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "-1",
+       "-1"
+      ],
+      [
+       "1",
+       "1"
+      ]
+     ]
+    },
+    {
+     "level": "comm"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "x - y"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-23": {
+  "FORKALL": {
+   "label": "CONTRADICTION"
+  },
+  "OCC": {
+   "label": "CONTRADICTION"
+  },
+  "V1D": {
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "label": "CONTRADICTION",
+   "reason": "the laws force observed quantities to zero: i*j - k"
+  }
+ },
+ "A-24": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "w*p"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 6,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "p",
+      "p*p",
+      "q",
+      "q*q",
+      "q*w",
+      "w*p"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "-1",
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "0",
+       "0"
+      ]
+     ]
+    },
+    {
+     "killed": [
+      "w*p",
+      "p",
+      "q*w",
+      "q",
+      "p*p",
+      "q*q"
+     ],
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "w*p"
+    ],
+    [
+     "w*p"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-25": {
+  "FORKALL": {
+   "label": "CONTRADICTION"
+  },
+  "OCC": {
+   "label": "CONTRADICTION"
+  },
+  "V1D": {
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "label": "CONTRADICTION",
+   "reason": "the laws force observed quantities to zero: (p*q - q*p)**2"
+  }
+ },
+ "A-26": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "3"
+    ],
+    [
+     "2",
+     "-1"
+    ],
+    [
+     "2",
+     "3"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "3"
+    ],
+    [
+     "2",
+     "-1"
+    ],
+    [
+     "2",
+     "3"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "3"
+    ],
+    [
+     "2",
+     "-1"
+    ],
+    [
+     "2",
+     "3"
+    ]
+   ]
+  }
+ },
+ "A-27": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "a"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 5,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "a",
+      "a*b*a",
+      "b",
+      "b*a*b"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "0",
+       "0"
+      ]
+     ]
+    },
+    {
+     "killed": [
+      "a",
+      "b",
+      "a*b*a",
+      "b*a*b"
+     ],
+     "level": "comm"
+    },
+    {
+     "killed": [
+      "a",
+      "b",
+      "a*b*a",
+      "b*a*b"
+     ],
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [
+    {
+     "groups": [
+      {
+       "terms": [
+        [
+         "-1",
+         [],
+         {
+          "law": 2,
+          "varmono": {}
+         },
+         []
+        ],
+        [
+         "1",
+         [],
+         {
+          "pair": [
+           "a",
+           "b"
+          ],
+          "rule": "graded"
+         },
+         [
+          "a"
+         ]
+        ],
+        [
+         "-1",
+         [
+          "b"
+         ],
+         {
+          "law": 0,
+          "varmono": {}
+         },
+         []
+        ]
+       ],
+       "varmono": {}
+      }
+     ],
+     "level": "graded",
+     "mention": "a"
+    }
+   ],
+   "decisive": [
+    [
+     "a"
+    ],
+    [
+     "a"
+    ],
+    [
+     "a"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-28": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "-1*1 + r"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "1"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 5,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "-1*1 + r"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "1"
+      ]
+     ]
+    },
+    {
+     "level": "comm"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "-1*1 + r"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "A-29": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "V1D": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "DETERMINED/SUBSUMED/1",
+    "DETERMINED/comm/4"
+   ]
+  },
+  "procedure": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "DETERMINED/SUBSUMED/1",
+    "FORK/SUBSUMED|comm"
+   ]
+  }
+ },
+ "A-30": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  }
+ },
+ "B-01": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "3/2500",
+   "interval": [
+    "-3/2500",
+    "1/2500"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "SYMMETRY_ZERO",
+   "reason": "forbidden by exchange of the sides"
+  }
+ },
+ "B-02": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "3/5",
+   "interval": [
+    "-3/5",
+    "2/5"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "bound": "3/5",
+   "bridge": {
+    "R": "1",
+    "T0": "1"
+   },
+   "interval": [
+    "-3/5",
+    "2/5"
+   ],
+   "label": "BOUNDED"
+  }
+ },
+ "B-03": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "7/1500",
+   "interval": [
+    "-1/500",
+    "7/1500"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "SYMMETRY_ZERO",
+   "reason": "forbidden by reflection of the x axis"
+  }
+ },
+ "B-04": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "interval": [
+    "179/1800",
+    "181/1800"
+   ],
+   "label": "ACTIVE"
+  },
+  "THRESH": {
+   "interval": [
+    "179/1800",
+    "181/1800"
+   ],
+   "label": "ACTIVE"
+  },
+  "procedure": {
+   "label": "CONFLICT",
+   "reason": "detected although forbidden by exchange of the charges"
+  }
+ },
+ "B-05": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "9/2000000",
+   "interval": [
+    "0",
+    "9/2000000"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "bound": "9/2000000",
+   "interval": [
+    "0",
+    "9/2000000"
+   ],
+   "label": "BOUNDED"
+  }
+ },
+ "B-06": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "UNCONSTRAINED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "INCIDENTAL",
+   "reason": "the term vanishes at the given parameter values"
+  }
+ },
+ "B-07": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "7/5000",
+   "interval": [
+    "-3/5000",
+    "7/5000"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "SYMMETRY_ZERO",
+   "reason": "forbidden by global sign inversion"
+  }
+ },
+ "B-08": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "CONFLICT",
+   "reason": "no value of the unknown fits all observations"
+  },
+  "THRESH": {
+   "label": "CONFLICT",
+   "reason": "no value of the unknown fits all observations"
+  },
+  "procedure": {
+   "label": "CONFLICT",
+   "reason": "no value of the unknown fits all observations"
+  }
+ },
+ "B-09": {
+  "MENTION": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "NOSYM": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "TYPE_IMPOSSIBLE",
+   "reason": "no product of declared constants has dimension {'T': Fraction(2, 1), 'L': Fraction(-2, 1)}"
+  }
+ },
+ "B-10": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "interval": [
+    "987/2000",
+    "1007/2000"
+   ],
+   "label": "ACTIVE"
+  },
+  "THRESH": {
+   "interval": [
+    "987/2000",
+    "1007/2000"
+   ],
+   "label": "ACTIVE"
+  },
+  "procedure": {
+   "interval": [
+    "987/2000",
+    "1007/2000"
+   ],
+   "label": "ACTIVE"
+  }
+ },
+ "B-11": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "interval": [
+    "-327/256000",
+    "-131/108000"
+   ],
+   "label": "ACTIVE"
+  },
+  "THRESH": {
+   "interval": [
+    "-327/256000",
+    "-131/108000"
+   ],
+   "label": "ACTIVE"
+  },
+  "procedure": {
+   "bridge": {
+    "c": "-2"
+   },
+   "interval": [
+    "-327/256000",
+    "-131/108000"
+   ],
+   "label": "ACTIVE"
+  }
+ },
+ "B-12": {
+  "MENTION": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "NOSYM": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "TYPE_IMPOSSIBLE",
+   "reason": "no product of declared constants has dimension {'M': Fraction(-1, 1), 'L': Fraction(-1, 1), 'T': Fraction(4, 1), 'I': Fraction(2, 1)}"
+  }
+ },
+ "B-13": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "1/3200",
+   "interval": [
+    "-1/8100",
+    "1/3200"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "bound": "1/3200",
+   "interval": [
+    "-1/8100",
+    "1/3200"
+   ],
+   "label": "BOUNDED"
+  }
+ },
+ "B-14": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "interval": [
+    "62/9375",
+    "253/37500"
+   ],
+   "label": "ACTIVE"
+  },
+  "THRESH": {
+   "interval": [
+    "62/9375",
+    "253/37500"
+   ],
+   "label": "ACTIVE"
+  },
+  "procedure": {
+   "interval": [
+    "62/9375",
+    "253/37500"
+   ],
+   "label": "ACTIVE"
+  }
+ },
+ "B-15": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "CONFLICT",
+   "reason": "observation 1 misses the base law by more than its resolution"
+  },
+  "THRESH": {
+   "label": "CONFLICT",
+   "reason": "observation 1 misses the base law by more than its resolution"
+  },
+  "procedure": {
+   "label": "CONFLICT",
+   "reason": "observation 1 misses the base law by more than its resolution"
+  }
+ },
+ "B-16": {
+  "MENTION": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "NOSYM": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "TYPE_IMPOSSIBLE",
+   "reason": "no product of declared constants has dimension {'M': Fraction(1, 1), 'L': Fraction(2, 1), 'T': Fraction(-2, 1), 'mol': Fraction(-1, 1)}"
+  }
+ },
+ "B-17": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "UNCONSTRAINED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "UNCONSTRAINED"
+  }
+ },
+ "B-18": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "UNCONSTRAINED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "INCIDENTAL",
+   "reason": "the term vanishes at the given parameter values"
+  }
+ }
+}

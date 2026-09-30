@@ -1,0 +1,104 @@
+{
+  "id": "E2-06",
+  "experiment": "E2",
+  "quantities": {
+    "Fb": {
+      "M": 1,
+      "L": 1,
+      "T": -2
+    },
+    "rho": {
+      "M": 1,
+      "L": -3
+    },
+    "g": {
+      "L": 1,
+      "T": -2
+    },
+    "V": {
+      "L": 3
+    },
+    "V2": {
+      "L": 3
+    }
+  },
+  "law_original": "Fb = rho*g*V",
+  "filled_law": "Fb = rho*g*(V + V2)",
+  "symmetries": [
+    {
+      "name": "gravity scaling",
+      "map": {
+        "g": "l*g",
+        "Fb": "l*Fb"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    },
+    {
+      "name": "density scaling",
+      "map": {
+        "rho": "l*rho",
+        "Fb": "l*Fb"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "rho": "1",
+        "g": "2",
+        "V": "3",
+        "V2": "0"
+      },
+      "output": "6",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "rho": "2",
+        "g": "1",
+        "V": "1/2",
+        "V2": "0"
+      },
+      "output": "1",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "rho": "3/2",
+        "g": "2",
+        "V": "1",
+        "V2": "0"
+      },
+      "output": "3",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "rho": "1",
+      "g": "2",
+      "V": "1",
+      "V2": "1/2"
+    },
+    "output": "3",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "immersed hull"
+  ],
+  "state_filled": [
+    "immersed hull",
+    "attached float"
+  ]
+}

@@ -1,0 +1,305 @@
+{
+ "excluded": {},
+ "E1": {
+  "n_total": 10,
+  "n_valid": 10,
+  "void": false,
+  "procedure": {
+   "accuracy": 1.0,
+   "correct": 10,
+   "silent_collapse_rate": 0.0,
+   "over_loose_rate": 0.0
+  },
+  "B1": {
+   "accuracy": 0.4,
+   "correct": 4,
+   "silent_collapse_rate": 0.5714285714285714,
+   "over_loose_rate": 0.0
+  },
+  "B2": {
+   "accuracy": 0.4,
+   "correct": 4,
+   "silent_collapse_rate": 0.0,
+   "over_loose_rate": 1.0
+  },
+  "B3": {
+   "accuracy": 0.6,
+   "correct": 6,
+   "silent_collapse_rate": 0.5714285714285714,
+   "over_loose_rate": 0.0
+  },
+  "best_baseline": "B3",
+  "mcnemar_b": 4,
+  "mcnemar_c": 0,
+  "mcnemar_p": 0.0625,
+  "contradiction_accepted": 0,
+  "dim_agreement": [
+   7,
+   7
+  ],
+  "S1": true,
+  "S2": false,
+  "S3": true,
+  "S4": true,
+  "outcome": "PARTIAL",
+  "per_world": {
+   "dev-bombelli": {
+    "truth": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "B3": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "correct": true
+   },
+   "dev-contradiction": {
+    "truth": [
+     "CONTRADICTION",
+     null
+    ],
+    "procedure": [
+     "CONTRADICTION",
+     null
+    ],
+    "B3": [
+     "CONTRADICTION",
+     null
+    ],
+    "correct": true
+   },
+   "dev-dirac11": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "correct": true
+   },
+   "dev-dual": {
+    "truth": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "dev-grassmann": {
+    "truth": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "dev-grassmann-nogrades": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "dev-j-lightlines": {
+    "truth": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "dev-knob": {
+    "truth": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "procedure": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "B3": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "correct": true
+   },
+   "dev-quaternions": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "correct": true
+   },
+   "dev-sign-subsumed": {
+    "truth": [
+     "SUBSUMED",
+     null
+    ],
+    "procedure": [
+     "SUBSUMED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   }
+  }
+ },
+ "E2": {
+  "n": 3,
+  "procedure": {
+   "per_class": {
+    "SAME": [
+     1,
+     1
+    ],
+    "ANOTHER": [
+     1,
+     1
+    ],
+    "INVALID": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 1.0
+  },
+  "C1": {
+   "per_class": {
+    "SAME": [
+     1,
+     1
+    ],
+    "ANOTHER": [
+     0,
+     1
+    ],
+    "INVALID": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.3333333333333333
+  },
+  "C2": {
+   "per_class": {
+    "SAME": [
+     0,
+     1
+    ],
+    "ANOTHER": [
+     1,
+     1
+    ],
+    "INVALID": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.3333333333333333
+  },
+  "C3": {
+   "per_class": {
+    "SAME": [
+     1,
+     1
+    ],
+    "ANOTHER": [
+     0,
+     1
+    ],
+    "INVALID": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.6666666666666666
+  },
+  "detectable_recall": [
+   1,
+   1
+  ],
+  "false_alarms": [
+   0,
+   1
+  ],
+  "invalid_detected": [
+   1,
+   1
+  ],
+  "T1": true,
+  "T2": true,
+  "T3": true,
+  "T4": true,
+  "outcome": "PASS",
+  "per_world": {
+   "dev-e2-invalid": {
+    "truth": "INVALID",
+    "procedure": "INVALID",
+    "changed": []
+   },
+   "dev-e2-newstate": {
+    "truth": "SAME_LAW_NEW_STATE",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "dev-e2-symbreak": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "ANOTHER_LAW",
+    "changed": [
+     "symmetry:reflection"
+    ]
+   }
+  }
+ }
+}

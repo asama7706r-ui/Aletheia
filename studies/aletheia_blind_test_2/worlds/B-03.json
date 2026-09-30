@@ -1,0 +1,63 @@
+{
+ "id": "B-03",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "px": {
+   "M": 1,
+   "L": 1,
+   "T": -1
+  },
+  "py": {
+   "M": 1,
+   "L": 1,
+   "T": -1
+  }
+ },
+ "constants": {
+  "m": {
+   "value": "1",
+   "dims": {
+    "M": 1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = (px**2 + py**2)/(2*m)",
+ "term": {
+  "expr": "lam*px*py/m",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "reflection of the x axis",
+   "map": {
+    "px": "-px",
+    "y": "y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "px": "1",
+    "py": "2"
+   },
+   "output": "2503/1000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "px": "3",
+    "py": "-1"
+   },
+   "output": "1249/250",
+   "resolution": "1/100"
+  }
+ ]
+}

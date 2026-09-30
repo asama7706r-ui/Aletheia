@@ -1,0 +1,29 @@
+{
+ "id": "A-24",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "w",
+   "grade": 1
+  },
+  {
+   "name": "p",
+   "grade": 0
+  },
+  {
+   "name": "q",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "w*w = 1",
+  "w*p = q*w",
+  "p*p = p",
+  "q*q = q",
+  "p*q = 0",
+  "q*p = 0"
+ ],
+ "observations": []
+}

@@ -1,0 +1,22 @@
+{
+ "id": "dA-grassmann",
+ "generators": [
+  {
+   "name": "f",
+   "grade": 1
+  },
+  {
+   "name": "g",
+   "grade": 1
+  }
+ ],
+ "variables": [
+  "s",
+  "t"
+ ],
+ "laws": [
+  "(s*f + t*g)**2 = 0",
+  "(1 + f)*(1 + g) = 1 + f + g + f*g"
+ ],
+ "experiment": "A"
+}

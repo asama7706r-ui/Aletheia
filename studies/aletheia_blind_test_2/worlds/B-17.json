@@ -1,0 +1,81 @@
+{
+ "id": "B-17",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 1,
+   "T": -2
+  },
+  "Ef": {
+   "M": 1,
+   "L": 1,
+   "T": -3,
+   "I": -1
+  },
+  "B": {
+   "M": 1,
+   "T": -2,
+   "I": -1
+  },
+  "v": {
+   "L": 1,
+   "T": -1
+  }
+ },
+ "constants": {
+  "q": {
+   "value": "3",
+   "dims": {
+    "I": 1,
+    "T": 1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = q*Ef",
+ "term": {
+  "expr": "lam*q*v*B",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "joint reversal of v and B",
+   "map": {
+    "v": "-v",
+    "B": "-B",
+    "y": "y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "Ef": "1",
+    "B": "0",
+    "v": "2"
+   },
+   "output": "601/200",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "Ef": "2",
+    "B": "0",
+    "v": "5"
+   },
+   "output": "2999/500",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "Ef": "4",
+    "B": "0",
+    "v": "1"
+   },
+   "output": "241/20",
+   "resolution": "1/10"
+  }
+ ]
+}

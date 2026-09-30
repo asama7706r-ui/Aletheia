@@ -1,0 +1,29 @@
+{
+ "id": "A-11",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "k",
+   "grade": 0
+  },
+  {
+   "name": "f1",
+   "grade": 1
+  },
+  {
+   "name": "f2",
+   "grade": 1
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "k*k = k",
+  "k*f1 = f1",
+  "k*f2 = f2",
+  "f1*f1 = 0",
+  "f2*f2 = 0",
+  "f1*f2 + f2*f1 = 0"
+ ],
+ "observations": []
+}

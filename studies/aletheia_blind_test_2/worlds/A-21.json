@@ -1,0 +1,23 @@
+{
+ "id": "A-21",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "i",
+   "grade": 0
+  },
+  {
+   "name": "j",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "i**4 = 1",
+  "i*i = j*j",
+  "j*i = i**3*j",
+  "(i*j - j*i)*(i*i + 1) = 0"
+ ],
+ "observations": []
+}

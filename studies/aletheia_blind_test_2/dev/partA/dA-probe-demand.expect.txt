@@ -1,0 +1,1 @@
+expect DETERMINED assoc (demand excludes comm)

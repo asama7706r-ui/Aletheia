@@ -1,0 +1,943 @@
+{
+ "A": {
+  "n_total": 30,
+  "n_valid": 30,
+  "excluded": {},
+  "void": false,
+  "procedure": {
+   "correct": 30,
+   "accuracy": 1.0,
+   "fork_accuracy": 1.0,
+   "over_claim": 0.0,
+   "over_fork": 0.0,
+   "determined_correct": 13,
+   "contradictions_accepted": 0
+  },
+  "V1D": {
+   "correct": 20,
+   "accuracy": 0.6666666666666666,
+   "fork_accuracy": 0.0,
+   "over_claim": 1.0,
+   "over_fork": 0.0,
+   "determined_correct": 13,
+   "contradictions_accepted": 0
+  },
+  "OCC": {
+   "correct": 17,
+   "accuracy": 0.5666666666666667,
+   "fork_accuracy": 0.0,
+   "over_claim": 1.0,
+   "over_fork": 0.0,
+   "determined_correct": 13,
+   "contradictions_accepted": 0
+  },
+  "FORKALL": {
+   "correct": 8,
+   "accuracy": 0.26666666666666666,
+   "fork_accuracy": 0.2,
+   "over_claim": 0.0,
+   "over_fork": 0.8461538461538461,
+   "determined_correct": 2,
+   "contradictions_accepted": 0
+  },
+  "best_baseline": "V1D",
+  "mcnemar_b": 10,
+  "mcnemar_c": 0,
+  "mcnemar_p": 0.0009765625,
+  "A1": true,
+  "A2": true,
+  "A3": true,
+  "A4": true,
+  "A5": true,
+  "per_world": [
+   {
+    "id": "A-01",
+    "answer": "UNDERDETERMINED",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "UNDERDETERMINED",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "UNDERDETERMINED",
+    "V1D_level": "",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-02",
+    "answer": "UNDERDETERMINED",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "UNDERDETERMINED",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "UNDERDETERMINED",
+    "V1D_level": "",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-03",
+    "answer": "DETERMINED",
+    "key_level": "SUBSUMED",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "SUBSUMED",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "SUBSUMED",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-04",
+    "answer": "DETERMINED",
+    "key_level": "SUBSUMED",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "SUBSUMED",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "SUBSUMED",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-05",
+    "answer": "CONTRADICTION",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "CONTRADICTION",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "CONTRADICTION",
+    "V1D_level": "",
+    "OCC": true,
+    "OCC_label": "CONTRADICTION",
+    "OCC_level": "",
+    "FORKALL": true,
+    "FORKALL_label": "CONTRADICTION",
+    "FORKALL_level": ""
+   },
+   {
+    "id": "A-06",
+    "answer": "DETERMINED",
+    "key_level": "graded",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "graded",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "graded",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "graded",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "graded|assoc"
+   },
+   {
+    "id": "A-07",
+    "answer": "FORK",
+    "key_level": "comm|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "comm|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": true,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "A-08",
+    "answer": "FORK",
+    "key_level": "graded|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "graded|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "graded",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "graded|assoc"
+   },
+   {
+    "id": "A-09",
+    "answer": "DETERMINED",
+    "key_level": "comm",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "comm",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "A-10",
+    "answer": "CONTRADICTION",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "CONTRADICTION",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "CONTRADICTION",
+    "V1D_level": "",
+    "OCC": true,
+    "OCC_label": "CONTRADICTION",
+    "OCC_level": "",
+    "FORKALL": true,
+    "FORKALL_label": "CONTRADICTION",
+    "FORKALL_level": ""
+   },
+   {
+    "id": "A-11",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm|graded",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm|graded",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "graded",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-12",
+    "answer": "FORK",
+    "key_level": "comm|graded|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "comm|graded|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "A-13",
+    "answer": "DETERMINED",
+    "key_level": "assoc",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "assoc",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "assoc",
+    "FORKALL": true,
+    "FORKALL_label": "DETERMINED",
+    "FORKALL_level": "assoc"
+   },
+   {
+    "id": "A-14",
+    "answer": "DETERMINED",
+    "key_level": "comm",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "comm",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "A-15",
+    "answer": "DETERMINED",
+    "key_level": "assoc",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "assoc",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "assoc",
+    "FORKALL": true,
+    "FORKALL_label": "DETERMINED",
+    "FORKALL_level": "assoc"
+   },
+   {
+    "id": "A-16",
+    "answer": "DETERMINED",
+    "key_level": "comm",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "comm",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "A-17",
+    "answer": "FORK",
+    "key_level": "comm|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "comm|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": true,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "A-18",
+    "answer": "DETERMINED",
+    "key_level": "comm",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "comm",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "A-19",
+    "answer": "DETERMINED",
+    "key_level": "SUBSUMED",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "SUBSUMED",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "SUBSUMED",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-20",
+    "answer": "DETERMINED",
+    "key_level": "graded",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "graded",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "graded",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "graded",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "graded|assoc"
+   },
+   {
+    "id": "A-21",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-22",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-23",
+    "answer": "CONTRADICTION",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "CONTRADICTION",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "CONTRADICTION",
+    "V1D_level": "",
+    "OCC": true,
+    "OCC_label": "CONTRADICTION",
+    "OCC_level": "",
+    "FORKALL": true,
+    "FORKALL_label": "CONTRADICTION",
+    "FORKALL_level": ""
+   },
+   {
+    "id": "A-24",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-25",
+    "answer": "CONTRADICTION",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "CONTRADICTION",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "CONTRADICTION",
+    "V1D_level": "",
+    "OCC": true,
+    "OCC_label": "CONTRADICTION",
+    "OCC_level": "",
+    "FORKALL": true,
+    "FORKALL_label": "CONTRADICTION",
+    "FORKALL_level": ""
+   },
+   {
+    "id": "A-26",
+    "answer": "DETERMINED",
+    "key_level": "SUBSUMED",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "SUBSUMED",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "SUBSUMED",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-27",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm|graded|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm|graded|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-28",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-29",
+    "answer": "UNDERDETERMINED",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "UNDERDETERMINED",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "UNDERDETERMINED",
+    "V1D_level": "",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "A-30",
+    "answer": "DETERMINED",
+    "key_level": "comm",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "comm",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   }
+  ],
+  "outcome": "PASS"
+ },
+ "B": {
+  "n_total": 18,
+  "n_valid": 18,
+  "excluded": {},
+  "void": false,
+  "procedure": {
+   "correct": 18,
+   "accuracy": 1.0,
+   "per_class": {
+    "ACTIVE": [
+     3,
+     3
+    ],
+    "BOUNDED": [
+     3,
+     3
+    ],
+    "CONFLICT": [
+     3,
+     3
+    ],
+    "INCIDENTAL": [
+     2,
+     2
+    ],
+    "SYMMETRY_ZERO": [
+     3,
+     3
+    ],
+    "TYPE_IMPOSSIBLE": [
+     3,
+     3
+    ],
+    "UNCONSTRAINED": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 1.0,
+   "false_death": 0.0,
+   "conflicts_detected": 1.0
+  },
+  "THRESH": {
+   "correct": 5,
+   "accuracy": 0.2777777777777778,
+   "per_class": {
+    "ACTIVE": [
+     3,
+     3
+    ],
+    "BOUNDED": [
+     0,
+     3
+    ],
+    "CONFLICT": [
+     2,
+     3
+    ],
+    "INCIDENTAL": [
+     0,
+     2
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     3
+    ],
+    "TYPE_IMPOSSIBLE": [
+     0,
+     3
+    ],
+    "UNCONSTRAINED": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.23809523809523808,
+   "false_death": 1.0,
+   "conflicts_detected": 0.6666666666666666
+  },
+  "MENTION": {
+   "correct": 6,
+   "accuracy": 0.3333333333333333,
+   "per_class": {
+    "ACTIVE": [
+     3,
+     3
+    ],
+    "BOUNDED": [
+     0,
+     3
+    ],
+    "CONFLICT": [
+     0,
+     3
+    ],
+    "INCIDENTAL": [
+     0,
+     2
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     3
+    ],
+    "TYPE_IMPOSSIBLE": [
+     3,
+     3
+    ],
+    "UNCONSTRAINED": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.2857142857142857,
+   "false_death": 0.0,
+   "conflicts_detected": 0.0
+  },
+  "NOSYM": {
+   "correct": 12,
+   "accuracy": 0.6666666666666666,
+   "per_class": {
+    "ACTIVE": [
+     3,
+     3
+    ],
+    "BOUNDED": [
+     3,
+     3
+    ],
+    "CONFLICT": [
+     2,
+     3
+    ],
+    "INCIDENTAL": [
+     0,
+     2
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     3
+    ],
+    "TYPE_IMPOSSIBLE": [
+     3,
+     3
+    ],
+    "UNCONSTRAINED": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.6666666666666667,
+   "false_death": 0.0,
+   "conflicts_detected": 0.6666666666666666
+  },
+  "B1": true,
+  "B2": true,
+  "B3": true,
+  "B4": true,
+  "per_world": [
+   {
+    "id": "B-01",
+    "class": "SYMMETRY_ZERO",
+    "procedure": true,
+    "procedure_label": "SYMMETRY_ZERO",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "B-02",
+    "class": "BOUNDED",
+    "procedure": true,
+    "procedure_label": "BOUNDED",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "B-03",
+    "class": "SYMMETRY_ZERO",
+    "procedure": true,
+    "procedure_label": "SYMMETRY_ZERO",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "B-04",
+    "class": "CONFLICT",
+    "procedure": true,
+    "procedure_label": "CONFLICT",
+    "THRESH": false,
+    "THRESH_label": "ACTIVE",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "ACTIVE"
+   },
+   {
+    "id": "B-05",
+    "class": "BOUNDED",
+    "procedure": true,
+    "procedure_label": "BOUNDED",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "B-06",
+    "class": "INCIDENTAL",
+    "procedure": true,
+    "procedure_label": "INCIDENTAL",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "UNCONSTRAINED"
+   },
+   {
+    "id": "B-07",
+    "class": "SYMMETRY_ZERO",
+    "procedure": true,
+    "procedure_label": "SYMMETRY_ZERO",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "B-08",
+    "class": "CONFLICT",
+    "procedure": true,
+    "procedure_label": "CONFLICT",
+    "THRESH": true,
+    "THRESH_label": "CONFLICT",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "CONFLICT"
+   },
+   {
+    "id": "B-09",
+    "class": "TYPE_IMPOSSIBLE",
+    "procedure": true,
+    "procedure_label": "TYPE_IMPOSSIBLE",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": true,
+    "MENTION_label": "TYPE_IMPOSSIBLE",
+    "NOSYM": true,
+    "NOSYM_label": "TYPE_IMPOSSIBLE"
+   },
+   {
+    "id": "B-10",
+    "class": "ACTIVE",
+    "procedure": true,
+    "procedure_label": "ACTIVE",
+    "THRESH": true,
+    "THRESH_label": "ACTIVE",
+    "MENTION": true,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "ACTIVE"
+   },
+   {
+    "id": "B-11",
+    "class": "ACTIVE",
+    "procedure": true,
+    "procedure_label": "ACTIVE",
+    "THRESH": true,
+    "THRESH_label": "ACTIVE",
+    "MENTION": true,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "ACTIVE"
+   },
+   {
+    "id": "B-12",
+    "class": "TYPE_IMPOSSIBLE",
+    "procedure": true,
+    "procedure_label": "TYPE_IMPOSSIBLE",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": true,
+    "MENTION_label": "TYPE_IMPOSSIBLE",
+    "NOSYM": true,
+    "NOSYM_label": "TYPE_IMPOSSIBLE"
+   },
+   {
+    "id": "B-13",
+    "class": "BOUNDED",
+    "procedure": true,
+    "procedure_label": "BOUNDED",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "B-14",
+    "class": "ACTIVE",
+    "procedure": true,
+    "procedure_label": "ACTIVE",
+    "THRESH": true,
+    "THRESH_label": "ACTIVE",
+    "MENTION": true,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "ACTIVE"
+   },
+   {
+    "id": "B-15",
+    "class": "CONFLICT",
+    "procedure": true,
+    "procedure_label": "CONFLICT",
+    "THRESH": true,
+    "THRESH_label": "CONFLICT",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "CONFLICT"
+   },
+   {
+    "id": "B-16",
+    "class": "TYPE_IMPOSSIBLE",
+    "procedure": true,
+    "procedure_label": "TYPE_IMPOSSIBLE",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": true,
+    "MENTION_label": "TYPE_IMPOSSIBLE",
+    "NOSYM": true,
+    "NOSYM_label": "TYPE_IMPOSSIBLE"
+   },
+   {
+    "id": "B-17",
+    "class": "UNCONSTRAINED",
+    "procedure": true,
+    "procedure_label": "UNCONSTRAINED",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "UNCONSTRAINED"
+   },
+   {
+    "id": "B-18",
+    "class": "INCIDENTAL",
+    "procedure": true,
+    "procedure_label": "INCIDENTAL",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "UNCONSTRAINED"
+   }
+  ],
+  "outcome": "PASS"
+ }
+}

@@ -1,0 +1,13 @@
+entrant | A_primary_correct | A_strict_correct | A_fork_primary_correct | A_over_claim | A_over_fork | A_contradictions_accepted | B_correct | B_false_death | B_conflicts_detected | missing_or_invalid | verdict
+ref:procedure | 30 | 30 | 10 | 0 | 0 | 0 | 18 | 0 | 3 | 0 | -
+ref:V1D | 20 | 20 | 0 | 10 | 0 | 0 | 0 | 0 | 0 | 18 | -
+ref:OCC | 17 | 17 | 0 | 10 | 0 | 0 | 0 | 0 | 0 | 18 | -
+ref:FORKALL | 9 | 8 | 3 | 0 | 11 | 0 | 0 | 0 | 0 | 18 | -
+ref:THRESH | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 4 | 2 | 30 | -
+ref:MENTION | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | 0 | 30 | -
+ref:NOSYM | 0 | 0 | 0 | 0 | 0 | 0 | 12 | 0 | 2 | 30 | -
+claude | 24 | 21 | 7 | 0 | 0 | 0 | 18 | 0 | 3 | 6 | GAP
+deepseek | 30 | 27 | 10 | 0 | 0 | 0 | 18 | 0 | 3 | 0 | NO_GAP
+gemini | 30 | 27 | 10 | 0 | 0 | 0 | 18 | 0 | 3 | 0 | NO_GAP
+qwen | 30 | 27 | 10 | 0 | 0 | 0 | 18 | 0 | 3 | 0 | NO_GAP
+overall: RULE_EXECUTION_EDGE_NOT_SUPPORTED

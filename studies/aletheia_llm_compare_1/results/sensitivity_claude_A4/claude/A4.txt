@@ -1,0 +1,11 @@
+Sensitivity reconstruction (NOT a model reply): runs/claude/A4.txt was recorded with every double quote, slash and asterisk stripped. The labels, levels and branches below are copied from its final block, and only the quotes were restored. The decisive sets are dropped because the stripped asterisks make them ambiguous (e.g. "ij - ji"). This affects only the strict metric.
+```json
+[
+ {"id": "A-19", "label": "DETERMINED", "level": "SUBSUMED"},
+ {"id": "A-20", "label": "DETERMINED", "level": "graded"},
+ {"id": "A-21", "label": "FORK", "branches": ["SUBSUMED", "comm", "assoc"]},
+ {"id": "A-22", "label": "FORK", "branches": ["SUBSUMED", "comm"]},
+ {"id": "A-23", "label": "CONTRADICTION"},
+ {"id": "A-24", "label": "FORK", "branches": ["SUBSUMED", "comm", "assoc"]}
+]
+```

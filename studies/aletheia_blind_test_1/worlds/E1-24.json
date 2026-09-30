@@ -1,0 +1,28 @@
+{
+  "id": "E1-24",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "w",
+      "grade": 0
+    },
+    {
+      "name": "u",
+      "grade": 1
+    },
+    {
+      "name": "v",
+      "grade": 1
+    }
+  ],
+  "variables": [
+    "s",
+    "t"
+  ],
+  "laws": [
+    "w*w = 2",
+    "(s*u + t*v)**2 = 0",
+    "(w + s*u)*(w + t*v) = (w + t*v)*(w + s*u) + 2*s*t*u*v",
+    "(w + u*v)**2 = 2 + 2*w*u*v"
+  ]
+}

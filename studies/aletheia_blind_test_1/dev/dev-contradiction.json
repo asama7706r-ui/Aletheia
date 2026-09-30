@@ -1,0 +1,14 @@
+{
+ "id": "dev-contradiction",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "x",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "x*x = 1",
+  "x*x = -1"
+ ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "E2-02",
+  "experiment": "E2",
+  "quantities": {
+    "v": {
+      "L": 1,
+      "T": -1
+    },
+    "g": {
+      "L": 1,
+      "T": -2
+    },
+    "d": {
+      "L": 1
+    },
+    "s": {
+      "M": 1,
+      "T": -2
+    },
+    "kw": {
+      "L": -1
+    },
+    "rho": {
+      "M": 1,
+      "L": -3
+    }
+  },
+  "law_original": "v = sqrt(g*d)",
+  "filled_law": "v = sqrt(g*d + s*kw/rho)",
+  "symmetries": [
+    {
+      "name": "depth scaling",
+      "map": {
+        "d": "l*d",
+        "v": "sqrt(l)*v"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    },
+    {
+      "name": "gravity scaling",
+      "map": {
+        "g": "l*g",
+        "v": "sqrt(l)*v"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "g": "2",
+        "d": "2",
+        "s": "0",
+        "kw": "1",
+        "rho": "1"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "g": "1",
+        "d": "1/4",
+        "s": "0",
+        "kw": "2",
+        "rho": "1"
+      },
+      "output": "1/2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "g": "3",
+        "d": "3",
+        "s": "0",
+        "kw": "1/2",
+        "rho": "2"
+      },
+      "output": "3",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "g": "2",
+      "d": "2",
+      "s": "5",
+      "kw": "1",
+      "rho": "1"
+    },
+    "output": "3",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "water layer"
+  ],
+  "state_filled": [
+    "water layer",
+    "surface film"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+ "id": "B-01",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "L": 2
+  },
+  "wd": {
+   "L": 1
+  },
+  "ht": {
+   "L": 1
+  }
+ },
+ "constants": {},
+ "parameters": {},
+ "law": "y = wd*ht",
+ "term": {
+  "expr": "lam*wd**2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "exchange of the sides",
+   "map": {
+    "wd": "ht",
+    "ht": "wd",
+    "y": "y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "wd": "2",
+    "ht": "3"
+   },
+   "output": "1201/200",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "wd": "5",
+    "ht": "1"
+   },
+   "output": "499/100",
+   "resolution": "1/50"
+  }
+ ]
+}

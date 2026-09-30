@@ -1,0 +1,654 @@
+{
+ "excluded": {},
+ "E1": {
+  "n_total": 28,
+  "n_valid": 28,
+  "void": false,
+  "procedure": {
+   "accuracy": 1.0,
+   "correct": 28,
+   "silent_collapse_rate": 0.0,
+   "over_loose_rate": 0.0
+  },
+  "B1": {
+   "accuracy": 0.4642857142857143,
+   "correct": 13,
+   "silent_collapse_rate": 0.7857142857142857,
+   "over_loose_rate": 0.0
+  },
+  "B2": {
+   "accuracy": 0.5357142857142857,
+   "correct": 15,
+   "silent_collapse_rate": 0.0,
+   "over_loose_rate": 1.0
+  },
+  "B3": {
+   "accuracy": 0.5714285714285714,
+   "correct": 16,
+   "silent_collapse_rate": 0.7857142857142857,
+   "over_loose_rate": 0.0
+  },
+  "best_baseline": "B3",
+  "mcnemar_b": 12,
+  "mcnemar_c": 0,
+  "mcnemar_p": 0.000244140625,
+  "contradiction_accepted": 0,
+  "dim_agreement": [
+   14,
+   14
+  ],
+  "S1": true,
+  "S2": true,
+  "S3": true,
+  "S4": true,
+  "outcome": "PASS",
+  "per_world": {
+   "E1-01": {
+    "truth": [
+     "CONTRADICTION",
+     null
+    ],
+    "procedure": [
+     "CONTRADICTION",
+     null
+    ],
+    "B3": [
+     "CONTRADICTION",
+     null
+    ],
+    "correct": true
+   },
+   "E1-02": {
+    "truth": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-03": {
+    "truth": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "procedure": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "B3": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-04": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-05": {
+    "truth": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-06": {
+    "truth": [
+     "CONTRADICTION",
+     null
+    ],
+    "procedure": [
+     "CONTRADICTION",
+     null
+    ],
+    "B3": [
+     "CONTRADICTION",
+     null
+    ],
+    "correct": true
+   },
+   "E1-07": {
+    "truth": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "procedure": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "B3": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-08": {
+    "truth": [
+     "SUBSUMED",
+     null
+    ],
+    "procedure": [
+     "SUBSUMED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-09": {
+    "truth": [
+     "CONTRADICTION",
+     null
+    ],
+    "procedure": [
+     "CONTRADICTION",
+     null
+    ],
+    "B3": [
+     "CONTRADICTION",
+     null
+    ],
+    "correct": true
+   },
+   "E1-10": {
+    "truth": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-11": {
+    "truth": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "B3": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "correct": true
+   },
+   "E1-12": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-13": {
+    "truth": [
+     "SUBSUMED",
+     null
+    ],
+    "procedure": [
+     "SUBSUMED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-14": {
+    "truth": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-15": {
+    "truth": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "procedure": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "B3": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-16": {
+    "truth": [
+     "SUBSUMED",
+     null
+    ],
+    "procedure": [
+     "SUBSUMED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-17": {
+    "truth": [
+     "SUBSUMED",
+     null
+    ],
+    "procedure": [
+     "SUBSUMED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-18": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-19": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "correct": true
+   },
+   "E1-20": {
+    "truth": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-21": {
+    "truth": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-22": {
+    "truth": [
+     "CONTRADICTION",
+     null
+    ],
+    "procedure": [
+     "CONTRADICTION",
+     null
+    ],
+    "B3": [
+     "CONTRADICTION",
+     null
+    ],
+    "correct": true
+   },
+   "E1-23": {
+    "truth": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "B3": [
+     "NEW_KIND",
+     "assoc"
+    ],
+    "correct": true
+   },
+   "E1-24": {
+    "truth": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "B3": [
+     "NEW_KIND",
+     "comm"
+    ],
+    "correct": true
+   },
+   "E1-25": {
+    "truth": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "procedure": [
+     "NEW_KIND",
+     "graded"
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-26": {
+    "truth": [
+     "SUBSUMED",
+     null
+    ],
+    "procedure": [
+     "SUBSUMED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-27": {
+    "truth": [
+     "SUBSUMED",
+     null
+    ],
+    "procedure": [
+     "SUBSUMED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   },
+   "E1-28": {
+    "truth": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "procedure": [
+     "UNDERDETERMINED",
+     null
+    ],
+    "B3": [
+     "SUBSUMED",
+     null
+    ],
+    "correct": true
+   }
+  }
+ },
+ "E2": {
+  "n": 16,
+  "procedure": {
+   "per_class": {
+    "SAME": [
+     6,
+     6
+    ],
+    "ANOTHER": [
+     5,
+     7
+    ],
+    "INVALID": [
+     3,
+     3
+    ]
+   },
+   "balanced_accuracy": 0.9047619047619048
+  },
+  "C1": {
+   "per_class": {
+    "SAME": [
+     6,
+     6
+    ],
+    "ANOTHER": [
+     0,
+     7
+    ],
+    "INVALID": [
+     0,
+     3
+    ]
+   },
+   "balanced_accuracy": 0.3333333333333333
+  },
+  "C2": {
+   "per_class": {
+    "SAME": [
+     0,
+     6
+    ],
+    "ANOTHER": [
+     7,
+     7
+    ],
+    "INVALID": [
+     0,
+     3
+    ]
+   },
+   "balanced_accuracy": 0.3333333333333333
+  },
+  "C3": {
+   "per_class": {
+    "SAME": [
+     6,
+     6
+    ],
+    "ANOTHER": [
+     0,
+     7
+    ],
+    "INVALID": [
+     3,
+     3
+    ]
+   },
+   "balanced_accuracy": 0.6666666666666666
+  },
+  "detectable_recall": [
+   5,
+   5
+  ],
+  "false_alarms": [
+   0,
+   6
+  ],
+  "invalid_detected": [
+   3,
+   3
+  ],
+  "T1": true,
+  "T2": true,
+  "T3": true,
+  "T4": true,
+  "outcome": "PASS",
+  "per_world": {
+   "E2-01": {
+    "truth": "SAME_LAW_NEW_STATE",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-02": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "ANOTHER_LAW",
+    "changed": [
+     "symmetry:depth scaling",
+     "symmetry:gravity scaling"
+    ]
+   },
+   "E2-03": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "ANOTHER_LAW",
+    "changed": [
+     "symmetry:Galilean boost"
+    ]
+   },
+   "E2-04": {
+    "truth": "INVALID",
+    "procedure": "INVALID",
+    "changed": []
+   },
+   "E2-05": {
+    "truth": "SAME_LAW_NEW_STATE",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-06": {
+    "truth": "SAME_LAW_NEW_STATE",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-07": {
+    "truth": "SAME_LAW_NEW_STATE",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-08": {
+    "truth": "INVALID",
+    "procedure": "INVALID",
+    "changed": []
+   },
+   "E2-09": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-10": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-11": {
+    "truth": "SAME_LAW_NEW_STATE",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-12": {
+    "truth": "SAME_LAW_NEW_STATE",
+    "procedure": "SAME_LAW_NEW_STATE",
+    "changed": []
+   },
+   "E2-13": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "ANOTHER_LAW",
+    "changed": [
+     "validated[0]",
+     "validated[1]",
+     "validated[2]"
+    ]
+   },
+   "E2-14": {
+    "truth": "INVALID",
+    "procedure": "INVALID",
+    "changed": []
+   },
+   "E2-15": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "ANOTHER_LAW",
+    "changed": [
+     "symmetry:exchange of the two bodies"
+    ]
+   },
+   "E2-16": {
+    "truth": "ANOTHER_LAW",
+    "procedure": "ANOTHER_LAW",
+    "changed": [
+     "validated[0]",
+     "validated[1]",
+     "validated[2]",
+     "symmetry:temperature scaling"
+    ]
+   }
+  }
+ }
+}

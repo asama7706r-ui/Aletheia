@@ -1,0 +1,461 @@
+{
+ "A": {
+  "n_total": 8,
+  "n_valid": 8,
+  "excluded": {},
+  "void": false,
+  "procedure": {
+   "correct": 8,
+   "accuracy": 1.0,
+   "fork_accuracy": 1.0,
+   "over_claim": 0.0,
+   "over_fork": 0.0,
+   "determined_correct": 3,
+   "contradictions_accepted": 0
+  },
+  "V1D": {
+   "correct": 4,
+   "accuracy": 0.5,
+   "fork_accuracy": 0.0,
+   "over_claim": 1.0,
+   "over_fork": 0.0,
+   "determined_correct": 3,
+   "contradictions_accepted": 0
+  },
+  "OCC": {
+   "correct": 5,
+   "accuracy": 0.625,
+   "fork_accuracy": 0.0,
+   "over_claim": 1.0,
+   "over_fork": 0.0,
+   "determined_correct": 3,
+   "contradictions_accepted": 0
+  },
+  "FORKALL": {
+   "correct": 4,
+   "accuracy": 0.5,
+   "fork_accuracy": 0.3333333333333333,
+   "over_claim": 0.0,
+   "over_fork": 0.6666666666666666,
+   "determined_correct": 1,
+   "contradictions_accepted": 0
+  },
+  "best_baseline": "OCC",
+  "mcnemar_b": 3,
+  "mcnemar_c": 0,
+  "mcnemar_p": 0.125,
+  "A1": true,
+  "A2": true,
+  "A3": true,
+  "A4": true,
+  "A5": true,
+  "per_world": [
+   {
+    "id": "dA-demand-contra",
+    "answer": "CONTRADICTION",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "CONTRADICTION",
+    "procedure_level": "",
+    "V1D": true,
+    "V1D_label": "CONTRADICTION",
+    "V1D_level": "",
+    "OCC": true,
+    "OCC_label": "CONTRADICTION",
+    "OCC_level": "",
+    "FORKALL": true,
+    "FORKALL_label": "CONTRADICTION",
+    "FORKALL_level": ""
+   },
+   {
+    "id": "dA-lightlines",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "dA-param",
+    "answer": "UNDERDETERMINED",
+    "key_level": "",
+    "procedure": true,
+    "procedure_label": "UNDERDETERMINED",
+    "procedure_level": "",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": true,
+    "OCC_label": "UNDERDETERMINED",
+    "OCC_level": "",
+    "FORKALL": true,
+    "FORKALL_label": "UNDERDETERMINED",
+    "FORKALL_level": ""
+   },
+   {
+    "id": "dA-plain",
+    "answer": "DETERMINED",
+    "key_level": "comm",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "comm",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "comm",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "dA-probe",
+    "answer": "FORK",
+    "key_level": "comm|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "comm|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "comm",
+    "FORKALL": true,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "comm|assoc"
+   },
+   {
+    "id": "dA-probe-demand",
+    "answer": "DETERMINED",
+    "key_level": "assoc",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "assoc",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "assoc",
+    "FORKALL": true,
+    "FORKALL_label": "DETERMINED",
+    "FORKALL_level": "assoc"
+   },
+   {
+    "id": "dA-sign",
+    "answer": "DETERMINED",
+    "key_level": "SUBSUMED",
+    "procedure": true,
+    "procedure_label": "DETERMINED",
+    "procedure_level": "SUBSUMED",
+    "V1D": true,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "SUBSUMED",
+    "OCC": true,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   },
+   {
+    "id": "dA-smash",
+    "answer": "FORK",
+    "key_level": "SUBSUMED|comm|graded|assoc",
+    "procedure": true,
+    "procedure_label": "FORK",
+    "procedure_level": "SUBSUMED|comm|graded|assoc",
+    "V1D": false,
+    "V1D_label": "DETERMINED",
+    "V1D_level": "assoc",
+    "OCC": false,
+    "OCC_label": "DETERMINED",
+    "OCC_level": "SUBSUMED",
+    "FORKALL": false,
+    "FORKALL_label": "FORK",
+    "FORKALL_level": "SUBSUMED|assoc"
+   }
+  ],
+  "outcome": "PASS"
+ },
+ "B": {
+  "n_total": 9,
+  "n_valid": 9,
+  "excluded": {},
+  "void": false,
+  "procedure": {
+   "correct": 9,
+   "accuracy": 1.0,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     2,
+     2
+    ],
+    "CONFLICT": [
+     2,
+     2
+    ],
+    "INCIDENTAL": [
+     1,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     1,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     1,
+     1
+    ],
+    "UNCONSTRAINED": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 1.0,
+   "false_death": 0.0,
+   "conflicts_detected": 1.0
+  },
+  "THRESH": {
+   "correct": 2,
+   "accuracy": 0.2222222222222222,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     0,
+     2
+    ],
+    "CONFLICT": [
+     1,
+     2
+    ],
+    "INCIDENTAL": [
+     0,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     0,
+     1
+    ],
+    "UNCONSTRAINED": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.21428571428571427,
+   "false_death": 1.0,
+   "conflicts_detected": 0.5
+  },
+  "MENTION": {
+   "correct": 2,
+   "accuracy": 0.2222222222222222,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     0,
+     2
+    ],
+    "CONFLICT": [
+     0,
+     2
+    ],
+    "INCIDENTAL": [
+     0,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     1,
+     1
+    ],
+    "UNCONSTRAINED": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.2857142857142857,
+   "false_death": 0.0,
+   "conflicts_detected": 0.0
+  },
+  "NOSYM": {
+   "correct": 6,
+   "accuracy": 0.6666666666666666,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     2,
+     2
+    ],
+    "CONFLICT": [
+     1,
+     2
+    ],
+    "INCIDENTAL": [
+     0,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     1,
+     1
+    ],
+    "UNCONSTRAINED": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.6428571428571429,
+   "false_death": 0.0,
+   "conflicts_detected": 0.5
+  },
+  "B1": true,
+  "B2": true,
+  "B3": true,
+  "B4": true,
+  "per_world": [
+   {
+    "id": "dB-active",
+    "class": "ACTIVE",
+    "procedure": true,
+    "procedure_label": "ACTIVE",
+    "THRESH": true,
+    "THRESH_label": "ACTIVE",
+    "MENTION": true,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "ACTIVE"
+   },
+   {
+    "id": "dB-empty",
+    "class": "CONFLICT",
+    "procedure": true,
+    "procedure_label": "CONFLICT",
+    "THRESH": true,
+    "THRESH_label": "CONFLICT",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "CONFLICT"
+   },
+   {
+    "id": "dB-hooke-bounded",
+    "class": "BOUNDED",
+    "procedure": true,
+    "procedure_label": "BOUNDED",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "dB-incidental",
+    "class": "INCIDENTAL",
+    "procedure": true,
+    "procedure_label": "INCIDENTAL",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "UNCONSTRAINED"
+   },
+   {
+    "id": "dB-parity-violated",
+    "class": "CONFLICT",
+    "procedure": true,
+    "procedure_label": "CONFLICT",
+    "THRESH": false,
+    "THRESH_label": "ACTIVE",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "ACTIVE"
+   },
+   {
+    "id": "dB-parity-zero",
+    "class": "SYMMETRY_ZERO",
+    "procedure": true,
+    "procedure_label": "SYMMETRY_ZERO",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": false,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "dB-surface-bridge",
+    "class": "BOUNDED",
+    "procedure": true,
+    "procedure_label": "BOUNDED",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "BOUNDED"
+   },
+   {
+    "id": "dB-surface-nobridge",
+    "class": "TYPE_IMPOSSIBLE",
+    "procedure": true,
+    "procedure_label": "TYPE_IMPOSSIBLE",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": true,
+    "MENTION_label": "TYPE_IMPOSSIBLE",
+    "NOSYM": true,
+    "NOSYM_label": "TYPE_IMPOSSIBLE"
+   },
+   {
+    "id": "dB-unconstrained",
+    "class": "UNCONSTRAINED",
+    "procedure": true,
+    "procedure_label": "UNCONSTRAINED",
+    "THRESH": false,
+    "THRESH_label": "ZERO",
+    "MENTION": false,
+    "MENTION_label": "ACTIVE",
+    "NOSYM": true,
+    "NOSYM_label": "UNCONSTRAINED"
+   }
+  ],
+  "outcome": "PASS"
+ }
+}

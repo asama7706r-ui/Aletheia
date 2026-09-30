@@ -1,0 +1,14 @@
+{
+ "id": "dev-j-lightlines",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "u",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "u*u = 1",
+  "(1 + u)*(1 - u) = 0"
+ ]
+}

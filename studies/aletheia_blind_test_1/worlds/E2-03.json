@@ -1,0 +1,103 @@
+{
+  "id": "E2-03",
+  "experiment": "E2",
+  "quantities": {
+    "p": {
+      "M": 1,
+      "L": 1,
+      "T": -1
+    },
+    "m": {
+      "M": 1
+    },
+    "v": {
+      "L": 1,
+      "T": -1
+    },
+    "cl": {
+      "L": 1,
+      "T": -1
+    }
+  },
+  "law_original": "p = m*v",
+  "filled_law": "p = m*v/sqrt(1 - v**2/cl**2)",
+  "symmetries": [
+    {
+      "name": "Galilean boost",
+      "map": {
+        "v": "v + w",
+        "p": "p + m*w"
+      },
+      "params": {
+        "w": [
+          "-1",
+          "1"
+        ]
+      }
+    },
+    {
+      "name": "mass scaling",
+      "map": {
+        "m": "l*m",
+        "p": "l*p"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "ranges": {
+    "cl": [
+      "10",
+      "20"
+    ]
+  },
+  "validated": [
+    {
+      "inputs": {
+        "m": "1",
+        "v": "2",
+        "cl": "1000000"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "m": "2",
+        "v": "3",
+        "cl": "1000000"
+      },
+      "output": "6",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "m": "1/2",
+        "v": "1",
+        "cl": "1000000"
+      },
+      "output": "1/2",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "m": "1",
+      "v": "3",
+      "cl": "5"
+    },
+    "output": "15/4",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "particle"
+  ],
+  "state_filled": [
+    "particle",
+    "limiting speed"
+  ]
+}

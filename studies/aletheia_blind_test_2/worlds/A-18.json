@@ -1,0 +1,26 @@
+{
+ "id": "A-18",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "s1",
+   "grade": 1
+  },
+  {
+   "name": "s2",
+   "grade": 1
+  },
+  {
+   "name": "w",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "s1*s1 = w",
+  "s2*s2 = w",
+  "w*w = w + 1"
+ ],
+ "observations": []
+}

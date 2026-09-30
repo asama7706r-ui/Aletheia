@@ -1,0 +1,13 @@
+{
+ "id": "dA-sign",
+ "generators": [
+  {
+   "name": "u",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "u*u = 1"
+ ],
+ "experiment": "A"
+}

@@ -1,0 +1,1 @@
+expect FORK comm|assoc, decisive x*y - y*x

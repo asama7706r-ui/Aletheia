@@ -1,0 +1,29 @@
+{
+ "id": "A-10",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "a",
+   "grade": 1
+  },
+  {
+   "name": "b",
+   "grade": 1
+  },
+  {
+   "name": "c",
+   "grade": 1
+  }
+ ],
+ "variables": [
+  "x",
+  "y",
+  "z"
+ ],
+ "parameters": [],
+ "laws": [
+  "(a*x + b*y + c*z)**2 = x**2 + y**2 + z**2",
+  "a*b*c = 1"
+ ],
+ "observations": []
+}

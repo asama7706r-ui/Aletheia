@@ -1,21 +1,18 @@
-# Rust build artifacts
+# Python
+__pycache__/
+*.pyc
+
+# Local tooling and legacy build output
+.claude/
 /target/
-**/*.rs.bk
-*.pdb
 
 # IDE and OS files
 .idea/
 .vscode/
 *.swp
-*.swo
 *~
 .DS_Store
 Thumbs.db
 
-# Runtime output and temporary artifacts
-*.tmp
-*.log
-*.bin
-!crates/**/test_data/*.bin
-quarantine.bin
-kernel.dna.compact
+# Scratch reruns (never overwrite published results; see studies/README.md)
+*_rerun.json

@@ -1,0 +1,352 @@
+{
+ "answers": {
+  "A-01": {
+   "label": "UNDERDETERMINED"
+  },
+  "A-02": {
+   "label": "UNDERDETERMINED"
+  },
+  "A-03": {
+   "label": "DETERMINED",
+   "level": "SUBSUMED"
+  },
+  "A-04": {
+   "label": "DETERMINED",
+   "level": "SUBSUMED"
+  },
+  "A-05": {
+   "label": "CONTRADICTION"
+  },
+  "A-06": {
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "A-07": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "b"
+    ]
+   ]
+  },
+  "A-08": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "a*b + b*a"
+    ]
+   ]
+  },
+  "A-09": {
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "A-10": {
+   "label": "CONTRADICTION"
+  },
+  "A-11": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "comm"
+    },
+    {
+     "level": "graded"
+    }
+   ],
+   "decisive": [
+    [
+     "f1"
+    ],
+    [
+     "f1*f2"
+    ]
+   ]
+  },
+  "A-12": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "q*r"
+    ],
+    [
+     "q*r + r*q"
+    ]
+   ]
+  },
+  "A-13": {
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "A-14": {
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "A-15": {
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "A-16": {
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "A-17": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "n"
+    ]
+   ]
+  },
+  "A-18": {
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "A-19": {
+   "label": "DETERMINED",
+   "level": "SUBSUMED"
+  },
+  "A-20": {
+   "label": "DETERMINED",
+   "level": "graded"
+  },
+  "A-21": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "i*j - j*i"
+    ],
+    [
+     "i*j - j*i"
+    ]
+   ]
+  },
+  "A-22": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "comm"
+    }
+   ],
+   "decisive": [
+    [
+     "x - y"
+    ]
+   ]
+  },
+  "A-23": {
+   "label": "CONTRADICTION"
+  },
+  "A-24": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "w*p"
+    ],
+    [
+     "w*p"
+    ]
+   ]
+  },
+  "A-25": {
+   "label": "CONTRADICTION"
+  },
+  "A-26": {
+   "label": "DETERMINED",
+   "level": "SUBSUMED"
+  },
+  "A-27": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "comm"
+    },
+    {
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "a"
+    ],
+    [
+     "a"
+    ],
+    [
+     "a"
+    ]
+   ]
+  },
+  "A-28": {
+   "label": "FORK",
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "comm"
+    }
+   ],
+   "decisive": [
+    [
+     "r - 1"
+    ]
+   ]
+  },
+  "A-29": {
+   "label": "UNDERDETERMINED"
+  },
+  "A-30": {
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "B-01": {
+   "label": "SYMMETRY_ZERO"
+  },
+  "B-02": {
+   "label": "BOUNDED",
+   "bound": "3/5"
+  },
+  "B-03": {
+   "label": "SYMMETRY_ZERO"
+  },
+  "B-04": {
+   "label": "CONFLICT"
+  },
+  "B-05": {
+   "label": "BOUNDED",
+   "bound": "9/2000000"
+  },
+  "B-06": {
+   "label": "INCIDENTAL"
+  },
+  "B-07": {
+   "label": "SYMMETRY_ZERO"
+  },
+  "B-08": {
+   "label": "CONFLICT"
+  },
+  "B-09": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "B-10": {
+   "label": "ACTIVE",
+   "interval": [
+    "987/2000",
+    "1007/2000"
+   ]
+  },
+  "B-11": {
+   "label": "ACTIVE",
+   "interval": [
+    "-327/256000",
+    "-131/108000"
+   ]
+  },
+  "B-12": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "B-13": {
+   "label": "BOUNDED",
+   "bound": "1/3200"
+  },
+  "B-14": {
+   "label": "ACTIVE",
+   "interval": [
+    "62/9375",
+    "253/37500"
+   ]
+  },
+  "B-15": {
+   "label": "CONFLICT"
+  },
+  "B-16": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "B-17": {
+   "label": "UNCONSTRAINED"
+  },
+  "B-18": {
+   "label": "INCIDENTAL"
+  }
+ },
+ "log": {
+  "A1": "parsed 6 entries",
+  "A2": "parsed 6 entries",
+  "A3": "parsed 6 entries",
+  "A4": "parsed 6 entries",
+  "A5": "parsed 6 entries",
+  "B1": "parsed 6 entries",
+  "B2": "parsed 6 entries",
+  "B3": "parsed 6 entries"
+ }
+}

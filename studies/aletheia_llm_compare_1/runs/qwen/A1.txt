@@ -1,0 +1,19 @@
+Based on the exact algebraic definitions provided, here is the analysis for each world:
+
+1. **World A-01**: The laws are `x**3 - 3*x**2 + 2*x = 0`, `x*y = y*(x + c)`, and `y*y = 0`. By expanding the associativity constraints in the free algebra, we find that `y` is forced to be 0 for most rational values of `c` (specifically `c \notin {-2, -1, 0, 1, 2}`). However, for `c \in {-2, -1, 0, 1, 2}`, `y` can be non-zero. For the values of `c` where `y` is live, the first viable level is SUBSUMED (since `x \in \{0, 1, 2\}, y=0` works), but SUBSUMED cannot keep `y` non-zero, pushing `F_{role}` to `comm` or `assoc` depending on `c`. Because the viable branches change depending on the value of the parameter `c`, the world is **UNDERDETERMINED**.
+2. **World A-02**: The laws describe a Jones basic construction / Temperley-Lieb-like algebra with idempotents `e` and `f`: `e**2 = e`, `f**2 = f`, `e*(f - c)*e = 0`, `f*(e - c)*f = 0`. Analyzing the representations shows that for `c \in \{0, 1\}`, the live mentions can be kept non-zero in the `comm` level (giving branches `["SUBSUMED", "comm"]`). For other values like `c=2`, `comm` forces `e=f=0`, meaning `F_{role}` must go all the way to `assoc` (giving branches `["SUBSUMED", "comm", "graded", "assoc"]`). Since the sequence of viable branches changes with the parameter `c`, the answer is **UNDERDETERMINED**.
+3. **World A-03**: The laws define the Dihedral group $D_4$ algebra: `r**4 = 1`, `s*s = 1`, `s*r*s = r**3`, `(s*r)**2 = 1`. In SUBSUMED, `r, s \in \{1, -1\}` satisfies all laws. Every live mention (such as `r`, `s`, `r*s`, etc.) evaluates to a non-zero rational (e.g., $1$ or $-1$) for the assignment `r=1, s=1`. Thus, `F_{occ} = F_{role} = SUBSUMED`, which makes it **DETERMINED** at level `SUBSUMED`.
+4. **World A-04**: The laws are `x*x = 1`, `x*y = 2*y*x`, and `(x + y)*(x - y) = 1`. Expanding the third law gives `x**2 - x*y + y*x - y**2 = 1`. Substituting `x**2 = 1` and `x*y = 2*y*x` yields `y*x = -y**2`. Multiplying `x*y = 2*y*x` on the left by `x` gives `y = x**2*y = x*(2*y*x) = 2*(x*y*x) = 2*(2*y*x**2) = 4*y`. This implies `3*y = 0`, so `y = 0` in the free associative algebra. The remaining live mentions involve only `x` (and combinations like `x+y` which reduce to `x`), all of which can be kept non-zero in SUBSUMED by setting `x=1`. Thus, it is **DETERMINED** at level `SUBSUMED`.
+5. **World A-05**: The laws are `x*x = 1` and `y*x - x*y = x` (which means `y*x = x*y + x`). Multiplying the second law on the right by `x` yields `y*x**2 = x*y*x + x**2`. Substituting `x**2 = 1` gives `y = x*(x*y + x) + 1 = x**2*y + x**2 + 1 = y + 2`. This simplifies to `0 = 2`, which forces `1 = 0` in any algebra over the rationals. Because no non-zero unital associative algebra can satisfy this, it is a **CONTRADICTION**.
+6. **World A-06**: The generators include two odd (grade 1) generators `psi` and `chi`, and an even (grade 0) generator `g`. The laws explicitly include the graded commutation rules for the odd generators (`psi*chi + chi*psi = 0`, `psi**2 = 0`, `chi**2 = 0`). The levels `SUBSUMED` and `comm` require all generators to commute, which would force `psi*chi = 0`, contradicting the demand that `psi*chi` is non-zero. Therefore, the first viable level is `graded`. A valid graded algebra (like the exterior algebra tensored with a suitable algebra for `g`) can keep all live mentions non-zero (for instance, by using a direct sum of representations to keep mentions like `g-1` and `g-3` non-zero while satisfying the demand). Thus, `F_{occ} = F_{role} = graded`, making it **DETERMINED** at level `graded`.
+
+```json
+[
+{"id": "A-01", "label": "UNDERDETERMINED"},
+{"id": "A-02", "label": "UNDERDETERMINED"},
+{"id": "A-03", "label": "DETERMINED", "level": "SUBSUMED"},
+{"id": "A-04", "label": "DETERMINED", "level": "SUBSUMED"},
+{"id": "A-05", "label": "CONTRADICTION"},
+{"id": "A-06", "label": "DETERMINED", "level": "graded"}
+]
+```

@@ -1,0 +1,112 @@
+{
+  "id": "E2-16",
+  "experiment": "E2",
+  "quantities": {
+    "P": {
+      "M": 1,
+      "L": -1,
+      "T": -2
+    },
+    "n": {},
+    "kT": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+    },
+    "V": {
+      "L": 3
+    },
+    "a0": {
+      "M": 1,
+      "L": 5,
+      "T": -2
+    },
+    "b0": {
+      "L": 3
+    }
+  },
+  "law_original": "P = n*kT/V",
+  "filled_law": "P = n*kT/(V - n*b0) - a0*n**2/V**2",
+  "symmetries": [
+    {
+      "name": "temperature scaling",
+      "map": {
+        "kT": "l*kT",
+        "P": "l*P"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    },
+    {
+      "name": "extensivity",
+      "map": {
+        "n": "l*n",
+        "V": "l*V"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "n": "1",
+        "kT": "2",
+        "V": "1",
+        "a0": "1/10",
+        "b0": "1/20"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "n": "2",
+        "kT": "1",
+        "V": "2",
+        "a0": "1/10",
+        "b0": "1/20"
+      },
+      "output": "1",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "n": "3",
+        "kT": "1/2",
+        "V": "3/2",
+        "a0": "1/10",
+        "b0": "1/20"
+      },
+      "output": "1",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "n": "2",
+      "kT": "1",
+      "V": "1",
+      "a0": "1/10",
+      "b0": "1/20"
+    },
+    "output": "82/45",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "gas"
+  ],
+  "state_filled": [
+    "gas",
+    "molecular size",
+    "molecular attraction"
+  ]
+}

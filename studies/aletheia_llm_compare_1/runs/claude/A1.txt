@@ -1,0 +1,48 @@
+**A-01: UNDERDETERMINED**
+
+The first law gives x(x−1)(x−2) = 0, so x has the complete set of idempotents e_λ for λ ∈ {0, 1, 2}. The law xy = y(x+c) gives (λ − μ − c)·e_λ y e_μ = 0.
+
+- **c ∈ {±3, 1/2}:** No difference λ − μ equals c, so y = 0 even in the freest algebra, and y is not a live mention. The live mentions are x, x², x³, −3x², 2x and x+c. The assignment x = 1, y = 0 keeps them all nonzero, so the answer is DETERMINED SUBSUMED.
+- **c = 0:** y is live, and SUBSUMED forces y = 0. The commutative algebra Q[x,y]/(x(x−1)(x−2), y²) keeps every live mention nonzero, so the answer is FORK [SUBSUMED, comm].
+- **c ∈ {±1, ±2}:** comm forces c·y = 0, so y = 0. An assoc realization exists; for c = 1, take x = diag(1, 2) and y = E₂₁. The answer is FORK [SUBSUMED, comm, assoc].
+
+The answer changes with c.
+
+**A-02: UNDERDETERMINED**
+
+The laws reduce to efe = ce and fef = cf. The live mentions are e, f, e², f², e−c and f−c.
+
+- **SUBSUMED:** Keeping e and f nonzero forces e = f = 1, which needs c = 1, and then e − c = 0. So SUBSUMED is viable (e = f = 0) but always fails the role test.
+- **c = 0:** Orthogonal idempotents in Q³ work, so the answer is FORK [SUBSUMED, comm].
+- **c = 1:** Take e = f = (1, 0) in Q×Q. This gives FORK [SUBSUMED, comm].
+- **Other c:** comm forces (1−c)e = 0 with e = f, so e = f = 0. The 2×2 representation, with e = E₁₁ and f a rank-1 idempotent with f₁₁ = c, works. The answer is FORK [SUBSUMED, comm, assoc].
+
+The answer changes with c.
+
+**A-03: DETERMINED SUBSUMED**
+
+The freest algebra is Q[D₄]. Every mention is a group element, hence a unit and live. Setting r = s = 1 satisfies all laws and keeps every mention nonzero.
+
+**A-04: DETERMINED SUBSUMED**
+
+From xy = 2yx we get xyx = 2y. Conjugating by x again gives y = 4y, so y = 0. The freest algebra is therefore Q[x]/(x²−1). The live mentions are x, x·x, x+y, x−y and (x+y)(x−y); y, −y, xy and 2yx are dead. The assignment x = 1, y = 0 works.
+
+**A-05: CONTRADICTION**
+
+Multiplying yx − xy = x on the left by x gives xyx = y + 1. Conjugating by x again gives y = y + 2, so 2 = 0 and therefore 1 = 0.
+
+**A-06: DETERMINED graded**
+
+- SUBSUMED and comm are not viable. In each, ψχ + χψ = 0 becomes 2ψχ = 0, which kills the demand ψχ.
+- At the graded level, take Λ(a,b) × Q with g = (3, 1), ψ = (a, 0) and χ = (b, 0). This satisfies all the laws. It keeps every live mention nonzero: g, g−1, g−3, ψ, χ, ψχ, χψ, gψ, ψg, gχ, χg, gψχ and 3ψχ.
+
+```json
+[
+ {"id": "A-01", "label": "UNDERDETERMINED"},
+ {"id": "A-02", "label": "UNDERDETERMINED"},
+ {"id": "A-03", "label": "DETERMINED", "level": "SUBSUMED"},
+ {"id": "A-04", "label": "DETERMINED", "level": "SUBSUMED"},
+ {"id": "A-05", "label": "CONTRADICTION"},
+ {"id": "A-06", "label": "DETERMINED", "level": "graded"}
+]
+```

@@ -1,0 +1,97 @@
+{
+  "id": "E2-05",
+  "experiment": "E2",
+  "quantities": {
+    "F": {
+      "M": 1,
+      "L": 1,
+      "T": -2
+    },
+    "m": {
+      "M": 1
+    },
+    "v": {
+      "L": 1,
+      "T": -1
+    },
+    "r": {
+      "L": 1
+    },
+    "m2": {
+      "M": 1
+    }
+  },
+  "law_original": "F = m*v**2/r",
+  "filled_law": "F = (m + m2)*v**2/r",
+  "symmetries": [
+    {
+      "name": "time reversal",
+      "map": {
+        "v": "-v"
+      },
+      "params": {}
+    },
+    {
+      "name": "speed-radius scaling",
+      "map": {
+        "v": "l*v",
+        "r": "l**2*r"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "m": "1",
+        "v": "2",
+        "r": "1",
+        "m2": "0"
+      },
+      "output": "4",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "m": "2",
+        "v": "1",
+        "r": "2",
+        "m2": "0"
+      },
+      "output": "1",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "m": "3",
+        "v": "3",
+        "r": "3",
+        "m2": "0"
+      },
+      "output": "9",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "m": "1",
+      "v": "2",
+      "r": "1",
+      "m2": "1"
+    },
+    "output": "8",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "car on a curve"
+  ],
+  "state_filled": [
+    "car on a curve",
+    "passenger"
+  ]
+}

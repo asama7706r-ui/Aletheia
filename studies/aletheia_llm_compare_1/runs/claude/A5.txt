@@ -1,0 +1,79 @@
+# Task Sheet A: Results
+
+## A-25: CONTRADICTION
+
+Using p² = p and q² = q:
+
+(pq − qp)² = pqpq − pqp − qpq + qpqp
+
+The law pqp = qpq gives:
+
+- pqpq = (pqp)q = (qpq)q = qpq
+- qpqp = (qpq)p = (pqp)p = pqp
+
+So (pq − qp)² = qpq − pqp − qpq + pqp = 0.
+
+This holds in the freest associative algebra, so every admissible algebra at every level kills the demand. No level is viable.
+
+## A-26: DETERMINED, SUBSUMED
+
+Expanding the third law gives p² + pq − qp − q² = p² − q², so pq = qp is forced.
+
+The other two laws factor as (p − 2)(p + 1) = 0 and (q − 3)(q + 1) = 0. The freest algebra is therefore Q⁴, with one point for each (p, q) ∈ {2, −1} × {3, −1}.
+
+The rational assignment p = 2, q = 3 satisfies all laws and has p − q = −1 ≠ 0. It also keeps every mention nonzero: p, q, p+2, 2q, 2q+3, p², q², −q, p−q, p+q, (p−q)(p+q), −q² and p²−q². So F_occ = F_role = SUBSUMED.
+
+## A-27: FORK
+
+The mentions are a, b, a², b², aba and bab. Here a² and b² are zero by law, so they are not live. The others are live: a = E₁₂ and b = E₂₁ in M₂(Q) satisfy all laws, generate M₂(Q), and have a, b ≠ 0.
+
+- **SUBSUMED:** a² = 0 forces a = 0, and likewise b = 0. This is viable, because a = b = 0 in Q satisfies every law.
+- **comm:** aba = a²b = 0, so a = 0. Viable, but a is killed.
+- **graded:** ab = −ba gives aba = −a²b = 0, so a = 0. Viable, but a is killed.
+- **assoc:** M₂(Q) keeps every live mention nonzero.
+
+So the branches are SUBSUMED, comm, graded, assoc. For each lower branch the decisive set is {a}: it is forced to 0 there and is nonzero in M₂(Q).
+
+## A-28: FORK
+
+(r − 1)(r⁴ + r³ + r² + r + 1) = r⁵ − 1, so both laws say r⁵ = 1. The freest algebra is Q[r]/(r⁵ − 1) ≅ Q × Q(ζ₅).
+
+- **SUBSUMED:** the only rational solution is r = 1. This is viable, but it kills the live mention r − 1.
+- **comm:** Q[r]/(r⁵ − 1) itself keeps r, r², r³, r⁴, r⁵, r − 1 and Φ₅(r) nonzero. The product (r − 1)Φ₅(r) is zero there, so it is not live.
+
+So the branches are SUBSUMED, comm. The decisive set for SUBSUMED is {r − 1}.
+
+## A-29: UNDERDETERMINED
+
+With x² = 1, the third law reduces to y² = (1 − c)·yx.
+
+**For c = 1:** the freest algebra is Q[x, y]/(x² − 1, y²), which is commutative and has y ≠ 0. SUBSUMED forces y = 0, since x² − y² = 1 over Q. So the answer is FORK [SUBSUMED, comm].
+
+**For c = −1:** xy = −yx implies that y² commutes with x. But y² = 2yx gives:
+
+- x·y² = 2(xy)x = −2y
+- y²·x = 2y
+
+So 4y = 0, which means y = 0 in the freest algebra. The only live mentions are then x, x ± y = x, and 1. The assignment x = 1, y = 0 keeps all of them nonzero, so the answer is DETERMINED SUBSUMED.
+
+The answer changes across parameter values, so the world is UNDERDETERMINED.
+
+## A-30: DETERMINED, comm
+
+The laws mn = nm = 1 make n = m⁻¹, and the algebra is automatically commutative. Both square laws reduce to m² + n² = 2, which gives (m² − 1)² = 0. The freest algebra is Q[m]/((m² − 1)²).
+
+- **SUBSUMED:** m = n = ±1, so m − n = 0. Not viable.
+- **comm:** the freest algebra has m − n = m(m² − 1) ≠ 0. It keeps every live mention nonzero: m, n, mn, nm, −n, m − n, m + n = (m² + 1)/m (a unit), and (m + n)² = 4. The mention (m − n)² is zero by law, so it is not live.
+
+So F_occ = F_role = comm.
+
+```json
+[
+ {"id": "A-25", "label": "CONTRADICTION"},
+ {"id": "A-26", "label": "DETERMINED", "level": "SUBSUMED"},
+ {"id": "A-27", "label": "FORK", "branches": ["SUBSUMED", "comm", "graded", "assoc"], "decisive": [["a"], ["a"], ["a"]]},
+ {"id": "A-28", "label": "FORK", "branches": ["SUBSUMED", "comm"], "decisive": [["r - 1"]]},
+ {"id": "A-29", "label": "UNDERDETERMINED"},
+ {"id": "A-30", "label": "DETERMINED", "level": "comm"}
+]
+```

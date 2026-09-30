@@ -1,0 +1,54 @@
+TASK SHEET B - classify a candidate term (exact arithmetic)
+
+You will receive several small "worlds" in JSON. For each world, classify the candidate term under the rules below. The rules are exact: follow them literally, in the given order, with exact rational arithmetic. Treat every world independently. Think as long as you need. At the very END of your reply, give exactly one fenced code block marked json containing a JSON list with one object per world (format in section 4).
+
+1. WORLD FORMAT
+- "quantities": each quantity with its dimensions, a map of rational exponents over base dimensions such as M, L, T. {} means dimensionless. "y" is the output quantity.
+- "constants": named constants with exact values and dimensions.
+- "parameters": dimensionless parameters with their given values.
+- "law": the base law "y = f(...)".
+- "term": {"expr": E, "unknown": u}. The candidate term E is linear in the unknown u: E = u * h, where h may contain quantities, constants and parameters. The full law is y = f + u*h.
+- "coefficient_form":
+  - "free": u may be any number;
+  - "constants": u must be a dimensionless number times a product of rational powers of the declared constants.
+- "symmetries": maps that send each listed quantity to a rational multiple of a quantity. Unlisted quantities are unchanged. Each map is a symmetry of the BASE law.
+- "observations": each gives the inputs (every quantity except y), the measured output (y) and the observer's resolution d. d = 0 means exact.
+
+2. CLASSIFICATION REASONS, checked in this order
+- (1) TYPE_IMPOSSIBLE: coefficient_form is "constants", and no product of rational powers of the declared constants has dimension dim(y) - dim(h). If dim(y) - dim(h) is dimensionless, a pure number works, so this reason does not apply.
+- (2) SYMMETRY_ZERO: some declared symmetry maps the FULL law (base plus term) to itself only if u = 0. That is, after applying the map to every quantity, the transformed full law is equivalent to the original only when u = 0.
+- (3) INCIDENTAL: h is identically 0 at the given parameter values, but not identically 0 as a function of the parameters.
+- Feasible set S:
+  - Each observation with h != 0 (h evaluated at that observation) gives the exact interval u*h in [r - d, r + d], where r = output - f(inputs) and d is its resolution.
+  - S is the intersection of the resulting intervals for u.
+  - If no observation has h != 0, S is unconstrained (all of the real line).
+
+3. FINAL LABEL
+- CONFLICT, if some observation with h = 0 misses the base law by more than its resolution (|output - f(inputs)| > d), or if S is empty.
+- Otherwise, if one of reasons (1)-(3) applies:
+  - CONFLICT if 0 is not in S (the term is detected although it is forbidden);
+  - else the FIRST reason that applies.
+- Otherwise, UNCONSTRAINED if no observation has h != 0.
+- Otherwise, ACTIVE if 0 is not in S. Report the exact interval S = [lo, hi].
+- Otherwise, BOUNDED. Report the exact bound B = max |s| over s in S.
+
+4. OUTPUT FORMAT
+At the end of your reply, give ONE fenced json block with a JSON list, one object per world, for example:
+```json
+[
+ {"id": "B-90", "label": "BOUNDED", "bound": "1/8"},
+ {"id": "B-91", "label": "ACTIVE", "interval": ["3/100", "7/100"]},
+ {"id": "B-92", "label": "SYMMETRY_ZERO"}
+]
+```
+- Labels must be exactly one of: TYPE_IMPOSSIBLE, SYMMETRY_ZERO, INCIDENTAL, CONFLICT, UNCONSTRAINED, ACTIVE, BOUNDED.
+- Give "bound" for BOUNDED and "interval" for ACTIVE, as exact rational strings such as "7/1500". Never use decimals.
+- The ids above are only a format example. Use the ids of the worlds you receive.
+
+WORLDS (6, one JSON object per line):
+{"id": "B-01", "experiment": "B", "quantities": {"y": {"L": 2}, "wd": {"L": 1}, "ht": {"L": 1}}, "constants": {}, "parameters": {}, "law": "y = wd*ht", "term": {"expr": "lam*wd**2", "unknown": "lam"}, "coefficient_form": "free", "symmetries": [{"name": "exchange of the sides", "map": {"wd": "ht", "ht": "wd", "y": "y"}}], "observations": [{"inputs": {"wd": "2", "ht": "3"}, "output": "1201/200", "resolution": "1/100"}, {"inputs": {"wd": "5", "ht": "1"}, "output": "499/100", "resolution": "1/50"}]}
+{"id": "B-02", "experiment": "B", "quantities": {"y": {"M": 1, "L": -1, "T": -2}, "n": {"mol": 1}, "tmp": {"K": 1}, "V": {"L": 3}}, "constants": {"R": {"value": "8", "dims": {"M": 1, "L": 2, "T": -2, "K": -1, "mol": -1}}, "T0": {"value": "273", "dims": {"K": 1}}}, "parameters": {}, "law": "y = n*R*tmp/V", "term": {"expr": "lam*n/V", "unknown": "lam"}, "coefficient_form": "constants", "symmetries": [], "observations": [{"inputs": {"n": "1", "tmp": "300", "V": "1"}, "output": "12002/5", "resolution": "1"}, {"inputs": {"n": "2", "tmp": "250", "V": "4"}, "output": "10001/10", "resolution": "1/2"}, {"inputs": {"n": "4", "tmp": "200", "V": "2"}, "output": "15999/5", "resolution": "1"}]}
+{"id": "B-03", "experiment": "B", "quantities": {"y": {"M": 1, "L": 2, "T": -2}, "px": {"M": 1, "L": 1, "T": -1}, "py": {"M": 1, "L": 1, "T": -1}}, "constants": {"m": {"value": "1", "dims": {"M": 1}}}, "parameters": {}, "law": "y = (px**2 + py**2)/(2*m)", "term": {"expr": "lam*px*py/m", "unknown": "lam"}, "coefficient_form": "free", "symmetries": [{"name": "reflection of the x axis", "map": {"px": "-px", "y": "y"}}], "observations": [{"inputs": {"px": "1", "py": "2"}, "output": "2503/1000", "resolution": "1/100"}, {"inputs": {"px": "3", "py": "-1"}, "output": "1249/250", "resolution": "1/100"}]}
+{"id": "B-04", "experiment": "B", "quantities": {"y": {"M": 1, "L": 1, "T": -2}, "q1": {"I": 1, "T": 1}, "q2": {"I": 1, "T": 1}, "r": {"L": 1}}, "constants": {"ke": {"value": "9", "dims": {"M": 1, "L": 3, "T": -4, "I": -2}}}, "parameters": {}, "law": "y = ke*q1*q2/r**2", "term": {"expr": "lam*ke*(q1 - q2)*q1*q2/r**2", "unknown": "lam"}, "coefficient_form": "free", "symmetries": [{"name": "exchange of the charges", "map": {"q1": "q2", "q2": "q1", "y": "y"}}], "observations": [{"inputs": {"q1": "2", "q2": "1", "r": "1"}, "output": "99/5", "resolution": "1/100"}, {"inputs": {"q1": "1", "q2": "3", "r": "3"}, "output": "12/5", "resolution": "1/100"}]}
+{"id": "B-05", "experiment": "B", "quantities": {"y": {"L": 1}, "dT": {"K": 1}}, "constants": {"L0": {"value": "2", "dims": {"L": 1}}, "al": {"value": "1/1000", "dims": {"K": -1}}}, "parameters": {}, "law": "y = L0*(1 + al*dT)", "term": {"expr": "lam*L0*dT**2", "unknown": "lam"}, "coefficient_form": "free", "symmetries": [], "observations": [{"inputs": {"dT": "10"}, "output": "2021/1000", "resolution": "1/1000"}, {"inputs": {"dT": "20"}, "output": "1276/625", "resolution": "1/500"}, {"inputs": {"dT": "-10"}, "output": "3961/2000", "resolution": "1/1000"}]}
+{"id": "B-06", "experiment": "B", "quantities": {"y": {"M": 1, "L": 2, "T": -2}, "x1": {"L": 1}, "x2": {"L": 1}}, "constants": {"K": {"value": "4", "dims": {"M": 1, "T": -2}}}, "parameters": {"k1": "3/2", "k2": "3/2"}, "law": "y = K*(x1**2 + x2**2)/2", "term": {"expr": "lam*(k1 - k2)*K*x1*x2", "unknown": "lam"}, "coefficient_form": "free", "symmetries": [{"name": "exchange of the axes", "map": {"x1": "x2", "x2": "x1", "y": "y"}}], "observations": [{"inputs": {"x1": "1", "x2": "2"}, "output": "2501/250", "resolution": "1/100"}, {"inputs": {"x1": "3", "x2": "-1"}, "output": "3999/200", "resolution": "1/100"}]}

@@ -1,0 +1,23 @@
+{
+ "id": "dA-roots-demands",
+ "generators": [
+  {
+   "name": "x",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "(x - 2)*(x + 1) = 0"
+ ],
+ "observations": [
+  {
+   "expr": "x - 2",
+   "status": "nonzero"
+  },
+  {
+   "expr": "x + 1",
+   "status": "nonzero"
+  }
+ ],
+ "experiment": "A"
+}

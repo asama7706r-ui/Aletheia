@@ -1,0 +1,8 @@
+[
+{"id": "B-07", "label": "SYMMETRY_ZERO"},
+{"id": "B-08", "label": "CONFLICT"},
+{"id": "B-09", "label": "TYPE_IMPOSSIBLE"},
+{"id": "B-10", "label": "ACTIVE", "interval": ["987/2000", "1007/2000"]},
+{"id": "B-11", "label": "ACTIVE", "interval": ["-327/256000", "-131/108000"]},
+{"id": "B-12", "label": "TYPE_IMPOSSIBLE"}
+]

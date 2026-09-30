@@ -1,0 +1,67 @@
+{
+ "id": "B-10",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "m1": {
+   "M": 1
+  },
+  "m2": {
+   "M": 1
+  },
+  "r": {
+   "L": 1
+  }
+ },
+ "constants": {
+  "G": {
+   "value": "1",
+   "dims": {
+    "M": -1,
+    "L": 3,
+    "T": -2
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = -G*m1*m2/r",
+ "term": {
+  "expr": "lam*G*m1*m2/r**3",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "m1": "1",
+    "m2": "2",
+    "r": "1"
+   },
+   "output": "-1003/1000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "m1": "3",
+    "m2": "1",
+    "r": "2"
+   },
+   "output": "-2621/2000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "m1": "2",
+    "m2": "2",
+    "r": "4"
+   },
+   "output": "-969/1000",
+   "resolution": "1/1000"
+  }
+ ]
+}

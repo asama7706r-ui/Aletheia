@@ -1,0 +1,70 @@
+{
+ "id": "B-04",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 1,
+   "T": -2
+  },
+  "q1": {
+   "I": 1,
+   "T": 1
+  },
+  "q2": {
+   "I": 1,
+   "T": 1
+  },
+  "r": {
+   "L": 1
+  }
+ },
+ "constants": {
+  "ke": {
+   "value": "9",
+   "dims": {
+    "M": 1,
+    "L": 3,
+    "T": -4,
+    "I": -2
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = ke*q1*q2/r**2",
+ "term": {
+  "expr": "lam*ke*(q1 - q2)*q1*q2/r**2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "exchange of the charges",
+   "map": {
+    "q1": "q2",
+    "q2": "q1",
+    "y": "y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "q1": "2",
+    "q2": "1",
+    "r": "1"
+   },
+   "output": "99/5",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "q1": "1",
+    "q2": "3",
+    "r": "3"
+   },
+   "output": "12/5",
+   "resolution": "1/100"
+  }
+ ]
+}

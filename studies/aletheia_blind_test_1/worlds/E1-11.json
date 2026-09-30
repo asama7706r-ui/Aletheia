@@ -1,0 +1,25 @@
+{
+  "id": "E1-11",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "r",
+      "grade": 0
+    },
+    {
+      "name": "q",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "x",
+    "y",
+    "z"
+  ],
+  "laws": [
+    "r*r = q",
+    "r*q = 2",
+    "(r - 1)*(q + r + 1) = 1",
+    "(x + y*r + z*q)*(x**2 - 2*y*z + (2*z**2 - x*y)*r + (y**2 - x*z)*q) = x**3 + 2*y**3 + 4*z**3 - 6*x*y*z"
+  ]
+}

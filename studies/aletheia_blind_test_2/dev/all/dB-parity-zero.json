@@ -1,0 +1,32 @@
+{
+ "id": "dB-parity-zero",
+ "quantities": {
+  "y": {},
+  "x": {}
+ },
+ "law": "y = 2*x",
+ "term": {
+  "expr": "lam*x**2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "parity",
+   "map": {
+    "x": "-x",
+    "y": "-y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "x": "1/2"
+   },
+   "output": "1",
+   "resolution": "1/100"
+  }
+ ],
+ "experiment": "B"
+}

@@ -1,0 +1,36 @@
+{
+ "id": "A-20",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "t",
+   "grade": 0
+  },
+  {
+   "name": "a",
+   "grade": 1
+  },
+  {
+   "name": "b",
+   "grade": 1
+  }
+ ],
+ "variables": [
+  "x",
+  "y"
+ ],
+ "parameters": [],
+ "laws": [
+  "t*(t - 1)*(t - 2) = 0",
+  "(a*x + b*y)**2 = 0",
+  "t*a = a*t",
+  "t*b = b*t",
+  "a*b*t = a*b"
+ ],
+ "observations": [
+  {
+   "expr": "a*b",
+   "status": "nonzero"
+  }
+ ]
+}

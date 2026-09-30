@@ -1,0 +1,19 @@
+{
+ "id": "dev-grassmann-nogrades",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "t1",
+   "grade": 0
+  },
+  {
+   "name": "t2",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "t1*t1 = 0",
+  "t2*t2 = 0",
+  "t1*t2 + t2*t1 = 0"
+ ]
+}

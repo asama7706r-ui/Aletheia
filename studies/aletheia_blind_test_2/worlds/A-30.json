@@ -1,0 +1,28 @@
+{
+ "id": "A-30",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "m",
+   "grade": 0
+  },
+  {
+   "name": "n",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "m*n = 1",
+  "n*m = 1",
+  "(m + n)**2 = 4",
+  "(m - n)**2 = 0"
+ ],
+ "observations": [
+  {
+   "expr": "m - n",
+   "status": "nonzero"
+  }
+ ]
+}

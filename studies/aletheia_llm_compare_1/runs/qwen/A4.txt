@@ -1,0 +1,99 @@
+### Analysis of the Worlds
+
+**World A-19**
+* **Laws:** `a**2 = 1/4`, `b**2 = 1/4`, `c**2 = 1/4`, `a + b + c = 1/2`, `a*b + b*c + c*a = -1/4`
+* **Viability:** In the `SUBSUMED` level, we can assign rational numbers to the generators. The assignment `(a, b, c) = (1/2, 1/2, -1/2)` satisfies all laws. All subexpressions (mentions) evaluate to non-zero rational numbers in this assignment. 
+* **Result:** `DETERMINED` at `SUBSUMED`.
+
+**World A-20**
+* **Laws:** `t*(t - 1)*(t - 2) = 0`, `(a*x + b*y)**2 = 0`, `t*a = a*t`, `t*b = b*t`, `a*b*t = a*b`
+* **Observations:** `a*b != 0`
+* **Viability:** The law `(a*x + b*y)**2 = 0` implies `a**2 = 0`, `b**2 = 0`, and `a*b + b*a = 0`. In the `comm` level, `a*b = b*a`, which forces `2*a*b = 0 => a*b = 0`, contradicting the observation. Thus, `SUBSUMED` and `comm` are not viable. In the `graded` level, `a` and `b` naturally anticommute and square to zero. We can construct an admissible algebra (e.g., a direct product of rings mapping `t` to 1 and 0 respectively) that satisfies all laws, keeps the observation non-zero, and keeps all live mentions non-zero.
+* **Result:** `DETERMINED` at `graded`.
+
+**World A-21**
+* **Laws:** `i**4 = 1`, `i*i = j*j`, `j*i = i**3*j`, `(i*j - j*i)*(i*i + 1) = 0`
+* **Viability:** `SUBSUMED` and `comm` are viable (e.g., `i=1, j=1`). However, in these levels, `i*j - j*i` is identically `0`. In the `assoc` level, we can construct a valid algebra (like the group algebra of the quaternion group $Q_8$ extended by a commutative component to avoid forcing `i**2 + 1 = 0`) where `i*j - j*i != 0`. 
+* **Result:** `FORK`. Branches are `SUBSUMED`, `comm`, and `assoc` (since `graded` doesn't exist as there are no odd generators). The expression `i*j - j*i` acts as a decisive test for both non-last branches.
+
+**World A-22**
+* **Laws:** `x*x + 2*y*y = 3`, `x*y = 1`, `y*x = 1`, `(x - y)*(x*x - 2) = 0`
+* **Viability:** `SUBSUMED` is viable (`x=1, y=1` or `x=-1, y=-1`), but it forces `x - y = 0`. In the `comm` level, we can build an algebra (such as $Q[x]/(x^2-2) \times Q[x]/(x^2-1)$) where `x - y != 0` while maintaining all laws and live mentions non-zero.
+* **Result:** `FORK`. Branches are `SUBSUMED` and `comm`. The expression `x - y` serves as the decisive set.
+
+**World A-23**
+* **Laws:** `i*i = -1`, `j*j = -1`, `k*k = -1`, `i*j*k = -1`
+* **Observations:** `i*j - k != 0`
+* **Viability:** In any associative algebra, `i*j*k = -1` and `k**2 = -1` strictly imply `(i*j*k)*k = -k => i*j*(-1) = -k => i*j = k`. Therefore, `i*j - k` is forced to be `0` in *any* associative algebra satisfying the laws, directly contradicting the observation.
+* **Result:** `CONTRADICTION`.
+
+**World A-24**
+* **Laws:** `w*w = 1`, `w*p = q*w`, `p*p = p`, `q*q = q`, `p*q = 0`, `q*p = 0`
+* **Viability:** `SUBSUMED` and `comm` are viable (e.g., `w=1, p=0, q=0`), but they force `p=0` and `q=0` (since `w` is invertible and `w*p = q*w` implies `p=q` and `p*q=0` means `p**2=0`). Consequently, `w*p = 0`. In the `assoc` level, we can map these generators to matrices (e.g., in $M_2(\mathbb{Q})$) such that `w*p != 0`. Note: The `graded` level is not viable because `w` is an odd generator (grade 1), which would strictly force `w**2 = 0`, conflicting with the law `w**2 = 1`.
+* **Result:** `FORK`. Branches are `SUBSUMED`, `comm`, and `assoc`. The expression `w*p` correctly distinguishes the non-last branches from the last branch.
+
+```json
+[
+  {
+    "id": "A-19",
+    "label": "DETERMINED",
+    "level": "SUBSUMED"
+  },
+  {
+    "id": "A-20",
+    "label": "DETERMINED",
+    "level": "graded"
+  },
+  {
+    "id": "A-21",
+    "label": "FORK",
+    "branches": [
+      "SUBSUMED",
+      "comm",
+      "assoc"
+    ],
+    "decisive": [
+      [
+        "i*j - j*i"
+      ],
+      [
+        "i*j - j*i"
+      ]
+    ]
+  },
+  {
+    "id": "A-22",
+    "label": "FORK",
+    "branches": [
+      "SUBSUMED",
+      "comm"
+    ],
+    "decisive": [
+      [
+        "x - y"
+      ]
+    ]
+  },
+  {
+    "id": "A-23",
+    "label": "CONTRADICTION"
+  },
+  {
+    "id": "A-24",
+    "label": "FORK",
+    "branches": [
+      "SUBSUMED",
+      "comm",
+      "assoc"
+    ],
+    "decisive": [
+      [
+        "w*p"
+      ],
+      [
+        "w*p"
+      ]
+    ]
+  }
+]
+```

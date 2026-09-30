@@ -1,0 +1,213 @@
+{
+ "A": {
+  "n_total": 8,
+  "n_valid": 8,
+  "excluded": {},
+  "void": false,
+  "procedure": {
+   "correct": 8,
+   "accuracy": 1.0,
+   "fork_accuracy": 1.0,
+   "over_claim": 0.0,
+   "over_fork": 0.0,
+   "determined_correct": 3,
+   "contradictions_accepted": 0
+  },
+  "V1D": {
+   "correct": 4,
+   "accuracy": 0.5,
+   "fork_accuracy": 0.0,
+   "over_claim": 1.0,
+   "over_fork": 0.0,
+   "determined_correct": 3,
+   "contradictions_accepted": 0
+  },
+  "OCC": {
+   "correct": 5,
+   "accuracy": 0.625,
+   "fork_accuracy": 0.0,
+   "over_claim": 1.0,
+   "over_fork": 0.0,
+   "determined_correct": 3,
+   "contradictions_accepted": 0
+  },
+  "FORKALL": {
+   "correct": 4,
+   "accuracy": 0.5,
+   "fork_accuracy": 0.3333333333333333,
+   "over_claim": 0.0,
+   "over_fork": 0.6666666666666666,
+   "determined_correct": 1,
+   "contradictions_accepted": 0
+  },
+  "best_baseline": "OCC",
+  "mcnemar_b": 3,
+  "mcnemar_c": 0,
+  "mcnemar_p": 0.125,
+  "A1": true,
+  "A2": true,
+  "A3": true,
+  "A4": true,
+  "A5": true,
+  "outcome": "PASS"
+ },
+ "B": {
+  "n_total": 9,
+  "n_valid": 9,
+  "excluded": {},
+  "void": false,
+  "procedure": {
+   "correct": 9,
+   "accuracy": 1.0,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     2,
+     2
+    ],
+    "CONFLICT": [
+     2,
+     2
+    ],
+    "INCIDENTAL": [
+     1,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     1,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     1,
+     1
+    ],
+    "UNCONSTRAINED": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 1.0,
+   "false_death": 0.0,
+   "conflicts_detected": 1.0
+  },
+  "THRESH": {
+   "correct": 2,
+   "accuracy": 0.2222222222222222,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     0,
+     2
+    ],
+    "CONFLICT": [
+     1,
+     2
+    ],
+    "INCIDENTAL": [
+     0,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     0,
+     1
+    ],
+    "UNCONSTRAINED": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.21428571428571427,
+   "false_death": 1.0,
+   "conflicts_detected": 0.5
+  },
+  "MENTION": {
+   "correct": 2,
+   "accuracy": 0.2222222222222222,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     0,
+     2
+    ],
+    "CONFLICT": [
+     0,
+     2
+    ],
+    "INCIDENTAL": [
+     0,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     1,
+     1
+    ],
+    "UNCONSTRAINED": [
+     0,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.2857142857142857,
+   "false_death": 0.0,
+   "conflicts_detected": 0.0
+  },
+  "NOSYM": {
+   "correct": 6,
+   "accuracy": 0.6666666666666666,
+   "per_class": {
+    "ACTIVE": [
+     1,
+     1
+    ],
+    "BOUNDED": [
+     2,
+     2
+    ],
+    "CONFLICT": [
+     1,
+     2
+    ],
+    "INCIDENTAL": [
+     0,
+     1
+    ],
+    "SYMMETRY_ZERO": [
+     0,
+     1
+    ],
+    "TYPE_IMPOSSIBLE": [
+     1,
+     1
+    ],
+    "UNCONSTRAINED": [
+     1,
+     1
+    ]
+   },
+   "balanced_accuracy": 0.6428571428571429,
+   "false_death": 0.0,
+   "conflicts_detected": 0.5
+  },
+  "B1": true,
+  "B2": true,
+  "B3": true,
+  "B4": true,
+  "outcome": "PASS"
+ }
+}

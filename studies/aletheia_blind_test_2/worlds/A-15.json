@@ -1,0 +1,27 @@
+{
+ "id": "A-15",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "u",
+   "grade": 1
+  },
+  {
+   "name": "v",
+   "grade": 1
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "u*u = 0",
+  "v*v = 0",
+  "u*v*u = v*u*v"
+ ],
+ "observations": [
+  {
+   "expr": "u*v*u",
+   "status": "nonzero"
+  }
+ ]
+}

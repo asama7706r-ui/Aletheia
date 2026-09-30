@@ -1,0 +1,50 @@
+Here is how I worked each world.
+
+**A-13.** The laws are the sl₂ relations plus h(h−2)(h+2)=0, and h must be nonzero.
+- **SUBSUMED and comm.** If jp and h commute, then 2·jp = 0, so jp = 0. Likewise jm = 0, and then h = [jp, jm] = 0. That violates the demand, so neither level is viable.
+- **graded.** There are no odd generators, so this level does not exist.
+- **assoc.** The 3‑dimensional adjoint representation of sl₂ works. There h has eigenvalues 2, 0, −2, so h(h−2)(h+2) = 0 and h ≠ 0.
+- **Result.** assoc is the top level, and the freest algebra keeps every live mention nonzero. So the answer is DETERMINED, assoc.
+
+**A-14.** The laws are a² = a+1, b² = b+1 and aba = bab.
+- **SUBSUMED.** x² = x+1 has no rational root, so this level is not viable.
+- **comm.** Commutativity turns aba = bab into ab+b = ab+a, so a = b. Q(√5) with a = b = φ is admissible, so comm is viable.
+- **Mentions.** Every mention (a, b, a·a, a+1, b·b, b+1, a·b·a, b·a·b) is invertible, because a(a−1) = 1 and b(b−1) = 1. So each is nonzero in every admissible algebra.
+- **Result.** DETERMINED, comm.
+
+**A-15.** The laws are u² = v² = 0 and uvu = vuv, and uvu must be nonzero.
+- **SUBSUMED and comm.** Here uvu = u²v = 0, which violates the demand.
+- **graded.** Here uv = −vu, so uvu = −u²v = 0, which also violates the demand.
+- **assoc.** The nilCoxeter algebra of S₃ has basis 1, u, v, uv, vu, uvu with uvu ≠ 0, so assoc is viable.
+- **Result.** DETERMINED, assoc.
+
+**A-16.** Comparing coefficients in s and t (order a, b, c is preserved) gives a+b+c = 0, ab+ac+bc = −2 and abc = −1.
+- **SUBSUMED.** a, b, c would have to be the roots of x³ − 2x + 1 = (x−1)(x²+x−1), which are not all rational. Not viable.
+- **comm.** Take a = 1 and b, c = (−1 ± √5)/2 in Q(√5). This satisfies all three laws, so comm is viable.
+- **Mentions.** Since abc = −1, none of a, b, c can be zero. The sums t + a·s (and the others) and the full product are nonzero because of the t terms. a+b+c is zero by law, so it is not live. Every admissible algebra therefore keeps all live mentions nonzero.
+- **Result.** DETERMINED, comm.
+
+**A-17.** The laws are u² = u+1, un = n(1−u) and n² = 0.
+- **SUBSUMED.** u² = u+1 has no rational solution. Not viable.
+- **comm.** Commutativity gives n(2u−1) = 0. Since (2u−1)² = 5, the element 2u−1 is invertible, so n = 0. Q(√5) with n = 0 is admissible, so comm is viable but kills n.
+- **n is live.** Let V = Q(√5)², let u act as multiplication by φ on both coordinates, and let n(x, y) = (σ(y), 0), where σ is the Galois conjugation. Then n² = 0 and un = n(1−u), with n ≠ 0. So n is nonzero in the freest algebra.
+- **Consequence.** Because u and 1−u are invertible, u·n and n·(1−u) are also live, and every comm algebra kills them. The first level that keeps them nonzero is assoc.
+- **Result.** FORK with branches comm and assoc. The decisive set for comm is {n}.
+
+**A-18.** The laws are s1² = w, s2² = w and w² = w+1.
+- **SUBSUMED.** w² = w+1 has no rational solution. Not viable.
+- **comm.** Take Q[x]/(x⁴ − x² − 1) with s1 = s2 = x and w = x². This is admissible, so comm is viable.
+- **graded.** Odd generators square to 0, so w = 0, and then w² = w+1 gives 0 = 1. Not viable.
+- **Mentions.** w is invertible since w(w−1) = 1, and s1 and s2 square to w, so they are invertible too. Every mention is therefore nonzero in any admissible algebra.
+- **Result.** DETERMINED, comm.
+
+```json
+[
+ {"id": "A-13", "label": "DETERMINED", "level": "assoc"},
+ {"id": "A-14", "label": "DETERMINED", "level": "comm"},
+ {"id": "A-15", "label": "DETERMINED", "level": "assoc"},
+ {"id": "A-16", "label": "DETERMINED", "level": "comm"},
+ {"id": "A-17", "label": "FORK", "branches": ["comm", "assoc"], "decisive": [["n"]]},
+ {"id": "A-18", "label": "DETERMINED", "level": "comm"}
+]
+```

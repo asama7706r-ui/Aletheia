@@ -1,0 +1,10 @@
+```json
+[
+ {"id": "A-25", "label": "CONTRADICTION"},
+ {"id": "A-26", "label": "DETERMINED", "level": "SUBSUMED"},
+ {"id": "A-27", "label": "FORK", "branches": ["SUBSUMED", "comm", "graded", "assoc"], "decisive": [["a"], ["a"], ["a"]]},
+ {"id": "A-28", "label": "FORK", "branches": ["SUBSUMED", "comm"], "decisive": [["r - 1"]]},
+ {"id": "A-29", "label": "UNDERDETERMINED"},
+ {"id": "A-30", "label": "DETERMINED", "level": "comm"}
+]
+```

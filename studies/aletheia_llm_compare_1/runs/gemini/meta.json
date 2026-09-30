@@ -1,0 +1,12 @@
+{
+ "name_as_shown": "Gemini-3.8-high",
+ "family": "Gemini",
+ "interface": "gemini.google.com",
+ "reasoning_option": "thinking",
+ "memory_off": true,
+ "web_search_off": false,
+ "code_execution": "used-in-batches: no-sign-to-unsure",
+ "scored": true,
+ "first_run_date": "2026-09-30",
+ "notes": "he speak in arabic allot before giving json schema, both qwen and gemini take about 2 minuts to answer in avrage"
+}

@@ -1,0 +1,48 @@
+{
+ "id": "B-08",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 1,
+   "T": -2
+  },
+  "v": {
+   "L": 1,
+   "T": -1
+  }
+ },
+ "constants": {
+  "b": {
+   "value": "1/2",
+   "dims": {
+    "M": 1,
+    "L": -1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = b*v**2",
+ "term": {
+  "expr": "lam*v",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "v": "2"
+   },
+   "output": "11/5",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "v": "4"
+   },
+   "output": "44/5",
+   "resolution": "1/100"
+  }
+ ]
+}

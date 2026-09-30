@@ -1,0 +1,26 @@
+{
+ "id": "dB-incidental",
+ "quantities": {
+  "y": {},
+  "x": {}
+ },
+ "parameters": {
+  "k": "1"
+ },
+ "law": "y = 2*x",
+ "term": {
+  "expr": "lam*(k - 1)*x**3",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "observations": [
+  {
+   "inputs": {
+    "x": "1"
+   },
+   "output": "2",
+   "resolution": "1/1000"
+  }
+ ],
+ "experiment": "B"
+}

@@ -1,0 +1,18 @@
+{
+ "id": "dA-plain",
+ "generators": [
+  {
+   "name": "x",
+   "grade": 0
+  },
+  {
+   "name": "y",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "x*x = 2",
+  "y*y = 3"
+ ],
+ "experiment": "A"
+}

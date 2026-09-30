@@ -1,0 +1,53 @@
+{
+ "id": "dev-e2-symbreak",
+ "experiment": "E2",
+ "quantities": {
+  "y": {
+   "L": 1
+  },
+  "x": {
+   "L": 1
+  },
+  "a": {},
+  "b": {
+   "L": -1
+  }
+ },
+ "law_original": "y = a*x",
+ "filled_law": "y = a*x + b*x**2",
+ "symmetries": [
+  {
+   "name": "reflection",
+   "map": {
+    "x": "-x",
+    "y": "-y"
+   }
+  }
+ ],
+ "validated": [
+  {
+   "inputs": {
+    "a": "2",
+    "x": "1",
+    "b": "0"
+   },
+   "output": "2",
+   "tol": "1e-9"
+  }
+ ],
+ "deficit": {
+  "inputs": {
+   "a": "2",
+   "x": "1",
+   "b": "1"
+  },
+  "output": "3",
+  "tol": "1e-9"
+ },
+ "state_original": [
+  "body"
+ ],
+ "state_filled": [
+  "body"
+ ]
+}

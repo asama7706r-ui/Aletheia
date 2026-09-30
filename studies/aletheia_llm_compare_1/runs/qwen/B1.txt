@@ -1,0 +1,50 @@
+### Analysis of the Worlds
+
+**World B-01:**
+* **Reasoning:** The declared symmetry "exchange of the sides" maps the term $h = w_d^2$ to $h_t^2$. The full law $y = w_d h_t + \lambda w_d^2$ maps to $y = h_t w_d + \lambda h_t^2$, which is equivalent to the original law only if $\lambda = 0$. This triggers reason (2) `SYMMETRY_ZERO`. The feasible set $S$ is the intersection of the intervals from the observations, which evaluates to $[-3/2500, 1/2500]$. Since $0 \in S$, the final label is `SYMMETRY_ZERO`.
+
+**World B-02:**
+* **Reasoning:** The coefficient form is `constants`. The required dimension for $\lambda$ is $\text{M L}^2 \text{T}^{-2} \text{mol}^{-1}$, which can be exactly formed by the product of the declared constants $R \times T_0$. Thus, reason (1) does not apply. Evaluating the observations gives intervals for $\lambda$: $[-3/5, 7/5]$, $[-4/5, 6/5]$, and $[-3/5, 2/5]$. The intersection $S$ is $[-3/5, 2/5]$. Since $0 \in S$ and no earlier reasons apply, the term is `BOUNDED` with a maximum absolute value of $3/5$.
+
+**World B-03:**
+* **Reasoning:** The symmetry "reflection of the x axis" maps $p_x \to -p_x$, which flips the sign of the term $h = p_x p_y / m$. The full law is invariant under this map only if $\lambda = 0$, triggering reason (2) `SYMMETRY_ZERO`. The feasible set $S$ evaluates to $[-1/500, 7/1500]$. Since $0 \in S$, the label is `SYMMETRY_ZERO`.
+
+**World B-04:**
+* **Reasoning:** The symmetry "exchange of the charges" flips the sign of the term $h \propto (q_1 - q_2)$. The full law is invariant only if $\lambda = 0$, which implies `SYMMETRY_ZERO` applies (Reason 2). However, evaluating the observations yields the intervals $[179/1800, 181/1800]$ and $[177/1800, 183/1800]$. Their intersection is $S = [179/1800, 181/1800]$. Because $0 \notin S$, the term is detected despite being forbidden by symmetry. This results in a `CONFLICT`.
+
+**World B-05:**
+* **Reasoning:** There are no symmetries, and the coefficient form is `free`. Evaluating the observations yields intervals for $\lambda$: $[0, 1/100000]$, $[-1/2000000, 9/2000000]$, and $[-1/400000, 3/400000]$. The intersection is $S = [0, 9/2000000]$. Since $0 \in S$ and the set is bounded, the label is `BOUNDED` with the exact bound of $9/2000000$.
+
+**World B-06:**
+* **Reasoning:** The parameters are given as $k_1 = 3/2$ and $k_2 = 3/2$, making the term $h = (k_1 - k_2)K x_1 x_2$ identically $0$ at these specific parameter values (but not structurally as a function of parameters). This triggers reason (3) `INCIDENTAL`. Checking the observations where $h=0$, neither misses the base law by more than its resolution ($0.004 \le 0.01$ and $0.005 \le 0.01$). Thus, there is no conflict, and the label is `INCIDENTAL`.
+
+```json
+[
+  {
+    "id": "B-01",
+    "label": "SYMMETRY_ZERO"
+  },
+  {
+    "id": "B-02",
+    "label": "BOUNDED",
+    "bound": "3/5"
+  },
+  {
+    "id": "B-03",
+    "label": "SYMMETRY_ZERO"
+  },
+  {
+    "id": "B-04",
+    "label": "CONFLICT"
+  },
+  {
+    "id": "B-05",
+    "label": "BOUNDED",
+    "bound": "9/2000000"
+  },
+  {
+    "id": "B-06",
+    "label": "INCIDENTAL"
+  }
+]
+```

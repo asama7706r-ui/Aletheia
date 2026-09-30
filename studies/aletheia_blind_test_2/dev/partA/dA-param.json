@@ -1,0 +1,17 @@
+{
+ "id": "dA-param",
+ "generators": [
+  {
+   "name": "u",
+   "grade": 0
+  }
+ ],
+ "parameters": [
+  "c"
+ ],
+ "laws": [
+  "u*u = c",
+  "(u - 1)*(u + 1) = c - 1"
+ ],
+ "experiment": "A"
+}

@@ -1,0 +1,367 @@
+{
+ "dev-bombelli": {
+  "B1": {
+   "dim": 2,
+   "family": "comm",
+   "label": "NEW_KIND"
+  },
+  "B2": {
+   "dim": 2,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 2,
+   "family": "comm",
+   "label": "NEW_KIND"
+  },
+  "procedure": {
+   "dim": 2,
+   "family": "comm",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "dev-contradiction": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B3": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION",
+   "stable": true
+  }
+ },
+ "dev-dirac11": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "procedure": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "dev-dual": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 2,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 2,
+   "family": "comm",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "dev-e2-invalid": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "INVALID"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "INVALID"
+  }
+ },
+ "dev-e2-newstate": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [],
+   "label": "SAME_LAW_NEW_STATE"
+  }
+ },
+ "dev-e2-symbreak": {
+  "C1": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "C2": {
+   "label": "ANOTHER_LAW"
+  },
+  "C3": {
+   "label": "SAME_LAW_NEW_STATE"
+  },
+  "procedure": {
+   "changed": [
+    "symmetry:reflection"
+   ],
+   "label": "ANOTHER_LAW"
+  }
+ },
+ "dev-grassmann": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 4,
+   "family": "graded",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "dev-grassmann-nogrades": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "dev-j-lightlines": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 2,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 2,
+   "family": "comm",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "dev-knob": {
+  "B1": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/comm/2",
+    "SUBSUMED/None/1"
+   ]
+  },
+  "B2": {
+   "dim": 2,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "B3": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/comm/2",
+    "SUBSUMED/None/1"
+   ]
+  },
+  "procedure": {
+   "dim": null,
+   "family": null,
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "NEW_KIND/comm/2",
+    "SUBSUMED/None/1"
+   ]
+  }
+ },
+ "dev-quaternions": {
+  "B1": {
+   "dim": 0,
+   "family": null,
+   "label": "CONTRADICTION"
+  },
+  "B2": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "procedure": {
+   "dim": 4,
+   "family": "assoc",
+   "label": "NEW_KIND",
+   "stable": true
+  }
+ },
+ "dev-sign-subsumed": {
+  "B1": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  },
+  "B2": {
+   "dim": 2,
+   "family": "assoc",
+   "label": "NEW_KIND"
+  },
+  "B3": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "family": null,
+   "label": "SUBSUMED",
+   "stable": true,
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  }
+ }
+}

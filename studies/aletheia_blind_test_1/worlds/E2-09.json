@@ -1,0 +1,93 @@
+{
+  "id": "E2-09",
+  "experiment": "E2",
+  "quantities": {
+    "Fd": {
+      "M": 1,
+      "L": 1,
+      "T": -2
+    },
+    "b": {
+      "M": 1,
+      "T": -1
+    },
+    "v": {
+      "L": 1,
+      "T": -1
+    },
+    "v0": {
+      "L": 1,
+      "T": -1
+    }
+  },
+  "law_original": "Fd = b*v",
+  "filled_law": "Fd = b*v**3/v0**2",
+  "symmetries": [
+    {
+      "name": "reversal",
+      "map": {
+        "v": "-v",
+        "Fd": "-Fd"
+      },
+      "params": {}
+    },
+    {
+      "name": "coefficient scaling",
+      "map": {
+        "b": "l*b",
+        "Fd": "l*Fd"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "b": "2",
+        "v": "1",
+        "v0": "1"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "b": "1/2",
+        "v": "1",
+        "v0": "1"
+      },
+      "output": "1/2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "b": "3",
+        "v": "-1",
+        "v0": "1"
+      },
+      "output": "-3",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "b": "1",
+      "v": "2",
+      "v0": "1"
+    },
+    "output": "8",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "sphere in fluid"
+  ],
+  "state_filled": [
+    "sphere in fluid",
+    "turbulent wake"
+  ]
+}

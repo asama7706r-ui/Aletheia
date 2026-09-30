@@ -1,0 +1,27 @@
+{
+ "id": "A-25",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "p",
+   "grade": 0
+  },
+  {
+   "name": "q",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "p*p = p",
+  "q*q = q",
+  "p*q*p = q*p*q"
+ ],
+ "observations": [
+  {
+   "expr": "(p*q - q*p)**2",
+   "status": "nonzero"
+  }
+ ]
+}

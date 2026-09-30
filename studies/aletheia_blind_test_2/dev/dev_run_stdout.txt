@@ -1,0 +1,17 @@
+dA-demand-contra {"label": "CONTRADICTION", "reason": "the laws force observed quantities to zero: x*x"}
+dA-lightlines {"label": "FORK", "branches": [{"level": "SUBSUMED", "killed": ["1 + u", "1 - u"], "values": [["-1"], ["1"]]}, {"level": "comm"}], "decisive": [["1 + u", "1 - u"]]}
+dA-param {"label": "UNDERDETERMINED", "variants": ["DETERMINED/comm/2", "FORK/SUBSUMED|comm"]}
+dA-plain {"label": "DETERMINED", "level": "comm", "dim": 4}
+dA-probe-demand {"label": "DETERMINED", "level": "assoc", "dim": 8}
+dA-probe {"label": "FORK", "branches": [{"level": "comm", "killed": ["x*y - y*x"]}, {"level": "assoc"}], "decisive": [["x*y - y*x"]]}
+dA-sign {"label": "DETERMINED", "level": "SUBSUMED", "values": [["-1"], ["1"]], "dim": 1}
+dA-smash {"label": "FORK", "branches": [{"level": "SUBSUMED", "killed": ["(-f)*p", "-f", "f", "g", "g*p", "p*f", "p*g", "s*f", "s*f + t*g", "t*g"], "values": [["-1", "0", "0"], ["1", "0", "0"]]}, {"level": "comm", "killed": ["p*f", "f", "(-f)*p", "-f", "g*p", "g", "p*g", "s*f + t*g", "t*g", "s*f"]}, {"level": "graded", "killed": ["p*f", "f", "(-f)*p", "-f", "g*p", "g", "p*g", "s*f + t*g", "t*g", "s*f"]}, {"level": "assoc"}], "decisive": [["p*f"], ["p*f"], ["p*f"]]}
+dB-active {"label": "ACTIVE", "interval": ["499/1000", "501/1000"]}
+dB-empty {"label": "CONFLICT", "reason": "no value of the unknown fits all observations"}
+dB-hooke-bounded {"label": "BOUNDED", "bound": "1/8", "interval": ["-1/8", "1/8"]}
+dB-incidental {"label": "INCIDENTAL", "reason": "the term vanishes at the given parameter values"}
+dB-parity-violated {"label": "CONFLICT", "reason": "detected although forbidden by parity"}
+dB-parity-zero {"label": "SYMMETRY_ZERO", "reason": "forbidden by parity"}
+dB-surface-bridge {"label": "BOUNDED", "bound": "1/200", "interval": ["-1/200", "1/200"], "bridge": {"sigma": "1"}}
+dB-surface-nobridge {"label": "TYPE_IMPOSSIBLE", "reason": "no product of declared constants has dimension {'M': Fraction(1, 1), 'T': Fraction(-2, 1)}"}
+dB-unconstrained {"label": "UNCONSTRAINED"}

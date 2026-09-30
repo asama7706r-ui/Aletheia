@@ -1,0 +1,47 @@
+key file: key.json
+E1-01 [CONTRADICTION] OK: 1 = 0 derived at degree 6; each single law consistent
+E1-02 [NEW_KIND:comm] OK: witness 4x4
+E1-03 [UNDERDETERMINED] OK: decisions on grid verified (2 distinct)
+E1-04 [NEW_KIND:assoc] OK: witness 3x3
+E1-05 [NEW_KIND:graded] OK: witness 8x8
+E1-06 [CONTRADICTION] OK: 1 = 0 derived at degree 6; each single law consistent
+E1-07 [UNDERDETERMINED] OK: decisions on grid verified (2 distinct)
+E1-08 [SUBSUMED] OK: rational solutions: 1
+E1-09 [CONTRADICTION] OK: 1 = 0 derived at degree 8; each single law consistent
+E1-10 [NEW_KIND:comm] OK: witness 3x3
+E1-11 [NEW_KIND:comm] OK: witness 3x3
+E1-12 [NEW_KIND:assoc] OK: witness 4x4
+E1-13 [SUBSUMED] OK: rational solutions: 1
+E1-14 [NEW_KIND:graded] OK: witness 8x8
+E1-15 [UNDERDETERMINED] OK: decisions on grid verified (2 distinct)
+E1-16 [SUBSUMED] OK: rational solutions: 2
+E1-17 [SUBSUMED] OK: rational solutions: 1
+E1-18 [NEW_KIND:assoc] OK: witness 8x8
+E1-19 [NEW_KIND:assoc] OK: witness 4x4; decision stable on the parameter grid
+E1-20 [NEW_KIND:graded] OK: witness 16x16
+E1-21 [NEW_KIND:comm] OK: witness 3x3
+E1-22 [CONTRADICTION] OK: 1 = 0 derived at degree 4; each single law consistent
+E1-23 [NEW_KIND:assoc] OK: witness 4x4
+E1-24 [NEW_KIND:graded] OK: witness 8x8
+E1-25 [NEW_KIND:graded] OK: witness 16x16
+E1-26 [SUBSUMED] OK: rational solutions: 4
+E1-27 [SUBSUMED] OK: rational solutions: 1; values valid on the whole parameter grid
+E1-28 [UNDERDETERMINED] OK: decisions on grid verified (3 distinct)
+E2-01 [SAME_LAW_NEW_STATE] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-02 [ANOTHER_LAW] OK: card signals: validated=False symmetry=True state=False; filled dims consistent=True
+E2-03 [ANOTHER_LAW] OK: card signals: validated=False symmetry=True state=False; filled dims consistent=True
+E2-04 [INVALID] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=False
+E2-05 [SAME_LAW_NEW_STATE] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-06 [SAME_LAW_NEW_STATE] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-07 [SAME_LAW_NEW_STATE] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-08 [INVALID] OK: card signals: validated=True symmetry=True state=False; filled dims consistent=False
+E2-09 [ANOTHER_LAW] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-10 [ANOTHER_LAW] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-11 [SAME_LAW_NEW_STATE] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-12 [SAME_LAW_NEW_STATE] OK: card signals: validated=False symmetry=False state=False; filled dims consistent=True
+E2-13 [ANOTHER_LAW] OK: card signals: validated=True symmetry=False state=True; filled dims consistent=True
+E2-14 [INVALID] OK: card signals: validated=False symmetry=True state=False; filled dims consistent=False
+E2-15 [ANOTHER_LAW] OK: card signals: validated=False symmetry=True state=False; filled dims consistent=True
+E2-16 [ANOTHER_LAW] OK: card signals: validated=True symmetry=True state=False; filled dims consistent=True
+COMPOSITION OK: E1 {'CONTRADICTION': 4, 'NEW_KIND:assoc': 5, 'NEW_KIND:comm': 4, 'NEW_KIND:graded': 5, 'SUBSUMED': 6, 'UNDERDETERMINED': 4}; NEW_KIND outside familiar list: 13/14; E2 {'ANOTHER_LAW': 7, 'INVALID': 3, 'SAME_LAW_NEW_STATE': 6}; undetectable ANOTHER_LAW: 2
+SUMMARY: 44 worlds checked, 0 failing items

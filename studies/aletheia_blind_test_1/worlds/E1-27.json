@@ -1,0 +1,21 @@
+{
+  "id": "E1-27",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "x",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "t"
+  ],
+  "parameters": [
+    "k"
+  ],
+  "laws": [
+    "x**2 - k*x = 4 - 2*k",
+    "x**3 + x = 10",
+    "(t + x)*(t + k - x) = t**2 + k*t + 2*k - 4"
+  ]
+}

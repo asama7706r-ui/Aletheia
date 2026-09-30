@@ -1,0 +1,17 @@
+{
+ "id": "dev-dual",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "u",
+   "grade": 0
+  }
+ ],
+ "variables": [
+  "a"
+ ],
+ "laws": [
+  "u*u = 0",
+  "(a + u)**3 = a**3 + 3*a**2*u"
+ ]
+}

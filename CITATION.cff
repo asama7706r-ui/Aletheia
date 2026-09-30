@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite them as below."
+title: "Aletheia: pre-registered studies of a deterministic epistemic kernel"
+type: software
+authors:
+  - given-names: "Asama"
+date-released: "2026-10-01"
+repository-code: "https://github.com/asama7706r-ui/Aletheia"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - pre-registration
+  - symbolic reasoning
+  - scientific discovery
+  - noncommutative algebra
+  - LLM evaluation

@@ -1,0 +1,86 @@
+key file: key.json  sha256=93bd4eb9c8a42464b5b5508702c64e3f606f826d5d3c89a33f49949ef51569f2
+aux file: aux_proofs.json  sha256=15cbc5c74dc82482c177e58efa93d73f5deda25f41c3e983e1ccd0fe42815839
+protocol: protocol_v2.md  sha256=f61183c61ce5a97d7d9dae66ba96f2bd2d0192ab25afcec2b2df0d63f71fed94
+sympy 1.14.0, python 3.12.10
+A-01     checks passed   18 failed 0 grid-decisions-recomputed
+A-01@-1  checks passed   38 failed 0
+A-01@-2  checks passed   36 failed 0
+A-01@-3  checks passed   26 failed 0
+A-01@0   checks passed   27 failed 0
+A-01@1   checks passed   38 failed 0
+A-01@1/2 checks passed   26 failed 0
+A-01@2   checks passed   38 failed 0
+A-01@3   checks passed   26 failed 0
+A-02     checks passed   18 failed 0 grid-decisions-recomputed
+A-02@-1  checks passed   36 failed 0
+A-02@-2  checks passed   36 failed 0
+A-02@-3  checks passed   36 failed 0
+A-02@0   checks passed   22 failed 0
+A-02@1   checks passed   24 failed 0
+A-02@1/2 checks passed   36 failed 0
+A-02@2   checks passed   36 failed 0
+A-02@3   checks passed   36 failed 0
+A-03     checks passed   32 failed 0 decision-recomputed
+A-04     checks passed   37 failed 0 decision-recomputed
+A-05     checks passed   37 failed 0 decision-recomputed
+A-06     checks passed   51 failed 0 decision-recomputed
+A-07     checks passed   51 failed 0 decision-recomputed
+A-08     checks passed   49 failed 0 decision-recomputed
+A-09     checks passed   42 failed 0 decision-recomputed
+A-09@-1  checks passed   24 failed 0
+A-09@-2  checks passed   25 failed 0
+A-09@-3  checks passed   25 failed 0
+A-09@0   checks passed   21 failed 0
+A-09@1   checks passed   24 failed 0
+A-09@1/2 checks passed   25 failed 0
+A-09@2   checks passed   25 failed 0
+A-09@3   checks passed   25 failed 0
+A-10     checks passed   42 failed 0 decision-recomputed
+A-11     checks passed   52 failed 0 decision-recomputed
+A-12     checks passed   62 failed 0 decision-recomputed
+A-13     checks passed   51 failed 0 decision-recomputed
+A-14     checks passed   37 failed 0 decision-recomputed
+A-15     checks passed   39 failed 0 decision-recomputed
+A-16     checks passed   41 failed 0 decision-recomputed
+A-17     checks passed   50 failed 0 decision-recomputed
+A-18     checks passed   36 failed 0 decision-recomputed
+A-19     checks passed   35 failed 0 decision-recomputed
+A-20     checks passed   48 failed 0 decision-recomputed
+A-21     checks passed   50 failed 0 decision-recomputed
+A-22     checks passed   43 failed 0 decision-recomputed
+A-23     checks passed   33 failed 0 decision-recomputed
+A-24     checks passed   59 failed 0 decision-recomputed
+A-25     checks passed   32 failed 0 decision-recomputed
+A-26     checks passed   37 failed 0 decision-recomputed
+A-27     checks passed   67 failed 0 decision-recomputed
+A-28     checks passed   39 failed 0 decision-recomputed
+A-29     checks passed   18 failed 0 grid-decisions-recomputed
+A-29@-1  checks passed   22 failed 0
+A-29@-2  checks passed   22 failed 0
+A-29@-3  checks passed   22 failed 0
+A-29@0   checks passed   22 failed 0
+A-29@1   checks passed   23 failed 0
+A-29@1/2 checks passed   22 failed 0
+A-29@2   checks passed   22 failed 0
+A-29@3   checks passed   22 failed 0
+A-30     checks passed   39 failed 0 decision-recomputed
+ALL      checks passed   30 failed 0
+B-01     checks passed   18 failed 0 class-recomputed
+B-02     checks passed   20 failed 0 class-recomputed
+B-03     checks passed   18 failed 0 class-recomputed
+B-04     checks passed   18 failed 0 class-recomputed
+B-05     checks passed   20 failed 0 class-recomputed
+B-06     checks passed   18 failed 0 class-recomputed
+B-07     checks passed   18 failed 0 class-recomputed
+B-08     checks passed   18 failed 0 class-recomputed
+B-09     checks passed   18 failed 0 class-recomputed
+B-10     checks passed   19 failed 0 class-recomputed
+B-11     checks passed   19 failed 0 class-recomputed
+B-12     checks passed   18 failed 0 class-recomputed
+B-13     checks passed   20 failed 0 class-recomputed
+B-14     checks passed   19 failed 0 class-recomputed
+B-15     checks passed   18 failed 0 class-recomputed
+B-16     checks passed   18 failed 0 class-recomputed
+B-17     checks passed   18 failed 0 class-recomputed
+B-18     checks passed   18 failed 0 class-recomputed
+RESULT: checked 48 worlds (2496 items); 0 items failed

@@ -1,0 +1,28 @@
+{
+ "id": "A-16",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "a",
+   "grade": 0
+  },
+  {
+   "name": "b",
+   "grade": 0
+  },
+  {
+   "name": "c",
+   "grade": 0
+  }
+ ],
+ "variables": [
+  "s",
+  "t"
+ ],
+ "parameters": [],
+ "laws": [
+  "(t + a*s)*(t + b*s)*(t + c*s) = t**3 - 2*t*s**2 - s**3",
+  "a + b + c = 0"
+ ],
+ "observations": []
+}

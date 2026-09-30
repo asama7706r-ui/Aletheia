@@ -1,0 +1,10 @@
+```json
+[
+ {"id": "B-13", "label": "BOUNDED", "bound": "1/3200"},
+ {"id": "B-14", "label": "ACTIVE", "interval": ["62/9375", "253/37500"]},
+ {"id": "B-15", "label": "CONFLICT"},
+ {"id": "B-16", "label": "TYPE_IMPOSSIBLE"},
+ {"id": "B-17", "label": "UNCONSTRAINED"},
+ {"id": "B-18", "label": "INCIDENTAL"}
+]
+```

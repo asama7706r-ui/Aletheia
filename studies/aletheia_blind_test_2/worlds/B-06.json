@@ -1,0 +1,64 @@
+{
+ "id": "B-06",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "x1": {
+   "L": 1
+  },
+  "x2": {
+   "L": 1
+  }
+ },
+ "constants": {
+  "K": {
+   "value": "4",
+   "dims": {
+    "M": 1,
+    "T": -2
+   }
+  }
+ },
+ "parameters": {
+  "k1": "3/2",
+  "k2": "3/2"
+ },
+ "law": "y = K*(x1**2 + x2**2)/2",
+ "term": {
+  "expr": "lam*(k1 - k2)*K*x1*x2",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "exchange of the axes",
+   "map": {
+    "x1": "x2",
+    "x2": "x1",
+    "y": "y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "x1": "1",
+    "x2": "2"
+   },
+   "output": "2501/250",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "x1": "3",
+    "x2": "-1"
+   },
+   "output": "3999/200",
+   "resolution": "1/100"
+  }
+ ]
+}

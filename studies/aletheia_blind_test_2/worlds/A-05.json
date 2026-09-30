@@ -1,0 +1,21 @@
+{
+ "id": "A-05",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "x",
+   "grade": 0
+  },
+  {
+   "name": "y",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "x*x = 1",
+  "y*x - x*y = x"
+ ],
+ "observations": []
+}

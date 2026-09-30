@@ -1,0 +1,12 @@
+{
+ "name_as_shown": "DeepSeek-V4.1-Flash",
+ "family": "deepseek",
+ "interface": "chat.deepseek.com",
+ "reasoning_option": "deep reasoning",
+ "memory_off": true,
+ "web_search_off": true,
+ "code_execution": "used-in-batches: no-sign-to-unsure",
+ "scored": true,
+ "first_run_date": "2026-09-30",
+ "notes": ""
+}

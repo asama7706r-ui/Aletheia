@@ -1,0 +1,36 @@
+{
+  "id": "E1-23",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "a1",
+      "grade": 1
+    },
+    {
+      "name": "a2",
+      "grade": 1
+    },
+    {
+      "name": "b1",
+      "grade": 1
+    },
+    {
+      "name": "b2",
+      "grade": 1
+    }
+  ],
+  "variables": [
+    "s",
+    "t",
+    "u",
+    "v"
+  ],
+  "laws": [
+    "(s*a1 + t*a2)**2 = 0",
+    "(s*b1 + t*b2)**2 = 0",
+    "(s*a1 + t*a2)*(u*b1 + v*b2) + (u*b1 + v*b2)*(s*a1 + t*a2) = s*u + t*v",
+    "(b1*a1)**2 = b1*a1",
+    "a2*b2*a2 = a2",
+    "a1*b1*a2*b2 = (1 - b1*a1)*(1 - b2*a2)"
+  ]
+}

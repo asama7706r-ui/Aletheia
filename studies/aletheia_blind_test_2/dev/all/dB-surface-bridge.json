@@ -1,0 +1,46 @@
+{
+ "id": "dB-surface-bridge",
+ "quantities": {
+  "E": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "A": {
+   "L": 2
+  }
+ },
+ "constants": {
+  "U0": {
+   "value": "3",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   }
+  },
+  "sigma": {
+   "value": "1/20",
+   "dims": {
+    "M": 1,
+    "T": -2
+   }
+  }
+ },
+ "law": "E = U0",
+ "term": {
+  "expr": "lam*A",
+  "unknown": "lam"
+ },
+ "coefficient_form": "constants",
+ "observations": [
+  {
+   "inputs": {
+    "A": "2"
+   },
+   "output": "3",
+   "resolution": "1/100"
+  }
+ ],
+ "experiment": "B"
+}

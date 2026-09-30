@@ -1,0 +1,13 @@
+{
+ "id": "dev-bombelli",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "X",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "X*X = -121"
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "A_primary_correct": 30,
+ "A_strict_correct": 24,
+ "A_fork_primary_correct": 10,
+ "A_over_claim": 0,
+ "A_over_fork": 0,
+ "A_contradictions_accepted": 0,
+ "B_correct": 18,
+ "B_false_death": 0,
+ "B_conflicts_detected": 3,
+ "missing_or_invalid": 0,
+ "verdict": "NO_GAP",
+ "A4_worlds": {
+  "A-19": {
+   "truth": "DETERMINED",
+   "label": "DETERMINED",
+   "primary": true,
+   "strict": true
+  },
+  "A-20": {
+   "truth": "DETERMINED",
+   "label": "DETERMINED",
+   "primary": true,
+   "strict": true
+  },
+  "A-21": {
+   "truth": "FORK",
+   "label": "FORK",
+   "primary": true,
+   "strict": false
+  },
+  "A-22": {
+   "truth": "FORK",
+   "label": "FORK",
+   "primary": true,
+   "strict": false
+  },
+  "A-23": {
+   "truth": "CONTRADICTION",
+   "label": "CONTRADICTION",
+   "primary": true,
+   "strict": true
+  },
+  "A-24": {
+   "truth": "FORK",
+   "label": "FORK",
+   "primary": true,
+   "strict": false
+  }
+ }
+}

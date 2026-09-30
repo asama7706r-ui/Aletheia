@@ -1,0 +1,34 @@
+{
+  "id": "E1-20",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "a1",
+      "grade": 1
+    },
+    {
+      "name": "a2",
+      "grade": 1
+    },
+    {
+      "name": "a3",
+      "grade": 1
+    },
+    {
+      "name": "a4",
+      "grade": 1
+    }
+  ],
+  "variables": [
+    "s",
+    "t",
+    "u",
+    "v"
+  ],
+  "laws": [
+    "(s*a1 + t*a2 + u*a3 + v*a4)**2 = 0",
+    "(a1*a3 + a2*a4)**2 = -2*a1*a2*a3*a4",
+    "(s*a1*a2 + t*a3*a4)**2 = 2*s*t*a1*a2*a3*a4",
+    "a3*a4*a1*a2 = a1*a2*a3*a4"
+  ]
+}

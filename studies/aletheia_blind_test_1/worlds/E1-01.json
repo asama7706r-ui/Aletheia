@@ -1,0 +1,27 @@
+{
+  "id": "E1-01",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "u",
+      "grade": 0
+    },
+    {
+      "name": "v",
+      "grade": 0
+    },
+    {
+      "name": "w",
+      "grade": 1
+    }
+  ],
+  "variables": [
+    "t"
+  ],
+  "laws": [
+    "u*v = 1",
+    "(t + w)*(t - w) = t**2 - u",
+    "u*w = -w*u",
+    "(u + w)**2 = u**2 + u"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "A-19",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "a",
+   "grade": 0
+  },
+  {
+   "name": "b",
+   "grade": 0
+  },
+  {
+   "name": "c",
+   "grade": 0
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "a*a = 1/4",
+  "b*b = 1/4",
+  "c*c = 1/4",
+  "a + b + c = 1/2",
+  "a*b + b*c + c*a = -1/4"
+ ],
+ "observations": []
+}

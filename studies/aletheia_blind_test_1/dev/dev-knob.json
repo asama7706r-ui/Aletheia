@@ -1,0 +1,16 @@
+{
+ "id": "dev-knob",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "u",
+   "grade": 0
+  }
+ ],
+ "parameters": [
+  "c"
+ ],
+ "laws": [
+  "u*u = c"
+ ]
+}

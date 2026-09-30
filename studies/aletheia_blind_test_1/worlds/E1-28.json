@@ -1,0 +1,27 @@
+{
+  "id": "E1-28",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "f",
+      "grade": 1
+    },
+    {
+      "name": "g",
+      "grade": 1
+    }
+  ],
+  "variables": [
+    "s",
+    "t"
+  ],
+  "parameters": [
+    "c"
+  ],
+  "laws": [
+    "f*f = 0",
+    "g**2 = 0",
+    "(1 + t*g)*(1 + s*f) = 1 + s*f + t*g + (2*c**2 - 1)*s*t*f*g",
+    "(f + g)**2 = 2*c**2*f*g"
+  ]
+}

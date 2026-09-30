@@ -1,0 +1,92 @@
+{
+  "id": "E2-12",
+  "experiment": "E2",
+  "quantities": {
+    "F": {
+      "M": 1,
+      "L": 1,
+      "T": -2
+    },
+    "k": {
+      "M": 1,
+      "T": -2
+    },
+    "x": {
+      "L": 1
+    },
+    "c2": {
+      "M": -1,
+      "T": 2
+    }
+  },
+  "law_original": "F = k*x",
+  "filled_law": "F = k*x/(1 + k*c2)",
+  "symmetries": [
+    {
+      "name": "reflection",
+      "map": {
+        "x": "-x",
+        "F": "-F"
+      },
+      "params": {}
+    },
+    {
+      "name": "linear scaling",
+      "map": {
+        "x": "l*x",
+        "F": "l*F"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "2"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "k": "2",
+        "x": "1",
+        "c2": "0"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "k": "3",
+        "x": "1/2",
+        "c2": "0"
+      },
+      "output": "3/2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "k": "1/2",
+        "x": "3",
+        "c2": "0"
+      },
+      "output": "3/2",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "k": "2",
+      "x": "1",
+      "c2": "1/2"
+    },
+    "output": "1",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "spring"
+  ],
+  "state_filled": [
+    "spring",
+    "second spring in series"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+ "id": "B-14",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "M": 1,
+   "L": 2,
+   "T": -3,
+   "I": -1
+  },
+  "cur": {
+   "I": 1
+  },
+  "tmp": {
+   "K": 1
+  }
+ },
+ "constants": {
+  "R0": {
+   "value": "2",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -3,
+    "I": -2
+   }
+  },
+  "T0": {
+   "value": "300",
+   "dims": {
+    "K": 1
+   }
+  }
+ },
+ "parameters": {},
+ "law": "y = R0*cur",
+ "term": {
+  "expr": "lam*cur*(tmp - T0)",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [
+  {
+   "name": "current reversal",
+   "map": {
+    "cur": "-cur",
+    "y": "-y"
+   }
+  }
+ ],
+ "observations": [
+  {
+   "inputs": {
+    "cur": "1",
+    "tmp": "300"
+   },
+   "output": "501/250",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "cur": "2",
+    "tmp": "350"
+   },
+   "output": "933/200",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "cur": "3",
+    "tmp": "250"
+   },
+   "output": "2499/500",
+   "resolution": "1/100"
+  }
+ ]
+}

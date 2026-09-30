@@ -1,0 +1,47 @@
+{
+ "id": "B-15",
+ "experiment": "B",
+ "quantities": {
+  "y": {
+   "T": 2
+  },
+  "a": {
+   "L": 1
+  }
+ },
+ "constants": {
+  "GM": {
+   "value": "1",
+   "dims": {
+    "L": 3,
+    "T": -2
+   }
+  }
+ },
+ "parameters": {
+  "e": "0"
+ },
+ "law": "y = a**3/GM",
+ "term": {
+  "expr": "lam*e*a**4",
+  "unknown": "lam"
+ },
+ "coefficient_form": "free",
+ "symmetries": [],
+ "observations": [
+  {
+   "inputs": {
+    "a": "1"
+   },
+   "output": "1003/1000",
+   "resolution": "1/100"
+  },
+  {
+   "inputs": {
+    "a": "2"
+   },
+   "output": "42/5",
+   "resolution": "1/10"
+  }
+ ]
+}

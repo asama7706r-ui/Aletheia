@@ -1,0 +1,19 @@
+{
+ "id": "dev-quaternions",
+ "experiment": "E1",
+ "generators": [
+  {
+   "name": "i",
+   "grade": 0
+  },
+  {
+   "name": "j",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "i*i = -1",
+  "j*j = -1",
+  "i*j = -(j*i)"
+ ]
+}

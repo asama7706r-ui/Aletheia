@@ -1,0 +1,324 @@
+[
+ {
+  "id": "dev-bombelli",
+  "label": "NEW_KIND",
+  "true_family": "comm",
+  "true_dim": 2,
+  "complete_presentation": true,
+  "witness": {
+   "X": [
+    [
+     0,
+     -121
+    ],
+    [
+     1,
+     0
+    ]
+   ]
+  },
+  "observed_nonzero": [
+   "X"
+  ]
+ },
+ {
+  "id": "dev-dual",
+  "label": "NEW_KIND",
+  "true_family": "comm",
+  "true_dim": 2,
+  "complete_presentation": true,
+  "witness": {
+   "u": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ]
+  },
+  "observed_nonzero": [
+   "u"
+  ]
+ },
+ {
+  "id": "dev-j-lightlines",
+  "label": "NEW_KIND",
+  "true_family": "comm",
+  "true_dim": 2,
+  "complete_presentation": true,
+  "witness": {
+   "u": [
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ]
+  },
+  "observed_nonzero": [
+   "1 + u",
+   "1 - u"
+  ]
+ },
+ {
+  "id": "dev-sign-subsumed",
+  "label": "SUBSUMED",
+  "true_values": {
+   "u": "1"
+  },
+  "observed_nonzero": [
+   "u"
+  ]
+ },
+ {
+  "id": "dev-grassmann",
+  "label": "NEW_KIND",
+  "true_family": "graded",
+  "true_dim": 4,
+  "complete_presentation": true,
+  "witness": {
+   "t1": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "t2": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     -1,
+     0,
+     0
+    ]
+   ]
+  },
+  "observed_nonzero": [
+   "t1*t2"
+  ]
+ },
+ {
+  "id": "dev-grassmann-nogrades",
+  "label": "NEW_KIND",
+  "true_family": "assoc",
+  "true_dim": 4,
+  "complete_presentation": true,
+  "witness": {
+   "t1": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "t2": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     -1,
+     0,
+     0
+    ]
+   ]
+  },
+  "observed_nonzero": [
+   "t1*t2"
+  ]
+ },
+ {
+  "id": "dev-dirac11",
+  "label": "NEW_KIND",
+  "true_family": "assoc",
+  "true_dim": 4,
+  "complete_presentation": true,
+  "witness": {
+   "g0": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   "g1": [
+    [
+     0,
+     1
+    ],
+    [
+     -1,
+     0
+    ]
+   ]
+  },
+  "observed_nonzero": [
+   "g0*g1"
+  ]
+ },
+ {
+  "id": "dev-quaternions",
+  "label": "NEW_KIND",
+  "true_family": "assoc",
+  "true_dim": 4,
+  "complete_presentation": true,
+  "witness": {
+   "i": [
+    [
+     0,
+     -1,
+     0,
+     0
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     -1
+    ],
+    [
+     0,
+     0,
+     1,
+     0
+    ]
+   ],
+   "j": [
+    [
+     0,
+     0,
+     -1,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     1,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     -1,
+     0,
+     0
+    ]
+   ]
+  },
+  "observed_nonzero": [
+   "i*j"
+  ]
+ },
+ {
+  "id": "dev-contradiction",
+  "label": "CONTRADICTION"
+ },
+ {
+  "id": "dev-knob",
+  "label": "UNDERDETERMINED"
+ },
+ {
+  "id": "dev-e2-symbreak",
+  "label": "ANOTHER_LAW",
+  "detectable_by_card": true
+ },
+ {
+  "id": "dev-e2-newstate",
+  "label": "SAME_LAW_NEW_STATE"
+ },
+ {
+  "id": "dev-e2-invalid",
+  "label": "INVALID"
+ }
+]

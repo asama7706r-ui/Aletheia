@@ -1,0 +1,52 @@
+{
+ "id": "dev-e2-invalid",
+ "experiment": "E2",
+ "quantities": {
+  "E": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "m": {
+   "M": 1
+  },
+  "c": {
+   "L": 1,
+   "T": -1
+  },
+  "p": {
+   "M": 1,
+   "L": 1,
+   "T": -1
+  }
+ },
+ "law_original": "E = m*c**2",
+ "filled_law": "E = m*c**2 + p",
+ "symmetries": [],
+ "validated": [
+  {
+   "inputs": {
+    "m": "1",
+    "c": "1",
+    "p": "0"
+   },
+   "output": "1",
+   "tol": "1e-9"
+  }
+ ],
+ "deficit": {
+  "inputs": {
+   "m": "1",
+   "c": "1",
+   "p": "1"
+  },
+  "output": "2",
+  "tol": "1e-9"
+ },
+ "state_original": [
+  "body"
+ ],
+ "state_filled": [
+  "body"
+ ]
+}

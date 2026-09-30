@@ -1,0 +1,19 @@
+{
+ "id": "dA-demand-contra",
+ "generators": [
+  {
+   "name": "x",
+   "grade": 0
+  }
+ ],
+ "laws": [
+  "x*x = 0"
+ ],
+ "observations": [
+  {
+   "expr": "x*x",
+   "status": "nonzero"
+  }
+ ],
+ "experiment": "A"
+}

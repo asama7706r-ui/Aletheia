@@ -1,0 +1,10 @@
+```json
+[
+  {"id": "A-13", "label": "DETERMINED", "level": "assoc"},
+  {"id": "A-14", "label": "DETERMINED", "level": "comm"},
+  {"id": "A-15", "label": "DETERMINED", "level": "assoc"},
+  {"id": "A-16", "label": "DETERMINED", "level": "comm"},
+  {"id": "A-17", "label": "FORK", "branches": ["comm", "assoc"], "decisive": [["n"]]},
+  {"id": "A-18", "label": "DETERMINED", "level": "comm"}
+]
+```

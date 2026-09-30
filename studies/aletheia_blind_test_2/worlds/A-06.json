@@ -1,0 +1,35 @@
+{
+ "id": "A-06",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "g",
+   "grade": 0
+  },
+  {
+   "name": "psi",
+   "grade": 1
+  },
+  {
+   "name": "chi",
+   "grade": 1
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "(g - 1)*(g - 3) = 0",
+  "psi*chi + chi*psi = 0",
+  "psi**2 = 0",
+  "chi**2 = 0",
+  "g*psi*chi = 3*psi*chi",
+  "g*psi = psi*g",
+  "g*chi = chi*g"
+ ],
+ "observations": [
+  {
+   "expr": "psi*chi",
+   "status": "nonzero"
+  }
+ ]
+}

@@ -1,0 +1,608 @@
+{
+ "dA-demand-contra": {
+  "FORKALL": {
+   "label": "CONTRADICTION"
+  },
+  "OCC": {
+   "label": "CONTRADICTION"
+  },
+  "V1D": {
+   "label": "CONTRADICTION"
+  },
+  "procedure": {
+   "label": "CONTRADICTION",
+   "reason": "the laws force observed quantities to zero: x*x"
+  }
+ },
+ "dA-lightlines": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "1 + u",
+     "1 - u"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 2,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "1 + u",
+      "1 - u"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "-1"
+      ],
+      [
+       "1"
+      ]
+     ]
+    },
+    {
+     "level": "comm"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "1 + u",
+     "1 - u"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "dA-param": {
+  "FORKALL": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "FORK/SUBSUMED|assoc",
+    "FORK/comm|assoc"
+   ]
+  },
+  "OCC": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "DETERMINED/SUBSUMED/1",
+    "DETERMINED/comm/2"
+   ]
+  },
+  "V1D": {
+   "dim": 2,
+   "label": "DETERMINED",
+   "level": "comm",
+   "open_parameters": [
+    "c"
+   ]
+  },
+  "procedure": {
+   "label": "UNDERDETERMINED",
+   "variants": [
+    "DETERMINED/comm/2",
+    "FORK/SUBSUMED|comm"
+   ]
+  }
+ },
+ "dA-plain": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "procedure": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  }
+ },
+ "dA-probe": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "x*y - y*x"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 4,
+   "label": "DETERMINED",
+   "level": "comm"
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "x*y - y*x"
+     ],
+     "level": "comm"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [],
+   "decisive": [
+    [
+     "x*y - y*x"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "dA-probe-demand": {
+  "FORKALL": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "OCC": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  }
+ },
+ "dA-sign": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    []
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  },
+  "procedure": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1"
+    ],
+    [
+     "1"
+    ]
+   ]
+  }
+ },
+ "dA-smash": {
+  "FORKALL": {
+   "branches": [
+    {
+     "level": "SUBSUMED"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "decisive": [
+    [
+     "p*f"
+    ]
+   ],
+   "label": "FORK"
+  },
+  "OCC": {
+   "dim": 1,
+   "label": "DETERMINED",
+   "level": "SUBSUMED",
+   "values": [
+    [
+     "-1",
+     "0",
+     "0"
+    ],
+    [
+     "1",
+     "0",
+     "0"
+    ]
+   ]
+  },
+  "V1D": {
+   "dim": 8,
+   "label": "DETERMINED",
+   "level": "assoc"
+  },
+  "procedure": {
+   "branches": [
+    {
+     "killed": [
+      "(-f)*p",
+      "-f",
+      "f",
+      "g",
+      "g*p",
+      "p*f",
+      "p*g",
+      "s*f",
+      "s*f + t*g",
+      "t*g"
+     ],
+     "level": "SUBSUMED",
+     "values": [
+      [
+       "-1",
+       "0",
+       "0"
+      ],
+      [
+       "1",
+       "0",
+       "0"
+      ]
+     ]
+    },
+    {
+     "killed": [
+      "p*f",
+      "f",
+      "(-f)*p",
+      "-f",
+      "g*p",
+      "g",
+      "p*g",
+      "s*f + t*g",
+      "t*g",
+      "s*f"
+     ],
+     "level": "comm"
+    },
+    {
+     "killed": [
+      "p*f",
+      "f",
+      "(-f)*p",
+      "-f",
+      "g*p",
+      "g",
+      "p*g",
+      "s*f + t*g",
+      "t*g",
+      "s*f"
+     ],
+     "level": "graded"
+    },
+    {
+     "level": "assoc"
+    }
+   ],
+   "certificates": [
+    {
+     "groups": [
+      {
+       "terms": [
+        [
+         "1/2",
+         [],
+         {
+          "law": 1,
+          "varmono": {
+           "s": 0,
+           "t": 0
+          }
+         },
+         []
+        ],
+        [
+         "1/2",
+         [],
+         {
+          "pair": [
+           "p",
+           "f"
+          ],
+          "rule": "graded"
+         },
+         []
+        ]
+       ],
+       "varmono": {
+        "s": 0,
+        "t": 0
+       }
+      }
+     ],
+     "level": "graded",
+     "mention": "p*f"
+    }
+   ],
+   "decisive": [
+    [
+     "p*f"
+    ],
+    [
+     "p*f"
+    ],
+    [
+     "p*f"
+    ]
+   ],
+   "label": "FORK"
+  }
+ },
+ "dB-active": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "interval": [
+    "499/1000",
+    "501/1000"
+   ],
+   "label": "ACTIVE"
+  },
+  "THRESH": {
+   "interval": [
+    "499/1000",
+    "501/1000"
+   ],
+   "label": "ACTIVE"
+  },
+  "procedure": {
+   "interval": [
+    "499/1000",
+    "501/1000"
+   ],
+   "label": "ACTIVE"
+  }
+ },
+ "dB-empty": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "CONFLICT",
+   "reason": "no value of the unknown fits all observations"
+  },
+  "THRESH": {
+   "label": "CONFLICT",
+   "reason": "no value of the unknown fits all observations"
+  },
+  "procedure": {
+   "label": "CONFLICT",
+   "reason": "no value of the unknown fits all observations"
+  }
+ },
+ "dB-hooke-bounded": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "1/8",
+   "interval": [
+    "-1/8",
+    "1/8"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "bound": "1/8",
+   "interval": [
+    "-1/8",
+    "1/8"
+   ],
+   "label": "BOUNDED"
+  }
+ },
+ "dB-incidental": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "UNCONSTRAINED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "INCIDENTAL",
+   "reason": "the term vanishes at the given parameter values"
+  }
+ },
+ "dB-parity-violated": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "interval": [
+    "49/100",
+    "51/100"
+   ],
+   "label": "ACTIVE"
+  },
+  "THRESH": {
+   "interval": [
+    "49/100",
+    "51/100"
+   ],
+   "label": "ACTIVE"
+  },
+  "procedure": {
+   "label": "CONFLICT",
+   "reason": "detected although forbidden by parity"
+  }
+ },
+ "dB-parity-zero": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "1/25",
+   "interval": [
+    "-1/25",
+    "1/25"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "SYMMETRY_ZERO",
+   "reason": "forbidden by parity"
+  }
+ },
+ "dB-surface-bridge": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "bound": "1/200",
+   "interval": [
+    "-1/200",
+    "1/200"
+   ],
+   "label": "BOUNDED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "bound": "1/200",
+   "bridge": {
+    "sigma": "1"
+   },
+   "interval": [
+    "-1/200",
+    "1/200"
+   ],
+   "label": "BOUNDED"
+  }
+ },
+ "dB-surface-nobridge": {
+  "MENTION": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "NOSYM": {
+   "label": "TYPE_IMPOSSIBLE"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "TYPE_IMPOSSIBLE",
+   "reason": "no product of declared constants has dimension {'M': Fraction(1, 1), 'T': Fraction(-2, 1)}"
+  }
+ },
+ "dB-unconstrained": {
+  "MENTION": {
+   "label": "ACTIVE"
+  },
+  "NOSYM": {
+   "label": "UNCONSTRAINED"
+  },
+  "THRESH": {
+   "label": "ZERO"
+  },
+  "procedure": {
+   "label": "UNCONSTRAINED"
+  }
+ }
+}

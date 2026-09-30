@@ -1,0 +1,10 @@
+```json
+[
+  {"id": "A-01", "label": "UNDERDETERMINED"},
+  {"id": "A-02", "label": "UNDERDETERMINED"},
+  {"id": "A-03", "label": "DETERMINED", "level": "SUBSUMED"},
+  {"id": "A-04", "label": "DETERMINED", "level": "SUBSUMED"},
+  {"id": "A-05", "label": "CONTRADICTION"},
+  {"id": "A-06", "label": "DETERMINED", "level": "graded"}
+]
+```

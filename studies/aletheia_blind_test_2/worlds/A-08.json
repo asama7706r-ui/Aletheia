@@ -1,0 +1,27 @@
+{
+ "id": "A-08",
+ "experiment": "A",
+ "generators": [
+  {
+   "name": "a",
+   "grade": 1
+  },
+  {
+   "name": "b",
+   "grade": 1
+  }
+ ],
+ "variables": [],
+ "parameters": [],
+ "laws": [
+  "a*a = 0",
+  "b*b = 0",
+  "(a*b + b*a)**2 = 0"
+ ],
+ "observations": [
+  {
+   "expr": "a*b - b*a",
+   "status": "nonzero"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "E1-26",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "a",
+      "grade": 0
+    },
+    {
+      "name": "b",
+      "grade": 0
+    },
+    {
+      "name": "c",
+      "grade": 0
+    }
+  ],
+  "laws": [
+    "a*a = 1",
+    "b**2 = 1",
+    "a*b = c",
+    "b*c = a",
+    "c*a = b",
+    "(a + b + c)**2 = 3 + 2*(a + b + c)"
+  ]
+}

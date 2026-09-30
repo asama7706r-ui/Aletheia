@@ -1,0 +1,8 @@
+[
+{"id": "A-07", "label": "FORK", "branches": ["comm", "assoc"], "decisive": [["b"]]},
+{"id": "A-08", "label": "FORK", "branches": ["graded", "assoc"], "decisive": [["a*b + b*a"]]},
+{"id": "A-09", "label": "DETERMINED", "level": "comm"},
+{"id": "A-10", "label": "CONTRADICTION"},
+{"id": "A-11", "label": "FORK", "branches": ["SUBSUMED", "comm", "graded"], "decisive": [["f1"], ["f1*f2"]]},
+{"id": "A-12", "label": "FORK", "branches": ["comm", "graded", "assoc"], "decisive": [["q*r"], ["q*r + r*q"]]}
+]

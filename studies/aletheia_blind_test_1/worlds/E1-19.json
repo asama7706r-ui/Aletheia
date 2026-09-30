@@ -1,0 +1,26 @@
+{
+  "id": "E1-19",
+  "experiment": "E1",
+  "generators": [
+    {
+      "name": "x",
+      "grade": 0
+    },
+    {
+      "name": "y",
+      "grade": 0
+    }
+  ],
+  "variables": [
+    "s",
+    "t"
+  ],
+  "parameters": [
+    "m"
+  ],
+  "laws": [
+    "(s*x + t*y)**2 = (m**2 + 2)*s**2 - 3*t**2",
+    "(x*y)**2 = 3*m**2 + 6",
+    "x*y*x = -(m**2 + 2)*y"
+  ]
+}

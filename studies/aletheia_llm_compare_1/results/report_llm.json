@@ -1,0 +1,3343 @@
+{
+ "overall": "RULE_EXECUTION_EDGE_NOT_SUPPORTED",
+ "models": [
+  "claude",
+  "deepseek",
+  "gemini",
+  "qwen"
+ ],
+ "report": {
+  "ref:procedure": {
+   "A_primary_correct": 30,
+   "A_strict_correct": 30,
+   "A_fork_primary_correct": 10,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 13,
+   "A_contradictions_accepted": 0,
+   "B_correct": 18,
+   "B_balanced_accuracy": 1.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 3,
+   "missing_or_invalid": 0,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "UNCONSTRAINED",
+     "correct": true
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    }
+   }
+  },
+  "ref:V1D": {
+   "A_primary_correct": 20,
+   "A_strict_correct": 20,
+   "A_fork_primary_correct": 0,
+   "A_over_claim": 10,
+   "A_over_fork": 0,
+   "A_determined_correct": 13,
+   "A_contradictions_accepted": 0,
+   "B_correct": 0,
+   "B_balanced_accuracy": 0.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 0,
+   "missing_or_invalid": 18,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "MISSING",
+     "correct": false
+    }
+   }
+  },
+  "ref:OCC": {
+   "A_primary_correct": 17,
+   "A_strict_correct": 17,
+   "A_fork_primary_correct": 0,
+   "A_over_claim": 10,
+   "A_over_fork": 0,
+   "A_determined_correct": 13,
+   "A_contradictions_accepted": 0,
+   "B_correct": 0,
+   "B_balanced_accuracy": 0.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 0,
+   "missing_or_invalid": 18,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "DETERMINED",
+     "primary": false,
+     "strict": false
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "MISSING",
+     "correct": false
+    }
+   }
+  },
+  "ref:FORKALL": {
+   "A_primary_correct": 9,
+   "A_strict_correct": 8,
+   "A_fork_primary_correct": 3,
+   "A_over_claim": 0,
+   "A_over_fork": 11,
+   "A_determined_correct": 2,
+   "A_contradictions_accepted": 0,
+   "B_correct": 0,
+   "B_balanced_accuracy": 0.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 0,
+   "missing_or_invalid": 18,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "FORK",
+     "primary": false,
+     "strict": false
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "MISSING",
+     "correct": false
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "MISSING",
+     "correct": false
+    }
+   }
+  },
+  "ref:THRESH": {
+   "A_primary_correct": 0,
+   "A_strict_correct": 0,
+   "A_fork_primary_correct": 0,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 0,
+   "A_contradictions_accepted": 0,
+   "B_correct": 5,
+   "B_balanced_accuracy": 0.2381,
+   "B_false_death": 4,
+   "B_conflicts_detected": 2,
+   "missing_or_invalid": 30,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "ZERO",
+     "correct": false
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "ZERO",
+     "correct": false
+    }
+   }
+  },
+  "ref:MENTION": {
+   "A_primary_correct": 0,
+   "A_strict_correct": 0,
+   "A_fork_primary_correct": 0,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 0,
+   "A_contradictions_accepted": 0,
+   "B_correct": 6,
+   "B_balanced_accuracy": 0.2857,
+   "B_false_death": 0,
+   "B_conflicts_detected": 0,
+   "missing_or_invalid": 30,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "ACTIVE",
+     "correct": false
+    }
+   }
+  },
+  "ref:NOSYM": {
+   "A_primary_correct": 0,
+   "A_strict_correct": 0,
+   "A_fork_primary_correct": 0,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 0,
+   "A_contradictions_accepted": 0,
+   "B_correct": 12,
+   "B_balanced_accuracy": 0.6667,
+   "B_false_death": 0,
+   "B_conflicts_detected": 2,
+   "missing_or_invalid": 30,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "BOUNDED",
+     "correct": false
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "BOUNDED",
+     "correct": false
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "ACTIVE",
+     "correct": false
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "UNCONSTRAINED",
+     "correct": false
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "BOUNDED",
+     "correct": false
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "UNCONSTRAINED",
+     "correct": true
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "UNCONSTRAINED",
+     "correct": false
+    }
+   }
+  },
+  "claude": {
+   "A_primary_correct": 24,
+   "A_strict_correct": 21,
+   "A_fork_primary_correct": 7,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 11,
+   "A_contradictions_accepted": 0,
+   "B_correct": 18,
+   "B_balanced_accuracy": 1.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 3,
+   "missing_or_invalid": 6,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "MISSING",
+     "primary": false,
+     "strict": false
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "UNCONSTRAINED",
+     "correct": true
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    }
+   },
+   "verdict": "GAP",
+   "format_flag": false,
+   "mcnemar_vs_procedure": {
+    "b": 6,
+    "c": 0,
+    "p_one_sided": 0.015625
+   },
+   "meta": {
+    "name_as_shown": "cluade-opus-5.5",
+    "family": "claude",
+    "interface": "app",
+    "reasoning_option": "exrta",
+    "memory_off": true,
+    "web_search_off": true,
+    "code_execution": "on-but-unused",
+    "scored": true,
+    "first_run_date": "2026-09-30",
+    "notes": "there is a MAX reasoning but it cost alot tokens and time make him solve tests with nearly no meaning"
+   }
+  },
+  "deepseek": {
+   "A_primary_correct": 30,
+   "A_strict_correct": 27,
+   "A_fork_primary_correct": 10,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 13,
+   "A_contradictions_accepted": 0,
+   "B_correct": 18,
+   "B_balanced_accuracy": 1.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 3,
+   "missing_or_invalid": 0,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "UNCONSTRAINED",
+     "correct": true
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    }
+   },
+   "verdict": "NO_GAP",
+   "format_flag": false,
+   "mcnemar_vs_procedure": {
+    "b": 0,
+    "c": 0,
+    "p_one_sided": 1.0
+   },
+   "meta": {
+    "name_as_shown": "DeepSeek-V4.1-Flash",
+    "family": "deepseek",
+    "interface": "chat.deepseek.com",
+    "reasoning_option": "deep reasoning",
+    "memory_off": true,
+    "web_search_off": true,
+    "code_execution": "used-in-batches: no-sign-to-unsure",
+    "scored": true,
+    "first_run_date": "2026-09-30",
+    "notes": ""
+   }
+  },
+  "gemini": {
+   "A_primary_correct": 30,
+   "A_strict_correct": 27,
+   "A_fork_primary_correct": 10,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 13,
+   "A_contradictions_accepted": 0,
+   "B_correct": 18,
+   "B_balanced_accuracy": 1.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 3,
+   "missing_or_invalid": 0,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "UNCONSTRAINED",
+     "correct": true
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    }
+   },
+   "verdict": "NO_GAP",
+   "format_flag": false,
+   "mcnemar_vs_procedure": {
+    "b": 0,
+    "c": 0,
+    "p_one_sided": 1.0
+   },
+   "meta": {
+    "name_as_shown": "Gemini-3.8-high",
+    "family": "Gemini",
+    "interface": "gemini.google.com",
+    "reasoning_option": "thinking",
+    "memory_off": true,
+    "web_search_off": false,
+    "code_execution": "used-in-batches: no-sign-to-unsure",
+    "scored": true,
+    "first_run_date": "2026-09-30",
+    "notes": "he speak in arabic allot before giving json schema, both qwen and gemini take about 2 minuts to answer in avrage"
+   }
+  },
+  "qwen": {
+   "A_primary_correct": 30,
+   "A_strict_correct": 27,
+   "A_fork_primary_correct": 10,
+   "A_over_claim": 0,
+   "A_over_fork": 0,
+   "A_determined_correct": 13,
+   "A_contradictions_accepted": 0,
+   "B_correct": 18,
+   "B_balanced_accuracy": 1.0,
+   "B_false_death": 0,
+   "B_conflicts_detected": 3,
+   "missing_or_invalid": 0,
+   "n": {
+    "A": 30,
+    "A_fork": 10,
+    "A_determined": 13,
+    "B": 18,
+    "B_soft": 4,
+    "B_conflict": 3
+   },
+   "per_world_A": {
+    "A-01": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-02": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-03": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-04": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-05": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-06": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-07": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-08": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-09": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-10": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-11": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-12": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-13": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-14": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-15": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-16": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-17": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-18": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-19": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-20": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-21": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-22": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-23": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-24": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-25": {
+     "truth": "CONTRADICTION",
+     "label": "CONTRADICTION",
+     "primary": true,
+     "strict": true
+    },
+    "A-26": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-27": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": false
+    },
+    "A-28": {
+     "truth": "FORK",
+     "label": "FORK",
+     "primary": true,
+     "strict": true
+    },
+    "A-29": {
+     "truth": "UNDERDETERMINED",
+     "label": "UNDERDETERMINED",
+     "primary": true,
+     "strict": true
+    },
+    "A-30": {
+     "truth": "DETERMINED",
+     "label": "DETERMINED",
+     "primary": true,
+     "strict": true
+    }
+   },
+   "per_world_B": {
+    "B-01": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-02": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-03": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-04": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-05": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-06": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    },
+    "B-07": {
+     "truth": "SYMMETRY_ZERO",
+     "label": "SYMMETRY_ZERO",
+     "correct": true
+    },
+    "B-08": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-09": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-10": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-11": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-12": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-13": {
+     "truth": "BOUNDED",
+     "label": "BOUNDED",
+     "correct": true
+    },
+    "B-14": {
+     "truth": "ACTIVE",
+     "label": "ACTIVE",
+     "correct": true
+    },
+    "B-15": {
+     "truth": "CONFLICT",
+     "label": "CONFLICT",
+     "correct": true
+    },
+    "B-16": {
+     "truth": "TYPE_IMPOSSIBLE",
+     "label": "TYPE_IMPOSSIBLE",
+     "correct": true
+    },
+    "B-17": {
+     "truth": "UNCONSTRAINED",
+     "label": "UNCONSTRAINED",
+     "correct": true
+    },
+    "B-18": {
+     "truth": "INCIDENTAL",
+     "label": "INCIDENTAL",
+     "correct": true
+    }
+   },
+   "verdict": "NO_GAP",
+   "format_flag": false,
+   "mcnemar_vs_procedure": {
+    "b": 0,
+    "c": 0,
+    "p_one_sided": 1.0
+   },
+   "meta": {
+    "name_as_shown": "Qwen3.8-Max",
+    "family": "Qwen",
+    "interface": "chat.qwen.ai",
+    "reasoning_option": "thinking",
+    "memory_off": true,
+    "web_search_off": false,
+    "code_execution": "used-in-batches: A1, A2, A4, A5",
+    "scored": true,
+    "first_run_date": "2026-09-30",
+    "notes": "using useless code formla:print(\"Sanity check passed\")\n # Result \nSanity check passed\nin A4"
+   }
+  }
+ }
+}

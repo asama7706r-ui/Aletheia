@@ -1,0 +1,91 @@
+{
+  "id": "E2-07",
+  "experiment": "E2",
+  "quantities": {
+    "a": {
+      "L": 1,
+      "T": -2
+    },
+    "F": {
+      "M": 1,
+      "L": 1,
+      "T": -2
+    },
+    "m": {
+      "M": 1
+    },
+    "m2": {
+      "M": 1
+    }
+  },
+  "law_original": "a = F/m",
+  "filled_law": "a = F/(m + m2)",
+  "symmetries": [
+    {
+      "name": "force reversal",
+      "map": {
+        "F": "-F",
+        "a": "-a"
+      },
+      "params": {}
+    },
+    {
+      "name": "force scaling",
+      "map": {
+        "F": "l*F",
+        "a": "l*a"
+      },
+      "params": {
+        "l": [
+          "1/2",
+          "3"
+        ]
+      }
+    }
+  ],
+  "validated": [
+    {
+      "inputs": {
+        "F": "2",
+        "m": "1",
+        "m2": "0"
+      },
+      "output": "2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "F": "3",
+        "m": "2",
+        "m2": "0"
+      },
+      "output": "3/2",
+      "tol": "1e-9"
+    },
+    {
+      "inputs": {
+        "F": "1/2",
+        "m": "1/2",
+        "m2": "0"
+      },
+      "output": "1",
+      "tol": "1e-9"
+    }
+  ],
+  "deficit": {
+    "inputs": {
+      "F": "3",
+      "m": "1",
+      "m2": "2"
+    },
+    "output": "1",
+    "tol": "1e-9"
+  },
+  "state_original": [
+    "cart"
+  ],
+  "state_filled": [
+    "cart",
+    "load"
+  ]
+}
