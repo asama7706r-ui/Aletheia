@@ -2,7 +2,7 @@
 
 **Question:** on the 27 Part A worlds of blind test 3 (the nebulium check), do frontier LLMs reach the frozen procedure's answers when given only the question, without the method? And does the method change their answers?
 
-**Result (2026-10-03):** pre-registered interpretation **I1**. With the question only, Claude answered all 27 worlds correctly, so the kernel has no edge on these worlds. With the method, Qwen also answered all 27. See [REPORT.md](REPORT.md).
+**Result (2026-10-03):** pre-registered interpretation **I1**. With the question only, Claude answered all 27 worlds correctly; with the method, Qwen also answered all 27. **Erratum:** an earlier recorded decision excluded the generator's family (Claude) from this comparison, and the protocol omitted it. With it applied, the question-only condition is MIXED (no claim). See [REPORT.md](REPORT.md), section 9.
 
 ## Files
 | Path | What it is | Sealed |

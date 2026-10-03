@@ -8,7 +8,7 @@ Each folder is one self-contained study with all of its materials: protocol, pro
 | [`aletheia_blind_test_2`](aletheia_blind_test_2/README.md) | 2026-09-30 | Decide or fork, with checkable decisive observations (A). Grades of zero without false death (B). | PASS / PASS |
 | [`aletheia_llm_compare_1`](aletheia_llm_compare_1/REPORT.md) | 2026-10-01 | Do frontier LLMs execute the blind-test-2 rules as well, when given them? | Hypothesis refuted: they do |
 | [`aletheia_blind_test_3`](aletheia_blind_test_3/README.md) | 2026-10-02 | The nebulium check: look for a registered relation whose coverage lets it return before inventing a new kind; decide, fork or declare NEW with proofs (A). Reopen exactly the files that depend on a new datum (B). | PASS / PASS |
-| [`aletheia_llm_compare_2`](aletheia_llm_compare_2/REPORT.md) | 2026-10-03 | Do frontier LLMs reach the blind-test-3 Part A answers with the question only, without the method? | I1: one model (Claude) did, 27/27; no kernel edge on these worlds |
+| [`aletheia_llm_compare_2`](aletheia_llm_compare_2/REPORT.md) | 2026-10-03 | Do frontier LLMs reach the blind-test-3 Part A answers with the question only, without the method? | I1 as registered (Claude 27/27). Erratum: Claude, the generator's family, should not have counted; without it, open (MIXED) without the method, and matched by Qwen with it |
 | [`checks`](checks/README.md) | - | Scratch scripts from design discussions | not evidence |
 
 ## How the studies protect themselves

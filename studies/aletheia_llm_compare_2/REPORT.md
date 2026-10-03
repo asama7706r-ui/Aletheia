@@ -3,7 +3,7 @@
 **Study:** LLM comparison 2 of the Aletheia project.
 **Pre-registered:** 2026-10-03T03:51:24Z.
 **Runs:** 2026-10-03. Raw replies frozen at 06:46:22Z, before any parsing.
-**Result:** pre-registered interpretation **I1**: no kernel edge on these worlds.
+**Result:** pre-registered interpretation **I1**: no kernel edge on these worlds. **See the erratum (section 9):** by a decision recorded before this study, the generator's family (Claude) should not have been scored. Without it, the question-only condition is MIXED (no claim).
 
 ## Summary
 - **Background.**
@@ -22,7 +22,7 @@
   - In N, Claude scored 27/27. Qwen scored 25, DeepSeek 24 and Gemini 23, each MIXED by one threshold.
   - In M, Claude and Qwen both scored 27/27. DeepSeek and Gemini lost most of their M batches to platform failures.
 - **Pre-registered conclusion (I1).** At least one frontier model reached the procedure's answers without the method, so the kernel has no edge on these worlds.
-- **Main caveat.** The I1 verdict in N rests on Claude alone, which is from the same model family as the world generator. Without Claude, N would be MIXED.
+- **Main caveat, and erratum.** The I1 verdict in N rests on Claude alone, which is from the same model family as the world generator. A decision recorded before this study said the generator's family should not be used for this comparison; the protocol omitted it (section 9). With it applied, N is MIXED: the question without the method stays open, while with the method a model from outside the generator's family (Qwen) matches the procedure.
 
 ## 1. Questions and pre-registered verdict rules
 - **Q1 (primary, condition N).** Given only the question, do frontier LLMs reach the procedure's answers?
@@ -99,5 +99,14 @@ In M, every exclusion reason that any model listed was true. Claude and Qwen lis
 - 27 worlds give little statistical power for the paired comparison.
 - The 27 worlds are now burned for later LLM tests.
 
-## 9. Authorship
+## 9. Erratum (2026-10-03, after publication)
+- The draft specification of blind test 3 (section 12.2, item 18, approved by the project owner) recorded that the generator's model family is not suitable for a later comparison of models without the rules on these worlds. The generator then became Claude, so this applies to Claude. This study's protocol omitted the decision and scored Claude. The omission was the protocol author's (Claude's).
+- The pre-registered label stays I1; it is not changed after the results.
+- **With the earlier decision applied:** overall N is MIXED (interpretation I4: no claim), and overall M remains EDGE_NOT_SUPPORTED (Qwen 27/27).
+- **The more defensible summary:**
+  - with the method, a frontier model from outside the generator's family matches the procedure;
+  - without the method, the question is open. Models from outside that family scored 23-25 of 27, close but below the NO_GAP thresholds.
+- Details are in `results/audit.md`, section 9.
+
+## 10. Authorship
 The study was designed and run under the direction of the project lead, Asama, who performed all model runs. The protocol, sheets, tools and this report were written by Claude (Anthropic).
