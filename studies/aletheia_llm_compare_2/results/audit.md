@@ -83,3 +83,17 @@ Written after the summary. Nothing here changes the pre-registered outcome.
 
 ## 8. Exposure
 The 27 Part A worlds have now been sent to hosted models and are burned for any later test of language models. They remain usable as regression tests for a rebuilt kernel. The 18 Part B items of test 3 were not shown and remain unpublished.
+
+## 9. Erratum (2026-10-03, after publication)
+- **A decision recorded before this study was not carried into its protocol.**
+  - The draft specification of blind test 3 (section 12.2, item 18, approved by the project owner) states: the generator's model family is not suitable for a later comparison of "models without the rules" on these worlds.
+  - When that item was written, the generator was planned to come from another family. The owner then chose Claude as the generator (section 12.5, D7), so the decision applies to Claude.
+  - This study's protocol scored Claude anyway, and declared the shared family only as a limitation. The omission was the protocol author's (Claude's).
+- **The pre-registered label stays I1.** It was computed by the sealed rules, and it is not changed after the results.
+- **With the earlier decision applied** (Claude counted as supplementary):
+  - overall N becomes MIXED: Qwen 25, DeepSeek 24 and Gemini 23 are each MIXED. The interpretation is then I4, so no claim is made for the question-only condition;
+  - overall M remains EDGE_NOT_SUPPORTED, because Qwen scored 27/27.
+- **The more defensible summary is therefore:**
+  - with the method, a frontier model from outside the generator's family matches the procedure;
+  - without the method, the question is open. Models from outside the generator's family came close (23-25 of 27), but none met the NO_GAP thresholds.
+- **Lesson:** before sealing, a new study re-reads the restrictions recorded by the studies it builds on.
