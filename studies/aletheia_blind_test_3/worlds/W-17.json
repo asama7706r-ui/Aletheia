@@ -1,0 +1,176 @@
+{
+ "id": "W-17",
+ "experiment": "A",
+ "observable": "tumb",
+ "quantities": {
+  "tumb": {
+   "Q": 1,
+   "T": -1
+  },
+  "ral": {
+   "L": 1
+  },
+  "tep": {
+   "K": 1
+  }
+ },
+ "constants": {
+  "kv": {
+   "value": "11/6",
+   "dims": {
+    "Q": 1,
+    "T": -1
+   }
+  },
+  "kw": {
+   "value": "5/2",
+   "dims": {
+    "L": 1
+   }
+  },
+  "kx": {
+   "value": "300",
+   "dims": {
+    "K": 1
+   }
+  }
+ },
+ "observers": {
+  "orvi": "1/50",
+  "kelto": "3/40"
+ },
+ "base_law": "tumb = kv*ral/(ral + kw)",
+ "visible": {
+  "id": "V1",
+  "object": "nod",
+  "term": "kv*ral/kw"
+ },
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "lurn",
+   "term": "kv*ral**2/kw**2",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "pexa",
+   "term": "kv*(tep/kx)**2",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "tep/kx",
+    "factor": {
+     "type": "switch",
+     "on": "<",
+     "threshold": "2/3"
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "object": "sibo",
+   "term": "kv*tep/kx",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "ral/kw",
+    "factor": {
+     "type": "dimmer",
+     "expr": "r**2/(1+r**2)"
+    },
+    "summary": "hidden at small ral, back at large ral"
+   }
+  },
+  {
+   "id": "R4",
+   "object": "dwim",
+   "term": "kv*kw/ral",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "symmetries": [],
+ "old_observations": [
+  {
+   "state": {
+    "ral": "1/2",
+    "tep": "420"
+   },
+   "value": "237/500",
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "ral": "3/4",
+    "tep": "150"
+   },
+   "value": "321/500",
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "ral": "1/4",
+    "tep": "260"
+   },
+   "value": "31/125",
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "ral": "1",
+    "tep": "510"
+   },
+   "value": "21/25",
+   "observer": "orvi"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "ral": "19/2",
+    "tep": "160"
+   },
+   "value": "423/100",
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "ral": "7",
+    "tep": "160"
+   },
+   "value": "167/50",
+   "observer": "kelto"
+  },
+  {
+   "state": {
+    "ral": "21/2",
+    "tep": "450"
+   },
+   "value": "867/200",
+   "observer": "orvi"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "ral": "9/2",
+    "tep": "610"
+   },
+   "observer": "kelto"
+  },
+  {
+   "state": {
+    "ral": "31/2",
+    "tep": "120"
+   },
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "ral": "22",
+    "tep": "350"
+   },
+   "observer": "orvi"
+  }
+ ]
+}

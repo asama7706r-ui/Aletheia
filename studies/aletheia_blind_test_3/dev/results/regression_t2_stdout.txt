@@ -1,0 +1,19 @@
+B-01 test-2: ['interval', '-3/2500', '1/2500']  test-3: ['interval', '-3/2500', '1/2500'] OK
+B-02 test-2: ['interval', '-3/5', '2/5']  test-3: ['interval', '-3/5', '2/5'] OK
+B-03 test-2: ['interval', '-1/500', '7/1500']  test-3: ['interval', '-1/500', '7/1500'] OK
+B-04 test-2: ['interval', '179/1800', '181/1800']  test-3: ['interval', '179/1800', '181/1800'] OK
+B-05 test-2: ['interval', '0', '9/2000000']  test-3: ['interval', '0', '9/2000000'] OK
+B-06 test-2: ['none']  test-3: ['none'] OK
+B-07 test-2: ['interval', '-3/5000', '7/5000']  test-3: ['interval', '-3/5000', '7/5000'] OK
+B-08 test-2: ['conflict']  test-3: ['conflict'] OK
+B-09 test-2: ['interval', '-3/40000', '1/40000']  test-3: ['interval', '-3/40000', '1/40000'] OK
+B-10 test-2: ['interval', '987/2000', '1007/2000']  test-3: ['interval', '987/2000', '1007/2000'] OK
+B-11 test-2: ['interval', '-327/256000', '-131/108000']  test-3: ['interval', '-327/256000', '-131/108000'] OK
+B-12 test-2: ['interval', '-3/20000', '1/4000']  test-3: ['interval', '-3/20000', '1/4000'] OK
+B-13 test-2: ['interval', '-1/8100', '1/3200']  test-3: ['interval', '-1/8100', '1/3200'] OK
+B-14 test-2: ['interval', '62/9375', '253/37500']  test-3: ['interval', '62/9375', '253/37500'] OK
+B-15 test-2: ['conflict']  test-3: ['conflict'] OK
+B-16 test-2: ['interval', '-2/5', '14/15']  test-3: ['interval', '-2/5', '14/15'] OK
+B-17 test-2: ['none']  test-3: ['none'] OK
+B-18 test-2: ['none']  test-3: ['none'] OK
+agree 18 of 18

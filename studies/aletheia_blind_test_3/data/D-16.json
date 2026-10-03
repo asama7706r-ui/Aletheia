@@ -1,0 +1,13 @@
+{
+ "id": "D-16",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "yuth",
+ "relation": {
+  "id": "R3",
+  "object": "ekra",
+  "term": "pw**2/(kro*dun)",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

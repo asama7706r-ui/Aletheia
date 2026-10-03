@@ -1,0 +1,120 @@
+# Results by world
+
+## W-01 → NEW
+
+**Step 0.** The new readings at (3, 4) and (12/5, 5) miss the base law by 71/280 and 36/175. Both exceed the tavo precision of 1/25, so there is a deficit.
+
+**R1 (cj·xel·yor): SYMMETRY.**
+- A_R1 is feasible, with λ ∈ [299/10800, 43/1350].
+- The map flp (xel → −xel) flips the sign of the term, so λ must be 0.
+
+**R2 (xel² − yor²): SYMMETRY, SHAPE.**
+- The map swp (xel ↔ yor) flips the sign of the term, so λ must be 0.
+- The two tavo new readings need λ ≈ −0.065…−0.047 and λ ≈ −0.020…−0.013. These ranges are disjoint.
+
+**R3: SHAPE.**
+- The two tavo new readings need λ ∈ [299/15625, 411/15625] and λ ∈ [5800/591361, 8600/591361]. These ranges are disjoint.
+
+**R4: SCOPE.**
+- With its actual coverage, the new readings need λ ≥ 1421/3600. The old reading at zun = 1/4 caps λ ≤ 43/405, so A_R4 is infeasible.
+- With coverage set to 1 in the new domain, λ ∈ [1421/16200, 43/405] fits everything, so C_R4 is feasible.
+
+## W-02 → NO_DEFICIT
+
+- Old residuals are at most 17/400, within 1/20.
+- New residuals:
+  - 131/2400 (precision 3/40)
+  - about 0.0541 (precision 3/40)
+  - about 0.1043 (precision 1/8)
+- All of these are within precision, so Z is feasible.
+
+## W-03 → NEW
+
+**Step 0.** The new residuals are 59/20 (precision 1/30) and 41/20 (precision 1/16), so there is a deficit.
+
+**R1: BOUND.**
+- The exact value 1/8 leaves the first new reading off by about 0.728.
+- With λ free, S_R1 is feasible for λ ∈ [53/320, 537/3200]. The exact value 1/8 lies outside this range.
+
+**R2: SHAPE.**
+- The two new readings need λ ≈ 0.1025…0.1049 and λ ≈ 0.0230…0.0245. These ranges are disjoint.
+
+**R3: TYPE, SHAPE.**
+- The term would need a coefficient of dimension L⁻¹. That cannot be built from ga (L²T⁻²) and gm (M).
+- The new readings need λ ≈ 0.082 and λ ≈ 0.022. These are disjoint.
+
+**R4: SHAPE.**
+- Even with coverage set to 1, the new readings need λ ≈ 0.159…0.162 and λ ≈ 0.406…0.431. These are disjoint.
+
+## W-04 → KNOWN R4
+
+**Step 0.** The new residuals are 145/24 and 823/280, against a precision of 1/8. There is a deficit.
+
+**R1: BOUND.**
+- The new readings alone allow λ ≈ 0.001473…0.001525, so S_R1 is feasible.
+- The old reading at mev = 120 caps λ ≤ 202/140625 ≈ 0.001436, so A_R1 is infeasible.
+
+**R2: SHAPE.**
+- The new readings need λ ≈ 0.149 and λ ≈ 0.0050. With coverage set to 1 they need ≈ 0.137 and ≈ 0.0042.
+- Both pairs are disjoint.
+
+**R3: SHAPE.**
+- The exact value fails badly. With λ free, the readings need ≈ 0.0087 and ≈ 0.0013, which are disjoint.
+
+**R4: sufficient.**
+- The switch is off at every old state (jor ≤ 3/2) and on at both new states.
+- λ = 29/10000 fits both new readings, so A_R4 is feasible.
+
+## W-05 → NEW
+
+**Step 0.** The old readings fix μ ∈ [−59/75, −251/324]. The new readings need a large positive extra contribution, so there is a deficit.
+
+**R1: SHAPE.**
+- The first new reading forces λ ≤ 0.665.
+- The second new reading forces λ ≥ 155.
+
+**R2: SHAPE.**
+- The switch is off everywhere, since ruk/nq < 2 at every state.
+- Even with the switch set on, new reading 1 needs λ ≤ 1.52 and new reading 3 needs λ ≥ 44.
+
+**R3: SCOPE.**
+- With actual coverage, the new readings alone are inconsistent, so A_R3 is infeasible.
+- With coverage set to 1 in the new domain, μ = −98/125 and λ = 3/2 satisfy all seven readings. So C_R3 is feasible.
+
+**R4: SHAPE.**
+- The new readings need λ ≤ 0.665 and λ ≥ 42.8.
+
+## W-06 → NO_DEFICIT
+
+- The visible relation with any μ ∈ [4685/26325, 4709/26325] fits all readings, for example μ = 223/1250.
+
+## W-07 → NEW
+
+**Step 0.** The new residuals are 5/12 (precision 3/40) and 7/10 (precision 1/8), so there is a deficit.
+
+**R1: SCOPE.**
+- With actual coverage, the new readings need λ ≈ 0.0915…0.1317 and λ ≈ 0.180…0.258. These are disjoint.
+- With coverage set to 1, λ ∈ [23/11375, 59/29120] fits all readings.
+
+**R2: SHAPE.**
+- The new readings need λ ∈ [41/42560, 59/42560] and λ ∈ [184/119000, 264/119000]. These are disjoint.
+
+**R3: TYPE.**
+- A_R3 is feasible, with λ ≈ 0.00131…0.00165.
+- However, the coefficient would need dimension L, which kz, kq and vu cannot produce.
+
+**R4: SCOPE.**
+- The switch is off at every state, since dov·pim < 39/4 throughout.
+- With the switch set on, λ ≈ 0.000498…0.000623 fits all readings.
+
+```json
+[
+ {"id": "W-01", "verdict": "NEW", "excluded": {"R1": ["SYMMETRY"], "R2": ["SHAPE", "SYMMETRY"], "R3": ["SHAPE"], "R4": ["SCOPE"]}},
+ {"id": "W-02", "verdict": "NO_DEFICIT"},
+ {"id": "W-03", "verdict": "NEW", "excluded": {"R1": ["BOUND"], "R2": ["SHAPE"], "R3": ["SHAPE", "TYPE"], "R4": ["SHAPE"]}},
+ {"id": "W-04", "verdict": "KNOWN", "relation": "R4", "excluded": {"R1": ["BOUND"], "R2": ["SHAPE"], "R3": ["SHAPE"]}},
+ {"id": "W-05", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["SHAPE"], "R3": ["SCOPE"], "R4": ["SHAPE"]}},
+ {"id": "W-06", "verdict": "NO_DEFICIT"},
+ {"id": "W-07", "verdict": "NEW", "excluded": {"R1": ["SCOPE"], "R2": ["SHAPE"], "R3": ["TYPE"], "R4": ["SCOPE"]}}
+]
+```

@@ -1,0 +1,8 @@
+Aletheia blind test 3 - sealed files (SHA-256). Sealed at 2026-10-02T18:34:50Z by the procedure author (Claude, build session).
+Environment: Python 3.12.10, sympy 1.14.0.
+297f78e9eac34b9587b2c92bb0118bc6dde34550bd6664f109254b01370c61bd protocol_v3.md
+08e9534722a6cfc0ab06cb10baf97ddf140d2ed8f15f80e2b4470a0802aed95d procedure/procedure_v3.py
+91e03783ffc7b2e13897da12c5e9d93ac8b7a9465e34833be179c9a688f73dd0 scorer/ref_v3.py
+577fa12433b3656a23dca65d8b2ef8f7921a3cc552d12e50fd741a42e84be2cf scorer/score_v3.py
+c7f71000490f537b12995c33cc61e7bead1af59f4fab6c5d76e3a3915f2f969d scorer/validate_v3.py
+d83baa5e48428c26c8996d110d025675150b6ec0e904575bd0bbaad50fd7f54b tools/hash_files.py

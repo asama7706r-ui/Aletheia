@@ -1,0 +1,2414 @@
+{
+ "A": {
+  "dA-coronium": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "km",
+      "kt"
+     ],
+     "examined": [
+      "R1",
+      "R2"
+     ],
+     "observable": "yk",
+     "observers": [
+      "far4",
+      "lab4"
+     ]
+    },
+    "excluded": {
+     "R2": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1/3"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/12"
+         }
+        ],
+        "S": {
+         "lam": "100/101"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "explanations": {
+     "R1": {
+      "intervals": {
+       "lam": [
+        "2899/3000",
+        "3101/3000"
+       ],
+       "mu": null
+      },
+      "point": {
+       "lam": "1"
+      },
+      "ranges": [
+       [
+        "693669/77000",
+        "1288329/143000"
+       ],
+       [
+        "17787/1010",
+        "18393/1010"
+       ],
+       [
+        "26697/2000",
+        "27303/2000"
+       ]
+      ]
+     }
+    },
+    "relation": "R1",
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "KNOWN"
+   }
+  },
+  "dA-fork": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "branches": [
+     "R1",
+     "R2"
+    ],
+    "decisive": [
+     0
+    ],
+    "depends_on": {
+     "constants": [
+      "ka",
+      "kb",
+      "kl"
+     ],
+     "examined": [
+      "R1",
+      "R2",
+      "R3"
+     ],
+     "observable": "yf",
+     "observers": [
+      "far5",
+      "lab5"
+     ]
+    },
+    "excluded": {
+     "R3": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/4"
+         }
+        ],
+        "S": {
+         "lam": "4"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "explanations": {
+     "R1": {
+      "intervals": {
+       "lam": [
+        "3939/1000",
+        "4141/1000"
+       ],
+       "mu": null
+      },
+      "point": {
+       "lam": "101/25"
+      },
+      "ranges": [
+       [
+        "1813/500",
+        "5641/1500"
+       ],
+       [
+        "49/5",
+        "51/5"
+       ]
+      ]
+     },
+     "R2": {
+      "intervals": {
+       "lam": [
+        "39/10",
+        "41/10"
+       ],
+       "mu": null
+      },
+      "point": {
+       "lam": "4"
+      },
+      "ranges": [
+       [
+        "1",
+        "1"
+       ],
+       [
+        "49/5",
+        "51/5"
+       ]
+      ]
+     }
+    },
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "FORK"
+   }
+  },
+  "dA-helium": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [],
+     "examined": [
+      "R1",
+      "R2",
+      "R3"
+     ],
+     "observable": "ya",
+     "observers": [
+      "far3",
+      "lab3"
+     ]
+    },
+    "excluded": {
+     "R1": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1/9"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/4"
+         }
+        ],
+        "S": {
+         "lam": "2/9"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     },
+     "R2": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1/27"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/8"
+         }
+        ],
+        "S": {
+         "lam": "2/27"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     },
+     "R3": {
+      "certificates": {
+       "SCOPE": {
+        "A": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         }
+        ],
+        "C": {
+         "lam": "2/9"
+        }
+       }
+      },
+      "reasons": [
+       "SCOPE"
+      ]
+     }
+    },
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "NEW"
+   }
+  },
+  "dA-nebdim": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "kc",
+      "ku"
+     ],
+     "examined": [
+      "R1",
+      "R2"
+     ],
+     "observable": "yl",
+     "observers": [
+      "far1",
+      "lab1"
+     ]
+    },
+    "excluded": {
+     "R2": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/9"
+         }
+        ],
+        "S": {
+         "lam": "5"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "explanations": {
+     "R1": {
+      "intervals": {
+       "lam": [
+        "4949/1000",
+        "5151/1000"
+       ],
+       "mu": null
+      },
+      "point": {
+       "lam": "101/20"
+      },
+      "ranges": [
+       [
+        "1005049/5000500",
+        "1005251/5000500"
+       ],
+       [
+        "10",
+        "52/5"
+       ]
+      ]
+     }
+    },
+    "relation": "R1",
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "KNOWN"
+   }
+  },
+  "dA-nebsw": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R2",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "kd",
+      "kw"
+     ],
+     "examined": [
+      "R1",
+      "R2",
+      "R3"
+     ],
+     "observable": "ym",
+     "observers": [
+      "far2",
+      "lab2"
+     ]
+    },
+    "excluded": {
+     "R1": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1/2"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/4"
+         }
+        ],
+        "S": {
+         "lam": "3/2"
+        }
+       }
+      },
+      "reasons": [
+       "TYPE",
+       "BOUND"
+      ]
+     },
+     "R3": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1/2"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/16"
+         }
+        ],
+        "S": {
+         "lam": "3/2"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "explanations": {
+     "R2": {
+      "intervals": {
+       "lam": [
+        "7/5",
+        "8/5"
+       ],
+       "mu": null
+      },
+      "point": {
+       "lam": "3/2"
+      },
+      "ranges": [
+       [
+        "4",
+        "4"
+       ],
+       [
+        "48/5",
+        "52/5"
+       ]
+      ]
+     }
+    },
+    "relation": "R2",
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "KNOWN"
+   }
+  },
+  "dA-planetx": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "kp",
+      "kq"
+     ],
+     "examined": [
+      "R1",
+      "R2"
+     ],
+     "observable": "yp",
+     "observers": [
+      "far11",
+      "lab11"
+     ]
+    },
+    "excluded": {
+     "R1": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/2"
+         }
+        ],
+        "S": {
+         "lam": "2"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     },
+     "R2": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1/4"
+         }
+        ],
+        "S": {
+         "lam": "2"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "NEW"
+   }
+  },
+  "dA-scopesole": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "kg",
+      "kh"
+     ],
+     "examined": [
+      "R1",
+      "R2"
+     ],
+     "observable": "yh",
+     "observers": [
+      "far10",
+      "lab10",
+      "lab12"
+     ]
+    },
+    "excluded": {
+     "R1": {
+      "certificates": {
+       "SCOPE": {
+        "A": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         }
+        ],
+        "C": {
+         "lam": "2/5"
+        }
+       }
+      },
+      "reasons": [
+       "SCOPE"
+      ]
+     },
+     "R2": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1/2"
+         },
+         {
+          "k": 2,
+          "obs": "old",
+          "side": "upper",
+          "y": "1"
+         }
+        ],
+        "S": {
+         "lam": "1/5"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "NEW"
+   }
+  },
+  "dA-step0": {
+   "ALWAYS_NEW": {
+    "verdict": "NO_DEFICIT"
+   },
+   "DIMS_ONLY": {
+    "verdict": "NO_DEFICIT"
+   },
+   "NO_SCOPE": {
+    "verdict": "NO_DEFICIT"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "ku"
+     ],
+     "examined": [],
+     "observable": "yl",
+     "observers": [
+      "far1",
+      "lab1"
+     ]
+    },
+    "explanations": {
+     "BASE": {
+      "intervals": {
+       "lam": null,
+       "mu": null
+      },
+      "point": {},
+      "ranges": [
+       [
+        "1/5",
+        "1/5"
+       ],
+       [
+        "1/5",
+        "1/5"
+       ]
+      ]
+     }
+    },
+    "step0": {
+     "certificate": {},
+     "deficit": false
+    },
+    "verdict": "NO_DEFICIT"
+   }
+  },
+  "dA-symsole": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "kn"
+     ],
+     "examined": [
+      "R1",
+      "R2"
+     ],
+     "observable": "yd",
+     "observers": [
+      "far9",
+      "lab9"
+     ]
+    },
+    "excluded": {
+     "R1": {
+      "certificates": {},
+      "reasons": [
+       "SYMMETRY"
+      ]
+     },
+     "R2": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         },
+         {
+          "k": 1,
+          "obs": "old",
+          "side": "upper",
+          "y": "1"
+         }
+        ],
+        "S": {
+         "lam": "3/20"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "NEW"
+   }
+  },
+  "dA-typesole": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R2",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "verdict": "NEW"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "kv"
+     ],
+     "examined": [
+      "R1",
+      "R2"
+     ],
+     "observable": "yc",
+     "observers": [
+      "far8",
+      "lab8"
+     ]
+    },
+    "excluded": {
+     "R1": {
+      "certificates": {},
+      "reasons": [
+       "TYPE"
+      ]
+     },
+     "R2": {
+      "certificates": {
+       "SHAPE": {
+        "S": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "upper",
+          "y": "1/4"
+         },
+         {
+          "k": 1,
+          "obs": "new",
+          "side": "lower",
+          "y": "1/8"
+         }
+        ]
+       }
+      },
+      "reasons": [
+       "SHAPE"
+      ]
+     }
+    },
+    "step0": {
+     "certificate": [
+      {
+       "k": 1,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "NEW"
+   }
+  },
+  "dA-visible": {
+   "ALWAYS_NEW": {
+    "verdict": "NEW"
+   },
+   "DIMS_ONLY": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "NO_SCOPE": {
+    "relation": "R1",
+    "verdict": "KNOWN"
+   },
+   "procedure": {
+    "depends_on": {
+     "constants": [
+      "ke"
+     ],
+     "examined": [
+      "R1",
+      "R2"
+     ],
+     "observable": "yb",
+     "observers": [
+      "far6",
+      "lab6",
+      "lab7"
+     ]
+    },
+    "excluded": {
+     "R2": {
+      "certificates": {
+       "BOUND": {
+        "C": [
+         {
+          "k": 0,
+          "obs": "new",
+          "side": "lower",
+          "y": "1"
+         },
+         {
+          "k": 0,
+          "obs": "old",
+          "side": "upper",
+          "y": "1"
+         }
+        ],
+        "S": {
+         "lam": "3/2",
+         "mu": "2"
+        }
+       }
+      },
+      "reasons": [
+       "BOUND"
+      ]
+     }
+    },
+    "explanations": {
+     "R1": {
+      "intervals": {
+       "lam": [
+        "2/5",
+        "3/5"
+       ],
+       "mu": [
+        "14/5",
+        "3"
+       ]
+      },
+      "point": {
+       "lam": "1/2",
+       "mu": "59/20"
+      },
+      "ranges": [
+       [
+        "61/10",
+        "13/2"
+       ],
+       [
+        "13/10",
+        "17/10"
+       ]
+      ]
+     }
+    },
+    "relation": "R1",
+    "step0": {
+     "certificate": [
+      {
+       "k": 0,
+       "obs": "new",
+       "side": "lower",
+       "y": "1"
+      },
+      {
+       "k": 0,
+       "obs": "old",
+       "side": "upper",
+       "y": "1"
+      }
+     ],
+     "deficit": true
+    },
+    "verdict": "KNOWN"
+   }
+  }
+ },
+ "B": {
+  "dB-bowen": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "relation": "R4",
+      "verdict": "KNOWN"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [
+     "dA-helium"
+    ],
+    "verdicts": {
+     "dA-helium": {
+      "depends_on": {
+       "constants": [],
+       "examined": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+       ],
+       "observable": "ya",
+       "observers": [
+        "far3",
+        "lab3"
+       ]
+      },
+      "excluded": {
+       "R1": {
+        "certificates": {
+         "BOUND": {
+          "C": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1/9"
+           },
+           {
+            "k": 1,
+            "obs": "old",
+            "side": "upper",
+            "y": "1/4"
+           }
+          ],
+          "S": {
+           "lam": "2/9"
+          }
+         }
+        },
+        "reasons": [
+         "BOUND"
+        ]
+       },
+       "R2": {
+        "certificates": {
+         "BOUND": {
+          "C": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1/27"
+           },
+           {
+            "k": 1,
+            "obs": "old",
+            "side": "upper",
+            "y": "1/8"
+           }
+          ],
+          "S": {
+           "lam": "2/27"
+          }
+         }
+        },
+        "reasons": [
+         "BOUND"
+        ]
+       },
+       "R3": {
+        "certificates": {
+         "SCOPE": {
+          "A": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           }
+          ],
+          "C": {
+           "lam": "2/9"
+          }
+         }
+        },
+        "reasons": [
+         "SCOPE"
+        ]
+       }
+      },
+      "explanations": {
+       "R4": {
+        "intervals": {
+         "lam": [
+          "19/60",
+          "7/20"
+         ],
+         "mu": null
+        },
+        "point": {
+         "lam": "1/3"
+        },
+        "ranges": [
+         [
+          "58/5",
+          "62/5"
+         ],
+         [
+          "238",
+          "262"
+         ]
+        ]
+       }
+      },
+      "relation": "R4",
+      "step0": {
+       "certificate": [
+        {
+         "k": 0,
+         "obs": "new",
+         "side": "lower",
+         "y": "1"
+        }
+       ],
+       "deficit": true
+      },
+      "verdict": "KNOWN"
+     }
+    }
+   }
+  },
+  "dB-fall": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "verdict": "NEW"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [
+     "dA-nebdim"
+    ],
+    "verdicts": {
+     "dA-nebdim": {
+      "depends_on": {
+       "constants": [
+        "kc",
+        "ku"
+       ],
+       "examined": [
+        "R1",
+        "R2"
+       ],
+       "observable": "yl",
+       "observers": [
+        "far1",
+        "lab1"
+       ]
+      },
+      "excluded": {
+       "R1": {
+        "certificates": {
+         "SHAPE": {
+          "S": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           },
+           {
+            "k": 1,
+            "obs": "new",
+            "side": "upper",
+            "y": "1/2"
+           }
+          ]
+         }
+        },
+        "reasons": [
+         "SHAPE"
+        ]
+       },
+       "R2": {
+        "certificates": {
+         "SHAPE": {
+          "S": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           },
+           {
+            "k": 1,
+            "obs": "new",
+            "side": "upper",
+            "y": "1/4"
+           }
+          ]
+         }
+        },
+        "reasons": [
+         "SHAPE"
+        ]
+       }
+      },
+      "step0": {
+       "certificate": [
+        {
+         "k": 0,
+         "obs": "new",
+         "side": "lower",
+         "y": "1"
+        }
+       ],
+       "deficit": true
+      },
+      "verdict": "NEW"
+     }
+    }
+   }
+  },
+  "dB-forkdecide": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [
+     "dA-fork"
+    ],
+    "verdicts": {
+     "dA-fork": {
+      "depends_on": {
+       "constants": [
+        "ka",
+        "kb",
+        "kl"
+       ],
+       "examined": [
+        "R1",
+        "R2",
+        "R3"
+       ],
+       "observable": "yf",
+       "observers": [
+        "far5",
+        "lab5"
+       ]
+      },
+      "excluded": {
+       "R1": {
+        "certificates": {
+         "SHAPE": {
+          "S": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           },
+           {
+            "k": 1,
+            "obs": "new",
+            "side": "upper",
+            "y": "1"
+           }
+          ]
+         }
+        },
+        "reasons": [
+         "SHAPE"
+        ]
+       },
+       "R3": {
+        "certificates": {
+         "SHAPE": {
+          "S": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           },
+           {
+            "k": 1,
+            "obs": "new",
+            "side": "upper",
+            "y": "1"
+           }
+          ]
+         }
+        },
+        "reasons": [
+         "SHAPE"
+        ]
+       }
+      },
+      "explanations": {
+       "R2": {
+        "intervals": {
+         "lam": [
+          "39/10",
+          "41/10"
+         ],
+         "mu": null
+        },
+        "point": {
+         "lam": "4"
+        },
+        "ranges": [
+         [
+          "1",
+          "1"
+         ],
+         [
+          "49/5",
+          "51/5"
+         ]
+        ]
+       }
+      },
+      "relation": "R2",
+      "step0": {
+       "certificate": [
+        {
+         "k": 0,
+         "obs": "new",
+         "side": "lower",
+         "y": "1"
+        }
+       ],
+       "deficit": true
+      },
+      "verdict": "KNOWN"
+     }
+    }
+   }
+  },
+  "dB-inside": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [],
+    "verdicts": {}
+   }
+  },
+  "dB-knownfork": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "branches": [
+       "R1",
+       "R3"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [
+     "dA-coronium"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "branches": [
+       "R1",
+       "R3"
+      ],
+      "decisive": [
+       2
+      ],
+      "depends_on": {
+       "constants": [
+        "km",
+        "kt"
+       ],
+       "examined": [
+        "R1",
+        "R2",
+        "R3"
+       ],
+       "observable": "yk",
+       "observers": [
+        "far4",
+        "lab4"
+       ]
+      },
+      "excluded": {
+       "R2": {
+        "certificates": {
+         "BOUND": {
+          "C": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1/3"
+           },
+           {
+            "k": 1,
+            "obs": "old",
+            "side": "upper",
+            "y": "1/12"
+           }
+          ],
+          "S": {
+           "lam": "100/101"
+          }
+         }
+        },
+        "reasons": [
+         "BOUND"
+        ]
+       }
+      },
+      "explanations": {
+       "R1": {
+        "intervals": {
+         "lam": [
+          "2899/3000",
+          "3101/3000"
+         ],
+         "mu": null
+        },
+        "point": {
+         "lam": "1"
+        },
+        "ranges": [
+         [
+          "693669/77000",
+          "1288329/143000"
+         ],
+         [
+          "17787/1010",
+          "18393/1010"
+         ],
+         [
+          "26697/2000",
+          "27303/2000"
+         ]
+        ]
+       },
+       "R3": {
+        "intervals": {
+         "lam": [
+          "2899/3030",
+          "3101/3030"
+         ],
+         "mu": null
+        },
+        "point": {
+         "lam": "100/101"
+        },
+        "ranges": [
+         [
+          "9",
+          "9"
+         ],
+         [
+          "17787/1010",
+          "18393/1010"
+         ],
+         [
+          "9",
+          "9"
+         ]
+        ]
+       }
+      },
+      "step0": {
+       "certificate": [
+        {
+         "k": 0,
+         "obs": "new",
+         "side": "lower",
+         "y": "1"
+        }
+       ],
+       "deficit": true
+      },
+      "verdict": "FORK"
+     }
+    }
+   }
+  },
+  "dB-nd": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [
+     "dA-nebdim"
+    ],
+    "verdicts": {
+     "dA-nebdim": {
+      "depends_on": {
+       "constants": [
+        "kc",
+        "ku"
+       ],
+       "examined": [
+        "R1",
+        "R2",
+        "R3"
+       ],
+       "observable": "yl",
+       "observers": [
+        "far1",
+        "lab1"
+       ]
+      },
+      "excluded": {
+       "R2": {
+        "certificates": {
+         "BOUND": {
+          "C": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           },
+           {
+            "k": 1,
+            "obs": "old",
+            "side": "upper",
+            "y": "1/9"
+           }
+          ],
+          "S": {
+           "lam": "5"
+          }
+         }
+        },
+        "reasons": [
+         "BOUND"
+        ]
+       },
+       "R3": {
+        "certificates": {
+         "BOUND": {
+          "C": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           },
+           {
+            "k": 1,
+            "obs": "old",
+            "side": "upper",
+            "y": "1/27"
+           }
+          ],
+          "S": {
+           "lam": "5"
+          }
+         }
+        },
+        "reasons": [
+         "BOUND"
+        ]
+       }
+      },
+      "explanations": {
+       "R1": {
+        "intervals": {
+         "lam": [
+          "4949/1000",
+          "5151/1000"
+         ],
+         "mu": null
+        },
+        "point": {
+         "lam": "101/20"
+        },
+        "ranges": [
+         [
+          "1005049/5000500",
+          "1005251/5000500"
+         ],
+         [
+          "10",
+          "52/5"
+         ]
+        ]
+       }
+      },
+      "relation": "R1",
+      "step0": {
+       "certificate": [
+        {
+         "k": 0,
+         "obs": "new",
+         "side": "lower",
+         "y": "1"
+        }
+       ],
+       "deficit": true
+      },
+      "verdict": "KNOWN"
+     }
+    }
+   }
+  },
+  "dB-none": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [],
+    "verdicts": {}
+   }
+  },
+  "dB-planetx": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [
+     "dA-planetx"
+    ],
+    "verdicts": {
+     "dA-planetx": {
+      "depends_on": {
+       "constants": [
+        "kp",
+        "kq"
+       ],
+       "examined": [],
+       "observable": "yp",
+       "observers": [
+        "far11",
+        "lab11"
+       ]
+      },
+      "explanations": {
+       "BASE": {
+        "intervals": {
+         "lam": null,
+         "mu": null
+        },
+        "point": {},
+        "ranges": [
+         [
+          "19/5",
+          "19/5"
+         ],
+         [
+          "8",
+          "8"
+         ]
+        ]
+       }
+      },
+      "step0": {
+       "certificate": {},
+       "deficit": false
+      },
+      "verdict": "NO_DEFICIT"
+     }
+    }
+   }
+  },
+  "dB-precision": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [
+     "dA-helium"
+    ],
+    "verdicts": {
+     "dA-helium": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "decisive": [
+       0
+      ],
+      "depends_on": {
+       "constants": [],
+       "examined": [
+        "R1",
+        "R2",
+        "R3"
+       ],
+       "observable": "ya",
+       "observers": [
+        "far3",
+        "lab13",
+        "lab3"
+       ]
+      },
+      "excluded": {
+       "R3": {
+        "certificates": {
+         "SCOPE": {
+          "A": [
+           {
+            "k": 0,
+            "obs": "new",
+            "side": "lower",
+            "y": "1"
+           }
+          ],
+          "C": {
+           "lam": "2/9"
+          }
+         }
+        },
+        "reasons": [
+         "SCOPE"
+        ]
+       }
+      },
+      "explanations": {
+       "R1": {
+        "intervals": {
+         "lam": [
+          "19/90",
+          "7/30"
+         ],
+         "mu": null
+        },
+        "point": {
+         "lam": "2/9"
+        },
+        "ranges": [
+         [
+          "332/45",
+          "116/15"
+         ],
+         [
+          "280/9",
+          "100/3"
+         ]
+        ]
+       },
+       "R2": {
+        "intervals": {
+         "lam": [
+          "19/270",
+          "7/90"
+         ],
+         "mu": null
+        },
+        "point": {
+         "lam": "2/27"
+        },
+        "ranges": [
+         [
+          "1148/135",
+          "404/45"
+         ],
+         [
+          "2170/27",
+          "790/9"
+         ]
+        ]
+       }
+      },
+      "step0": {
+       "certificate": [
+        {
+         "k": 0,
+         "obs": "new",
+         "side": "lower",
+         "y": "1"
+        }
+       ],
+       "deficit": true
+      },
+      "verdict": "FORK"
+     }
+    }
+   }
+  },
+  "dB-rootnone": {
+   "REOPEN_ALL": {
+    "reopened": [
+     "dA-coronium",
+     "dA-fork",
+     "dA-helium",
+     "dA-nebdim",
+     "dA-nebsw",
+     "dA-planetx",
+     "dA-scopesole",
+     "dA-step0",
+     "dA-symsole",
+     "dA-typesole",
+     "dA-visible"
+    ],
+    "verdicts": {
+     "dA-coronium": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-fork": {
+      "branches": [
+       "R1",
+       "R2"
+      ],
+      "verdict": "FORK"
+     },
+     "dA-helium": {
+      "verdict": "NEW"
+     },
+     "dA-nebdim": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     },
+     "dA-nebsw": {
+      "relation": "R2",
+      "verdict": "KNOWN"
+     },
+     "dA-planetx": {
+      "verdict": "NEW"
+     },
+     "dA-scopesole": {
+      "verdict": "NEW"
+     },
+     "dA-step0": {
+      "verdict": "NO_DEFICIT"
+     },
+     "dA-symsole": {
+      "verdict": "NEW"
+     },
+     "dA-typesole": {
+      "verdict": "NEW"
+     },
+     "dA-visible": {
+      "relation": "R1",
+      "verdict": "KNOWN"
+     }
+    }
+   },
+   "REOPEN_NONE": {
+    "reopened": []
+   },
+   "procedure": {
+    "reopened": [],
+    "verdicts": {}
+   }
+  }
+ }
+}

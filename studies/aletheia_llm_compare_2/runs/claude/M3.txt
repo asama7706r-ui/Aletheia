@@ -1,0 +1,62 @@
+I followed the method in section 4 for each world. Below are the deciding facts for each one, with a witness value wherever a system is feasible.
+
+**W-15.** Z fails. At (xel, yor) = (4, 3), the residual v − f = 821/50 − 225/14 = 61/175 exceeds 1/25.
+- R1: the two new readings need lam ∈ [1/25, 34/675] and lam ∈ [901/11250, 957/11250]. These are disjoint, so SHAPE applies. flp flips the sign of xel·yor, so SYMMETRY also applies.
+- R2: the term is 0 at (5, 5), but the residual there is 929/700, so SHAPE applies. swp flips the sign of xel² − yor², so SYMMETRY also applies.
+- R3 is invariant under both symmetries, and lam = 3/100 fits all seven readings.
+- R4 is also invariant, and lam = 29/1000 fits all seven readings with its dimmer factor.
+- Result: FORK.
+
+**W-16.** Z fails. The first new reading has residual 13/150, which exceeds 1/30.
+- R1: the exact value 1/8 adds 27/121 at the first new state, which lies outside [4/75, 3/25]. With lam free, S is feasible for lam ∈ [121/4050, 21/640]. Result: BOUND.
+- R2: the first new reading needs lam ≥ 1331/32400, and the second needs lam ≤ 208967/8294400. Result: SHAPE. R2 is not TYPE-impossible, because ga^(−1/2) supplies L⁻¹T.
+- R3: the dimension gap is L⁻¹, which cannot be built from ga (L²T⁻²) and gm (M). Result: TYPE. Its A system is feasible, with lam = 3/250.
+- R4: the first new reading needs lam ≥ 16/3675, and the third needs lam ≤ 1/420. A and C also fail. Result: SHAPE.
+- Result: NEW.
+
+**W-17.** Z fails. The old readings force mu ≥ 334/825, while the reading at ral = 21/2 forces mu ≤ 7473/20020.
+- R1: the readings at ral = 19/2 and 21/2 force a clearly negative lam. With mu held in the old range, that slope cannot be reconciled with those same readings. Result: SHAPE.
+- R2: it is off at tep = 450, so A fails. In C, uncovering it at tep = 450 does not help, because the old reading at tep = 150 (where R2 is on) together with the reading at ral = 21/2 pushes mu below 334/825. S is feasible with (mu, lam) = (334/825, −3/50). Result: BOUND.
+- R3: in A and C, the old reading at ral = 1/2 (φ = 1/26, tep = 420) is incompatible with the new readings. S is feasible with (83/200, −3/25). Result: BOUND.
+- R4: the two large-ral readings need a large positive lam, which contradicts the old range of mu. Result: SHAPE.
+- Result: NEW.
+
+**W-18.** Z fails. The old readings need mu ≤ −251/324, while the reading at ofa = 3 needs mu ≥ −169/225.
+- R1: the two ruk = 1 readings cap lam well below what the ofa = 3 reading needs. Result: SHAPE.
+- R2: it is off at every state, since ruk/nq ≤ 12/7, so A equals Z and fails. Uncovered, (−39/50, 1/10) fits. Result: SCOPE.
+- R3: even uncovered, the new readings force mu ≥ −3118/4095, which is greater than −251/324. Result: SHAPE.
+- R4: the exact value −3/5 would require mu > 0 at the ofa = 7/2 reading. S is feasible with (−31/40, 3/100). Result: BOUND.
+- Result: NEW.
+
+**W-19.** Z fails. At aq = 6/5, the residual is −513/2525, whose size exceeds 1/16.
+- R1: it is off at both new states. Uncovered, lam = −1/10 fits. Result: SCOPE.
+- R2: the two new readings need disjoint ranges of lam. Result: SHAPE.
+- R3: it is off everywhere. Uncovered, the two new readings still need disjoint ranges of lam. Result: SHAPE.
+- R4: the two new readings need disjoint ranges of lam. Result: SHAPE.
+- Result: NEW.
+
+**W-20.** Z fails. The first new reading has residual 333/100, which exceeds 3/40.
+- R1: lam = 3/40 fits all readings, so R1 is sufficient.
+- R2: the old readings confine lam to [−1/175, 1/800]. S is feasible with lam = 29/500. Result: BOUND.
+- R3: the dimension gap is L, which is impossible with kz, kq and vu. Result: TYPE. Also, the new readings need lam ∈ [31/300, 227/2100] and lam > 1/9, which conflict. Result: SHAPE.
+- R4: it is off at every state, since dov·pim/vu < 3. Uncovered, lam = 3/25 fits. Result: SCOPE.
+- Result: KNOWN R1.
+
+**W-21.** Z fails. At aq = 4/5, the residual is 13213/43600.
+- R1: it is off at all new states. Even uncovered, the readings at aq = 4/5 and 13/10 need disjoint ranges of lam. Result: SHAPE.
+- R2: the old readings keep lam near 0. S is feasible with lam = 1699/10000, which I checked exactly against the tight bounds. Result: BOUND.
+- R3: it is on at every new state (cs/kf > 3/2) and off at every old state. lam = 1/25 fits. R3 is sufficient.
+- R4: the reading at aq = 13/10 needs lam ≤ 113321/3019500, and the reading at aq = 3/5 needs lam ≥ 22953/604000. Result: SHAPE.
+- Result: KNOWN R3.
+
+```json
+[
+ {"id": "W-15", "verdict": "FORK", "branches": ["R3", "R4"], "excluded": {"R1": ["SHAPE", "SYMMETRY"], "R2": ["SHAPE", "SYMMETRY"]}},
+ {"id": "W-16", "verdict": "NEW", "excluded": {"R1": ["BOUND"], "R2": ["SHAPE"], "R3": ["TYPE"], "R4": ["SHAPE"]}},
+ {"id": "W-17", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["BOUND"], "R3": ["BOUND"], "R4": ["SHAPE"]}},
+ {"id": "W-18", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["SCOPE"], "R3": ["SHAPE"], "R4": ["BOUND"]}},
+ {"id": "W-19", "verdict": "NEW", "excluded": {"R1": ["SCOPE"], "R2": ["SHAPE"], "R3": ["SHAPE"], "R4": ["SHAPE"]}},
+ {"id": "W-20", "verdict": "KNOWN", "relation": "R1", "excluded": {"R2": ["BOUND"], "R3": ["SHAPE", "TYPE"], "R4": ["SCOPE"]}},
+ {"id": "W-21", "verdict": "KNOWN", "relation": "R3", "excluded": {"R1": ["SHAPE"], "R2": ["BOUND"], "R4": ["SHAPE"]}}
+]
+```

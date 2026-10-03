@@ -1,0 +1,12 @@
+{
+ "id": "dB-inside",
+ "experiment": "B",
+ "type": "observation",
+ "world": "dA-nebdim",
+ "state": {
+  "na": "1",
+  "nb": "2"
+ },
+ "observer": "far1",
+ "value": "51/5"
+}

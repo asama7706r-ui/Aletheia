@@ -1,0 +1,14 @@
+{
+ "name_as_shown": "",
+ "family": "Anthropic | Google | DeepSeek | Qwen | OpenAI(supplementary)",
+ "interface": "claude.ai | Gemini app | Google AI Studio | chat.deepseek.com | chat.qwen.ai | other",
+ "reasoning_option": "none | name of the thinking/reasoning option used",
+ "memory_off": true,
+ "web_search_off": true,
+ "code_execution": "not offered | available but unused | used in batches: ...",
+ "scored": true,
+ "first_run_date": "YYYY-MM-DD",
+ "last_run_date": "YYYY-MM-DD",
+ "reruns": "",
+ "notes": ""
+}

@@ -1,0 +1,1093 @@
+{
+ "A": [
+  {
+   "id": "W-01",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SYMMETRY"
+    ],
+    "R2": [
+     "SYMMETRY",
+     "SHAPE"
+    ],
+    "R3": [
+     "SHAPE"
+    ],
+    "R4": [
+     "SCOPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "expr": "cj*xel**2*yor**2/cl**2",
+      "coefficient": "9/100"
+     }
+    ]
+   },
+   "category": "group D (ostr)",
+   "notes": "NEW; SYMMETRY is the sole reason for R1, SHAPE for R3, SCOPE for R4. NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-02",
+   "verdict": "NO_DEFICIT",
+   "relation": null,
+   "branches": null,
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R1",
+      "coefficient": "3/40"
+     }
+    ]
+   },
+   "category": "group A (vexa); planet-X trap",
+   "notes": "NO_DEFICIT; planet-X trap: R1 (dimmer) fits the sub-precision residual. NO_SCOPE answer: NO_DEFICIT"
+  },
+  {
+   "id": "W-03",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "BOUND"
+    ],
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "TYPE",
+     "SHAPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "expr": "vy*ux/wq**2",
+      "coefficient": "1/6"
+     }
+    ]
+   },
+   "category": "group F (dral)",
+   "notes": "NEW; R1's registered exact value is contradicted (BOUND alone). NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-04",
+   "verdict": "KNOWN",
+   "relation": "R4",
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "BOUND"
+    ],
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R4",
+      "coefficient": "29/10000"
+     }
+    ]
+   },
+   "category": "group C (plin); scope-sensitive; nebulium type (switch)",
+   "notes": "KNOWN, nebulium type (switch on jor). NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-05",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "SCOPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "category": "group G (wesk)",
+   "notes": "NEW; R3 would fit if uncovered (SCOPE alone). hidden_truth omitted: the old readings come from the group's shared old model {\"terms\": [], \"visible_coefficient\": \"-7/9\"}, the new readings from {\"terms\": [{\"expr\": \"nu1*nq/ruk\", \"coefficient\": \"3/2\"}], \"visible_coefficient\": \"-39/50\"}. NO_SCOPE answer: NEW; answer with mu at the midpoint of M_old: NEW"
+  },
+  {
+   "id": "W-06",
+   "verdict": "NO_DEFICIT",
+   "relation": null,
+   "branches": null,
+   "hidden_truth": {
+    "terms": [],
+    "visible_coefficient": "1043/5850"
+   },
+   "category": "group N (brel); visible relation matters; planet-X trap",
+   "notes": "NO_DEFICIT only for mu in the lower part of M_old; visible relation matters. NO_SCOPE answer: NO_DEFICIT; answer with mu at the midpoint of M_old: NEW"
+  },
+  {
+   "id": "W-07",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SCOPE"
+    ],
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "TYPE"
+    ],
+    "R4": [
+     "SCOPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "expr": "kz*dov*pim**3",
+      "coefficient": "3/2000"
+     }
+    ]
+   },
+   "category": "group A (vexa)",
+   "notes": "NEW; a dimensionally impossible term (R3) is the numerical fit. NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-08",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "SCOPE"
+    ],
+    "R3": [
+     "SHAPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "expr": "bq*lh**2/hax**2",
+      "coefficient": "1/1250"
+     }
+    ]
+   },
+   "category": "group C (plin); scope-sensitive",
+   "notes": "NEW, scope-sensitive (the covered R2 would fit uncovered). NO_SCOPE answer: KNOWN(R2)"
+  },
+  {
+   "id": "W-09",
+   "verdict": "FORK",
+   "relation": null,
+   "branches": [
+    "R3",
+    "R4"
+   ],
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "BOUND"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R3",
+      "coefficient": "1/25"
+     }
+    ]
+   },
+   "category": "group E (kimb); scope-sensitive",
+   "notes": "FORK(R3, R4); R4 at the edge of its old bound; scope-sensitive. NO_SCOPE answer: KNOWN(R4)"
+  },
+  {
+   "id": "W-10",
+   "verdict": "KNOWN",
+   "relation": "R4",
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "BOUND"
+    ],
+    "R3": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R4",
+      "coefficient": "3/2000"
+     }
+    ]
+   },
+   "category": "group E (kimb)",
+   "notes": "KNOWN, uncovered relation that was below precision in the old domain. NO_SCOPE answer: KNOWN(R4)"
+  },
+  {
+   "id": "W-11",
+   "verdict": "KNOWN",
+   "relation": "R1",
+   "branches": null,
+   "reasons": {
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "TYPE",
+     "SHAPE"
+    ],
+    "R4": [
+     "BOUND"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R1",
+      "coefficient": "1/8"
+     }
+    ]
+   },
+   "category": "group F (dral)",
+   "notes": "KNOWN with an exact coefficient (no unknowns in A_R1). NO_SCOPE answer: KNOWN(R1)"
+  },
+  {
+   "id": "W-12",
+   "verdict": "KNOWN",
+   "relation": "R3",
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "SHAPE"
+    ],
+    "R4": [
+     "BOUND"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R3",
+      "coefficient": "1/5"
+     }
+    ],
+    "visible_coefficient": "-39/50"
+   },
+   "category": "group G (wesk); scope-sensitive; nebulium type (dimmer)",
+   "notes": "KNOWN, dimmer relation returns at large ofa/(nu1*ipo). NO_SCOPE answer: NEW; answer with mu at the midpoint of M_old: KNOWN(R3)"
+  },
+  {
+   "id": "W-13",
+   "verdict": "KNOWN",
+   "relation": "R2",
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R3": [
+     "SHAPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R2",
+      "coefficient": "-1/100"
+     }
+    ],
+    "visible_coefficient": "-157/200"
+   },
+   "category": "group G (wesk); scope-sensitive; nebulium type (switch); visible relation matters",
+   "notes": "KNOWN, nebulium type (switch on ruk/nq); visible relation matters. NO_SCOPE answer: NEW; answer with mu at the midpoint of M_old: NEW"
+  },
+  {
+   "id": "W-14",
+   "verdict": "FORK",
+   "relation": null,
+   "branches": [
+    "R1",
+    "R2",
+    "R4"
+   ],
+   "reasons": {
+    "R3": [
+     "BOUND"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R2",
+      "coefficient": "13/10000"
+     }
+    ]
+   },
+   "category": "group C (plin); scope-sensitive",
+   "notes": "FORK with three branches (R1, R2, R4); scope-sensitive. NO_SCOPE answer: KNOWN(R1)"
+  },
+  {
+   "id": "W-15",
+   "verdict": "FORK",
+   "relation": null,
+   "branches": [
+    "R3",
+    "R4"
+   ],
+   "reasons": {
+    "R1": [
+     "SYMMETRY",
+     "SHAPE"
+    ],
+    "R2": [
+     "SYMMETRY",
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R3",
+      "coefficient": "3/100"
+     }
+    ]
+   },
+   "category": "group D (ostr); scope-sensitive",
+   "notes": "FORK(R3, R4); scope-sensitive. NO_SCOPE answer: KNOWN(R3)"
+  },
+  {
+   "id": "W-16",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "BOUND"
+    ],
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "TYPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "expr": "gm*ux/wq**2",
+      "coefficient": "1/20"
+     }
+    ]
+   },
+   "category": "group F (dral)",
+   "notes": "NEW; R3 (TYPE-impossible) fits, R1 has the right shape but the wrong exact value. NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-17",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "BOUND"
+    ],
+    "R3": [
+     "BOUND"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "category": "group B (tumb)",
+   "notes": "NEW; BOUND is the sole reason for R2 and R3. hidden_truth omitted: the old readings come from the group's shared old model {\"terms\": [{\"candidate\": \"R3\", \"coefficient\": \"17/200\"}], \"visible_coefficient\": \"403/1000\"}, the new readings from {\"terms\": [{\"expr\": \"kv*ral*tep/(kw*kx)\", \"coefficient\": \"-1/40\"}], \"visible_coefficient\": \"41/100\"}. NO_SCOPE answer: NEW; answer with mu at the midpoint of M_old: NEW"
+  },
+  {
+   "id": "W-18",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "SCOPE"
+    ],
+    "R3": [
+     "SHAPE"
+    ],
+    "R4": [
+     "BOUND"
+    ]
+   },
+   "category": "group G (wesk); scope-sensitive",
+   "notes": "NEW, scope-sensitive; the readings need a visible strength outside M_old; all from observer pondo. hidden_truth omitted: the old readings come from the group's shared old model {\"terms\": [], \"visible_coefficient\": \"-7/9\"}, the new readings from {\"terms\": [], \"visible_coefficient\": \"-18/25\"}. NO_SCOPE answer: KNOWN(R2); answer with mu at the midpoint of M_old: NEW"
+  },
+  {
+   "id": "W-19",
+   "verdict": "NEW",
+   "relation": null,
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SCOPE"
+    ],
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "SHAPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "expr": "ke*(aq/kt)**2",
+      "coefficient": "-1/10"
+     }
+    ]
+   },
+   "category": "group E (kimb); scope-sensitive",
+   "notes": "NEW, scope-sensitive (R1 switched off in the new domain). NO_SCOPE answer: KNOWN(R1)"
+  },
+  {
+   "id": "W-20",
+   "verdict": "KNOWN",
+   "relation": "R1",
+   "branches": null,
+   "reasons": {
+    "R2": [
+     "BOUND"
+    ],
+    "R3": [
+     "TYPE",
+     "SHAPE"
+    ],
+    "R4": [
+     "SCOPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R1",
+      "coefficient": "3/40"
+     }
+    ]
+   },
+   "category": "group A (vexa); scope-sensitive; nebulium type (dimmer)",
+   "notes": "KNOWN, nebulium type (dimmer on sel/kq). NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-21",
+   "verdict": "KNOWN",
+   "relation": "R3",
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "BOUND"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R3",
+      "coefficient": "1/25"
+     }
+    ]
+   },
+   "category": "group E (kimb); scope-sensitive; nebulium type (switch)",
+   "notes": "KNOWN, nebulium type (switch on cs/kf). NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-22",
+   "verdict": "NO_DEFICIT",
+   "relation": null,
+   "branches": null,
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R1",
+      "coefficient": "1/100"
+     }
+    ]
+   },
+   "category": "group N (yuth); planet-X trap",
+   "notes": "NO_DEFICIT; sub-precision residual shaped like R1. NO_SCOPE answer: NO_DEFICIT"
+  },
+  {
+   "id": "W-23",
+   "verdict": "FORK",
+   "relation": null,
+   "branches": [
+    "R1",
+    "R2"
+   ],
+   "reasons": {
+    "R3": [
+     "TYPE",
+     "SHAPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R1",
+      "coefficient": "1/8"
+     }
+    ]
+   },
+   "category": "group F (dral)",
+   "notes": "FORK(R1 exact, R2). NO_SCOPE answer: FORK(R1,R2)"
+  },
+  {
+   "id": "W-24",
+   "verdict": "KNOWN",
+   "relation": "R3",
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SHAPE"
+    ],
+    "R2": [
+     "SCOPE"
+    ],
+    "R4": [
+     "BOUND"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R3",
+      "coefficient": "17/200"
+     }
+    ],
+    "visible_coefficient": "403/1000"
+   },
+   "category": "group B (tumb); scope-sensitive; nebulium type (dimmer); visible relation matters",
+   "notes": "KNOWN, nebulium type (dimmer); visible relation matters. NO_SCOPE answer: NEW; answer with mu at the midpoint of M_old: NEW"
+  },
+  {
+   "id": "W-25",
+   "verdict": "KNOWN",
+   "relation": "R4",
+   "branches": null,
+   "reasons": {
+    "R1": [
+     "SYMMETRY"
+    ],
+    "R2": [
+     "SYMMETRY",
+     "SHAPE"
+    ],
+    "R3": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R4",
+      "coefficient": "3/50"
+     }
+    ]
+   },
+   "category": "group D (ostr); scope-sensitive; nebulium type (dimmer)",
+   "notes": "KNOWN, nebulium type (dimmer on zun); forbidden R1 is a numerical fit. NO_SCOPE answer: NEW"
+  },
+  {
+   "id": "W-26",
+   "verdict": "FORK",
+   "relation": null,
+   "branches": [
+    "R1",
+    "R2"
+   ],
+   "reasons": {
+    "R3": [
+     "SHAPE"
+    ],
+    "R4": [
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R1",
+      "coefficient": "3/500"
+     }
+    ],
+    "visible_coefficient": "41/100"
+   },
+   "category": "group B (tumb); scope-sensitive; visible relation matters",
+   "notes": "FORK(R1, R2); R2 is switched off in the new domain and acts only through an old reading (shifting mu); visible relation matters; scope-sensitive. NO_SCOPE answer: KNOWN(R1); answer with mu at the midpoint of M_old: KNOWN(R1)"
+  },
+  {
+   "id": "W-27",
+   "verdict": "FORK",
+   "relation": null,
+   "branches": [
+    "R1",
+    "R4"
+   ],
+   "reasons": {
+    "R2": [
+     "SHAPE"
+    ],
+    "R3": [
+     "TYPE",
+     "SHAPE"
+    ]
+   },
+   "hidden_truth": {
+    "terms": [
+     {
+      "candidate": "R1",
+      "coefficient": "3/40"
+     }
+    ]
+   },
+   "category": "group A (vexa); scope-sensitive",
+   "notes": "FORK(R1, R4), scope-sensitive. NO_SCOPE answer: NEW"
+  }
+ ],
+ "B": [
+  {
+   "id": "D-01",
+   "type": "root_none",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "D-02",
+   "type": "obs_inside",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "D-03",
+   "type": "rel_known_fork",
+   "reopened": [
+    "W-17",
+    "W-24",
+    "W-26"
+   ],
+   "final": {
+    "W-17": {
+     "verdict": "NEW",
+     "relation": null,
+     "branches": null
+    },
+    "W-24": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R3",
+      "R5"
+     ]
+    },
+    "W-26": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R1",
+      "R2"
+     ]
+    }
+   }
+  },
+  {
+   "id": "D-04",
+   "type": "root_unchanged",
+   "reopened": [
+    "W-01",
+    "W-09",
+    "W-10",
+    "W-15",
+    "W-19",
+    "W-21",
+    "W-22",
+    "W-25"
+   ],
+   "final": {
+    "W-01": {
+     "verdict": "NEW",
+     "relation": null,
+     "branches": null
+    },
+    "W-09": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R3",
+      "R4"
+     ]
+    },
+    "W-10": {
+     "verdict": "KNOWN",
+     "relation": "R4",
+     "branches": null
+    },
+    "W-15": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R3",
+      "R4"
+     ]
+    },
+    "W-19": {
+     "verdict": "NEW",
+     "relation": null,
+     "branches": null
+    },
+    "W-21": {
+     "verdict": "KNOWN",
+     "relation": "R3",
+     "branches": null
+    },
+    "W-22": {
+     "verdict": "NO_DEFICIT",
+     "relation": null,
+     "branches": null
+    },
+    "W-25": {
+     "verdict": "KNOWN",
+     "relation": "R4",
+     "branches": null
+    }
+   }
+  },
+  {
+   "id": "D-05",
+   "type": "rel_new_known",
+   "reopened": [
+    "W-04",
+    "W-08",
+    "W-14"
+   ],
+   "final": {
+    "W-04": {
+     "verdict": "KNOWN",
+     "relation": "R4",
+     "branches": null
+    },
+    "W-08": {
+     "verdict": "KNOWN",
+     "relation": "R5",
+     "branches": null
+    },
+    "W-14": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R1",
+      "R2",
+      "R4"
+     ]
+    }
+   }
+  },
+  {
+   "id": "D-06",
+   "type": "rel_new_known",
+   "reopened": [
+    "W-17",
+    "W-24",
+    "W-26"
+   ],
+   "final": {
+    "W-17": {
+     "verdict": "KNOWN",
+     "relation": "R5",
+     "branches": null
+    },
+    "W-24": {
+     "verdict": "KNOWN",
+     "relation": "R3",
+     "branches": null
+    },
+    "W-26": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R1",
+      "R2"
+     ]
+    }
+   }
+  },
+  {
+   "id": "D-07",
+   "type": "rel_unchanged",
+   "reopened": [
+    "W-01",
+    "W-15",
+    "W-25"
+   ],
+   "final": {
+    "W-01": {
+     "verdict": "NEW",
+     "relation": null,
+     "branches": null
+    },
+    "W-15": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R3",
+      "R4"
+     ]
+    },
+    "W-25": {
+     "verdict": "KNOWN",
+     "relation": "R4",
+     "branches": null
+    }
+   }
+  },
+  {
+   "id": "D-08",
+   "type": "obs_inside",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "D-09",
+   "type": "rel_none",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "D-10",
+   "type": "obs_fork",
+   "reopened": [
+    "W-27"
+   ],
+   "final": {
+    "W-27": {
+     "verdict": "KNOWN",
+     "relation": "R1",
+     "branches": null
+    }
+   }
+  },
+  {
+   "id": "D-11",
+   "type": "root_revive",
+   "reopened": [
+    "W-07",
+    "W-20",
+    "W-27"
+   ],
+   "final": {
+    "W-07": {
+     "verdict": "KNOWN",
+     "relation": "R4",
+     "branches": null
+    },
+    "W-20": {
+     "verdict": "KNOWN",
+     "relation": "R1",
+     "branches": null
+    },
+    "W-27": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R1",
+      "R4"
+     ]
+    }
+   }
+  },
+  {
+   "id": "D-12",
+   "type": "rel_known_fork",
+   "reopened": [
+    "W-09",
+    "W-10",
+    "W-19",
+    "W-21"
+   ],
+   "final": {
+    "W-09": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R3",
+      "R4"
+     ]
+    },
+    "W-10": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R4",
+      "R5"
+     ]
+    },
+    "W-19": {
+     "verdict": "NEW",
+     "relation": null,
+     "branches": null
+    },
+    "W-21": {
+     "verdict": "KNOWN",
+     "relation": "R3",
+     "branches": null
+    }
+   }
+  },
+  {
+   "id": "D-13",
+   "type": "obs_flip",
+   "reopened": [
+    "W-21"
+   ],
+   "final": {
+    "W-21": {
+     "verdict": "NEW",
+     "relation": null,
+     "branches": null
+    }
+   }
+  },
+  {
+   "id": "D-14",
+   "type": "obs_flip",
+   "reopened": [
+    "W-02"
+   ],
+   "final": {
+    "W-02": {
+     "verdict": "KNOWN",
+     "relation": "R1",
+     "branches": null
+    }
+   }
+  },
+  {
+   "id": "D-15",
+   "type": "root_vanish",
+   "reopened": [
+    "W-18"
+   ],
+   "final": {
+    "W-18": {
+     "verdict": "NO_DEFICIT",
+     "relation": null,
+     "branches": null
+    }
+   }
+  },
+  {
+   "id": "D-16",
+   "type": "rel_none",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "D-17",
+   "type": "obs_fork",
+   "reopened": [
+    "W-14"
+   ],
+   "final": {
+    "W-14": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R1",
+      "R2"
+     ]
+    }
+   }
+  },
+  {
+   "id": "D-18",
+   "type": "rel_unchanged",
+   "reopened": [
+    "W-07",
+    "W-20",
+    "W-27"
+   ],
+   "final": {
+    "W-07": {
+     "verdict": "NEW",
+     "relation": null,
+     "branches": null
+    },
+    "W-20": {
+     "verdict": "KNOWN",
+     "relation": "R1",
+     "branches": null
+    },
+    "W-27": {
+     "verdict": "FORK",
+     "relation": null,
+     "branches": [
+      "R1",
+      "R4"
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "name_as_shown": "kimi k3",
+ "family": "Moonshot (supplementary, not scored)",
+ "interface": "not recorded",
+ "reasoning_option": "not recorded",
+ "memory_off": "not recorded",
+ "web_search_off": "not recorded",
+ "code_execution": "not recorded",
+ "scored": false,
+ "first_run_date": "2026-10-03",
+ "last_run_date": "2026-10-03",
+ "reruns": "not recorded",
+ "notes": "Run by the project owner on batches M2 and M3 only, after DeepSeek stopped working, and first saved in runs/deepseek. Moved here unchanged by the scorer author (Claude) at the owner's request, before the freeze. Supplementary data: not in any verdict."
+}

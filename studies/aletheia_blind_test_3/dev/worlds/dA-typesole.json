@@ -1,0 +1,84 @@
+{
+ "id": "dA-typesole",
+ "experiment": "A",
+ "observable": "yc",
+ "quantities": {
+  "yc": {
+   "L": 1
+  },
+  "xd": {
+   "T": 1
+  }
+ },
+ "constants": {
+  "kv": {
+   "value": "2",
+   "dims": {
+    "L": 1,
+    "T": -1
+   }
+  }
+ },
+ "observers": {
+  "lab8": "1",
+  "far8": "1/20"
+ },
+ "base_law": "yc = kv*xd",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "xd**2",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "kv*xd",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "xd": "1"
+   },
+   "value": "2",
+   "observer": "lab8"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "xd": "2"
+   },
+   "value": "6",
+   "observer": "far8"
+  },
+  {
+   "state": {
+    "xd": "4"
+   },
+   "value": "16",
+   "observer": "far8"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "xd": "3"
+   },
+   "observer": "lab8"
+  },
+  {
+   "state": {
+    "xd": "5"
+   },
+   "observer": "far8"
+  }
+ ],
+ "visible": null,
+ "symmetries": []
+}

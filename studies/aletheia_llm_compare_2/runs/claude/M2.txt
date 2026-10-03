@@ -1,0 +1,76 @@
+Each world below gives the residuals against the established law and the key interval checks, followed by the JSON.
+
+**W-08**
+
+Step 0 fails. Two new residuals far exceed their precision: 183/80 at state 5 and 2591/720 at state 7.
+- **R1:** State 5 needs λ ∈ [0.0269, 0.0300]. State 7 needs λ ∈ [0.0119, 0.0149]. These don't overlap, so it fails SHAPE.
+- **R2:** With its dimmer active, state 5 needs λ ≥ 0.00476, but old reading 1 needs λ ≤ 0.00221, so A is infeasible. With φ = 1 at the new states, all three new readings fit λ ∈ [0.000769, 0.000858], which the old readings allow. That is SCOPE.
+- **R3:** With λ free, state 5 needs λ ≈ 0.12–0.13 and state 6 needs λ ≈ 0.005, so it fails SHAPE.
+- **R4:** The switch is off everywhere. Uncovered, states 5 and 6 need disjoint λ, so it fails SHAPE.
+- **Verdict:** NEW.
+
+**W-09**
+
+The new residuals are about 0.2507 and 0.2427, which exceed the precision.
+- **R1:** The two new readings need λ ∈ [49.8, 82.9] and λ ∈ [34.3, 47.9], so it fails SHAPE.
+- **R2:** The new readings agree on λ ∈ [0.0633, 0.0883], but the old readings force λ ∈ [−0.0081, 0.0106]. That is BOUND.
+- **R3:** It is off at all old states and on at both new states. λ ∈ [0.0347, 0.0461] works, so A is feasible.
+- **R4:** Old reading 3 needs λ ≤ 2933/1606000 (≈ 0.0018263). New reading 7 needs λ ≥ 46777/25849600 (≈ 0.0018096). All other constraints allow this window, so A is feasible.
+- **Verdict:** FORK between R3 and R4.
+
+**W-10**
+
+The new residuals are about 0.5568 and 0.5127.
+- **R1:** The new readings need λ around 523–656 and 196–229, so it fails SHAPE.
+- **R2:** The new readings fit λ ∈ [0.148, 0.166], but the old readings exclude that range. That is BOUND.
+- **R3:** The switch is off at the new states. Even uncovered, the two new readings need disjoint λ, so it fails SHAPE.
+- **R4:** λ ∈ [0.001373, 0.001579] fits every reading, so A is feasible.
+- **Verdict:** KNOWN, R4.
+
+**W-11**
+
+The new residuals are 41/120 and 1/8, which exceed the precision.
+- **R1:** The exact contribution of 1/8 leaves residuals of 1/120 and −1/48. All six readings fit, so A is feasible.
+- **R2:** Its dimensions work via ga^(−1/2). The new readings need λ ∈ [0.0867, 0.1055] and [0.0136, 0.0408], so it fails SHAPE.
+- **R3:** The coefficient would need dimension L⁻¹, which no product of the constants gives, so it fails TYPE. Its new readings also conflict (λ ≥ 111/1920 versus λ ≤ 9/196), so it fails SHAPE.
+- **R4:** Uncovered, the new readings agree on λ ∈ [0.01678, 1/56]. But the old readings (φ ≈ 1) need λ ≤ 0.00184. That is BOUND.
+- **Verdict:** KNOWN, R1.
+
+**W-12**
+
+The old readings force μ ∈ [−0.78667, −0.77469], and the new readings need μ ≈ −0.23 alone, so there is a deficit.
+- **R1:** At the best μ, state 6 needs λ ≥ 0.1888 and state 5 needs λ ≤ 0.1317, so it fails SHAPE.
+- **R2:** The switch is off everywhere. Uncovered, λ ≈ 1.6–1.7 and λ ≈ 0.45–0.62 conflict, so it fails SHAPE.
+- **R3:** μ = −0.78 with λ = 0.195 satisfies all six readings, so A is feasible.
+- **R4:** The fixed value −3/5 has the wrong sign. With λ free, λ ∈ [0.1633, 0.1772] fits, so it is BOUND.
+- **Verdict:** KNOWN, R3.
+
+**W-13**
+
+The new readings need μ ≈ −0.85 or −0.95 alone, which the old readings rule out.
+- **R1:** The new readings need λ ≤ −213 versus λ ≈ −44 to −38, so it fails SHAPE.
+- **R2:** It is off at the old states and on at both new states. μ = −0.783 with λ = −0.0101 fits everything, so A is feasible.
+- **R3:** Even uncovered, the new readings need λ ≈ −0.4 versus λ ≈ −2.9 across the allowed μ, so it fails SHAPE.
+- **R4:** With λ free, the new readings need λ ≈ −2.2 to −3.1 versus about −1.2, so it fails SHAPE.
+- **Verdict:** KNOWN, R2.
+
+**W-14**
+
+The new residual is 1017/1360, which exceeds 1/8.
+- **R1:** λ ∈ [0.000271, 0.000380] fits the old window [−0.000715, 0.001436], so A is feasible.
+- **R2:** λ ∈ [0.001047, 0.001467] fits the old window [−0.000696, 0.002212], so A is feasible.
+- **R3:** The exact value leaves a residual of −0.178, which exceeds the precision. A free λ would fit, so it is BOUND.
+- **R4:** The switch is on at the new state, and the old readings don't constrain it. A is feasible.
+- **Verdict:** FORK among R1, R2 and R4.
+
+```json
+[
+ {"id": "W-08", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["SCOPE"], "R3": ["SHAPE"], "R4": ["SHAPE"]}},
+ {"id": "W-09", "verdict": "FORK", "branches": ["R3", "R4"], "excluded": {"R1": ["SHAPE"], "R2": ["BOUND"]}},
+ {"id": "W-10", "verdict": "KNOWN", "relation": "R4", "excluded": {"R1": ["SHAPE"], "R2": ["BOUND"], "R3": ["SHAPE"]}},
+ {"id": "W-11", "verdict": "KNOWN", "relation": "R1", "excluded": {"R2": ["SHAPE"], "R3": ["SHAPE", "TYPE"], "R4": ["BOUND"]}},
+ {"id": "W-12", "verdict": "KNOWN", "relation": "R3", "excluded": {"R1": ["SHAPE"], "R2": ["SHAPE"], "R4": ["BOUND"]}},
+ {"id": "W-13", "verdict": "KNOWN", "relation": "R2", "excluded": {"R1": ["SHAPE"], "R3": ["SHAPE"], "R4": ["SHAPE"]}},
+ {"id": "W-14", "verdict": "FORK", "branches": ["R1", "R2", "R4"], "excluded": {"R3": ["BOUND"]}}
+]
+```

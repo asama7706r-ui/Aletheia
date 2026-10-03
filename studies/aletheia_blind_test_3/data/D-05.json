@@ -1,0 +1,13 @@
+{
+ "id": "D-05",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "plin",
+ "relation": {
+  "id": "R5",
+  "object": "fosk",
+  "term": "bq*lh**2/hax**2",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

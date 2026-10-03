@@ -1,0 +1,11 @@
+```json
+[
+  {"id": "W-01", "verdict": "NEW", "excluded": {"R1": ["SYMMETRY"], "R2": ["SYMMETRY", "SHAPE"], "R3": ["SHAPE"], "R4": ["SCOPE"]}},
+  {"id": "W-02", "verdict": "NO_DEFICIT"},
+  {"id": "W-03", "verdict": "NEW", "excluded": {"R1": ["BOUND"], "R2": ["SHAPE"], "R3": ["TYPE", "SHAPE"], "R4": ["SHAPE"]}},
+  {"id": "W-04", "verdict": "KNOWN", "relation": "R4", "excluded": {"R1": ["BOUND"], "R2": ["SHAPE"], "R3": ["SHAPE"]}},
+  {"id": "W-05", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["SHAPE"], "R3": ["SCOPE"], "R4": ["SHAPE"]}},
+  {"id": "W-06", "verdict": "NO_DEFICIT"},
+  {"id": "W-07", "verdict": "KNOWN", "relation": "R3", "excluded": {"R1": ["SCOPE"], "R2": ["SHAPE"], "R4": ["SCOPE"]}}
+]
+```

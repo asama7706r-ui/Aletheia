@@ -1,0 +1,96 @@
+{
+ "id": "dA-visible",
+ "experiment": "A",
+ "observable": "yb",
+ "quantities": {
+  "yb": {
+   "M": 1,
+   "L": 2,
+   "T": -2
+  },
+  "xb": {},
+  "xc": {}
+ },
+ "constants": {
+  "ke": {
+   "value": "1",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   }
+  }
+ },
+ "observers": {
+  "lab6": "1",
+  "lab7": "3/5",
+  "far6": "1/10"
+ },
+ "base_law": "yb = ke/2",
+ "visible": {
+  "id": "V1",
+  "object": "ob0",
+  "term": "ke*xb"
+ },
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "ke*xc",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "ke*xb**2",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "xb": "1",
+    "xc": "0"
+   },
+   "value": "5/2",
+   "observer": "lab6"
+  },
+  {
+   "state": {
+    "xb": "0",
+    "xc": "1"
+   },
+   "value": "1/2",
+   "observer": "lab7"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "xb": "1",
+    "xc": "1"
+   },
+   "value": "4",
+   "observer": "far6"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "xb": "2",
+    "xc": "0"
+   },
+   "observer": "lab6"
+  },
+  {
+   "state": {
+    "xb": "0",
+    "xc": "2"
+   },
+   "observer": "far6"
+  }
+ ],
+ "symmetries": []
+}

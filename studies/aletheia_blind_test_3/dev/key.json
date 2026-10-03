@@ -1,0 +1,243 @@
+{
+ "A": [
+  {
+   "id": "dA-nebdim",
+   "verdict": "KNOWN",
+   "relation": "R1",
+   "reasons": {
+    "R2": [
+     "BOUND"
+    ]
+   }
+  },
+  {
+   "id": "dA-step0",
+   "verdict": "NO_DEFICIT"
+  },
+  {
+   "id": "dA-nebsw",
+   "verdict": "KNOWN",
+   "relation": "R2",
+   "reasons": {
+    "R1": [
+     "TYPE",
+     "BOUND"
+    ],
+    "R3": [
+     "BOUND"
+    ]
+   }
+  },
+  {
+   "id": "dA-helium",
+   "verdict": "NEW",
+   "reasons": {
+    "R1": [
+     "BOUND"
+    ],
+    "R2": [
+     "BOUND"
+    ],
+    "R3": [
+     "SCOPE"
+    ]
+   }
+  },
+  {
+   "id": "dA-coronium",
+   "verdict": "KNOWN",
+   "relation": "R1",
+   "reasons": {
+    "R2": [
+     "BOUND"
+    ]
+   }
+  },
+  {
+   "id": "dA-fork",
+   "verdict": "FORK",
+   "branches": [
+    "R1",
+    "R2"
+   ],
+   "reasons": {
+    "R3": [
+     "BOUND"
+    ]
+   }
+  },
+  {
+   "id": "dA-visible",
+   "verdict": "KNOWN",
+   "relation": "R1",
+   "reasons": {
+    "R2": [
+     "BOUND"
+    ]
+   }
+  },
+  {
+   "id": "dA-typesole",
+   "verdict": "NEW",
+   "reasons": {
+    "R1": [
+     "TYPE"
+    ],
+    "R2": [
+     "SHAPE"
+    ]
+   }
+  },
+  {
+   "id": "dA-symsole",
+   "verdict": "NEW",
+   "reasons": {
+    "R1": [
+     "SYMMETRY"
+    ],
+    "R2": [
+     "BOUND"
+    ]
+   }
+  },
+  {
+   "id": "dA-scopesole",
+   "verdict": "NEW",
+   "reasons": {
+    "R1": [
+     "SCOPE"
+    ],
+    "R2": [
+     "BOUND"
+    ]
+   }
+  },
+  {
+   "id": "dA-planetx",
+   "verdict": "NEW",
+   "reasons": {
+    "R1": [
+     "BOUND"
+    ],
+    "R2": [
+     "BOUND"
+    ]
+   }
+  }
+ ],
+ "B": [
+  {
+   "id": "dB-bowen",
+   "type": "rel_new_known",
+   "reopened": [
+    "dA-helium"
+   ],
+   "final": {
+    "dA-helium": {
+     "verdict": "KNOWN",
+     "relation": "R4"
+    }
+   }
+  },
+  {
+   "id": "dB-fall",
+   "type": "obs_flip",
+   "reopened": [
+    "dA-nebdim"
+   ],
+   "final": {
+    "dA-nebdim": {
+     "verdict": "NEW"
+    }
+   }
+  },
+  {
+   "id": "dB-inside",
+   "type": "obs_inside",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "dB-forkdecide",
+   "type": "obs_fork",
+   "reopened": [
+    "dA-fork"
+   ],
+   "final": {
+    "dA-fork": {
+     "verdict": "KNOWN",
+     "relation": "R2"
+    }
+   }
+  },
+  {
+   "id": "dB-planetx",
+   "type": "root_vanish",
+   "reopened": [
+    "dA-planetx"
+   ],
+   "final": {
+    "dA-planetx": {
+     "verdict": "NO_DEFICIT"
+    }
+   }
+  },
+  {
+   "id": "dB-precision",
+   "type": "root_revive",
+   "reopened": [
+    "dA-helium"
+   ],
+   "final": {
+    "dA-helium": {
+     "verdict": "FORK",
+     "branches": [
+      "R1",
+      "R2"
+     ]
+    }
+   }
+  },
+  {
+   "id": "dB-nd",
+   "type": "rel_unchanged",
+   "reopened": [
+    "dA-nebdim"
+   ],
+   "final": {
+    "dA-nebdim": {
+     "verdict": "KNOWN",
+     "relation": "R1"
+    }
+   }
+  },
+  {
+   "id": "dB-none",
+   "type": "rel_none",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "dB-rootnone",
+   "type": "root_none",
+   "reopened": [],
+   "final": {}
+  },
+  {
+   "id": "dB-knownfork",
+   "type": "rel_known_fork",
+   "reopened": [
+    "dA-coronium"
+   ],
+   "final": {
+    "dA-coronium": {
+     "verdict": "FORK",
+     "branches": [
+      "R1",
+      "R3"
+     ]
+    }
+   }
+  }
+ ]
+}

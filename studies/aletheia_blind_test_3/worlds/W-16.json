@@ -1,0 +1,166 @@
+{
+ "id": "W-16",
+ "experiment": "A",
+ "observable": "dral",
+ "quantities": {
+  "dral": {
+   "M": 1,
+   "L": 1,
+   "T": -2
+  },
+  "ux": {
+   "L": 1
+  },
+  "vy": {
+   "M": 1
+  },
+  "wq": {
+   "T": 1
+  }
+ },
+ "constants": {
+  "ga": {
+   "value": "49/4",
+   "dims": {
+    "L": 2,
+    "T": -2
+   }
+  },
+  "gm": {
+   "value": "3",
+   "dims": {
+    "M": 1
+   }
+  }
+ },
+ "observers": {
+  "hesk": "1/30",
+  "pirro": "1/16"
+ },
+ "base_law": "dral = ga*vy/ux",
+ "visible": null,
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "pask",
+   "term": "vy*ux/wq**2",
+   "coefficient": {
+    "exact": "1/8"
+   },
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "tolu",
+   "term": "gm*ux**2/wq**3",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R3",
+   "object": "zemo",
+   "term": "vy*ux**2/wq**2",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R4",
+   "object": "hirn",
+   "term": "gm*ga/ux",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "ux**2/(ga*wq**2)",
+    "factor": {
+     "type": "dimmer",
+     "expr": "1/(1 + r**3)"
+    }
+   }
+  }
+ ],
+ "symmetries": [],
+ "old_observations": [
+  {
+   "state": {
+    "ux": "3/2",
+    "vy": "2",
+    "wq": "9"
+   },
+   "value": "3269/200",
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ux": "4",
+    "vy": "1/2",
+    "wq": "14"
+   },
+   "value": "303/200",
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ux": "5/2",
+    "vy": "5",
+    "wq": "11"
+   },
+   "value": "613/25",
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ux": "6",
+    "vy": "3",
+    "wq": "20"
+   },
+   "value": "367/60",
+   "observer": "hesk"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "ux": "3",
+    "vy": "9/2",
+    "wq": "11/4"
+   },
+   "value": "11077/600",
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ux": "6",
+    "vy": "2",
+    "wq": "11/4"
+   },
+   "value": "2491/600",
+   "observer": "pirro"
+  },
+  {
+   "state": {
+    "ux": "3/2",
+    "vy": "6",
+    "wq": "9/4"
+   },
+   "value": "1961/40",
+   "observer": "hesk"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "ux": "2",
+    "vy": "4",
+    "wq": "3/2"
+   },
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ux": "4",
+    "vy": "1",
+    "wq": "3"
+   },
+   "observer": "pirro"
+  }
+ ]
+}

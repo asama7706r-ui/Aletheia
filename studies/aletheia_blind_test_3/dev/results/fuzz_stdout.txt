@@ -1,0 +1,4 @@
+{'items': 802, 'agree': 802, 'mismatch': 0, 'skipped': 183, 'reopened_nonempty': 596, 'changed': 340}
+{'ok': 1096, 'skip': 864, 'mismatch': 0, 'unbuilt': 40} {'NEW': 609, 'FORK': 50, 'NO_DEFICIT': 322, 'KNOWN': 115}
+{'ok': 1129, 'skip': 844, 'mismatch': 0, 'unbuilt': 27} {'NO_DEFICIT': 367, 'KNOWN': 106, 'NEW': 589, 'FORK': 67}
+{'ok': 1187, 'skip': 785, 'mismatch': 0, 'unbuilt': 28} {'NEW': 617, 'NO_DEFICIT': 359, 'FORK': 69, 'KNOWN': 142}

@@ -1,0 +1,177 @@
+{
+ "id": "W-18",
+ "experiment": "A",
+ "observable": "wesk",
+ "quantities": {
+  "wesk": {
+   "L": 1,
+   "T": -1
+  },
+  "ofa": {
+   "L": 1
+  },
+  "ipo": {
+   "T": 1
+  },
+  "ruk": {
+   "Q": 1
+  }
+ },
+ "constants": {
+  "nu1": {
+   "value": "21/8",
+   "dims": {
+    "L": 1,
+    "T": -1
+   }
+  },
+  "nq": {
+   "value": "7/2",
+   "dims": {
+    "Q": 1
+   }
+  }
+ },
+ "observers": {
+  "hesk": "1/30",
+  "gavi": "1/12",
+  "pondo": "1/24"
+ },
+ "base_law": "wesk = ofa/ipo + nu1",
+ "visible": {
+  "id": "V1",
+  "object": "seb",
+  "term": "nu1*ruk/nq"
+ },
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "garu",
+   "term": "ofa**2/(ipo*(ofa + nu1*ipo))",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "tibe",
+   "term": "nu1*(ruk/nq)**3",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "ruk/nq",
+    "factor": {
+     "type": "switch",
+     "on": ">",
+     "threshold": "2"
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "object": "mawo",
+   "term": "nu1*nq/ruk",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "ofa/(nu1*ipo)",
+    "factor": {
+     "type": "dimmer",
+     "expr": "r**2/(1 + r**2)"
+    }
+   }
+  },
+  {
+   "id": "R4",
+   "object": "pelo",
+   "term": "ofa*ruk/(ipo*nq)",
+   "coefficient": {
+    "exact": "-3/5"
+   },
+   "coverage": null
+  }
+ ],
+ "symmetries": [],
+ "old_observations": [
+  {
+   "state": {
+    "ofa": "1/2",
+    "ipo": "4",
+    "ruk": "3/2"
+   },
+   "value": "283/150",
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ofa": "1/4",
+    "ipo": "2",
+    "ruk": "5"
+   },
+   "value": "-11/60",
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ofa": "1",
+    "ipo": "6",
+    "ruk": "5/2"
+   },
+   "value": "27/20",
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ofa": "3/4",
+    "ipo": "5",
+    "ruk": "6"
+   },
+   "value": "-67/90",
+   "observer": "hesk"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "ofa": "7/2",
+    "ipo": "1/2",
+    "ruk": "1"
+   },
+   "value": "6529/720",
+   "observer": "pondo"
+  },
+  {
+   "state": {
+    "ofa": "3",
+    "ipo": "5/4",
+    "ruk": "5/2"
+   },
+   "value": "439/120",
+   "observer": "pondo"
+  },
+  {
+   "state": {
+    "ofa": "27/4",
+    "ipo": "13/4",
+    "ruk": "1"
+   },
+   "value": "331/80",
+   "observer": "pondo"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "ofa": "2",
+    "ipo": "1",
+    "ruk": "9"
+   },
+   "observer": "hesk"
+  },
+  {
+   "state": {
+    "ofa": "1/2",
+    "ipo": "3",
+    "ruk": "4"
+   },
+   "observer": "gavi"
+  }
+ ]
+}

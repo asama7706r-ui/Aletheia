@@ -1,0 +1,13 @@
+{
+ "id": "dB-nd",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "yl",
+ "relation": {
+  "id": "R3",
+  "object": "ob2",
+  "term": "ku*nb**3",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

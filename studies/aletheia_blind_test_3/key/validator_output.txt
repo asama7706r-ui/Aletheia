@@ -1,0 +1,48 @@
+W-01 ok: {"verdict": "NEW"}
+W-02 ok: {"verdict": "NO_DEFICIT"}
+W-03 ok: {"verdict": "NEW"}
+W-04 ok: {"verdict": "KNOWN", "relation": "R4"}
+W-05 ok: {"verdict": "NEW"}
+W-06 ok: {"verdict": "NO_DEFICIT"}
+W-07 ok: {"verdict": "NEW"}
+W-08 ok: {"verdict": "NEW"}
+W-09 ok: {"verdict": "FORK", "branches": ["R3", "R4"]}
+W-10 ok: {"verdict": "KNOWN", "relation": "R4"}
+W-11 ok: {"verdict": "KNOWN", "relation": "R1"}
+W-12 ok: {"verdict": "KNOWN", "relation": "R3"}
+W-13 ok: {"verdict": "KNOWN", "relation": "R2"}
+W-14 ok: {"verdict": "FORK", "branches": ["R1", "R2", "R4"]}
+W-15 ok: {"verdict": "FORK", "branches": ["R3", "R4"]}
+W-16 ok: {"verdict": "NEW"}
+W-17 ok: {"verdict": "NEW"}
+W-18 ok: {"verdict": "NEW"}
+W-19 ok: {"verdict": "NEW"}
+W-20 ok: {"verdict": "KNOWN", "relation": "R1"}
+W-21 ok: {"verdict": "KNOWN", "relation": "R3"}
+W-22 ok: {"verdict": "NO_DEFICIT"}
+W-23 ok: {"verdict": "FORK", "branches": ["R1", "R2"]}
+W-24 ok: {"verdict": "KNOWN", "relation": "R3"}
+W-25 ok: {"verdict": "KNOWN", "relation": "R4"}
+W-26 ok: {"verdict": "FORK", "branches": ["R1", "R2"]}
+W-27 ok: {"verdict": "FORK", "branches": ["R1", "R4"]}
+Part A composition: {"fork3": ["W-14"], "nebulium_dimmer": ["W-12", "W-20", "W-24", "W-25"], "nebulium_switch": ["W-04", "W-13", "W-21"], "planet_x": ["W-02:R1", "W-06:R1", "W-22:R1"], "scope_sensitive": ["W-04", "W-08", "W-09", "W-12", "W-13", "W-14", "W-15", "W-18", "W-19", "W-20", "W-21", "W-24", "W-25", "W-26", "W-27"], "scope_sensitive_fork": ["W-09", "W-14", "W-15", "W-26", "W-27"], "scope_sensitive_new": ["W-08", "W-18", "W-19"], "shared_observable_with_nd": ["vexa"], "sole": {"BOUND": ["W-03:R1", "W-16:R1", "W-17:R2", "W-17:R3", "W-18:R4"], "SCOPE": ["W-01:R4", "W-05:R3", "W-07:R1", "W-07:R4", "W-08:R2", "W-18:R2", "W-19:R1"], "SHAPE": ["W-01:R3", "W-03:R2", "W-03:R4", "W-05:R1", "W-05:R2", "W-05:R4", "W-07:R2", "W-08:R1", "W-08:R3", "W-08:R4", "W-16:R2", "W-16:R4", "W-17:R1", "W-17:R4", "W-18:R1", "W-18:R3", "W-19:R2", "W-19:R3", "W-19:R4"], "SYMMETRY": ["W-01:R1"], "TYPE": ["W-07:R3", "W-16:R3"]}, "verdicts": {"FORK": 6, "KNOWN": 9, "NEW": 9, "NO_DEFICIT": 3}, "visible_matters": ["W-06", "W-13", "W-24", "W-26"]}
+D-01 ok: root_none reopens []
+D-02 ok: obs_inside reopens []
+D-03 ok: rel_known_fork reopens ['W-17', 'W-24', 'W-26']
+D-04 ok: root_unchanged reopens ['W-01', 'W-09', 'W-10', 'W-15', 'W-19', 'W-21', 'W-22', 'W-25']
+D-05 ok: rel_new_known reopens ['W-04', 'W-08', 'W-14']
+D-06 ok: rel_new_known reopens ['W-17', 'W-24', 'W-26']
+D-07 ok: rel_unchanged reopens ['W-01', 'W-15', 'W-25']
+D-08 ok: obs_inside reopens []
+D-09 ok: rel_none reopens []
+D-10 ok: obs_fork reopens ['W-27']
+D-11 ok: root_revive reopens ['W-07', 'W-20', 'W-27']
+D-12 ok: rel_known_fork reopens ['W-09', 'W-10', 'W-19', 'W-21']
+D-13 ok: obs_flip reopens ['W-21']
+D-14 ok: obs_flip reopens ['W-02']
+D-15 ok: root_vanish reopens ['W-18']
+D-16 ok: rel_none reopens []
+D-17 ok: obs_fork reopens ['W-14']
+D-18 ok: rel_unchanged reopens ['W-07', 'W-20', 'W-27']
+Part B composition: {"obs_flip": 2, "obs_fork": 2, "obs_inside": 2, "rel_known_fork": 2, "rel_new_known": 2, "rel_none": 2, "rel_unchanged": 2, "root_none": 1, "root_revive": 1, "root_unchanged": 1, "root_vanish": 1}
+VALID

@@ -1,0 +1,104 @@
+{
+ "id": "dA-nebdim",
+ "experiment": "A",
+ "new_observations": [
+  {
+   "state": {
+    "na": "1",
+    "nb": "1"
+   },
+   "value": "51/10",
+   "observer": "far1"
+  }
+ ],
+ "observable": "yl",
+ "quantities": {
+  "yl": {
+   "M": 1,
+   "T": -3
+  },
+  "na": {
+   "L": -3
+  },
+  "nb": {}
+ },
+ "constants": {
+  "kc": {
+   "value": "100",
+   "dims": {
+    "L": -3
+   }
+  },
+  "ku": {
+   "value": "1",
+   "dims": {
+    "M": 1,
+    "T": -3
+   }
+  }
+ },
+ "observers": {
+  "lab1": "1/100",
+  "far1": "1/10"
+ },
+ "base_law": "yl = ku*nb/10",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "ku*nb",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "na/kc",
+    "factor": {
+     "type": "dimmer",
+     "expr": "1/(1+r)"
+    },
+    "summary": "fades when na exceeds kc"
+   }
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "ku*nb**2",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "na": "1000000",
+    "nb": "1"
+   },
+   "value": "1/10",
+   "observer": "lab1"
+  },
+  {
+   "state": {
+    "na": "1000000",
+    "nb": "3"
+   },
+   "value": "3/10",
+   "observer": "lab1"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "na": "1000000",
+    "nb": "2"
+   },
+   "observer": "lab1"
+  },
+  {
+   "state": {
+    "na": "1",
+    "nb": "2"
+   },
+   "observer": "far1"
+  }
+ ],
+ "visible": null,
+ "symmetries": []
+}

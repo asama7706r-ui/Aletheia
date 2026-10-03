@@ -1,0 +1,21 @@
+dA-coronium {"verdict": "KNOWN", "relation": "R1"}
+dA-fork {"verdict": "FORK", "branches": ["R1", "R2"]}
+dA-helium {"verdict": "NEW"}
+dA-nebdim {"verdict": "KNOWN", "relation": "R1"}
+dA-nebsw {"verdict": "KNOWN", "relation": "R2"}
+dA-planetx {"verdict": "NEW"}
+dA-scopesole {"verdict": "NEW"}
+dA-step0 {"verdict": "NO_DEFICIT"}
+dA-symsole {"verdict": "NEW"}
+dA-typesole {"verdict": "NEW"}
+dA-visible {"verdict": "KNOWN", "relation": "R1"}
+dB-bowen reopened ['dA-helium']
+dB-fall reopened ['dA-nebdim']
+dB-forkdecide reopened ['dA-fork']
+dB-inside reopened []
+dB-knownfork reopened ['dA-coronium']
+dB-nd reopened ['dA-nebdim']
+dB-none reopened []
+dB-planetx reopened ['dA-planetx']
+dB-precision reopened ['dA-helium']
+dB-rootnone reopened []

@@ -1,0 +1,194 @@
+{
+ "id": "W-21",
+ "experiment": "A",
+ "observable": "kimb",
+ "quantities": {
+  "kimb": {
+   "N": 1,
+   "T": -1
+  },
+  "aq": {
+   "T": 1
+  },
+  "bw": {
+   "N": 1
+  },
+  "cs": {
+   "K": 1
+  }
+ },
+ "constants": {
+  "ke": {
+   "value": "17/5",
+   "dims": {
+    "N": 1,
+    "T": -1
+   }
+  },
+  "kf": {
+   "value": "250",
+   "dims": {
+    "K": 1
+   }
+  },
+  "kt": {
+   "value": "3/2",
+   "dims": {
+    "T": 1
+   }
+  }
+ },
+ "observers": {
+  "pirro": "1/16",
+  "tavo": "1/25"
+ },
+ "base_law": "kimb = ke*bw/(bw + ke*aq)",
+ "visible": null,
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "lask",
+   "term": "ke*(aq/kt)**2",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "aq/kt",
+    "factor": {
+     "type": "switch",
+     "on": "<",
+     "threshold": "1/3"
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "object": "zuro",
+   "term": "ke*bw**2/(bw + ke*aq)**2",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R3",
+   "object": "hosp",
+   "term": "ke*cs/kf",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "cs/kf",
+    "factor": {
+     "type": "switch",
+     "on": ">",
+     "threshold": "3/2"
+    }
+   }
+  },
+  {
+   "id": "R4",
+   "object": "vimo",
+   "term": "bw/aq",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "symmetries": [],
+ "old_observations": [
+  {
+   "state": {
+    "aq": "1/4",
+    "bw": "2",
+    "cs": "120"
+   },
+   "value": "967/400",
+   "observer": "pirro"
+  },
+  {
+   "state": {
+    "aq": "2/5",
+    "bw": "7",
+    "cs": "300"
+   },
+   "value": "113/40",
+   "observer": "pirro"
+  },
+  {
+   "state": {
+    "aq": "1/5",
+    "bw": "11",
+    "cs": "210"
+   },
+   "value": "81/25",
+   "observer": "pirro"
+  },
+  {
+   "state": {
+    "aq": "3/4",
+    "bw": "5",
+    "cs": "340"
+   },
+   "value": "441/200",
+   "observer": "pirro"
+  },
+  {
+   "state": {
+    "aq": "3/10",
+    "bw": "3",
+    "cs": "60"
+   },
+   "value": "1021/400",
+   "observer": "pirro"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "aq": "4/5",
+    "bw": "6",
+    "cs": "520"
+   },
+   "value": "1057/400",
+   "observer": "pirro"
+  },
+  {
+   "state": {
+    "aq": "13/10",
+    "bw": "9",
+    "cs": "440"
+   },
+   "value": "5/2",
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "aq": "3/5",
+    "bw": "4",
+    "cs": "610"
+   },
+   "value": "1027/400",
+   "observer": "pirro"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "aq": "1",
+    "bw": "8",
+    "cs": "300"
+   },
+   "observer": "pirro"
+  },
+  {
+   "state": {
+    "aq": "1/4",
+    "bw": "3",
+    "cs": "700"
+   },
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "aq": "2",
+    "bw": "10",
+    "cs": "380"
+   },
+   "observer": "pirro"
+  }
+ ]
+}

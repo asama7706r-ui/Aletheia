@@ -1,0 +1,13 @@
+{
+ "id": "D-03",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "tumb",
+ "relation": {
+  "id": "R5",
+  "object": "lurn",
+  "term": "kv*ral*tep**3/(kw*kx**3)",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

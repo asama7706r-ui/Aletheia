@@ -1,0 +1,66 @@
+## Results
+
+| World | Verdict | Candidates |
+|---|---|---|
+| W-08 | NEW | none |
+| W-09 | FORK | R3, R4 |
+| W-10 | KNOWN | R4 |
+| W-11 | KNOWN | R1 |
+| W-12 | KNOWN | R3 |
+| W-13 | KNOWN | R2 |
+| W-14 | FORK | R1, R2, R4 |
+
+## Reasoning by world
+
+**W-08 (NEW).** The old residuals fit the base law: 73/350, −11/65, 193/675 and −319/1050 are all within 2/5. The new residuals are 183/80, 99/80 and 2591/720, so there is a deficit.
+- R1 (∝ 1/mev) fails. It would give a larger contribution at mev=85 than at mev=100, but the residual is smaller there.
+- R2 fails. The new reading at mev=100 needs λ ≥ 0.004756, while the reading at mev=85 needs λ ≤ 0.004657.
+- R3 fails. With its fixed coefficient it adds only about 0.012 where 2.29 is needed.
+- R4 fails. Its switch is off at every new state, since jor < 3/2.
+
+**W-09 (FORK R3, R4).** The new residuals are 10243/40850 and 56009/230800, so there is a deficit.
+- R3 fits. Its switch is off at all old states (cs ≤ 340) and on at the new ones. The two new readings need λ in [0.0347, 0.0461], and these ranges overlap.
+- R4 (bw/aq has the dimensions of y) also fits, in a narrow window. The tightest bounds are λ ≥ 46777/25849600 from the reading at aq=1/16 and λ ≤ 2933/1606000 from the old reading at aq=1/5. Cross-multiplying confirms the window is not empty. All other readings stay within precision inside this window.
+- R1 fails because the two new readings need incompatible λ.
+- R2 fails because the old state at aq=1/5 caps λ at 0.033, but the new readings need at least 0.063.
+
+**W-10 (KNOWN R4).** The new residuals are 40469/72680 and 22649/44175, so there is a deficit.
+- R3 fails because its switch is off (cs < 375).
+- R1 fails because it needs λ ≈ 523–656 at one new reading and ≈ 196–229 at the other.
+- R2 fails for the same reason as in W-09: the old cap of 0.033 is far below the required ≥ 0.148.
+- R4 fits with λ in [0.001373, 0.001579], and all old readings stay within precision.
+
+**W-11 (KNOWN R1).** The new residuals are 41/120 and 1/8, so there is a deficit.
+- R1 has an exact coefficient of 1/8. It adds 1/3 and 7/48 at the new states, leaving residuals of 1/120 and −1/48. All old residuals also stay within 1/30.
+- R3 is excluded on dimensions. The term vy·ux²/wq² would need a coefficient with dimension L⁻¹, and no product of powers of ga and gm gives that.
+- R2 is dimensionally possible through a factor ga^(−1/2), but the two new readings need incompatible λ.
+- R4 fails. The old readings force λ ≤ 0.0018, but the reading at ux=2 needs about 0.017.
+
+**W-12 (KNOWN R3).** The old readings alone put μ in [−59/75, −251/324]. The new readings then leave residuals of about +0.82 and +0.51, so there is a deficit.
+- R3 fits. Its dimmer is nearly 0 at the old states and large at the new ones. For example, μ = −0.78 with λ = 0.195 fits all six readings.
+- R1 fails because the new readings would need μ ≥ −0.68.
+- R2 fails because its switch is off (ruk ≤ 7).
+- R4 has a fixed negative contribution where a positive one is needed.
+
+**W-13 (KNOWN R2).** The new readings would need μ ≈ −0.85, but the old readings require μ ≈ −0.78, so there is a deficit.
+- R2 fits. Its switch is off at all old states and on at the new ones (ruk > 7). For example, μ = −98/125 with λ = −1/100 fits every reading.
+- R1 and R3 fail because they still force μ ≈ −0.85 at the new state where ruk=17/2.
+- R4 shifts the old readings to μ ≈ −0.747 but the new ones to μ ≈ −0.83, so they cannot agree.
+
+**W-14 (FORK R1, R2, R4).** The new residual is 1017/1360 ≈ 0.748, with precision 1/8, so there is a deficit.
+- R1 fits with λ in [0.000271, 0.000380], and the old readings stay within 2/5.
+- R2 fits with λ in [0.001047, 0.001467], under the old cap of 0.00221.
+- R4 fits. Its switch is on only at the new state (jor = 9/4 > 3/2), so λ can be chosen freely.
+- R3 has a fixed contribution of 1215/1312. That overshoots, leaving a residual of −19881/111520 ≈ −0.178, which is outside 1/8.
+
+```json
+[
+ {"id": "W-08", "verdict": "NEW"},
+ {"id": "W-09", "verdict": "FORK", "branches": ["R3", "R4"]},
+ {"id": "W-10", "verdict": "KNOWN", "relation": "R4"},
+ {"id": "W-11", "verdict": "KNOWN", "relation": "R1"},
+ {"id": "W-12", "verdict": "KNOWN", "relation": "R3"},
+ {"id": "W-13", "verdict": "KNOWN", "relation": "R2"},
+ {"id": "W-14", "verdict": "FORK", "branches": ["R1", "R2", "R4"]}
+]
+```

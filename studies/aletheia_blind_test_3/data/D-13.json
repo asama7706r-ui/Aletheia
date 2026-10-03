@@ -1,0 +1,13 @@
+{
+ "id": "D-13",
+ "experiment": "B",
+ "type": "observation",
+ "world": "W-21",
+ "state": {
+  "aq": "1",
+  "bw": "8",
+  "cs": "300"
+ },
+ "observer": "pirro",
+ "value": "11393/4560"
+}

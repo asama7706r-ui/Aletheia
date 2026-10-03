@@ -1,0 +1,45 @@
+W-01 {"verdict": "NEW"}
+W-02 {"verdict": "NO_DEFICIT"}
+W-03 {"verdict": "NEW"}
+W-04 {"verdict": "KNOWN", "relation": "R4"}
+W-05 {"verdict": "NEW"}
+W-06 {"verdict": "NO_DEFICIT"}
+W-07 {"verdict": "NEW"}
+W-08 {"verdict": "NEW"}
+W-09 {"verdict": "FORK", "branches": ["R3", "R4"]}
+W-10 {"verdict": "KNOWN", "relation": "R4"}
+W-11 {"verdict": "KNOWN", "relation": "R1"}
+W-12 {"verdict": "KNOWN", "relation": "R3"}
+W-13 {"verdict": "KNOWN", "relation": "R2"}
+W-14 {"verdict": "FORK", "branches": ["R1", "R2", "R4"]}
+W-15 {"verdict": "FORK", "branches": ["R3", "R4"]}
+W-16 {"verdict": "NEW"}
+W-17 {"verdict": "NEW"}
+W-18 {"verdict": "NEW"}
+W-19 {"verdict": "NEW"}
+W-20 {"verdict": "KNOWN", "relation": "R1"}
+W-21 {"verdict": "KNOWN", "relation": "R3"}
+W-22 {"verdict": "NO_DEFICIT"}
+W-23 {"verdict": "FORK", "branches": ["R1", "R2"]}
+W-24 {"verdict": "KNOWN", "relation": "R3"}
+W-25 {"verdict": "KNOWN", "relation": "R4"}
+W-26 {"verdict": "FORK", "branches": ["R1", "R2"]}
+W-27 {"verdict": "FORK", "branches": ["R1", "R4"]}
+D-01 reopened []
+D-02 reopened []
+D-03 reopened ['W-17', 'W-24', 'W-26']
+D-04 reopened ['W-01', 'W-09', 'W-10', 'W-15', 'W-19', 'W-21', 'W-22', 'W-25']
+D-05 reopened ['W-04', 'W-08', 'W-14']
+D-06 reopened ['W-17', 'W-24', 'W-26']
+D-07 reopened ['W-01', 'W-15', 'W-25']
+D-08 reopened []
+D-09 reopened []
+D-10 reopened ['W-27']
+D-11 reopened ['W-07', 'W-20', 'W-27']
+D-12 reopened ['W-09', 'W-10', 'W-19', 'W-21']
+D-13 reopened ['W-21']
+D-14 reopened ['W-02']
+D-15 reopened ['W-18']
+D-16 reopened []
+D-17 reopened ['W-14']
+D-18 reopened ['W-07', 'W-20', 'W-27']

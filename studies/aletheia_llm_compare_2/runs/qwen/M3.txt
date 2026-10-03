@@ -1,0 +1,127 @@
+```json
+[
+  {
+    "id": "W-15",
+    "verdict": "FORK",
+    "branches": [
+      "R3",
+      "R4"
+    ],
+    "excluded": {
+      "R1": [
+        "SYMMETRY",
+        "SHAPE"
+      ],
+      "R2": [
+        "SYMMETRY",
+        "SHAPE"
+      ]
+    }
+  },
+  {
+    "id": "W-16",
+    "verdict": "NEW",
+    "excluded": {
+      "R1": [
+        "BOUND"
+      ],
+      "R2": [
+        "SHAPE"
+      ],
+      "R3": [
+        "TYPE"
+      ],
+      "R4": [
+        "SHAPE"
+      ]
+    }
+  },
+  {
+    "id": "W-17",
+    "verdict": "NEW",
+    "excluded": {
+      "R1": [
+        "SHAPE"
+      ],
+      "R2": [
+        "BOUND"
+      ],
+      "R3": [
+        "BOUND"
+      ],
+      "R4": [
+        "SHAPE"
+      ]
+    }
+  },
+  {
+    "id": "W-18",
+    "verdict": "NEW",
+    "excluded": {
+      "R1": [
+        "SHAPE"
+      ],
+      "R2": [
+        "SCOPE"
+      ],
+      "R3": [
+        "SHAPE"
+      ],
+      "R4": [
+        "BOUND"
+      ]
+    }
+  },
+  {
+    "id": "W-19",
+    "verdict": "NEW",
+    "excluded": {
+      "R1": [
+        "SCOPE"
+      ],
+      "R2": [
+        "SHAPE"
+      ],
+      "R3": [
+        "SHAPE"
+      ],
+      "R4": [
+        "SHAPE"
+      ]
+    }
+  },
+  {
+    "id": "W-20",
+    "verdict": "KNOWN",
+    "relation": "R1",
+    "excluded": {
+      "R2": [
+        "BOUND"
+      ],
+      "R3": [
+        "TYPE",
+        "SHAPE"
+      ],
+      "R4": [
+        "SCOPE"
+      ]
+    }
+  },
+  {
+    "id": "W-21",
+    "verdict": "KNOWN",
+    "relation": "R3",
+    "excluded": {
+      "R1": [
+        "SHAPE"
+      ],
+      "R2": [
+        "BOUND"
+      ],
+      "R4": [
+        "SHAPE"
+      ]
+    }
+  }
+]
+```

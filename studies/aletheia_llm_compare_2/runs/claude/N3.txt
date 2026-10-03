@@ -1,0 +1,52 @@
+The established law fails in every world. Each verdict comes from checking whether each ledger candidate, with its own coefficient and with mu where a visible relation exists, fits all old and new readings within precision. Candidates are also ruled out if they break a declared symmetry or have dimensions that the declared constants cannot fix.
+
+**W-15: FORK (R3, R4).** The base law fits the old readings. The new readings miss by 61/175 and 929/700, against a precision of 1/25.
+- R1 changes sign under the flp symmetry and R2 changes sign under swp, so both must have a zero coefficient.
+- R3 works for any lam in about [0.0288, 0.0306]; lam = 3/100 fits every reading.
+- R4 has a dimensionless coverage factor zun/(1+zun) and is symmetric. It works for any lam in about [0.0285, 0.0303]; lam = 1/34 fits every reading.
+
+**W-16: NEW.** New readings 1 and 2 miss by 13/150 and 41/600, against precisions of 1/30 and 1/16.
+- R1, with its exact coefficient 1/8, adds 0.223 at new reading 1, but that reading only needs 0.087.
+- For R2, new reading 1 needs lam ≥ 0.041 but new reading 2 needs lam ≤ 0.025.
+- R3 fits the numbers, but its coefficient would need dimension L⁻¹, which cannot be made from ga and gm.
+- R4 is effectively always on, with a factor of about 1. The old reading at ux = 3/2 caps lam at 0.0018, while new reading 1 needs at least 0.0044.
+
+**W-17: NEW.** Using only the visible relation, new reading 1 needs mu in [0.396, 0.402] and new reading 3 needs mu in [0.368, 0.373]. These do not overlap.
+- R1 would need a steep negative slope in lam, which the old readings forbid.
+- R2 is switched off at the old readings 1, 3, 4 and at new reading 3. Those readings alone are already inconsistent.
+- R3 can make the old reading at ral = 1 reach at most 0.138 (in units of kv), but that reading needs at least 0.162.
+- R4 needs lam ≥ 1.8, which destroys the old readings.
+
+**W-18: NEW.** The old readings force mu ≤ −0.7747. With that, new reading 2 needs a positive addition of at least about 0.044.
+- R2 never switches on, since ruk/nq is never above 2.
+- R1 and R3 are far larger at new reading 1 than at new reading 3. Matching those two caps lam (≤ 0.0218 and ≤ 0.0201), but new reading 2 needs lam ≥ 0.038 and ≥ 0.026 respectively.
+- R4's exact −3/5 coefficient would force mu to be about +0.86 at new reading 1.
+
+**W-19: NEW.**
+- R1 and R3 are switched off at both new readings.
+- R2 needs lam ≥ −0.319 from new reading 1 and lam ≤ −0.660 from new reading 2.
+- R4 needs lam ≥ −0.080 and lam ≤ −0.165.
+
+**W-20: KNOWN (R1).**
+- R1 fits for lam in [0.0745, 0.0765]. Its coverage factor fades at the old (large sel) readings, which all stay within 1/20.
+- R2 is always on and adds about −0.34 at the first old reading.
+- R3 would need a coefficient with dimension L, which the constants cannot provide.
+- R4's switch is off at both new readings.
+
+**W-21: KNOWN (R3).**
+- R3 switches on only when cs > 375, which is all three new readings and no old ones. lam = 1/25 fits all three.
+- R1 is off at the new readings.
+- R2 needs lam of about 0.17, which ruins the old readings.
+- R4's ranges from the new readings do not overlap.
+
+```json
+[
+ {"id": "W-15", "verdict": "FORK", "branches": ["R3", "R4"]},
+ {"id": "W-16", "verdict": "NEW"},
+ {"id": "W-17", "verdict": "NEW"},
+ {"id": "W-18", "verdict": "NEW"},
+ {"id": "W-19", "verdict": "NEW"},
+ {"id": "W-20", "verdict": "KNOWN", "relation": "R1"},
+ {"id": "W-21", "verdict": "KNOWN", "relation": "R3"}
+]
+```

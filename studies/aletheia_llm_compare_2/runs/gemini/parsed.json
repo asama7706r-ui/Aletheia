@@ -1,0 +1,280 @@
+{
+ "answers": {
+  "N": {
+   "W-01": {
+    "verdict": "NEW"
+   },
+   "W-02": {
+    "verdict": "NO_DEFICIT"
+   },
+   "W-03": {
+    "verdict": "NEW"
+   },
+   "W-04": {
+    "verdict": "KNOWN",
+    "relation": "R4"
+   },
+   "W-05": {
+    "verdict": "NEW"
+   },
+   "W-06": {
+    "verdict": "KNOWN",
+    "relation": "R3"
+   },
+   "W-07": {
+    "verdict": "KNOWN",
+    "relation": "R3"
+   },
+   "W-08": {
+    "verdict": "NEW"
+   },
+   "W-09": {
+    "verdict": "FORK",
+    "branches": [
+     "R3",
+     "R4"
+    ]
+   },
+   "W-10": {
+    "verdict": "KNOWN",
+    "relation": "R4"
+   },
+   "W-11": {
+    "verdict": "KNOWN",
+    "relation": "R1"
+   },
+   "W-12": {
+    "verdict": "KNOWN",
+    "relation": "R3"
+   },
+   "W-13": {
+    "verdict": "NEW"
+   },
+   "W-14": {
+    "verdict": "FORK",
+    "branches": [
+     "R1",
+     "R2",
+     "R4"
+    ]
+   },
+   "W-15": {
+    "verdict": "FORK",
+    "branches": [
+     "R3",
+     "R4"
+    ]
+   },
+   "W-16": {
+    "verdict": "NEW"
+   },
+   "W-17": {
+    "verdict": "NEW"
+   },
+   "W-18": {
+    "verdict": "NEW"
+   },
+   "W-19": {
+    "verdict": "NEW"
+   },
+   "W-20": {
+    "verdict": "KNOWN",
+    "relation": "R1"
+   },
+   "W-21": {
+    "verdict": "KNOWN",
+    "relation": "R3"
+   },
+   "W-22": {
+    "verdict": "NO_DEFICIT"
+   },
+   "W-23": {
+    "verdict": "FORK",
+    "branches": [
+     "R1",
+     "R2"
+    ]
+   },
+   "W-24": {
+    "verdict": "KNOWN",
+    "relation": "R3"
+   },
+   "W-25": {
+    "verdict": "KNOWN",
+    "relation": "R4"
+   },
+   "W-26": {
+    "verdict": "KNOWN",
+    "relation": "R1"
+   },
+   "W-27": {
+    "verdict": "FORK",
+    "branches": [
+     "R1",
+     "R4"
+    ]
+   }
+  },
+  "M": {
+   "W-01": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "SYMMETRY"
+     ],
+     "R2": [
+      "SHAPE",
+      "SYMMETRY"
+     ],
+     "R3": [
+      "SHAPE"
+     ],
+     "R4": [
+      "SCOPE"
+     ]
+    }
+   },
+   "W-02": {
+    "verdict": "NO_DEFICIT"
+   },
+   "W-03": {
+    "verdict": "KNOWN",
+    "relation": "R2",
+    "excluded": {
+     "R1": [
+      "BOUND"
+     ],
+     "R3": [
+      "SHAPE",
+      "TYPE"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-04": {
+    "verdict": "KNOWN",
+    "relation": "R4",
+    "excluded": {
+     "R1": [
+      "BOUND"
+     ],
+     "R2": [
+      "SHAPE"
+     ],
+     "R3": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-05": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "SHAPE"
+     ],
+     "R3": [
+      "SCOPE"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-06": {
+    "verdict": "NO_DEFICIT"
+   },
+   "W-07": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "SCOPE"
+     ],
+     "R2": [
+      "SHAPE"
+     ],
+     "R3": [
+      "TYPE"
+     ],
+     "R4": [
+      "SCOPE"
+     ]
+    }
+   },
+   "W-08": {
+    "verdict": "MISSING"
+   },
+   "W-09": {
+    "verdict": "MISSING"
+   },
+   "W-10": {
+    "verdict": "MISSING"
+   },
+   "W-11": {
+    "verdict": "MISSING"
+   },
+   "W-12": {
+    "verdict": "MISSING"
+   },
+   "W-13": {
+    "verdict": "MISSING"
+   },
+   "W-14": {
+    "verdict": "MISSING"
+   },
+   "W-15": {
+    "verdict": "MISSING"
+   },
+   "W-16": {
+    "verdict": "MISSING"
+   },
+   "W-17": {
+    "verdict": "MISSING"
+   },
+   "W-18": {
+    "verdict": "MISSING"
+   },
+   "W-19": {
+    "verdict": "MISSING"
+   },
+   "W-20": {
+    "verdict": "MISSING"
+   },
+   "W-21": {
+    "verdict": "MISSING"
+   },
+   "W-22": {
+    "verdict": "MISSING"
+   },
+   "W-23": {
+    "verdict": "MISSING"
+   },
+   "W-24": {
+    "verdict": "MISSING"
+   },
+   "W-25": {
+    "verdict": "MISSING"
+   },
+   "W-26": {
+    "verdict": "MISSING"
+   },
+   "W-27": {
+    "verdict": "MISSING"
+   }
+  }
+ },
+ "log": {
+  "N1": "parsed 7 entries",
+  "N2": "parsed 7 entries",
+  "N3": "parsed 7 entries",
+  "N4": "parsed 6 entries",
+  "M1": "parsed 7 entries",
+  "M2": "no parsable list",
+  "M3": "no parsable list",
+  "M4": "no parsable list"
+ }
+}

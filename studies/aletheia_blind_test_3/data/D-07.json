@@ -1,0 +1,13 @@
+{
+ "id": "D-07",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "ostr",
+ "relation": {
+  "id": "R5",
+  "object": "terk",
+  "term": "cj*xel*yor*zun**2",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

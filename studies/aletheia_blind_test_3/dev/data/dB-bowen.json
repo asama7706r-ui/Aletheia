@@ -1,0 +1,13 @@
+{
+ "id": "dB-bowen",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "ya",
+ "relation": {
+  "id": "R4",
+  "object": "ob1",
+  "term": "xa*(xa-1)*(xa-2)",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

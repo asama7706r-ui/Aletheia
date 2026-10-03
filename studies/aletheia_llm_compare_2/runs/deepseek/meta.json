@@ -1,0 +1,14 @@
+{
+ "name_as_shown": "deepseek-4.1-thinking",
+ "family": "deepseek",
+ "interface": "chat.deepseek.com",
+ "reasoning_option": "deep reasoning",
+ "memory_off": true,
+ "web_search_off": true,
+ "code_execution": "used on: M2",
+ "scored": true,
+ "first_run_date": "2026-03-10",
+ "last_run_date": "2026-03-10",
+ "reruns": "1",
+ "notes": "deepseek stop working so the kimi k3 will continue M2, M3, M4"
+}

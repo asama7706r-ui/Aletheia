@@ -1,0 +1,46 @@
+I took each world on its own. For every candidate, I checked symmetry and dimensions first, then fit the readings. With no visible relation the fit is one-dimensional (an interval for λ); with one it's a small 2-D feasibility check over (μ, λ).
+
+**W-01: NEW.** The base law fits the old readings. New reading 1 misses by 71/280, which is more than 1/25, so there is a deficit.
+- R1 (xel·yor) changes sign under the symmetry flp, and R2 (xel²−yor²) changes sign under swp. Each would need λ = 0, so both are excluded. R1 would otherwise fit the numbers.
+- R3: new reading 1 forces λ ≥ 299/15625, but new reading 2 forces λ ≤ 8600/591361. The two ranges don't overlap.
+- R4: the new readings need λ ≥ 299/900, but old reading 4 (zun = 1/4) allows at most λ ≤ 43/405.
+
+**W-02: NO_DEFICIT.** The base law fits every reading. The new misses are 131/2400, about 0.0541 and about 0.104, all within the coarse new precisions of 3/40, 3/40 and 1/8.
+
+**W-03: NEW.** The new misses are 59/20 and 41/20, a large deficit.
+- R1 has its coefficient fixed at exactly 1/8, which leaves 2.95 − 20/9 unexplained at new reading 1. It would fit with a coefficient near 1/6, but the coefficient is given.
+- R2: new reading 1 needs λ ≈ 0.104, while new reading 2 needs λ ≈ 0.024.
+- R3 is dimensionally impossible: its coefficient would need dimension L⁻¹, which no power of ga or gm gives.
+- R4 has a coverage factor of about 1 at the old states, which pins λ ≈ 0. The new data would need λ ≈ 0.19 from reading 1 and about 11 from reading 2.
+
+**W-04: KNOWN R4.** The new misses are 145/24 and 823/280.
+- R4 switches on only when jor > 3/2. That never happens in the old readings and does happen in both new ones. The two new readings give λ in [1917/672000, 11583/3920000], which is non-empty.
+- R1 fits both new readings, but needs λ ≥ 497/337500. Old reading 4 caps it at λ ≤ 2828/1968750, so R1 fails, though only narrowly.
+- R2 needs λ ≈ 0.15 versus ≈ 0.005 at the two new readings.
+- R3's fixed contribution is only about 0.46, against a miss of about 6.04.
+
+**W-05: NEW.** The old readings pin μ to [−59/75, −0.7747]. With that, the new readings still need roughly +3.9, +3.5 and +9.2 more.
+- R2's switch (ruk/nq > 2) is off at every state.
+- R4 has a fixed negative contribution of −18/5 at new reading 1, the wrong sign.
+- R1 is impossible: old readings 1 and 2 force λ ≤ about 15, while new reading 3 needs λ ≥ about 114.
+- R3's dimmer is nearly off at new readings 2 and 3 (factors 4/445 and 16/457). Fitting new readings 1 and 3 together forces μ ≈ −38, which the old readings exclude.
+
+**W-06: NO_DEFICIT.** μ ∈ [0.177968…, 0.178879…] fits all six readings with the base law plus the visible relation. The old readings allow [0.174359, 0.205812], and the two new readings allow [0.172991, 0.181538] and [0.177968, 0.178879].
+
+**W-07: NEW.** The new misses are 5/12 and 7/10, against precisions of 3/40 and 1/8, so there is a deficit.
+- R1: the dimmed fits give λ ≤ 0.1317 from new reading 1 and λ ≥ 0.1797 from new reading 2.
+- R2: new reading 1 gives λ ≤ 0.001386, but new reading 2 needs λ ≥ 0.001546.
+- R3 fits the numbers, but its coefficient would need dimension L, which no product of powers of kz, kq and vu can give.
+- R4's switch needs dov·pim > 39/4, and the new states have only 8 and 15/2, so it is off.
+
+```json
+[
+ {"id": "W-01", "verdict": "NEW"},
+ {"id": "W-02", "verdict": "NO_DEFICIT"},
+ {"id": "W-03", "verdict": "NEW"},
+ {"id": "W-04", "verdict": "KNOWN", "relation": "R4"},
+ {"id": "W-05", "verdict": "NEW"},
+ {"id": "W-06", "verdict": "NO_DEFICIT"},
+ {"id": "W-07", "verdict": "NEW"}
+]
+```

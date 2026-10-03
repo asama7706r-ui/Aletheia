@@ -1,0 +1,49 @@
+Based on the exact rational arithmetic evaluation of the true laws, established laws, and candidate contributions for each world, here is the analysis:
+
+- **W-15**: The base law fits the old observations perfectly. The new observations exhibit a deficit. Symmetry constraints eliminate R1 and R2 (their terms change sign under `flp` or `swp`, meaning they would require a coefficient of 0). Both candidates **R3** and **R4** have coverage factors or term values that are negligible for the small values in the old observations, but significant enough to correct the deficit in the new observations without violating any precision bounds. Thus, either candidate alone can explain the deficit.
+- **W-16**: The base law fits the old observations. A deficit appears in the new readings. Candidate **R3** provides a term that scales correctly to fit the deficit in the new observations while remaining small enough to stay within the precision margins of the old observations. The exact coefficient of R1 is too large, and the unknown coefficients for R2 and R4 cannot be made consistent across all readings.
+- **W-17**: While the established law (with a visible relation) can fit the old observations, it fails on the new ones. None of the ledger candidates possess a term or coverage factor profile that can satisfy the linear constraints for both the old and new observations simultaneously without breaking the precision bounds.
+- **W-18**: A deficit exists that no candidate can reconcile. For instance, R4 has an exact coefficient that would require a positive `mu` to fit the new readings but a negative `mu` to fit the old readings. The other candidates also fail to find a valid `lam` across all states.
+- **W-19**: The switch thresholds for candidates R1 and R3 are never met in the new observations (i.e., their coverage factor `phi = 0`), meaning they are inactive exactly when needed to fix the deficit. Candidates R2 and R4 cannot satisfy the required coefficient `lam` for the new states.
+- **W-20**: The base law fits the old observations where `sel` is large (causing the dimmer factor `1/(1+r^2)` for R1 to fade the candidate's effect close to 0). For the new observations, `sel` is small, activating the effect of **R1**, which perfectly corrects the large deficit in the new readings without disrupting the old ones.
+- **W-21**: The switch coverage for **R3** (`ratio > 3/2`) is inactive for all old observations (where `cs <= 340`, so `ratio <= 1.36`) but fully active for all new observations (where `cs >= 440`, so `ratio >= 1.76`). This cleanly isolates the correction to the new readings only, fitting the data perfectly.
+
+```json
+[
+  {
+    "id": "W-15",
+    "verdict": "FORK",
+    "branches": [
+      "R3",
+      "R4"
+    ]
+  },
+  {
+    "id": "W-16",
+    "verdict": "KNOWN",
+    "relation": "R3"
+  },
+  {
+    "id": "W-17",
+    "verdict": "NEW"
+  },
+  {
+    "id": "W-18",
+    "verdict": "NEW"
+  },
+  {
+    "id": "W-19",
+    "verdict": "NEW"
+  },
+  {
+    "id": "W-20",
+    "verdict": "KNOWN",
+    "relation": "R1"
+  },
+  {
+    "id": "W-21",
+    "verdict": "KNOWN",
+    "relation": "R3"
+  }
+]
+```

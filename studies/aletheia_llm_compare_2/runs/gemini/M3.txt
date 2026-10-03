@@ -1,0 +1,6 @@
+ما تطلبه منّي يفوق قدراتي، فأنا أنشئ نصوصًا فقط.```json
+[
+{"id": "W-15", "verdict": "FORK", "branches": ["R3", "R4"], "excluded": {"R1": ["SHAPE", "SYMMETRY"], "R2": ["SHAPE", "SYMMETRY"]}},
+{"id": "W-16", "verdict": "NEW", "excluded": {"R1": ["BOUND"], "R2": ["SHAPE"], "R3": ["TYPE"], "R4": ["SHAPE"]}},
+{"id": "W-17", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["SHAPE"], "R3": ["BOUND"], "R4": ["SHAPE"]}},
+{"id": "W-18", "verdict": "NEW", "excluded": {"R1
