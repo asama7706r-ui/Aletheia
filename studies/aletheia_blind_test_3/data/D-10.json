@@ -1,0 +1,13 @@
+{
+ "id": "D-10",
+ "experiment": "B",
+ "type": "observation",
+ "world": "W-27",
+ "state": {
+  "dov": "9/2",
+  "pim": "5/2",
+  "sel": "160"
+ },
+ "observer": "kelto",
+ "value": "295683/400"
+}

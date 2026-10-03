@@ -1,0 +1,13 @@
+{
+ "id": "D-02",
+ "experiment": "B",
+ "type": "observation",
+ "world": "W-11",
+ "state": {
+  "ux": "3",
+  "vy": "2",
+  "wq": "5/4"
+ },
+ "observer": "hesk",
+ "value": "2603/300"
+}

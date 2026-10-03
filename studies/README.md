@@ -7,6 +7,8 @@ Each folder is one self-contained study with all of its materials: protocol, pro
 | [`aletheia_blind_test_1`](aletheia_blind_test_1/README.md) | 2026-09-29 | Choose the right kind and family for a law's unknowns without silent collapse (E1). Classify filled laws with an identity card (E2). | PASS / PASS |
 | [`aletheia_blind_test_2`](aletheia_blind_test_2/README.md) | 2026-09-30 | Decide or fork, with checkable decisive observations (A). Grades of zero without false death (B). | PASS / PASS |
 | [`aletheia_llm_compare_1`](aletheia_llm_compare_1/REPORT.md) | 2026-10-01 | Do frontier LLMs execute the blind-test-2 rules as well, when given them? | Hypothesis refuted: they do |
+| [`aletheia_blind_test_3`](aletheia_blind_test_3/README.md) | 2026-10-02 | The nebulium check: look for a registered relation whose coverage lets it return before inventing a new kind; decide, fork or declare NEW with proofs (A). Reopen exactly the files that depend on a new datum (B). | PASS / PASS |
+| [`aletheia_llm_compare_2`](aletheia_llm_compare_2/REPORT.md) | 2026-10-03 | Do frontier LLMs reach the blind-test-3 Part A answers with the question only, without the method? | I1: one model (Claude) did, 27/27; no kernel edge on these worlds |
 | [`checks`](checks/README.md) | - | Scratch scripts from design discussions | not evidence |
 
 ## How the studies protect themselves
@@ -35,6 +37,18 @@ Each folder is one self-contained study with all of its materials: protocol, pro
 | `aletheia_llm_compare_1/amendment_1.md` | `c48fb61aa880b495d21e9e65855c99d44eff971541e91c5a5b3a66d503eef350` |
 | `aletheia_llm_compare_1/RUNS_FROZEN.txt` | `34343eae1d0f01d3500b332ef4c8ba7b50927ae5dad5a11a2a30e10c51b6e732` |
 | `aletheia_llm_compare_1/results/summary.txt` | `598c0390b1304349eedfeae654d58d5af1c2ff132d667254c5a45516987ae944` |
+| `aletheia_blind_test_3/protocol_v3.md` | `297f78e9eac34b9587b2c92bb0118bc6dde34550bd6664f109254b01370c61bd` |
+| `aletheia_blind_test_3/procedure/procedure_v3.py` | `08e9534722a6cfc0ab06cb10baf97ddf140d2ed8f15f80e2b4470a0802aed95d` |
+| `aletheia_blind_test_3/scorer/ref_v3.py` | `91e03783ffc7b2e13897da12c5e9d93ac8b7a9465e34833be179c9a688f73dd0` |
+| `aletheia_blind_test_3/scorer/score_v3.py` | `577fa12433b3656a23dca65d8b2ef8f7921a3cc552d12e50fd741a42e84be2cf` |
+| `aletheia_blind_test_3/scorer/validate_v3.py` | `c7f71000490f537b12995c33cc61e7bead1af59f4fab6c5d76e3a3915f2f969d` |
+| `aletheia_blind_test_3/tools/hash_files.py` | `d83baa5e48428c26c8996d110d025675150b6ec0e904575bd0bbaad50fd7f54b` |
+| `aletheia_blind_test_3/key/key.json` | `daee204d4432e3774dcf512dae5311b08ee70cc2b8bef53816133503d92d1b34` |
+| `aletheia_blind_test_3/results/outputs.json` | `393e65dacff9119600305e53b5faa339d744ecadabbe0626a2c7ee330cf15a9b` |
+| `aletheia_blind_test_3/results/report.json` | `dd7034634bb5ce700e1ce6a9e73d465df5fa7ed3cc5ab46a5ff5c41c8755f822` |
+| `aletheia_llm_compare_2/SEALED_HASHES.txt` | `f9e8234a39c1596a4d80a073d8e8c7a1192681d221260eb4be43d0cd53388906` |
+| `aletheia_llm_compare_2/RUNS_FROZEN.txt` | `e0a090c5862591bd3a60267cab57a9416722eaac3205a7219b4d218d63e23506` |
+| `aletheia_llm_compare_2/results/summary.txt` | `ba1c34b7ad40bd89391c26cb60e7459946e811586f11007bb1d220d2522d40dd` |
 
 ## Requirements
 Python 3 and sympy (developed with sympy 1.14). There are no other dependencies.

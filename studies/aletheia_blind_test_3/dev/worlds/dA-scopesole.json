@@ -1,0 +1,111 @@
+{
+ "id": "dA-scopesole",
+ "experiment": "A",
+ "observable": "yh",
+ "quantities": {
+  "yh": {
+   "L": -1
+  },
+  "nh": {
+   "L": -3
+  },
+  "mh": {}
+ },
+ "constants": {
+  "kh": {
+   "value": "20",
+   "dims": {
+    "L": -3
+   }
+  },
+  "kg": {
+   "value": "1",
+   "dims": {
+    "L": -1
+   }
+  }
+ },
+ "observers": {
+  "lab10": "1",
+  "lab12": "1/10",
+  "far10": "1/10"
+ },
+ "base_law": "yh = kg*mh",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "kg*mh",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "nh/kh",
+    "factor": {
+     "type": "switch",
+     "on": "<",
+     "threshold": "1"
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "kg*(mh+1)",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "nh": "1",
+    "mh": "1"
+   },
+   "value": "1",
+   "observer": "lab10"
+  },
+  {
+   "state": {
+    "nh": "1",
+    "mh": "2"
+   },
+   "value": "2",
+   "observer": "lab10"
+  },
+  {
+   "state": {
+    "nh": "1000",
+    "mh": "0"
+   },
+   "value": "0",
+   "observer": "lab12"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "nh": "1000",
+    "mh": "1"
+   },
+   "value": "7/5",
+   "observer": "far10"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "nh": "1",
+    "mh": "3"
+   },
+   "observer": "lab10"
+  },
+  {
+   "state": {
+    "nh": "1000",
+    "mh": "3"
+   },
+   "observer": "far10"
+  }
+ ],
+ "visible": null,
+ "symmetries": []
+}

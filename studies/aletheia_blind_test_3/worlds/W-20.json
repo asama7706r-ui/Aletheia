@@ -1,0 +1,188 @@
+{
+ "id": "W-20",
+ "experiment": "A",
+ "observable": "vexa",
+ "quantities": {
+  "vexa": {
+   "M": 1,
+   "L": 2,
+   "T": -3
+  },
+  "dov": {
+   "L": 1
+  },
+  "pim": {
+   "T": -1
+  },
+  "sel": {
+   "N": 1
+  }
+ },
+ "constants": {
+  "kz": {
+   "value": "7/3",
+   "dims": {
+    "M": 1
+   }
+  },
+  "kq": {
+   "value": "40",
+   "dims": {
+    "N": 1
+   }
+  },
+  "vu": {
+   "value": "13/4",
+   "dims": {
+    "L": 1,
+    "T": -1
+   }
+  }
+ },
+ "observers": {
+  "brav": "1/20",
+  "kelto": "3/40",
+  "yomp": "1/8"
+ },
+ "base_law": "vexa = kz*dov**2*pim**3",
+ "visible": null,
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "tarn",
+   "term": "kz*vu*dov*pim**2",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "sel/kq",
+    "factor": {
+     "type": "dimmer",
+     "expr": "1/(1+r**2)"
+    },
+    "summary": "fades as sel grows past kq"
+   }
+  },
+  {
+   "id": "R2",
+   "object": "wiss",
+   "term": "kz*dov*pim**2*(dov*pim - vu)",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R3",
+   "object": "hulo",
+   "term": "kz*dov*pim**3",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R4",
+   "object": "pemsy",
+   "term": "kz*vu**2*pim*sel/kq",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "dov*pim/vu",
+    "factor": {
+     "type": "switch",
+     "on": ">",
+     "threshold": "3"
+    },
+    "summary": "acts only when dov*pim exceeds 3*vu"
+   }
+  }
+ ],
+ "symmetries": [],
+ "old_observations": [
+  {
+   "state": {
+    "dov": "2",
+    "pim": "1",
+    "sel": "300"
+   },
+   "value": "747/80",
+   "observer": "brav"
+  },
+  {
+   "state": {
+    "dov": "3",
+    "pim": "1/2",
+    "sel": "520"
+   },
+   "value": "1039/400",
+   "observer": "brav"
+  },
+  {
+   "state": {
+    "dov": "5/2",
+    "pim": "3/2",
+    "sel": "410"
+   },
+   "value": "1969/40",
+   "observer": "brav"
+  },
+  {
+   "state": {
+    "dov": "4",
+    "pim": "3/4",
+    "sel": "880"
+   },
+   "value": "6283/400",
+   "observer": "brav"
+  },
+  {
+   "state": {
+    "dov": "3/2",
+    "pim": "5/4",
+    "sel": "640"
+   },
+   "value": "2059/200",
+   "observer": "brav"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "dov": "4",
+    "pim": "3/2",
+    "sel": "30"
+   },
+   "value": "12933/100",
+   "observer": "kelto"
+  },
+  {
+   "state": {
+    "dov": "19/4",
+    "pim": "5/4",
+    "sel": "29"
+   },
+   "value": "10557/100",
+   "observer": "kelto"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "dov": "13/4",
+    "pim": "5/2",
+    "sel": "45"
+   },
+   "observer": "yomp"
+  },
+  {
+   "state": {
+    "dov": "9/2",
+    "pim": "3/2",
+    "sel": "21"
+   },
+   "observer": "kelto"
+  },
+  {
+   "state": {
+    "dov": "5/2",
+    "pim": "11/4",
+    "sel": "260"
+   },
+   "observer": "brav"
+  }
+ ]
+}

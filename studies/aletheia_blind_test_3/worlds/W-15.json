@@ -1,0 +1,182 @@
+{
+ "id": "W-15",
+ "experiment": "A",
+ "observable": "ostr",
+ "quantities": {
+  "ostr": {
+   "J": 1
+  },
+  "xel": {
+   "L": 1
+  },
+  "yor": {
+   "L": 1
+  },
+  "zun": {}
+ },
+ "constants": {
+  "cj": {
+   "value": "9/14",
+   "dims": {
+    "J": 1,
+    "L": -2
+   }
+  },
+  "cl": {
+   "value": "6",
+   "dims": {
+    "L": 1
+   }
+  }
+ },
+ "observers": {
+  "tavo": "1/25",
+  "sunda": "2/5"
+ },
+ "base_law": "ostr = cj*(xel**2 + yor**2)",
+ "visible": null,
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "qova",
+   "term": "cj*xel*yor",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "bry",
+   "term": "cj*(xel**2 - yor**2)",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R3",
+   "object": "nim",
+   "term": "cj*(xel**2 + yor**2)**2/cl**2",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R4",
+   "object": "terk",
+   "term": "cj*cl**2*zun**2",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "zun",
+    "factor": {
+     "type": "dimmer",
+     "expr": "r/(1 + r)"
+    }
+   }
+  }
+ ],
+ "symmetries": [
+  {
+   "name": "swp",
+   "map": {
+    "xel": "1*yor",
+    "yor": "1*xel"
+   }
+  },
+  {
+   "name": "flp",
+   "map": {
+    "xel": "-1*xel"
+   }
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "xel": "1/2",
+    "yor": "2",
+    "zun": "1/9"
+   },
+   "value": "11/4",
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "xel": "-1",
+    "yor": "3/2",
+    "zun": "1/5"
+   },
+   "value": "207/100",
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "xel": "5/2",
+    "yor": "-1/2",
+    "zun": "1/7"
+   },
+   "value": "419/100",
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "xel": "3/2",
+    "yor": "1",
+    "zun": "1/4"
+   },
+   "value": "52/25",
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "xel": "-2",
+    "yor": "-1",
+    "zun": "1/12"
+   },
+   "value": "81/25",
+   "observer": "tavo"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "xel": "4",
+    "yor": "3",
+    "zun": "1"
+   },
+   "value": "821/50",
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "xel": "5",
+    "yor": "5",
+    "zun": "7/4"
+   },
+   "value": "3347/100",
+   "observer": "tavo"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "xel": "5",
+    "yor": "-5",
+    "zun": "1/3"
+   },
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "xel": "1",
+    "yor": "2",
+    "zun": "3"
+   },
+   "observer": "tavo"
+  },
+  {
+   "state": {
+    "xel": "3",
+    "yor": "4",
+    "zun": "7/4"
+   },
+   "observer": "sunda"
+  }
+ ]
+}

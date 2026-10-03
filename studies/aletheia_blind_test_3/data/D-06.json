@@ -1,0 +1,13 @@
+{
+ "id": "D-06",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "tumb",
+ "relation": {
+  "id": "R5",
+  "object": "pexa",
+  "term": "kv*ral**2*tep/(kw**2*kx)",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

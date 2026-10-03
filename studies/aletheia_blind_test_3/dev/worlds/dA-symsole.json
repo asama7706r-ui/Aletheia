@@ -1,0 +1,94 @@
+{
+ "id": "dA-symsole",
+ "experiment": "A",
+ "observable": "yd",
+ "quantities": {
+  "yd": {
+   "M": 1
+  },
+  "xf": {},
+  "xg": {}
+ },
+ "constants": {
+  "kn": {
+   "value": "1",
+   "dims": {
+    "M": 1
+   }
+  }
+ },
+ "observers": {
+  "lab9": "1/100",
+  "far9": "1/100"
+ },
+ "base_law": "yd = kn*xf**2",
+ "symmetries": [
+  {
+   "name": "mirror",
+   "map": {
+    "xf": "-xf"
+   }
+  }
+ ],
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "kn*xf",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "kn*xg",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "xf": "1/10",
+    "xg": "0"
+   },
+   "value": "1/100",
+   "observer": "lab9"
+  },
+  {
+   "state": {
+    "xf": "0",
+    "xg": "1"
+   },
+   "value": "0",
+   "observer": "lab9"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "xf": "2",
+    "xg": "1"
+   },
+   "value": "83/20",
+   "observer": "far9"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "xf": "3",
+    "xg": "0"
+   },
+   "observer": "lab9"
+  },
+  {
+   "state": {
+    "xf": "1",
+    "xg": "2"
+   },
+   "observer": "far9"
+  }
+ ],
+ "visible": null
+}

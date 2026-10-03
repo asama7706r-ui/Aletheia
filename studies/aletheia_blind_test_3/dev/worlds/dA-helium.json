@@ -1,0 +1,87 @@
+{
+ "id": "dA-helium",
+ "experiment": "A",
+ "observable": "ya",
+ "quantities": {
+  "ya": {},
+  "xa": {}
+ },
+ "observers": {
+  "lab3": "1/100",
+  "far3": "1/10",
+  "lab13": "1/100"
+ },
+ "base_law": "ya = xa",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "xa**2",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "xa**3",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R3",
+   "object": "ob2",
+   "term": "xa**2",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "xa",
+    "factor": {
+     "type": "switch",
+     "on": ">",
+     "threshold": "20"
+    }
+   }
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "xa": "1"
+   },
+   "value": "1",
+   "observer": "lab3"
+  },
+  {
+   "state": {
+    "xa": "2"
+   },
+   "value": "2",
+   "observer": "lab3"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "xa": "3"
+   },
+   "value": "5",
+   "observer": "far3"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "xa": "4"
+   },
+   "observer": "lab13"
+  },
+  {
+   "state": {
+    "xa": "10"
+   },
+   "observer": "far3"
+  }
+ ],
+ "constants": {},
+ "visible": null,
+ "symmetries": []
+}

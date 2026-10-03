@@ -12,15 +12,19 @@ Aletheia is a research program on a **deterministic, symbolic "epistemic kernel"
 | [Blind test 1](studies/aletheia_blind_test_1/README.md) (2026-09-29) | Choosing the right kind and algebraic family for a law's unknowns, without "silent collapse". Classifying a filled law with its identity card. | **PASS.** 28/28 against the best baseline's 16/28 (McNemar p = 0.00024). Identity card: balanced accuracy 0.905 against 0.667. |
 | [Blind test 2](studies/aletheia_blind_test_2/README.md) (2026-09-30) | Deciding when the givens decide, and forking with checkable decisive observations when they do not. Grading zeros without "false death". | **PASS.** 30/30, including 10/10 forks with certificates. 18/18, with 0 false deaths. |
 | [LLM comparison 1](studies/aletheia_llm_compare_1/REPORT.md) (2026-10-01) | Do frontier LLMs execute the same rules as well, when given them in plain text? | **Our hypothesis was refuted.** DeepSeek, Gemini and Qwen scored 30/30 and 18/18. Claude did the same after a declared correction of one corrupted transcript. The kernel's edge is **not** rule execution. |
+| [Blind test 3](studies/aletheia_blind_test_3/README.md) (2026-10-02) | The "nebulium check": before inventing a new kind, look for a registered relation whose coverage lets it return where the deficit is; decide, fork or declare NEW, with proofs. Reopen exactly the files that depend on a new datum. | **PASS.** 27/27 with proofs against the best baseline's 12/27 (McNemar p = 1/32768). Reopening: 18/18 exact lists, 0 silent changes. |
+| [LLM comparison 2](studies/aletheia_llm_compare_2/REPORT.md) (2026-10-03) | Do frontier LLMs reach the blind-test-3 answers when given only the question, without the method? | **No kernel edge on these worlds (pre-registered I1).** Claude scored 27/27 with the question only; Qwen 25, DeepSeek 24, Gemini 23. With the method, Qwen also scored 27/27. The verdict without the method rests on Claude alone, which is from the generator's model family. |
 
 **What these results show**
 - The decision rules can be computed exactly on unseen formal worlds, and every verdict comes with a machine-checkable certificate.
 - The rules are clear enough that four families of LLMs execute them perfectly when given them.
+- On the blind-test-3 worlds, where the coverage conditions are written into each world, a frontier LLM reaches the same answers even without being given the method.
 
 **What they do not show**
 - Real discovery.
 - Behaviour on noisy data.
-- Whether LLMs follow this discipline when they are *not* given the rules. This is untested.
+- Whether the kernel or an LLM can infer a coverage condition that is not written down. This is untested.
+- Behaviour at scale (many files, long dependency chains). This is untested.
 - Any accuracy advantage of the kernel over LLMs.
 
 **Shared limitations**
@@ -36,7 +40,7 @@ Every study is pre-registered:
 4. Reports are published verbatim.
 5. Post-hoc audits are kept separate from outcomes.
 
-All three studies reproduce **bit for bit** from this repository. See [studies/README.md](studies/README.md) for the hashes and the commands.
+All five studies reproduce **bit for bit** from this repository. See [studies/README.md](studies/README.md) for the hashes and the commands.
 
 ## Repository layout
 ```
@@ -44,6 +48,8 @@ studies/
   aletheia_blind_test_1/    blind test 1: protocol, procedure, scorer, 44 worlds, key, results
   aletheia_blind_test_2/    blind test 2: protocol, procedure, scorer, 48 worlds, key, results
   aletheia_llm_compare_1/   LLM comparison 1: protocol, task sheets, raw model replies, report
+  aletheia_blind_test_3/    blind test 3: protocol, procedure, independent reference scorer, validator, 27 worlds, 18 Part B items, key, results
+  aletheia_llm_compare_2/   LLM comparison 2: protocol, task sheets N and M, raw model replies, report
   checks/                   exploratory scratch scripts (not evidence)
 ```
 The original Rust prototype (8 crates) is **archived**, not deleted. It lives on the branch [`archive/rust-v0`](https://github.com/asama7706r-ui/Aletheia/tree/archive/rust-v0) (tag `legacy-rust-v0`). It is superseded by this research program and will be rebuilt from scratch.

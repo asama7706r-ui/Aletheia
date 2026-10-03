@@ -1,0 +1,65 @@
+I followed the method in section 4 for each world, using exact fractions. Decimals below are only for readability.
+
+### W-22
+Every residual v − f lies within precision:
+
+| Reading | Residual | Precision |
+|---|---|---|
+| Old 1 | 131/10800 | 1/25 |
+| Old 2 | −1/105 | 1/25 |
+| Old 3 | 29/1200 | 1/25 |
+| New 1 | 187/8100 | 1/25 |
+| New 2 | 989/39600 | 1/20 |
+
+So Z is feasible and the verdict is **NO_DEFICIT**.
+
+### W-23
+The residuals of the new readings are 457/600 and 497/600, much larger than the precisions, so there is a deficit.
+
+- **R1** has exact coefficient 1/8, which is dimensionless. Its contributions are 3/4 and 27/32 at the new states, leaving residuals 7/600 and −37/2400. Every old residual also stays within 1/30, so R1 is **sufficient**.
+- **R2** passes the type check because ga^(−1/2) has dimension L⁻¹T. The new readings need λ in [437/16200, 477/16200] and in [7352/291600, 8552/291600]. These overlap at about [0.02698, 0.02933], and the old readings allow it, so R2 is **sufficient**.
+- **R3** needs a constant of dimension L⁻¹, which ga and gm cannot build, so it is TYPE-impossible. The new readings also need λ near 0.0405–0.0442 and 0.0126–0.0147, which do not overlap. Reasons: TYPE, SHAPE.
+- **R4** fails even with φ = 1 at the new states: λ would need to be in [0.0595, 0.0649] and in [0.1876, 0.2182]. Reason: SHAPE.
+
+### W-24 (x = ral/kw; each reading gives an interval for μ + λ·(term / h_V))
+The old readings force μ into [334/825, 1553/3575]. The new readings need μ in [1684/4125, 1702/4125] and in [1429/3300, 391/825], which do not overlap, so there is a deficit.
+
+- **R1**: the two new readings force μ ≥ (5A−2B)/3 ≈ 0.4466, where A is the lower bound from the second new reading and B the upper bound from the first. But μ must be ≤ 0.4344. So S is infeasible: SHAPE.
+- **R2**: its switch is on at old reading 2 and new reading 1. In A, the off new reading gives μ ≥ 0.4330, while the two on readings together give μ ≤ 0.4169, so A is infeasible. With φ = 1 at the new states, μ = 41/100, λ = 1/40 fits every reading, so C is feasible: SCOPE.
+- **R3**: μ = 81/200, λ = 1/20 fits all six readings. It is **sufficient**.
+- **R4**: the new readings need λ ≥ 0.097, but old reading 3 together with new reading 1 caps λ at 0.00145, so A is infeasible. S is feasible (μ ≈ 0.4083, λ = 1/10). Reason: BOUND.
+
+### W-25
+The new residuals are 493/700 and 653/350, so there is a deficit.
+
+- **R1**: the flip symmetry (xel → −xel) forbids it. A is feasible (λ ≈ 0.03), and S is feasible too. Reason: SYMMETRY.
+- **R2**: the swap symmetry forbids it. Its term is 0 at (6, 6), so S is infeasible. Reasons: SHAPE, SYMMETRY.
+- **R3**: the new readings need λ in [0.00718, 0.00804] and in [0.00262, 0.00273], which do not overlap. Reason: SHAPE.
+- **R4**: the contributions (h·φ) are 81/7 and 4374/140 at the new states. λ in [0.0584, 0.0610] fits every reading, so R4 is **sufficient**.
+
+### W-26
+The new readings need μ ≥ 0.4457, but the old readings cap μ at 0.4344, so there is a deficit.
+
+- **R1**: μ = 21/50, λ = 9/2000 fits every reading. It is **sufficient**.
+- **R2**: its switch is off at both new states and on only at old reading 2, which is the reading that caps μ. With μ = 0.449, the other readings fit, and λ can absorb old reading 2. It is **sufficient**.
+- **R3**: in A, C and S, the constraints force λ to be both very negative and positive. Reason: SHAPE.
+- **R4**: in A, λ would need to be ≤ −0.001274 and ≥ −0.001147. In S, μ ≥ 0.4451 conflicts with μ ≤ 0.4344. Reason: SHAPE.
+
+### W-27
+The new residuals are 55127/2400 and 3553/300, so there is a deficit.
+
+- **R1**: the new readings need λ in [0.07482, 0.07531] and in [0.07380, 0.07537], which overlap. The old readings stay within 1/20 (the tightest is old reading 4, at −0.0451). It is **sufficient**.
+- **R2**: the new readings need λ near 0.0254–0.0256 and 0.0295–0.0301, which do not overlap. Reason: SHAPE.
+- **R3**: it needs a constant of dimension L, which kz, kq and vu cannot build, so it is TYPE-impossible. The new readings also need λ near 0.0654–0.0658 and 0.114–0.117. Reasons: SHAPE, TYPE.
+- **R4**: its switch is off at every old state and on at both new states. λ in [1.0617, 1.0686] fits both new readings, so it is **sufficient**.
+
+```json
+[
+ {"id": "W-22", "verdict": "NO_DEFICIT"},
+ {"id": "W-23", "verdict": "FORK", "branches": ["R1", "R2"], "excluded": {"R3": ["SHAPE", "TYPE"], "R4": ["SHAPE"]}},
+ {"id": "W-24", "verdict": "KNOWN", "relation": "R3", "excluded": {"R1": ["SHAPE"], "R2": ["SCOPE"], "R4": ["BOUND"]}},
+ {"id": "W-25", "verdict": "KNOWN", "relation": "R4", "excluded": {"R1": ["SYMMETRY"], "R2": ["SHAPE", "SYMMETRY"], "R3": ["SHAPE"]}},
+ {"id": "W-26", "verdict": "FORK", "branches": ["R1", "R2"], "excluded": {"R3": ["SHAPE"], "R4": ["SHAPE"]}},
+ {"id": "W-27", "verdict": "FORK", "branches": ["R1", "R4"], "excluded": {"R2": ["SHAPE"], "R3": ["SHAPE", "TYPE"]}}
+]
+```

@@ -1,0 +1,93 @@
+{
+ "id": "dA-planetx",
+ "experiment": "A",
+ "observable": "yp",
+ "quantities": {
+  "yp": {
+   "L": 1
+  },
+  "xp": {},
+  "zp": {}
+ },
+ "constants": {
+  "kp": {
+   "value": "1",
+   "dims": {
+    "L": 1
+   }
+  },
+  "kq": {
+   "value": "1",
+   "dims": {
+    "L": 1
+   }
+  }
+ },
+ "observers": {
+  "lab11": "1/100",
+  "far11": "1/10"
+ },
+ "base_law": "yp = kp + kq*xp",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "kp*zp",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "kp*zp**2",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "xp": "0",
+    "zp": "1"
+   },
+   "value": "1",
+   "observer": "lab11"
+  },
+  {
+   "state": {
+    "xp": "0",
+    "zp": "2"
+   },
+   "value": "1",
+   "observer": "lab11"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "xp": "5",
+    "zp": "1"
+   },
+   "value": "8",
+   "observer": "far11"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "xp": "2",
+    "zp": "1"
+   },
+   "observer": "lab11"
+  },
+  {
+   "state": {
+    "xp": "5",
+    "zp": "2"
+   },
+   "observer": "far11"
+  }
+ ],
+ "visible": null,
+ "symmetries": []
+}

@@ -1,0 +1,12 @@
+{
+ "id": "dB-forkdecide",
+ "experiment": "B",
+ "type": "observation",
+ "world": "dA-fork",
+ "state": {
+  "nf": "50",
+  "mf": "1"
+ },
+ "observer": "far5",
+ "value": "1"
+}

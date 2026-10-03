@@ -1,0 +1,13 @@
+{
+ "id": "D-17",
+ "experiment": "B",
+ "type": "observation",
+ "world": "W-14",
+ "state": {
+  "hax": "3/2",
+  "mev": "4",
+  "jor": "3"
+ },
+ "observer": "sunda",
+ "value": "3752/5"
+}

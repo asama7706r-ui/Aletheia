@@ -1,0 +1,13 @@
+{
+ "id": "D-12",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "kimb",
+ "relation": {
+  "id": "R5",
+  "object": "zuro",
+  "term": "bw**2/(ke*aq**2)",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

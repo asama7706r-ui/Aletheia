@@ -1,0 +1,47 @@
+LLM comparison 2 - summary (blind-test-3 Part A worlds)
+reference: key daee204d4432..., report dd7034634bb5...
+
+claude | claude-opus-5.5 | interface: claude app | reasoning: extra | code: unable to check | scored: True
+  N: NO_GAP | correct 27/27 | scope-sensitive 15/15 (like NO_SCOPE 0) | false familiarity 0/9 | false novelty 0/15 | forks 6/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 0 | invalid 0
+     wrong: -
+  M: NO_GAP | correct 27/27 | scope-sensitive 15/15 (like NO_SCOPE 0) | false familiarity 0/9 | false novelty 0/15 | forks 6/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 0 | invalid 0
+     wrong: -
+  method effect: correct in M only 0, in N only 0, McNemar two-sided p = 1
+  reasons in M (exploratory): TYPE recall 1 precision 1; SYMMETRY recall 1 precision 1; SCOPE recall 1 precision 1; SHAPE recall 1 precision 1; BOUND recall 1 precision 1
+
+gemini | gemini-3.8-thinking | interface: Gemini app | reasoning: thinking | code: unable to verify | scored: True
+  N: MIXED | correct 23/27 | scope-sensitive 13/15 (like NO_SCOPE 2) | false familiarity 1/9 | false novelty 1/15 | forks 5/6 | over-fork 0 | planet-X 1/3 | missed deficit 0 | missing 0 | invalid 0
+     wrong: W-06, W-07, W-13, W-26
+  M: GAP | correct 6/27 | scope-sensitive 1/15 (like NO_SCOPE 0) | false familiarity 1/9 | false novelty 0/15 | forks 0/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 20 | invalid 0 | FORMAT-FLAGGED
+     wrong: W-03, W-08, W-09, W-10, W-11, W-12, W-13, W-14, W-15, W-16, W-17, W-18, W-19, W-20, W-21, W-22, W-23, W-24, W-25, W-26, W-27
+  method effect: correct in M only 2, in N only 19, McNemar two-sided p = 29/131072
+  reasons in M (exploratory): TYPE recall 2/7 precision 1; SYMMETRY recall 1/3 precision 1; SCOPE recall 4/9 precision 1; SHAPE recall 10/47 precision 1; BOUND recall 1/7 precision 1
+
+deepseek | deepseek-4.1-thinking | interface: chat.deepseek.com | reasoning: deep reasoning | code: used on: M2 | scored: True
+  N: MIXED | correct 24/27 | scope-sensitive 12/15 (like NO_SCOPE 2) | false familiarity 0/9 | false novelty 1/15 | forks 5/6 | over-fork 1 | planet-X 0/3 | missed deficit 0 | missing 0 | invalid 0
+     wrong: W-12, W-21, W-26
+  M: GAP | correct 6/27 | scope-sensitive 1/15 (like NO_SCOPE 0) | false familiarity 1/9 | false novelty 0/15 | forks 0/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 20 | invalid 0 | FORMAT-FLAGGED
+     wrong: W-07, W-08, W-09, W-10, W-11, W-12, W-13, W-14, W-15, W-16, W-17, W-18, W-19, W-20, W-21, W-22, W-23, W-24, W-25, W-26, W-27
+  method effect: correct in M only 0, in N only 18, McNemar two-sided p = 1/131072
+  reasons in M (exploratory): TYPE recall 1/7 precision 1; SYMMETRY recall 1/3 precision 1; SCOPE recall 4/9 precision 1; SHAPE recall 11/47 precision 1; BOUND recall 1/7 precision 1
+
+qwen | qwen-3.8-max | interface: chat.qwen.ai | reasoning: thinking | code: used in batches: all | scored: True
+  N: MIXED | correct 25/27 | scope-sensitive 15/15 (like NO_SCOPE 0) | false familiarity 2/9 | false novelty 0/15 | forks 6/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 0 | invalid 0
+     wrong: W-07, W-16
+  M: NO_GAP | correct 27/27 | scope-sensitive 15/15 (like NO_SCOPE 0) | false familiarity 0/9 | false novelty 0/15 | forks 6/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 0 | invalid 0
+     wrong: -
+  method effect: correct in M only 2, in N only 0, McNemar two-sided p = 1/2
+  reasons in M (exploratory): TYPE recall 1 precision 1; SYMMETRY recall 1 precision 1; SCOPE recall 1 precision 1; SHAPE recall 1 precision 1; BOUND recall 1 precision 1
+
+kimi | kimi k3 | interface: not recorded | reasoning: not recorded | code: not recorded | scored: False
+  N: GAP | correct 0/27 | scope-sensitive 0/15 (like NO_SCOPE 0) | false familiarity 0/9 | false novelty 0/15 | forks 0/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 27 | invalid 0 | FORMAT-FLAGGED
+     wrong: W-01, W-02, W-03, W-04, W-05, W-06, W-07, W-08, W-09, W-10, W-11, W-12, W-13, W-14, W-15, W-16, W-17, W-18, W-19, W-20, W-21, W-22, W-23, W-24, W-25, W-26, W-27
+  M: GAP | correct 14/27 | scope-sensitive 10/15 (like NO_SCOPE 0) | false familiarity 0/9 | false novelty 0/15 | forks 3/6 | over-fork 0 | planet-X 0/3 | missed deficit 0 | missing 13 | invalid 0 | FORMAT-FLAGGED
+     wrong: W-01, W-02, W-03, W-04, W-05, W-06, W-07, W-22, W-23, W-24, W-25, W-26, W-27
+  method effect: correct in M only 14, in N only 0, McNemar two-sided p = 1/8192
+  reasons in M (exploratory): TYPE recall 3/7 precision 1; SYMMETRY recall 1/3 precision 1; SCOPE recall 4/9 precision 1; SHAPE recall 27/47 precision 1; BOUND recall 11/14 precision 1
+
+scored models: claude, gemini, deepseek, qwen
+OVERALL N (question only): EDGE_NOT_SUPPORTED
+OVERALL M (with method):   EDGE_NOT_SUPPORTED
+INTERPRETATION: I1 - Without the method, at least one frontier model reached the procedure's answers. No kernel edge on these worlds.

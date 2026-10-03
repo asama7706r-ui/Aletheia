@@ -1,0 +1,13 @@
+{
+ "id": "D-08",
+ "experiment": "B",
+ "type": "observation",
+ "world": "W-08",
+ "state": {
+  "hax": "1/4",
+  "mev": "6",
+  "jor": "1/2"
+ },
+ "observer": "yomp",
+ "value": "10091/40"
+}

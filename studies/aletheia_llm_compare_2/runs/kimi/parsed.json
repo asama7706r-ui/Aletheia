@@ -1,0 +1,360 @@
+{
+ "answers": {
+  "N": {
+   "W-01": {
+    "verdict": "MISSING"
+   },
+   "W-02": {
+    "verdict": "MISSING"
+   },
+   "W-03": {
+    "verdict": "MISSING"
+   },
+   "W-04": {
+    "verdict": "MISSING"
+   },
+   "W-05": {
+    "verdict": "MISSING"
+   },
+   "W-06": {
+    "verdict": "MISSING"
+   },
+   "W-07": {
+    "verdict": "MISSING"
+   },
+   "W-08": {
+    "verdict": "MISSING"
+   },
+   "W-09": {
+    "verdict": "MISSING"
+   },
+   "W-10": {
+    "verdict": "MISSING"
+   },
+   "W-11": {
+    "verdict": "MISSING"
+   },
+   "W-12": {
+    "verdict": "MISSING"
+   },
+   "W-13": {
+    "verdict": "MISSING"
+   },
+   "W-14": {
+    "verdict": "MISSING"
+   },
+   "W-15": {
+    "verdict": "MISSING"
+   },
+   "W-16": {
+    "verdict": "MISSING"
+   },
+   "W-17": {
+    "verdict": "MISSING"
+   },
+   "W-18": {
+    "verdict": "MISSING"
+   },
+   "W-19": {
+    "verdict": "MISSING"
+   },
+   "W-20": {
+    "verdict": "MISSING"
+   },
+   "W-21": {
+    "verdict": "MISSING"
+   },
+   "W-22": {
+    "verdict": "MISSING"
+   },
+   "W-23": {
+    "verdict": "MISSING"
+   },
+   "W-24": {
+    "verdict": "MISSING"
+   },
+   "W-25": {
+    "verdict": "MISSING"
+   },
+   "W-26": {
+    "verdict": "MISSING"
+   },
+   "W-27": {
+    "verdict": "MISSING"
+   }
+  },
+  "M": {
+   "W-01": {
+    "verdict": "MISSING"
+   },
+   "W-02": {
+    "verdict": "MISSING"
+   },
+   "W-03": {
+    "verdict": "MISSING"
+   },
+   "W-04": {
+    "verdict": "MISSING"
+   },
+   "W-05": {
+    "verdict": "MISSING"
+   },
+   "W-06": {
+    "verdict": "MISSING"
+   },
+   "W-07": {
+    "verdict": "MISSING"
+   },
+   "W-08": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "SCOPE"
+     ],
+     "R3": [
+      "SHAPE"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-09": {
+    "verdict": "FORK",
+    "branches": [
+     "R3",
+     "R4"
+    ],
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "BOUND"
+     ]
+    }
+   },
+   "W-10": {
+    "verdict": "KNOWN",
+    "relation": "R4",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "BOUND"
+     ],
+     "R3": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-11": {
+    "verdict": "KNOWN",
+    "relation": "R1",
+    "excluded": {
+     "R2": [
+      "SHAPE"
+     ],
+     "R3": [
+      "SHAPE",
+      "TYPE"
+     ],
+     "R4": [
+      "BOUND"
+     ]
+    }
+   },
+   "W-12": {
+    "verdict": "KNOWN",
+    "relation": "R3",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "SHAPE"
+     ],
+     "R4": [
+      "BOUND"
+     ]
+    }
+   },
+   "W-13": {
+    "verdict": "KNOWN",
+    "relation": "R2",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R3": [
+      "SHAPE"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-14": {
+    "verdict": "FORK",
+    "branches": [
+     "R1",
+     "R2",
+     "R4"
+    ],
+    "excluded": {
+     "R3": [
+      "BOUND"
+     ]
+    }
+   },
+   "W-15": {
+    "verdict": "FORK",
+    "branches": [
+     "R3",
+     "R4"
+    ],
+    "excluded": {
+     "R1": [
+      "SHAPE",
+      "SYMMETRY"
+     ],
+     "R2": [
+      "SHAPE",
+      "SYMMETRY"
+     ]
+    }
+   },
+   "W-16": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "BOUND"
+     ],
+     "R2": [
+      "SHAPE"
+     ],
+     "R3": [
+      "TYPE"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-17": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "BOUND"
+     ],
+     "R3": [
+      "BOUND"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-18": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "SCOPE"
+     ],
+     "R3": [
+      "SHAPE"
+     ],
+     "R4": [
+      "BOUND"
+     ]
+    }
+   },
+   "W-19": {
+    "verdict": "NEW",
+    "excluded": {
+     "R1": [
+      "SCOPE"
+     ],
+     "R2": [
+      "SHAPE"
+     ],
+     "R3": [
+      "SHAPE"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-20": {
+    "verdict": "KNOWN",
+    "relation": "R1",
+    "excluded": {
+     "R2": [
+      "BOUND"
+     ],
+     "R3": [
+      "SHAPE",
+      "TYPE"
+     ],
+     "R4": [
+      "SCOPE"
+     ]
+    }
+   },
+   "W-21": {
+    "verdict": "KNOWN",
+    "relation": "R3",
+    "excluded": {
+     "R1": [
+      "SHAPE"
+     ],
+     "R2": [
+      "BOUND"
+     ],
+     "R4": [
+      "SHAPE"
+     ]
+    }
+   },
+   "W-22": {
+    "verdict": "MISSING"
+   },
+   "W-23": {
+    "verdict": "MISSING"
+   },
+   "W-24": {
+    "verdict": "MISSING"
+   },
+   "W-25": {
+    "verdict": "MISSING"
+   },
+   "W-26": {
+    "verdict": "MISSING"
+   },
+   "W-27": {
+    "verdict": "MISSING"
+   }
+  }
+ },
+ "log": {
+  "N1": "no file",
+  "N2": "no file",
+  "N3": "no file",
+  "N4": "no file",
+  "M1": "no file",
+  "M2": "parsed 7 entries",
+  "M3": "parsed 7 entries",
+  "M4": "no file"
+ }
+}

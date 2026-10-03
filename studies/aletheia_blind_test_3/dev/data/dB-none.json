@@ -1,0 +1,16 @@
+{
+ "id": "dB-none",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "zz",
+ "observable_dims": {
+  "L": 1
+ },
+ "relation": {
+  "id": "R1",
+  "object": "ob1",
+  "term": "zz",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

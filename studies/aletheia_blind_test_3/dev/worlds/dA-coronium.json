@@ -1,0 +1,108 @@
+{
+ "id": "dA-coronium",
+ "experiment": "A",
+ "observable": "yk",
+ "quantities": {
+  "yk": {
+   "M": 1
+  },
+  "tq": {
+   "K": 1
+  },
+  "ne": {}
+ },
+ "constants": {
+  "kt": {
+   "value": "1000",
+   "dims": {
+    "K": 1
+   }
+  },
+  "km": {
+   "value": "3",
+   "dims": {
+    "M": 1
+   }
+  }
+ },
+ "observers": {
+  "lab4": "1/100",
+  "far4": "1/10"
+ },
+ "base_law": "yk = km*ne",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "km*ne",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "tq/kt",
+    "factor": {
+     "type": "dimmer",
+     "expr": "r/(1+r)"
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "km*ne**2",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "tq": "1",
+    "ne": "1"
+   },
+   "value": "3",
+   "observer": "lab4"
+  },
+  {
+   "state": {
+    "tq": "1",
+    "ne": "2"
+   },
+   "value": "6",
+   "observer": "lab4"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "tq": "100000",
+    "ne": "1"
+   },
+   "value": "603/101",
+   "observer": "far4"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "tq": "1",
+    "ne": "3"
+   },
+   "observer": "lab4"
+  },
+  {
+   "state": {
+    "tq": "100000",
+    "ne": "3"
+   },
+   "observer": "far4"
+  },
+  {
+   "state": {
+    "tq": "1000",
+    "ne": "3"
+   },
+   "observer": "far4"
+  }
+ ],
+ "visible": null,
+ "symmetries": []
+}

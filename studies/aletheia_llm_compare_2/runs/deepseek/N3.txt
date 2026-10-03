@@ -1,0 +1,11 @@
+```json
+[
+ {"id": "W-15", "verdict": "FORK", "branches": ["R3", "R4"]},
+ {"id": "W-16", "verdict": "NEW"},
+ {"id": "W-17", "verdict": "NEW"},
+ {"id": "W-18", "verdict": "NEW"},
+ {"id": "W-19", "verdict": "NEW"},
+ {"id": "W-20", "verdict": "KNOWN", "relation": "R1"},
+ {"id": "W-21", "verdict": "NEW"}
+]
+```

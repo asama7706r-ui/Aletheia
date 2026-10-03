@@ -1,0 +1,19 @@
+Blind test 3 - world generator progress
+=======================================
+[2026-10-02] Stage 0: read protocol_v3.md and the Notion page of blind test 3 (only). Created worlds/, data/, key/.
+[2026-10-02] Stage 1: writing key/verify_key.py (own reference implementation, from the protocol alone). IN PROGRESS
+[2026-10-02] Stage 1 done: key/verify_key.py written (parser, dims/TYPE, exact two-phase simplex, systems Z/A/C/S, reasons, ranges, decisive sets, W1-W9, Part B rules R1-R3, compositions). Tested on the protocol's format example.
+[2026-10-02] Stage 2: designing worlds group by group (key/build_worlds.py). IN PROGRESS
+[2026-10-02] Stage 2 progress: groups A (vexa, 4 worlds), B (tumb, visible relation, 3 worlds), C (plin, 3 worlds) designed and checked with the own engine.
+[2026-10-02] Stage 2 done: 27 worlds in 9 observable groups (A vexa 4, B tumb 3, C plin 3, D ostr 3, E kimb 4, F dral 4, G wesk 4, N1 yuth 1, N2 brel 1); ids shuffled; worlds/ written.
+[2026-10-02] Stage 3: Part B items designed by exact search (6 observation items verified; relation and root items selected). IN PROGRESS
+[2026-10-02] Stage 3 done: 18 Part B items (6 observation, 8 relation, 4 root) written to data/; key/key.json written by key/build_all.py.
+[2026-10-02] Stage 4: own verification key/verify_key.py run -> key/verify_output.txt: "KEY CONSISTENT". Now running the sealed validator.
+[2026-10-02] Stage 4 result: sealed validator -> INVALID (2 problems). 26 worlds and all 18 items agree with the key; W-16 fails W8 under the validator's reading
+             ("no combination" = any subset; an exact-coefficient candidate may be absent), but passes under the literal protocol text (exact coefficients fixed).
+             This is an ambiguity between protocol text and sealed validator -> written to key/generator_notes.md. STOPPED (instruction 7). Key hash NOT computed or published.
+[2026-10-02] Owner chose option 1 (generator_notes.md issue 1). key/verify_key.py now checks W8 under both readings (L and C). W-16 readings revised (still NEW; R3 TYPE sole, R1 BOUND, R2/R4 SHAPE near the boundary). Own check: KEY CONSISTENT.
+[2026-10-02] Stage 5: sealed validator -> VALID (key/validator_output.txt). Own check -> KEY CONSISTENT (key/verify_output.txt).
+[2026-10-02] Stage 6: SHA-256(key/key.json) = daee204d4432e3774dcf512dae5311b08ee70cc2b8bef53816133503d92d1b34
+             (python tools/hash_files.py key/key.json; same as sha256sum). Published in step 3 of the steps table on the Notion page (2026-10-02T19:49:53Z).
+             DONE. key/key.json must not change from now on. Worlds not published anywhere.

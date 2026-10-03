@@ -1,0 +1,49 @@
+originals: all accepted and correct
+CAUGHT  key: KNOWN relation changed
+CAUGHT  key: NEW -> KNOWN
+CAUGHT  key: FORK branch dropped
+CAUGHT  key: FORK -> KNOWN
+CAUGHT  key: NO_DEFICIT -> NEW
+CAUGHT  key: wrong reason list
+CAUGHT  key: reason given for a sufficient candidate
+CAUGHT  key B: reopened list wrong
+CAUGHT  key B: final verdict wrong
+CAUGHT  key B: category wrong
+CAUGHT  key B: category of another item type
+CAUGHT  world: dimmer leaves [0, 1]
+CAUGHT  world: old reading contradicts the base law
+CAUGHT  world: reserved name
+CAUGHT  world: decimal number
+CAUGHT  world: listed state on a switch threshold
+CAUGHT  world: symmetry not of the base law
+CAUGHT  world: combination explains a NEW world
+CAUGHT  output: verdict changed
+MISSED  output: step-0 Farkas multiplier changed
+CAUGHT  output: step-0 certificate removed
+CAUGHT  output: KNOWN point made infeasible
+CAUGHT  output: lam interval end changed
+CAUGHT  output: quarantine note range changed
+CAUGHT  output: false reason added
+CAUGHT  output: reasons removed
+CAUGHT  output: BOUND certificate corrupted
+CAUGHT  output: SCOPE point corrupted
+CAUGHT  output: SHAPE certificate replaced
+CAUGHT  output: decisive set emptied
+CAUGHT  output: decisive index wrong
+CAUGHT  output: FORK branch range changed
+CAUGHT  output: NO_DEFICIT base note changed
+CAUGHT  output: visible interval changed
+CAUGHT  output B: extra file reopened and changed
+CAUGHT  output B: reopened file missing
+CAUGHT  output B: wrong new verdict
+CAUGHT  output B: verdict reported outside the own list
+CAUGHT  output B: corrupted proof in a reopened verdict
+caught 38 of 39 corruptions
+CAUGHT  output: NO_DEFICIT base note changed
+CAUGHT  output: visible interval changed
+CAUGHT  output B: extra file reopened and changed
+CAUGHT  output B: reopened file missing
+CAUGHT  output B: wrong new verdict
+CAUGHT  output B: verdict reported outside the own list
+CAUGHT  output B: corrupted proof in a reopened verdict
+caught 40 of 40 corruptions

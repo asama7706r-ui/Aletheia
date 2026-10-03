@@ -1,0 +1,71 @@
+# Verdicts for worlds W-22 to W-27
+
+## W-22: NO_DEFICIT
+
+Residuals of the readings against y = kro·pw/dun:
+
+| Reading | Residual | Tolerance |
+|---|---|---|
+| Old 1 | 153/400 − 10/27 ≈ +0.0121 | 1/25 |
+| Old 2 | 1/10 − 5/42 ≈ −0.0190 | 1/25 |
+| Old 3 | 143/400 − 1/3 ≈ +0.0242 | 1/25 |
+| New 1 | 27/100 − 20/81 ≈ +0.0231 | 1/25 |
+| New 2 | 111/400 − 25/99 ≈ +0.0250 | 1/20 |
+
+Every reading fits the established law alone, so there is no deficit.
+
+## W-23: FORK [R1, R2]
+
+The new residuals are large: 457/600 at state 5 (tolerance 1/30) and 497/600 at state 6 (tolerance 1/16). So there is a deficit.
+
+- **R1 fits.** Its coefficient is the exact value 1/8. It adds 3/4 and 27/32 at the new states, leaving residuals of 7/600 and −37/1200. At the old states it adds at most about 0.013, and every old residual stays within tolerance.
+- **R2 fits.** It needs a coefficient with dimensions L⁻¹T, which ga^(−1/2) supplies, so it is dimensionally allowed. At both new states R2's term is exactly 9/2 times R1's term. So λ = 1/36 reproduces R1 there; the allowed range for λ is about [0.02698, 0.02933]. Its old contributions are below 0.001, so the old readings still fit.
+- **R3 fails.** It would need a coefficient with dimension L⁻¹ alone, and no combination of the constants gives that. The new readings would also need incompatible values of λ.
+- **R4 fails.** The coverage factor is about 1 at the old states, so old reading 1 forces λ ≤ 0.0018. New reading 5 needs λ ≥ 0.083.
+
+## W-24: KNOWN R3
+
+Work in units of kv, with s = ral/kw. The base law alone allows μ ∈ [0.4048, 0.4344] from the old readings. The new readings need μ ∈ [0.4082, 0.4126] and μ ∈ [0.4330, 0.4739]. These ranges don't overlap, so there is a deficit.
+
+- **R1 fails.** The fitted line μ + λs would have to stay ≤ 0.4344 at s = 0.3, reach ≥ 0.4330 at s = 2, and drop to ≤ 0.4126 at s = 5. No straight line can do that; the reading at s = 0.3 would need to be at least 0.4446.
+- **R2 fails.** Readings 2 and 5 (where the switch is on) together force μ ∈ [0.4061, 0.4169]. Reading 6 (switch off) needs μ ≥ 0.4330.
+- **R3 fits.** With μ = 2/5 and λ = 1/11, all six readings fit. The new residuals are +0.0047 and −0.0039, and the largest old residual is −0.0162 (tolerance 1/50).
+- **R4 fails.** The new readings force λ ≥ 0.097. That makes old reading 3 too large by about 1.
+
+## W-25: KNOWN R4
+
+The new residuals are about 0.704 and 1.866 (tolerance 1/25), so there is a deficit.
+
+- **R1 is excluded.** The flp symmetry flips the sign of xel·yor, so its coefficient must be 0.
+- **R2 is excluded.** The swp symmetry flips the sign of xel² − yor², so its coefficient must be 0.
+- **R3 fails.** New reading 6 needs λ ∈ [0.00718, 0.00804], but new reading 7 needs λ ∈ [0.00262, 0.00273].
+- **R4 fits.** Its contribution is λ·(162/7)·zun³/(1+zun). The new readings need λ ∈ [0.0584, 0.0610]; for example λ = 3/50 leaves residuals of +0.010 and −0.009. The old contributions are small, and the worst old residual becomes about −0.029.
+
+## W-26: FORK [R1, R2]
+
+The old readings allow μ ∈ [0.4048, 0.4344], where the upper bound comes from old reading 2 alone. The new readings need μ ∈ [0.4485, 0.4492]. These don't overlap, so there is a deficit.
+
+- **R1 fits.** For example μ = 0.42 and λ = 0.004435 give 0.4475 at s = 6.2 and 0.4502 at s = 6.8. All four old intervals are satisfied too.
+- **R2 fits.** Its switch is off at both new states but on at old reading 2 (tep = 150). That reading is the only source of the conflict. With μ ≈ 0.4489 and λ ∈ [−0.105, −0.017], every reading fits.
+- **R3 fails.** The new readings force λ ≤ 0.0056, while old reading 2 needs λ ≥ 0.115.
+- **R4 fails.** Taking readings 2 and 6 together gives λ ≤ −0.001274. Taking readings 3 and 5 together gives λ ≥ −0.001147. These contradict each other.
+
+## W-27: FORK [R1, R4]
+
+The new residuals are 55127/2400 ≈ 22.97 and 3553/300 ≈ 11.84, so there is a deficit.
+
+- **R1 fits.** The new readings need λ ∈ [0.07482, 0.07531]. Its coverage factor nearly hides it at the old states, where sel is large. The worst old residual becomes about −0.0451 (tolerance 1/20).
+- **R2 fails.** The new readings need λ ∈ [0.02543, 0.02559] and λ ∈ [0.02946, 0.03008], which don't overlap.
+- **R3 is excluded.** It would need a coefficient with dimension L, which the constants cannot supply.
+- **R4 fits.** Its switch (dov·pim/vu > 3) is off at every old state and on at both new states. The new readings need λ ∈ [1.0617, 1.0686]; λ = 16/15 works.
+
+```json
+[
+ {"id": "W-22", "verdict": "NO_DEFICIT"},
+ {"id": "W-23", "verdict": "FORK", "branches": ["R1", "R2"]},
+ {"id": "W-24", "verdict": "KNOWN", "relation": "R3"},
+ {"id": "W-25", "verdict": "KNOWN", "relation": "R4"},
+ {"id": "W-26", "verdict": "FORK", "branches": ["R1", "R2"]},
+ {"id": "W-27", "verdict": "FORK", "branches": ["R1", "R4"]}
+]
+```

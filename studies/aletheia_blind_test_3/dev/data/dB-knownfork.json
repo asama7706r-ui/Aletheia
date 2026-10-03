@@ -1,0 +1,20 @@
+{
+ "id": "dB-knownfork",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "yk",
+ "relation": {
+  "id": "R3",
+  "object": "ob1",
+  "term": "km*ne",
+  "coefficient": "unknown",
+  "coverage": {
+   "ratio": "tq/kt",
+   "factor": {
+    "type": "switch",
+    "on": ">",
+    "threshold": "10"
+   }
+  }
+ }
+}

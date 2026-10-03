@@ -1,0 +1,14 @@
+{
+ "name_as_shown": "gemini-3.8-thinking",
+ "family": "Google",
+ "interface": "Gemini app",
+ "reasoning_option": "thinking",
+ "memory_off": true,
+ "web_search_off": true,
+ "code_execution": "unable to verify",
+ "scored": true,
+ "first_run_date": "2026-03-10",
+ "last_run_date": "2026-03-10",
+ "reruns": "4",
+ "notes": ""
+}

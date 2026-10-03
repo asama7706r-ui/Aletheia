@@ -1,0 +1,13 @@
+{
+ "id": "D-09",
+ "experiment": "B",
+ "type": "relation",
+ "observable": "brel",
+ "relation": {
+  "id": "R4",
+  "object": "wamo",
+  "term": "xr*sio**3/tq**2",
+  "coefficient": "unknown",
+  "coverage": null
+ }
+}

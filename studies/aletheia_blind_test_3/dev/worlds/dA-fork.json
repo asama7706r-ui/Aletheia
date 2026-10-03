@@ -1,0 +1,121 @@
+{
+ "id": "dA-fork",
+ "experiment": "A",
+ "observable": "yf",
+ "quantities": {
+  "yf": {
+   "L": 2
+  },
+  "nf": {
+   "L": -3
+  },
+  "mf": {}
+ },
+ "constants": {
+  "ka": {
+   "value": "100",
+   "dims": {
+    "L": -3
+   }
+  },
+  "kb": {
+   "value": "10",
+   "dims": {
+    "L": -3
+   }
+  },
+  "kl": {
+   "value": "1",
+   "dims": {
+    "L": 2
+   }
+  }
+ },
+ "observers": {
+  "lab5": "1/100",
+  "far5": "1/10"
+ },
+ "base_law": "yf = kl*mf",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "kl*mf",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "nf/ka",
+    "factor": {
+     "type": "dimmer",
+     "expr": "1/(1+r)"
+    }
+   }
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "kl*mf",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "nf/kb",
+    "factor": {
+     "type": "switch",
+     "on": "<",
+     "threshold": "1"
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "object": "ob3",
+   "term": "kl*mf**2",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "nf": "100000",
+    "mf": "1"
+   },
+   "value": "1",
+   "observer": "lab5"
+  },
+  {
+   "state": {
+    "nf": "100000",
+    "mf": "2"
+   },
+   "value": "2",
+   "observer": "lab5"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "nf": "1",
+    "mf": "1"
+   },
+   "value": "5",
+   "observer": "far5"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "nf": "50",
+    "mf": "1"
+   },
+   "observer": "far5"
+  },
+  {
+   "state": {
+    "nf": "1",
+    "mf": "2"
+   },
+   "observer": "far5"
+  }
+ ],
+ "visible": null,
+ "symmetries": []
+}

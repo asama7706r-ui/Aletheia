@@ -1,0 +1,1210 @@
+{
+ "models": {
+  "claude": {
+   "meta": {
+    "name_as_shown": "claude-opus-5.5",
+    "family": "anthropic",
+    "interface": "claude app",
+    "reasoning_option": "extra",
+    "memory_off": true,
+    "web_search_off": true,
+    "code_execution": "unable to check",
+    "scored": true,
+    "first_run_date": "2026-03-10",
+    "last_run_date": "2026-03-10",
+    "reruns": "0",
+    "notes": ""
+   },
+   "conditions": {
+    "N": {
+     "verdict": "NO_GAP",
+     "counts": {
+      "correct": 27,
+      "scope_correct": 15,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 0,
+      "fork_correct": 6,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 0,
+      "invalid": 0,
+      "wrong": 0
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_correct": [
+       "W-04",
+       "W-08",
+       "W-09",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [],
+      "fork_correct": [
+       "W-09",
+       "W-14",
+       "W-15",
+       "W-23",
+       "W-26",
+       "W-27"
+      ],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [],
+      "invalid": [],
+      "wrong": []
+     },
+     "format_flag": false,
+     "vs_procedure_p_one_sided": "1"
+    },
+    "M": {
+     "verdict": "NO_GAP",
+     "counts": {
+      "correct": 27,
+      "scope_correct": 15,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 0,
+      "fork_correct": 6,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 0,
+      "invalid": 0,
+      "wrong": 0
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_correct": [
+       "W-04",
+       "W-08",
+       "W-09",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [],
+      "fork_correct": [
+       "W-09",
+       "W-14",
+       "W-15",
+       "W-23",
+       "W-26",
+       "W-27"
+      ],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [],
+      "invalid": [],
+      "wrong": []
+     },
+     "format_flag": false,
+     "vs_procedure_p_one_sided": "1"
+    }
+   },
+   "method_effect": {
+    "correct_in_M_only": 0,
+    "correct_in_N_only": 0,
+    "mcnemar_two_sided_p": "1"
+   },
+   "reasons_M_exploratory": {
+    "TYPE": {
+     "applicable": 7,
+     "listed": 7,
+     "true": 7,
+     "recall": "1",
+     "precision": "1"
+    },
+    "SYMMETRY": {
+     "applicable": 6,
+     "listed": 6,
+     "true": 6,
+     "recall": "1",
+     "precision": "1"
+    },
+    "SCOPE": {
+     "applicable": 9,
+     "listed": 9,
+     "true": 9,
+     "recall": "1",
+     "precision": "1"
+    },
+    "SHAPE": {
+     "applicable": 47,
+     "listed": 47,
+     "true": 47,
+     "recall": "1",
+     "precision": "1"
+    },
+    "BOUND": {
+     "applicable": 14,
+     "listed": 14,
+     "true": 14,
+     "recall": "1",
+     "precision": "1"
+    }
+   }
+  },
+  "gemini": {
+   "meta": {
+    "name_as_shown": "gemini-3.8-thinking",
+    "family": "Google",
+    "interface": "Gemini app",
+    "reasoning_option": "thinking",
+    "memory_off": true,
+    "web_search_off": true,
+    "code_execution": "unable to verify",
+    "scored": true,
+    "first_run_date": "2026-03-10",
+    "last_run_date": "2026-03-10",
+    "reruns": "4",
+    "notes": ""
+   },
+   "conditions": {
+    "N": {
+     "verdict": "MIXED",
+     "counts": {
+      "correct": 23,
+      "scope_correct": 13,
+      "scope_like_no_scope": 2,
+      "false_novelty": 1,
+      "false_familiarity": 1,
+      "fork_correct": 5,
+      "over_fork": 0,
+      "planet_x": 1,
+      "missed_deficit": 0,
+      "missing": 0,
+      "invalid": 0,
+      "wrong": 4
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-27"
+      ],
+      "scope_correct": [
+       "W-04",
+       "W-08",
+       "W-09",
+       "W-12",
+       "W-14",
+       "W-15",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-24",
+       "W-25",
+       "W-27"
+      ],
+      "scope_like_no_scope": [
+       "W-13",
+       "W-26"
+      ],
+      "false_novelty": [
+       "W-13"
+      ],
+      "false_familiarity": [
+       "W-07"
+      ],
+      "fork_correct": [
+       "W-09",
+       "W-14",
+       "W-15",
+       "W-23",
+       "W-27"
+      ],
+      "over_fork": [],
+      "planet_x": [
+       "W-06"
+      ],
+      "missed_deficit": [],
+      "missing": [],
+      "invalid": [],
+      "wrong": [
+       "W-06",
+       "W-07",
+       "W-13",
+       "W-26"
+      ]
+     },
+     "format_flag": false,
+     "vs_procedure_p_one_sided": "1/16"
+    },
+    "M": {
+     "verdict": "GAP",
+     "counts": {
+      "correct": 6,
+      "scope_correct": 1,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 1,
+      "fork_correct": 0,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 20,
+      "invalid": 0,
+      "wrong": 21
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07"
+      ],
+      "scope_correct": [
+       "W-04"
+      ],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [
+       "W-03"
+      ],
+      "fork_correct": [],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "invalid": [],
+      "wrong": [
+       "W-03",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ]
+     },
+     "format_flag": true,
+     "vs_procedure_p_one_sided": "1/2097152"
+    }
+   },
+   "method_effect": {
+    "correct_in_M_only": 2,
+    "correct_in_N_only": 19,
+    "mcnemar_two_sided_p": "29/131072"
+   },
+   "reasons_M_exploratory": {
+    "TYPE": {
+     "applicable": 7,
+     "listed": 2,
+     "true": 2,
+     "recall": "2/7",
+     "precision": "1"
+    },
+    "SYMMETRY": {
+     "applicable": 6,
+     "listed": 2,
+     "true": 2,
+     "recall": "1/3",
+     "precision": "1"
+    },
+    "SCOPE": {
+     "applicable": 9,
+     "listed": 4,
+     "true": 4,
+     "recall": "4/9",
+     "precision": "1"
+    },
+    "SHAPE": {
+     "applicable": 47,
+     "listed": 10,
+     "true": 10,
+     "recall": "10/47",
+     "precision": "1"
+    },
+    "BOUND": {
+     "applicable": 14,
+     "listed": 2,
+     "true": 2,
+     "recall": "1/7",
+     "precision": "1"
+    }
+   }
+  },
+  "deepseek": {
+   "meta": {
+    "name_as_shown": "deepseek-4.1-thinking",
+    "family": "deepseek",
+    "interface": "chat.deepseek.com",
+    "reasoning_option": "deep reasoning",
+    "memory_off": true,
+    "web_search_off": true,
+    "code_execution": "used on: M2",
+    "scored": true,
+    "first_run_date": "2026-03-10",
+    "last_run_date": "2026-03-10",
+    "reruns": "1",
+    "notes": "deepseek stop working so the kimi k3 will continue M2, M3, M4"
+   },
+   "conditions": {
+    "N": {
+     "verdict": "MIXED",
+     "counts": {
+      "correct": 24,
+      "scope_correct": 12,
+      "scope_like_no_scope": 2,
+      "false_novelty": 1,
+      "false_familiarity": 0,
+      "fork_correct": 5,
+      "over_fork": 1,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 0,
+      "invalid": 0,
+      "wrong": 3
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-27"
+      ],
+      "scope_correct": [
+       "W-04",
+       "W-08",
+       "W-09",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-24",
+       "W-25",
+       "W-27"
+      ],
+      "scope_like_no_scope": [
+       "W-21",
+       "W-26"
+      ],
+      "false_novelty": [
+       "W-21"
+      ],
+      "false_familiarity": [],
+      "fork_correct": [
+       "W-09",
+       "W-14",
+       "W-15",
+       "W-23",
+       "W-27"
+      ],
+      "over_fork": [
+       "W-12"
+      ],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [],
+      "invalid": [],
+      "wrong": [
+       "W-12",
+       "W-21",
+       "W-26"
+      ]
+     },
+     "format_flag": false,
+     "vs_procedure_p_one_sided": "1/8"
+    },
+    "M": {
+     "verdict": "GAP",
+     "counts": {
+      "correct": 6,
+      "scope_correct": 1,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 1,
+      "fork_correct": 0,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 20,
+      "invalid": 0,
+      "wrong": 21
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06"
+      ],
+      "scope_correct": [
+       "W-04"
+      ],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [
+       "W-07"
+      ],
+      "fork_correct": [],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "invalid": [],
+      "wrong": [
+       "W-07",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ]
+     },
+     "format_flag": true,
+     "vs_procedure_p_one_sided": "1/2097152"
+    }
+   },
+   "method_effect": {
+    "correct_in_M_only": 0,
+    "correct_in_N_only": 18,
+    "mcnemar_two_sided_p": "1/131072"
+   },
+   "reasons_M_exploratory": {
+    "TYPE": {
+     "applicable": 7,
+     "listed": 1,
+     "true": 1,
+     "recall": "1/7",
+     "precision": "1"
+    },
+    "SYMMETRY": {
+     "applicable": 6,
+     "listed": 2,
+     "true": 2,
+     "recall": "1/3",
+     "precision": "1"
+    },
+    "SCOPE": {
+     "applicable": 9,
+     "listed": 4,
+     "true": 4,
+     "recall": "4/9",
+     "precision": "1"
+    },
+    "SHAPE": {
+     "applicable": 47,
+     "listed": 11,
+     "true": 11,
+     "recall": "11/47",
+     "precision": "1"
+    },
+    "BOUND": {
+     "applicable": 14,
+     "listed": 2,
+     "true": 2,
+     "recall": "1/7",
+     "precision": "1"
+    }
+   }
+  },
+  "qwen": {
+   "meta": {
+    "name_as_shown": "qwen-3.8-max",
+    "family": "qwen",
+    "interface": "chat.qwen.ai",
+    "reasoning_option": "thinking",
+    "memory_off": true,
+    "web_search_off": true,
+    "code_execution": "used in batches: all",
+    "scored": true,
+    "first_run_date": "2026-03-10",
+    "last_run_date": "2026-03-10",
+    "reruns": "0",
+    "notes": ""
+   },
+   "conditions": {
+    "N": {
+     "verdict": "MIXED",
+     "counts": {
+      "correct": 25,
+      "scope_correct": 15,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 2,
+      "fork_correct": 6,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 0,
+      "invalid": 0,
+      "wrong": 2
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_correct": [
+       "W-04",
+       "W-08",
+       "W-09",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [
+       "W-07",
+       "W-16"
+      ],
+      "fork_correct": [
+       "W-09",
+       "W-14",
+       "W-15",
+       "W-23",
+       "W-26",
+       "W-27"
+      ],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [],
+      "invalid": [],
+      "wrong": [
+       "W-07",
+       "W-16"
+      ]
+     },
+     "format_flag": false,
+     "vs_procedure_p_one_sided": "1/4"
+    },
+    "M": {
+     "verdict": "NO_GAP",
+     "counts": {
+      "correct": 27,
+      "scope_correct": 15,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 0,
+      "fork_correct": 6,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 0,
+      "invalid": 0,
+      "wrong": 0
+     },
+     "lists": {
+      "correct": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_correct": [
+       "W-04",
+       "W-08",
+       "W-09",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [],
+      "fork_correct": [
+       "W-09",
+       "W-14",
+       "W-15",
+       "W-23",
+       "W-26",
+       "W-27"
+      ],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [],
+      "invalid": [],
+      "wrong": []
+     },
+     "format_flag": false,
+     "vs_procedure_p_one_sided": "1"
+    }
+   },
+   "method_effect": {
+    "correct_in_M_only": 2,
+    "correct_in_N_only": 0,
+    "mcnemar_two_sided_p": "1/2"
+   },
+   "reasons_M_exploratory": {
+    "TYPE": {
+     "applicable": 7,
+     "listed": 7,
+     "true": 7,
+     "recall": "1",
+     "precision": "1"
+    },
+    "SYMMETRY": {
+     "applicable": 6,
+     "listed": 6,
+     "true": 6,
+     "recall": "1",
+     "precision": "1"
+    },
+    "SCOPE": {
+     "applicable": 9,
+     "listed": 9,
+     "true": 9,
+     "recall": "1",
+     "precision": "1"
+    },
+    "SHAPE": {
+     "applicable": 47,
+     "listed": 47,
+     "true": 47,
+     "recall": "1",
+     "precision": "1"
+    },
+    "BOUND": {
+     "applicable": 14,
+     "listed": 14,
+     "true": 14,
+     "recall": "1",
+     "precision": "1"
+    }
+   }
+  },
+  "kimi": {
+   "meta": {
+    "name_as_shown": "kimi k3",
+    "family": "Moonshot (supplementary, not scored)",
+    "interface": "not recorded",
+    "reasoning_option": "not recorded",
+    "memory_off": "not recorded",
+    "web_search_off": "not recorded",
+    "code_execution": "not recorded",
+    "scored": false,
+    "first_run_date": "2026-10-03",
+    "last_run_date": "2026-10-03",
+    "reruns": "not recorded",
+    "notes": "Run by the project owner on batches M2 and M3 only, after DeepSeek stopped working, and first saved in runs/deepseek. Moved here unchanged by the scorer author (Claude) at the owner's request, before the freeze. Supplementary data: not in any verdict."
+   },
+   "conditions": {
+    "N": {
+     "verdict": "GAP",
+     "counts": {
+      "correct": 0,
+      "scope_correct": 0,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 0,
+      "fork_correct": 0,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 27,
+      "invalid": 0,
+      "wrong": 27
+     },
+     "lists": {
+      "correct": [],
+      "scope_correct": [],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [],
+      "fork_correct": [],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "invalid": [],
+      "wrong": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ]
+     },
+     "format_flag": true,
+     "vs_procedure_p_one_sided": "1/134217728"
+    },
+    "M": {
+     "verdict": "GAP",
+     "counts": {
+      "correct": 14,
+      "scope_correct": 10,
+      "scope_like_no_scope": 0,
+      "false_novelty": 0,
+      "false_familiarity": 0,
+      "fork_correct": 3,
+      "over_fork": 0,
+      "planet_x": 0,
+      "missed_deficit": 0,
+      "missing": 13,
+      "invalid": 0,
+      "wrong": 13
+     },
+     "lists": {
+      "correct": [
+       "W-08",
+       "W-09",
+       "W-10",
+       "W-11",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-16",
+       "W-17",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21"
+      ],
+      "scope_correct": [
+       "W-08",
+       "W-09",
+       "W-12",
+       "W-13",
+       "W-14",
+       "W-15",
+       "W-18",
+       "W-19",
+       "W-20",
+       "W-21"
+      ],
+      "scope_like_no_scope": [],
+      "false_novelty": [],
+      "false_familiarity": [],
+      "fork_correct": [
+       "W-09",
+       "W-14",
+       "W-15"
+      ],
+      "over_fork": [],
+      "planet_x": [],
+      "missed_deficit": [],
+      "missing": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ],
+      "invalid": [],
+      "wrong": [
+       "W-01",
+       "W-02",
+       "W-03",
+       "W-04",
+       "W-05",
+       "W-06",
+       "W-07",
+       "W-22",
+       "W-23",
+       "W-24",
+       "W-25",
+       "W-26",
+       "W-27"
+      ]
+     },
+     "format_flag": true,
+     "vs_procedure_p_one_sided": "1/8192"
+    }
+   },
+   "method_effect": {
+    "correct_in_M_only": 14,
+    "correct_in_N_only": 0,
+    "mcnemar_two_sided_p": "1/8192"
+   },
+   "reasons_M_exploratory": {
+    "TYPE": {
+     "applicable": 7,
+     "listed": 3,
+     "true": 3,
+     "recall": "3/7",
+     "precision": "1"
+    },
+    "SYMMETRY": {
+     "applicable": 6,
+     "listed": 2,
+     "true": 2,
+     "recall": "1/3",
+     "precision": "1"
+    },
+    "SCOPE": {
+     "applicable": 9,
+     "listed": 4,
+     "true": 4,
+     "recall": "4/9",
+     "precision": "1"
+    },
+    "SHAPE": {
+     "applicable": 47,
+     "listed": 27,
+     "true": 27,
+     "recall": "27/47",
+     "precision": "1"
+    },
+    "BOUND": {
+     "applicable": 14,
+     "listed": 11,
+     "true": 11,
+     "recall": "11/14",
+     "precision": "1"
+    }
+   }
+  }
+ },
+ "reference": {
+  "key_sha256": "daee204d4432e3774dcf512dae5311b08ee70cc2b8bef53816133503d92d1b34",
+  "report_sha256": "dd7034634bb5ce700e1ce6a9e73d465df5fa7ed3cc5ab46a5ff5c41c8755f822",
+  "scope_sensitive": [
+   "W-04",
+   "W-08",
+   "W-09",
+   "W-12",
+   "W-13",
+   "W-14",
+   "W-15",
+   "W-18",
+   "W-19",
+   "W-20",
+   "W-21",
+   "W-24",
+   "W-25",
+   "W-26",
+   "W-27"
+  ]
+ },
+ "scored_models": [
+  "claude",
+  "gemini",
+  "deepseek",
+  "qwen"
+ ],
+ "overall": {
+  "N": "EDGE_NOT_SUPPORTED",
+  "M": "EDGE_NOT_SUPPORTED"
+ },
+ "interpretation": "I1",
+ "interpretation_text": "Without the method, at least one frontier model reached the procedure's answers. No kernel edge on these worlds."
+}

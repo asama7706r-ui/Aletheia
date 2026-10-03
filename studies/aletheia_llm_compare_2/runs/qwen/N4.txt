@@ -1,0 +1,58 @@
+Based on the exact rational arithmetic and linear programming feasibility checks for the systems of inequalities governing each world, here is the step-by-step analysis:
+
+*   **World W-22**: The differences between the observed values and the base law predictions are all well within the precision bounds of the respective observers (maximum error ~0.025 against precisions of 0.04 and 0.05). Since the established law alone fits every reading, there is no deficit.
+*   **World W-23**: There is a measurable deficit in the later observations. Evaluating the ledger reveals that both **R1** (with its exact coefficient of 1/8) and **R2** (with an unknown coefficient) independently form a mathematically feasible system of inequalities that correctly bridges the gap across all old and new readings within the observer tolerances.
+*   **World W-24**: With the visible relation `V1` present, its coefficient `mu` is treated as a free variable. The candidate **R3** perfectly pairs with a specific value of `mu` to account for the new measurements while keeping all old observations well within precision. Testing the other candidates yields infeasible inequality bounds (e.g., they require conflicting values of `mu` to satisfy the old vs. new observations).
+*   **World W-25**: This world declares exact symmetries ("swp" and "flp"). 
+    *   **R1** and **R2** break the declared symmetries (they are asymmetric under flipping or swapping) and are therefore physically invalid.
+    *   **R3** is symmetric but its mathematical contribution cannot satisfy the required bounds simultaneously for all observations.
+    *   **R4** respects all symmetries and its specific dimmer coverage perfectly accounts for the deficit in the new readings without violating the tight precision constraints of the old readings.
+*   **World W-26**: Similar to W-24, a visible relation is present. The deficit can be resolved in two distinct ways: 
+    *   Using **R2**: Because R2's switch coverage turns it "off" for the new observations, the visible relation's coefficient `mu` alone can be tuned to absorb the new deficit while R2 fixes a minor residual error in one of the older readings.
+    *   Using **R1**: Its contribution spans all observations, allowing a different combination of `mu` and `lam` to fit all data points within the required tolerances.
+*   **World W-27**: A massive deficit appears in the new readings. 
+    *   **R1** utilizes a dimmer that perfectly scales with the large values in the new readings while fading out (contributing near-zero) for the old readings. 
+    *   **R4** utilizes a switch that only activates when `dov*pim` exceeds `3*vu`, meaning it contributes exactly when needed for the new readings and remains zero for the old ones. Both candidates independently resolve the deficit flawlessly.
+
+```json
+[
+  {
+    "id": "W-22",
+    "verdict": "NO_DEFICIT"
+  },
+  {
+    "id": "W-23",
+    "verdict": "FORK",
+    "branches": [
+      "R1",
+      "R2"
+    ]
+  },
+  {
+    "id": "W-24",
+    "verdict": "KNOWN",
+    "relation": "R3"
+  },
+  {
+    "id": "W-25",
+    "verdict": "KNOWN",
+    "relation": "R4"
+  },
+  {
+    "id": "W-26",
+    "verdict": "FORK",
+    "branches": [
+      "R1",
+      "R2"
+    ]
+  },
+  {
+    "id": "W-27",
+    "verdict": "FORK",
+    "branches": [
+      "R1",
+      "R4"
+    ]
+  }
+]
+```

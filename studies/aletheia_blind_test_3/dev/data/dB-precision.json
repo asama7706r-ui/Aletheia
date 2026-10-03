@@ -1,0 +1,7 @@
+{
+ "id": "dB-precision",
+ "experiment": "B",
+ "type": "root",
+ "observer": "lab3",
+ "new_precision": "1"
+}

@@ -1,0 +1,27 @@
+All results are now cross-validated (exact Fourier–Motzkin elimination over rationals, confirmed by an independent LP solver on every system, plus hand-checks of the tight cases). Here is the summary of what happens in each world.
+
+**W-15** — The two new readings (xel,yor)=(4,3) and (5,5) overshoot `cj*(xel²+yor²)` by ~0.31–0.39 and ~1.29–1.37, outside tavo's ±1/25: deficit. R1 (`cj*xel*yor`) flips sign under `flp: xel→−xel` while f and ostr are invariant, so symmetry forces lam=0; and even uncovered, the two new states demand incompatible lam (residual/h ratios disagree) → SYMMETRY + SHAPE. R2 (`cj*(xel²−yor²)`) flips under `swp: xel↔yor` → SYMMETRY, and its term vanishes at (5,5) → SHAPE. R3 works with lam ∈ [31/416 ≈ 0.0745, 0.0306]∩… ≈ [0.0288, 0.0306], old-state shifts ≤ ~0.023 < 1/25. R4 works with actual dimmer coverage (phi = 1/2 and 7/11 at the new states), lam ∈ [0.0285, 0.0303], old contributions negligible. Two sufficient candidates → **FORK(R3, R4)**.
+
+**W-16** — New state (3, 9/2, 11/4) misses by ~0.05–0.12: deficit. R1's exact coefficient 1/8 overshoots (27/121 ≈ 0.223 > the ≤0.12 gap), but a free lam ∈ [0.0299, 0.0328] would fit → BOUND. R2's two new-state lam windows are disjoint → SHAPE. R3 numerically fits but needs a coefficient of dimension L⁻¹, unreachable from ga ({L²,T⁻²}) and gm ({M}) → TYPE. R4's three new lam windows are disjoint → SHAPE. → **NEW**.
+
+**W-17** — Old readings pin mu ∈ [0.4049, 0.4344]; the first new reading needs mu ≤ 0.4016 → deficit. R1 and R4: no (mu, lam) fits the three new states even uncovered → SHAPE. R2 (switch, on at tep/kx<2/3): uncovered at new states it fits (lam ≈ −0.06), but old obs 2 actually has phi=1, and that plus old obs 1 exclude every fitting strength → BOUND. R3 (dimmer): S feasible (mu ≈ 0.4107, lam ≈ −0.1047), but with the actual old-state coverage factors (esp. phi=4/29 at ral=1) that strength is excluded → BOUND. → **NEW**.
+
+**W-18** — Old readings pin mu ∈ [−0.7867, −0.7747]; new obs 2 needs mu ≥ −0.7511 → deficit. R1: even uncovered, new states 1/2 demand incompatible lam → SHAPE. R2's switch (ruk/nq > 2) is off at every observed state, so A_R2 = Z fails, but uncovered at the new states it fits (e.g. mu = −0.78, lam ∈ [0.057, 0.144]) → SCOPE. R3 → SHAPE. R4's exact −3/5 overshoots (needs mu ∈ [0.80, 0.91] at new obs 1 vs old range), while a free lam ≈ 0.032–0.035 would fit → BOUND. → **NEW**.
+
+**W-19** — Both new readings fall short (residuals [−0.266, −0.141] and [−0.657, −0.577]): deficit. R1's switch (aq/kt < 1/3) is off at both new states (4/5, 4/3), but uncovered it fits both with lam ∈ [−0.1087, −0.0954] while barely moving the old states → SCOPE. R2, R3 (even with its switch forced on at new states), R4: new-state lam windows are pairwise disjoint → SHAPE. → **NEW**.
+
+**W-20** — New residuals [3.255, 3.405] and [2.671, 2.821]: deficit. R1 with its actual dimmer coverage (phi = 16/25 and 1600/2441) fits both new states with lam ∈ [31/416, 227/2912] ∩ [0.0724, 0.0765] ≠ ∅, and at old states phi ≤ 4/229 keeps shifts ≤ 0.031 < 1/20 → sufficient. R2: a free lam ∈ [0.0574, 0.0590] fits the new states, but without coverage its old-state terms (e.g. −35/6·lam ≈ −0.33 at obs 1) break the old fit → BOUND. R3 needs dimension L from {kz(M), kq(N), vu(L,T⁻¹)} — impossible → TYPE, and its new-state lam windows are disjoint → SHAPE. R4's switch (dov·pim/vu > 3) is off at every state (rhos 24/13, 95/52 < 3) so A fails, but uncovered at new it fits (lam ∈ [0.1196, 0.1228]) → SCOPE. → **KNOWN: R1**.
+
+**W-21** — Three new readings all above the law (residuals [0.2406, 0.3656], [0.1798, 0.2598], [0.2533, 0.3783]): deficit. R1's switch is off at all new states, and even uncovered the three lam windows are disjoint → SHAPE. R2: a free lam in the hairline window [1155301/6800000, 5849107/34425000] ≈ [0.169897, 0.169909] fits all three new states, but without coverage the old states get ~0.17–0.28 shifts that break them → BOUND. R3's switch (cs/kf > 3/2) is on exactly at the three new states (rhos 52/25, 44/25, 61/25) and off at all old ones; lam ∈ [0.03402, 0.04342] fits everything → sufficient. R4: disjoint new lam windows → SHAPE. → **KNOWN: R3**.
+
+```json
+[
+ {"id": "W-15", "verdict": "FORK", "branches": ["R3", "R4"], "excluded": {"R1": ["SYMMETRY", "SHAPE"], "R2": ["SYMMETRY", "SHAPE"]}},
+ {"id": "W-16", "verdict": "NEW", "excluded": {"R1": ["BOUND"], "R2": ["SHAPE"], "R3": ["TYPE"], "R4": ["SHAPE"]}},
+ {"id": "W-17", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["BOUND"], "R3": ["BOUND"], "R4": ["SHAPE"]}},
+ {"id": "W-18", "verdict": "NEW", "excluded": {"R1": ["SHAPE"], "R2": ["SCOPE"], "R3": ["SHAPE"], "R4": ["BOUND"]}},
+ {"id": "W-19", "verdict": "NEW", "excluded": {"R1": ["SCOPE"], "R2": ["SHAPE"], "R3": ["SHAPE"], "R4": ["SHAPE"]}},
+ {"id": "W-20", "verdict": "KNOWN", "relation": "R1", "excluded": {"R2": ["BOUND"], "R3": ["TYPE", "SHAPE"], "R4": ["SCOPE"]}},
+ {"id": "W-21", "verdict": "KNOWN", "relation": "R3", "excluded": {"R1": ["SHAPE"], "R2": ["BOUND"], "R4": ["SHAPE"]}}
+]
+```

@@ -1,0 +1,119 @@
+{
+ "id": "dA-nebsw",
+ "experiment": "A",
+ "observable": "ym",
+ "quantities": {
+  "ym": {
+   "M": 1,
+   "L": -1
+  },
+  "nc": {
+   "L": -3
+  },
+  "nd": {},
+  "te": {
+   "K": 1
+  }
+ },
+ "constants": {
+  "kd": {
+   "value": "50",
+   "dims": {
+    "L": -3
+   }
+  },
+  "kw": {
+   "value": "2",
+   "dims": {
+    "M": 1,
+    "L": -1
+   }
+  }
+ },
+ "observers": {
+  "lab2": "1/50",
+  "far2": "1/5"
+ },
+ "base_law": "ym = kw*nd",
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "ob1",
+   "term": "kw*nd*te",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "ob2",
+   "term": "kw*nd",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "nc/kd",
+    "factor": {
+     "type": "switch",
+     "on": "<",
+     "threshold": "1"
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "object": "ob2",
+   "term": "kw*nd**3",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "old_observations": [
+  {
+   "state": {
+    "nc": "5000",
+    "nd": "1",
+    "te": "1"
+   },
+   "value": "2",
+   "observer": "lab2"
+  },
+  {
+   "state": {
+    "nc": "5000",
+    "nd": "2",
+    "te": "1"
+   },
+   "value": "4",
+   "observer": "lab2"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "nc": "10",
+    "nd": "1",
+    "te": "1"
+   },
+   "value": "5",
+   "observer": "far2"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "nc": "5000",
+    "nd": "2",
+    "te": "1"
+   },
+   "observer": "lab2"
+  },
+  {
+   "state": {
+    "nc": "10",
+    "nd": "2",
+    "te": "1"
+   },
+   "observer": "far2"
+  }
+ ],
+ "visible": null,
+ "symmetries": []
+}

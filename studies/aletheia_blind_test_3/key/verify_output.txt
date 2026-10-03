@@ -1,0 +1,246 @@
+==============================================================================
+PART A
+==============================================================================
+W-01  observable=ostr  answer=NEW
+   NO_SCOPE=NEW  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   R1: ['SYMMETRY']
+   R2: ['SYMMETRY', 'SHAPE']
+   R3: ['SHAPE']
+   R4: ['SCOPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-02  observable=vexa  answer=NO_DEFICIT
+   NO_SCOPE=NO_DEFICIT  scope_sensitive=False  DIMS_ONLY=NO_DEFICIT
+   BASE intervals: 
+   BASE ranges: [567/64, 567/64] [1575/32, 1575/32] [343/6, 343/6]
+   planet-X trap: yes
+W-03  observable=dral  answer=NEW
+   NO_SCOPE=NEW  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   R1: ['BOUND']
+   R2: ['SHAPE']
+   R3: ['TYPE', 'SHAPE']
+   R4: ['SHAPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-04  observable=plin  answer=KNOWN(R4)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)  nebulium=switch
+   R1: ['BOUND']
+   R2: ['SHAPE']
+   R3: ['SHAPE']
+   R4 intervals: lam_R4=[639/224000, 11583/3920000]
+   R4 ranges: [10071/16, 176287/280] [6250/13, 6250/13] [72355/96, 84429/112]
+W-05  observable=wesk  answer=NEW
+   NO_SCOPE=NEW  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   M_old=[-59/75, -251/324]  mid-mu answer=NEW  mu_matters=False
+   R1: ['SHAPE']
+   R2: ['SHAPE']
+   R3: ['SCOPE']
+   R4: ['SHAPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-06  observable=brel  answer=NO_DEFICIT
+   NO_SCOPE=NO_DEFICIT  scope_sensitive=False  DIMS_ONLY=NO_DEFICIT
+   M_old=[34/195, 602/2925]  mid-mu answer=NEW  mu_matters=True
+   BASE intervals: mu=[937/5265, 4709/26325]
+   BASE ranges: [14024/135, 70168/675] [14645/486, 29293/972] [5519/1215, 27643/6075]
+   planet-X trap: yes
+W-07  observable=vexa  answer=NEW
+   NO_SCOPE=NEW  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   R1: ['SCOPE']
+   R2: ['SHAPE']
+   R3: ['TYPE']
+   R4: ['SCOPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-08  observable=plin  answer=NEW
+   NO_SCOPE=KNOWN(R2)  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   R1: ['SHAPE']
+   R2: ['SCOPE']
+   R3: ['SHAPE']
+   R4: ['SHAPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-09  observable=kimb  answer=FORK(R3,R4)
+   NO_SCOPE=KNOWN(R4)  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   R1: ['SHAPE']
+   R2: ['BOUND']
+   R3 intervals: lam_R3=[233885/6748592, 102369/2222240]
+   R3 ranges: [29660657/11313816, 2646307/980400] [2720/817, 2720/817] [1113841667/331474960, 1888923099/545756000]
+   R4 intervals: lam_R4=[46777/25849600, 2933/1606000]
+   R4 ranges: [442109489/184178400, 27469181/11442750] [477660009/131994520, 59396522/16401275] [1341764877/431688320, 83375433/26820200]
+   separating possible observations: R3-R4:[0, 1, 2]
+W-10  observable=kimb  answer=KNOWN(R4)
+   NO_SCOPE=KNOWN(R4)  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   R1: ['SHAPE']
+   R2: ['BOUND']
+   R3: ['SHAPE']
+   R4 intervals: lam_R4=[23951/17443200, 1744/1104375]
+   R4 ranges: [1634401585/442010688, 41968046/11193945] [311312167/89687120, 158803384/45426625] [304126867/92158240, 77308892/23339125]
+W-11  observable=dral  answer=KNOWN(R1)
+   NO_SCOPE=KNOWN(R1)  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   R2: ['SHAPE']
+   R3: ['TYPE', 'SHAPE']
+   R4: ['BOUND']
+   R1 intervals: 
+   R1 ranges: [1297/150, 1297/150] [883/12, 883/12] [1593/640, 1593/640]
+W-12  observable=wesk  answer=KNOWN(R3)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)  nebulium=dimmer
+   M_old=[-59/75, -251/324]  mid-mu answer=KNOWN(R3)  mu_matters=False
+   R1: ['SHAPE']
+   R2: ['SHAPE']
+   R4: ['BOUND']
+   R3 intervals: mu=[-8457677/10729152, -296100781/382116420], lam_R3=[289402462/1560308715, 1734546965/8411655168]
+   R3 ranges: [338221627469/305566248960, 7365155741/6477783120] [1423992703367/59296446720, 7266141640787/301690011600] [106343483509/29483028480, 28633291027/7875237456]
+W-13  observable=wesk  answer=KNOWN(R2)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)  nebulium=switch
+   M_old=[-59/75, -251/324]  mid-mu answer=NEW  mu_matters=True
+   R1: ['SHAPE']
+   R3: ['SHAPE']
+   R4: ['SHAPE']
+   R2 intervals: mu=[-59/75, -11955749/15307650], lam_R2=[-2107/204102, -31066/3316275]
+   R2 ranges: [-5517277/4877800, -1083913/982600] [259/600, 9155479/20410200] [1489/200, 152126477/20410200]
+W-14  observable=plin  answer=FORK(R1,R2,R4)
+   NO_SCOPE=KNOWN(R1)  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   R3: ['BOUND']
+   R1 intervals: lam_R1=[41503/153000000, 58163/153000000]
+   R1 ranges: [20405929/32640, 20408309/32640] [85053361/122400, 85074781/122400] [3830929/8160, 3833309/8160] [8165929/10880, 8168309/10880]
+   R2 intervals: lam_R2=[270193/258187500, 378653/258187500]
+   R2 ranges: [372570193/595680, 372678653/595680] [724931737/1040400, 725907877/1040400] [795870193/1697280, 795978653/1697280] [2992950193/3990240, 2993058653/3990240]
+   R4 intervals: lam_R4=[3267/4760000, 32049/33320000]
+   R4 ranges: [106613/170, 747311/1190] [1701089/2448, 11910683/17136] [1875/4, 1875/4] [127863/170, 896061/1190]
+   separating possible observations: R1-R2:[1, 2]; R1-R4:[0, 2, 3]; R2-R4:[0, 1, 3]
+W-15  observable=ostr  answer=FORK(R3,R4)
+   NO_SCOPE=KNOWN(R3)  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   R1: ['SYMMETRY', 'SHAPE']
+   R2: ['SYMMETRY', 'SHAPE']
+   R3 intervals: lam_R3=[901/31250, 957/31250]
+   R3 ranges: [3343/100, 3351/100] [225901/70000, 225957/70000] [45901/2800, 45957/2800]
+   R4 intervals: lam_R4=[19822/694575, 7018/231525]
+   R4 ranges: [17374286/540225, 5791634/180075] [921069/120050, 954333/120050] [12151/700, 12207/700]
+   separating possible observations: R3-R4:[0, 1, 2]
+W-16  observable=dral  answer=NEW
+   NO_SCOPE=NEW  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   R1: ['BOUND']
+   R2: ['SHAPE']
+   R3: ['TYPE']
+   R4: ['SHAPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-17  observable=tumb  answer=NEW
+   NO_SCOPE=NEW  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   M_old=[334/825, 1553/3575]  mid-mu answer=NEW  mu_matters=False
+   R1: ['SHAPE']
+   R2: ['BOUND']
+   R3: ['BOUND']
+   R4: ['SHAPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-18  observable=wesk  answer=NEW
+   NO_SCOPE=KNOWN(R2)  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   M_old=[-59/75, -251/324]  mid-mu answer=NEW  mu_matters=False
+   R1: ['SHAPE']
+   R2: ['SCOPE']
+   R3: ['SHAPE']
+   R4: ['BOUND']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-19  observable=kimb  answer=NEW
+   NO_SCOPE=KNOWN(R1)  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   R1: ['SCOPE']
+   R2: ['SHAPE']
+   R3: ['SHAPE']
+   R4: ['SHAPE']
+   joint system feasible (W8, readings L and C): {'L': False, 'C': False}
+W-20  observable=vexa  answer=KNOWN(R1)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)  nebulium=dimmer
+   R2: ['BOUND']
+   R3: ['TYPE', 'SHAPE']
+   R4: ['SCOPE']
+   R1 intervals: lam_R1=[31/416, 528869501/6916000000]
+   R1 ranges: [1448265/3712, 172039944921/440800000] [10708173/65312, 509002569027/3102320000] [53771795/177152, 25542146903207/84147200000]
+W-21  observable=kimb  answer=KNOWN(R3)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)  nebulium=switch
+   R1: ['SHAPE']
+   R2: ['BOUND']
+   R4: ['SHAPE']
+   R3 intervals: lam_R3=[6555/192712, 43585/1003816]
+   R3 ranges: [136/57, 136/57] [6487989/2182180, 3164813/1033340] [6545339/2975700, 34847333/15500100]
+W-22  observable=yuth  answer=NO_DEFICIT
+   NO_SCOPE=NO_DEFICIT  scope_sensitive=False  DIMS_ONLY=NO_DEFICIT
+   BASE intervals: 
+   BASE ranges: [20/27, 20/27] [5/54, 5/54] [1/6, 1/6]
+   planet-X trap: yes
+W-23  observable=dral  answer=FORK(R1,R2)
+   NO_SCOPE=FORK(R1,R2)  scope_sensitive=False  DIMS_ONLY=KNOWN(R1)
+   R3: ['TYPE', 'SHAPE']
+   R4: ['SHAPE']
+   R1 intervals: 
+   R1 ranges: [153/4, 153/4] [67/36, 67/36] [4779/640, 4779/640]
+   R2 intervals: lam_R2=[437/16200, 1069/36450]
+   R2 ranges: [100099/2700, 901577/24300] [991/300, 28129/8100] [510217/69120, 1148417/155520]
+   separating possible observations: R1-R2:[0, 1, 2]
+W-24  observable=tumb  answer=KNOWN(R3)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)  nebulium=dimmer
+   M_old=[334/825, 1553/3575]  mid-mu answer=NEW  mu_matters=True
+   R1: ['SHAPE']
+   R2: ['SCOPE']
+   R4: ['BOUND']
+   R3 intervals: mu=[970027/2444750, 2578819/6319500], lam_R3=[4381/105325, 2185846/20780375]
+   R3 ranges: [5547475751/1352947500, 2671132259/628078500] [223056697/195330000, 118348591/102768400] [9708585266/1275159375, 49635361/6463125] [792819703942/88643195625, 2124258923908/233187922625]
+W-25  observable=ostr  answer=KNOWN(R4)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)  nebulium=dimmer
+   R1: ['SYMMETRY']
+   R2: ['SYMMETRY', 'SHAPE']
+   R3: ['SHAPE']
+   R4 intervals: lam_R4=[71/1215, 667/10935]
+   R4 ranges: [4931/105, 44407/945] [612/35, 626/35] [50375/1512, 454075/13608]
+W-26  observable=tumb  answer=FORK(R1,R2)
+   NO_SCOPE=KNOWN(R1)  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   M_old=[334/825, 1553/3575]  mid-mu answer=KNOWN(R1)  mu_matters=True
+   R3: ['SHAPE']
+   R4: ['SHAPE']
+   R1 intervals: mu=[1856909/4603500, 623087/1436500], lam_R1=[10303/4740450, 6811/920700]
+   R1 ranges: [12452983/4882500, 109206907/41609750] [1329/200, 1337/200] [166809269/18632250, 1415596127/153798750] [2095277/1255500, 2118904/1234575]
+   R2 intervals: mu=[65423/145860, 13787/30690], lam_R2=[-174661/1662375, -10303/607750]
+   R2 ranges: [822611/309400, 86617/32550] [247871201/37293750, 605689079/90675000] [43285297/4873050, 9119143/1025325] [79907993/47736000, 225780131/130572000]
+   separating possible observations: R1-R2:[2]
+W-27  observable=vexa  answer=FORK(R1,R4)
+   NO_SCOPE=NEW  scope_sensitive=True  DIMS_ONLY=KNOWN(R1)
+   R2: ['SHAPE']
+   R3: ['TYPE', 'SHAPE']
+   R1 intervals: lam_R1=[934099/12485200, 134317/1783600]
+   R1 ranges: [956163885/598192, 136607955/85456] [129818841/175616, 18545703/25088] [1507276/33271, 215428/4753]
+   R4 intervals: lam_R4=[219788/207025, 31604/29575]
+   R4 ranges: [11189841/7000, 1598703/1000] [3359777/3360, 480791/480] [42, 42]
+   separating possible observations: R1-R4:[1, 2]
+
+Composition: {'NEW': 9, 'NO_DEFICIT': 3, 'KNOWN': 9, 'FORK': 6}
+scope-sensitive: 15 ['W-04', 'W-08', 'W-09', 'W-12', 'W-13', 'W-14', 'W-15', 'W-18', 'W-19', 'W-20', 'W-21', 'W-24', 'W-25', 'W-26', 'W-27']
+nebulium KNOWN: dimmer ['W-12', 'W-20', 'W-24', 'W-25'], switch ['W-04', 'W-13', 'W-21']; scope-sensitive NEW ['W-08', 'W-18', 'W-19']; FORK ['W-09', 'W-14', 'W-15', 'W-26', 'W-27']
+sole reasons in NEW worlds: {'TYPE': ['W-07.R3', 'W-16.R3'], 'SYMMETRY': ['W-01.R1'], 'SCOPE': ['W-01.R4', 'W-05.R3', 'W-07.R1', 'W-07.R4', 'W-08.R2', 'W-18.R2', 'W-19.R1'], 'SHAPE': ['W-01.R3', 'W-03.R2', 'W-03.R4', 'W-05.R1', 'W-05.R2', 'W-05.R4', 'W-07.R2', 'W-08.R1', 'W-08.R3', 'W-08.R4', 'W-16.R2', 'W-16.R4', 'W-17.R1', 'W-17.R4', 'W-18.R1', 'W-18.R3', 'W-19.R2', 'W-19.R3', 'W-19.R4'], 'BOUND': ['W-03.R1', 'W-16.R1', 'W-17.R2', 'W-17.R3', 'W-18.R4']}
+visible relation matters: ['W-06', 'W-13', 'W-24', 'W-26']
+three-branch forks: ['W-14']
+planet-X traps: ['W-02', 'W-06', 'W-22']
+observable groups: {'ostr': ['W-01', 'W-15', 'W-25'], 'vexa': ['W-02', 'W-07', 'W-20', 'W-27'], 'dral': ['W-03', 'W-11', 'W-16', 'W-23'], 'plin': ['W-04', 'W-08', 'W-14'], 'wesk': ['W-05', 'W-12', 'W-13', 'W-18'], 'brel': ['W-06'], 'kimb': ['W-09', 'W-10', 'W-19', 'W-21'], 'tumb': ['W-17', 'W-24', 'W-26'], 'yuth': ['W-22']}
+baseline no_scope: correct on 12/27
+baseline dims_only: correct on 5/27
+baseline always_new: correct on 12/27
+KNOWN answer positions: {'W-04': 'R4', 'W-10': 'R4', 'W-11': 'R1', 'W-12': 'R3', 'W-13': 'R2', 'W-20': 'R1', 'W-21': 'R3', 'W-24': 'R3', 'W-25': 'R4'}
+
+==============================================================================
+PART B
+==============================================================================
+D-01 [root_none] type=root reopened=[] finals=
+D-02 [obs_inside] type=observation reopened=[] finals=
+D-03 [rel_known_fork] type=relation reopened=['W-17', 'W-24', 'W-26'] finals=W-17:NEW->NEW, W-24:KNOWN(R3)->FORK(R3,R5), W-26:FORK(R1,R2)->FORK(R1,R2)
+D-04 [root_unchanged] type=root reopened=['W-01', 'W-09', 'W-10', 'W-15', 'W-19', 'W-21', 'W-22', 'W-25'] finals=W-01:NEW->NEW, W-09:FORK(R3,R4)->FORK(R3,R4), W-10:KNOWN(R4)->KNOWN(R4), W-15:FORK(R3,R4)->FORK(R3,R4), W-19:NEW->NEW, W-21:KNOWN(R3)->KNOWN(R3), W-22:NO_DEFICIT->NO_DEFICIT, W-25:KNOWN(R4)->KNOWN(R4)
+D-05 [rel_new_known] type=relation reopened=['W-04', 'W-08', 'W-14'] finals=W-04:KNOWN(R4)->KNOWN(R4), W-08:NEW->KNOWN(R5), W-14:FORK(R1,R2,R4)->FORK(R1,R2,R4)
+D-06 [rel_new_known] type=relation reopened=['W-17', 'W-24', 'W-26'] finals=W-17:NEW->KNOWN(R5), W-24:KNOWN(R3)->KNOWN(R3), W-26:FORK(R1,R2)->FORK(R1,R2)
+D-07 [rel_unchanged] type=relation reopened=['W-01', 'W-15', 'W-25'] finals=W-01:NEW->NEW, W-15:FORK(R3,R4)->FORK(R3,R4), W-25:KNOWN(R4)->KNOWN(R4)
+D-08 [obs_inside] type=observation reopened=[] finals=
+D-09 [rel_none] type=relation reopened=[] finals=
+D-10 [obs_fork] type=observation reopened=['W-27'] finals=W-27:FORK(R1,R4)->KNOWN(R1)
+D-11 [root_revive] type=root reopened=['W-07', 'W-20', 'W-27'] finals=W-07:NEW->KNOWN(R4), W-20:KNOWN(R1)->KNOWN(R1), W-27:FORK(R1,R4)->FORK(R1,R4)
+D-12 [rel_known_fork] type=relation reopened=['W-09', 'W-10', 'W-19', 'W-21'] finals=W-09:FORK(R3,R4)->FORK(R3,R4), W-10:KNOWN(R4)->FORK(R4,R5), W-19:NEW->NEW, W-21:KNOWN(R3)->KNOWN(R3)
+D-13 [obs_flip] type=observation reopened=['W-21'] finals=W-21:KNOWN(R3)->NEW
+D-14 [obs_flip] type=observation reopened=['W-02'] finals=W-02:NO_DEFICIT->KNOWN(R1)
+D-15 [root_vanish] type=root reopened=['W-18'] finals=W-18:NEW->NO_DEFICIT
+D-16 [rel_none] type=relation reopened=[] finals=
+D-17 [obs_fork] type=observation reopened=['W-14'] finals=W-14:FORK(R1,R2,R4)->FORK(R1,R2)
+D-18 [rel_unchanged] type=relation reopened=['W-07', 'W-20', 'W-27'] finals=W-07:NEW->NEW, W-20:KNOWN(R1)->KNOWN(R1), W-27:FORK(R1,R4)->FORK(R1,R4)
+categories: {'root_none': 1, 'obs_inside': 2, 'rel_known_fork': 2, 'root_unchanged': 1, 'rel_new_known': 2, 'rel_unchanged': 2, 'rel_none': 2, 'obs_fork': 2, 'root_revive': 1, 'obs_flip': 2, 'root_vanish': 1}
+relation items with >=2 files: 6; root items with >=2 files: 2; relation items on an observable with a NO_DEFICIT file: 3
+
+RESULT: KEY CONSISTENT (all checks of this script pass)

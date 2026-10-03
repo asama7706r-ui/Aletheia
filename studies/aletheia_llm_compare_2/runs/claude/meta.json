@@ -1,0 +1,14 @@
+{
+ "name_as_shown": "claude-opus-5.5",
+ "family": "anthropic",
+ "interface": "claude app",
+ "reasoning_option": "extra",
+ "memory_off": true,
+ "web_search_off": true,
+ "code_execution": "unable to check",
+ "scored": true,
+ "first_run_date": "2026-03-10",
+ "last_run_date": "2026-03-10",
+ "reruns": "0",
+ "notes": ""
+}

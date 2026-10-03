@@ -1,0 +1,146 @@
+{
+ "id": "W-06",
+ "experiment": "A",
+ "observable": "brel",
+ "quantities": {
+  "brel": {
+   "K": 1,
+   "T": 1
+  },
+  "sio": {
+   "T": 1
+  },
+  "fum": {
+   "K": 1
+  }
+ },
+ "constants": {
+  "xr": {
+   "value": "13/3",
+   "dims": {
+    "K": 1
+   }
+  },
+  "tq": {
+   "value": "8",
+   "dims": {
+    "T": 1
+   }
+  }
+ },
+ "observers": {
+  "orvi": "1/50",
+  "gavi": "1/12"
+ },
+ "base_law": "brel = fum*sio*(1 + sio/tq)",
+ "visible": {
+  "id": "V1",
+  "object": "lito",
+  "term": "xr*sio**2/tq"
+ },
+ "ledger": [
+  {
+   "id": "R1",
+   "object": "wamo",
+   "term": "xr*tq*(fum/xr)**3",
+   "coefficient": "unknown",
+   "coverage": null
+  },
+  {
+   "id": "R2",
+   "object": "ulse",
+   "term": "fum*tq**2/sio",
+   "coefficient": "unknown",
+   "coverage": {
+    "ratio": "fum/xr",
+    "factor": {
+     "type": "dimmer",
+     "expr": "1/(1 + r)"
+    }
+   }
+  },
+  {
+   "id": "R3",
+   "object": "dezo",
+   "term": "xr*sio*fum/(fum + xr)",
+   "coefficient": "unknown",
+   "coverage": null
+  }
+ ],
+ "symmetries": [],
+ "old_observations": [
+  {
+   "state": {
+    "sio": "1/2",
+    "fum": "3"
+   },
+   "value": "122/75",
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "sio": "1",
+    "fum": "3/2"
+   },
+   "value": "134/75",
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "sio": "3/4",
+    "fum": "6"
+   },
+   "value": "999/200",
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "sio": "3/2",
+    "fum": "2"
+   },
+   "value": "569/150",
+   "observer": "orvi"
+  }
+ ],
+ "new_observations": [
+  {
+   "state": {
+    "sio": "6",
+    "fum": "2"
+   },
+   "value": "7337/300",
+   "observer": "gavi"
+  },
+  {
+   "state": {
+    "sio": "9",
+    "fum": "5"
+   },
+   "value": "7759/75",
+   "observer": "orvi"
+  }
+ ],
+ "possible_observations": [
+  {
+   "state": {
+    "sio": "12",
+    "fum": "3"
+   },
+   "observer": "gavi"
+  },
+  {
+   "state": {
+    "sio": "5/2",
+    "fum": "9"
+   },
+   "observer": "orvi"
+  },
+  {
+   "state": {
+    "sio": "4",
+    "fum": "1/2"
+   },
+   "observer": "gavi"
+  }
+ ]
+}

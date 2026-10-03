@@ -1,0 +1,21 @@
+Based on the exact rational arithmetic evaluation of the base laws, visible relations, and ledger candidates across all observations, here is the analysis for each world:
+
+- **W-08:** The base law alone has a deficit in the new observations. None of the candidates (R1, R2, R3, R4) can provide the necessary correction without violating the precision bounds of the old observations. Thus, something new is needed.
+- **W-09:** There is a deficit that can be resolved by either candidate **R3** or **R4**. Both candidates can be assigned a coefficient `lam` that correctly bridges the gap between the base law's predictions and the new readings while remaining consistent with the old readings.
+- **W-10:** Similar to W-09, but the new observations fall in a different region. Candidate R3's coverage factor `phi` drops to 0 for these new states, rendering it unable to fix the deficit. Only candidate **R4** provides the necessary non-zero contribution where needed.
+- **W-11:** Candidate **R1** has an exact coefficient (`1/8`) and its known contribution perfectly aligns with both the old and new observations without requiring any free parameters. The other candidates require coefficients that contradict the old readings.
+- **W-12:** The visible relation (`mu`) establishes a baseline that fits the old observations but falls short (is too negative) for the new ones. Candidate **R3** provides the exact positive correction needed in the new regime while remaining negligible in the old regime.
+- **W-13:** The new observations require a negative correction. Candidate **R2** is the only one with a switch coverage that activates (`phi=1`) strictly in the new observation regime, allowing it to supply the necessary negative term without disrupting the old observations.
+- **W-14:** With only one new observation and intervals containing 0 for all old observations, candidates **R1**, **R2**, and **R4** can all be scaled by a very small coefficient `lam` that satisfies the new reading without exceeding the generous error bounds of the old readings.
+
+```json
+[
+{"id": "W-08", "verdict": "NEW"},
+{"id": "W-09", "verdict": "FORK", "branches": ["R3", "R4"]},
+{"id": "W-10", "verdict": "KNOWN", "relation": "R4"},
+{"id": "W-11", "verdict": "KNOWN", "relation": "R1"},
+{"id": "W-12", "verdict": "KNOWN", "relation": "R3"},
+{"id": "W-13", "verdict": "KNOWN", "relation": "R2"},
+{"id": "W-14", "verdict": "FORK", "branches": ["R1", "R2", "R4"]}
+]
+```

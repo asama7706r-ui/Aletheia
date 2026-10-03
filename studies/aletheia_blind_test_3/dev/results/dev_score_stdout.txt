@@ -1,0 +1,238 @@
+{
+ "A": {
+  "A1": true,
+  "A2": true,
+  "A3": true,
+  "A4": true,
+  "A5": true,
+  "ALWAYS_NEW": {
+   "accuracy": "6/11",
+   "correct": 6,
+   "false_familiarity": "0",
+   "false_novelty": "1",
+   "fork_accuracy": "0",
+   "mcnemar": {
+    "b": 5,
+    "c": 0,
+    "p_one_sided": "1/32"
+   },
+   "over_fork": "0"
+  },
+  "DIMS_ONLY": {
+   "accuracy": "5/11",
+   "correct": 5,
+   "false_familiarity": "1",
+   "false_novelty": "0",
+   "fork_accuracy": "0",
+   "mcnemar": {
+    "b": 6,
+    "c": 0,
+    "p_one_sided": "1/64"
+   },
+   "over_fork": "0"
+  },
+  "NO_SCOPE": {
+   "accuracy": "6/11",
+   "correct": 6,
+   "false_familiarity": "1/5",
+   "false_novelty": "4/5",
+   "fork_accuracy": "0",
+   "mcnemar": {
+    "b": 5,
+    "c": 0,
+    "p_one_sided": "1/32"
+   },
+   "over_fork": "0"
+  },
+  "analysis_accuracy": {
+   "BOUND": {
+    "applicable": 12,
+    "found": 12,
+    "listed": 12,
+    "misses": [],
+    "precision": "1",
+    "recall": "1"
+   },
+   "SCOPE": {
+    "applicable": 2,
+    "found": 2,
+    "listed": 2,
+    "misses": [],
+    "precision": "1",
+    "recall": "1"
+   },
+   "SHAPE": {
+    "applicable": 1,
+    "found": 1,
+    "listed": 1,
+    "misses": [],
+    "precision": "1",
+    "recall": "1"
+   },
+   "SYMMETRY": {
+    "applicable": 1,
+    "found": 1,
+    "listed": 1,
+    "misses": [],
+    "precision": "1",
+    "recall": "1"
+   },
+   "TYPE": {
+    "applicable": 2,
+    "found": 2,
+    "listed": 2,
+    "misses": [],
+    "precision": "1",
+    "recall": "1"
+   }
+  },
+  "best_baseline": "ALWAYS_NEW",
+  "composition": {
+   "fork3": [],
+   "nebulium_dimmer": [
+    "dA-coronium",
+    "dA-nebdim"
+   ],
+   "nebulium_switch": [
+    "dA-nebsw"
+   ],
+   "planet_x": [
+    "dA-step0:R1"
+   ],
+   "scope_sensitive": [
+    "dA-coronium",
+    "dA-fork",
+    "dA-nebdim",
+    "dA-nebsw",
+    "dA-scopesole"
+   ],
+   "scope_sensitive_fork": [
+    "dA-fork"
+   ],
+   "scope_sensitive_new": [
+    "dA-scopesole"
+   ],
+   "shared_observable_with_nd": [],
+   "sole": {
+    "BOUND": [
+     "dA-helium:R1",
+     "dA-helium:R2",
+     "dA-planetx:R1",
+     "dA-planetx:R2",
+     "dA-scopesole:R2",
+     "dA-symsole:R2"
+    ],
+    "SCOPE": [
+     "dA-helium:R3",
+     "dA-scopesole:R1"
+    ],
+    "SHAPE": [
+     "dA-typesole:R2"
+    ],
+    "SYMMETRY": [
+     "dA-symsole:R1"
+    ],
+    "TYPE": [
+     "dA-typesole:R1"
+    ]
+   },
+   "verdicts": {
+    "FORK": 1,
+    "KNOWN": 4,
+    "NEW": 5,
+    "NO_DEFICIT": 1
+   },
+   "visible_matters": [
+    "dA-visible"
+   ]
+  },
+  "composition_unmet": [
+   "KNOWN worlds: 4, required 9",
+   "NEW worlds: 5, required 9",
+   "FORK worlds: 1, required 6",
+   "NO_DEFICIT worlds: 1, required 3",
+   "scope-sensitive worlds: 5, required >= 8",
+   "nebulium-type KNOWN worlds: 3, required >= 5",
+   "nebulium-type with a dimmer: 2, required >= 3",
+   "nebulium-type with a switch: 1, required >= 2",
+   "scope-sensitive NEW worlds: 1, required >= 2",
+   "worlds where the visible relation matters: 1, required >= 3",
+   "no FORK with three branches",
+   "no observable shared by three worlds including a NO_DEFICIT one"
+  ],
+  "excluded": {},
+  "n_total": 11,
+  "n_valid": 11,
+  "outcome": "PASS",
+  "procedure": {
+   "accuracy": "1",
+   "correct": 11,
+   "false_familiarity": "0",
+   "false_novelty": "0",
+   "fork_accuracy": "1",
+   "notes_valid": "1",
+   "over_fork": "0"
+  },
+  "void": false
+ },
+ "B": {
+  "B1": true,
+  "B2": true,
+  "B3": true,
+  "REOPEN_ALL": {
+   "list_exact": 0,
+   "list_exact_rate": "0",
+   "micro_precision": "7/110",
+   "micro_recall": "1",
+   "verdicts_correct": 10,
+   "verdicts_correct_rate": "1"
+  },
+  "REOPEN_NONE": {
+   "list_exact": 3,
+   "list_exact_rate": "3/10",
+   "micro_precision": null,
+   "micro_recall": "0",
+   "verdicts_correct": 4,
+   "verdicts_correct_rate": "2/5"
+  },
+  "composition": {
+   "obs_flip": 1,
+   "obs_fork": 1,
+   "obs_inside": 1,
+   "rel_known_fork": 1,
+   "rel_new_known": 1,
+   "rel_none": 1,
+   "rel_unchanged": 1,
+   "root_none": 1,
+   "root_revive": 1,
+   "root_unchanged": 0,
+   "root_vanish": 1
+  },
+  "composition_unmet": [
+   "obs_flip items: 1, required 2",
+   "obs_inside items: 1, required 2",
+   "obs_fork items: 1, required 2",
+   "rel_new_known items: 1, required 2",
+   "rel_known_fork items: 1, required 2",
+   "rel_unchanged items: 1, required 2",
+   "rel_none items: 1, required 2",
+   "root_unchanged items: 0, required 1",
+   "relation items with 2 or more reopened files: required >= 2",
+   "no root item with 2 or more reopened files"
+  ],
+  "excluded": {},
+  "n_total": 10,
+  "n_valid": 10,
+  "outcome": "PASS",
+  "procedure": {
+   "list_exact": 10,
+   "list_exact_rate": "1",
+   "micro_precision": "1",
+   "micro_recall": "1",
+   "silent_changes": 0,
+   "verdicts_correct": 10,
+   "verdicts_correct_rate": "1"
+  },
+  "void": false
+ }
+}

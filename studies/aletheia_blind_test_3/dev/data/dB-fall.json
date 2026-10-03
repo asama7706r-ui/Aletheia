@@ -1,0 +1,12 @@
+{
+ "id": "dB-fall",
+ "experiment": "B",
+ "type": "observation",
+ "world": "dA-nebdim",
+ "state": {
+  "na": "1000000",
+  "nb": "2"
+ },
+ "observer": "lab1",
+ "value": "1"
+}
