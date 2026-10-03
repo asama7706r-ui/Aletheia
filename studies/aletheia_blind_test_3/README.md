@@ -42,7 +42,7 @@ python scorer/validate_v3.py worlds data key/key.json
 - `outputs_rerun.json` should have SHA-256 `393e65dacff9119600305e53b5faa339d744ecadabbe0626a2c7ee330cf15a9b`, and `report_rerun.json` should have `dd7034634bb5ce700e1ce6a9e73d465df5fa7ed3cc5ab46a5ff5c41c8755f822`. The rerun names keep the published files intact.
 - The validator should print VALID.
 - `key/` also holds the generator's own code, its independent verifier (`verify_key.py`) and its notes, including the W8 ambiguity it reported (`generator_notes.md`).
-- `GENERATOR_START.md` is the (Arabic) start message given to the generator session.
+- `GENERATOR_START.md` is the (Arabic) start message given to the generator session; `GENERATOR_START_en.md` is its English translation.
 
 ## Rerun the development checks
 ```
