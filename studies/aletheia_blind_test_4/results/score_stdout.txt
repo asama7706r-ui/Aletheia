@@ -1,0 +1,45 @@
+{
+ "outcome": "PASS",
+ "valid_worlds": 30,
+ "valid_fillers": 39,
+ "accuracy": {
+  "procedure": "1 (1.000)",
+  "FIX": "7/13 (0.538)",
+  "DERIVE": "29/39 (0.744)",
+  "DIMS": "10/13 (0.769)",
+  "FORK_ALL": "6/13 (0.462)"
+ },
+ "silent_substitution": [],
+ "false_alarms": "0 (0.000)",
+ "branch_accuracy": "1 (1.000)",
+ "silent_choice": [],
+ "invalid_detection": "1 (1.000)",
+ "over_branching": 0,
+ "best_baseline": {
+  "method": "DIMS",
+  "accuracy": "10/13 (0.769)",
+  "b": 9,
+  "c": 0,
+  "mcnemar_p": "1/512 (0.002)"
+ },
+ "criteria": {
+  "C1 accuracy >= 0.70": true,
+  "C2 silent substitution <= 1 filler": true,
+  "C3 false alarms <= 0.15": true,
+  "C4 branch accuracy >= 0.70": true,
+  "C5 silent choice <= 1 world": true,
+  "C6 INVALID detection >= 2/3": true,
+  "C7 +0.15 over the best baseline and McNemar p < 0.05": true
+ },
+ "zero_report": {
+  "counts": {
+   "absent": 102,
+   "below_precision": 4,
+   "zero_for_any_value": 7,
+   "n/a": 8
+  },
+  "agree_with_reference": "39/39"
+ },
+ "excluded": {}
+}
+exit 0

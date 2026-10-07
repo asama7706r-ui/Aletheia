@@ -1,0 +1,3640 @@
+{
+ "C-02": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "exch(ba,bb)": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "e3@0": "49/100",
+       "e3@1": "99/100"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "C-03": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": false,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "pp": "99/100"
+      }
+     },
+     "reason": [
+      {
+       "item": "F1"
+      }
+     ],
+     "verdict": "INVALID",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-01": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "qc": "599/600"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-02": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "gd": {
+        "M": 1,
+        "T": -1
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "gd": "5",
+           "ks": "-7",
+           "ms": "11",
+           "vlx": "-13",
+           "vly": "17",
+           "vlz": "-19",
+           "xpx": "23",
+           "xpy": "-29",
+           "xpz": "31"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "gd": "5",
+           "ks": "-7",
+           "ms": "11",
+           "vlx": "-13",
+           "vly": "17",
+           "vlz": "-19",
+           "xpx": "23",
+           "xpy": "-29",
+           "xpz": "31"
+          }
+         },
+         "old": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "gd": "5",
+           "ks": "-7",
+           "ms": "11",
+           "vlx": "-13",
+           "vly": "17",
+           "vlz": "-19",
+           "xpx": "23",
+           "xpy": "-29",
+           "xpz": "31"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "gd": "199/100"
+      }
+     },
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "rev_t"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-03": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "bmx": "5",
+           "bmy": "-7",
+           "bmz": "11",
+           "ch": "-13",
+           "efx": "17",
+           "efy": "-19",
+           "efz": "23",
+           "ms": "-29",
+           "vlx": "31",
+           "vly": "-37",
+           "vlz": "2"
+          }
+         },
+         "old": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "bmx": "5",
+           "bmy": "-7",
+           "bmz": "11",
+           "ch": "-13",
+           "efx": "17",
+           "efy": "-19",
+           "efz": "23",
+           "ms": "-29",
+           "vlx": "31",
+           "vly": "-37",
+           "vlz": "2"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "bmy": "99/100",
+       "bmz": "299/100"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-04": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "wo": {
+        "L": 1,
+        "T": -1
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "wox": "199/100",
+       "woy": "0",
+       "woz": "0"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-05": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": {
+          "point": {
+           "hh": "2",
+           "pnx": "-3",
+           "pny": "5",
+           "pnz": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": {
+          "point": {
+           "hh": "2",
+           "pnx": "-3",
+           "pny": "5",
+           "pnz": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "hh": "2",
+           "pnx": "-3",
+           "pny": "5",
+           "pnz": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "old": {
+          "point": {
+           "hh": "2",
+           "pnx": "-3",
+           "pny": "5",
+           "pnz": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "pnx@0": "499/100"
+      }
+     },
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "rev_t"
+      },
+      {
+       "item": "F2",
+       "transformation": "refl_x"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "zero_for_any_value",
+      "zero_for_any_value"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-06": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "cc": {
+        "L": 2,
+        "M": 1,
+        "Q": -2,
+        "T": -2
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "exch(ba,bb)": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "dd": "-3",
+           "kk": "5",
+           "qa": "-7",
+           "qb": "11"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "cc": "299/300"
+      }
+     },
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "exch(ba,bb)"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-07": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "cc": {
+        "L": 1,
+        "M": 1,
+        "T": -3
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "kk": "-3",
+           "sf": "5",
+           "tt": "-7"
+          }
+         },
+         "old": "unchanged",
+         "signs": {
+          "sf:rev_t": 1
+         }
+        },
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "kk": "-3",
+           "sf": "5",
+           "tt": "-7"
+          }
+         },
+         "old": {
+          "point": {
+           "cc": "2",
+           "kk": "-3",
+           "sf": "5",
+           "tt": "-7"
+          }
+         },
+         "signs": {
+          "sf:rev_t": -1
+         }
+        }
+       ],
+       "keeping": [
+        {
+         "sf:rev_t": -1
+        }
+       ],
+       "matters": [
+        "sf:rev_t"
+       ],
+       "status": "conditional",
+       "unknowns": [
+        "sf:rev_t"
+       ]
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "cc": "199/100"
+      }
+     },
+     "decisive": [
+      {
+       "measure": [
+        {
+         "instrument": "?",
+         "unknown": "sf:rev_t"
+        }
+       ],
+       "transformation": "rev_t"
+      }
+     ],
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "rev_t"
+      }
+     ],
+     "verdict": "CONDITIONAL",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-08": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "zz": {
+        "L": 2,
+        "M": 1,
+        "Q": -1,
+        "T": -2
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "dd": "2",
+           "kk": "-3",
+           "qa": "5",
+           "qb": "-7",
+           "zz": "11"
+          }
+         },
+         "old": "unchanged",
+         "signs": {
+          "zz:conj_c": 1
+         }
+        },
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {
+          "zz:conj_c": -1
+         }
+        }
+       ],
+       "keeping": [
+        {
+         "zz:conj_c": -1
+        }
+       ],
+       "matters": [
+        "zz:conj_c"
+       ],
+       "status": "conditional",
+       "unknowns": [
+        "zz:conj_c"
+       ]
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "zz": "199/200"
+      }
+     },
+     "decisive": [
+      {
+       "measure": [
+        {
+         "instrument": "i05",
+         "unknown": "zz:conj_c"
+        }
+       ],
+       "transformation": "conj_c"
+      }
+     ],
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "conj_c"
+      }
+     ],
+     "verdict": "CONDITIONAL",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-09": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "cc": {
+        "L": 1,
+        "M": 1,
+        "T": -2
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "kk": "-3",
+           "pha": "5",
+           "phb": "-7"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "kk": "-3",
+           "pha": "5",
+           "phb": "-7"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "cc": "299/200"
+      }
+     },
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "rev_t"
+      },
+      {
+       "item": "F2",
+       "transformation": "conj_c"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-10": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "cc": {
+        "L": 1
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "fox": "-3",
+           "foy": "5",
+           "foz": "-7",
+           "ntx": "11",
+           "nty": "-13",
+           "xpx": "17",
+           "xpy": "-19",
+           "xpz": "23"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "cc": "299/100"
+      }
+     },
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "refl_x"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-11": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "cc": {
+        "L": 1,
+        "Q": 1
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "dd": "-3",
+           "efx": "5",
+           "efy": "-7",
+           "efz": "11",
+           "kk": "-13",
+           "qa": "17",
+           "qb": "-19"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "dd": "-3",
+           "efx": "5",
+           "efy": "-7",
+           "efz": "11",
+           "kk": "-13",
+           "qa": "17",
+           "qb": "-19"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cc": "2",
+           "dd": "-3",
+           "efx": "5",
+           "efy": "-7",
+           "efz": "11",
+           "kk": "-13",
+           "qa": "17",
+           "qb": "-19"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "cc": "299/100"
+      }
+     },
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "refl_x"
+      },
+      {
+       "item": "F2",
+       "transformation": "conj_c"
+      },
+      {
+       "item": "F2",
+       "transformation": "rot_z"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-12": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {
+          "zk:rot_z": 1
+         }
+        },
+        {
+         "new": {
+          "point": {
+           "dd": "2",
+           "kk": "-3",
+           "qa": "5",
+           "qb": "-7",
+           "zk": "11"
+          }
+         },
+         "old": "unchanged",
+         "signs": {
+          "zk:rot_z": -1
+         }
+        }
+       ],
+       "keeping": [
+        {
+         "zk:rot_z": 1
+        }
+       ],
+       "matters": [
+        "zk:rot_z"
+       ],
+       "status": "conditional",
+       "unknowns": [
+        "zk:rot_z"
+       ]
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "zk": "299/100"
+      }
+     },
+     "decisive": [
+      {
+       "measure": [
+        {
+         "instrument": "?",
+         "unknown": "zk:rot_z"
+        }
+       ],
+       "transformation": "rot_z"
+      }
+     ],
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "rot_z"
+      }
+     ],
+     "verdict": "CONDITIONAL",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-13": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": false,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "dd": "2",
+           "kk": "-3",
+           "qa": "5",
+           "qb": "-7",
+           "qn": "11"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "qn": "299/100"
+      }
+     },
+     "reason": [
+      {
+       "item": "F1"
+      }
+     ],
+     "verdict": "INVALID",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-14": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "cc": {
+        "L": 2,
+        "M": 1,
+        "Q": -2,
+        "T": -2
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "farkas": [
+       {
+        "k": 0,
+        "obs": "new",
+        "side": "lower",
+        "y": "3/5"
+       },
+       {
+        "k": 0,
+        "obs": "old",
+        "side": "upper",
+        "y": "2/5"
+       }
+      ],
+      "holds": false
+     },
+     "reason": [
+      {
+       "item": "F3"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "n/a"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "D-15": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    },
+    "f2": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    },
+    "f3": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": [
+     "f1",
+     "f2",
+     "f3"
+    ]
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    },
+    "f2": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    },
+    "f3": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": [
+     "f1",
+     "f2",
+     "f3"
+    ]
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    },
+    "f2": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    },
+    "f3": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": [
+     "f1",
+     "f2"
+    ]
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    },
+    "f2": {
+     "verdict": "CONDITIONAL"
+    },
+    "f3": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": []
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "c1": {
+        "L": 2,
+        "M": 1,
+        "Q": -2,
+        "T": -2
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "c1": "199/200"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent"
+     ]
+    },
+    "f2": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "c2": {
+        "L": 2,
+        "M": 1,
+        "Q": -2,
+        "T": -2
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "c2": "199/100"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent"
+     ]
+    },
+    "f3": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "c3": {
+        "L": 2,
+        "M": 1,
+        "Q": -1,
+        "T": -2
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "c3": "2",
+           "dd": "-3",
+           "kk": "5",
+           "qa": "-7",
+           "qb": "11"
+          }
+         },
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "changed",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "c3": "199/200"
+      }
+     },
+     "reason": [
+      {
+       "item": "F2",
+       "transformation": "conj_c"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "decisive": [
+     {
+      "intervals": {
+       "f1": [
+        "399/200",
+        "401/200"
+       ],
+       "f2": [
+        "299/100",
+        "301/100"
+       ]
+      },
+      "observer": "ob1",
+      "pair": [
+       "f1",
+       "f2"
+      ],
+      "state": {
+       "dd": "1",
+       "qa": "1",
+       "qb": "1"
+      }
+     }
+    ],
+    "kept": [
+     "f1",
+     "f2"
+    ]
+   }
+  }
+ },
+ "D-16": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {
+       "cv": {
+        "M": 1,
+        "T": -1
+       }
+      }
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "cv": "5",
+           "ks": "-7",
+           "ms": "11",
+           "vlx": "-13",
+           "vly": "17",
+           "vlz": "-19",
+           "xpx": "23",
+           "xpy": "-29",
+           "xpz": "31"
+          }
+         },
+         "old": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "cv": "5",
+           "ks": "-7",
+           "ms": "11",
+           "vlx": "-13",
+           "vly": "17",
+           "vlz": "-19",
+           "xpx": "23",
+           "xpy": "-29",
+           "xpz": "31"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "cv": "49/50"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "zero_for_any_value",
+      "below_precision"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "E-01": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "mp": "199/100"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent",
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "E-05": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "mp": "199/200"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "E-07": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "acx": "2",
+           "acy": "-3",
+           "acz": "5",
+           "foy": "-7",
+           "foz": "11",
+           "mq": "-13",
+           "ms": "17"
+          }
+         },
+         "old": {
+          "point": {
+           "acx": "2",
+           "acy": "-3",
+           "acz": "5",
+           "foy": "-7",
+           "foz": "11",
+           "mq": "-13",
+           "ms": "17"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "mq": "199/100"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent",
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "E-11": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "SAME_LAW_NEW_STATE"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "CONDITIONAL"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "mb": "49/50"
+      }
+     },
+     "reason": [],
+     "verdict": "SAME_LAW_NEW_STATE",
+     "zero_report": [
+      "absent",
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "E-13": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "ANOTHER_LAW"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": true,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "gfx": "5",
+           "gfy": "-7",
+           "gfz": "11",
+           "sn": "-13"
+          }
+         },
+         "old": {
+          "point": {
+           "acy": "2",
+           "acz": "-3",
+           "gfx": "5",
+           "gfy": "-7",
+           "gfz": "11",
+           "sn": "-13"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "farkas": [
+       {
+        "k": 0,
+        "obs": "old",
+        "side": "lower",
+        "y": "1"
+       }
+      ],
+      "holds": false
+     },
+     "reason": [
+      {
+       "item": "F3"
+      }
+     ],
+     "verdict": "ANOTHER_LAW",
+     "zero_report": [
+      "n/a",
+      "n/a"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ },
+ "E-14": {
+  "DERIVE": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "DIMS": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FIX": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "FORK_ALL": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "verdict": "INVALID"
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  },
+  "procedure": {
+   "catalog": "1",
+   "fillers": {
+    "f1": {
+     "F1": {
+      "consistent": false,
+      "inferred_dims": {}
+     },
+     "F2": {
+      "conj_c": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "refl_x": {
+       "assignments": [
+        {
+         "new": "unchanged",
+         "old": "unchanged",
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rev_t": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cd": "2",
+           "fdy": "-3",
+           "fdz": "5",
+           "mu": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "old": {
+          "point": {
+           "cd": "2",
+           "fdy": "-3",
+           "fdz": "5",
+           "mu": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      },
+      "rot_z": {
+       "assignments": [
+        {
+         "new": {
+          "point": {
+           "cd": "2",
+           "fdy": "-3",
+           "fdz": "5",
+           "mu": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "old": {
+          "point": {
+           "cd": "2",
+           "fdy": "-3",
+           "fdz": "5",
+           "mu": "-7",
+           "vlx": "11",
+           "vly": "-13",
+           "vlz": "17"
+          }
+         },
+         "signs": {}
+        }
+       ],
+       "status": "no_change",
+       "unknowns": []
+      }
+     },
+     "F3": {
+      "holds": true,
+      "point": {
+       "mu": "33/100"
+      }
+     },
+     "reason": [
+      {
+       "item": "F1"
+      }
+     ],
+     "verdict": "INVALID",
+     "zero_report": [
+      "absent"
+     ]
+    }
+   },
+   "world": {
+    "kept": null
+   }
+  }
+ }
+}

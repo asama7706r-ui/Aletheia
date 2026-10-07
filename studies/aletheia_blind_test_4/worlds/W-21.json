@@ -1,0 +1,312 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w21",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "mesi",
+   "type": "ty05",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "tumate",
+   "meaning": "m16",
+   "owner": "mesi",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "suda",
+    "sagiko",
+    "sadag8"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "gudis6",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": -2,
+    "T": -2
+   },
+   "components": [],
+   "value": "7/4",
+   "src": "seed"
+  },
+  {
+   "id": "fopup",
+   "meaning": "m12",
+   "owner": "mesi",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "date",
+    "bafu",
+    "zobo"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "paro",
+   "meaning": "m02",
+   "owner": "mesi",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "6/5",
+   "src": "seed"
+  },
+  {
+   "id": "lekem",
+   "meaning": "m21",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "berik",
+    "fesi",
+    "sukobe"
+   ],
+   "value": [
+    "0",
+    "0",
+    "-49/5"
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "nazev",
+   "meaning": "m13",
+   "owner": "mesi",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "piver",
+    "bama9",
+    "bomum"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "futa",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": -2
+   },
+   "components": [],
+   "value": "2/3",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "rudo",
+   "eq": "sadag8 = paro*sukobe - gudis6*zobo^3",
+   "accepted_at": 4,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "sado",
+   "instrument": "i06",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "zavoze",
+   "instrument": "i06",
+   "precision": "1/250",
+   "calibrated_against": [
+    "sado"
+   ],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "gabibo",
+   "observer": "sado",
+   "of": "sadag8",
+   "state": {
+    "zobo": "1/2",
+    "piver": "1",
+    "bama9": "0",
+    "bomum": "-1"
+   },
+   "value": "-239389/20000",
+   "epoch": 0,
+   "src": "sado"
+  },
+  {
+   "id": "sagod",
+   "observer": "sado",
+   "of": "sadag8",
+   "state": {
+    "zobo": "-1",
+    "piver": "2",
+    "bama9": "1",
+    "bomum": "1/2"
+   },
+   "value": "-12523/1250",
+   "epoch": 1,
+   "src": "sado"
+  },
+  {
+   "id": "beluzi",
+   "observer": "zavoze",
+   "of": "sadag8",
+   "state": {
+    "zobo": "3/4",
+    "piver": "-1",
+    "bama9": "2",
+    "bomum": "0"
+   },
+   "value": "-2000301/160000",
+   "epoch": 2,
+   "src": "zavoze"
+  },
+  {
+   "id": "pudo7",
+   "observer": "zavoze",
+   "of": "sadag8",
+   "state": {
+    "zobo": "1",
+    "piver": "0",
+    "bama9": "-1",
+    "bomum": "2"
+   },
+   "value": "-33767/2500",
+   "epoch": 4,
+   "src": "zavoze"
+  },
+  {
+   "id": "fidop",
+   "observer": "sado",
+   "of": "sadag8",
+   "state": {
+    "zobo": "-1/2",
+    "piver": "1/2",
+    "bama9": "1/2",
+    "bomum": "1/2"
+   },
+   "value": "-231017/20000",
+   "epoch": 4,
+   "src": "sado"
+  },
+  {
+   "id": "raka",
+   "observer": "zavoze",
+   "of": "sadag8",
+   "state": {
+    "zobo": "1",
+    "piver": "2",
+    "bama9": "1",
+    "bomum": "-1"
+   },
+   "value": "-101819/7500",
+   "epoch": 5,
+   "src": "zavoze"
+  },
+  {
+   "id": "pogagi",
+   "observer": "sado",
+   "of": "sadag8",
+   "state": {
+    "zobo": "-3/2",
+    "piver": "1",
+    "bama9": "-2",
+    "bomum": "1"
+   },
+   "value": "-5647/800",
+   "epoch": 6,
+   "src": "sado"
+  },
+  {
+   "id": "gudu6",
+   "observer": "zavoze",
+   "of": "sadag8",
+   "state": {
+    "zobo": "2",
+    "piver": "-1",
+    "bama9": "1",
+    "bomum": "3"
+   },
+   "value": "-1832/75",
+   "epoch": 6,
+   "src": "zavoze"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "beza",
+   "of": "rudo",
+   "eq": "sadag8 = paro*sukobe - gudis6*zobo^3 + futa*(piver*fufa + bama9*zeze + bomum*pigeb)*zobo",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "nisum7",
+     "kind": "vec3",
+     "meaning": "m22",
+     "owner": "world",
+     "dims": "?",
+     "components": [
+      "fufa",
+      "zeze",
+      "pigeb"
+     ],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": [
+       [
+        "-1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "1"
+       ]
+      ],
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "0"
+     ],
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

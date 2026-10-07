@@ -1,0 +1,211 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w12",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "vama7",
+   "type": "ty05",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "retu",
+   "meaning": "m16",
+   "owner": "vama7",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "divupe",
+    "vasuma",
+    "teboma"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "gukug",
+   "meaning": "m02",
+   "owner": "vama7",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "9/5",
+   "src": "seed"
+  },
+  {
+   "id": "poreke",
+   "meaning": "m14",
+   "owner": "vama7",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "zukiva",
+    "gako",
+    "gupusi"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "tisatu",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "11/4",
+   "src": "seed"
+  },
+  {
+   "id": "pibabo",
+   "meaning": "m12",
+   "owner": "vama7",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "fuvi",
+    "sifob",
+    "gobofe"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "fosuke",
+   "eq": "teboma = gukug*gupusi + tisatu*gobofe",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "resit3",
+   "instrument": "i06",
+   "precision": "1/20",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "lesot",
+   "observer": "resit3",
+   "of": "teboma",
+   "state": {
+    "gupusi": "1",
+    "gobofe": "2"
+   },
+   "value": "1469/200",
+   "epoch": 0,
+   "src": "resit3"
+  },
+  {
+   "id": "kipu",
+   "observer": "resit3",
+   "of": "teboma",
+   "state": {
+    "gupusi": "-2",
+    "gobofe": "1/2"
+   },
+   "value": "-2267/1000",
+   "epoch": 1,
+   "src": "resit3"
+  },
+  {
+   "id": "ripeg",
+   "observer": "resit3",
+   "of": "teboma",
+   "state": {
+    "gupusi": "3/2",
+    "gobofe": "-1"
+   },
+   "value": "-39/400",
+   "epoch": 2,
+   "src": "resit3"
+  },
+  {
+   "id": "totoni",
+   "observer": "resit3",
+   "of": "teboma",
+   "state": {
+    "gupusi": "1",
+    "gobofe": "1"
+   },
+   "value": "363/50",
+   "epoch": 3,
+   "src": "resit3"
+  },
+  {
+   "id": "gefed",
+   "observer": "resit3",
+   "of": "teboma",
+   "state": {
+    "gupusi": "-1/2",
+    "gobofe": "3"
+   },
+   "value": "803/80",
+   "epoch": 4,
+   "src": "resit3"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "kizine",
+   "of": "fosuke",
+   "eq": "teboma = gukug*(gupusi + loleti) + tisatu*gobofe",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "vave",
+     "kind": "vec3",
+     "meaning": "m13",
+     "owner": "vama7",
+     "dims": {
+      "L": 1,
+      "T": -2
+     },
+     "components": [
+      "periko",
+      "tapap5",
+      "loleti"
+     ],
+     "under": {
+      "rev_t": {
+       "derived": "d01"
+      },
+      "refl_x": {
+       "derived": "d01"
+      },
+      "conj_c": {
+       "derived": "d01"
+      }
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "0"
+     ],
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

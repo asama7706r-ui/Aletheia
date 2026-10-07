@@ -1,0 +1,19 @@
+Blind test 4 - world generator progress (separate Claude session, 2026-10-07)
+
+[stage 0] read: protocol_v4.md, registry/*, lang/*, Notion page "التجربة العمياء 4: السجل وبطاقة الهوية".
+          SHA-256 of protocol, registry, lang files, scorer/validate_v4.py, tools/hash_files.py and GENERATOR_START.md
+          match the sealed list. Registry canonical sha256 = 4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281.
+          Not opened: procedure/, dev/, results/, scorer/ code, language_v0/, other Notion pages, memory directory.
+[stage 1] done: key/verify_key.py written from the protocol alone (F1, F2 on the catalog and on the generated group,
+          F3 by exact Fourier-Motzkin, verdicts, the four baselines, V1-V10 and V13, traps, composition, key, decisive states).
+[stage 2] done: key/make_worlds.py builds 30 worlds (25 single-filler: 7 SAME, 8 ANOTHER incl. 2 by F3 alone, 3 INVALID,
+          7 CONDITIONAL; 5 several-filler worlds with 14 fillers) and key/key.json; ids renamed to neutral random names
+          (key/name_map.json keeps the readable labels).
+[stage 3] done: python key/verify_key.py worlds key/key.json > key/verify_output.txt  ->  VERIFY: OK
+[stage 4] in progress: sealed validator  python scorer/validate_v4.py worlds key/key.json
+[stage 4] done: validator run 1 rejected only the order of "kept" in W-03 and W-28 (reference sorts ids); key now
+          lists kept sorted; validator run 2: VALID (30 worlds). Outputs in key/validator_run1.txt and key/validator_run2.txt.
+[stage 5] done: python tools/hash_files.py key/key.json
+          33e7ce8ba4194d27898374da3b38bd6c6c11731bb41f5e54ecba342ebf7a3ecf key/key.json
+          published in step 3 of the Notion page (2026-10-07). Notes for the owner: key/generator_notes.md.
+          Generation finished; worlds are not published anywhere.

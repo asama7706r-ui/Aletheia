@@ -1,0 +1,196 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "dv03",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [],
+ "quantities": [
+  {
+   "id": "ac",
+   "meaning": "m14",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "acx",
+    "acy",
+    "acz"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "vl",
+   "meaning": "m13",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "vlx",
+    "vly",
+    "vlz"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "ef",
+   "meaning": "m17",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "components": [
+    "efx",
+    "efy",
+    "efz"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "ch",
+   "meaning": "m04",
+   "owner": "world",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "1",
+   "src": "seed"
+  },
+  {
+   "id": "ms",
+   "meaning": "m02",
+   "owner": "world",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "1",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "law1",
+   "eq": "acx = ch*efx/ms",
+   "accepted_at": 0,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "ob1",
+   "instrument": "i02",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "o1",
+   "observer": "ob1",
+   "of": "acx",
+   "state": {
+    "efx": "2",
+    "vly": "1",
+    "vlz": "0"
+   },
+   "value": "2",
+   "epoch": 0,
+   "src": "ob1"
+  },
+  {
+   "id": "o2",
+   "observer": "ob1",
+   "of": "acx",
+   "state": {
+    "efx": "2",
+    "vly": "1",
+    "vlz": "0"
+   },
+   "value": "5",
+   "epoch": 1,
+   "src": "ob1"
+  },
+  {
+   "id": "o3",
+   "observer": "ob1",
+   "of": "acx",
+   "state": {
+    "efx": "0",
+    "vly": "0",
+    "vlz": "1"
+   },
+   "value": "-1",
+   "epoch": 1,
+   "src": "ob1"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "f1",
+   "eq": "acx = ch*efx/ms + ch*(vly*bmz - vlz*bmy)/ms",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "bm",
+     "kind": "vec3",
+     "meaning": "m18",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "T": -1,
+      "Q": -1
+     },
+     "components": [
+      "bmx",
+      "bmy",
+      "bmz"
+     ],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": [
+       [
+        "1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "-1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "-1"
+       ]
+      ],
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "0"
+     ],
+     "route": "i08"
+    }
+   ],
+   "of": "law1",
+   "src": "seed"
+  }
+ ]
+}

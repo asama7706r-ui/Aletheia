@@ -1,0 +1,732 @@
+{
+ "v0": "0.4",
+ "file": "registry",
+ "id": "test4_registry",
+ "catalog": "1",
+ "dimensions": [
+  "L",
+  "M",
+  "Q",
+  "T"
+ ],
+ "floors": [
+  {
+   "id": "number",
+   "depends_on": [],
+   "src": "seed"
+  },
+  {
+   "id": "vector",
+   "depends_on": [
+    "number"
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "complex",
+   "depends_on": [
+    "number"
+   ],
+   "src": "seed"
+  }
+ ],
+ "kinds": [
+  {
+   "id": "scalar",
+   "floor": "number",
+   "over": "fractions",
+   "shape": [],
+   "generators": [],
+   "relations": [],
+   "under": {
+    "rot_z": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "vec3",
+   "floor": "vector",
+   "over": "fractions",
+   "shape": [
+    3
+   ],
+   "generators": [],
+   "relations": [],
+   "under": {
+    "rot_z": [
+     [
+      "0",
+      "-1",
+      "0"
+     ],
+     [
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "1"
+     ]
+    ]
+   },
+   "src": "seed"
+  },
+  {
+   "id": "cplx",
+   "floor": "complex",
+   "over": "fractions",
+   "shape": [
+    2
+   ],
+   "generators": [],
+   "relations": [],
+   "under": {
+    "rot_z": "1"
+   },
+   "src": "seed"
+  }
+ ],
+ "transformations": [
+  {
+   "id": "rev_t",
+   "reads": "meaning",
+   "src": "seed"
+  },
+  {
+   "id": "refl_x",
+   "reads": "meaning",
+   "src": "seed"
+  },
+  {
+   "id": "conj_c",
+   "reads": "meaning",
+   "src": "seed"
+  },
+  {
+   "id": "rot_z",
+   "reads": "kind",
+   "src": "seed"
+  },
+  {
+   "id": "exch",
+   "reads": "cast",
+   "src": "seed"
+  }
+ ],
+ "instruments": [
+  {
+   "id": "i01",
+   "unit": {
+    "T": 1
+   },
+   "src": "seed"
+  },
+  {
+   "id": "i02",
+   "unit": {
+    "L": 1
+   },
+   "src": "seed"
+  },
+  {
+   "id": "i03",
+   "unit": {
+    "M": 1
+   },
+   "src": "seed"
+  },
+  {
+   "id": "i04",
+   "unit": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "src": "seed"
+  },
+  {
+   "id": "i05",
+   "unit": {
+    "Q": 1
+   },
+   "src": "seed"
+  },
+  {
+   "id": "i06",
+   "unit": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "src": "seed"
+  },
+  {
+   "id": "i07",
+   "unit": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "src": "seed"
+  },
+  {
+   "id": "i08",
+   "unit": {
+    "M": 1,
+    "T": -1,
+    "Q": -1
+   },
+   "src": "seed"
+  }
+ ],
+ "meanings": [
+  {
+   "id": "m01",
+   "kind": "scalar",
+   "anchor": {
+    "instrument": "i01"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "-1",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m02",
+   "kind": "scalar",
+   "anchor": {
+    "instrument": "i03"
+   },
+   "conditions": [
+    "m02 > 0"
+   ],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m03",
+   "kind": "scalar",
+   "anchor": {
+    "instrument": "i04"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m04",
+   "kind": "scalar",
+   "anchor": {
+    "instrument": "i05"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "-1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m05",
+   "kind": "scalar",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [
+    "m05 > 0"
+   ],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m06",
+   "kind": "scalar",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [
+    "m06 > 0"
+   ],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m07",
+   "kind": "scalar",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m08",
+   "kind": "scalar",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "-1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m09",
+   "kind": "scalar",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "?",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m10",
+   "kind": "scalar",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "?",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m11",
+   "kind": "scalar",
+   "anchor": {
+    "instrument": "i02"
+   },
+   "conditions": [
+    "m11 > 0"
+   ],
+   "under": {
+    "rev_t": "1",
+    "refl_x": "1",
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m12",
+   "kind": "vec3",
+   "anchor": {
+    "instrument": "i02"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": [
+     [
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "1"
+     ]
+    ],
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m13",
+   "kind": "vec3",
+   "anchor": {
+    "derived": "d01"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": {
+     "derived": "d01"
+    },
+    "refl_x": {
+     "derived": "d01"
+    },
+    "conj_c": {
+     "derived": "d01"
+    }
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m14",
+   "kind": "vec3",
+   "anchor": {
+    "derived": "d02"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": {
+     "derived": "d02"
+    },
+    "refl_x": {
+     "derived": "d02"
+    },
+    "conj_c": {
+     "derived": "d02"
+    }
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m15",
+   "kind": "vec3",
+   "anchor": {
+    "derived": "d03"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": {
+     "derived": "d03"
+    },
+    "refl_x": {
+     "derived": "d03"
+    },
+    "conj_c": {
+     "derived": "d03"
+    }
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m16",
+   "kind": "vec3",
+   "anchor": {
+    "instrument": "i06"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": [
+     [
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "1"
+     ]
+    ],
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m17",
+   "kind": "vec3",
+   "anchor": {
+    "instrument": "i07"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": [
+     [
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "1"
+     ]
+    ],
+    "conj_c": "-1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m18",
+   "kind": "vec3",
+   "anchor": {
+    "instrument": "i08"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "-1",
+    "refl_x": [
+     [
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "-1"
+     ]
+    ],
+    "conj_c": "-1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m19",
+   "kind": "vec3",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "-1",
+    "refl_x": [
+     [
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "-1"
+     ]
+    ],
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m20",
+   "kind": "vec3",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": [
+     [
+      "1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "-1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "-1"
+     ]
+    ],
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m21",
+   "kind": "vec3",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "1",
+    "refl_x": [
+     [
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "1"
+     ]
+    ],
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m22",
+   "kind": "vec3",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": "-1",
+    "refl_x": [
+     [
+      "-1",
+      "0",
+      "0"
+     ],
+     [
+      "0",
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "0",
+      "1"
+     ]
+    ],
+    "conj_c": "1"
+   },
+   "src": "seed"
+  },
+  {
+   "id": "m23",
+   "kind": "cplx",
+   "anchor": {
+    "seed": "human"
+   },
+   "conditions": [],
+   "under": {
+    "rev_t": [
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ]
+    ],
+    "refl_x": "1",
+    "conj_c": [
+     [
+      "1",
+      "0"
+     ],
+     [
+      "0",
+      "-1"
+     ]
+    ]
+   },
+   "src": "seed"
+  }
+ ],
+ "definitions": [
+  {
+   "id": "d01",
+   "eq": "m13 = D(m12, m01)",
+   "src": "seed"
+  },
+  {
+   "id": "d02",
+   "eq": "m14 = D(m13, m01)",
+   "src": "seed"
+  },
+  {
+   "id": "d03",
+   "eq": "m15 = m02*m13",
+   "src": "seed"
+  }
+ ],
+ "body_types": [
+  {
+   "id": "ty01",
+   "src": "seed"
+  },
+  {
+   "id": "ty02",
+   "src": "seed"
+  },
+  {
+   "id": "ty03",
+   "src": "seed"
+  },
+  {
+   "id": "ty04",
+   "src": "seed"
+  },
+  {
+   "id": "ty05",
+   "src": "seed"
+  },
+  {
+   "id": "ty06",
+   "src": "seed"
+  },
+  {
+   "id": "ty07",
+   "src": "seed"
+  },
+  {
+   "id": "ty08",
+   "src": "seed"
+  }
+ ]
+}

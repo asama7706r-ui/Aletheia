@@ -1,0 +1,212 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w16",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "subas",
+   "type": "ty02",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "lunoz4",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "leretu",
+   "meaning": "m04",
+   "owner": "subas",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "3/2",
+   "src": "seed"
+  },
+  {
+   "id": "vode",
+   "meaning": "m17",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "components": [
+    "toboge",
+    "dome",
+    "nuvo"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "pesago",
+   "meaning": "m12",
+   "owner": "subas",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "tigit",
+    "gegiri",
+    "vozi"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "rebega",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "-5/6",
+   "src": "seed"
+  },
+  {
+   "id": "kufa",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "nefupu",
+   "eq": "lunoz4 = leretu*nuvo*vozi + rebega",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "kilili",
+   "instrument": "i04",
+   "precision": "1/35",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "zita5",
+   "observer": "kilili",
+   "of": "lunoz4",
+   "state": {
+    "nuvo": "1",
+    "vozi": "1",
+    "kufa": "2"
+   },
+   "value": "727/1050",
+   "epoch": 0,
+   "src": "kilili"
+  },
+  {
+   "id": "fivol",
+   "observer": "kilili",
+   "of": "lunoz4",
+   "state": {
+    "nuvo": "-2",
+    "vozi": "1/2",
+    "kufa": "1"
+   },
+   "value": "-2477/1050",
+   "epoch": 1,
+   "src": "kilili"
+  },
+  {
+   "id": "ninole",
+   "observer": "kilili",
+   "of": "lunoz4",
+   "state": {
+    "nuvo": "3/2",
+    "vozi": "-1",
+    "kufa": "3"
+   },
+   "value": "-6427/2100",
+   "epoch": 2,
+   "src": "kilili"
+  },
+  {
+   "id": "tave",
+   "observer": "kilili",
+   "of": "lunoz4",
+   "state": {
+    "nuvo": "2",
+    "vozi": "2",
+    "kufa": "1"
+   },
+   "value": "1231/1050",
+   "epoch": 3,
+   "src": "kilili"
+  },
+  {
+   "id": "dufa",
+   "observer": "kilili",
+   "of": "lunoz4",
+   "state": {
+    "nuvo": "-1",
+    "vozi": "3",
+    "kufa": "2"
+   },
+   "value": "-37/12",
+   "epoch": 4,
+   "src": "kilili"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "rili7",
+   "of": "nefupu",
+   "eq": "lunoz4 = leretu*nuvo*vozi + rebega + zobe2*nuvo*vozi^2/kufa",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "zobe2",
+     "kind": "scalar",
+     "meaning": "?",
+     "owner": "world",
+     "dims": {
+      "Q": 1,
+      "T": 1
+     },
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i05"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

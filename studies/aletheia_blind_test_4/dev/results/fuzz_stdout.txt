@@ -1,0 +1,36 @@
+== seed 1
+ "built": 251,
+ "fillers": 188,
+ "card_ok": 188,
+ "base_ok": 188,
+ "zero_ok": 188,
+ "several": 10,
+ "several_ok": 6,
+4 disagreements written to D:\work_app\aletheia_research\aletheia_blind_test_4\dev\results\fuzz_failures_1.json
+== seed 2
+ "built": 259,
+ "fillers": 191,
+ "card_ok": 191,
+ "base_ok": 191,
+ "zero_ok": 191,
+ "several": 11,
+ "several_ok": 4,
+7 disagreements written to D:\work_app\aletheia_research\aletheia_blind_test_4\dev\results\fuzz_failures_2.json
+== seed 3
+ "built": 262,
+ "fillers": 219,
+ "card_ok": 219,
+ "base_ok": 219,
+ "zero_ok": 219,
+ "several": 15,
+ "several_ok": 9,
+6 disagreements written to D:\work_app\aletheia_research\aletheia_blind_test_4\dev\results\fuzz_failures_3.json
+== seed 7
+ "built": 247,
+ "fillers": 194,
+ "card_ok": 194,
+ "base_ok": 194,
+ "zero_ok": 194,
+ "several": 15,
+ "several_ok": 13,
+2 disagreements written to D:\work_app\aletheia_research\aletheia_blind_test_4\dev\results\fuzz_failures_7.json

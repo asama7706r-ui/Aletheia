@@ -9,6 +9,7 @@ Each folder is one self-contained study with all of its materials: protocol, pro
 | [`aletheia_llm_compare_1`](aletheia_llm_compare_1/REPORT.md) | 2026-10-01 | Do frontier LLMs execute the blind-test-2 rules as well, when given them? | Hypothesis refuted: they do |
 | [`aletheia_blind_test_3`](aletheia_blind_test_3/README.md) | 2026-10-02 | The nebulium check: look for a registered relation whose coverage lets it return before inventing a new kind; decide, fork or declare NEW with proofs (A). Reopen exactly the files that depend on a new datum (B). | PASS / PASS |
 | [`aletheia_llm_compare_2`](aletheia_llm_compare_2/REPORT.md) | 2026-10-03 | Do frontier LLMs reach the blind-test-3 Part A answers with the question only, without the method? | I1 as registered (Claude 27/27). Erratum: Claude, the generator's family, should not have counted; without it, open (MIXED) without the method, and matched by Qwen with it |
+| [`aletheia_blind_test_4`](aletheia_blind_test_4/README.md) | 2026-10-07 | Fill each filler's identity card (dimensions, symmetry, old observations) from a registry sealed before the worlds, label it, and branch with a decisive observation when an action is unknown. | PASS (39/39 with proofs; best baseline 30/39, p = 1/512) |
 | [`checks`](checks/README.md) | - | Scratch scripts from design discussions | not evidence |
 
 ## How the studies protect themselves
@@ -49,6 +50,10 @@ Each folder is one self-contained study with all of its materials: protocol, pro
 | `aletheia_llm_compare_2/SEALED_HASHES.txt` | `f9e8234a39c1596a4d80a073d8e8c7a1192681d221260eb4be43d0cd53388906` |
 | `aletheia_llm_compare_2/RUNS_FROZEN.txt` | `e0a090c5862591bd3a60267cab57a9416722eaac3205a7219b4d218d63e23506` |
 | `aletheia_llm_compare_2/results/summary.txt` | `ba1c34b7ad40bd89391c26cb60e7459946e811586f11007bb1d220d2522d40dd` |
+| `aletheia_blind_test_4/SEALED_HASHES.txt` | `a7bcbe146d9ad398c3c42687e18b92c503ccfa96e856aa5c949b875397338dad` |
+| `aletheia_blind_test_4/key/key.json` | `33e7ce8ba4194d27898374da3b38bd6c6c11731bb41f5e54ecba342ebf7a3ecf` |
+| `aletheia_blind_test_4/results/outputs.json` | `b1141207d391c4cfd5fec8737d5f8ad5a6d8c4ebbd46ad3186180fcae3eae618` |
+| `aletheia_blind_test_4/results/report.json` | `1d6fc968511ff7320a1abc420fa3348f91f9c4c629712efd06bf0e1a5a9a8e5c` |
 
 ## Requirements
 Python 3 and sympy (developed with sympy 1.14). There are no other dependencies.

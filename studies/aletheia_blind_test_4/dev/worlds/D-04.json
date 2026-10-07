@@ -1,0 +1,174 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "dv04",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [],
+ "quantities": [
+  {
+   "id": "uu",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "pm",
+   "meaning": "m15",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "pmx",
+    "pmy",
+    "pmz"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "ms",
+   "meaning": "m02",
+   "owner": "world",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "1",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "law1",
+   "eq": "uu = (pmx^2 + pmy^2 + pmz^2)/(2*ms)",
+   "accepted_at": 0,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "ob1",
+   "instrument": "i04",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "o1",
+   "observer": "ob1",
+   "of": "uu",
+   "state": {
+    "pmx": "1",
+    "pmy": "0",
+    "pmz": "0"
+   },
+   "value": "1/2",
+   "epoch": 0,
+   "src": "ob1"
+  },
+  {
+   "id": "o2",
+   "observer": "ob1",
+   "of": "uu",
+   "state": {
+    "pmx": "1",
+    "pmy": "0",
+    "pmz": "0"
+   },
+   "value": "5/2",
+   "epoch": 1,
+   "src": "ob1"
+  },
+  {
+   "id": "o3",
+   "observer": "ob1",
+   "of": "uu",
+   "state": {
+    "pmx": "0",
+    "pmy": "1",
+    "pmz": "0"
+   },
+   "value": "1/2",
+   "epoch": 1,
+   "src": "ob1"
+  },
+  {
+   "id": "o4",
+   "observer": "ob1",
+   "of": "uu",
+   "state": {
+    "pmx": "0",
+    "pmy": "0",
+    "pmz": "1"
+   },
+   "value": "1/2",
+   "epoch": 1,
+   "src": "ob1"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "f1",
+   "eq": "uu = (pmx^2 + pmy^2 + pmz^2)/(2*ms) + pmx*wox + pmy*woy + pmz*woz",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "wo",
+     "kind": "vec3",
+     "meaning": "m22",
+     "owner": "world",
+     "dims": "?",
+     "components": [
+      "wox",
+      "woy",
+      "woz"
+     ],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": [
+       [
+        "-1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "1"
+       ]
+      ],
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "0"
+     ],
+     "route": "?"
+    }
+   ],
+   "of": "law1",
+   "src": "seed"
+  }
+ ]
+}

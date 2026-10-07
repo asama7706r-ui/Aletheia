@@ -1,0 +1,259 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w26",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "faba5",
+   "type": "ty02",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "boki",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "bigi2",
+   "meaning": "m19",
+   "owner": "faba5",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -1
+   },
+   "components": [
+    "keme9",
+    "tabuti",
+    "rera"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "kutud",
+   "meaning": "m04",
+   "owner": "faba5",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "4/3",
+   "src": "seed"
+  },
+  {
+   "id": "sulas",
+   "meaning": "m02",
+   "owner": "faba5",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "5/2",
+   "src": "seed"
+  },
+  {
+   "id": "fadu",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 2
+   },
+   "components": [],
+   "value": "3/8",
+   "src": "seed"
+  },
+  {
+   "id": "mabude",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "zaleva",
+   "eq": "boki = fadu*rera^2/(sulas^3*mabude^2)",
+   "accepted_at": 1,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "kores",
+   "instrument": "i04",
+   "precision": "1/50",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "lazire",
+   "observer": "kores",
+   "of": "boki",
+   "state": {
+    "keme9": "1/2",
+    "tabuti": "-1",
+    "rera": "2",
+    "mabude": "3/2"
+   },
+   "value": "37/1500",
+   "epoch": 0,
+   "src": "kores"
+  },
+  {
+   "id": "fulum4",
+   "observer": "kores",
+   "of": "boki",
+   "state": {
+    "keme9": "0",
+    "tabuti": "2",
+    "rera": "-3",
+    "mabude": "2"
+   },
+   "value": "361/5000",
+   "epoch": 0,
+   "src": "kores"
+  },
+  {
+   "id": "robu",
+   "observer": "kores",
+   "of": "boki",
+   "state": {
+    "keme9": "-1",
+    "tabuti": "1/2",
+    "rera": "5/2",
+    "mabude": "5/4"
+   },
+   "value": "79/1000",
+   "epoch": 1,
+   "src": "kores"
+  },
+  {
+   "id": "baril8",
+   "observer": "kores",
+   "of": "boki",
+   "state": {
+    "keme9": "1",
+    "tabuti": "-1",
+    "rera": "2",
+    "mabude": "3/2"
+   },
+   "value": "581/450",
+   "epoch": 2,
+   "src": "kores"
+  },
+  {
+   "id": "femit",
+   "observer": "kores",
+   "of": "boki",
+   "state": {
+    "keme9": "2",
+    "tabuti": "1/2",
+    "rera": "-1",
+    "mabude": "2"
+   },
+   "value": "-803/4500",
+   "epoch": 2,
+   "src": "kores"
+  },
+  {
+   "id": "vuliro",
+   "observer": "kores",
+   "of": "boki",
+   "state": {
+    "keme9": "-1/2",
+    "tabuti": "3",
+    "rera": "3/2",
+    "mabude": "5/4"
+   },
+   "value": "-28387/112500",
+   "epoch": 3,
+   "src": "kores"
+  },
+  {
+   "id": "gelogi",
+   "observer": "kores",
+   "of": "boki",
+   "state": {
+    "keme9": "1",
+    "tabuti": "1",
+    "rera": "1",
+    "mabude": "1"
+   },
+   "value": "377/1125",
+   "epoch": 3,
+   "src": "kores"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "penem9",
+   "of": "zaleva",
+   "eq": "boki = fadu*rera^2/(sulas^3*mabude^2) + kutud*(keme9*lige + tabuti*mezob + rera*buni9)/sulas",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "zevu",
+     "kind": "vec3",
+     "meaning": "m18",
+     "owner": "world",
+     "dims": "?",
+     "components": [
+      "lige",
+      "mezob",
+      "buni9"
+     ],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": [
+       [
+        "1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "-1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "-1"
+       ]
+      ],
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "0"
+     ],
+     "route": "i08"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

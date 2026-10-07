@@ -1,0 +1,259 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w09",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "lusani",
+   "type": "ty02",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "dadat",
+   "meaning": "m16",
+   "owner": "lusani",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "lave",
+    "sapa3",
+    "bokivo"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "vavog",
+   "meaning": "m04",
+   "owner": "lusani",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "3/4",
+   "src": "seed"
+  },
+  {
+   "id": "borop5",
+   "meaning": "m17",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "components": [
+    "lukubi",
+    "fubon",
+    "bufavu"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "pogu7",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "5/2",
+   "src": "seed"
+  },
+  {
+   "id": "lefoze",
+   "meaning": "m12",
+   "owner": "lusani",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "lurog",
+    "puzim",
+    "daveno"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "lemivo",
+   "eq": "bokivo = vavog*bufavu - pogu7*daveno",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "golobi",
+   "instrument": "i06",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "dopup",
+   "instrument": "i06",
+   "precision": "1/150",
+   "calibrated_against": [
+    "golobi"
+   ],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "depa",
+   "observer": "golobi",
+   "of": "bokivo",
+   "state": {
+    "bufavu": "1",
+    "daveno": "1"
+   },
+   "value": "-1741/1000",
+   "epoch": 0,
+   "src": "golobi"
+  },
+  {
+   "id": "dezovu",
+   "observer": "dopup",
+   "of": "bokivo",
+   "state": {
+    "bufavu": "-2",
+    "daveno": "1/2"
+   },
+   "value": "-20669/7500",
+   "epoch": 1,
+   "src": "dopup"
+  },
+  {
+   "id": "sibi",
+   "observer": "golobi",
+   "of": "bokivo",
+   "state": {
+    "bufavu": "3",
+    "daveno": "-1"
+   },
+   "value": "4741/1000",
+   "epoch": 2,
+   "src": "golobi"
+  },
+  {
+   "id": "zuzo",
+   "observer": "dopup",
+   "of": "bokivo",
+   "state": {
+    "bufavu": "2",
+    "daveno": "1"
+   },
+   "value": "-299/1500",
+   "epoch": 3,
+   "src": "dopup"
+  },
+  {
+   "id": "bopis",
+   "observer": "golobi",
+   "of": "bokivo",
+   "state": {
+    "bufavu": "-2",
+    "daveno": "-1"
+   },
+   "value": "199/1000",
+   "epoch": 3,
+   "src": "golobi"
+  },
+  {
+   "id": "pozari",
+   "observer": "dopup",
+   "of": "bokivo",
+   "state": {
+    "bufavu": "1/4",
+    "daveno": "1/2"
+   },
+   "value": "-5773/6000",
+   "epoch": 4,
+   "src": "dopup"
+  },
+  {
+   "id": "kanov",
+   "observer": "golobi",
+   "of": "bokivo",
+   "state": {
+    "bufavu": "27/4",
+    "daveno": "3/2"
+   },
+   "value": "321/80",
+   "epoch": 4,
+   "src": "golobi"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "nikil",
+   "of": "lemivo",
+   "eq": "bokivo = (vavog + gilu8)*bufavu - pogu7*daveno",
+   "new_bodies": [
+    {
+     "id": "sibade",
+     "type": "ty05"
+    }
+   ],
+   "new": [
+    {
+     "id": "gilu8",
+     "kind": "scalar",
+     "meaning": "m04",
+     "owner": "sibade",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i05"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "vuli",
+   "of": "lemivo",
+   "eq": "bokivo = vavog*bufavu - pogu7*daveno + pinis*daveno^3",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "pinis",
+     "kind": "scalar",
+     "meaning": "m05",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

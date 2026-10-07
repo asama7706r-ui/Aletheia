@@ -1,0 +1,219 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w23",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "lapud",
+   "type": "ty06",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "rile5",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "geme",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "9/7",
+   "src": "seed"
+  },
+  {
+   "id": "zaga",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "4/3",
+   "src": "seed"
+  },
+  {
+   "id": "gulop",
+   "meaning": "m12",
+   "owner": "lapud",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "lusubu",
+    "baru",
+    "pediz"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "tove8",
+   "meaning": "m10",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "memo",
+   "meaning": "m13",
+   "owner": "lapud",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "rofat7",
+    "nuku",
+    "pasi"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "zulese",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {},
+   "components": [],
+   "value": "-5/6",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "tukuma",
+   "eq": "rile5 = geme + zaga*pediz^2 + zulese*tove8*pasi",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "kugo",
+   "instrument": "i04",
+   "precision": "1/50",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "rogi",
+   "observer": "kugo",
+   "of": "rile5",
+   "state": {
+    "pediz": "1",
+    "tove8": "1",
+    "pasi": "2"
+   },
+   "value": "10189/10500",
+   "epoch": 0,
+   "src": "kugo"
+  },
+  {
+   "id": "tinu",
+   "observer": "kugo",
+   "of": "rile5",
+   "state": {
+    "pediz": "-2",
+    "tove8": "2",
+    "pasi": "-1"
+   },
+   "value": "72339/8750",
+   "epoch": 1,
+   "src": "kugo"
+  },
+  {
+   "id": "nike",
+   "observer": "kugo",
+   "of": "rile5",
+   "state": {
+    "pediz": "1/2",
+    "tove8": "-1",
+    "pasi": "3"
+   },
+   "value": "21541/5250",
+   "epoch": 2,
+   "src": "kugo"
+  },
+  {
+   "id": "nunim",
+   "observer": "kugo",
+   "of": "rile5",
+   "state": {
+    "pediz": "1",
+    "tove8": "2",
+    "pasi": "1"
+   },
+   "value": "19021/5250",
+   "epoch": 3,
+   "src": "kugo"
+  },
+  {
+   "id": "gugupo",
+   "observer": "kugo",
+   "of": "rile5",
+   "state": {
+    "pediz": "3/2",
+    "tove8": "1",
+    "pasi": "-2"
+   },
+   "value": "4593/1400",
+   "epoch": 4,
+   "src": "kugo"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "pebe",
+   "of": "tukuma",
+   "eq": "rile5 = geme + zaga*pediz^2 + zulese*tove8*pasi*naze",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "naze",
+     "kind": "scalar",
+     "meaning": "?",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "?",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "1",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

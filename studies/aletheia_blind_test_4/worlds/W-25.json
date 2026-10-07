@@ -1,0 +1,221 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w25",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "visole",
+   "type": "ty06",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "sume",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "sifi",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {},
+   "components": [],
+   "value": "3/5",
+   "src": "seed"
+  },
+  {
+   "id": "tafora",
+   "meaning": "m02",
+   "owner": "visole",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "7/2",
+   "src": "seed"
+  },
+  {
+   "id": "genef3",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": -1,
+    "T": -2
+   },
+   "components": [],
+   "value": "-2/9",
+   "src": "seed"
+  },
+  {
+   "id": "deku6",
+   "meaning": "m13",
+   "owner": "visole",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "merobo",
+    "nesos5",
+    "girap"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "dovubi",
+   "meaning": "m12",
+   "owner": "visole",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "neda",
+    "boto",
+    "raka"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "nola",
+   "eq": "sume = sifi*tafora*girap^2 + genef3*raka^3",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "gakaf",
+   "instrument": "i04",
+   "precision": "1/60",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "nuboni",
+   "instrument": "i04",
+   "precision": "1/90",
+   "calibrated_against": [
+    "gakaf"
+   ],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "betir",
+   "observer": "gakaf",
+   "of": "sume",
+   "state": {
+    "girap": "1",
+    "raka": "2"
+   },
+   "value": "607/1800",
+   "epoch": 0,
+   "src": "gakaf"
+  },
+  {
+   "id": "bime",
+   "observer": "nuboni",
+   "of": "sume",
+   "state": {
+    "girap": "-1/2",
+    "raka": "3/2"
+   },
+   "value": "-527/2250",
+   "epoch": 1,
+   "src": "nuboni"
+  },
+  {
+   "id": "tize",
+   "observer": "gakaf",
+   "of": "sume",
+   "state": {
+    "girap": "2",
+    "raka": "-1"
+   },
+   "value": "38731/4500",
+   "epoch": 2,
+   "src": "gakaf"
+  },
+  {
+   "id": "vuzi",
+   "observer": "nuboni",
+   "of": "sume",
+   "state": {
+    "girap": "3/2",
+    "raka": "1"
+   },
+   "value": "1027/180",
+   "epoch": 3,
+   "src": "nuboni"
+  },
+  {
+   "id": "pari4",
+   "observer": "nuboni",
+   "of": "sume",
+   "state": {
+    "girap": "-1",
+    "raka": "2"
+   },
+   "value": "-32/25",
+   "epoch": 3,
+   "src": "nuboni"
+  },
+  {
+   "id": "zazor",
+   "observer": "gakaf",
+   "of": "sume",
+   "state": {
+    "girap": "1/2",
+    "raka": "-3"
+   },
+   "value": "213/40",
+   "epoch": 4,
+   "src": "gakaf"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "libuv",
+   "of": "nola",
+   "eq": "sume = sifi*tafora*girap^2 + genef3*raka^3 + busi*girap*raka",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "busi",
+     "kind": "scalar",
+     "meaning": "m06",
+     "owner": "visole",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

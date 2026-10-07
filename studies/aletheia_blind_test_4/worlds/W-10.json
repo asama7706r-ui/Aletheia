@@ -1,0 +1,252 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w10",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "dapupi",
+   "type": "ty05",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "nebe",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "depalu",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "-11/4",
+   "src": "seed"
+  },
+  {
+   "id": "gotebe",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "2/5",
+   "src": "seed"
+  },
+  {
+   "id": "dibi",
+   "meaning": "m12",
+   "owner": "dapupi",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "nolan",
+    "lorop",
+    "nigofa"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "kovi",
+   "meaning": "m10",
+   "owner": "world",
+   "dims": {
+    "T": 1,
+    "Q": -1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "purato",
+   "meaning": "m20",
+   "owner": "dapupi",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [
+    "sonof5",
+    "zufe",
+    "zegak"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "tuni",
+   "eq": "nebe = depalu + gotebe*nigofa^2",
+   "accepted_at": 3,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "pevam2",
+   "instrument": "i04",
+   "precision": "1/20",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "soziba",
+   "observer": "pevam2",
+   "of": "nebe",
+   "state": {
+    "nigofa": "1",
+    "kovi": "1",
+    "zegak": "2"
+   },
+   "value": "-479/200",
+   "epoch": 0,
+   "src": "pevam2"
+  },
+  {
+   "id": "bita3",
+   "observer": "pevam2",
+   "of": "nebe",
+   "state": {
+    "nigofa": "2",
+    "kovi": "-2",
+    "zegak": "1"
+   },
+   "value": "-111/100",
+   "epoch": 1,
+   "src": "pevam2"
+  },
+  {
+   "id": "guve",
+   "observer": "pevam2",
+   "of": "nebe",
+   "state": {
+    "nigofa": "-1",
+    "kovi": "1/2",
+    "zegak": "-1"
+   },
+   "value": "-959/400",
+   "epoch": 2,
+   "src": "pevam2"
+  },
+  {
+   "id": "nome",
+   "observer": "pevam2",
+   "of": "nebe",
+   "state": {
+    "nigofa": "1/2",
+    "kovi": "3",
+    "zegak": "0"
+   },
+   "value": "-1303/500",
+   "epoch": 3,
+   "src": "pevam2"
+  },
+  {
+   "id": "zepe",
+   "observer": "pevam2",
+   "of": "nebe",
+   "state": {
+    "nigofa": "1",
+    "kovi": "2",
+    "zegak": "1"
+   },
+   "value": "-188/75",
+   "epoch": 4,
+   "src": "pevam2"
+  },
+  {
+   "id": "vegan",
+   "observer": "pevam2",
+   "of": "nebe",
+   "state": {
+    "nigofa": "2",
+    "kovi": "1",
+    "zegak": "-2"
+   },
+   "value": "-679/240",
+   "epoch": 5,
+   "src": "pevam2"
+  },
+  {
+   "id": "fapobu",
+   "observer": "pevam2",
+   "of": "nebe",
+   "state": {
+    "nigofa": "-1",
+    "kovi": "-1",
+    "zegak": "3"
+   },
+   "value": "-71/60",
+   "epoch": 5,
+   "src": "pevam2"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "tadubu",
+   "of": "tuni",
+   "eq": "nebe = depalu + gotebe*nigofa^2 + nese*kovi*nigofa + somepo*zegak",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "nese",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    },
+    {
+     "id": "somepo",
+     "kind": "scalar",
+     "meaning": "?",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "?",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

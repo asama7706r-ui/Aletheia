@@ -1,0 +1,204 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w30",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "zuvav",
+   "type": "ty03",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "sepim2",
+   "meaning": "m16",
+   "owner": "zuvav",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "koluf",
+    "kedana",
+    "miso"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "dizod",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "9/2",
+   "src": "seed"
+  },
+  {
+   "id": "pesim",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "L": -2
+   },
+   "components": [],
+   "value": "2/5",
+   "src": "seed"
+  },
+  {
+   "id": "zonoka",
+   "meaning": "m12",
+   "owner": "zuvav",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "kanut",
+    "nolofa",
+    "limame"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "figufu",
+   "eq": "miso = -dizod*limame/(1 + pesim*limame^2)",
+   "accepted_at": 3,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "fuvugi",
+   "instrument": "i06",
+   "precision": "1/50",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "bagupo",
+   "instrument": "i06",
+   "precision": "1/100",
+   "calibrated_against": [
+    "fuvugi"
+   ],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "fogama",
+   "observer": "fuvugi",
+   "of": "miso",
+   "state": {
+    "limame": "1/5"
+   },
+   "value": "-57393/63500",
+   "epoch": 0,
+   "src": "fuvugi"
+  },
+  {
+   "id": "nomeb",
+   "observer": "fuvugi",
+   "of": "miso",
+   "state": {
+    "limame": "-1/4"
+   },
+   "value": "44303/41000",
+   "epoch": 1,
+   "src": "fuvugi"
+  },
+  {
+   "id": "fufofa",
+   "observer": "bagupo",
+   "of": "miso",
+   "state": {
+    "limame": "3/10"
+   },
+   "value": "-84893/64750",
+   "epoch": 2,
+   "src": "bagupo"
+  },
+  {
+   "id": "nemubo",
+   "observer": "fuvugi",
+   "of": "miso",
+   "state": {
+    "limame": "-1/6"
+   },
+   "value": "65771/91000",
+   "epoch": 3,
+   "src": "fuvugi"
+  },
+  {
+   "id": "zidu7",
+   "observer": "bagupo",
+   "of": "miso",
+   "state": {
+    "limame": "2"
+   },
+   "value": "-2987/6500",
+   "epoch": 4,
+   "src": "bagupo"
+  },
+  {
+   "id": "kego",
+   "observer": "bagupo",
+   "of": "miso",
+   "state": {
+    "limame": "5/2"
+   },
+   "value": "2059/1400",
+   "epoch": 4,
+   "src": "bagupo"
+  },
+  {
+   "id": "bimef7",
+   "observer": "bagupo",
+   "of": "miso",
+   "state": {
+    "limame": "-3/2"
+   },
+   "value": "1593/304",
+   "epoch": 5,
+   "src": "bagupo"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "mivuko",
+   "of": "figufu",
+   "eq": "miso = -dizod*limame/(1 + pesim*limame^2) + pilo*limame^2",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "pilo",
+     "kind": "scalar",
+     "meaning": "m05",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "same",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

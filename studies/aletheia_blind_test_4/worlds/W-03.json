@@ -1,0 +1,276 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w03",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "zuvob",
+   "type": "ty03",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "lanaz",
+   "meaning": "m02",
+   "owner": "zuvob",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "lazas",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {},
+   "components": [],
+   "value": "5/4",
+   "src": "seed"
+  },
+  {
+   "id": "bime",
+   "meaning": "m16",
+   "owner": "zuvob",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "fidup",
+    "vori",
+    "gevi"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "karod",
+   "meaning": "m14",
+   "owner": "zuvob",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "levogo",
+    "nomi",
+    "fezide"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "subilo",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "49/5",
+   "src": "seed"
+  },
+  {
+   "id": "lavaf",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": -2
+   },
+   "components": [],
+   "value": "3/2",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "feruzi",
+   "eq": "lanaz = lazas*gevi/(fezide + subilo)",
+   "accepted_at": 1,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "zuzon",
+   "instrument": "i03",
+   "precision": "1/200",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "sobo",
+   "instrument": "i03",
+   "precision": "1/300",
+   "calibrated_against": [
+    "zuzon"
+   ],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "pubemi",
+   "observer": "zuzon",
+   "of": "lanaz",
+   "state": {
+    "gevi": "8",
+    "fezide": "0"
+   },
+   "value": "99559/98000",
+   "epoch": 0,
+   "src": "zuzon"
+  },
+  {
+   "id": "zotu",
+   "observer": "sobo",
+   "of": "lanaz",
+   "state": {
+    "gevi": "15",
+    "fezide": "1/5"
+   },
+   "value": "28169/15000",
+   "epoch": 1,
+   "src": "sobo"
+  },
+  {
+   "id": "repatu",
+   "observer": "zuzon",
+   "of": "lanaz",
+   "state": {
+    "gevi": "-4",
+    "fezide": "-1"
+   },
+   "value": "-3103/5500",
+   "epoch": 1,
+   "src": "zuzon"
+  },
+  {
+   "id": "mumo",
+   "observer": "sobo",
+   "of": "lanaz",
+   "state": {
+    "gevi": "5",
+    "fezide": "1/5"
+   },
+   "value": "347/375",
+   "epoch": 2,
+   "src": "sobo"
+  },
+  {
+   "id": "vefora",
+   "observer": "zuzon",
+   "of": "lanaz",
+   "state": {
+    "gevi": "-3",
+    "fezide": "1/5"
+   },
+   "value": "-151/2000",
+   "epoch": 3,
+   "src": "zuzon"
+  },
+  {
+   "id": "losifu",
+   "observer": "sobo",
+   "of": "lanaz",
+   "state": {
+    "gevi": "12",
+    "fezide": "1/5"
+   },
+   "value": "9/5",
+   "epoch": 3,
+   "src": "sobo"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "muzu2",
+   "of": "feruzi",
+   "eq": "lanaz = lazas*gevi/(fezide + subilo) + lase4",
+   "new_bodies": [
+    {
+     "id": "pirivi",
+     "type": "ty06"
+    }
+   ],
+   "new": [
+    {
+     "id": "lase4",
+     "kind": "scalar",
+     "meaning": "m02",
+     "owner": "pirivi",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i03"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "kasa",
+   "of": "feruzi",
+   "eq": "lanaz = lazas*gevi/(fezide + subilo) + lavaf*gatok",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "gatok",
+     "kind": "scalar",
+     "meaning": "m11",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i02"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "muvosa",
+   "of": "feruzi",
+   "eq": "lanaz = lazas*(gevi + nama)/(fezide + subilo)",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "nama",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i06"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

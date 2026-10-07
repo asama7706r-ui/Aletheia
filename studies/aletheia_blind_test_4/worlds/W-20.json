@@ -1,0 +1,182 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w20",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "tulav",
+   "type": "ty01",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "mogev",
+   "meaning": "m01",
+   "owner": "world",
+   "dims": {
+    "T": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "febir",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {},
+   "components": [],
+   "value": "6/5",
+   "src": "seed"
+  },
+  {
+   "id": "suke",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "bevod",
+   "meaning": "m13",
+   "owner": "tulav",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "vetiku",
+    "gumob",
+    "valum3"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "pimu6",
+   "eq": "mogev = febir*suke/valum3",
+   "accepted_at": 4,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "zinibe",
+   "instrument": "i01",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "pevuz",
+   "observer": "zinibe",
+   "of": "mogev",
+   "state": {
+    "suke": "3",
+    "valum3": "2"
+   },
+   "value": "1791/1000",
+   "epoch": 0,
+   "src": "zinibe"
+  },
+  {
+   "id": "panire",
+   "observer": "zinibe",
+   "of": "mogev",
+   "state": {
+    "suke": "5/2",
+    "valum3": "-1"
+   },
+   "value": "-6017/2000",
+   "epoch": 1,
+   "src": "zinibe"
+  },
+  {
+   "id": "goku",
+   "observer": "zinibe",
+   "of": "mogev",
+   "state": {
+    "suke": "4",
+    "valum3": "3/2"
+   },
+   "value": "3203/1000",
+   "epoch": 2,
+   "src": "zinibe"
+  },
+  {
+   "id": "fovo",
+   "observer": "zinibe",
+   "of": "mogev",
+   "state": {
+    "suke": "1",
+    "valum3": "1/2"
+   },
+   "value": "1494/625",
+   "epoch": 4,
+   "src": "zinibe"
+  },
+  {
+   "id": "sara",
+   "observer": "zinibe",
+   "of": "mogev",
+   "state": {
+    "suke": "2",
+    "valum3": "1"
+   },
+   "value": "1261/500",
+   "epoch": 5,
+   "src": "zinibe"
+  },
+  {
+   "id": "leki7",
+   "observer": "zinibe",
+   "of": "mogev",
+   "state": {
+    "suke": "3",
+    "valum3": "-2"
+   },
+   "value": "-371/200",
+   "epoch": 6,
+   "src": "zinibe"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "nebu3",
+   "of": "pimu6",
+   "eq": "mogev = febir*suke/valum3 + liga",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "liga",
+     "kind": "scalar",
+     "meaning": "m01",
+     "owner": "tulav",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "var",
+     "old_value": "1/40",
+     "route": "i01"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

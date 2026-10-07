@@ -1,0 +1,1644 @@
+[
+ {
+  "i": 21,
+  "world": {
+   "v0": "0.4",
+   "file": "world",
+   "id": "fz021",
+   "registry": "test4_registry",
+   "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+   "bodies": [
+    {
+     "id": "ba",
+     "type": "ty01",
+     "src": "seed"
+    },
+    {
+     "id": "bb",
+     "type": "ty01",
+     "src": "seed"
+    }
+   ],
+   "quantities": [
+    {
+     "id": "a10",
+     "meaning": "m04",
+     "owner": "ba",
+     "dims": {
+      "Q": 1
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a11",
+     "meaning": "m04",
+     "owner": "bb",
+     "dims": {
+      "Q": 1
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a12",
+     "meaning": "m06",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 2,
+      "T": -1
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a13",
+     "meaning": "m06",
+     "owner": "world",
+     "dims": {
+      "L": 1,
+      "T": -2
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a14",
+     "meaning": "m23",
+     "owner": "world",
+     "dims": {
+      "L": 1
+     },
+     "components": [
+      "a14p",
+      "a14q"
+     ],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a15",
+     "meaning": "m18",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "T": -1,
+      "Q": -1
+     },
+     "components": [
+      "a15x",
+      "a15y",
+      "a15z"
+     ],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a16",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "T": -1,
+      "Q": -2,
+      "L": -1
+     },
+     "components": [],
+     "value": "1",
+     "src": "seed"
+    }
+   ],
+   "relations": [],
+   "laws": [
+    {
+     "id": "law1",
+     "eq": "a15z = a16*a10*a14p",
+     "accepted_at": 0,
+     "src": "seed"
+    }
+   ],
+   "observers": [
+    {
+     "id": "ob1",
+     "instrument": "i04",
+     "precision": "1/100",
+     "calibrated_against": [],
+     "src": "seed"
+    }
+   ],
+   "observations": [
+    {
+     "id": "o0",
+     "observer": "ob1",
+     "of": "a15z",
+     "state": {
+      "a10": "-2",
+      "a11": "3",
+      "a13": "2",
+      "a14p": "3"
+     },
+     "value": "-6",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o1",
+     "observer": "ob1",
+     "of": "a15z",
+     "state": {
+      "a10": "3",
+      "a11": "-1",
+      "a13": "-2",
+      "a14p": "-2"
+     },
+     "value": "-6",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o2",
+     "observer": "ob1",
+     "of": "a15z",
+     "state": {
+      "a10": "1/2",
+      "a11": "-1",
+      "a13": "-1",
+      "a14p": "3"
+     },
+     "value": "3/2",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "n0",
+     "observer": "ob1",
+     "of": "a15z",
+     "state": {
+      "a10": "-2",
+      "a11": "2",
+      "a13": "-2",
+      "a14p": "3"
+     },
+     "value": "-14",
+     "epoch": 1,
+     "src": "ob1"
+    }
+   ],
+   "fillers": [
+    {
+     "id": "f1",
+     "of": "law1",
+     "eq": "a15z = a16*a10*a14p + zc*a13*a11",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zc",
+       "kind": "scalar",
+       "meaning": "m04",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "-1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f2",
+     "of": "law1",
+     "eq": "a15z = a16*a10*a14p + zk0*a11^-1",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk0",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f3",
+     "of": "law1",
+     "eq": "a15z = a16*a10*a14p + zk1*a11^-1",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk1",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    }
+   ]
+  },
+  "problems": [
+   "several-filler world"
+  ],
+  "base": {},
+  "zero": {
+   "kept": [
+    "f2",
+    "f3"
+   ],
+   "decisive": [
+    {
+     "pair": [
+      "f2",
+      "f3"
+     ],
+     "state": null
+    }
+   ]
+  },
+  "zero_ref": [
+   "f2",
+   "f3"
+  ]
+ },
+ {
+  "i": 27,
+  "world": {
+   "v0": "0.4",
+   "file": "world",
+   "id": "fz027",
+   "registry": "test4_registry",
+   "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+   "bodies": [],
+   "quantities": [
+    {
+     "id": "a10",
+     "meaning": "m17",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 1,
+      "T": -2,
+      "Q": -1
+     },
+     "components": [
+      "a10x",
+      "a10y",
+      "a10z"
+     ],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a11",
+     "meaning": "m03",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a12",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "L": 1,
+      "Q": 1
+     },
+     "components": [],
+     "value": "1",
+     "src": "seed"
+    }
+   ],
+   "relations": [],
+   "laws": [
+    {
+     "id": "law1",
+     "eq": "a11 = a12*a10z",
+     "accepted_at": 0,
+     "src": "seed"
+    }
+   ],
+   "observers": [
+    {
+     "id": "ob1",
+     "instrument": "i04",
+     "precision": "1/100",
+     "calibrated_against": [],
+     "src": "seed"
+    }
+   ],
+   "observations": [
+    {
+     "id": "o0",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10z": "-2"
+     },
+     "value": "-2",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o1",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10z": "1"
+     },
+     "value": "1",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "n0",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10z": "-2"
+     },
+     "value": "-6",
+     "epoch": 1,
+     "src": "ob1"
+    },
+    {
+     "id": "n1",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10z": "3"
+     },
+     "value": "9",
+     "epoch": 1,
+     "src": "ob1"
+    }
+   ],
+   "fillers": [
+    {
+     "id": "f1",
+     "of": "law1",
+     "eq": "a11 = a12*a10z + zc*a10z",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zc",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f2",
+     "of": "law1",
+     "eq": "a11 = a12*a10z + zk0*a10z",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk0",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    }
+   ]
+  },
+  "problems": [
+   "several-filler world"
+  ],
+  "base": {},
+  "zero": {
+   "kept": [
+    "f1",
+    "f2"
+   ],
+   "decisive": [
+    {
+     "pair": [
+      "f1",
+      "f2"
+     ],
+     "state": null
+    }
+   ]
+  },
+  "zero_ref": [
+   "f1",
+   "f2"
+  ]
+ },
+ {
+  "i": 88,
+  "world": {
+   "v0": "0.4",
+   "file": "world",
+   "id": "fz088",
+   "registry": "test4_registry",
+   "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+   "bodies": [],
+   "quantities": [
+    {
+     "id": "a10",
+     "meaning": "m10",
+     "owner": "world",
+     "dims": {
+      "T": -1
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a11",
+     "meaning": "m16",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 1,
+      "T": -2
+     },
+     "components": [
+      "a11x",
+      "a11y",
+      "a11z"
+     ],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a12",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 1,
+      "T": -3
+     },
+     "components": [],
+     "value": "-1",
+     "src": "seed"
+    },
+    {
+     "id": "a13",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 1,
+      "T": -1
+     },
+     "components": [],
+     "value": "2",
+     "src": "seed"
+    }
+   ],
+   "relations": [],
+   "laws": [
+    {
+     "id": "law1",
+     "eq": "a11y = a12*a10^-1 + a13*a10",
+     "accepted_at": 0,
+     "src": "seed"
+    }
+   ],
+   "observers": [
+    {
+     "id": "ob1",
+     "instrument": "i04",
+     "precision": "1/100",
+     "calibrated_against": [],
+     "src": "seed"
+    }
+   ],
+   "observations": [
+    {
+     "id": "o0",
+     "observer": "ob1",
+     "of": "a11y",
+     "state": {
+      "a10": "-1"
+     },
+     "value": "-1",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "n0",
+     "observer": "ob1",
+     "of": "a11y",
+     "state": {
+      "a10": "-1"
+     },
+     "value": "0",
+     "epoch": 1,
+     "src": "ob1"
+    }
+   ],
+   "fillers": [
+    {
+     "id": "f1",
+     "of": "law1",
+     "eq": "a11y = a12*a10^-1 + a13*a10 + zc*a10^-1",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zc",
+       "kind": "scalar",
+       "meaning": "m04",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "-1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f2",
+     "of": "law1",
+     "eq": "a11y = a12*a10^-1 + a13*a10 + zk0*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk0",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f3",
+     "of": "law1",
+     "eq": "a11y = a12*a10^-1 + a13*a10 + zk1*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk1",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    }
+   ]
+  },
+  "problems": [
+   "several-filler world"
+  ],
+  "base": {},
+  "zero": {
+   "kept": [
+    "f2",
+    "f3"
+   ],
+   "decisive": [
+    {
+     "pair": [
+      "f2",
+      "f3"
+     ],
+     "state": null
+    }
+   ]
+  },
+  "zero_ref": [
+   "f2",
+   "f3"
+  ]
+ },
+ {
+  "i": 158,
+  "world": {
+   "v0": "0.4",
+   "file": "world",
+   "id": "fz158",
+   "registry": "test4_registry",
+   "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+   "bodies": [],
+   "quantities": [
+    {
+     "id": "a10",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "M": 1
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a11",
+     "meaning": "m03",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a12",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "1/2",
+     "src": "seed"
+    },
+    {
+     "id": "a13",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "2",
+     "src": "seed"
+    }
+   ],
+   "relations": [],
+   "laws": [
+    {
+     "id": "law1",
+     "eq": "a11 = a12*a10 + a13*a10",
+     "accepted_at": 0,
+     "src": "seed"
+    }
+   ],
+   "observers": [
+    {
+     "id": "ob1",
+     "instrument": "i04",
+     "precision": "1/100",
+     "calibrated_against": [],
+     "src": "seed"
+    }
+   ],
+   "observations": [
+    {
+     "id": "o0",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "2"
+     },
+     "value": "5",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o1",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "1"
+     },
+     "value": "5/2",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o2",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "1/2"
+     },
+     "value": "5/4",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "n0",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "1"
+     },
+     "value": "7/2",
+     "epoch": 1,
+     "src": "ob1"
+    }
+   ],
+   "fillers": [
+    {
+     "id": "f1",
+     "of": "law1",
+     "eq": "a11 = a12*a10 + a13*a10 + zc*a10^2",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zc",
+       "kind": "scalar",
+       "meaning": "?",
+       "owner": "world",
+       "dims": {
+        "M": -1,
+        "L": 2,
+        "T": -2
+       },
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f2",
+     "of": "law1",
+     "eq": "a11 = a12*a10 + a13*a10 + zk0*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk0",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f3",
+     "of": "law1",
+     "eq": "a11 = a12*a10 + a13*a10 + zk1*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk1",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    }
+   ]
+  },
+  "problems": [
+   "several-filler world"
+  ],
+  "base": {},
+  "zero": {
+   "kept": [
+    "f1",
+    "f2",
+    "f3"
+   ],
+   "decisive": [
+    {
+     "pair": [
+      "f1",
+      "f2"
+     ],
+     "state": {
+      "a10": "2"
+     },
+     "observer": "ob1",
+     "intervals": {
+      "f1": [
+       "224/25",
+       "226/25"
+      ],
+      "f2": [
+       "349/50",
+       "351/50"
+      ]
+     }
+    },
+    {
+     "pair": [
+      "f1",
+      "f3"
+     ],
+     "state": {
+      "a10": "2"
+     },
+     "observer": "ob1",
+     "intervals": {
+      "f1": [
+       "224/25",
+       "226/25"
+      ],
+      "f3": [
+       "349/50",
+       "351/50"
+      ]
+     }
+    },
+    {
+     "pair": [
+      "f2",
+      "f3"
+     ],
+     "state": null
+    }
+   ]
+  },
+  "zero_ref": [
+   "f1",
+   "f2",
+   "f3"
+  ]
+ },
+ {
+  "i": 191,
+  "world": {
+   "v0": "0.4",
+   "file": "world",
+   "id": "fz191",
+   "registry": "test4_registry",
+   "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+   "bodies": [],
+   "quantities": [
+    {
+     "id": "a10",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {},
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a11",
+     "meaning": "m03",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a12",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "3",
+     "src": "seed"
+    },
+    {
+     "id": "a13",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "2",
+     "src": "seed"
+    }
+   ],
+   "relations": [],
+   "laws": [
+    {
+     "id": "law1",
+     "eq": "a11 = a12*a10 + a13*a10",
+     "accepted_at": 0,
+     "src": "seed"
+    }
+   ],
+   "observers": [
+    {
+     "id": "ob1",
+     "instrument": "i04",
+     "precision": "1/100",
+     "calibrated_against": [],
+     "src": "seed"
+    }
+   ],
+   "observations": [
+    {
+     "id": "o0",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "-1"
+     },
+     "value": "-5",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o1",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "2"
+     },
+     "value": "10",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "n0",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "1"
+     },
+     "value": "8",
+     "epoch": 1,
+     "src": "ob1"
+    },
+    {
+     "id": "n1",
+     "observer": "ob1",
+     "of": "a11",
+     "state": {
+      "a10": "1"
+     },
+     "value": "8",
+     "epoch": 1,
+     "src": "ob1"
+    }
+   ],
+   "fillers": [
+    {
+     "id": "f1",
+     "of": "law1",
+     "eq": "a11 = a12*a10 + a13*a10 + zc*a10^2",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zc",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "same",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f2",
+     "of": "law1",
+     "eq": "a11 = a12*a10 + a13*a10 + zk0*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk0",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f3",
+     "of": "law1",
+     "eq": "a11 = a12*a10 + a13*a10 + zk1*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk1",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    }
+   ]
+  },
+  "problems": [
+   "several-filler world"
+  ],
+  "base": {},
+  "zero": {
+   "kept": [
+    "f2",
+    "f3"
+   ],
+   "decisive": [
+    {
+     "pair": [
+      "f2",
+      "f3"
+     ],
+     "state": null
+    }
+   ]
+  },
+  "zero_ref": [
+   "f2",
+   "f3"
+  ]
+ },
+ {
+  "i": 269,
+  "world": {
+   "v0": "0.4",
+   "file": "world",
+   "id": "fz269",
+   "registry": "test4_registry",
+   "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+   "bodies": [],
+   "quantities": [
+    {
+     "id": "a10",
+     "meaning": "m03",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 2,
+      "T": -2
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a11",
+     "meaning": "m11",
+     "owner": "world",
+     "dims": {
+      "L": 1
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a12",
+     "meaning": "m16",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "L": 1,
+      "T": -2
+     },
+     "components": [
+      "a12x",
+      "a12y",
+      "a12z"
+     ],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a13",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "L": -3
+     },
+     "components": [],
+     "value": "1/2",
+     "src": "seed"
+    },
+    {
+     "id": "a14",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "M": 1,
+      "T": -2
+     },
+     "components": [],
+     "value": "-1",
+     "src": "seed"
+    }
+   ],
+   "relations": [],
+   "laws": [
+    {
+     "id": "law1",
+     "eq": "a12y = a13*a11^2*a10 + a14*a11",
+     "accepted_at": 0,
+     "src": "seed"
+    }
+   ],
+   "observers": [
+    {
+     "id": "ob1",
+     "instrument": "i04",
+     "precision": "1/100",
+     "calibrated_against": [],
+     "src": "seed"
+    }
+   ],
+   "observations": [
+    {
+     "id": "o0",
+     "observer": "ob1",
+     "of": "a12y",
+     "state": {
+      "a10": "2",
+      "a11": "1/2"
+     },
+     "value": "-1/4",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o1",
+     "observer": "ob1",
+     "of": "a12y",
+     "state": {
+      "a10": "2",
+      "a11": "-1"
+     },
+     "value": "2",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "n0",
+     "observer": "ob1",
+     "of": "a12y",
+     "state": {
+      "a10": "1/2",
+      "a11": "-2"
+     },
+     "value": "4",
+     "epoch": 1,
+     "src": "ob1"
+    }
+   ],
+   "fillers": [
+    {
+     "id": "f1",
+     "of": "law1",
+     "eq": "a12y = a13*a11^2*a10 + a14*a11 + zc*a10*a11",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zc",
+       "kind": "scalar",
+       "meaning": "?",
+       "owner": "world",
+       "dims": {
+        "L": -2
+       },
+       "components": [],
+       "under": {
+        "rev_t": "-1",
+        "refl_x": "-1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "same",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f2",
+     "of": "law1",
+     "eq": "a12y = a13*a11^2*a10 + a14*a11 + zk0*a11",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk0",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f3",
+     "of": "law1",
+     "eq": "a12y = a13*a11^2*a10 + a14*a11 + zk1*a11",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk1",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    }
+   ]
+  },
+  "problems": [
+   "several-filler world"
+  ],
+  "base": {},
+  "zero": {
+   "kept": [
+    "f2",
+    "f3"
+   ],
+   "decisive": [
+    {
+     "pair": [
+      "f2",
+      "f3"
+     ],
+     "state": null
+    }
+   ]
+  },
+  "zero_ref": [
+   "f2",
+   "f3"
+  ]
+ },
+ {
+  "i": 279,
+  "world": {
+   "v0": "0.4",
+   "file": "world",
+   "id": "fz279",
+   "registry": "test4_registry",
+   "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+   "bodies": [],
+   "quantities": [
+    {
+     "id": "a10",
+     "meaning": "m09",
+     "owner": "world",
+     "dims": {
+      "L": 1,
+      "T": -2
+     },
+     "components": [],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a11",
+     "meaning": "m20",
+     "owner": "world",
+     "dims": {},
+     "components": [
+      "a11x",
+      "a11y",
+      "a11z"
+     ],
+     "value": "var",
+     "src": "seed"
+    },
+    {
+     "id": "a12",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "L": -2,
+      "T": 4
+     },
+     "components": [],
+     "value": "3",
+     "src": "seed"
+    },
+    {
+     "id": "a13",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": {
+      "L": -1,
+      "T": 2
+     },
+     "components": [],
+     "value": "2",
+     "src": "seed"
+    }
+   ],
+   "relations": [],
+   "laws": [
+    {
+     "id": "law1",
+     "eq": "a11x = a12*a10^2 + a13*a10",
+     "accepted_at": 0,
+     "src": "seed"
+    }
+   ],
+   "observers": [
+    {
+     "id": "ob1",
+     "instrument": "i04",
+     "precision": "1/100",
+     "calibrated_against": [],
+     "src": "seed"
+    }
+   ],
+   "observations": [
+    {
+     "id": "o0",
+     "observer": "ob1",
+     "of": "a11x",
+     "state": {
+      "a10": "-2"
+     },
+     "value": "8",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "o1",
+     "observer": "ob1",
+     "of": "a11x",
+     "state": {
+      "a10": "3"
+     },
+     "value": "33",
+     "epoch": 0,
+     "src": "ob1"
+    },
+    {
+     "id": "n0",
+     "observer": "ob1",
+     "of": "a11x",
+     "state": {
+      "a10": "1"
+     },
+     "value": "10",
+     "epoch": 1,
+     "src": "ob1"
+    }
+   ],
+   "fillers": [
+    {
+     "id": "f1",
+     "of": "law1",
+     "eq": "a11x = 2*a12*a10^2 + a13*a10 + zc*a10^2",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zc",
+       "kind": "?",
+       "meaning": "?",
+       "owner": "world",
+       "dims": "?",
+       "components": "?",
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f2",
+     "of": "law1",
+     "eq": "a11x = a12*a10^2 + a13*a10 + zk0*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk0",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    },
+    {
+     "id": "f3",
+     "of": "law1",
+     "eq": "a11x = a12*a10^2 + a13*a10 + zk1*a10",
+     "new_bodies": [],
+     "new": [
+      {
+       "id": "zk1",
+       "kind": "scalar",
+       "meaning": "m07",
+       "owner": "world",
+       "dims": "?",
+       "components": [],
+       "under": {
+        "rev_t": "1",
+        "refl_x": "1",
+        "conj_c": "1"
+       },
+       "value": "?",
+       "old_value": "0",
+       "route": "?"
+      }
+     ],
+     "src": "seed"
+    }
+   ]
+  },
+  "problems": [
+   "several-filler world"
+  ],
+  "base": {},
+  "zero": {
+   "kept": [
+    "f2",
+    "f3"
+   ],
+   "decisive": [
+    {
+     "pair": [
+      "f2",
+      "f3"
+     ],
+     "state": null
+    }
+   ]
+  },
+  "zero_ref": [
+   "f2",
+   "f3"
+  ]
+ }
+]
