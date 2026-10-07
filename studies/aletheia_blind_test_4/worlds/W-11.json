@@ -1,0 +1,250 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w11",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "kitule",
+   "type": "ty01",
+   "src": "seed"
+  },
+  {
+   "id": "zudi",
+   "type": "ty05",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "befif",
+   "meaning": "m12",
+   "owner": "kitule",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "gipi",
+    "ladu",
+    "dokafa"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "zifoga",
+   "meaning": "m04",
+   "owner": "kitule",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "rapo4",
+   "meaning": "m04",
+   "owner": "zudi",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "5/3",
+   "src": "seed"
+  },
+  {
+   "id": "fogel",
+   "meaning": "m02",
+   "owner": "kitule",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "3/7",
+   "src": "seed"
+  },
+  {
+   "id": "pevo4",
+   "meaning": "m21",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "ladeti",
+    "tegele",
+    "badule"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "mino",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2,
+    "Q": -2
+   },
+   "components": [],
+   "value": "2/9",
+   "src": "seed"
+  },
+  {
+   "id": "namib6",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "13/4",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "tava",
+   "eq": "dokafa = namib6 + mino*zifoga*rapo4/(fogel*badule)",
+   "accepted_at": 3,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "labizo",
+   "instrument": "i02",
+   "precision": "1/1000",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "ninin9",
+   "instrument": "i02",
+   "precision": "1/800",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "burupo",
+   "observer": "labizo",
+   "of": "dokafa",
+   "state": {
+    "zifoga": "1/50",
+    "badule": "-49/5"
+   },
+   "value": "18422603/5670000",
+   "epoch": 0,
+   "src": "labizo"
+  },
+  {
+   "id": "nafok9",
+   "observer": "labizo",
+   "of": "dokafa",
+   "state": {
+    "zifoga": "-3/100",
+    "badule": "-49/5"
+   },
+   "value": "61457423/18900000",
+   "epoch": 1,
+   "src": "labizo"
+  },
+  {
+   "id": "mofis",
+   "observer": "ninin9",
+   "of": "dokafa",
+   "state": {
+    "zifoga": "1/40",
+    "badule": "-10"
+   },
+   "value": "65789/20250",
+   "epoch": 2,
+   "src": "ninin9"
+  },
+  {
+   "id": "linano",
+   "observer": "ninin9",
+   "of": "dokafa",
+   "state": {
+    "zifoga": "-1/25",
+    "badule": "-19/2"
+   },
+   "value": "40044949/12312000",
+   "epoch": 3,
+   "src": "ninin9"
+  },
+  {
+   "id": "gesuma",
+   "observer": "labizo",
+   "of": "dokafa",
+   "state": {
+    "zifoga": "3/2",
+    "badule": "-49/5"
+   },
+   "value": "2976439/945000",
+   "epoch": 4,
+   "src": "labizo"
+  },
+  {
+   "id": "takoz",
+   "observer": "ninin9",
+   "of": "dokafa",
+   "state": {
+    "zifoga": "-2",
+    "badule": "-10"
+   },
+   "value": "876367/259200",
+   "epoch": 4,
+   "src": "ninin9"
+  },
+  {
+   "id": "binage",
+   "observer": "labizo",
+   "of": "dokafa",
+   "state": {
+    "zifoga": "5/2",
+    "badule": "-39/4"
+   },
+   "value": "38939/12636",
+   "epoch": 5,
+   "src": "labizo"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "vokuv",
+   "of": "tava",
+   "eq": "dokafa = namib6 + mino*zifoga*(rapo4 + zepa)/(fogel*badule)",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "zepa",
+     "kind": "scalar",
+     "meaning": "m04",
+     "owner": "world",
+     "dims": {
+      "Q": 1
+     },
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": "same",
+     "route": "i05"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

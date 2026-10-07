@@ -1,0 +1,206 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w24",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "zilo",
+   "type": "ty01",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "sunek",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "monu",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "5/8",
+   "src": "seed"
+  },
+  {
+   "id": "tume",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": -1,
+    "L": -2,
+    "T": 2
+   },
+   "components": [],
+   "value": "3/2",
+   "src": "seed"
+  },
+  {
+   "id": "dadadi",
+   "meaning": "m20",
+   "owner": "zilo",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [
+    "zulaz3",
+    "gudo",
+    "nipede"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "tuga",
+   "eq": "sunek = monu + tume*(zulaz3^2 + gudo^2 + nipede^2)",
+   "accepted_at": 1,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "fuvim",
+   "instrument": "i04",
+   "precision": "1/40",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "silosa",
+   "instrument": "i04",
+   "precision": "1/64",
+   "calibrated_against": [
+    "fuvim"
+   ],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "mazage",
+   "observer": "fuvim",
+   "of": "sunek",
+   "state": {
+    "zulaz3": "1/2",
+    "gudo": "1",
+    "nipede": "-1/2"
+   },
+   "value": "1159/400",
+   "epoch": 0,
+   "src": "fuvim"
+  },
+  {
+   "id": "nisino",
+   "observer": "silosa",
+   "of": "sunek",
+   "state": {
+    "zulaz3": "0",
+    "gudo": "-1",
+    "nipede": "1"
+   },
+   "value": "2889/800",
+   "epoch": 1,
+   "src": "silosa"
+  },
+  {
+   "id": "gafeza",
+   "observer": "fuvim",
+   "of": "sunek",
+   "state": {
+    "zulaz3": "1",
+    "gudo": "1/2",
+    "nipede": "2"
+   },
+   "value": "3391/400",
+   "epoch": 1,
+   "src": "fuvim"
+  },
+  {
+   "id": "fepovi",
+   "observer": "silosa",
+   "of": "sunek",
+   "state": {
+    "zulaz3": "1",
+    "gudo": "0",
+    "nipede": "1"
+   },
+   "value": "213/64",
+   "epoch": 2,
+   "src": "silosa"
+  },
+  {
+   "id": "seta",
+   "observer": "fuvim",
+   "of": "sunek",
+   "state": {
+    "zulaz3": "-1/2",
+    "gudo": "1",
+    "nipede": "-2"
+   },
+   "value": "291/32",
+   "epoch": 3,
+   "src": "fuvim"
+  },
+  {
+   "id": "bibu",
+   "observer": "silosa",
+   "of": "sunek",
+   "state": {
+    "zulaz3": "0",
+    "gudo": "1/2",
+    "nipede": "3/2"
+   },
+   "value": "157/40",
+   "epoch": 3,
+   "src": "silosa"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "lifem",
+   "of": "tuga",
+   "eq": "sunek = monu + tume*(zulaz3^2 + gudo^2 + nipede^2) + futoba*nipede",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "futoba",
+     "kind": "scalar",
+     "meaning": "m09",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "?",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

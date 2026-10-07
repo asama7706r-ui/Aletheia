@@ -1,0 +1,1068 @@
+{
+ "accuracy": {
+  "DERIVE": "29/39 (0.744)",
+  "DIMS": "10/13 (0.769)",
+  "FIX": "7/13 (0.538)",
+  "FORK_ALL": "6/13 (0.462)",
+  "procedure": "1 (1.000)"
+ },
+ "best_baseline": {
+  "accuracy": "10/13 (0.769)",
+  "b": 9,
+  "c": 0,
+  "mcnemar_p": "1/512 (0.002)",
+  "method": "DIMS"
+ },
+ "branch_accuracy": "1 (1.000)",
+ "criteria": {
+  "C1 accuracy >= 0.70": true,
+  "C2 silent substitution <= 1 filler": true,
+  "C3 false alarms <= 0.15": true,
+  "C4 branch accuracy >= 0.70": true,
+  "C5 silent choice <= 1 world": true,
+  "C6 INVALID detection >= 2/3": true,
+  "C7 +0.15 over the best baseline and McNemar p < 0.05": true
+ },
+ "excluded": {},
+ "false_alarms": "0 (0.000)",
+ "fillers": [
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "ferat",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-01"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "zosu",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "CONDITIONAL"
+   },
+   "ref": "CONDITIONAL",
+   "world": "W-02"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "muzu2",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-03"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "filler": "kasa",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "INVALID"
+   },
+   "ref": "INVALID",
+   "world": "W-03"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "muvosa",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-03"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "seto",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-04"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "favutu",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-05"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "filler": "duvoge",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-06"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "filler": "gunimo",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-07"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "kagon",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "CONDITIONAL"
+   },
+   "ref": "CONDITIONAL",
+   "world": "W-08"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "nikil",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-09"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "vuli",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-09"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "tadubu",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "CONDITIONAL"
+   },
+   "ref": "CONDITIONAL",
+   "world": "W-10"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "vokuv",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-11"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "filler": "kizine",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "INVALID"
+   },
+   "ref": "INVALID",
+   "world": "W-12"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "rade",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-13"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "tomof",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-14"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "filler": "kuzop9",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-15"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "nubug6",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-15"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "zurig",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-15"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "filler": "rili7",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "INVALID"
+   },
+   "ref": "INVALID",
+   "world": "W-16"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "nubok3",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "CONDITIONAL"
+   },
+   "ref": "CONDITIONAL",
+   "world": "W-17"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "INVALID"
+   },
+   "filler": "dusa",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "INVALID"
+   },
+   "ref": "INVALID",
+   "world": "W-18"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "fanup",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-19"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "filler": "nebu3",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-20"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "beza",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-21"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "litub",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "CONDITIONAL"
+   },
+   "ref": "CONDITIONAL",
+   "world": "W-22"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "pebe",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "CONDITIONAL"
+   },
+   "ref": "CONDITIONAL",
+   "world": "W-23"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "lifem",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "CONDITIONAL"
+   },
+   "ref": "CONDITIONAL",
+   "world": "W-24"
+  },
+  {
+   "DERIVE": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": false,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "libuv",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-25"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "penem9",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-26"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "filler": "kuribo",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-27"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": false,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "temaf4",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-28"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "kuta6",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-28"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "mafofi",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-28"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "gofad5",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-29"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "FORK_ALL": {
+    "correct": false,
+    "verdict": "CONDITIONAL"
+   },
+   "filler": "zalu5",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "ref": "SAME_LAW_NEW_STATE",
+   "world": "W-29"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "filler": "pizer",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-29"
+  },
+  {
+   "DERIVE": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "DIMS": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FIX": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "FORK_ALL": {
+    "correct": true,
+    "verdict": "ANOTHER_LAW"
+   },
+   "filler": "mivuko",
+   "procedure": {
+    "correct": true,
+    "problems": [],
+    "verdict": "ANOTHER_LAW"
+   },
+   "ref": "ANOTHER_LAW",
+   "world": "W-30"
+  }
+ ],
+ "invalid_detection": "1 (1.000)",
+ "outcome": "PASS",
+ "over_branching": 0,
+ "several_filler_worlds": [
+  "W-03",
+  "W-09",
+  "W-15",
+  "W-28",
+  "W-29"
+ ],
+ "silent_choice": [],
+ "silent_substitution": [],
+ "valid_fillers": 39,
+ "valid_worlds": 30,
+ "worlds": 30,
+ "zero_report": {
+  "agree_with_reference": "39/39",
+  "counts": {
+   "absent": 102,
+   "below_precision": 4,
+   "n/a": 8,
+   "zero_for_any_value": 7
+  }
+ }
+}

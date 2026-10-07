@@ -1,0 +1,766 @@
+[
+ {
+  "id": "W-01",
+  "fillers": {
+   "ferat": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [],
+  "notes": "[S7] Unknown action that does not matter: the law is already changed by rev_t (its vz*hz term), so the new quantity's unknown rev_t sign cannot change the card."
+ },
+ {
+  "id": "W-02",
+  "fillers": {
+   "zosu": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "conditional"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T7",
+   "T8"
+  ],
+  "notes": "[C4] T7 (new '?', unknown kind, rot_z): uq*(hx^2 - hy^2) is odd under a quarter turn, so the keeping assignment is uq:rot_z = -1."
+ },
+ {
+  "id": "W-03",
+  "fillers": {
+   "muzu2": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   },
+   "kasa": {
+    "verdict": "INVALID"
+   },
+   "muvosa": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": [
+   "muvosa",
+   "muzu2"
+  ],
+  "decisive": [
+   {
+    "pair": [
+     "muzu2",
+     "muvosa"
+    ],
+    "state": {
+     "gevi": "1",
+     "fezide": "-9"
+    },
+    "observer": "sobo"
+   }
+  ],
+  "traps": [
+   "T9"
+  ],
+  "notes": "[M3] T9: a hidden mass (cm) or an unaccounted constant force (cf) both fit at az = 1/5; a third filler adds kr*cq with cq a distance: not a mass (INVALID)."
+ },
+ {
+  "id": "W-04",
+  "fillers": {
+   "seto": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T4"
+  ],
+  "notes": "[S6] T4: an observer velocity w (new) in a known field b; energy term qa (w x b).h, mirror-even only with w polar."
+ },
+ {
+  "id": "W-05",
+  "fillers": {
+   "favutu": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "changed",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T2",
+   "T5",
+   "T8"
+  ],
+  "notes": "[A6] T5 + T2 + T8 (m23, rev_t): the law's qa*fa*fb term breaks time reversal (not charge conjugation); the filler multiplies it by wz (rev_t odd), a gained symmetry."
+ },
+ {
+  "id": "W-06",
+  "fillers": {
+   "duvoge": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change",
+     "exch(bifa,zasu7)": "changed"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T6"
+  ],
+  "notes": "[A8] T6: a new charged body near one of two identical charged bodies only."
+ },
+ {
+  "id": "W-07",
+  "fillers": {
+   "gunimo": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change",
+     "exch(lagaka,vido)": "changed"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T6"
+  ],
+  "notes": "[A7] T6: two identical bodies; the filler's pair (c1 on one, c2 on the other) enters asymmetrically: c1*(m1+m2) + c2*m0. FIX (never exchanged) misses it."
+ },
+ {
+  "id": "W-08",
+  "fillers": {
+   "kagon": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "conditional",
+     "refl_x": "no_change",
+     "conj_c": "conditional",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T7",
+   "T8"
+  ],
+  "notes": "[C7] T7 + T8 (m23, rev_t): gq*fa*fb with gq of unknown meaning; rev_t and conj_c are each conditional, keeping -1 for each."
+ },
+ {
+  "id": "W-09",
+  "fillers": {
+   "nikil": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   },
+   "vuli": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": [
+   "nikil",
+   "vuli"
+  ],
+  "decisive": [
+   {
+    "pair": [
+     "nikil",
+     "vuli"
+    ],
+    "state": {
+     "bufavu": "3",
+     "daveno": "0"
+    },
+    "observer": "dopup"
+   }
+  ],
+  "traps": [
+   "T1",
+   "T9"
+  ],
+  "notes": "[M1] T9 + T1: two kept fillers: a second charge with the body ((qa+qn)*ez) or a cubic stiffness (cm*hz^3); the new data have ez = 2*hz^3."
+ },
+ {
+  "id": "W-10",
+  "fillers": {
+   "tadubu": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "conditional",
+     "refl_x": "conditional",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T7",
+   "T8"
+  ],
+  "notes": "[C5] T7, two branches: rev_t through the world field sv (registry m10, keeping +1), refl_x through pq (new '?', keeping -1)."
+ },
+ {
+  "id": "W-11",
+  "fillers": {
+   "vokuv": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T1"
+  ],
+  "notes": "[S2] T1: a charge present all along in the surroundings (old_value same), seen only when the probe charge is large."
+ },
+ {
+  "id": "W-12",
+  "fillers": {
+   "kizine": {
+    "verdict": "INVALID"
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [],
+  "notes": "[I1] INVALID: a new velocity (m13) whose written dims are those of an acceleration; the filled law is consistent with the written dims, not with the meaning."
+ },
+ {
+  "id": "W-13",
+  "fillers": {
+   "rade": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "changed",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T2",
+   "T8"
+  ],
+  "notes": "[A4] T2 + T8 (axial, refl_x): a torque n (axial) dotted with a position: a pseudoscalar term in an energy; l.s keeps the mirror."
+ },
+ {
+  "id": "W-14",
+  "fillers": {
+   "tomof": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T1"
+  ],
+  "notes": "[S1] T1: a second charge sharing the probe's place; conj_c needs it to flip with the charge."
+ },
+ {
+  "id": "W-15",
+  "fillers": {
+   "kuzop9": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change",
+     "exch(rinuku,vasugi)": "changed"
+    }
+   },
+   "nubug6": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change",
+     "exch(rinuku,vasugi)": "no_change"
+    }
+   },
+   "zurig": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change",
+     "exch(rinuku,vasugi)": "no_change"
+    }
+   }
+  },
+  "kept": [
+   "nubug6",
+   "zurig"
+  ],
+  "decisive": [
+   {
+    "pair": [
+     "nubug6",
+     "zurig"
+    ],
+    "state": {
+     "gasari": "1",
+     "zufog": "-1"
+    },
+    "observer": "lepopu"
+   }
+  ],
+  "traps": [
+   "T6",
+   "T9"
+  ],
+  "notes": "[M5] T9 + T6: identical bodies; fa (pair used asymmetrically: ANOTHER by exchange, though its fitted values look symmetric), fb (pair used symmetrically; FIX misses it), fc (one symmetric constant)."
+ },
+ {
+  "id": "W-16",
+  "fillers": {
+   "rili7": {
+    "verdict": "INVALID"
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [],
+  "notes": "[I3] INVALID: a new charge-like quantity of unknown meaning with written dims Q T; the term qn*ez*hz^2/dd is then not an energy."
+ },
+ {
+  "id": "W-17",
+  "fillers": {
+   "nubok3": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "conditional",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T7"
+  ],
+  "notes": "[C3] T7 (new '?', conj_c): an unknown quantity zq times ez*dd; keeping zq:conj_c = -1 (it would act like a charge)."
+ },
+ {
+  "id": "W-18",
+  "fillers": {
+   "dusa": {
+    "verdict": "INVALID"
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [],
+  "notes": "[I2] INVALID: one new coupling multiplies a velocity term and a position term with equal world dims; no dims of xn fit both."
+ },
+ {
+  "id": "W-19",
+  "fillers": {
+   "fanup": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T3"
+  ],
+  "notes": "[S5] T3: a magnetic field present all along (old_value same) seen by an observer that was at rest at the old observations; motional field (w x b)_z."
+ },
+ {
+  "id": "W-20",
+  "fillers": {
+   "nebu3": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [],
+  "notes": "[A2] F3 alone: a delay that the filler says was already 1/40 at the old observations (a variable with a known old value)."
+ },
+ {
+  "id": "W-21",
+  "fillers": {
+   "beza": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T4"
+  ],
+  "notes": "[S4] T4: the observer moves (w, at rest before); the force gains a term (v.w) hz, mirror-even only if w is a polar vector."
+ },
+ {
+  "id": "W-22",
+  "fillers": {
+   "litub": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "conditional",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T7"
+  ],
+  "notes": "[C1] T7 (registry m10): a world field sv with untested time reversal enters the filler as cn*sv*vz; keeping assignment sv:rev_t = -1."
+ },
+ {
+  "id": "W-23",
+  "fillers": {
+   "pebe": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "conditional",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T7"
+  ],
+  "notes": "[C6] T7: the law itself holds an untested-time field (sv, m10); the filler scales its term by un (new '?', old value 1). Only un matters; keeping un:rev_t = +1 for both signs of sv."
+ },
+ {
+  "id": "W-24",
+  "fillers": {
+   "lifem": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "conditional",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T7",
+   "T8"
+  ],
+  "notes": "[C2] T7 (registry m09) + T8 (axial, refl_x): a coupling with untested mirror behaviour times the torque's z part; keeping cp:refl_x = -1."
+ },
+ {
+  "id": "W-25",
+  "fillers": {
+   "libuv": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "changed",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T2"
+  ],
+  "notes": "[A3] T2 with m06 under rev_t: a damping-like term gd*vz*hz; the damping card is +1 under time reversal, so the term breaks it."
+ },
+ {
+  "id": "W-26",
+  "fillers": {
+   "penem9": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T3"
+  ],
+  "notes": "[S3] T3: a uniform field switched on after acceptance, coupled to the angular momentum through the charge."
+ },
+ {
+  "id": "W-27",
+  "fillers": {
+   "kuribo": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "changed"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [
+   "T5",
+   "T8"
+  ],
+  "notes": "[A5] T5 (rot_z, kind-reading): the law is anisotropic (hx^2 only); the filler restores the quarter-turn symmetry; a gained symmetry is a change."
+ },
+ {
+  "id": "W-28",
+  "fillers": {
+   "temaf4": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   },
+   "kuta6": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   },
+   "mafofi": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": [
+   "kuta6",
+   "mafofi",
+   "temaf4"
+  ],
+  "decisive": [
+   {
+    "pair": [
+     "temaf4",
+     "kuta6"
+    ],
+    "state": {
+     "letos": "4",
+     "dobe": "1",
+     "kezul": "0"
+    },
+    "observer": "befa2"
+   },
+   {
+    "pair": [
+     "temaf4",
+     "mafofi"
+    ],
+    "state": {
+     "letos": "2",
+     "dobe": "1/4",
+     "kezul": "1"
+    },
+    "observer": "befa2"
+   },
+   {
+    "pair": [
+     "kuta6",
+     "mafofi"
+    ],
+    "state": {
+     "letos": "4",
+     "dobe": "1",
+     "kezul": "0"
+    },
+    "observer": "befa2"
+   }
+  ],
+  "traps": [
+   "T1",
+   "T9"
+  ],
+  "notes": "[M4] T9 + T1: three kept fillers (a second charge qn, a hidden mass mn, a 1/dd^2 interaction cx) fit new data taken at dd = 1 with hz = qa/2."
+ },
+ {
+  "id": "W-29",
+  "fillers": {
+   "gofad5": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   },
+   "zalu5": {
+    "verdict": "SAME_LAW_NEW_STATE",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   },
+   "pizer": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "changed"
+    }
+   }
+  },
+  "kept": [
+   "gofad5",
+   "zalu5"
+  ],
+  "decisive": [
+   {
+    "pair": [
+     "gofad5",
+     "zalu5"
+    ],
+    "state": {
+     "govo": "0",
+     "kidu": "0",
+     "sadela": "3"
+    },
+    "observer": "dunut"
+   }
+  ],
+  "traps": [
+   "T8",
+   "T9"
+  ],
+  "notes": "[M2] T9: two kept fillers (c1*hz, c2*hz^3) and a third that breaks the quarter turn (c3*hx^2); new data at hz = 3/2, hx = 1/2."
+ },
+ {
+  "id": "W-30",
+  "fillers": {
+   "mivuko": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "no_change",
+     "refl_x": "no_change",
+     "conj_c": "no_change",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "kept": null,
+  "decisive": null,
+  "traps": [],
+  "notes": "[A1] F3 alone: a quadratic stiffness present all along (old_value same); the value the deficit needs breaks the old observations at small hz."
+ }
+]

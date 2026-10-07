@@ -1,0 +1,261 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w14",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "nuro",
+   "type": "ty03",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "pulo",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "solu4",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "-41/8",
+   "src": "seed"
+  },
+  {
+   "id": "pipug6",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "L": 2,
+    "Q": -2
+   },
+   "components": [],
+   "value": "5/7",
+   "src": "seed"
+  },
+  {
+   "id": "votapi",
+   "meaning": "m04",
+   "owner": "nuro",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "-9/4",
+   "src": "seed"
+  },
+  {
+   "id": "lonefi",
+   "meaning": "m17",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "components": [
+    "kato3",
+    "zusid8",
+    "vabamu"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "gopeme",
+   "meaning": "m12",
+   "owner": "nuro",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "gotave",
+    "nekuro",
+    "boma"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "penade",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "zofa",
+   "eq": "pulo = solu4 + pipug6*votapi^3*vabamu*boma/penade^2",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "fedogo",
+   "instrument": "i04",
+   "precision": "1/40",
+   "calibrated_against": [],
+   "src": "seed"
+  },
+  {
+   "id": "bidog",
+   "instrument": "i04",
+   "precision": "3/200",
+   "calibrated_against": [
+    "fedogo"
+   ],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "rove",
+   "observer": "fedogo",
+   "of": "pulo",
+   "state": {
+    "vabamu": "3/2",
+    "boma": "1/3",
+    "penade": "2"
+   },
+   "value": "-548309/89600",
+   "epoch": 0,
+   "src": "fedogo"
+  },
+  {
+   "id": "tozog",
+   "observer": "bidog",
+   "of": "pulo",
+   "state": {
+    "vabamu": "5/2",
+    "boma": "-1/2",
+    "penade": "7/4"
+   },
+   "value": "-1061021/274400",
+   "epoch": 3,
+   "src": "bidog"
+  },
+  {
+   "id": "tamo",
+   "observer": "fedogo",
+   "of": "pulo",
+   "state": {
+    "vabamu": "-2",
+    "boma": "2/5",
+    "penade": "3/2"
+   },
+   "value": "-7893/3500",
+   "epoch": 1,
+   "src": "fedogo"
+  },
+  {
+   "id": "favobu",
+   "observer": "bidog",
+   "of": "pulo",
+   "state": {
+    "vabamu": "5/4",
+    "boma": "-3/4",
+    "penade": "5/2"
+   },
+   "value": "-4358509/1120000",
+   "epoch": 1,
+   "src": "bidog"
+  },
+  {
+   "id": "gamika",
+   "observer": "fedogo",
+   "of": "pulo",
+   "state": {
+    "vabamu": "2",
+    "boma": "1/2",
+    "penade": "3/2"
+   },
+   "value": "-4549/700",
+   "epoch": 3,
+   "src": "fedogo"
+  },
+  {
+   "id": "gigar6",
+   "observer": "bidog",
+   "of": "pulo",
+   "state": {
+    "vabamu": "7/3",
+    "boma": "1",
+    "penade": "9/4"
+   },
+   "value": "-8887/1000",
+   "epoch": 2,
+   "src": "bidog"
+  },
+  {
+   "id": "tido",
+   "observer": "bidog",
+   "of": "pulo",
+   "state": {
+    "vabamu": "-3/2",
+    "boma": "2/3",
+    "penade": "2"
+   },
+   "value": "-7807/1792",
+   "epoch": 4,
+   "src": "bidog"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "tomof",
+   "of": "zofa",
+   "eq": "pulo = solu4 + pipug6*(votapi + kudu)*votapi^2*vabamu*boma/penade^2",
+   "new_bodies": [
+    {
+     "id": "betula",
+     "type": "ty06"
+    }
+   ],
+   "new": [
+    {
+     "id": "kudu",
+     "kind": "scalar",
+     "meaning": "m04",
+     "owner": "betula",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i05"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

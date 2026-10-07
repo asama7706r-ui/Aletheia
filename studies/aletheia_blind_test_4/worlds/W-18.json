@@ -1,0 +1,191 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w18",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "rofu",
+   "type": "ty06",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "dedis",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "keni",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "7/3",
+   "src": "seed"
+  },
+  {
+   "id": "nidage",
+   "meaning": "m13",
+   "owner": "rofu",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "rezof9",
+    "fero5",
+    "panu"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "zeki",
+   "meaning": "m12",
+   "owner": "rofu",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "gitomu",
+    "galu",
+    "fugepe"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "pode",
+   "meaning": "m06",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -1
+   },
+   "components": [],
+   "value": "1/2",
+   "src": "seed"
+  },
+  {
+   "id": "ravof5",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -1
+   },
+   "components": [],
+   "value": "-4/3",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "bize",
+   "eq": "dedis = keni*fugepe^2",
+   "accepted_at": 1,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "mebeg5",
+   "instrument": "i04",
+   "precision": "1/45",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "satu",
+   "observer": "mebeg5",
+   "of": "dedis",
+   "state": {
+    "fugepe": "1",
+    "panu": "1"
+   },
+   "value": "347/150",
+   "epoch": 0,
+   "src": "mebeg5"
+  },
+  {
+   "id": "pikole",
+   "observer": "mebeg5",
+   "of": "dedis",
+   "state": {
+    "fugepe": "-3/2",
+    "panu": "2"
+   },
+   "value": "23713/4500",
+   "epoch": 1,
+   "src": "mebeg5"
+  },
+  {
+   "id": "zazif",
+   "observer": "mebeg5",
+   "of": "dedis",
+   "state": {
+    "fugepe": "2",
+    "panu": "-1"
+   },
+   "value": "542/75",
+   "epoch": 2,
+   "src": "mebeg5"
+  },
+  {
+   "id": "vadav",
+   "observer": "mebeg5",
+   "of": "dedis",
+   "state": {
+    "fugepe": "1/2",
+    "panu": "3"
+   },
+   "value": "17/15",
+   "epoch": 3,
+   "src": "mebeg5"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "dusa",
+   "of": "bize",
+   "eq": "dedis = keni*fugepe^2 + depo*pode*panu + depo*ravof5*fugepe",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "depo",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

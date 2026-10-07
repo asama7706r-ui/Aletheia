@@ -1,0 +1,237 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w17",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "rumo",
+   "type": "ty03",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "kerem",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "tugum",
+   "meaning": "m04",
+   "owner": "rumo",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "-2/3",
+   "src": "seed"
+  },
+  {
+   "id": "tatoza",
+   "meaning": "m17",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "components": [
+    "nubate",
+    "kideze",
+    "zadu"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "vibu",
+   "meaning": "m12",
+   "owner": "rumo",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "bopu",
+    "buzi",
+    "fize2"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "renilu",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {},
+   "components": [],
+   "value": "5/9",
+   "src": "seed"
+  },
+  {
+   "id": "deni",
+   "meaning": "m02",
+   "owner": "rumo",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "3/2",
+   "src": "seed"
+  },
+  {
+   "id": "vomo",
+   "meaning": "m13",
+   "owner": "rumo",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "milu",
+    "lebur5",
+    "doka"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "rekut4",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "pezar",
+   "eq": "kerem = tugum*zadu*fize2 + renilu*deni*doka^2",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "gudolu",
+   "instrument": "i04",
+   "precision": "1/50",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "zazub7",
+   "observer": "gudolu",
+   "of": "kerem",
+   "state": {
+    "zadu": "1",
+    "fize2": "2",
+    "doka": "1",
+    "rekut4": "1"
+   },
+   "value": "-259/500",
+   "epoch": 0,
+   "src": "gudolu"
+  },
+  {
+   "id": "sokoz9",
+   "observer": "gudolu",
+   "of": "kerem",
+   "state": {
+    "zadu": "-3/2",
+    "fize2": "1",
+    "doka": "-2",
+    "rekut4": "2"
+   },
+   "value": "16319/3750",
+   "epoch": 1,
+   "src": "gudolu"
+  },
+  {
+   "id": "pisi",
+   "observer": "gudolu",
+   "of": "kerem",
+   "state": {
+    "zadu": "2",
+    "fize2": "-1/2",
+    "doka": "1/2",
+    "rekut4": "3"
+   },
+   "value": "4291/5000",
+   "epoch": 2,
+   "src": "gudolu"
+  },
+  {
+   "id": "banado",
+   "observer": "gudolu",
+   "of": "kerem",
+   "state": {
+    "zadu": "1",
+    "fize2": "1",
+    "doka": "1",
+    "rekut4": "2"
+   },
+   "value": "2753/750",
+   "epoch": 3,
+   "src": "gudolu"
+  },
+  {
+   "id": "mada",
+   "observer": "gudolu",
+   "of": "kerem",
+   "state": {
+    "zadu": "-2",
+    "fize2": "3/2",
+    "doka": "1",
+    "rekut4": "1"
+   },
+   "value": "-403/600",
+   "epoch": 4,
+   "src": "gudolu"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "nubok3",
+   "of": "pezar",
+   "eq": "kerem = tugum*zadu*fize2 + renilu*deni*doka^2 + pene*zadu*rekut4",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "pene",
+     "kind": "scalar",
+     "meaning": "?",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "?"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i05"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

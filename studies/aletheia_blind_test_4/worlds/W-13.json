@@ -1,0 +1,263 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w13",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "nizi6",
+   "type": "ty01",
+   "src": "seed"
+  },
+  {
+   "id": "noru",
+   "type": "ty08",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "voma",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "nevi",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "-7/3",
+   "src": "seed"
+  },
+  {
+   "id": "vazuka",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": -1,
+    "L": -2
+   },
+   "components": [],
+   "value": "1/6",
+   "src": "seed"
+  },
+  {
+   "id": "raru",
+   "meaning": "m19",
+   "owner": "nizi6",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -1
+   },
+   "components": [
+    "donu6",
+    "kapuzi",
+    "sukig"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "ketip",
+   "meaning": "m19",
+   "owner": "noru",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -1
+   },
+   "components": [
+    "dimi3",
+    "dites",
+    "kane"
+   ],
+   "value": [
+    "1/2",
+    "-1",
+    "3/2"
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "nozuk",
+   "meaning": "m12",
+   "owner": "nizi6",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "kugas",
+    "nure",
+    "mofi"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "gava7",
+   "eq": "voma = nevi + vazuka*(donu6*dimi3 + kapuzi*dites + sukig*kane)",
+   "accepted_at": 1,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "mitufu",
+   "instrument": "i04",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "gonab7",
+   "observer": "mitufu",
+   "of": "voma",
+   "state": {
+    "donu6": "2",
+    "kapuzi": "1",
+    "sukig": "-1",
+    "kugas": "1",
+    "nure": "0",
+    "mofi": "1/2"
+   },
+   "value": "-7777/3000",
+   "epoch": 0,
+   "src": "mitufu"
+  },
+  {
+   "id": "fofe5",
+   "observer": "mitufu",
+   "of": "voma",
+   "state": {
+    "donu6": "-1",
+    "kapuzi": "3",
+    "sukig": "2",
+    "kugas": "-1",
+    "nure": "1",
+    "mofi": "0"
+   },
+   "value": "-9031/3750",
+   "epoch": 1,
+   "src": "mitufu"
+  },
+  {
+   "id": "ratasi",
+   "observer": "mitufu",
+   "of": "voma",
+   "state": {
+    "donu6": "1/2",
+    "kapuzi": "-2",
+    "sukig": "1",
+    "kugas": "2",
+    "nure": "1",
+    "mofi": "-1"
+   },
+   "value": "-3869/3000",
+   "epoch": 2,
+   "src": "mitufu"
+  },
+  {
+   "id": "sevub",
+   "observer": "mitufu",
+   "of": "voma",
+   "state": {
+    "donu6": "1",
+    "kapuzi": "1",
+    "sukig": "1",
+    "kugas": "1",
+    "nure": "-2",
+    "mofi": "3"
+   },
+   "value": "-101/400",
+   "epoch": 2,
+   "src": "mitufu"
+  },
+  {
+   "id": "dibo",
+   "observer": "mitufu",
+   "of": "voma",
+   "state": {
+    "donu6": "0",
+    "kapuzi": "-1",
+    "sukig": "2",
+    "kugas": "-3",
+    "nure": "1",
+    "mofi": "1"
+   },
+   "value": "-13/4",
+   "epoch": 3,
+   "src": "mitufu"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "rade",
+   "of": "gava7",
+   "eq": "voma = nevi + vazuka*(donu6*dimi3 + kapuzi*dites + sukig*kane) + mima*kugas + mude*nure + mevov*mofi",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "lisef",
+     "kind": "vec3",
+     "meaning": "m20",
+     "owner": "noru",
+     "dims": "?",
+     "components": [
+      "mima",
+      "mude",
+      "mevov"
+     ],
+     "under": {
+      "rev_t": "1",
+      "refl_x": [
+       [
+        "1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "-1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "-1"
+       ]
+      ],
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "0"
+     ],
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

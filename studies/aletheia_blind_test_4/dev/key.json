@@ -1,0 +1,326 @@
+[
+ {
+  "id": "D-01",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [
+   "T1"
+  ],
+  "notes": "FIX: ANOTHER (conj_c). zero report: absent."
+ },
+ {
+  "id": "D-02",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "changed"
+    }
+   }
+  },
+  "traps": [
+   "T2"
+  ],
+  "notes": "DERIVE and DIMS: SAME. gd inferred M T^-1."
+ },
+ {
+  "id": "D-03",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [
+   "T3"
+  ],
+  "notes": "FIX: ANOTHER (rev_t). Note: o1 and o2 share a state; o1 is old (epoch 0), o2 new."
+ },
+ {
+  "id": "D-04",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [
+   "T4"
+  ],
+  "notes": "FIX: ANOTHER (rev_t, refl_x). wo inferred L T^-1."
+ },
+ {
+  "id": "D-05",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "changed",
+     "refl_x": "changed",
+     "rot_z": "no_change",
+     "conj_c": "no_change"
+    }
+   }
+  },
+  "traps": [
+   "T5"
+  ],
+  "notes": "zero report: zero_for_any_value at both old observations."
+ },
+ {
+  "id": "D-06",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "exch(ba,bb)": "changed"
+    }
+   }
+  },
+  "traps": [
+   "T6"
+  ],
+  "notes": "only the exchange changes; cc inferred."
+ },
+ {
+  "id": "D-07",
+  "fillers": {
+   "f1": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rev_t": "conditional"
+    }
+   }
+  },
+  "traps": [
+   "T7"
+  ],
+  "notes": "keeping: sf:rev_t = -1; instrument '?' (m10 has no instrument)."
+ },
+ {
+  "id": "D-08",
+  "fillers": {
+   "f1": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "conj_c": "conditional"
+    }
+   }
+  },
+  "traps": [
+   "T7"
+  ],
+  "notes": "keeping zz:conj_c = -1; instrument i05 (route)."
+ },
+ {
+  "id": "D-09",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rev_t": "changed",
+     "conj_c": "changed"
+    }
+   }
+  },
+  "traps": [
+   "T8"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "D-10",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "refl_x": "changed",
+     "rot_z": "no_change"
+    }
+   }
+  },
+  "traps": [
+   "T8"
+  ],
+  "notes": "cc inferred L."
+ },
+ {
+  "id": "D-11",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {
+     "rot_z": "changed",
+     "refl_x": "changed",
+     "conj_c": "changed"
+    }
+   }
+  },
+  "traps": [],
+  "notes": "zero report: zero_for_any_value (efx = 0 at the old observation)."
+ },
+ {
+  "id": "D-12",
+  "fillers": {
+   "f1": {
+    "verdict": "CONDITIONAL",
+    "F2": {
+     "rot_z": "conditional"
+    }
+   }
+  },
+  "traps": [
+   "T7"
+  ],
+  "notes": "unknown kind: rot_z sign unknown; keeping zk:rot_z = +1; instrument '?'."
+ },
+ {
+  "id": "D-13",
+  "fillers": {
+   "f1": {
+    "verdict": "INVALID"
+   }
+  },
+  "traps": [],
+  "notes": "m04 has dims Q."
+ },
+ {
+  "id": "D-14",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {}
+   }
+  },
+  "traps": [],
+  "notes": "old obs needs |3cc| <= 1/100, new needs 2cc = 4: infeasible. Reason F3 only."
+ },
+ {
+  "id": "D-15",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "f2": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   },
+   "f3": {
+    "verdict": "ANOTHER_LAW"
+   }
+  },
+  "kept": [
+   "f1",
+   "f2"
+  ],
+  "decisive": [
+   {
+    "pair": [
+     "f1",
+     "f2"
+    ],
+    "state": {
+     "qa": "10",
+     "qb": "1",
+     "dd": "1"
+    },
+    "observer": "ob1"
+   }
+  ],
+  "traps": [
+   "T9"
+  ],
+  "notes": "f3: conj_c changed."
+ },
+ {
+  "id": "D-16",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [],
+  "notes": "zero report: zero_for_any_value, below_precision."
+ },
+ {
+  "id": "E-01",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [],
+  "notes": "E2-01"
+ },
+ {
+  "id": "E-05",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [],
+  "notes": "E2-05"
+ },
+ {
+  "id": "E-07",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [],
+  "notes": "E2-07"
+ },
+ {
+  "id": "E-11",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [],
+  "notes": "E2-11"
+ },
+ {
+  "id": "E-13",
+  "fillers": {
+   "f1": {
+    "verdict": "ANOTHER_LAW",
+    "F2": {}
+   }
+  },
+  "traps": [],
+  "notes": "E2-13"
+ },
+ {
+  "id": "E-14",
+  "fillers": {
+   "f1": {
+    "verdict": "INVALID"
+   }
+  },
+  "traps": [],
+  "notes": "E2-14"
+ },
+ {
+  "id": "C-02",
+  "fillers": {
+   "f1": {
+    "verdict": "SAME_LAW_NEW_STATE"
+   }
+  },
+  "traps": [],
+  "notes": "C2; e3 differs between the two new observations (a variable)."
+ },
+ {
+  "id": "C-03",
+  "fillers": {
+   "f1": {
+    "verdict": "INVALID"
+   }
+  },
+  "traps": [],
+  "notes": "C3"
+ }
+]

@@ -1,0 +1,185 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w08",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "tutu",
+   "type": "ty08",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "sikene",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "lavufa",
+   "meaning": "m23",
+   "owner": "world",
+   "dims": {
+    "Q": 1,
+    "L": -1
+   },
+   "components": [
+    "fubed",
+    "rimip"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "pokab",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 4,
+    "T": -2,
+    "Q": -2
+   },
+   "components": [],
+   "value": "2/3",
+   "src": "seed"
+  },
+  {
+   "id": "lazag",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "-7/4",
+   "src": "seed"
+  },
+  {
+   "id": "nogu3",
+   "meaning": "m12",
+   "owner": "tutu",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "zanov",
+    "lovum",
+    "dovu9"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "tinel",
+   "eq": "sikene = pokab*(fubed^2 + rimip^2) + lazag*dovu9",
+   "accepted_at": 1,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "borom6",
+   "instrument": "i04",
+   "precision": "1/40",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "migud7",
+   "observer": "borom6",
+   "of": "sikene",
+   "state": {
+    "fubed": "1",
+    "rimip": "1",
+    "dovu9": "1"
+   },
+   "value": "-527/1200",
+   "epoch": 0,
+   "src": "borom6"
+  },
+  {
+   "id": "minata",
+   "observer": "borom6",
+   "of": "sikene",
+   "state": {
+    "fubed": "2",
+    "rimip": "-1",
+    "dovu9": "1/2"
+   },
+   "value": "3719/1500",
+   "epoch": 1,
+   "src": "borom6"
+  },
+  {
+   "id": "mabi",
+   "observer": "borom6",
+   "of": "sikene",
+   "state": {
+    "fubed": "1",
+    "rimip": "2",
+    "dovu9": "2"
+   },
+   "value": "1343/600",
+   "epoch": 2,
+   "src": "borom6"
+  },
+  {
+   "id": "rorov",
+   "observer": "borom6",
+   "of": "sikene",
+   "state": {
+    "fubed": "-3/2",
+    "rimip": "1",
+    "dovu9": "-1"
+   },
+   "value": "1013/480",
+   "epoch": 3,
+   "src": "borom6"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "kagon",
+   "of": "tinel",
+   "eq": "sikene = pokab*(fubed^2 + rimip^2) + lazag*dovu9 + zebote*fubed*rimip",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "zebote",
+     "kind": "scalar",
+     "meaning": "?",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "?",
+      "refl_x": "1",
+      "conj_c": "?"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

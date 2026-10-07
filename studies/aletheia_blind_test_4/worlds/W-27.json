@@ -1,0 +1,217 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w27",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "sapudi",
+   "type": "ty02",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "mora4",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "lotago",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "T": -2
+   },
+   "components": [],
+   "value": "5/3",
+   "src": "seed"
+  },
+  {
+   "id": "leli",
+   "meaning": "m02",
+   "owner": "sapudi",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "4/5",
+   "src": "seed"
+  },
+  {
+   "id": "beda",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "-3/2",
+   "src": "seed"
+  },
+  {
+   "id": "babu8",
+   "meaning": "m12",
+   "owner": "sapudi",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "feti",
+    "lebut",
+    "dode"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "lufa",
+   "eq": "mora4 = lotago*feti^2*leli + beda*dode",
+   "accepted_at": 3,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "lode2",
+   "instrument": "i04",
+   "precision": "1/30",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "sovu",
+   "observer": "lode2",
+   "of": "mora4",
+   "state": {
+    "feti": "1",
+    "lebut": "0",
+    "dode": "2"
+   },
+   "value": "-491/300",
+   "epoch": 0,
+   "src": "lode2"
+  },
+  {
+   "id": "fonok",
+   "observer": "lode2",
+   "of": "mora4",
+   "state": {
+    "feti": "-1/2",
+    "lebut": "0",
+    "dode": "1"
+   },
+   "value": "-299/250",
+   "epoch": 1,
+   "src": "lode2"
+  },
+  {
+   "id": "nifel",
+   "observer": "lode2",
+   "of": "mora4",
+   "state": {
+    "feti": "3/2",
+    "lebut": "0",
+    "dode": "-1"
+   },
+   "value": "2719/600",
+   "epoch": 2,
+   "src": "lode2"
+  },
+  {
+   "id": "mupalo",
+   "observer": "lode2",
+   "of": "mora4",
+   "state": {
+    "feti": "2",
+    "lebut": "0",
+    "dode": "1/2"
+   },
+   "value": "911/200",
+   "epoch": 3,
+   "src": "lode2"
+  },
+  {
+   "id": "geno",
+   "observer": "lode2",
+   "of": "mora4",
+   "state": {
+    "feti": "1",
+    "lebut": "1",
+    "dode": "1"
+   },
+   "value": "277/300",
+   "epoch": 4,
+   "src": "lode2"
+  },
+  {
+   "id": "sama3",
+   "observer": "lode2",
+   "of": "mora4",
+   "state": {
+    "feti": "1/2",
+    "lebut": "-3/2",
+    "dode": "2"
+   },
+   "value": "-61/90",
+   "epoch": 5,
+   "src": "lode2"
+  },
+  {
+   "id": "sikum",
+   "observer": "lode2",
+   "of": "mora4",
+   "state": {
+    "feti": "-1",
+    "lebut": "2",
+    "dode": "-1/2"
+   },
+   "value": "353/48",
+   "epoch": 5,
+   "src": "lode2"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "kuribo",
+   "of": "lufa",
+   "eq": "mora4 = lotago*(feti^2 + lebut^2)*leli + beda*dode + laki*dode^2",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "laki",
+     "kind": "scalar",
+     "meaning": "?",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

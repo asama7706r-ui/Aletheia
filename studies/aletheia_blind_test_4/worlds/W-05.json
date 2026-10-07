@@ -1,0 +1,232 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w05",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "zugo",
+   "type": "ty03",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "kabi",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "vizugu",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2,
+    "Q": -3
+   },
+   "components": [],
+   "value": "3/4",
+   "src": "seed"
+  },
+  {
+   "id": "mesisa",
+   "meaning": "m04",
+   "owner": "zugo",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "-6/5",
+   "src": "seed"
+  },
+  {
+   "id": "soso",
+   "meaning": "m23",
+   "owner": "world",
+   "dims": {
+    "Q": 1
+   },
+   "components": [
+    "gomu",
+    "noze4"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "disa",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "5/2",
+   "src": "seed"
+  },
+  {
+   "id": "sebubo",
+   "meaning": "m12",
+   "owner": "zugo",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "bito",
+    "ziraza",
+    "semip3"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "lozoti",
+   "eq": "kabi = vizugu*mesisa*gomu*noze4 + disa*semip3",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "zodu",
+   "instrument": "i04",
+   "precision": "1/40",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "mizubi",
+   "observer": "zodu",
+   "of": "kabi",
+   "state": {
+    "gomu": "1",
+    "noze4": "2",
+    "semip3": "1/2"
+   },
+   "value": "-229/400",
+   "epoch": 0,
+   "src": "zodu"
+  },
+  {
+   "id": "sozi",
+   "observer": "zodu",
+   "of": "kabi",
+   "state": {
+    "gomu": "-3/2",
+    "noze4": "1",
+    "semip3": "1"
+   },
+   "value": "3873/1000",
+   "epoch": 1,
+   "src": "zodu"
+  },
+  {
+   "id": "sofi",
+   "observer": "zodu",
+   "of": "kabi",
+   "state": {
+    "gomu": "2",
+    "noze4": "-1/2",
+    "semip3": "-1"
+   },
+   "value": "-1299/800",
+   "epoch": 2,
+   "src": "zodu"
+  },
+  {
+   "id": "zeluko",
+   "observer": "zodu",
+   "of": "kabi",
+   "state": {
+    "gomu": "1",
+    "noze4": "1",
+    "semip3": "2"
+   },
+   "value": "1121/200",
+   "epoch": 3,
+   "src": "zodu"
+  },
+  {
+   "id": "risusi",
+   "observer": "zodu",
+   "of": "kabi",
+   "state": {
+    "gomu": "2",
+    "noze4": "3/2",
+    "semip3": "-1/2"
+   },
+   "value": "87/160",
+   "epoch": 4,
+   "src": "zodu"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "favutu",
+   "of": "lozoti",
+   "eq": "kabi = vizugu*mesisa*gomu*noze4*deko + disa*semip3",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "bomuga",
+     "kind": "vec3",
+     "meaning": "m22",
+     "owner": "world",
+     "dims": "?",
+     "components": [
+      "zimu",
+      "karib4",
+      "deko"
+     ],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": [
+       [
+        "-1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "1"
+       ]
+      ],
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "1"
+     ],
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

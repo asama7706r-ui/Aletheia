@@ -1,0 +1,241 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w06",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "bifa",
+   "type": "ty04",
+   "src": "seed"
+  },
+  {
+   "id": "zasu7",
+   "type": "ty04",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "bibi",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "mimeb",
+   "meaning": "m04",
+   "owner": "bifa",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "lobe",
+   "meaning": "m04",
+   "owner": "zasu7",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "fetusi",
+   "meaning": "m11",
+   "owner": "bifa",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "suse",
+   "meaning": "m11",
+   "owner": "zasu7",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "dagi9",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "5/2",
+   "src": "seed"
+  },
+  {
+   "id": "famo",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 3,
+    "T": -2,
+    "Q": -2
+   },
+   "components": [],
+   "value": "1/9",
+   "src": "seed"
+  },
+  {
+   "id": "butav7",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 3,
+    "T": -2,
+    "Q": -2
+   },
+   "components": [],
+   "value": "1/4",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "kabu",
+   "eq": "bibi = famo*mimeb*lobe/dagi9 + butav7*(mimeb^2/fetusi + lobe^2/suse)",
+   "accepted_at": 1,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "gude9",
+   "instrument": "i04",
+   "precision": "1/30",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "legama",
+   "observer": "gude9",
+   "of": "bibi",
+   "state": {
+    "mimeb": "1",
+    "lobe": "-1",
+    "fetusi": "2",
+    "suse": "3"
+   },
+   "value": "241/1800",
+   "epoch": 0,
+   "src": "gude9"
+  },
+  {
+   "id": "bakiza",
+   "observer": "gude9",
+   "of": "bibi",
+   "state": {
+    "mimeb": "2",
+    "lobe": "1/2",
+    "fetusi": "1",
+    "suse": "2"
+   },
+   "value": "7949/7200",
+   "epoch": 1,
+   "src": "gude9"
+  },
+  {
+   "id": "keni",
+   "observer": "gude9",
+   "of": "bibi",
+   "state": {
+    "mimeb": "-1",
+    "lobe": "2",
+    "fetusi": "3/2",
+    "suse": "1"
+   },
+   "value": "73/75",
+   "epoch": 2,
+   "src": "gude9"
+  },
+  {
+   "id": "rofike",
+   "observer": "gude9",
+   "of": "bibi",
+   "state": {
+    "mimeb": "3",
+    "lobe": "1",
+    "fetusi": "2",
+    "suse": "5/2"
+   },
+   "value": "8/5",
+   "epoch": 2,
+   "src": "gude9"
+  },
+  {
+   "id": "rarodi",
+   "observer": "gude9",
+   "of": "bibi",
+   "state": {
+    "mimeb": "2",
+    "lobe": "-2",
+    "fetusi": "1/2",
+    "suse": "1"
+   },
+   "value": "157/45",
+   "epoch": 3,
+   "src": "gude9"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "duvoge",
+   "of": "kabu",
+   "eq": "bibi = famo*mimeb*lobe/dagi9 + butav7*(mimeb^2/fetusi + lobe^2/suse) + famo*pupo*mimeb/fetusi",
+   "new_bodies": [
+    {
+     "id": "dubu",
+     "type": "ty07"
+    }
+   ],
+   "new": [
+    {
+     "id": "pupo",
+     "kind": "scalar",
+     "meaning": "m04",
+     "owner": "dubu",
+     "dims": {
+      "Q": 1
+     },
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i05"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

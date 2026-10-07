@@ -1,0 +1,510 @@
+﻿registry canonical sha256 4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281
+
+=== W-01 (w01)  law: rila = nofufe*bobet^2 + pidari*zadoge*bobet   law unchanged by catalog: rev_t=C, refl_x=u, conj_c=u, rot_z=u
+  ferat: rila = nofufe*bobet^2 + pidari*zadoge*bobet + zepo*bobet^3
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'zepo': '{L: -1, M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=['zepo:rev_t'] {'zepo:rev_t': 1}[old=C,new=C] {'zepo:rev_t': -1}[old=C,new=C]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {}
+
+=== W-02 (w02)  law: rofar = luzaf*(dota^2 + soneg^2) + viduro*fimif8^2   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  zosu: rofar = luzaf*(dota^2 + soneg^2) + viduro*fimif8^2 + kiti*(dota^2 - soneg^2)
+    verdict CONDITIONAL  reason ['rot_z']
+    F1 consistent=True inferred={'kiti': '{M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: conditional unknowns=['kiti:rot_z'] {'kiti:rot_z': 1}[old=u,new=C] {'kiti:rot_z': -1}[old=u,new=u] keeping=[{'kiti:rot_z': -1}] matters=['kiti:rot_z']
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=CONDITIONAL, FORK_ALL=CONDITIONAL
+    products changing it: [({'kiti:rot_z': 1}, 'rot_z^3'), ({'kiti:rot_z': 1}, 'conj_c*rot_z'), ({'kiti:rot_z': 1}, 'conj_c*rot_z^3'), ({'kiti:rot_z': 1}, 'refl_x*rot_z'), ({'kiti:rot_z': 1}, 'refl_x*rot_z^3'), ({'kiti:rot_z': 1}, 'refl_x*conj_c*rot_z')]
+    traps: {'T7': {'matters': ['new?'], 'unknowns': ['new?']}, 'T8': [('law', 'rot_z', 'tidi', 'generic'), ('filled', 'rot_z', 'tidi', 'generic')]}
+
+=== W-03 (w03)  law: lanaz = lazas*gevi/(fezide + subilo)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  muzu2: lanaz = lazas*gevi/(fezide + subilo) + lase4
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  kasa: lanaz = lazas*gevi/(fezide + subilo) + lavaf*gatok
+    verdict INVALID  reason ['F1']
+    F1 consistent=False inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=INVALID, DERIVE=INVALID, DIMS=INVALID, FORK_ALL=INVALID
+    traps: {'T9': True}
+  muvosa: lanaz = lazas*(gevi + nama)/(fezide + subilo)
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'nama': '{L: 1, M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  kept ['muzu2', 'muvosa']; decisive states:
+    ['muzu2', 'muvosa'] at {'gevi': '1', 'fezide': '-9'} by sobo: ['3719/2000', '2239/1200'] vs ['211/40', '257/48']
+
+=== W-04 (w04)  law: sudogi = mivo6 + boge*(vudi^2 + sona^2 + kadot6^2)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  seto: sudogi = mivo6 + boge*(vudi^2 + sona^2 + kadot6^2) + porava*((sirep7*kadot6 - kugag9*sona)*maruri + (kugag9*vudi - zeke*kadot6)*koso + (zeke*sona - sirep7*vudi)*nomet)
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'vulos': '{L: 1, T: -1}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T4': True}
+
+=== W-05 (w05)  law: kabi = vizugu*mesisa*gomu*noze4 + disa*semip3   law unchanged by catalog: rev_t=C, refl_x=u, conj_c=u, rot_z=u
+  favutu: kabi = vizugu*mesisa*gomu*noze4*deko + disa*semip3
+    verdict ANOTHER_LAW  reason ['rev_t']
+    F1 consistent=True inferred={'bomuga': '{}'} bad_written=[]
+    F2 rev_t: changed unknowns=[] [old=C,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({}, 'rev_t*rot_z'), ({}, 'rev_t*rot_z^2'), ({}, 'rev_t*rot_z^3'), ({}, 'rev_t*conj_c'), ({}, 'rev_t*conj_c*rot_z'), ({}, 'rev_t*conj_c*rot_z^2')]
+    traps: {'T2': True, 'T5': 'rev_t', 'T8': [('law', 'rev_t', 'soso', 'm23/rev_t'), ('filled', 'rev_t', 'soso', 'm23/rev_t')]}
+
+=== W-06 (w06)  law: bibi = famo*mimeb*lobe/dagi9 + butav7*(mimeb^2/fetusi + lobe^2/suse)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u, exch(bifa,zasu7)=u
+  duvoge: bibi = famo*mimeb*lobe/dagi9 + butav7*(mimeb^2/fetusi + lobe^2/suse) + famo*pupo*mimeb/fetusi
+    verdict ANOTHER_LAW  reason ['exch(bifa,zasu7)']
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F2 exch(bifa,zasu7): changed unknowns=[] [old=u,new=C]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=ANOTHER_LAW, DIMS=ANOTHER_LAW, FORK_ALL=ANOTHER_LAW
+    products changing it: [({}, 'rot_z*exch(bifa,zasu7)'), ({}, 'rot_z^2*exch(bifa,zasu7)'), ({}, 'rot_z^3*exch(bifa,zasu7)'), ({}, 'conj_c*exch(bifa,zasu7)'), ({}, 'conj_c*rot_z*exch(bifa,zasu7)'), ({}, 'conj_c*rot_z^2*exch(bifa,zasu7)')]
+    traps: {'T6': ['exch(bifa,zasu7)']}
+
+=== W-07 (w07)  law: tada = zami*(zazu^2 + zuka^2)/miso4 + dofa9*zazu*zuka/miso4^2   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u, exch(lagaka,vido)=u
+  gunimo: tada = zami*(zazu^2 + zuka^2)/miso4 + dofa9*zazu*zuka/miso4^2 + birena*(zazu + zuka) + rodo*dugigi
+    verdict ANOTHER_LAW  reason ['exch(lagaka,vido)']
+    F1 consistent=True inferred={'birena': '{L: 2, T: -2}', 'rodo': '{L: 2, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F2 exch(lagaka,vido): changed unknowns=[] [old=u,new=C]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=ANOTHER_LAW, DIMS=ANOTHER_LAW, FORK_ALL=ANOTHER_LAW
+    products changing it: [({}, 'rot_z*exch(lagaka,vido)'), ({}, 'rot_z^2*exch(lagaka,vido)'), ({}, 'rot_z^3*exch(lagaka,vido)'), ({}, 'conj_c*exch(lagaka,vido)'), ({}, 'conj_c*rot_z*exch(lagaka,vido)'), ({}, 'conj_c*rot_z^2*exch(lagaka,vido)')]
+    traps: {'T6': ['exch(lagaka,vido)']}
+
+=== W-08 (w08)  law: sikene = pokab*(fubed^2 + rimip^2) + lazag*dovu9   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  kagon: sikene = pokab*(fubed^2 + rimip^2) + lazag*dovu9 + zebote*fubed*rimip
+    verdict CONDITIONAL  reason ['rev_t', 'conj_c']
+    F1 consistent=True inferred={'zebote': '{L: 4, M: 1, Q: -2, T: -2}'} bad_written=[]
+    F2 rev_t: conditional unknowns=['zebote:rev_t'] {'zebote:rev_t': 1}[old=u,new=C] {'zebote:rev_t': -1}[old=u,new=u] keeping=[{'zebote:rev_t': -1}] matters=['zebote:rev_t']
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: conditional unknowns=['zebote:conj_c'] {'zebote:conj_c': 1}[old=u,new=C] {'zebote:conj_c': -1}[old=u,new=u] keeping=[{'zebote:conj_c': -1}] matters=['zebote:conj_c']
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({'zebote:conj_c': 1, 'zebote:rev_t': 1}, 'conj_c*rot_z'), ({'zebote:conj_c': 1, 'zebote:rev_t': 1}, 'conj_c*rot_z^2'), ({'zebote:conj_c': 1, 'zebote:rev_t': 1}, 'conj_c*rot_z^3'), ({'zebote:conj_c': 1, 'zebote:rev_t': 1}, 'refl_x*conj_c'), ({'zebote:conj_c': 1, 'zebote:rev_t': 1}, 'refl_x*conj_c*rot_z'), ({'zebote:conj_c': 1, 'zebote:rev_t': 1}, 'refl_x*conj_c*rot_z^2')]
+    traps: {'T7': {'matters': ['new?'], 'unknowns': ['new?']}, 'T8': [('law', 'rev_t', 'lavufa', 'm23/rev_t'), ('filled', 'rev_t', 'lavufa', 'm23/rev_t'), ('law', 'conj_c', 'lavufa', 'generic'), ('filled', 'conj_c', 'lavufa', 'generic')]}
+
+=== W-09 (w09)  law: bokivo = vavog*bufavu - pogu7*daveno   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  nikil: bokivo = (vavog + gilu8)*bufavu - pogu7*daveno
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T1': True, 'T9': True}
+  vuli: bokivo = vavog*bufavu - pogu7*daveno + pinis*daveno^3
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'pinis': '{L: -2, M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  kept ['nikil', 'vuli']; decisive states:
+    ['nikil', 'vuli'] at {'bufavu': '3', 'daveno': '0'} by dopup: ['3101/900', '3109/900'] vs ['9/4', '9/4']
+
+=== W-10 (w10)  law: nebe = depalu + gotebe*nigofa^2   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  tadubu: nebe = depalu + gotebe*nigofa^2 + nese*kovi*nigofa + somepo*zegak
+    verdict CONDITIONAL  reason ['rev_t', 'refl_x']
+    F1 consistent=True inferred={'nese': '{L: 1, M: 1, Q: 1, T: -3}', 'somepo': '{}'} bad_written=[]
+    F2 rev_t: conditional unknowns=['kovi:rev_t'] {'kovi:rev_t': 1}[old=u,new=u] {'kovi:rev_t': -1}[old=u,new=C] keeping=[{'kovi:rev_t': 1}] matters=['kovi:rev_t']
+    F2 refl_x: conditional unknowns=['somepo:refl_x'] {'somepo:refl_x': 1}[old=u,new=C] {'somepo:refl_x': -1}[old=u,new=u] keeping=[{'somepo:refl_x': -1}] matters=['somepo:refl_x']
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({'kovi:rev_t': 1, 'somepo:refl_x': 1}, 'refl_x*rot_z'), ({'kovi:rev_t': 1, 'somepo:refl_x': 1}, 'refl_x*rot_z^2'), ({'kovi:rev_t': 1, 'somepo:refl_x': 1}, 'refl_x*rot_z^3'), ({'kovi:rev_t': 1, 'somepo:refl_x': 1}, 'refl_x*conj_c'), ({'kovi:rev_t': 1, 'somepo:refl_x': 1}, 'refl_x*conj_c*rot_z'), ({'kovi:rev_t': 1, 'somepo:refl_x': 1}, 'refl_x*conj_c*rot_z^2')]
+    traps: {'T7': {'matters': ['new?', 'registry'], 'unknowns': ['new?', 'registry']}, 'T8': [('law', 'refl_x', 'dibi', 'generic'), ('filled', 'refl_x', 'dibi', 'generic'), ('filled', 'refl_x', 'purato', 'axial/refl_x')]}
+
+=== W-11 (w11)  law: dokafa = namib6 + mino*zifoga*rapo4/(fogel*badule)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  vokuv: dokafa = namib6 + mino*zifoga*(rapo4 + zepa)/(fogel*badule)
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T1': True}
+
+=== W-12 (w12)  law: teboma = gukug*gupusi + tisatu*gobofe   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  kizine: teboma = gukug*(gupusi + loleti) + tisatu*gobofe
+    verdict INVALID  reason ['F1']
+    F1 consistent=False inferred={} bad_written=['vave']
+    F2 rev_t: changed unknowns=[] [old=u,new=C]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=INVALID, DERIVE=INVALID, DIMS=INVALID, FORK_ALL=INVALID
+    products changing it: [({}, 'rev_t*rot_z'), ({}, 'rev_t*rot_z^2'), ({}, 'rev_t*rot_z^3'), ({}, 'rev_t*conj_c'), ({}, 'rev_t*conj_c*rot_z'), ({}, 'rev_t*conj_c*rot_z^2')]
+    traps: {}
+
+=== W-13 (w13)  law: voma = nevi + vazuka*(donu6*dimi3 + kapuzi*dites + sukig*kane)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  rade: voma = nevi + vazuka*(donu6*dimi3 + kapuzi*dites + sukig*kane) + mima*kugas + mude*nure + mevov*mofi
+    verdict ANOTHER_LAW  reason ['refl_x']
+    F1 consistent=True inferred={'lisef': '{L: 1, M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: changed unknowns=[] [old=u,new=C]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({}, 'refl_x*rot_z'), ({}, 'refl_x*rot_z^2'), ({}, 'refl_x*rot_z^3'), ({}, 'refl_x*conj_c'), ({}, 'refl_x*conj_c*rot_z'), ({}, 'refl_x*conj_c*rot_z^2')]
+    traps: {'T2': True, 'T8': [('law', 'refl_x', 'raru', 'axial/refl_x'), ('law', 'refl_x', 'ketip', 'axial/refl_x'), ('filled', 'refl_x', 'raru', 'axial/refl_x'), ('filled', 'refl_x', 'ketip', 'axial/refl_x'), ('filled', 'refl_x', 'nozuk', 'generic'), ('filled', 'refl_x', 'lisef', 'axial/refl_x')]}
+
+=== W-14 (w14)  law: pulo = solu4 + pipug6*votapi^3*vabamu*boma/penade^2   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  tomof: pulo = solu4 + pipug6*(votapi + kudu)*votapi^2*vabamu*boma/penade^2
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T1': True}
+
+=== W-15 (w15)  law: roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u, exch(rinuku,vasugi)=u
+  kuzop9: roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog) + liva*gasari^2 + dogo*gasari*zufog
+    verdict ANOTHER_LAW  reason ['exch(rinuku,vasugi)']
+    F1 consistent=True inferred={'liva': '{M: 1, T: -2}', 'dogo': '{M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F2 exch(rinuku,vasugi): changed unknowns=[] [old=u,new=C]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=ANOTHER_LAW, DIMS=ANOTHER_LAW, FORK_ALL=ANOTHER_LAW
+    products changing it: [({}, 'rot_z*exch(rinuku,vasugi)'), ({}, 'rot_z^2*exch(rinuku,vasugi)'), ({}, 'rot_z^3*exch(rinuku,vasugi)'), ({}, 'conj_c*exch(rinuku,vasugi)'), ({}, 'conj_c*rot_z*exch(rinuku,vasugi)'), ({}, 'conj_c*rot_z^2*exch(rinuku,vasugi)')]
+    traps: {'T6': ['exch(rinuku,vasugi)'], 'T9': True}
+  nubug6: roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog) + sofub*gasari^2 + tukabe*zufog^2
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'sofub': '{M: 1, T: -2}', 'tukabe': '{M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F2 exch(rinuku,vasugi): no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  zurig: roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog) + dafu8*gasari*zufog
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'dafu8': '{M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F2 exch(rinuku,vasugi): no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  kept ['nubug6', 'zurig']; decisive states:
+    ['nubug6', 'zurig'] at {'gasari': '1', 'zufog': '-1'} by lepopu: ['81491/24000', '81691/24000'] vs ['7993/3200', '24019/9600']
+
+=== W-16 (w16)  law: lunoz4 = leretu*nuvo*vozi + rebega   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  rili7: lunoz4 = leretu*nuvo*vozi + rebega + zobe2*nuvo*vozi^2/kufa
+    verdict INVALID  reason ['F1']
+    F1 consistent=False inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=INVALID, DERIVE=INVALID, DIMS=INVALID, FORK_ALL=INVALID
+    traps: {}
+
+=== W-17 (w17)  law: kerem = tugum*zadu*fize2 + renilu*deni*doka^2   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  nubok3: kerem = tugum*zadu*fize2 + renilu*deni*doka^2 + pene*zadu*rekut4
+    verdict CONDITIONAL  reason ['conj_c']
+    F1 consistent=True inferred={'pene': '{Q: 1}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: conditional unknowns=['pene:conj_c'] {'pene:conj_c': 1}[old=u,new=C] {'pene:conj_c': -1}[old=u,new=u] keeping=[{'pene:conj_c': -1}] matters=['pene:conj_c']
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({'pene:conj_c': 1}, 'conj_c*rot_z'), ({'pene:conj_c': 1}, 'conj_c*rot_z^2'), ({'pene:conj_c': 1}, 'conj_c*rot_z^3'), ({'pene:conj_c': 1}, 'refl_x*conj_c'), ({'pene:conj_c': 1}, 'refl_x*conj_c*rot_z'), ({'pene:conj_c': 1}, 'refl_x*conj_c*rot_z^2')]
+    traps: {'T7': {'matters': ['new?'], 'unknowns': ['new?']}}
+
+=== W-18 (w18)  law: dedis = keni*fugepe^2   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  dusa: dedis = keni*fugepe^2 + depo*pode*panu + depo*ravof5*fugepe
+    verdict INVALID  reason ['F1']
+    F1 consistent=False inferred={} bad_written=[]
+    F2 rev_t: changed unknowns=[] [old=u,new=C]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=INVALID, DERIVE=INVALID, DIMS=INVALID, FORK_ALL=INVALID
+    products changing it: [({}, 'rev_t*rot_z'), ({}, 'rev_t*rot_z^2'), ({}, 'rev_t*rot_z^3'), ({}, 'rev_t*conj_c'), ({}, 'rev_t*conj_c*rot_z'), ({}, 'rev_t*conj_c*rot_z^2')]
+    traps: {}
+
+=== W-19 (w19)  law: kezub = gutu*(1 + nusa4*bamo^2)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  fanup: kezub = gutu*(1 + nusa4*bamo^2) + zidage*zake - tifogi*subigo
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T3': True}
+
+=== W-20 (w20)  law: mogev = febir*suke/valum3   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  nebu3: mogev = febir*suke/valum3 + liga
+    verdict ANOTHER_LAW  reason ['F3']
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=False
+    baselines: FIX=ANOTHER_LAW, DERIVE=ANOTHER_LAW, DIMS=ANOTHER_LAW, FORK_ALL=ANOTHER_LAW
+    traps: {}
+
+=== W-21 (w21)  law: sadag8 = paro*sukobe - gudis6*zobo^3   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  beza: sadag8 = paro*sukobe - gudis6*zobo^3 + futa*(piver*fufa + bama9*zeze + bomum*pigeb)*zobo
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'nisum7': '{L: 1, T: -1}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T4': True}
+
+=== W-22 (w22)  law: mevu = fifudi*nunus5 - fopo*rena   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  litub: mevu = fifudi*nunus5 - fopo*rena + rudebu*lire*pubo
+    verdict CONDITIONAL  reason ['rev_t']
+    F1 consistent=True inferred={'rudebu': '{L: 1, Q: -1, T: -1}'} bad_written=[]
+    F2 rev_t: conditional unknowns=['lire:rev_t'] {'lire:rev_t': 1}[old=u,new=C] {'lire:rev_t': -1}[old=u,new=u] keeping=[{'lire:rev_t': -1}] matters=['lire:rev_t']
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({'lire:rev_t': 1}, 'rev_t*rot_z'), ({'lire:rev_t': 1}, 'rev_t*rot_z^2'), ({'lire:rev_t': 1}, 'rev_t*rot_z^3'), ({'lire:rev_t': 1}, 'rev_t*conj_c'), ({'lire:rev_t': 1}, 'rev_t*conj_c*rot_z'), ({'lire:rev_t': 1}, 'rev_t*conj_c*rot_z^2')]
+    traps: {'T7': {'matters': ['registry'], 'unknowns': ['registry']}}
+
+=== W-23 (w23)  law: rile5 = geme + zaga*pediz^2 + zulese*tove8*pasi   law unchanged by catalog: rev_t=C/u, refl_x=u, conj_c=u, rot_z=u
+  pebe: rile5 = geme + zaga*pediz^2 + zulese*tove8*pasi*naze
+    verdict CONDITIONAL  reason ['rev_t']
+    F1 consistent=True inferred={'naze': '{}'} bad_written=[]
+    F2 rev_t: conditional unknowns=['naze:rev_t', 'tove8:rev_t'] {'naze:rev_t': 1, 'tove8:rev_t': 1}[old=C,new=C] {'naze:rev_t': 1, 'tove8:rev_t': -1}[old=u,new=u] {'naze:rev_t': -1, 'tove8:rev_t': 1}[old=C,new=u] {'naze:rev_t': -1, 'tove8:rev_t': -1}[old=u,new=C] keeping=[{'naze:rev_t': 1, 'tove8:rev_t': 1}, {'naze:rev_t': 1, 'tove8:rev_t': -1}] matters=['naze:rev_t']
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({'naze:rev_t': -1, 'tove8:rev_t': 1}, 'rev_t*rot_z'), ({'naze:rev_t': -1, 'tove8:rev_t': 1}, 'rev_t*rot_z^2'), ({'naze:rev_t': -1, 'tove8:rev_t': 1}, 'rev_t*rot_z^3'), ({'naze:rev_t': -1, 'tove8:rev_t': 1}, 'rev_t*conj_c'), ({'naze:rev_t': -1, 'tove8:rev_t': 1}, 'rev_t*conj_c*rot_z'), ({'naze:rev_t': -1, 'tove8:rev_t': 1}, 'rev_t*conj_c*rot_z^2')]
+    traps: {'T7': {'matters': ['new?'], 'unknowns': ['new?', 'registry']}}
+
+=== W-24 (w24)  law: sunek = monu + tume*(zulaz3^2 + gudo^2 + nipede^2)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  lifem: sunek = monu + tume*(zulaz3^2 + gudo^2 + nipede^2) + futoba*nipede
+    verdict CONDITIONAL  reason ['refl_x']
+    F1 consistent=True inferred={'futoba': '{}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: conditional unknowns=['futoba:refl_x'] {'futoba:refl_x': 1}[old=u,new=C] {'futoba:refl_x': -1}[old=u,new=u] keeping=[{'futoba:refl_x': -1}] matters=['futoba:refl_x']
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({'futoba:refl_x': 1}, 'refl_x*rot_z'), ({'futoba:refl_x': 1}, 'refl_x*rot_z^2'), ({'futoba:refl_x': 1}, 'refl_x*rot_z^3'), ({'futoba:refl_x': 1}, 'refl_x*conj_c'), ({'futoba:refl_x': 1}, 'refl_x*conj_c*rot_z'), ({'futoba:refl_x': 1}, 'refl_x*conj_c*rot_z^2')]
+    traps: {'T7': {'matters': ['registry'], 'unknowns': ['registry']}, 'T8': [('law', 'refl_x', 'dadadi', 'axial/refl_x'), ('filled', 'refl_x', 'dadadi', 'axial/refl_x')]}
+
+=== W-25 (w25)  law: sume = sifi*tafora*girap^2 + genef3*raka^3   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  libuv: sume = sifi*tafora*girap^2 + genef3*raka^3 + busi*girap*raka
+    verdict ANOTHER_LAW  reason ['rev_t']
+    F1 consistent=True inferred={'busi': '{M: 1, T: -1}'} bad_written=[]
+    F2 rev_t: changed unknowns=[] [old=u,new=C]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    products changing it: [({}, 'rev_t*rot_z'), ({}, 'rev_t*rot_z^2'), ({}, 'rev_t*rot_z^3'), ({}, 'rev_t*conj_c'), ({}, 'rev_t*conj_c*rot_z'), ({}, 'rev_t*conj_c*rot_z^2')]
+    traps: {'T2': 'm06/rev_t'}
+
+=== W-26 (w26)  law: boki = fadu*rera^2/(sulas^3*mabude^2)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  penem9: boki = fadu*rera^2/(sulas^3*mabude^2) + kutud*(keme9*lige + tabuti*mezob + rera*buni9)/sulas
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T3': True}
+
+=== W-27 (w27)  law: mora4 = lotago*feti^2*leli + beda*dode   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=C
+  kuribo: mora4 = lotago*(feti^2 + lebut^2)*leli + beda*dode + laki*dode^2
+    verdict ANOTHER_LAW  reason ['rot_z']
+    F1 consistent=True inferred={'laki': '{M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: changed unknowns=[] [old=C,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=ANOTHER_LAW, DIMS=ANOTHER_LAW, FORK_ALL=ANOTHER_LAW
+    products changing it: [({}, 'rot_z^3'), ({}, 'conj_c*rot_z'), ({}, 'conj_c*rot_z^3'), ({}, 'refl_x*rot_z'), ({}, 'refl_x*rot_z^3'), ({}, 'refl_x*conj_c*rot_z')]
+    traps: {'T5': 'rot_z', 'T8': [('law', 'rot_z', 'babu8', 'generic'), ('filled', 'rot_z', 'babu8', 'generic')]}
+
+=== W-28 (w28)  law: tupo = sudi9*letos*kadu/dobe + reden6*gazita*kezul   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  temaf4: tupo = sudi9*letos*(kadu + gezuti)/dobe + reden6*gazita*kezul
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T1': True, 'T9': True}
+  kuta6: tupo = sudi9*letos*kadu/dobe + (reden6 + talemi)*gazita*kezul
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  mafofi: tupo = sudi9*letos*kadu/dobe + reden6*gazita*kezul + lofovu*letos*kadu/dobe^2
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'lofovu': '{L: 4, M: 1, Q: -2, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  kept ['temaf4', 'kuta6', 'mafofi']; decisive states:
+    ['temaf4', 'kuta6'] at {'letos': '4', 'dobe': '1', 'kezul': '0'} by befa2: ['-353/200', '-1019/600'] vs ['-16/15', '-16/15']
+    ['temaf4', 'mafofi'] at {'letos': '2', 'dobe': '1/4', 'kezul': '1'} by befa2: ['-2103/100', '-6269/300'] vs ['-1261/50', '-3703/150']
+    ['kuta6', 'mafofi'] at {'letos': '4', 'dobe': '1', 'kezul': '0'} by befa2: ['-16/15', '-16/15'] vs ['-353/200', '-1019/600']
+
+=== W-29 (w29)  law: bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  gofad5: bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2 + kuliv*sadela
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'kuliv': '{L: 1, M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  zalu5: bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2 + lata*sadela^3
+    verdict SAME_LAW_NEW_STATE  reason []
+    F1 consistent=True inferred={'lata': '{L: -1, M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=True
+    baselines: FIX=SAME_LAW_NEW_STATE, DERIVE=SAME_LAW_NEW_STATE, DIMS=SAME_LAW_NEW_STATE, FORK_ALL=CONDITIONAL
+    traps: {'T9': True}
+  pizer: bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2 + nesom*govo^2
+    verdict ANOTHER_LAW  reason ['rot_z']
+    F1 consistent=True inferred={'nesom': '{M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: changed unknowns=[] [old=u,new=C]
+    F3 holds=True
+    baselines: FIX=ANOTHER_LAW, DERIVE=ANOTHER_LAW, DIMS=ANOTHER_LAW, FORK_ALL=ANOTHER_LAW
+    products changing it: [({}, 'rot_z^3'), ({}, 'conj_c*rot_z'), ({}, 'conj_c*rot_z^3'), ({}, 'refl_x*rot_z'), ({}, 'refl_x*rot_z^3'), ({}, 'refl_x*conj_c*rot_z')]
+    traps: {'T8': [('law', 'rot_z', 'sisas2', 'generic'), ('filled', 'rot_z', 'sisas2', 'generic')], 'T9': True}
+  kept ['gofad5', 'zalu5']; decisive states:
+    ['gofad5', 'zalu5'] at {'govo': '0', 'kidu': '0', 'sadela': '3'} by dunut: ['13231/2250', '13519/2250'] vs ['11462/1125', '12038/1125']
+
+=== W-30 (w30)  law: miso = -dizod*limame/(1 + pesim*limame^2)   law unchanged by catalog: rev_t=u, refl_x=u, conj_c=u, rot_z=u
+  mivuko: miso = -dizod*limame/(1 + pesim*limame^2) + pilo*limame^2
+    verdict ANOTHER_LAW  reason ['F3']
+    F1 consistent=True inferred={'pilo': '{L: -1, M: 1, T: -2}'} bad_written=[]
+    F2 rev_t: no_change unknowns=[] [old=u,new=u]
+    F2 refl_x: no_change unknowns=[] [old=u,new=u]
+    F2 conj_c: no_change unknowns=[] [old=u,new=u]
+    F2 rot_z: no_change unknowns=[] [old=u,new=u]
+    F3 holds=False
+    baselines: FIX=ANOTHER_LAW, DERIVE=ANOTHER_LAW, DIMS=ANOTHER_LAW, FORK_ALL=ANOTHER_LAW
+    traps: {}
+
+=== composition
+single-filler worlds 25: {'SAME_LAW_NEW_STATE': 7, 'CONDITIONAL': 7, 'ANOTHER_LAW': 8, 'INVALID': 3}; decided by F3 alone: ['W-20', 'W-30']
+several-filler worlds 5: W-03=['SAME', 'INVA', 'SAME'], W-09=['SAME', 'SAME'], W-15=['ANOT', 'SAME', 'SAME'], W-28=['SAME', 'SAME', 'SAME'], W-29=['SAME', 'SAME', 'ANOT']; with a third ANOTHER/INVALID: ['W-03', 'W-15', 'W-29']
+trap T1: ['W-09', 'W-11', 'W-14', 'W-28']
+trap T2: ['W-05', 'W-13', 'W-25']
+trap T3: ['W-19', 'W-26']
+trap T4: ['W-04', 'W-21']
+trap T5: ['W-05', 'W-27']
+trap T6: ['W-06', 'W-07', 'W-15']
+trap T7: ['W-02', 'W-08', 'W-10', 'W-17', 'W-22', 'W-23', 'W-24']
+trap T8: ['W-02', 'W-05', 'W-08', 'W-10', 'W-13', 'W-24', 'W-27', 'W-29']
+trap T9: ['W-03', 'W-09', 'W-15', 'W-28', 'W-29']
+  T2 with m06 under rev_t: ['W-25']
+  T7 sources by unknowns that matter: {'registry': ['W-10', 'W-22', 'W-24'], 'new?': ['W-02', 'W-08', 'W-10', 'W-17', 'W-23']}; by unknowns: {'registry': ['W-10', 'W-22', 'W-23', 'W-24'], 'new?': ['W-02', 'W-08', 'W-10', 'W-17', 'W-23']}
+  T8 tags: {'generic@law': ['W-02', 'W-08', 'W-10', 'W-27', 'W-29'], 'generic@filled': ['W-02', 'W-08', 'W-10', 'W-13', 'W-27', 'W-29'], 'm23/rev_t@law': ['W-05', 'W-08'], 'm23/rev_t@filled': ['W-05', 'W-08'], 'axial/refl_x@filled': ['W-10', 'W-13', 'W-24'], 'axial/refl_x@law': ['W-13', 'W-24']}
+transformation types that decide: {'kind': ['W-02', 'W-27', 'W-29'], 'meaning': ['W-05', 'W-08', 'W-10', 'W-13', 'W-17', 'W-22', 'W-23', 'W-24', 'W-25'], 'cast': ['W-06', 'W-07', 'W-15']}
+baseline FIX: differs from the reference on 18 fillers: [('W-02', 'zosu'), ('W-04', 'seto'), ('W-05', 'favutu'), ('W-07', 'gunimo'), ('W-08', 'kagon'), ('W-09', 'nikil'), ('W-10', 'tadubu'), ('W-11', 'vokuv'), ('W-14', 'tomof'), ('W-15', 'nubug6'), ('W-17', 'nubok3'), ('W-19', 'fanup'), ('W-21', 'beza'), ('W-22', 'litub'), ('W-23', 'pebe'), ('W-24', 'lifem'), ('W-26', 'penem9'), ('W-28', 'temaf4')]
+baseline DERIVE: differs from the reference on 10 fillers: [('W-02', 'zosu'), ('W-05', 'favutu'), ('W-08', 'kagon'), ('W-10', 'tadubu'), ('W-13', 'rade'), ('W-17', 'nubok3'), ('W-22', 'litub'), ('W-23', 'pebe'), ('W-24', 'lifem'), ('W-25', 'libuv')]
+baseline DIMS: differs from the reference on 9 fillers: [('W-05', 'favutu'), ('W-08', 'kagon'), ('W-10', 'tadubu'), ('W-13', 'rade'), ('W-17', 'nubok3'), ('W-22', 'litub'), ('W-23', 'pebe'), ('W-24', 'lifem'), ('W-25', 'libuv')]
+baseline FORK_ALL: differs from the reference on 21 fillers: [('W-01', 'ferat'), ('W-03', 'muzu2'), ('W-03', 'muvosa'), ('W-04', 'seto'), ('W-05', 'favutu'), ('W-09', 'nikil'), ('W-09', 'vuli'), ('W-11', 'vokuv'), ('W-13', 'rade'), ('W-14', 'tomof'), ('W-15', 'nubug6'), ('W-15', 'zurig'), ('W-19', 'fanup'), ('W-21', 'beza'), ('W-25', 'libuv'), ('W-26', 'penem9'), ('W-28', 'temaf4'), ('W-28', 'kuta6'), ('W-28', 'mafofi'), ('W-29', 'gofad5'), ('W-29', 'zalu5')]
+fillers in total: 39
+
+=== result
+VERIFY: OK

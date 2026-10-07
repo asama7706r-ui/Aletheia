@@ -1,0 +1,137 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "ev07",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [],
+ "quantities": [
+  {
+   "id": "fo",
+   "meaning": "m16",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "fox",
+    "foy",
+    "foz"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "ms",
+   "meaning": "m02",
+   "owner": "world",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "ac",
+   "meaning": "m14",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "acx",
+    "acy",
+    "acz"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "law1",
+   "eq": "fox = ms*acx",
+   "accepted_at": 0,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "ob1",
+   "instrument": "i06",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "o1",
+   "observer": "ob1",
+   "of": "fox",
+   "state": {
+    "ms": "1",
+    "acx": "2"
+   },
+   "value": "2",
+   "epoch": 0,
+   "src": "ob1"
+  },
+  {
+   "id": "o2",
+   "observer": "ob1",
+   "of": "fox",
+   "state": {
+    "ms": "2",
+    "acx": "3/2"
+   },
+   "value": "3",
+   "epoch": 0,
+   "src": "ob1"
+  },
+  {
+   "id": "o3",
+   "observer": "ob1",
+   "of": "fox",
+   "state": {
+    "ms": "1",
+    "acx": "1"
+   },
+   "value": "3",
+   "epoch": 1,
+   "src": "ob1"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "f1",
+   "eq": "fox = (ms + mq)*acx",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "mq",
+     "kind": "scalar",
+     "meaning": "m02",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i03"
+    }
+   ],
+   "of": "law1",
+   "src": "seed"
+  }
+ ]
+}

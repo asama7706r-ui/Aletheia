@@ -1,0 +1,193 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w02",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "kabev3",
+   "type": "ty04",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "rofar",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "luzaf",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "3/2",
+   "src": "seed"
+  },
+  {
+   "id": "viduro",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "7/5",
+   "src": "seed"
+  },
+  {
+   "id": "tidi",
+   "meaning": "m12",
+   "owner": "kabev3",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "dota",
+    "soneg",
+    "fimif8"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "vada2",
+   "eq": "rofar = luzaf*(dota^2 + soneg^2) + viduro*fimif8^2",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "suvig",
+   "instrument": "i04",
+   "precision": "1/30",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "ruse9",
+   "observer": "suvig",
+   "of": "rofar",
+   "state": {
+    "dota": "1",
+    "soneg": "1",
+    "fimif8": "1"
+   },
+   "value": "443/100",
+   "epoch": 0,
+   "src": "suvig"
+  },
+  {
+   "id": "fumana",
+   "observer": "suvig",
+   "of": "rofar",
+   "state": {
+    "dota": "2",
+    "soneg": "-1",
+    "fimif8": "0"
+   },
+   "value": "747/100",
+   "epoch": 1,
+   "src": "suvig"
+  },
+  {
+   "id": "zebe",
+   "observer": "suvig",
+   "of": "rofar",
+   "state": {
+    "dota": "-1/2",
+    "soneg": "1/2",
+    "fimif8": "2"
+   },
+   "value": "6381/1000",
+   "epoch": 2,
+   "src": "suvig"
+  },
+  {
+   "id": "siga5",
+   "observer": "suvig",
+   "of": "rofar",
+   "state": {
+    "dota": "2",
+    "soneg": "1",
+    "fimif8": "1"
+   },
+   "value": "758/75",
+   "epoch": 3,
+   "src": "suvig"
+  },
+  {
+   "id": "vorasi",
+   "observer": "suvig",
+   "of": "rofar",
+   "state": {
+    "dota": "1",
+    "soneg": "-2",
+    "fimif8": "1/2"
+   },
+   "value": "797/120",
+   "epoch": 3,
+   "src": "suvig"
+  },
+  {
+   "id": "sevi",
+   "observer": "suvig",
+   "of": "rofar",
+   "state": {
+    "dota": "3",
+    "soneg": "1",
+    "fimif8": "-1"
+   },
+   "value": "98/5",
+   "epoch": 4,
+   "src": "suvig"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "zosu",
+   "of": "vada2",
+   "eq": "rofar = luzaf*(dota^2 + soneg^2) + viduro*fimif8^2 + kiti*(dota^2 - soneg^2)",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "kiti",
+     "kind": "?",
+     "meaning": "?",
+     "owner": "world",
+     "dims": "?",
+     "components": "?",
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

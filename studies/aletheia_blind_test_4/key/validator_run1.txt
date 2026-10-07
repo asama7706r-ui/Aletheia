@@ -1,0 +1,5 @@
+﻿W-03: V12 kept ['muzu2', 'muvosa'] != reference ['muvosa', 'muzu2']
+W-28: V12 kept ['temaf4', 'kuta6', 'mafofi'] != reference ['kuta6', 'mafofi', 'temaf4']
+composition: 30 worlds needed, 28 valid
+composition: 25 single-filler and 5 several-filler worlds needed, got 25 and 3
+NOT VALID (4 problems)

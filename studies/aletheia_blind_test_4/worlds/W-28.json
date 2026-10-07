@@ -1,0 +1,325 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w28",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "sefa",
+   "type": "ty04",
+   "src": "seed"
+  },
+  {
+   "id": "vukul",
+   "type": "ty01",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "tupo",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "sudi9",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 3,
+    "T": -2,
+    "Q": -2
+   },
+   "components": [],
+   "value": "1/3",
+   "src": "seed"
+  },
+  {
+   "id": "letos",
+   "meaning": "m04",
+   "owner": "sefa",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "kadu",
+   "meaning": "m04",
+   "owner": "vukul",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "-4/5",
+   "src": "seed"
+  },
+  {
+   "id": "dobe",
+   "meaning": "m11",
+   "owner": "world",
+   "dims": {
+    "L": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "reden6",
+   "meaning": "m02",
+   "owner": "sefa",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "7/4",
+   "src": "seed"
+  },
+  {
+   "id": "nape",
+   "meaning": "m21",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "badok",
+    "gora",
+    "gazita"
+   ],
+   "value": [
+    "0",
+    "0",
+    "-10"
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "danat",
+   "meaning": "m12",
+   "owner": "sefa",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "nera",
+    "fabo",
+    "kezul"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "dupo4",
+   "eq": "tupo = sudi9*letos*kadu/dobe + reden6*gazita*kezul",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "befa2",
+   "instrument": "i04",
+   "precision": "1/40",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "puva",
+   "observer": "befa2",
+   "of": "tupo",
+   "state": {
+    "letos": "1",
+    "dobe": "2",
+    "kezul": "1"
+   },
+   "value": "-21187/1200",
+   "epoch": 0,
+   "src": "befa2"
+  },
+  {
+   "id": "rele",
+   "observer": "befa2",
+   "of": "tupo",
+   "state": {
+    "letos": "-2",
+    "dobe": "3/2",
+    "kezul": "-1/2"
+   },
+   "value": "20537/2250",
+   "epoch": 1,
+   "src": "befa2"
+  },
+  {
+   "id": "ruka",
+   "observer": "befa2",
+   "of": "tupo",
+   "state": {
+    "letos": "3",
+    "dobe": "1",
+    "kezul": "2"
+   },
+   "value": "-35821/1000",
+   "epoch": 2,
+   "src": "befa2"
+  },
+  {
+   "id": "bibegu",
+   "observer": "befa2",
+   "of": "tupo",
+   "state": {
+    "letos": "1",
+    "dobe": "1",
+    "kezul": "1/2"
+   },
+   "value": "-11017/1200",
+   "epoch": 3,
+   "src": "befa2"
+  },
+  {
+   "id": "luda",
+   "observer": "befa2",
+   "of": "tupo",
+   "state": {
+    "letos": "-2",
+    "dobe": "1",
+    "kezul": "-1"
+   },
+   "value": "22037/1200",
+   "epoch": 3,
+   "src": "befa2"
+  },
+  {
+   "id": "pisil",
+   "observer": "befa2",
+   "of": "tupo",
+   "state": {
+    "letos": "3",
+    "dobe": "1",
+    "kezul": "3/2"
+   },
+   "value": "-22039/800",
+   "epoch": 4,
+   "src": "befa2"
+  },
+  {
+   "id": "minu",
+   "observer": "befa2",
+   "of": "tupo",
+   "state": {
+    "letos": "1/2",
+    "dobe": "1",
+    "kezul": "1/4"
+   },
+   "value": "-551/120",
+   "epoch": 4,
+   "src": "befa2"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "temaf4",
+   "of": "dupo4",
+   "eq": "tupo = sudi9*letos*(kadu + gezuti)/dobe + reden6*gazita*kezul",
+   "new_bodies": [
+    {
+     "id": "fokafa",
+     "type": "ty06"
+    }
+   ],
+   "new": [
+    {
+     "id": "gezuti",
+     "kind": "scalar",
+     "meaning": "m04",
+     "owner": "fokafa",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i05"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "kuta6",
+   "of": "dupo4",
+   "eq": "tupo = sudi9*letos*kadu/dobe + (reden6 + talemi)*gazita*kezul",
+   "new_bodies": [
+    {
+     "id": "zezo",
+     "type": "ty06"
+    }
+   ],
+   "new": [
+    {
+     "id": "talemi",
+     "kind": "scalar",
+     "meaning": "m02",
+     "owner": "zezo",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i03"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "mafofi",
+   "of": "dupo4",
+   "eq": "tupo = sudi9*letos*kadu/dobe + reden6*gazita*kezul + lofovu*letos*kadu/dobe^2",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "lofovu",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

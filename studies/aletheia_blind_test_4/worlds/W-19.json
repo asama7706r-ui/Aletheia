@@ -1,0 +1,245 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w19",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "noneri",
+   "type": "ty04",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "kikezu",
+   "meaning": "m17",
+   "owner": "noneri",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "components": [
+    "kune",
+    "ladir",
+    "kezub"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "guma",
+   "meaning": "m17",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2,
+    "Q": -1
+   },
+   "components": [
+    "vuvu",
+    "getame",
+    "gutu"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "bitev",
+   "meaning": "m22",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "zidage",
+    "tifogi",
+    "seku"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "muzu",
+   "meaning": "m12",
+   "owner": "noneri",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "pedo",
+    "zane8",
+    "bamo"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "nusa4",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "L": -2
+   },
+   "components": [],
+   "value": "-3/16",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "venobu",
+   "eq": "kezub = gutu*(1 + nusa4*bamo^2)",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "maka",
+   "instrument": "i07",
+   "precision": "1/200",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "reze7",
+   "observer": "maka",
+   "of": "kezub",
+   "state": {
+    "gutu": "2",
+    "bamo": "1",
+    "zidage": "0",
+    "tifogi": "0"
+   },
+   "value": "3241/2000",
+   "epoch": 0,
+   "src": "maka"
+  },
+  {
+   "id": "zifof4",
+   "observer": "maka",
+   "of": "kezub",
+   "state": {
+    "gutu": "-3/2",
+    "bamo": "2",
+    "zidage": "0",
+    "tifogi": "0"
+   },
+   "value": "-1853/5000",
+   "epoch": 1,
+   "src": "maka"
+  },
+  {
+   "id": "nemak",
+   "observer": "maka",
+   "of": "kezub",
+   "state": {
+    "gutu": "1",
+    "bamo": "-3",
+    "zidage": "0",
+    "tifogi": "0"
+   },
+   "value": "-2769/4000",
+   "epoch": 2,
+   "src": "maka"
+  },
+  {
+   "id": "rifu",
+   "observer": "maka",
+   "of": "kezub",
+   "state": {
+    "gutu": "2",
+    "bamo": "1",
+    "zidage": "3/2",
+    "tifogi": "-1"
+   },
+   "value": "781/800",
+   "epoch": 3,
+   "src": "maka"
+  },
+  {
+   "id": "kigu",
+   "observer": "maka",
+   "of": "kezub",
+   "state": {
+    "gutu": "1",
+    "bamo": "2",
+    "zidage": "-2",
+    "tifogi": "1/2"
+   },
+   "value": "1449/1000",
+   "epoch": 3,
+   "src": "maka"
+  },
+  {
+   "id": "zepa",
+   "observer": "maka",
+   "of": "kezub",
+   "state": {
+    "gutu": "-1",
+    "bamo": "1/2",
+    "zidage": "1",
+    "tifogi": "1"
+   },
+   "value": "-657/320",
+   "epoch": 4,
+   "src": "maka"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "fanup",
+   "of": "venobu",
+   "eq": "kezub = gutu*(1 + nusa4*bamo^2) + zidage*zake - tifogi*subigo",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "meki",
+     "kind": "vec3",
+     "meaning": "m18",
+     "owner": "world",
+     "dims": "?",
+     "components": [
+      "subigo",
+      "zake",
+      "sefi"
+     ],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": [
+       [
+        "1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "-1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "-1"
+       ]
+      ],
+      "conj_c": "-1"
+     },
+     "value": "?",
+     "old_value": "same",
+     "route": "i08"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w29",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "dogati",
+   "type": "ty07",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "bomen",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "sulebu",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {},
+   "components": [],
+   "value": "2/3",
+   "src": "seed"
+  },
+  {
+   "id": "bupak",
+   "meaning": "m02",
+   "owner": "dogati",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "5/3",
+   "src": "seed"
+  },
+  {
+   "id": "gefu",
+   "meaning": "m01",
+   "owner": "world",
+   "dims": {
+    "T": 1
+   },
+   "components": [],
+   "value": "3/2",
+   "src": "seed"
+  },
+  {
+   "id": "sisas2",
+   "meaning": "m12",
+   "owner": "dogati",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "govo",
+    "kidu",
+    "sadela"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "zorov",
+   "eq": "bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "dunut",
+   "instrument": "i04",
+   "precision": "1/25",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "lebe",
+   "observer": "dunut",
+   "of": "bomen",
+   "state": {
+    "govo": "1",
+    "kidu": "2",
+    "sadela": "-1"
+   },
+   "value": "20243/6750",
+   "epoch": 0,
+   "src": "dunut"
+  },
+  {
+   "id": "tiki",
+   "observer": "dunut",
+   "of": "bomen",
+   "state": {
+    "govo": "-1/2",
+    "kidu": "1",
+    "sadela": "2"
+   },
+   "value": "43183/16875",
+   "epoch": 1,
+   "src": "dunut"
+  },
+  {
+   "id": "musasu",
+   "observer": "dunut",
+   "of": "bomen",
+   "state": {
+    "govo": "2",
+    "kidu": "0",
+    "sadela": "1"
+   },
+   "value": "123056/50625",
+   "epoch": 2,
+   "src": "dunut"
+  },
+  {
+   "id": "kavo5",
+   "observer": "dunut",
+   "of": "bomen",
+   "state": {
+    "govo": "1/2",
+    "kidu": "0",
+    "sadela": "3/2"
+   },
+   "value": "80699/40500",
+   "epoch": 3,
+   "src": "dunut"
+  },
+  {
+   "id": "gotak2",
+   "observer": "dunut",
+   "of": "bomen",
+   "state": {
+    "govo": "1/2",
+    "kidu": "1",
+    "sadela": "3/2"
+   },
+   "value": "100051/40500",
+   "epoch": 4,
+   "src": "dunut"
+  },
+  {
+   "id": "noma",
+   "observer": "dunut",
+   "of": "bomen",
+   "state": {
+    "govo": "1/2",
+    "kidu": "-2",
+    "sadela": "3/2"
+   },
+   "value": "1283/324",
+   "epoch": 4,
+   "src": "dunut"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "gofad5",
+   "of": "zorov",
+   "eq": "bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2 + kuliv*sadela",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "kuliv",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "zalu5",
+   "of": "zorov",
+   "eq": "bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2 + lata*sadela^3",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "lata",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "pizer",
+   "of": "zorov",
+   "eq": "bomen = sulebu*(govo^2 + kidu^2 + sadela^2)*bupak/gefu^2 + nesom*govo^2",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "nesom",
+     "kind": "scalar",
+     "meaning": "m05",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

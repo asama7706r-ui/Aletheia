@@ -1,0 +1,32 @@
+W-01.json: ferat=SAME_LAW_NEW_STATE
+W-02.json: zosu=CONDITIONAL
+W-03.json: muzu2=SAME_LAW_NEW_STATE, kasa=INVALID, muvosa=SAME_LAW_NEW_STATE
+W-04.json: seto=SAME_LAW_NEW_STATE
+W-05.json: favutu=ANOTHER_LAW
+W-06.json: duvoge=ANOTHER_LAW
+W-07.json: gunimo=ANOTHER_LAW
+W-08.json: kagon=CONDITIONAL
+W-09.json: nikil=SAME_LAW_NEW_STATE, vuli=SAME_LAW_NEW_STATE
+W-10.json: tadubu=CONDITIONAL
+W-11.json: vokuv=SAME_LAW_NEW_STATE
+W-12.json: kizine=INVALID
+W-13.json: rade=ANOTHER_LAW
+W-14.json: tomof=SAME_LAW_NEW_STATE
+W-15.json: kuzop9=ANOTHER_LAW, nubug6=SAME_LAW_NEW_STATE, zurig=SAME_LAW_NEW_STATE
+W-16.json: rili7=INVALID
+W-17.json: nubok3=CONDITIONAL
+W-18.json: dusa=INVALID
+W-19.json: fanup=SAME_LAW_NEW_STATE
+W-20.json: nebu3=ANOTHER_LAW
+W-21.json: beza=SAME_LAW_NEW_STATE
+W-22.json: litub=CONDITIONAL
+W-23.json: pebe=CONDITIONAL
+W-24.json: lifem=CONDITIONAL
+W-25.json: libuv=ANOTHER_LAW
+W-26.json: penem9=SAME_LAW_NEW_STATE
+W-27.json: kuribo=ANOTHER_LAW
+W-28.json: temaf4=SAME_LAW_NEW_STATE, kuta6=SAME_LAW_NEW_STATE, mafofi=SAME_LAW_NEW_STATE
+W-29.json: gofad5=SAME_LAW_NEW_STATE, zalu5=SAME_LAW_NEW_STATE, pizer=ANOTHER_LAW
+W-30.json: mivuko=ANOTHER_LAW
+wrote results/outputs.json (30 worlds)
+exit 0

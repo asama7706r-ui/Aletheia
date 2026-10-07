@@ -1,0 +1,232 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w22",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "lusosi",
+   "type": "ty07",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "fadaru",
+   "meaning": "m16",
+   "owner": "lusosi",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "kema",
+    "boki",
+    "mevu"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "fopo",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "13/5",
+   "src": "seed"
+  },
+  {
+   "id": "vafim",
+   "meaning": "m12",
+   "owner": "lusosi",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "fola2",
+    "gukafe",
+    "rena"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "fifudi",
+   "meaning": "m02",
+   "owner": "lusosi",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "2/3",
+   "src": "seed"
+  },
+  {
+   "id": "bitid",
+   "meaning": "m21",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -2
+   },
+   "components": [
+    "sude",
+    "reki",
+    "nunus5"
+   ],
+   "value": [
+    "0",
+    "0",
+    "-19/2"
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "lire",
+   "meaning": "m10",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": -1,
+    "Q": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "kenela",
+   "meaning": "m13",
+   "owner": "lusosi",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "rivaku",
+    "pubel3",
+    "pubo"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "sofobe",
+   "eq": "mevu = fifudi*nunus5 - fopo*rena",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "vuvod",
+   "instrument": "i06",
+   "precision": "1/40",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "rudi",
+   "observer": "vuvod",
+   "of": "mevu",
+   "state": {
+    "rena": "1",
+    "lire": "2",
+    "pubo": "1"
+   },
+   "value": "-10747/1200",
+   "epoch": 0,
+   "src": "vuvod"
+  },
+  {
+   "id": "zupego",
+   "observer": "vuvod",
+   "of": "mevu",
+   "state": {
+    "rena": "-1/2",
+    "lire": "-1",
+    "pubo": "3"
+   },
+   "value": "-15037/3000",
+   "epoch": 1,
+   "src": "vuvod"
+  },
+  {
+   "id": "porek",
+   "observer": "vuvod",
+   "of": "mevu",
+   "state": {
+    "rena": "2",
+    "lire": "1/2",
+    "pubo": "-2"
+   },
+   "value": "-4334/375",
+   "epoch": 2,
+   "src": "vuvod"
+  },
+  {
+   "id": "sofugo",
+   "observer": "vuvod",
+   "of": "mevu",
+   "state": {
+    "rena": "1",
+    "lire": "2",
+    "pubo": "2"
+   },
+   "value": "-1119/200",
+   "epoch": 3,
+   "src": "vuvod"
+  },
+  {
+   "id": "pofez",
+   "observer": "vuvod",
+   "of": "mevu",
+   "state": {
+    "rena": "3/2",
+    "lire": "-3",
+    "pubo": "1"
+   },
+   "value": "-1223/96",
+   "epoch": 4,
+   "src": "vuvod"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "litub",
+   "of": "sofobe",
+   "eq": "mevu = fifudi*nunus5 - fopo*rena + rudebu*lire*pubo",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "rudebu",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

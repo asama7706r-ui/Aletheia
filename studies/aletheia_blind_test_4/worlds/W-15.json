@@ -1,0 +1,290 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w15",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "rinuku",
+   "type": "ty06",
+   "src": "seed"
+  },
+  {
+   "id": "vasugi",
+   "type": "ty06",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "roram",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "lisug",
+   "meaning": "m05",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "3/4",
+   "src": "seed"
+  },
+  {
+   "id": "degev",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 1,
+    "T": -2
+   },
+   "components": [],
+   "value": "-5/2",
+   "src": "seed"
+  },
+  {
+   "id": "vomube",
+   "meaning": "m12",
+   "owner": "rinuku",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "naresa",
+    "kebur",
+    "gasari"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "bipa2",
+   "meaning": "m12",
+   "owner": "vasugi",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "vabi",
+    "sidir",
+    "zufog"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "fozisi",
+   "eq": "roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog)",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "lepopu",
+   "instrument": "i04",
+   "precision": "1/60",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "dugazi",
+   "observer": "lepopu",
+   "of": "roram",
+   "state": {
+    "gasari": "1",
+    "zufog": "2"
+   },
+   "value": "-1347/200",
+   "epoch": 0,
+   "src": "lepopu"
+  },
+  {
+   "id": "parib",
+   "observer": "lepopu",
+   "of": "roram",
+   "state": {
+    "gasari": "-1",
+    "zufog": "1/2"
+   },
+   "value": "17537/6000",
+   "epoch": 1,
+   "src": "lepopu"
+  },
+  {
+   "id": "rumu",
+   "observer": "lepopu",
+   "of": "roram",
+   "state": {
+    "gasari": "2",
+    "zufog": "-1"
+   },
+   "value": "847/200",
+   "epoch": 2,
+   "src": "lepopu"
+  },
+  {
+   "id": "nipu",
+   "observer": "lepopu",
+   "of": "roram",
+   "state": {
+    "gasari": "1",
+    "zufog": "2"
+   },
+   "value": "-3449/600",
+   "epoch": 3,
+   "src": "lepopu"
+  },
+  {
+   "id": "bevuzi",
+   "observer": "lepopu",
+   "of": "roram",
+   "state": {
+    "gasari": "2",
+    "zufog": "1"
+   },
+   "value": "-2761/480",
+   "epoch": 3,
+   "src": "lepopu"
+  },
+  {
+   "id": "pive",
+   "observer": "lepopu",
+   "of": "roram",
+   "state": {
+    "gasari": "2",
+    "zufog": "4"
+   },
+   "value": "-9599/1200",
+   "epoch": 4,
+   "src": "lepopu"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "kuzop9",
+   "of": "fozisi",
+   "eq": "roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog) + liva*gasari^2 + dogo*gasari*zufog",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "liva",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "rinuku",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    },
+    {
+     "id": "dogo",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "vasugi",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "nubug6",
+   "of": "fozisi",
+   "eq": "roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog) + sofub*gasari^2 + tukabe*zufog^2",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "sofub",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "rinuku",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    },
+    {
+     "id": "tukabe",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "vasugi",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  },
+  {
+   "id": "zurig",
+   "of": "fozisi",
+   "eq": "roram = lisug*(gasari - zufog)^2 + degev*(gasari + zufog) + dafu8*gasari*zufog",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "dafu8",
+     "kind": "scalar",
+     "meaning": "m07",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}

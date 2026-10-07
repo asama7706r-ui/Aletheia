@@ -1,0 +1,125 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "ev05",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [],
+ "quantities": [
+  {
+   "id": "uu",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "ms",
+   "meaning": "m02",
+   "owner": "world",
+   "dims": {
+    "M": 1
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "vl",
+   "meaning": "m13",
+   "owner": "world",
+   "dims": {
+    "L": 1,
+    "T": -1
+   },
+   "components": [
+    "vlx",
+    "vly",
+    "vlz"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "law1",
+   "eq": "uu = ms*(vlx^2 + vly^2 + vlz^2)/2",
+   "accepted_at": 0,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "ob1",
+   "instrument": "i04",
+   "precision": "1/100",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "o1",
+   "observer": "ob1",
+   "of": "uu",
+   "state": {
+    "ms": "1",
+    "vlx": "2",
+    "vly": "0",
+    "vlz": "0"
+   },
+   "value": "2",
+   "epoch": 0,
+   "src": "ob1"
+  },
+  {
+   "id": "o2",
+   "observer": "ob1",
+   "of": "uu",
+   "state": {
+    "ms": "1",
+    "vlx": "2",
+    "vly": "0",
+    "vlz": "0"
+   },
+   "value": "4",
+   "epoch": 1,
+   "src": "ob1"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "f1",
+   "eq": "uu = (ms + mp)*(vlx^2 + vly^2 + vlz^2)/2",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "mp",
+     "kind": "scalar",
+     "meaning": "m02",
+     "owner": "world",
+     "dims": "?",
+     "components": [],
+     "under": {
+      "rev_t": "1",
+      "refl_x": "1",
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": "0",
+     "route": "i03"
+    }
+   ],
+   "of": "law1",
+   "src": "seed"
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "v0": "0.4",
+ "file": "world",
+ "id": "w04",
+ "registry": "test4_registry",
+ "registry_sha256": "4e82e56ada7c144f6d61ecf920486038a3a98204a19d03c922f46c643fd20281",
+ "bodies": [
+  {
+   "id": "vofi",
+   "type": "ty07",
+   "src": "seed"
+  }
+ ],
+ "quantities": [
+  {
+   "id": "sudogi",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "mivo6",
+   "meaning": "m03",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "L": 2,
+    "T": -2
+   },
+   "components": [],
+   "value": "17/6",
+   "src": "seed"
+  },
+  {
+   "id": "boge",
+   "meaning": "m07",
+   "owner": "world",
+   "dims": {
+    "M": -1,
+    "L": 2,
+    "Q": 2
+   },
+   "components": [],
+   "value": "1/5",
+   "src": "seed"
+  },
+  {
+   "id": "fufep",
+   "meaning": "m18",
+   "owner": "world",
+   "dims": {
+    "M": 1,
+    "T": -1,
+    "Q": -1
+   },
+   "components": [
+    "vudi",
+    "sona",
+    "kadot6"
+   ],
+   "value": "var",
+   "src": "seed"
+  },
+  {
+   "id": "porava",
+   "meaning": "m04",
+   "owner": "vofi",
+   "dims": {
+    "Q": 1
+   },
+   "components": [],
+   "value": "-5/4",
+   "src": "seed"
+  },
+  {
+   "id": "vogimi",
+   "meaning": "m12",
+   "owner": "vofi",
+   "dims": {
+    "L": 1
+   },
+   "components": [
+    "maruri",
+    "koso",
+    "nomet"
+   ],
+   "value": "var",
+   "src": "seed"
+  }
+ ],
+ "relations": [],
+ "laws": [
+  {
+   "id": "gimupe",
+   "eq": "sudogi = mivo6 + boge*(vudi^2 + sona^2 + kadot6^2)",
+   "accepted_at": 2,
+   "src": "seed"
+  }
+ ],
+ "observers": [
+  {
+   "id": "beboko",
+   "instrument": "i04",
+   "precision": "1/80",
+   "calibrated_against": [],
+   "src": "seed"
+  }
+ ],
+ "observations": [
+  {
+   "id": "fanevu",
+   "observer": "beboko",
+   "of": "sudogi",
+   "state": {
+    "vudi": "1",
+    "sona": "-1/2",
+    "kadot6": "2",
+    "maruri": "1",
+    "koso": "0",
+    "nomet": "-1"
+   },
+   "value": "46741/12000",
+   "epoch": 0,
+   "src": "beboko"
+  },
+  {
+   "id": "zila",
+   "observer": "beboko",
+   "of": "sudogi",
+   "state": {
+    "vudi": "-2",
+    "sona": "1",
+    "kadot6": "0",
+    "maruri": "1/2",
+    "koso": "2",
+    "nomet": "1"
+   },
+   "value": "11467/3000",
+   "epoch": 1,
+   "src": "beboko"
+  },
+  {
+   "id": "misa",
+   "observer": "beboko",
+   "of": "sudogi",
+   "state": {
+    "vudi": "1/2",
+    "sona": "3/2",
+    "kadot6": "-1",
+    "maruri": "-1",
+    "koso": "1",
+    "nomet": "1/2"
+   },
+   "value": "8507/2400",
+   "epoch": 2,
+   "src": "beboko"
+  },
+  {
+   "id": "nonef4",
+   "observer": "beboko",
+   "of": "sudogi",
+   "state": {
+    "vudi": "1",
+    "sona": "2",
+    "kadot6": "-1",
+    "maruri": "2",
+    "koso": "-1",
+    "nomet": "1"
+   },
+   "value": "1087/1200",
+   "epoch": 3,
+   "src": "beboko"
+  },
+  {
+   "id": "pute",
+   "observer": "beboko",
+   "of": "sudogi",
+   "state": {
+    "vudi": "-1",
+    "sona": "1",
+    "kadot6": "3",
+    "maruri": "1",
+    "koso": "1",
+    "nomet": "-2"
+   },
+   "value": "9839/2400",
+   "epoch": 3,
+   "src": "beboko"
+  },
+  {
+   "id": "simura",
+   "observer": "beboko",
+   "of": "sudogi",
+   "state": {
+    "vudi": "2",
+    "sona": "0",
+    "kadot6": "1",
+    "maruri": "0",
+    "koso": "3",
+    "nomet": "1"
+   },
+   "value": "559/48",
+   "epoch": 4,
+   "src": "beboko"
+  }
+ ],
+ "fillers": [
+  {
+   "id": "seto",
+   "of": "gimupe",
+   "eq": "sudogi = mivo6 + boge*(vudi^2 + sona^2 + kadot6^2) + porava*((sirep7*kadot6 - kugag9*sona)*maruri + (kugag9*vudi - zeke*kadot6)*koso + (zeke*sona - sirep7*vudi)*nomet)",
+   "new_bodies": [],
+   "new": [
+    {
+     "id": "vulos",
+     "kind": "vec3",
+     "meaning": "m22",
+     "owner": "world",
+     "dims": "?",
+     "components": [
+      "zeke",
+      "sirep7",
+      "kugag9"
+     ],
+     "under": {
+      "rev_t": "-1",
+      "refl_x": [
+       [
+        "-1",
+        "0",
+        "0"
+       ],
+       [
+        "0",
+        "1",
+        "0"
+       ],
+       [
+        "0",
+        "0",
+        "1"
+       ]
+      ],
+      "conj_c": "1"
+     },
+     "value": "?",
+     "old_value": [
+      "0",
+      "0",
+      "0"
+     ],
+     "route": "?"
+    }
+   ],
+   "src": "seed"
+  }
+ ]
+}
