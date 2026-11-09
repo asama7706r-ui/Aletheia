@@ -1,0 +1,1416 @@
+{
+ "outcome": "FAIL",
+ "valid_worlds": 30,
+ "excluded": [],
+ "metrics": {
+  "verdict_accuracy": 0.8333333333333334,
+  "drop_set_accuracy": 0.7368421052631579,
+  "marks_accuracy": 0.7368421052631579,
+  "decision_accuracy": 0.8333333333333334,
+  "baseline_decision_accuracy": {
+   "COUNT": 0.7333333333333333,
+   "MAXCON": 0.36666666666666664,
+   "ORDER": 0.5,
+   "ASSOC": 0.7,
+   "FIRST": 0.5666666666666667,
+   "COARSE": 0.7,
+   "SPLIT_ORDER": 0.6
+  },
+  "best_baseline": "COUNT",
+  "mcnemar_p": 0.2265625,
+  "false_witness": 0,
+  "silent_collapse": 0,
+  "silent_choice": 0,
+  "truth_changed_by_output": []
+ },
+ "criteria": {
+  "C1 verdict accuracy >= 0.70": true,
+  "C2 drop-set accuracy >= 0.70": true,
+  "C3 marks accuracy >= 0.70": true,
+  "C4 beats the best baseline by >= 0.15 with p < 0.05": false,
+  "C5 silent collapse in 0 worlds": true,
+  "C6 silent choice in at most 1 world": true,
+  "C7 false witness in 0 worlds": true
+ },
+ "worlds": {
+  "W-01": {
+   "truth": [
+    "FREEDOM",
+    null
+   ],
+   "output": [
+    "FREEDOM",
+    null
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-02": {
+   "truth": [
+    "FREEDOM",
+    null
+   ],
+   "output": [
+    "FREEDOM",
+    null
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-03": {
+   "truth": [
+    "FREEDOM",
+    null
+   ],
+   "output": [
+    "FREEDOM",
+    null
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-04": {
+   "truth": [
+    "IMPOSSIBLE",
+    null
+   ],
+   "output": [
+    "IMPOSSIBLE",
+    null
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-05": {
+   "truth": [
+    "IMPOSSIBLE",
+    null
+   ],
+   "output": [
+    "IMPOSSIBLE",
+    null
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-06": {
+   "truth": [
+    "IMPOSSIBLE",
+    null
+   ],
+   "output": [
+    "IMPOSSIBLE",
+    null
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-07": {
+   "truth": [
+    "KNOWN_SUFFICES",
+    "k02"
+   ],
+   "output": [
+    "KNOWN_SUFFICES",
+    "k02"
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-08": {
+   "truth": [
+    "KNOWN_SUFFICES",
+    "k02"
+   ],
+   "output": [
+    "KNOWN_SUFFICES",
+    "k02"
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-09": {
+   "truth": [
+    "KNOWN_SUFFICES",
+    "k01"
+   ],
+   "output": [
+    "KNOWN_SUFFICES",
+    "k01"
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-10": {
+   "truth": [
+    "KNOWN_SUFFICES",
+    "k01"
+   ],
+   "output": [
+    "KNOWN_SUFFICES",
+    "k01"
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-11": {
+   "truth": [
+    "KNOWN_SUFFICES",
+    "k02"
+   ],
+   "output": [
+    "KNOWN_SUFFICES",
+    "k02"
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": null,
+   "marks_ok": null,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-12": {
+   "truth": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q5",
+       "q5[nno]",
+       "q6"
+      ],
+      [
+       "q5",
+       "q5[onn]",
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q5",
+       "q5[nno]",
+       "q6"
+      ],
+      [
+       "q5",
+       "q5[onn]",
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": false,
+    "COARSE": false,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-13": {
+   "truth": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q5",
+       "q5[nno]",
+       "q6"
+      ],
+      [
+       "q5",
+       "q5[onn]",
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q5",
+       "q5[nno]",
+       "q6"
+      ],
+      [
+       "q5",
+       "q5[onn]",
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": false,
+    "COARSE": false,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-14": {
+   "truth": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-15": {
+   "truth": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-16": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-17": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-18": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": false,
+   "decision_ok": false,
+   "drop_ok": false,
+   "marks_ok": false,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-19": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": false,
+   "decision_ok": false,
+   "drop_ok": false,
+   "marks_ok": false,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": true,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-20": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": true,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-21": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": false,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": false,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-22": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": false,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-23": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": true,
+    "ORDER": false,
+    "ASSOC": true,
+    "FIRST": true,
+    "COARSE": false,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-24": {
+   "truth": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q5",
+       "q5[nno]",
+       "q5[non]",
+       "q5[noo]",
+       "q5[onn]",
+       "q5[oon]"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NEW_KIND",
+    [
+     [
+      [
+       "q12",
+       "q5",
+       "q5[nno]",
+       "q5[non]",
+       "q5[noo]",
+       "q5[onn]",
+       "q5[oon]"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": true,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": true,
+    "COARSE": false,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-25": {
+   "truth": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-26": {
+   "truth": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-27": {
+   "truth": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q14",
+       "q5"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q14",
+       "q6"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "verdict_ok": true,
+   "decision_ok": true,
+   "drop_ok": true,
+   "marks_ok": true,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": false,
+    "FIRST": false,
+    "COARSE": true,
+    "SPLIT_ORDER": false
+   }
+  },
+  "W-28": {
+   "truth": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q6",
+       "q6[on]"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": false,
+   "decision_ok": false,
+   "drop_ok": false,
+   "marks_ok": false,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": true,
+    "FIRST": false,
+    "COARSE": false,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-29": {
+   "truth": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q6",
+       "q6[on]"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": false,
+   "decision_ok": false,
+   "drop_ok": false,
+   "marks_ok": false,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": true,
+    "FIRST": false,
+    "COARSE": false,
+    "SPLIT_ORDER": true
+   }
+  },
+  "W-30": {
+   "truth": [
+    "BRANCHES",
+    [
+     [
+      [
+       "q12",
+       "q13",
+       "q6"
+      ],
+      "witnessed"
+     ],
+     [
+      [
+       "q6",
+       "q6[on]"
+      ],
+      "witnessed"
+     ]
+    ]
+   ],
+   "output": [
+    "NO_WITNESS",
+    [
+     [
+      [
+       "q6"
+      ],
+      "no_witness"
+     ]
+    ]
+   ],
+   "verdict_ok": false,
+   "decision_ok": false,
+   "drop_ok": false,
+   "marks_ok": false,
+   "false_witness": false,
+   "collapse": false,
+   "silent_choice": false,
+   "problems": {
+    "false_witness": [],
+    "collapse": [],
+    "bad_proof": []
+   },
+   "truth_changed_by_output": false,
+   "baselines": {
+    "COUNT": false,
+    "MAXCON": false,
+    "ORDER": false,
+    "ASSOC": true,
+    "FIRST": false,
+    "COARSE": false,
+    "SPLIT_ORDER": true
+   }
+  }
+ }
+}

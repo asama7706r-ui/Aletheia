@@ -1,0 +1,42 @@
+{
+ "v0": "0.5",
+ "file": "world",
+ "id": "w20",
+ "registry": "t5_tower",
+ "registry_sha256": "6d668c608861f5cea0467e750c65743ac45f62f48c6a80a8587aea51c60b70e5",
+ "bodies": [],
+ "quantities": [],
+ "relations": [],
+ "laws": [],
+ "observers": [],
+ "observations": [],
+ "fillers": [],
+ "builds": [
+  {
+   "id": "bld",
+   "origin": "k01",
+   "generators": [
+    "g0",
+    "g1",
+    "g2",
+    "g3"
+   ],
+   "role": [
+    "g0*g0 = 1",
+    "g1*g1 = -1",
+    "g2*g2 = -1",
+    "g3*g3 = -1",
+    "g0*g1 = -(g1*g0)",
+    "g0*g2 = -(g2*g0)",
+    "g0*g3 = -(g3*g0)",
+    "g1*g2 = -(g2*g1)",
+    "g1*g3 = -(g3*g1)",
+    "g2*g3 = -(g3*g2)"
+   ],
+   "frames": [
+    "f03"
+   ],
+   "src": "seed"
+  }
+ ]
+}

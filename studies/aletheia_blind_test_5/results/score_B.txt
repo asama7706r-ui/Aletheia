@@ -1,0 +1,64 @@
+W-01: truth ('FREEDOM', None)  output OK
+W-02: truth ('FREEDOM', None)  output OK
+W-03: truth ('FREEDOM', None)  output OK
+W-04: truth ('IMPOSSIBLE', None)  output OK
+W-05: truth ('IMPOSSIBLE', None)  output OK
+W-06: truth ('IMPOSSIBLE', None)  output OK
+W-07: truth ('KNOWN_SUFFICES', 'k02')  output OK
+W-08: truth ('KNOWN_SUFFICES', 'k02')  output OK
+W-09: truth ('KNOWN_SUFFICES', 'k01')  output OK
+W-10: truth ('KNOWN_SUFFICES', 'k01')  output OK
+W-11: truth ('KNOWN_SUFFICES', 'k02')  output OK
+W-12: truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q6'], ['q5', 'q5[onn]', 'q6'], 'no_witness']])  output OK
+W-13: truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q6'], ['q5', 'q5[onn]', 'q6'], 'no_witness']])  output OK
+W-14: truth ('NO_WITNESS', [[['q12', 'q14', 'q5'], 'no_witness']])  output OK
+W-15: truth ('NO_WITNESS', [[['q12', 'q14', 'q5'], 'no_witness']])  output OK
+W-16: truth ('NEW_KIND', [[['q14', 'q6'], 'witnessed']])  output OK
+W-17: truth ('NEW_KIND', [[['q14', 'q6'], 'witnessed']])  output OK
+W-18: truth ('NEW_KIND', [[['q14', 'q6'], 'witnessed']])  output WRONG
+W-19: truth ('NEW_KIND', [[['q14', 'q6'], 'witnessed']])  output WRONG
+W-20: truth ('NEW_KIND', [[['q12', 'q14', 'q5'], 'witnessed']])  output OK
+W-21: truth ('NEW_KIND', [[['q12', 'q13', 'q6'], 'witnessed']])  output OK
+W-22: truth ('NEW_KIND', [[['q12', 'q13', 'q6'], 'witnessed']])  output OK
+W-23: truth ('NEW_KIND', [[['q12', 'q13', 'q6'], 'witnessed']])  output OK
+W-24: truth ('NEW_KIND', [[['q12', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[oon]'], 'witnessed']])  output OK
+W-25: truth ('BRANCHES', [[['q12', 'q14', 'q5'], 'witnessed'], [['q14', 'q6'], 'witnessed']])  output OK
+W-26: truth ('BRANCHES', [[['q12', 'q14', 'q5'], 'witnessed'], [['q14', 'q6'], 'witnessed']])  output OK
+W-27: truth ('BRANCHES', [[['q12', 'q14', 'q5'], 'witnessed'], [['q14', 'q6'], 'witnessed']])  output OK
+W-28: truth ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q6', 'q6[on]'], 'witnessed']])  output WRONG
+W-29: truth ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q6', 'q6[on]'], 'witnessed']])  output WRONG
+W-30: truth ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q6', 'q6[on]'], 'witnessed']])  output WRONG
+{
+ "outcome": "FAIL",
+ "valid_worlds": 30,
+ "metrics": {
+  "verdict_accuracy": 0.8333333333333334,
+  "drop_set_accuracy": 0.7368421052631579,
+  "marks_accuracy": 0.7368421052631579,
+  "decision_accuracy": 0.8333333333333334,
+  "baseline_decision_accuracy": {
+   "COUNT": 0.7333333333333333,
+   "MAXCON": 0.36666666666666664,
+   "ORDER": 0.5,
+   "ASSOC": 0.7,
+   "FIRST": 0.5666666666666667,
+   "COARSE": 0.7,
+   "SPLIT_ORDER": 0.6
+  },
+  "best_baseline": "COUNT",
+  "mcnemar_p": 0.2265625,
+  "false_witness": 0,
+  "silent_collapse": 0,
+  "silent_choice": 0,
+  "truth_changed_by_output": []
+ },
+ "criteria": {
+  "C1 verdict accuracy >= 0.70": true,
+  "C2 drop-set accuracy >= 0.70": true,
+  "C3 marks accuracy >= 0.70": true,
+  "C4 beats the best baseline by >= 0.15 with p < 0.05": false,
+  "C5 silent collapse in 0 worlds": true,
+  "C6 silent choice in at most 1 world": true,
+  "C7 false witness in 0 worlds": true
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "v0": "0.5",
+ "file": "world",
+ "id": "w06",
+ "registry": "t5_tower",
+ "registry_sha256": "6d668c608861f5cea0467e750c65743ac45f62f48c6a80a8587aea51c60b70e5",
+ "bodies": [],
+ "quantities": [],
+ "relations": [],
+ "laws": [],
+ "observers": [],
+ "observations": [],
+ "fillers": [],
+ "builds": [
+  {
+   "id": "req",
+   "origin": "k02",
+   "generators": [
+    "ga",
+    "hb"
+   ],
+   "role": [
+    "ga*e1 + e1*ga = 0",
+    "hb*e1 + e1*hb = 0",
+    "ga*ga = -2",
+    "hb*hb = -1",
+    "ga*hb + hb*ga = 2"
+   ],
+   "frames": [],
+   "src": "seed"
+  }
+ ]
+}

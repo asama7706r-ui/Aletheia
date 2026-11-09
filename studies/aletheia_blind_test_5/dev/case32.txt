@@ -1,0 +1,3 @@
+procedure ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q12', 'q5'], 'no_witness']]) 722.2 s
+truth     ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q12', 'q5'], 'no_witness']]) 245.5 s
+agree True

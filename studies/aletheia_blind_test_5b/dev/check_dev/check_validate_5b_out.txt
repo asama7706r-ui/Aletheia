@@ -1,0 +1,18 @@
+== batch_t5A: 30 worlds, 808 s
+   no world error
+== batch_t5B: 30 worlds, 279 s
+BAD W-12: NO_WITNESS  traps=['T4', 'T6']  baselines wrong=['ASSOC', 'COARSE', 'COUNT', 'FIRST', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+      V9: the key disagrees with the reference truth: key ('NO_WITNESS', [[['q5', 'q5[nno]', 'q6'], ['q5', 'q5[onn]', 'q6'], 'no_witness']]) vs truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q5[non]', 'q6'], ['q5', 'q5[non]', 'q5[onn]', 'q6'], 'no_witness'], [['q5', 'q5[nno]', 'q6', 'q6[on]'], ['q5', 'q5[onn]', 'q6', 'q6[on]'], 'no_witness']])
+BAD W-13: NO_WITNESS  traps=['T4', 'T6']  baselines wrong=['ASSOC', 'COARSE', 'COUNT', 'FIRST', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+      V9: the key disagrees with the reference truth: key ('NO_WITNESS', [[['q5', 'q5[nno]', 'q6'], ['q5', 'q5[onn]', 'q6'], 'no_witness']]) vs truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q5[non]', 'q6'], ['q5', 'q5[non]', 'q5[onn]', 'q6'], 'no_witness'], [['q5', 'q5[nno]', 'q6', 'q6[on]'], ['q5', 'q5[onn]', 'q6', 'q6[on]'], 'no_witness']])
+BATCH: 2 worlds are invalid
+BATCH: composition: 2 NO_WITNESS worlds, 4 required
+BATCH: composition: trap T6 holds in 0 worlds, at least 2 required
+BATCH: composition: baseline COUNT is wrong in 6 worlds, at least 8 required
+BATCH: composition: baseline ASSOC is wrong in 7 worlds, at least 8 required
+BATCH: composition: baseline COARSE is wrong in 7 worlds, at least 8 required
+BATCH: V15: W-18, W-19 have the same role up to renaming and the nonzero numbers
+BATCH: V15: W-26, W-27 have the same role up to renaming and the nonzero numbers
+BATCH: V15: W-28, W-29, W-30 have the same role up to renaming and the nonzero numbers
+== batch_dev: 22 worlds, 19 s
+   no world error

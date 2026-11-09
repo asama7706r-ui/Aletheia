@@ -1,0 +1,10 @@
+ok    the v0.5 reader accepts the seed; sha256 6d668c608861f5cea0467e750c65743ac45f62f48c6a80a8587aea51c60b70e5
+ok    f01 on rationals, 0^-1 = 0: 19 sentences hold in 4849 assignments (q2 written by keeps: not evaluated on the kind itself)
+ok    f01 on rationals, 0^-1 = 5: 19 sentences hold in 4849 assignments (q2 written by keeps: not evaluated on the kind itself)
+ok    f02 on complex numbers with rational parts, 0^-1 = (0, 0): 14 sentences hold in 2289 assignments (q2 written by keeps: not evaluated on the kind itself)
+ok    f02 on complex numbers with rational parts, 0^-1 = (3, 4): 14 sentences hold in 2289 assignments (q2 written by keeps: not evaluated on the kind itself)
+ok    f03 on 2 x 2 rational matrices: 1 sentences hold in 512 assignments
+ok    k02: e1*e1 = -1 holds for e1 = (0, 1), and fails for e1 = (1, 0)
+ok    17 of 17 miswritten sentences break on the models
+
+all checks passed

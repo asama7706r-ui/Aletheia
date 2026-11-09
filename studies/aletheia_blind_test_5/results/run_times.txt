@@ -1,0 +1,5 @@
+python 3.12.10, sympy 1.14.0, TIME_PER_WORLD from procedure/procedure_v5.py
+batch_A: start 2026-10-23T13:23:24Z, end 2026-10-23T14:29:48Z, 3984 s, exit 0
+batch_B: start 2026-10-23T14:29:48Z, end 2026-10-23T14:30:17Z, 29 s, exit 0
+batch_A: scorer exit 0, 830 s
+batch_B: scorer exit 0, 127 s

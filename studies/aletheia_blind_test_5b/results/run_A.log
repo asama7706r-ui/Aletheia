@@ -1,0 +1,57 @@
+W-01.json: NO_WITNESS (652.1s)
+W-02.json: NO_WITNESS (55.7s)
+W-03.json: KNOWN_SUFFICES (0.0s)
+W-04.json: NO_WITNESS (0.1s)
+W-05.json: FREEDOM (0.0s)
+W-06.json: NEW_KIND (0.1s)
+W-07.json: NO_WITNESS (307.1s)
+W-08.json: IMPOSSIBLE (0.0s)
+W-09.json: NEW_KIND (49.2s)
+W-10.json: KNOWN_SUFFICES (0.2s)
+W-11.json: NO_WITNESS (80.7s)
+W-12.json: BRANCHES (58.1s)
+W-13.json: NEW_KIND (0.1s)
+W-14.json: FREEDOM (0.0s)
+W-15.json: NEW_KIND (0.1s)
+W-16.json: IMPOSSIBLE (0.0s)
+W-17.json: NO_WITNESS (10.4s)
+W-18.json: KNOWN_SUFFICES (0.1s)
+W-19.json: NO_WITNESS (3.5s)
+W-20.json: NO_WITNESS (358.1s)
+W-21.json: NO_WITNESS (390.3s)
+W-22.json: NO_WITNESS (29.2s)
+W-23.json: KNOWN_SUFFICES (0.1s)
+W-24.json: FREEDOM (0.0s)
+W-25.json: BRANCHES (148.3s)
+W-26.json: NEW_KIND (0.1s)
+W-27.json: IMPOSSIBLE (0.0s)
+W-01.json: NO_WITNESS (652.1s) [saved by an earlier session]
+W-02.json: NO_WITNESS (55.7s) [saved by an earlier session]
+W-03.json: KNOWN_SUFFICES (0.0s) [saved by an earlier session]
+W-04.json: NO_WITNESS (0.1s) [saved by an earlier session]
+W-05.json: FREEDOM (0.0s) [saved by an earlier session]
+W-06.json: NEW_KIND (0.1s) [saved by an earlier session]
+W-07.json: NO_WITNESS (307.1s) [saved by an earlier session]
+W-08.json: IMPOSSIBLE (0.0s) [saved by an earlier session]
+W-09.json: NEW_KIND (49.2s) [saved by an earlier session]
+W-10.json: KNOWN_SUFFICES (0.2s) [saved by an earlier session]
+W-11.json: NO_WITNESS (80.7s) [saved by an earlier session]
+W-12.json: BRANCHES (58.1s) [saved by an earlier session]
+W-13.json: NEW_KIND (0.1s) [saved by an earlier session]
+W-14.json: FREEDOM (0.0s) [saved by an earlier session]
+W-15.json: NEW_KIND (0.1s) [saved by an earlier session]
+W-16.json: IMPOSSIBLE (0.0s) [saved by an earlier session]
+W-17.json: NO_WITNESS (10.4s) [saved by an earlier session]
+W-18.json: KNOWN_SUFFICES (0.1s) [saved by an earlier session]
+W-19.json: NO_WITNESS (3.5s) [saved by an earlier session]
+W-20.json: NO_WITNESS (358.1s) [saved by an earlier session]
+W-21.json: NO_WITNESS (390.3s) [saved by an earlier session]
+W-22.json: NO_WITNESS (29.2s) [saved by an earlier session]
+W-23.json: KNOWN_SUFFICES (0.1s) [saved by an earlier session]
+W-24.json: FREEDOM (0.0s) [saved by an earlier session]
+W-25.json: BRANCHES (148.3s) [saved by an earlier session]
+W-26.json: NEW_KIND (0.1s) [saved by an earlier session]
+W-27.json: IMPOSSIBLE (0.0s) [saved by an earlier session]
+W-28.json: NO_WITNESS (1411.8s)
+W-29.json: NEW_KIND (143.8s)
+W-30.json: KNOWN_SUFFICES (0.1s)

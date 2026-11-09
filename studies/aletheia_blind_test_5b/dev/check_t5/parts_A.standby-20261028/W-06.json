@@ -1,0 +1,81 @@
+{
+ "procedure": {
+  "bounds": {
+   "P2": 4,
+   "P3": 16,
+   "S": 4,
+   "list": "1"
+  },
+  "branches": [
+   {
+    "drop": [],
+    "marks": {
+     "q1": "PROTECTED",
+     "q10": "WORKSHOP",
+     "q11": "WORKSHOP",
+     "q12": "ASSUMED",
+     "q13": "ASSUMED",
+     "q2": "PROTECTED",
+     "q3": "WORKSHOP",
+     "q4": "WORKSHOP",
+     "q5": "ASSUMED",
+     "q5[nno]": "ASSUMED",
+     "q5[non]": "ASSUMED",
+     "q5[noo]": "ASSUMED",
+     "q5[onn]": "ASSUMED",
+     "q5[ono]": "ASSUMED",
+     "q5[oon]": "ASSUMED",
+     "q6": "ASSUMED",
+     "q6[on]": "ASSUMED",
+     "q7": "WORKSHOP",
+     "q8": "WORKSHOP",
+     "q9": "WORKSHOP"
+    },
+    "mirror": null,
+    "proofs": {},
+    "searched": {
+     "assoc_complete_to_dim": null,
+     "assoc_partial_from": null,
+     "nonassoc_complete_to_dim": null,
+     "nonassoc_partial_from": null,
+     "stopped": "time"
+    },
+    "status": "no_witness",
+    "witness": null
+   }
+  ],
+  "conflicts": [],
+  "deciders": [],
+  "freedom": null,
+  "impossible": null,
+  "known": null,
+  "phase1": {
+   "before_limit": false,
+   "conflict_sizes": {},
+   "conflict_sources": {},
+   "conflicts": 0,
+   "cut_candidates": 0,
+   "group_seconds": 6057.4,
+   "group_witnesses": {
+    "cut": 0,
+    "found": 2,
+    "seconds": 0.5,
+    "tried": 3
+   },
+   "groups_cut": 1,
+   "groups_refuted": 0,
+   "groups_tried": 1,
+   "limit": 2700,
+   "seconds": 6057.9,
+   "shape_seconds": 0.0,
+   "shrunk": 0,
+   "tested": 1
+  },
+  "refutations": [],
+  "tested": [
+   []
+  ],
+  "verdict": "NO_WITNESS"
+ },
+ "seconds": 6058.064449071884
+}

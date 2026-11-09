@@ -1,0 +1,40 @@
+{
+ "v0": "0.5",
+ "file": "world",
+ "id": "c2_multicomplex",
+ "registry": "t5_tower",
+ "registry_sha256": "6d668c608861f5cea0467e750c65743ac45f62f48c6a80a8587aea51c60b70e5",
+ "bodies": [],
+ "quantities": [],
+ "relations": [],
+ "laws": [],
+ "observers": [],
+ "observations": [],
+ "fillers": [],
+ "builds": [
+  {
+   "id": "b1",
+   "origin": "k02",
+   "generators": [
+    "h",
+    "l"
+   ],
+   "role": [
+    "h*h = -1",
+    "l*l = -1",
+    "h != 1",
+    "h != -1",
+    "l != 1",
+    "l != -1",
+    "h != e1",
+    "h != -e1",
+    "l != e1",
+    "l != -e1",
+    "l != h",
+    "l != -h"
+   ],
+   "frames": [],
+   "src": "seed"
+  }
+ ]
+}

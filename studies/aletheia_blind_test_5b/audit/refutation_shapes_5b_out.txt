@@ -1,0 +1,57 @@
+A W-01: output branch drops ['q6']
+  key refutation #0 (written for drop ['q13', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[ono]', 'q5[oon]', 'q6']): theta None, case depth 1, 9 terms, longest multiplier path 1
+    split by q12: ([["-3/2", "e1"], ["1", "sol"]])*([["3/2", "e1"], ["1", "sol"]])
+    copy instances: q6[on]{"b": [["1", "sol"]]}, q6[on]{"b": [["1", "ve"]]}
+  key refutation #1 (written for drop ['q12', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[ono]', 'q5[oon]', 'q6']): theta None, case depth 1, 12 terms, longest multiplier path 2
+    inverse of [["-3/2", "e1"], ["1", "sol"]] as vz
+    copy instances: q6[on]{"b": [["1", "sol"]]}, q6[on]{"b": [["1", "ve"]]}
+A W-04: output branch drops ['q13', 'q6']
+  key refutation #1 (written for drop ['q13', 'q14', 'q6']): theta None, case depth 1, 5 terms, longest multiplier path 2
+    split by q12: ([["7/3", ["ox", "ny"]]])*([["-1", "1"], ["7/3", ["ox", "ny"]]])
+  key refutation #3 (written for drop ['q12', 'q13', 'q6']): theta None, case depth 1, 5 terms, longest multiplier path 2
+    split by q14: ([["7/3", ["ox", "ny"]]])*([["-1", "1"], ["7/3", ["ox", "ny"]]])
+A W-07: output branch drops ['q14', 'q6']
+  key refutation #0 (written for drop ['q13', 'q14', 'q6']): theta None, case depth 1, 22 terms, longest multiplier path 3
+    split by q12: ([["-21", "1"], ["1", ["da", ["ke", ["lu", "mi"]]]]])*([["21", "1"], ["1", ["da", ["ke", ["lu", "mi"]]]]])
+  key refutation #1 (written for drop ['q12', 'q14', 'q6']): theta None, case depth 1, 32 terms, longest multiplier path 5
+    inverse of [["-21", "1"], ["1", ["da", ["ke", ["lu", "mi"]]]]] as vw
+A W-17: output branch drops ['q13', 'q6']
+  key refutation #1 (written for drop ['q13', 'q14', 'q6']): theta None, case depth 1, 3 terms, longest multiplier path 0
+    split by q12: ([["1", ["bo", "ce"]]])*([["1", "fu"]])
+  key refutation #3 (written for drop ['q12', 'q13', 'q6']): theta None, case depth 1, 3 terms, longest multiplier path 0
+    split by q14: ([["1", ["bo", "ce"]]])*([["1", "fu"]])
+A W-20: output branch drops ['q13', 'q6']
+  key refutation #1 (written for drop ['q13', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[ono]', 'q5[oon]', 'q6', 'q6[on]']): theta None, case depth 1, 7 terms, longest multiplier path 2
+    split by q12: ([["1", ["ip", "hu"]]])*([["-1", "e1"], ["1", ["ip", "hu"]]])
+A W-21: output branch drops ['q6']
+  key refutation #0 (written for drop ['q13', 'q6']): theta {'poly': ['-2', '0', '1'], 'lo': '1', 'hi': '2'}, case depth 1, 9 terms, longest multiplier path 1
+    split by q12: ([[["0", "-1/2"], "1"], [["0", "-1/2"], "e1"], [["1", "0"], "vo"]])*([[["0", "1/2"], "1"], [["0", "1/2"], "e1"], [["1", "0"], "vo"]])
+    copy instances: q6[on]{"b": [[["1", "0"], "vo"]]}, q6[on]{"b": [[["1", "0"], "wy"]]}
+  key refutation #1 (written for drop ['q12', 'q6']): theta {'poly': ['-2', '0', '1'], 'lo': '1', 'hi': '2'}, case depth 1, 12 terms, longest multiplier path 2
+    inverse of [[["0", "-1/2"], "1"], [["0", "-1/2"], "e1"], [["1", "0"], "vo"]] as vz
+    copy instances: q6[on]{"b": [[["1", "0"], "vo"]]}, q6[on]{"b": [[["1", "0"], "wy"]]}
+B W-15: output branch drops ['q5', 'q6']
+  key refutation #1 (written for drop ['q12', 'q13', 'q5', 'q6']): theta None, case depth 1, 3 terms, longest multiplier path 0
+    split by q14: ([["1", ["u1", "u1"]], ["2", "1"]])*([["1", "u1"]])
+    positive (q14): c=2, 1 squares
+B W-21: output branch drops ['q6']
+  key refutation #1 (written for drop ['q13', 'q6']): theta None, case depth 1, 33 terms, longest multiplier path 3
+    split by q12: ([["1", "u1"], ["-1", "1"], ["-3", "e1"]])*([["1", "u1"], ["-1", "1"], ["3", "e1"]])
+    copy instances: q6[on]{"b": [["1", "u1"]]}, q6[on]{"b": [["1", "u2"]]}
+  key refutation #2 (written for drop ['q12', 'q6']): theta None, case depth 1, 63 terms, longest multiplier path 4
+    inverse of [["1", "u1"], ["-1", "1"], ["-3", "e1"]] as iv1
+    copy instances: q6[on]{"b": [["1", "iv1"]]}, q6[on]{"b": [["1", "u1"]]}, q6[on]{"b": [["1", "u2"]]}
+B W-22: output branch drops ['q5', 'q6']
+  key refutation #1 (written for drop ['q13', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[ono]', 'q5[oon]', 'q6']): theta None, case depth 1, 17 terms, longest multiplier path 4
+    split by q12: ([["1", "v1"], ["-3", "e1"]])*([["1", "v1"], ["3", "e1"]])
+    copy instances: q6[on]{"b": [["1", "v1"]]}, q6[on]{"b": [["1", "v2"]]}
+B W-25: output branch drops ['q5', 'q5[nno]', 'q5[non]', 'q6']
+  key refutation #4 (written for drop ['q13', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[ono]', 'q5[oon]', 'q6']): theta None, case depth 1, 19 terms, longest multiplier path 2
+    split by q12: ([["1", "u1"], ["-3/2", "e1"]])*([["1", "u1"], ["3/2", "e1"]])
+    copy instances: q6[on]{"b": [["1", "u1"]]}
+B W-26: output branch drops ['q14', 'q5']
+  key refutation #0 (written for drop ['q13', 'q14', 'q5', 'q6']): theta None, case depth 1, 9 terms, longest multiplier path 2
+    split by q12: ([["1", "m1"]])*([["1", "m1"], ["-3", "1"]])
+B W-27: output branch drops ['q5', 'q5[nno]', 'q5[non]', 'q6']
+  key refutation #4 (written for drop ['q13', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[ono]', 'q5[oon]', 'q6', 'q6[on]']): theta None, case depth 1, 19 terms, longest multiplier path 3
+    split by q12: ([["1", "u1"], ["-3/2", "1"]])*([["1", "u1"], ["3/2", "1"]])

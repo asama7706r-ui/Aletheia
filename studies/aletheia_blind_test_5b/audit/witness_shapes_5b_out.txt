@@ -1,0 +1,36 @@
+A W-02: output branch ['q5', 'q5[nno]', 'q5[non]', 'q5[onn]', 'q6', 'q6[on]'] is no_witness
+  key witness (branch ["q5", "q5[nno]", "q5[non]", "q5[onn]", "q6", "q6[on]"]): dim 8, theta None, condition certificates ['q12', 'q13'], 49 table entries
+    coefficients 1, 7, -1, -7, 6/5, -6/5, 42/5, -42/5
+    not associative, not commutative
+  key witness (top_witness): dim 8, theta None, condition certificates ['q12', 'q13'], 49 table entries
+    coefficients 1, 7, -1, -7, 6/5, -6/5, 42/5, -42/5
+    not associative, not commutative
+A W-12: output branch ['q12', 'q14', 'q5'] is no_witness
+  key witness (branch ["q12", "q14", "q5"]): dim 4, theta None, condition certificates ['q12', 'q13'], 3 table entries
+    coefficients -1, -4/9
+    not associative, commutative
+A W-19: output branch ['q12', 'q14', 'q5', 'q6'] is no_witness
+  key witness (branch ["q12", "q14", "q5", "q6"]): dim 4, theta None, condition certificates ['q12', 'q13'], 5 table entries
+    coefficients 1, -1, -3, -4, -1/2
+    not associative, not commutative
+  key witness (top_witness): dim 4, theta None, condition certificates ['q12', 'q13'], 5 table entries
+    coefficients 1, -1, -3, -4, -1/2
+    not associative, not commutative
+A W-22: output branch ['q14', 'q5', 'q6'] is no_witness
+  key witness (branch ["q14", "q5", "q6"]): dim 8, theta None, condition certificates ['q12', 'q13'], 49 table entries
+    coefficients 1, 5, -1, -5, 1/2, 1/3, 3/2, 5/3, -1/2, -1/3, -3/2, -5/2 ...
+    not associative, not commutative
+  key witness (top_witness): dim 8, theta None, condition certificates ['q12', 'q13'], 49 table entries
+    coefficients 1, 5, -1, -5, 1/2, 1/3, 3/2, 5/3, -1/2, -1/3, -3/2, -5/2 ...
+    not associative, not commutative
+B W-19: output branch ['q5', 'q5[nno]', 'q5[non]', 'q5[onn]', 'q6', 'q6[on]'] is no_witness
+  key witness (branch ["q5", "q5[nno]", "q5[non]", "q5[onn]", "q6", "q6[on]"]): dim 8, theta None, condition certificates ['q12', 'q13'], 49 table entries
+    coefficients 1, 2, 5, -1, -2, -5, 10, -10
+    not associative, not commutative
+  key witness (top_witness): dim 8, theta None, condition certificates ['q12', 'q13'], 49 table entries
+    coefficients 1, 2, 5, -1, -2, -5, 10, -10
+    not associative, not commutative
+B W-22: output branch ['q6', 'q6[on]'] is no_witness
+  key witness (branch ["q6", "q6[on]"]): dim 4, theta None, condition certificates ['q12', 'q13'], 9 table entries
+    coefficients 1, 9, -1, -9
+    associative, not commutative

@@ -1,0 +1,11 @@
+A W-04: truth NO_WITNESS, output NO_WITNESS, decision WRONG; real solutions of the role: 0
+  truth branch keeping q14: [["q5", "q6"], "no_witness"]
+  output branch keeping q14: [["q13", "q6"], "no_witness"]
+  output branch keeping q14: [["q5", "q6"], "no_witness"]
+A W-17: truth BRANCHES, output NO_WITNESS, decision WRONG; real solutions of the role: 0
+  truth branch keeping q14: [["q5", "q6"], "no_witness"]
+  output branch keeping q14: [["q13", "q6"], "no_witness"]
+  output branch keeping q14: [["q5", "q6"], "no_witness"]
+B W-15: truth NEW_KIND, output BRANCHES, decision WRONG; real solutions of the role: 0
+  output branch keeping q14: [["q5", "q6"], "no_witness"]
+total: 2 truth branches and 5 output branches keep q14 over k01

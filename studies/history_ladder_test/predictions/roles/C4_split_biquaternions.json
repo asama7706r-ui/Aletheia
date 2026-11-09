@@ -1,0 +1,60 @@
+{
+ "v0": "0.5",
+ "file": "world",
+ "id": "c4_split_biquaternions",
+ "registry": "t5_tower",
+ "registry_sha256": "6d668c608861f5cea0467e750c65743ac45f62f48c6a80a8587aea51c60b70e5",
+ "bodies": [],
+ "quantities": [],
+ "relations": [],
+ "laws": [],
+ "observers": [],
+ "observations": [],
+ "fillers": [],
+ "builds": [
+  {
+   "id": "b1",
+   "origin": "k01",
+   "generators": [
+    "i",
+    "j",
+    "k",
+    "w"
+   ],
+   "role": [
+    "i*i = -1",
+    "j*j = -1",
+    "k*k = -1",
+    "i*j = k",
+    "j*i = -k",
+    "j*k = i",
+    "k*j = -i",
+    "k*i = j",
+    "i*k = -j",
+    "w*w = 1",
+    "i != 1",
+    "i != -1",
+    "j != 1",
+    "j != -1",
+    "k != 1",
+    "k != -1",
+    "w != 1",
+    "w != -1",
+    "j != i",
+    "j != -i",
+    "k != i",
+    "k != -i",
+    "w != i",
+    "w != -i",
+    "k != j",
+    "k != -j",
+    "w != j",
+    "w != -j",
+    "w != k",
+    "w != -k"
+   ],
+   "frames": [],
+   "src": "seed"
+  }
+ ]
+}

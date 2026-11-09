@@ -1,0 +1,187 @@
+ok    14 example files accepted
+ok    rejected: missing field
+ok    rejected: missing list
+ok    rejected: unknown field in registry
+ok    rejected: free text in world
+ok    rejected: verdict field
+ok    rejected: decimal value
+ok    rejected: not lowest terms
+ok    rejected: zero precision
+ok    rejected: function
+ok    rejected: unknown name
+ok    rejected: fractional exponent
+ok    rejected: name exponent
+ok    rejected: two relation signs
+ok    rejected: order sign in a law
+ok    rejected: less-than
+ok    rejected: decimal in expression
+ok    rejected: uppercase name
+ok    rejected: derivative of a number
+ok    rejected: duplicate id
+ok    rejected: world id reuses registry id
+ok    rejected: matrix size
+ok    rejected: matrix on a scalar kind
+ok    rejected: missing action
+ok    rejected: action for wrong reader
+ok    rejected: unknown in a world quantity
+ok    rejected: derived from a missing definition
+ok    rejected: derived from an unrelated definition
+ok    rejected: observation source
+ok    rejected: observed name in its own state
+ok    rejected: wrong registry hash
+ok    rejected: tensor id in an expression
+ok    rejected: component count
+ok    rejected: floor cycle
+ok    rejected: unknown kind with components
+ok    rejected: meaning and kind disagree
+ok    rejected: undeclared dimension
+ok    rejected: zero exponent
+ok    rejected: version
+ok    rejected: registry src not seed
+ok    rejected: unknown route instrument
+ok    rejected: unknown body type
+ok    rejected: unknown owner
+ok    rejected: missing owner
+ok    rejected: unknown owner of a new quantity
+ok    rejected: '?' owner for a world quantity
+ok    rejected: reserved body id
+ok    rejected: cast transformation in an action table
+ok    rejected: unknown reads value
+ok    rejected: missing body_types list
+ok    rejected: new body owns nothing
+ok    rejected: new body of unknown type
+ok    rejected: new body reuses a body id
+ok    rejected: new body named world
+ok    rejected: verdict field on a new body
+ok    rejected: missing new_bodies
+ok    rejected: owner is another filler's new body
+ok    rejected: new quantity absent from the eq
+ok    rejected: missing epoch
+ok    rejected: negative epoch
+ok    rejected: epoch as a string
+ok    rejected: missing accepted_at
+ok    rejected: accepted_at on a relation
+ok    rejected: verdict field on an observation
+ok    rejected: calibrated against an unknown observer
+ok    rejected: calibrated against itself
+ok    rejected: calibration cycle
+ok    rejected: calibration not a list
+ok    rejected: duplicate calibration entry
+ok    rejected: meaning matrix size
+ok    rejected: matrix on a single-number meaning
+ok    rejected: decimal in a meaning matrix
+ok    rejected: matrix on a new quantity of unknown kind
+ok    rejected: new quantity's action differs from its card
+ok    rejected: '?' action under a known meaning
+ok    rejected: matrix written for a card's single number
+ok    rejected: missing value of a new quantity
+ok    rejected: old field name absent_value
+ok    rejected: a known value for a new quantity
+ok    rejected: 'same' for a variable
+ok    rejected: number as old value of an unknown kind
+ok    rejected: one number as old value of a 2-component quantity
+ok    rejected: decimal old value
+ok    rejected: floor without rules_version
+ok    rejected: floor without rules
+ok    rejected: rules with version 0
+ok    rejected: no rules with version 1
+ok    rejected: rules not a list
+ok    rejected: rule without protected
+ok    rejected: protected as a string
+ok    rejected: verdict field on a rule
+ok    rejected: rule with sentences and keeps
+ok    rejected: rule with neither
+ok    rejected: unknown keep letter
+ok    rejected: duplicate keep letter
+ok    rejected: keeps order on a floor without order
+ok    rejected: less-than in a rule
+ok    rejected: >= in a rule
+ok    rejected: or before if-then
+ok    rejected: and without if-then
+ok    rejected: and after if-then
+ok    rejected: two if-thens
+ok    rejected: bracket around an atom
+ok    rejected: two relation signs in an atom
+ok    rejected: cube power
+ok    rejected: a power of a power
+ok    rejected: division between names
+ok    rejected: fraction not in lowest terms
+ok    rejected: integer written as a fraction
+ok    rejected: fraction with denominator 0
+ok    rejected: minus inside a product
+ok    rejected: derivative in a rule
+ok    rejected: function in a rule
+ok    rejected: decimal in a rule
+ok    rejected: uppercase name in a rule
+ok    rejected: rule variable is a generator
+ok    rejected: rule without vars
+ok    rejected: rule vars not an object
+ok    rejected: variable type 'any'
+ok    rejected: undeclared variable
+ok    rejected: declared variable unused
+ok    rejected: variables on a keeps rule
+ok    rejected: duplicate rule id in a floor
+ok    rejected: rule id reuses a registry id
+ok    rejected: rule src not seed
+ok    rejected: kind over the integers
+ok    rejected: order sign in a kind relation
+ok    rejected: connective in a kind relation
+ok    rejected: unknown name in a kind relation
+ok    rejected: missing builds
+ok    rejected: builds not a list
+ok    rejected: verdict field on a build
+ok    rejected: missing origin
+ok    rejected: unknown origin
+ok    rejected: origin floor without rules
+ok    rejected: empty role
+ok    rejected: generator in no role sentence
+ok    rejected: unknown name in a role
+ok    rejected: order in a role
+ok    rejected: connective in a role
+ok    rejected: cube in a role
+ok    rejected: generator reuses an origin generator
+ok    rejected: generator reuses a registry id
+ok    rejected: build src unknown
+ok    rejected: vars on a build
+ok    rejected: free variable in a role
+ok    rejected: generator named twice
+ok    rejected: unknown frame
+ok    rejected: frame is the origin's floor
+ok    rejected: frame floor without rules
+ok    rejected: duplicate frame
+ok    accepted: matrix action on a 2-component new quantity
+ok    accepted: known meaning whose matrix matches its card
+ok    accepted: two new bodies of the same type
+ok    accepted: same new body id in two alternative fillers
+ok    accepted: calibration unknown
+ok    accepted: law accepted later than some observations
+ok    accepted: present all along: 'same' with an unknown constant
+ok    accepted: zero of an unknown kind as old value
+ok    accepted: unknown old value
+ok    accepted: a role with no new generator
+ok    accepted: a fraction in a role
+ok    accepted: ^(-1) with brackets
+ok    accepted: two builds that reuse local names
+ok    accepted: a generator named like a rule variable
+ok    canonical form ignores statement order and spacing
+ok    canonical form ignores the order of new bodies and new quantities
+ok    canonical form changes when a value or an epoch changes
+ok    sentences: spacing, u^2, and the order of role sentences and generators do not matter; brackets do
+ok    sentences: a leading minus covers the whole product (-h*g is -(h*g), not (-h)*g)
+ok    rules: a - b is a + (-b); the order of atoms, sentences and rules does not matter; brackets do
+ok    accepted: a type-restricted rule (old with new), and it changes the canonical form
+ok    58 sentences read back unchanged from their canonical spelling
+      accepted: W1['quantities', 0, 'dims'] = {}
+      accepted: W1['quantities', 0, 'dims', 'T'] = 7
+      accepted: W1['quantities', 0, 'dims', 'T'] = -1
+      accepted: W1['quantities', 0, 'value'] = '?'
+      accepted: W1['quantities', 1, 'dims'] = {}
+      accepted: W1['quantities', 1, 'dims', 'L'] = 7
+      accepted: W1['quantities', 1, 'dims', 'L'] = -1
+      accepted: W1['quantities', 1, 'value'] = '?'
+      accepted: W1['quantities', 2, 'dims'] = {}
+      accepted: W1['quantities', 2, 'dims', 'L'] = 7
+ok    no crash in 10214 wrong-type replacements
+info  139 of 10214 replacements were accepted (first 10 listed above; run with --all to list every one; check each is legitimate)
+
+174/174 checks passed

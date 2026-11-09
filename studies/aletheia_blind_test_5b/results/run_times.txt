@@ -1,0 +1,8 @@
+session started 2026-10-31T15:45:31Z (Python 3.12.10)
+A run: stopped at 2026-10-31T16:31:42Z, more than 60 s on battery; the world in progress starts again on AC power
+A run: on battery at 2026-10-31T16:31:42Z; waiting for AC power
+A run: AC power back at 2026-10-31T16:32:32Z
+A: exit 0, last start 1560 s, ended 2026-10-31T16:58:32Z
+B run: on battery for 10 s, tolerated (ended 2026-10-31T18:00:42Z)
+B: exit 0, last start 4100 s, ended 2026-10-31T18:06:52Z
+session ended 2026-10-31T18:06:52Z

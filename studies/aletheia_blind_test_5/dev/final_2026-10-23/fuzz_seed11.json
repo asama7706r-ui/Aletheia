@@ -1,0 +1,1206 @@
+[
+ {
+  "role": [
+   "ga*ga = -2",
+   "gb*gb = -2",
+   "gc*gc = -2",
+   "ga*gc = -(gc*ga)",
+   "gb*gc = -(gc*gb)",
+   "ga != -1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 4.2,
+  "t_ref": 0.3
+ },
+ {
+  "role": [
+   "ga*ga = -2",
+   "gb*gb = -1",
+   "ga*gb = -(gb*ga)",
+   "ga != 0"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.6,
+  "t_ref": 0.2
+ },
+ {
+  "role": [
+   "ga*ga = 0",
+   "gb*gb = -1",
+   "ga*gb = gb*ga",
+   "ga != e1"
+  ],
+  "origin": "k02",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.5,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = -2",
+   "gb*gb = 2",
+   "ga*gb = -(gb*ga)",
+   "ga != 0"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.8,
+  "t_ref": 0.2
+ },
+ {
+  "role": [
+   "ga*ga = -1",
+   "gb*gb = 2",
+   "ga*gb = gb*ga",
+   "gb != -1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.4,
+  "t_ref": 0.1
+ },
+ {
+  "role": [
+   "ga*ga = 2",
+   "gb*gb = -1",
+   "ga*gb = -(gb*ga)",
+   "gb != 1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.8,
+  "t_ref": 0.4
+ },
+ {
+  "role": [
+   "ga*ga = 1",
+   "gb != 0"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = -2"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.1,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = -2",
+   "gb*gb = -1",
+   "ga*gb = -(gb*ga)",
+   "ga != 1",
+   "gb != -1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.6,
+  "t_ref": 0.2
+ },
+ {
+  "role": [
+   "ga*ga = -1",
+   "gb*gb = 1",
+   "gc*gc = 0",
+   "ga*gb = -(gb*ga)",
+   "ga*gc = gc*ga"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 1.8,
+  "t_ref": 1.2
+ },
+ {
+  "role": [
+   "ga*gb = -(gb*ga)",
+   "ga != -1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "gb*gb = 2",
+   "gc*gc = -1",
+   "ga*gb = -(gb*ga)",
+   "gb*gc = -(gc*gb)",
+   "ga != -1"
+  ],
+  "origin": "k02",
+  "frames": [
+   "f03"
+  ],
+  "procedure": [
+   "NEW_KIND",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "truth": [
+   "NEW_KIND",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 27.6,
+  "t_ref": 53.7
+ },
+ {
+  "role": [
+   "ga*ga = 1"
+  ],
+  "origin": "k01",
+  "frames": [
+   "f03"
+  ],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = -1",
+   "gb*gb = 0",
+   "gc*gc = 1",
+   "ga*gb = -(gb*ga)",
+   "ga*gc = -(gc*ga)",
+   "gb*gc = gc*gb"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 2.2,
+  "t_ref": 1.2
+ },
+ {
+  "role": [
+   "ga != 0"
+  ],
+  "origin": "k02",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = -1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "gb*gb = -2",
+   "ga*gb = -(gb*ga)",
+   "ga != -1"
+  ],
+  "origin": "k01",
+  "frames": [
+   "f03"
+  ],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.1,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = 2",
+   "gb != 0"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga != 0"
+  ],
+  "origin": "k02",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = -2",
+   "gb*gb = -2",
+   "gc*gc = -2",
+   "ga*gb = -(gb*ga)",
+   "ga*gc = -(gc*ga)",
+   "ga != e1",
+   "gc*e1 = -(e1*gc)"
+  ],
+  "origin": "k02",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q5",
+      "q5[nno]",
+      "q5[non]",
+      "q5[noo]",
+      "q5[onn]",
+      "q5[oon]"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q5[nno]",
+      "q5[non]",
+      "q5[noo]",
+      "q5[onn]",
+      "q5[oon]",
+      "q6"
+     ],
+     "no_witness"
+    ],
+    [
+     [
+      "q6",
+      "q6[on]"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q5",
+      "q5[nno]",
+      "q5[non]",
+      "q5[noo]",
+      "q5[onn]",
+      "q5[oon]"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q5[nno]",
+      "q5[non]",
+      "q5[noo]",
+      "q5[onn]",
+      "q5[oon]",
+      "q6"
+     ],
+     "no_witness"
+    ],
+    [
+     [
+      "q6",
+      "q6[on]"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 1877.9,
+  "t_ref": 2459.7
+ },
+ {
+  "role": [
+   "ga*ga = 2",
+   "gb*gb = 1",
+   "ga*gb = -(gb*ga)",
+   "gb != 1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.3,
+  "t_ref": 0.1
+ },
+ {
+  "role": [
+   "ga*ga = -2",
+   "ga*gb = -(gb*ga)",
+   "ga != 1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.1,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*e1 = -(e1*ga)",
+   "ga != 1"
+  ],
+  "origin": "k02",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = -2",
+   "gb*gb = 0",
+   "gc*gc = -2",
+   "ga*gb = gb*ga",
+   "ga*gc = -(gc*ga)",
+   "gb*gc = -(gc*gb)",
+   "gb != -1",
+   "gc != 1"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 5.9,
+  "t_ref": 0.1
+ },
+ {
+  "role": [
+   "ga*ga = 2",
+   "ga != 1"
+  ],
+  "origin": "k02",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga != 0"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k01"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.0,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "gb*gb = 1",
+   "ga != e1",
+   "ga != 1",
+   "gb != 0"
+  ],
+  "origin": "k02",
+  "frames": [],
+  "procedure": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "truth": [
+   "KNOWN_SUFFICES",
+   "k02"
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.1,
+  "t_ref": 0.0
+ },
+ {
+  "role": [
+   "ga*ga = 1",
+   "gb*gb = 2",
+   "ga*gb = -(gb*ga)"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.2,
+  "t_ref": 0.1
+ },
+ {
+  "role": [
+   "ga*ga = 1",
+   "gb*gb = -1",
+   "ga*gb = -(gb*ga)"
+  ],
+  "origin": "k01",
+  "frames": [],
+  "procedure": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "truth": [
+   "BRANCHES",
+   [
+    [
+     [
+      "q12",
+      "q13",
+      "q14",
+      "q6"
+     ],
+     "witnessed"
+    ],
+    [
+     [
+      "q12",
+      "q14",
+      "q5"
+     ],
+     "no_witness"
+    ]
+   ]
+  ],
+  "agree": true,
+  "problems": {
+   "false_witness": [],
+   "collapse": [],
+   "bad_proof": []
+  },
+  "t_proc": 0.2,
+  "t_ref": 0.1
+ }
+]

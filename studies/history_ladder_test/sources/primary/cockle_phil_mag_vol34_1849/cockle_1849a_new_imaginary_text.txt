@@ -1,0 +1,800 @@
+SOURCE: J. Cockle, "On a new Imaginary in Algebra", Phil. Mag. series 3, vol. 34 (1849), pp. 37-47. Extracted from londonedinburghp34lond.pdf (SHA-256 0fdf9e7ed5dda3f90f0bdf2814187950a894614aabc2531fdb34889cdb3a7687) by pdftotext (reading order), PDF pages 51-61 (1-based). The volume was downloaded by the project owner in an ordinary browser from the Biodiversity Heritage Library item cited by Wikipedia (item 20121). OCR errors kept as they are.
+========================================================================
+[ 37 ]
+
+III. On a new Imaginary in Algebra, By James Cockle,
+Esq.^ M.A., of Trinity College^ Cambridge, and Barrister-
+at-Latio of the Middle Temple*.
+
+ALGEBRA may be regarded under the triple aspect presented by the words Identity, Equivalence, and Impossi-
+
+bility f; but the latter view will fall more particularly within the scope of the present observations. The ordinary algebra,
+
+it is true, takes cognizance, not only of negative and unreal
+
+quantities, but sometimes of questions involving impossibility.
+
+This impossibility is indicated either by contradictory arith-
+
+metical results or, occasionally, by the symbol infinity %. But,
+
+neither in the one case nor the other, does the indication of
+
+impossibility furnish us with the elements of a calculus. Un-
+
+real results, on the contrary, although not subjects of concep-
+
+tion, like number, nor directly interprelable, like negative
+
+quantities, are yet not only indirectly interpretable, but also
+
+-- Why My important instruments of investigation.
+
+is this?
+
+answer is, because impossibility has never yet been symbol-
+
+ized. And I would add that, before this is done, we ought to
+
+* Communicated by T. S. Davies, Esq., F.R.S.L. & Ed., &c., who requests
+us to annex the following note. [It will of course be understood that I do not pledge myself to an agree-
+ment with Mr. Cockle's views on the geo/nefnca/ signification of his i,^', i. With respect to them as algebraical symbols, I would not here offer an
+opinion : but with respect to the geometrical interpretation, I take a totally different view, as will be inferred from a short paper of mine printed in v"oSl.haxdxioxw.."(pp. 1 71-175) of the Philosophical Magazine, under the signature
+
+Mr. Cockle has undoubtedly the weight of cotemporary scientific authority on his side of the question; and, indeed, I believe I stand nearly alone
+in the view I take of these questions. It would, however, be as unphilo-
+sophical a mode of searching for the truth as it would be disingenuous in
+the discussion, to suppress the expression of all views which differ from
+those which 1 may happen to entertain. It is always a matter of far less moment who is right than what is true.
+Mr. Cockle very kindly put his paper into my hands for perusal before he printed it; and J have much pleasure in fulfilling his request by forward-
+ing it to you.
+I may add, that it is much to be desired that the history of the attempts that have been made to give an explanation of the symbols of incongruity should be published. A strict discrimination between the views of different algebraists and geometers might prevent the waste of much valuable time and power; for there can be no doubt that a large portion of the spe-
+culations which have been put forward in recent times are essentially iden-
+tical with much earlier ones.
+
+Little Heath, Charlton, Nov. 25, 1848.
+
+T. S. D.]
+
+t Phil. Mag. S. 3, vol. xxxii. p. 352. X Peacock, Report on Analysis (Third Report of British Association),
+
+pp. 237-238.
+
+38
+
+Mr. J. Cockle 07i a new Imaginary in Algebra.
+
+hesitate in saying, either that impossibility is incapable of being
+
+rendered subservient to the purposes of algebra, or even that
+
+A it is absolutely uninterpretable.
+
+symbol for impossibility
+
+is not only desirable, but actually necessary, provided that we
+
+wish to classify with accuracy the various subjects of algebraic
+
+We research, and to distinguish those which are unreal from those
+
+which are impossible.
+
+might adopt an arbitrary symbol
+
+to denote impossibility; but a deduced symbol is preferable,
+
+for it gives to our investigations the character of true develop-
+
+ments of ordinary algebra. Such a deduced symbol I have
+obtained by means of a surd equation *. The next step is, to
+
+ascertain the fundamental properties of the new symbol, its
+
+origin and nature being duly considered. As we might ex-
+
+pect, a priori, anomalous results offer themselves in the course
+
+of our progress with these inquiries; such results require at
+least an attempt at explanation. The geometrical interpreta-
+
+tion (or lather capability of interpretation) of the new symbol
+
+is another point not unworthy of consideration, and the same
+
+-- may be said of the employment of that symbol in analytical
+discussions. I purpose, then, in this paper, to treat, 1, of the
+
+Utility of the new Symbol; 2, of the Value of its Square;
+
+3,
+
+of a certain
+
+Anomalous
+
+Result ;
+
+4,
+
+of the
+
+Interpretation of
+
+the Symbol in Geometry ; and, lastly, of its proposed Employ-
+
+ment in Analysis.
+
+1. Of the Utility of the new Symbol.
+I shall show that there are i-elations, which cannot be expressed by means of the ordinary algebraic symbols. Hence, if it be of any importance to express such relations, a new notation must be adopted. That it is of importance, those who value logical precision and accurate classification will, if
+I am not mistaken, be disposed to admit, on such grounds
+alone, and quite irrespectively of any ulterior applications of
+which the new symbol may be susceptible. It will be observed, in what follows, that I have in certain cases employed an ac-
+cented zero (O'). I have done this in order to distinguish what is, in fact, an absolute negation of existence, from the
+* This symbol possesses the character which we might, almost, have an-
+ticipated for it a priori. In Universal Arithmetic, a negative quantity is impossible (Peacock, Report, p. 189), but its square is possible. So, even
+when negative quantities are recognized, a negative square is contradictory, and unreal quantities are impossidle, but their squares are possible. In like
+-- manner, the square of a Pure Impossible of a quantity taken as simulta-- neously positive and negative is to be treated as possible. The contra-
+diction vanishes on squaring, and there is a striking analogy with the otlier
+cases.
+
+Mr. J. Cockle on a new Imaginary in Algebra.
+
+39
+
+ordinary (unaccented) zero which represents a certain state of
+
+quantity*.
+
+Let
+
+0'=l + <;-;
+
+(1.)
+
+-- multiply both sides of this equation by 1 V7, and we have
+
+0'x(l->/;')=(l + y>-)(l-v'i); . . . (2.)
+but
+l--/;'=2-(l + Vi) = 2-0';
+
+hence, substituting on the left-hand side of (2.), and multiply-
+
+ing together the factors which compose its right, we obtain
+
+0'x(2-0') = l-J.
+
+(3.)t
+
+In (1.) substitute unity for J; the result is
+
+0'=14-1;
+
+hence J is not equal to unity, and consequently 1 --j is not
+
+equal to zero. Acting upon this, let us proceed to obtain,
+
+We from the symbols of ordinary algebra, the most general ex-
+
+pression for a quantity different from zero.
+
+may attain
+
+^ -- our end as follows. Let a, w, and oe be any real quantities
+
+whatever, positive, negative or zero, and let /=
+
+1 also ;
+
+suppose that
+
+W = MJ-a+(yw -- a/)(\x--a}),
+
+and
+
+XV
+
+=
+
+/a--a\/a--a\ ^-a+(X,w--a/)(\x--a'I;
+
+then
+
+W + /X
+
+is the most general expression of ordinary algebra for a quan-
+tity different from zero, and may be made to take any given value whatever, excepting zero. Now, as we have seen,
+
+--j= 1
+
+some quantity other than zero ,-
+
+hence, those who would maintain the adequacy of ihe ordinary
+notation to express any relation whatever, possible or impossible, must sustain the equation
+
+l-j=W + iX;
+
+* Peacock (Third Report of British Association), pp. 232,233, &c., and also p. 268. The accented zero is discontinuous; and a remark of Pro-
+fessor J. R. Young, on impossible equations, in the Mechanics' Magazine
+(vol. xlix. p. 463) suggests the characteristic that, to 0', the right-hand
+side of (1.) can make no approximation in terms of the ordinary symbols of
+
+algebra.
+t The product \/J x Vj has the double form J and v^'^ ; I here take
+
+^--1 the former value, on the principle that
+
+x v^-- I is equal to --1.
+
+40
+
+Mr. J. Cockle on a 7ie'w Imaginary in Algebra.
+
+but this equation cannot be sustained; for, if we deduce from it the value of^, and substitute that value in (1.), we arrive at
+
+0'=l+-v/l-W-zX,
+
+in place of which we may write
+0' = l+a+f/3;
+
+= X = this last equation gives /3 0, whence we infer that
+
+0;
+
+consequently, a being real, and the positive square root being
+
+taken, we arrive at
+
++�= 0'= 1
+
+unity together with a positive number',
+
+W which cannot be. Hence j is not of the form + fX, and
+
+yet it is different from zero, as will be seen on substituting
+
+-- J zero for J in (1.). In short,
+
+is a i\\XQ.x\\.\\.y sui generis an
+
+-- impossible quantity a quantity the very conception of the
+
+existence of which involves the equation (3.). And, of this last-
+
+mentioned equation, it may be added, that it is to be regarded as one of the principal symbolic decompositions which the
+
+theory ofj involves, and is not to be confounded with the ap-
+
+parently similar equation
+Ox('^-- 0) = W+2X.
+
+Thus there are impossibilities not capable of being expressed
+
+W either by zero, or by quantities of the form -f /X, unlimited
+
+W as are the values which may be given to
+
+and X. And,
+
+although infinity be among such values, it becomes necessary
+
+to have recourse to the new symbol j to indicate the impossi-
+
+bility implied in (1.). And^" would be useful, were it only to
+
+indicate such impossibilities.
+
+2. Of the Value of its Square.
+We are now arrived at a topic, the discussion of which will,
+perhaps, assist in showing that the apparent difficulties, connected with the theory ofj, are not such as to justify us in rejecting it as unsuited to the purposes of analysis, or as incapable of becoming the symbol of a calculus. In the fact, that
+j has a real square, we have something like a key to the me-
+thod of rendering available this anomalous symbol. Starting from our fundamental equation, slightly changed in its form, we have
++ -/;= -1;
+on cubing both sides of this equation, we obtain
+
+whence* we infer that
+
+* The present case is distinguishable from that alhuled to in the last
+note.
+
+Mr. J. Cockle on a new Imaginary in Algebra.
+
+41
+
+Is J then identical with either of the ordinary square roots of unity? No. In what respect does it differ from those roots ? This I proceed to show, and as follows. Unity may be regarded as the square, either of positive, or of negative
+-- unity : and, as we regard it from one or the other point of
+view, we must write its square roots thus:
++ ^(+T?, or - V{^^,
+both of which are included in the expression
+
+Let us now reverse the signs under the radical ; then the last expression becomes
+
+This last is a contradictory and, consequently, impossible expression, which takes the following two impossible forms,
++ v/(_i)2 and - \/(TT?
+which I shall represent by/ and/' respectively. Now, if we square + V'(+l)2, it becomes (+1)S the contradiction being
+eliminated by involution. Hence we infer that
+
+and it is not difficult to see that^',/ and/' are values of im-
+possible square roots of unity*. To indicate, however, that
+the discrepancy between the signs without and within the radical cannot be eliminated by merely changing the sign prefixed to the radical, I shall use additional brackets, and sup-
+pose that the following equations hold; viz.
+�y- � [+ ^^r^, and +/'= � [- -/(+!?].
+
+Seeing thus the contradictory nature of the symbols//,/',
+
+we must not be surprised at finding ourselves, very early in
+
+our inquiries on the subject, face to face with such a result as
+
+We the equation (3.) given above.
+
+see, however, that con-
+
+tradictions may vanish and available results follow.
+
+S.Ofa certain Anomalous Result.
+In the case of the equation (3.), we have seen that there is an anomaly, inherent in the very supposition of impossible quantity, which does not occur in treating of real or unreal quan-
+-- * I think that the following relations hold, viz,
+
+I shall not here attempt to discuss the relation of/ and/' to j. The
+former quantities are only introduced here to illustrate what is meant by an impossible square-root of unity.
+
+4<2
+
+Mr. J. Cockle on a new Imaginary in Algebra.
+
+tity. That equation is to be considered, rather as an evidence
+of the nature of the quantity which I am discussing, than as a
+guide (or impediment) to us in its symbolic application ; and although it merits further consideration, yet I do not feel called upon to bestow that consideration here*, inasmuch as
+in the theory of tessarines J is not affected with a radical sign,
+and it consequently becomes unnecessary, for the purpose which
+I have in view, to enter upon the subject of equations expressed
+by means of radicals. But I am about to point out another
+anomaly, the reverse of that which occurs in (3.) : it is that
+on the supposition that J^ is equal to unity,
+(H-i)(l-i) = 1-1=0;
+
+that is to say, the (unaccented) zero may be considered as the
+product of two impossible factors, neitherf of which vanishes. It can, however, be at once shown that this anomaly cannot
+
+.... lead us into error; for assuming the equation
+
+a^-b^=[a^jh){a-jb),
+
+(4.)
+
+^
+and bearing in mind that a tessarine cannot vanish unless all
+
+= = its constituents are zero, we see that neither a+jb nor a--jb can vanish, unless a~0 and b 0. Suppose that a=0 6,
+
+then the equation (4.) becomes an identical one, and no error
+
+is introduced. On the other hand, imagine that a^-- 6^ should
+
+vanish from a becoming equal to b (both a and b being differ-
+
+ent from zero), then the right-hand side of (4.) would become
+
+(a +�(�-�;
+
+but, bearing in mind the fundamental property of tessarines, we should be in no danger of inferring that one of these fac-
+
+tors must be zero, and consequently we should introduce no error into our investigations. It may be said, Is zero, then,
+
+decomposable into non-vanishing factors? Impossible. I reply, true, the factors are impossible : they are so by their origin and nature.
+
+4. Of the Interpretation of' the Symbol in Geometry.
+In this field, I am about to indicate what (I hope) will be my
+* If for no other purpose, the accent on the zero is useful for the purpose of denoting an impossible equation. If the accented zero is different from the arithmetical zero (and there are indications of a difference), what is the square (0'^) ? a negation of a negation? I think that we must regard 0'" as identical with 0', when n is positive, and, consequently, 0'~" as identical with 0'~\ and then n is negative. Zero is not supposed to be included in these values of n.
+t If one such factor be zero, the other must be infinite. But this is inconsistent with the forms of the factors. It is on a consideration of this
+kind that my theory of congeneric surd equations is based. (See Mecha-
+nics' Magazine, vols, xlvii., xlviii. and xlix.)
+
+Mr. J. Cockle on a nem Imaginary in Algebra.
+
+43
+
+-- future course, rather than actually to commence it. But I
+will not disguise the end which I am desirous of attaining
+
+that of vindicating, for ordinary algebra, a claim to the power
+
+of representing space of three dimensions, as completely as, by
+
+the aid of unreal quantities, it can denote any conditions
+
+whatever in piano, and any modification of such conditions.
+A By way of illustration, let there be given two points, and
+
+B, and let it be required to find a third point, C, such, that the
+
+AC CB rectangle
+
+x
+
+may be equal to half the square described
+
+upon AB. Now, if we proceed on the supposition C that is
+
+A somewhere in the straight line which passes through and
+
+A B, we must suppose that C lies between and B, for other-
+
+AB = wise the rectangle would obviously be greater than the square.
+
+Bearing this in mind, let
+
+2a, and ACs=:r; then the
+
+qucBsitum of the problem gives the equation
+
+x{2a--x)=2a%
+
+(5.)
+
+or
+
+whence
+
+x^--2ax=--'^a^,
+-- x-=a + a V' 1.
+
+Hence, the problem is an impossible one, if we regard C as
+
+-- lying in AB. But, if we interpret the symbol v' 1 as mean-
+
+-- ing perpendicularity* in which case we must regard (5.) as
+
+-- the representation of the problem in its most general form
+
+AB AD = we have the following construction. Along take
+
+iAB;
+
+D DC from draw
+
+perpendicular to AB, and equal to DA;
+
+C then, is the point required. The point C, so obtained, evi-
+
+dently fulfils the condition of the question. In fact, any line
+
+-- in a plane being given, as an axis, we may represent any point
++ whatever, in the plane, by the formula jo Q'V' 1, p and q
+
+being real. It is to be remarked, however, that, a line being
+
+given in space, when the symbol \^ --\ occurs in our researches,
+
+we may (as in the above problem) draw our perpendicular in
+
+whatever direction we please, provided only it be in a plane
+
+perpendicular to the primitive axis. But, the perpendicular
+
+once drawn, we have a determinedplane to which, I apprehend,
+
+all our interpretations of
+
+V'-- 1 are to be confined ;
+
+for I con-
+
+V -- ceive that, consistently with ordinary algebra, we cannot, on I occurring a second time in our investigations, take that
+
+symbol to denote a line perpendicular to, or making any angle
+
+with, the former perpendicular. Perhaps I have said enough
+
+W -- to show what my own views are, as to the applications of the
+
+symbol
+
+1, and the limitations to be imposed on its inter-
+
+* Tills has been done by Hamilton, Warren, and others.
+
+ii
+
+Mr. J. Cockle on a new Imaginary in Algebra.
+
+pretation. Supposing, then, / and its interpretation to be ad-
+mitted into geometrical inquiries, the question comes, how can j enter into such inquiries when it can never enter into the
+
+rational equations in which such inquiries usually result?
+The answer is, that geometrical conditions are not necessarily
+
+reducible to the form of rational equations. Consider, by way
+
+of example, the equation (5.). This equation, after reduction
+
+to the usual form, may be resolved into congeneric surd fac-
+
+tors ;
+
+and, the geometrical meanings of a
+
+and
+
+x being
+
+lines,
+
+we may express the evanescence of those factors in geometrical
+
+language. Such evanescence may be possible or impossible;
+
+if the latter, then^* forces itself into our investigations, and the
+next point is, how to interpret its occurrence. I think that the
+
+following are the considerations which ought to guide us in
+
+this interpretation. Imagine three points A, B, and C. If
+
+these points are in a straight line, their relations may be re-
+
+presented by real quantities, and the only determined space
+
+before us is a line. But suppose that these points are required
+
+to fulfill conditions inconsistent with the hypothesis of their
+
+being in the same straight line; then (as will be clearly seen
+
+on referring to the above problem) a. plane is determined, and
+
+unreal quantities introduced ; and, supposing that a problem
+
+respecting three points admits of solution, the most general
+
+geometrical entity that can be determined by it is a plane. If
+
+then we arrive at an impossible quantity, as the result of our
+
+geometrical inquiries respecting the possibility of a supposed
+relation between three points, we may be sure that the relation cannot exist. Were the relation possible, it would be possible
+
+in a plane ; and i is quite adequate to express (in combination
+
+with real quantities) any possible relative position of three
+
+points. Let us take a step further, and suppose that we are
+
+AB discussing the position of four points A, B, C, D. Take
+
+AB = as the primitive axis, and let
+
+2a; then the expression
+
++ D p ig may be made to represent either C or (or both, pro-
+
+vided that all the four points are in the same plane). Thus
+
+A we shall have
+
+represented by zero, B by 2a, C + by c z>,
+
+D + D and by d if. But, suppose that is out of the plane of
+
+A, B and C, then, from what has been before observed, d+if
+
+AB will cease to represent D, for i means perpendicularity to
+
+in the plane of A, B and C. Hence, in any inquiry respecting
+
+four points, the occurrence of j would not be conclusive as to
+
+the impossibility of the problem, but only as to the fact that
+
+the points cannot be in the same plane. (I assume, of course,
+
+that, in forming the condition or conditions of the problem, all
+
+the points are represented by different values of the expression
+
+p-\-iq.) In such a case, then, j would (provided the problem
+
+Mr. J. Cockle Ofi a new Imaginary in Algebra.
+
+45
+
+were possible) be the sign of perpendicularity to the plane
+
+ABC, and the transition, from regarding j as the sign of im-
+
+possibility, to viewing it as the symbol of perpendicularity, is
+by no means difficult*. As may be inferred, from what 1 said in opening the question of interpretation, I am not prepared
+
+to complete this view of the question in the present paper ;
+
+but I cannot refrain from remarking, that j is not an unreal
+
+root of unity, and that, although it may indicate perpendicu-
+
+larity, yet that we must envisage it in a manner different from
+
+-- We that in which we regard i. In fact j indicates perpendicularity
+
+to a plane as / does to a line; J^=l and 2^= 1.
+
+may
+
+On realize the distinction, geometrically, as follows.
+
+the semi-
+
+diameter of a sphere conceive another sphere described. Let
+
+the point of contact of the spheres be considered as the pole
+
+of both. Conceive two points, one at the centre of the larger
+
+sphere, and the other situate anywhere on its equator ; let the
+
+first point revolve in a meridian of the smaller sphere, and
+
+We the second in the equator of the greater, and let the angular
+velocity of the first point be double that of the second.
+
+need only consider the relative positions of the points when
+
+the first point is either at die centre of the greater sphere, or
+at the common pole of both the spheres. It will be seen that
+
+the phases (so to say) of the points correspond to those of the
+
+above quantities ^'^ and i'^; and also that the first point repre-
+
+sents direction perpendicular to a plane, and the second, direc-
+
+tion perpendicular to a linef. I mention this because it might
+
+be supposed thatj is only a second perpendicular to the primi-
+
+tive axis, and, consequently, that it is only a second unreal root
+
+of unity J.
+
+5. Of its proposed Employment in Analysis.
+
+Should the admissibility of the new symbol j be established
+
+-- � The transition from unreal to impossible quantities will, perhaps, be
+best exemplified by the two following problems: (1.) Find three equi-
+
+distant points, and, (2.), Find four equidistant points. The first may be
+
+expressed by means of a quadratic with
+
+unreal roots ;
+
+the unreal
+
+quantities
+
+arising from one of the points being out of the /me joining the other two.
+
+So, unless I am mistaken, the solution of the last may be exhibited by
+
+means of impossible quantities, which take their origin from the fourth
+
+point being out oi the plane of the other three.
+
+\ This remark will perhaps be better expressed when we have substituted,
+
+for the lesser sphere, a prolate spheroid, and then diminished indefinitely the minor axis of the spheroid. Its major axis is, of course, to remain unal-
+tered, and equal to, and coincident with, the axial semidiameter of the
+
+larger sphere.
+X The symbol _/ will enter into geometrical inquiries in the following manner. Suppose that we arrive at such an equation as
+
+then, s z=jr is the solution.
+
+4-6
+
+Mr. J. Cockle on a new Imaginary in Algebra.
+
+its use would not be confined to the discussion of the functions
+
+which I have proposed to call tessarines. It would, as it seems
+
+to me, be capable of other applications, and would tend to
+-- generalize all processes to which the imaginary symbol \^ \
+
+has been yet applied. Thus, by way of illustration, consider
+
+the expression
+
+^w �ix �jy ikg
+
+If we vary, in every possible way, the order of the signs in
+
+the above; add the different values, so obtained, together; and
+
+expand the sum ; it will be seen that the result is free from imaginaries. Hence, that sum may, in all cases, be used instead of the resulting series. The finite expression for the series, so
+obtained, would in some instances be found useful.
+
+It now only remains to make one remark respecting the
+-- notation which I have adopted. In taking i to represent V' 1,
+
+I think that I acted under an impression that it had been so
+used anterior to the quaternion theory*. The use of^" and k
+
+followed that of /, and seemed to offer an easier and better
+
+mode of con^paring results with that theory than I should
+
+otherwise have had. In order, however, in future to avoid
+
+confusion, and the misapprehensions which may arise from
+
+employing like symbols for unlike purposes, I shall use a, /3,
+and y in place of j f, and k respectively. Under this notation,
+
+a tessarine {t) will be written
+
+w + ax + ^y + yz,
+
+where
+
+a2=-l, �^ = y, -^^ = 72, ya=-/3;
+
+and also, if the view taken in this paper be correct,
+= (3^=1, and /3y �.
+In my endeavours to bring space of three dimensions under the dominion of a new species of ordinary algebra, I may per-
+haps be permitted to disclaim anything like dogmatism. I
+should wish all my views respecting the new symbol to be regarded in the light of suggestions. And if, regarded as sug-
+gestions, they should have the effect of directing attention to the theory of congeneric surd equations, they will not be without their utility.
+
+2 Church-Yard Court, Temple, November 23, 1848.
+
+-- Postscript, 7th December 1848. Perhaps I shall be per-
+mitted to add the following few lines on the subject :
+
+W. * Sir
+
+R. Hamilton has noticed this in the Phil. Mag. S. 3, vol. xxv.
+
+Mr. J. Cockle on a new Imaginary in Algebra.
+
+47
+
+6. Of the Modular Relations of Tessarines.
+Let 9 be the amplitude, f the colatitude, vj/ the longitude,
+and IX, the modulus of a tessarine (t). To these quantities (which
+are identical with the corresponding ones in the quaternion theory, and which may, without confusion, be adopted from that theory) must be added another, which I propose to call
+the submodulus, and to denote by v. The submoduhis is de-
+fined by the equation
+
+and the submodulus of the product (^") of two tessarine factors {t and t') is determined by the relation
+
+and the modulus of that product by
+We have, further, + + + = + WTO)" xa^^ yy" zz^' ttj'jtt^ 2y'v\
+and
+
+-- The equation for the submodulus may also be expressed as
+follows:
+
++ v2=j�-2 sin 6 sin <p (cos d cos \l/ sin 3 sin if/ cos <p).
+
+The construction of this last equation, and of the preceding
+
+-- ones, 1 hope to discuss on another occasion. And there is a
+surface that defined by the equation
+
+% -- = (where
+
+jM,?/ cos ^-\-x% is supposed constant), which appears to merit at-
+
+tention in connexion with the theory of tessarines.
+
+Second Postscript, I'Mh December 1848. I have the satisfaction of adding, that the hope above expressed has not been disappointed, and that I have solved the problem of the four equidistant points in the manner I proposed. I have determined the position of the fourth point by an expression of the
+form
+A + m+iC;
+C where is to be measured in a direction perpendicular to the
+plane in which the first, second, and third points are situate.
+The four points are, of course, at the angles of a regular
+tetrahedron. I hope to obtain for the solution a place in this
+Journal.
+

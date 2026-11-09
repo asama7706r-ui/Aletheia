@@ -1,0 +1,102 @@
+{{Short description|Concept in linear algebra}}
+A '''quaternionic matrix''' is a [[matrix (mathematics)|matrix]] whose elements are [[quaternion]]s.
+
+==Matrix operations==
+The quaternions form a [[noncommutative]] [[ring (algebra)|ring]], and therefore [[Matrix addition|addition]] and [[Matrix multiplication|multiplication]] can be defined for quaternionic matrices as for matrices over any ring.
+
+'''Addition'''. The sum of two quaternionic matrices ''A'' and ''B'' is defined in the usual way by element-wise addition:
+:<math>(A+B)_{ij}=A_{ij}+B_{ij}.\,</math>
+
+'''Multiplication'''. The product of two quaternionic matrices ''A'' and ''B'' also follows the usual definition for matrix multiplication. For it to be defined, the number of columns of ''A'' must equal the number of rows of ''B''. Then the entry in the ''i''th row and ''j''th column of the product is the [[dot product]] of the ''i''th row of the first matrix with the ''j''th column of the second matrix. Specifically:
+:<math>(AB)_{ij}=\sum_s A_{is}B_{sj}.\,</math>
+For example, for
+:<math>
+U =
+\begin{pmatrix}
+  u_{11} & u_{12}\\
+  u_{21} & u_{22}\\
+\end{pmatrix},
+\quad
+V =
+\begin{pmatrix} 
+  v_{11} & v_{12}\\
+  v_{21} & v_{22}\\
+\end{pmatrix},
+</math>
+the product is
+:<math>
+UV =
+\begin{pmatrix}
+  u_{11}v_{11}+u_{12}v_{21} & u_{11}v_{12}+u_{12}v_{22}\\
+  u_{21}v_{11}+u_{22}v_{21} & u_{21}v_{12}+u_{22}v_{22}\\
+\end{pmatrix}.
+</math>
+Since quaternionic multiplication is noncommutative, care must be taken to preserve the order of the factors when computing the product of matrices.
+
+The [[Identity element|identity]] for this multiplication is, as expected, the diagonal matrix I&nbsp;=&nbsp;diag(1, 1, ... , 1). Multiplication follows the usual laws of [[associativity]] and [[distributivity]]. The trace of a matrix is defined as the sum of the diagonal elements, but in general
+:<math>\operatorname{trace}(AB)\ne\operatorname{trace}(BA).</math>
+
+Left scalar multiplication, and right scalar multiplication are defined by
+:<math>(cA)_{ij}=cA_{ij}, \qquad (Ac)_{ij}=A_{ij}c.\,</math>
+Again, since multiplication is not commutative some care must be taken in the order of the factors.<ref>{{cite book |title=Matrix groups for undergraduates|first=Kristopher|last=Tapp
+|publisher=AMS Bookstore|year=2005|isbn=0-8218-3785-0 |pages=11 ''ff''
+|url=https://books.google.com/books?id=Un_15Im3NhUC&pg=PA11}}</ref>
+
+==Determinants==
+There is no natural way to define a [[determinant]] for (square) quaternionic matrices so that the values of the determinant are quaternions.<ref>{{cite journal |author=Helmer Aslaksen |title=Quaternionic determinants |year=1996 |journal=[[The Mathematical Intelligencer]] |volume=18 |number=3 |pages=57–65 |doi=10.1007/BF03024312|s2cid=13958298 }}</ref> Complex valued determinants can be defined however.<ref>{{cite journal |author=E. Study |title=Zur Theorie der linearen Gleichungen |year=1920 |journal=[[Acta Mathematica]] |volume=42 |number=1 |pages=1–61 |language=German |doi=10.1007/BF02404401|doi-access=free }}</ref> The quaternion ''a'' + ''bi'' + ''cj'' + ''dk'' can be represented as the 2&times;2 complex matrix
+: <math>\begin{bmatrix}~~a+bi & c+di \\ -c+di & a-bi \end{bmatrix}.</math>
+This defines a map Ψ<sub>''mn''</sub> from the ''m'' by ''n'' quaternionic matrices to the 2''m'' by 2''n'' complex matrices by replacing each entry in the quaternionic matrix by its 2 by 2 complex representation. The complex valued determinant of a square quaternionic matrix ''A'' is then defined as det(Ψ(''A'')). Many of the usual laws for determinants hold; in particular, an [[square matrix|''n'' by ''n'' matrix]] is invertible if and only if its determinant is nonzero.
+
+==Hyperquaternionic representation==
+Due to the isomorphism <math>\mathbb{H}^{\otimes 2}\simeq m(4,\mathbb{R})</math> where <math>m(4,\mathbb{R})</math> is a <math>4\times 4</math> real matrix, a quaternion matrix can be represented as a [[hypercomplex number]] constituted by a [[Tensor_product_of_algebras|tensor product]] of [[quaternion]] algebras called hyperquaternions
+
+<math>\begin{align}\mathbb{H}^{\otimes m}
+&=\mathbb{H}\otimes\mathbb{H}\otimes\cdots\otimes\mathbb{H} \text{ } (m \text{ terms}) \\
+&=(i,j,k)\otimes(I,J,K)\otimes(l,m,n)\otimes\cdots \\ 
+\end{align}</math>  
+
+where <math>(i,j,k),(I,J,K),(l,m,n)</math>, etc. are commuting quaternionic systems. 
+<math>i=i\otimes 1,J=1\otimes j,iJ=(i\otimes 1)(1\otimes j)</math>, etc <ref name="ref_girard_2018">{{cite journal |last1=Girard |first1=P.R. |last2=Clarysse |first2=P. |last3=Pujol |first3=R. |last4=Goutte |first4=R. |last5=Delachartre |first5=P. |date=2018 |title=Hyperquaternions: a new tool for physics|url=https://doi.org/10.1007/s00006-018-0881-8 |journal=Advances in Applied Clifford Algebras |volume=28 |issue= |publisher= Springer |pages=1-14 |jstor= |doi=10.1007/s00006-018-0881-8 |access-date=|url-access=subscription }}</ref><ref>{{cite book |last1=Sprössig |first1=W. |title=Advancements in Complex Analysis: From Theory to Practice |chapter=Some new aspects in hypercomplex analysis |date=2020 |pages=497-518 |publisher=Springer |location= |language= |url=https://doi.org/10.1007/978-3-030-40120-7}}</ref>. 
+Examples are: <math>M_{4\times 4}\mathbb{(H)}\simeq \mathbb{H}^{\otimes 2}\otimes\mathbb{H}\simeq \mathbb{H}^{\otimes 3}</math>, <math>M_{16\times 16}\mathbb{(H)}\simeq \mathbb{H}^{\otimes 4}\otimes\mathbb{H}\simeq \mathbb{H}^{\otimes 5}</math>.
+
+A hyperconjugation is defined by <ref name="ref_girard_2018"></ref> 
+<math>(\mathbb{H}^{\otimes m})^*=(\mathbb{H}_c^{\otimes m})=\mathbb{H}_c\otimes\mathbb{H}_c\otimes\cdots\otimes\mathbb{H}_c</math> 
+
+where 
+<math>\mathbb{H}_c</math> is the quaternion conjugation hence, <math>(iJ)^*=(-i)(-J)=iJ</math>. In particular, <math>(\mathbb{H}^{\otimes 3})^*=[M_{4\times 4}\mathbb{(H)}]_c^T</math> where <math>[A\mathbb{(H)}]_c^T</math> is the transpose  quaternion conjugate of the quaternionic matrix <math>A\mathbb{(H)}</math>.
+
+The unitary symplectic group <math>USp(n)</math> is the group of quaternionic matrices <math>A\in M_{n\times n}\mathbb{(H)}</math> such that <math>AA^*=A^*A=E_n</math><ref> {{cite journal |last1=Girard |first1=P.R. |last2=Clarysse |first2=P. |last3=Pujol |first3=R. |last4=Delachartre |first4=P. |date=2025 |title=Hyperquaternionic unitary symplectic groups: A unifying tool for physics|url=https://rdcu.be/exfs2 |journal=Advances in Applied Clifford Algebras |volume=35 |issue=40 |publisher= Springer |pages= |jstor= |doi=10.1007/s00006-025-01402-w |access-date=}}</ref>.
+
+Hyperquaternions are [[Clifford algebras]] <math>Cl_{p,q}\mathbb{(R)}</math> having <math>n=p+q</math> generators <math>e_1,e_2,...,e_n</math> multipying according to <math>e_ie_j+e_je_i=0</math> <math>(i\ne j)</math> with <math>e_i^2=+1</math> (<math>p</math> generators) and <math>e_i^2=-1</math> (<math>q</math>  generators) . One has <ref>{{cite conference |last1=Girard |first1=P.R. |last2=Pujol |first2=R. |last3=Clarysse |first3=P. |last4=Delachartre |first4=P. |date=2023 |title=Hyperquaternions and physics |url=https://scipost.org/10.21468/SciPostPhysProc.14.030 |work= |book-title= |conference= SciPost Phys. Proc. p.030 |location= |publisher= |access-date= }}</ref>
+<math>\mathbb{H}\simeq Cl_{0,2} \mathbb{(R)}, \mathbb{H}^{\otimes 3}\simeq Cl_{2,4} \mathbb{(R)}, \mathbb{H}^{\otimes 5}\simeq Cl_{4,6} \mathbb{(R)}</math>.
+A basis of <math>\mathbb{H}^{\otimes 2}\simeq M_{4\times 4} \mathbb{(R)}</math> is given by <ref name="ref_girard_2018"></ref>
+
+<math>\begin{align}
+e_0&=j\otimes 1=j=\begin{bmatrix}
+0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \\ 
+1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\
+\end{bmatrix},
+e_1=k\otimes i=kI=\begin{bmatrix}
+0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -1 \\ 
+1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\
+\end{bmatrix},  \\
+e_2&=k\otimes j=kJ=\begin{bmatrix}
+-1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 
+0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\
+\end{bmatrix},
+e_3=k\otimes k=kK=\begin{bmatrix}
+0 & 0 & 0 & -1 \\ 0 & 0 & -1 & 0 \\ 
+0 & -1 & 0 & 0 \\ -1 & 0 & 0 & 0 \\
+\end{bmatrix}.  \\
+\end{align}</math>
+
+==Applications==
+Quaternionic matrices are used in [[quantum mechanics]]<ref>{{cite journal |author= N. Rösch |title=Time-reversal symmetry, Kramers' degeneracy and the algebraic eigenvalue problem |year=1983 |journal=[[Chemical Physics]] |volume=80 |issue=1–2 |pages=1–5 |doi=10.1016/0301-0104(83)85163-5|bibcode=1983CP.....80....1R }}</ref>  and in the treatment of [[multibody problem]]s.<ref>{{cite book |title=Quaternionic and Clifford calculus for physicists and engineers |url=https://archive.org/details/quaternionicclif00kgue |url-access=limited |author=Klaus Gürlebeck |author2=Wolfgang Sprössig |chapter=Quaternionic matrices |pages=[https://archive.org/details/quaternionicclif00kgue/page/n43 32]–34 |publisher=Wiley |year=1997 |isbn=978-0-471-96200-7}}</ref>
+
+==References==
+{{reflist}}
+
+{{Matrix classes}}
+
+[[Category:Matrices (mathematics)]]
+[[Category:Linear algebra]]

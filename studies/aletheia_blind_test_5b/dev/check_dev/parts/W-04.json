@@ -1,0 +1,41 @@
+{
+ "procedure": {
+  "bounds": {
+   "P2": 4,
+   "P3": 16,
+   "S": 4,
+   "list": "1"
+  },
+  "branches": [],
+  "deciders": [],
+  "freedom": null,
+  "impossible": null,
+  "known": {
+   "kind": "k02",
+   "theta": {
+    "hi": "0",
+    "lo": "-1",
+    "poly": [
+     "-1",
+     "0",
+     "2"
+    ]
+   },
+   "values": {
+    "uu": [
+     [
+      "0",
+      "1"
+     ],
+     [
+      "0",
+      "1"
+     ]
+    ]
+   }
+  },
+  "refutations": [],
+  "verdict": "KNOWN_SUFFICES"
+ },
+ "seconds": 0.01638627052307129
+}

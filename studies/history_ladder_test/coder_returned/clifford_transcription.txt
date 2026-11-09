@@ -1,0 +1,1528 @@
+=== PDF page 271 ===
+
+XX.
+
+PRELIMINARY SKETCH OF BIQUATERNIONS*.
+
+I.
+
+THE vectors of Hamilton are quantities having magnitude
+and direction, but no particular position; the vector AB being
+regarded as identical with the vector CD when AB is equal and
+parallel to CD and in the same sense. The translation of a
+rigid body is an example of such a quantity; for since all
+particles of the body move through equal distances along
+parallel straight lines in the same sense, the motion is entirely
+specified by a straight line of the given length and direction
+drawn through any point whatever. A couple, again, may be
+adequately represented by a vector; since the axis of a couple
+is any line of length proportional to its moment drawn perpen-
+dicular from a given face of its plane.
+
+For many purposes, however, it is necessary to consider
+quantities which have not only magnitude and direction, but
+position also. The rotational velocity of a rigid body is about a
+certain definite axis, and equal rotations about two parallel axes
+are not equivalent to one another. A force acting upon a solid
+has a definite line of action, and equal forces acting along
+parallel lines differ by a certain couple. The difference between
+the two kinds of quantities is clearly seen when we consider the
+geometric calculus which is used for the study of each. In
+
+* [From the Proceedings of the London Mathematical Society, Vol. IV.
+Nos. 64, 65, pp. 381--395.]
+
+=== PDF page 272 ===
+182  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+studying the motions of a particle or the composition of couples,
+the only construction required is that of the "force-polygon,"
+and the theory involved is that of the addition of vectors; but
+in the static or kinematic of solids we require in addition the
+construction of the "link-polygon," and there is involved the
+theory of the involution of lines in space, or of the linear
+complex.
+
+The name vector may be conveniently associated with a
+velocity of translation, as the simplest type of the quantity
+denoted by it. In analogy with this, I propose to use the name
+rotor (short for rotator) to mean a quantity having magnitude,
+direction, and position, of which the simplest type is a velocity
+of rotation about a certain axis. A rotor will be geometrically
+represented by a length proportional to its magnitude measured
+upon its axis in a certain sense. The rotor AB will be identical
+with CD if they are in the same straight line, of the same
+length, and in the same sense; i.e. a vector may move anywise
+parallel to itself, but a rotor only in its own line.
+
+The addition of rotors will proceed by the rules which govern
+the composition of forces and rotations. Here, however, we
+come upon a very important break in the analogy between
+rotors and vectors. While the sum of any number of vectors is
+always a vector, it will only happen in special cases that the
+sum of a number of rotors is a rotor. In fact, the composition
+of two forces whose lines of action do not intersect, or of two
+rotation-velocities whose axes do not intersect, gives rise to a
+system of forces on the one hand, and the most general velocity
+of a rigid body on the other. These still more complex quanti-
+ties have been studied, and the theory of their addition or com-
+position completely worked out, by Dr Ball.
+
+A system of forces may be reduced in one way to a single
+force P, and a couple G whose plane is perpendicular to the
+line of action of the force, or central axis. Dr Ball speaks of
+the system of forces as a wrench about a certain screw; the axis
+of the screw being the central axis, and the pitch being the
+ratio G / P of the couple to the force. Similarly the velocity of a
+
+=== PDF page 273 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  183
+
+rigid body may be represented in one way only as a rotation-
+velocity omega about a certain axis combined with a translation-
+velocity v along that axis. Dr Ball speaks of this velocity as a
+twist-velocity about a certain screw; the axis of the screw being
+the axis of rotation, and its pitch the ratio v / omega of the translation
+to the rotation. A screw is here a geometrical form resulting
+from the combination of an axis or straight line given in posi-
+tion with a pitch which is a linear magnitude. A wrench is the
+association with this geometrical form of a magnitude whose
+dimensions are those of a force; a twist-velocity the association
+of a magnitude whose dimensions are those of an angular velo-
+city. The extreme convenience of this nomenclature is well
+exemplified in the remarkable memoir above referred to.
+
+Just as a vector (translation-velocity or couple) is magnitude
+associated with direction, and as a rotor (rotation-velocity or
+force) is magnitude associated with an axis; so this new quan-
+tity, which is the sum of two or more rotors (twist-velocity or
+wrench), is magnitude associated with a screw. Following up
+the analogy thus indicated, I propose to call this quantity a
+motor; the simplest type of it being the general motion of a
+rigid body. And we shall say that in general the sum of rotors
+is a motor, but that in particular cases it may degenerate into a
+rotor or a vector.
+
+II.
+
+A quaternion is the ratio of two vectors, or the operation neces-
+sary to make one into the other. Let the vectors be [fig. 23] AB
+and AC, as they may both be made to start from any arbitrary
+point A. Then AB is made into AC by turning it round an
+axis through A perpendicular to the plane BAC until its direc-
+tion coincides with that of AC, and then magnifying or dimin-
+ishing it until it is of the same length as AC. The ratio of two
+vectors then is the combination of an ordinary numerical ratio
+with a rotation; or, as Hamilton expresses it, a quaternion is
+the product of a tensor and a versor. Since the point A is
+perfectly arbitrary, this rotation is not about a definite axis;
+
+=== PDF page 274 ===
+184  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+but is completely specified when its angular magnitude and the
+direction of its axis are given.
+
+This quaternion* AC / AB = q, then, is an operation which, being
+performed on AB, converts it into AC, so that q . AB = AC.
+The axis of the quaternion is perpendicular to the plane BAC;
+and it is clear that the quaternion operating upon any other
+vector AD in this plane will convert it into a fourth vector AE
+in the same plane, the angle DAE being equal to BAC and the
+lengths of the four lines proportionals. But a quaternion can
+only operate upon a vector which is perpendicular to its axis.
+If AF be any vector not in the plane BAC, the expression
+q . AF is absolutely unmeaning. A meaning is indeed subse-
+quently given to an analogous expression in which the significa-
+tion of AF is different. But it is very important to remark that
+so long as AF means a vector not perpendicular to the axis of q,
+the expression q . AF has no meaning at all.
+
+Let us now consider what is the operation necessary to
+convert one rotor into another. There is one straight line which
+meets at right angles the axes of any two rotors, and part of
+which constitutes the shortest distance between them. Let AC
+[fig. 24] be the shortest distance between the rotors AB and
+CD. Then AB may be converted into CD by a process con-
+sisting of three steps. First, turn AB about the axis AC into
+the position AB', parallel to CD. Then slide it along this axis
+into the position CD'. Lastly, magnify or diminish it in the
+ratio of CD' to CD. The first two operations may be regarded
+as together forming a twist about a screw whose axis is AC and
+whose pitch is
+
+AC / (circ. meas. of BAB') .
+
+The ratio of two rotors, then, is the combination of an ordinary
+
+* Professor Cayley, by a very convenient notation, distinguishes |AC / AB| and
+|AC| / |AB ; viz., AB |AC / AB| = 1, but |AC| / |AB AB = 1. It should, I think, be a convention
+that X / Y is always to mean |X| / |Y , viz., the operation which converts Y into X,
+or which, coming after the operation Y, is equivalent to the operation X.
+
+=== PDF page 275 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  185
+
+numerical ratio with a twist. This twist is associated with a
+perfectly definite screw, and is only specified when its angular
+magnitude and the screw (involving direction, position, and
+pitch) are given. We may say also that just as the rotation
+(versor) involved in a quaternion is the ratio of two directions,
+so the twist involved in the ratio of two rotors is really the
+ratio of their axes.
+
+Here again a remark must be made about the range of this
+operation. Using the expression tensor-twist to mean the ratio
+of two rotors (which is in fact a twist multiplied by a tensor),
+we may say that a tensor-twist can operate upon any rotor
+which meets its axis at right angles. Let t denote the opera-
+tion which converts AB into CD, so that t = CD / AB, and
+t . AB = CD; then if EF be any other rotor which meets AC at
+right angles, the expression t . EF will have a definite meaning,
+viz., it will mean a rotor obtained by sliding EF along a dis-
+tance equal to AC, turning it about AC as axis through an
+angle equal to BAB', and altering its length in the ratio
+AB : CD. But if EF be a rotor not meeting AC, or meeting it
+at any other than a right angle, the expression t . EF will have
+no meaning whatever.
+
+We have now defined the ratio of two rotors, and shown
+that like a quaternion it has a restricted range of operation.
+The question naturally arises, What now is the operation which
+converts one motor into another? We can answer this question
+very easily in the case in which the two motors have the same
+pitch; for in this case their ratio is a tensor-twist whose tensor
+is the ratio of their magnitudes and whose twist is the ratio of
+their axes. We are led to this by considering each motor as
+the sum of two rotors which do not intersect. Let alpha and beta be
+two such rotors, t a tensor-twist whose axis meets them both at
+right angles; then t*alpha is a rotor, say gamma, and t*beta is another rotor,
+say delta. If therefore we assume the distributive law, we have
+
+t (m*alpha + n*beta) = m*gamma + n*delta,
+or
+t = (m*gamma + n*delta) / (m*alpha + n*beta) .
+
+=== PDF page 276 ===
+186  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+It is a mere translation of known theorems to say that the
+axis of t meets at right angles the axes of the motors m*alpha + n*beta
+and m*gamma + n*delta, and that one of these axes is converted into the
+other by the same twist that makes alpha into gamma or beta into delta.
+
+The solution of this problem in the general case in which
+the pitches are different, is not so easy. In the first place, we
+must remember that every motor consists of a rotor part and a
+vector part, and that its pitch is determined by the ratio of
+these two parts. By combining a suitable vector with a motor,
+therefore, we may make the pitch of it anything we like,
+without altering the rotor part. Now let it be required to find
+the operation which will convert a motor A into a motor B.
+Let B' be a motor having the same rotor part as B, and the
+same pitch as A; and let B = B' + beta, where beta is a vector
+parallel to the axis of B. Then the ratio B / A = B' / A + beta / A; but B' / A
+is a tensor-twist, say t, and we may write
+
+B / A = t + beta / A ,
+
+where it now only remains to find an operation which will con-
+vert a motor A into a vector beta.
+
+In order to do this, we must introduce a symbol whose
+nature and operation will at first sight appear completely arbi-
+trary, but will be justified in the sequel. The symbol omega, applied
+to any motor, changes it into a vector parallel to its axis and
+proportional to the rotor part of it. That is to say, it changes
+rotation about any axis into translation parallel to that axis,
+and a force into a couple in a plane perpendicular to its line of
+action. But if the rotation is accompanied by translation or the
+force by a couple, the symbol takes no account whatever of
+these accompaniments; and if made to operate directly on a
+vector, reduces it to zero. It follows from this that if it be
+made to operate twice upon a motor, it reduces it to zero; or
+omega^2 A = 0 always. The portion of any expression which involves
+omega must therefore be treated as an infinitesimal of the first
+order; all higher orders being uniformly neglected.
+
+=== PDF page 277 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  187
+
+Since then omega*A = alpha, a vector, and the ratio beta / alpha is a quaternion
+q so that q*alpha = beta, we may write successively
+
+beta = q*alpha = q*omega*A,
+beta / A = q*omega,
+and then
+B / A = t + q*omega,
+
+or the ratio of two motors may be expressed as the sum of two
+parts, one of which is a tensor-twist, and the other is omega multiplied
+by a quaternion.
+
+The same ratio may be expressed in another form. Let an
+arbitrary point O be assumed as the origin; then every motor
+may be expressed in one way as the sum of a rotor passing
+through O and a vector. Now the theory of rotors passing
+through a fixed point is exactly the same as that of vectors in
+general, and the ratio of any two of them is a tensor-twist
+whose pitch is zero, or what is the same thing, a quaternion
+whose axis is constrained to pass through the fixed point. If
+we use cursive Greek letters (as alpha, beta) in general to represent
+rotors through the origin, we may distinguish vectors from them
+by prefixing the symbol omega; thus omega*alpha denotes a vector parallel
+and proportional to the rotor alpha. The ratio beta / alpha will then be a
+quaternion q, which is also the ratio (omega*beta) / (omega*alpha) *. The general expres-
+sion for a motor is then alpha + omega*beta. Let it now be required to find
+the ratio of two motors alpha + omega*beta, gamma + omega*delta; or the value of the
+expression
+(gamma + omega*delta) / (alpha + omega*beta) .
+
+First, let gamma / alpha = q; then q (alpha + omega*beta) = gamma + q*omega*beta = gamma + omega*q*beta.
+
+The symbol q*beta has at present no geometrical meaning; for
+in general the rotors alpha, beta, gamma will not be coplanar, and cannot
+
+* It follows from this that omega*q = q*omega, or omega is commutative with quaternions.
+
+=== PDF page 278 ===
+188  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+therefore be operated on by the same quaternion q. If however
+(as in the Calculus of Quaternions) we consider all these quan-
+tities as expressed in terms of three rectangular unit rotors
+through the origin, (delta - q*beta) / alpha will be a perfectly definite quater-
+nion r. The equation
+r*alpha = delta - q*beta
+is, like the equation q (alpha + omega*beta) = gamma + omega*q*beta,
+at present purely literal and devoid of meaning. Yet if (remem-
+bering the properties of the symbol omega) we add omega times the first
+equation to the second and assume the distributive law, we
+obtain
+(q + omega*r) (alpha + omega*beta) = gamma + omega*delta.
+
+In this way the ratio (gamma + omega*delta) / (alpha + omega*beta) is expressed in the form q + omega*r,
+which expression may conveniently be called a biquaternion*.
+The final equation, however, is not susceptible of interpretation
+in the same sense as the equation q*alpha = gamma. The expression
+q + omega*r does not denote the sum of geometrical operations which
+can be applied to the motor alpha + omega*beta as a whole; and the ratio
+of two motors is only expressed by a symbol as the sum of two
+parts, each of which separately has a definite meaning in
+certain other cases, but not in the case in point. In following
+sections this difficulty will be partly overcome by showing that
+the system here sketched is the limit of another in which it
+does not occur.
+
+The preceding remarks may however explain, and be illus-
+trated by, the following table:--
+
+GEOMETRICAL FORM | QUANTITY         | EXAMPLE                       | RATIO
+Sense on st. line| Vector on st. line| Addition or Subtraction       | Signed Ratio
+Direction in plane| Vector in plane | Complex quantity              | Complex Ratio
+Direction in space| Vector in space | Translation, Couple           | Quaternion
+Axis             | Rotor            | Rotation-Velocity, Force      | Twist
+Screw            | Motor            | Twist-Velocity, System of Forces | Biquaternion
+
+* Hamilton's biquaternion is a quaternion with complex coefficients; but
+it is convenient (as Prof. Peirce remarks) to suppose from the beginning that all
+
+=== PDF page 279 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  189
+
+III.
+
+That geometry of three-dimensional space which assumes
+the Euclidian postulates has been called by Dr Klein the para-
+bolic geometry of space, to distinguish it from two other varie-
+ties, which assume uniform positive and negative curvature
+respectively, and which he calls the elliptic and hyperbolic
+geometry of space. The investigations which follow involve the
+postulates of elliptic geometry. As, however, the postulate of
+uniform positive curvature is not sufficient to define this, it
+may be worth while to devote a short space to an explanation
+of its nature.
+
+Space of three dimensions is that the points of which may
+be associated with systems of values of three variables x, y, z.
+It is not in general possible, however, so to make this associa-
+tion that to every system of values there shall correspond in
+general one point, and to every point in general one system of
+values. When this is the case, the space is called unicursal.
+An algebraic space is one in which the position of a point may
+be uniquely defined by a set of values of periodic algebraic
+integrals, without exceptions which form a part of the space.
+Thus, unicursal spaces are a particular case of algebraic. At-
+tending now to unicursal spaces only, we must observe that
+there are in general exceptions to the unique correspondence of
+points and value-systems; namely, there are certain points to
+each of which correspond an infinite number of values of the
+coordinates satisfying a certain equation or equations; and there
+are certain value-systems to which correspond, not points, but
+loci in the space. The assignment of these point-equations and
+loci-values and of their relations with one another serves to
+determine the projective-connection of the space; and when once
+these are known, the whole of its projective geometry may be
+worked out. The point-equations and loci-values may or may
+not involve imaginary values of the variables or their coeffi-
+cients; but in all cases they must be taken into account. The
+
+[Footnote continued from p. 188:]
+scalars may be complex. As the word is thus no longer wanted in its old
+meaning, I have made bold to use it in a new one.
+
+=== PDF page 280 ===
+190  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+points which correspond to real systems of values are called real
+points; those which correspond to imaginary systems, imaginary
+points: the study of these latter, which does not strictly belong
+to that of three-dimensional space, is undertaken only for the
+sake of the former.
+
+Loci which correspond to linear equations between the
+coordinates may at present be called planes, and their intersec-
+tions lines; this is a purely projective definition, and these loci
+are not necessarily flat planes and straight lines in the metrical
+sense. Points, lines, and planes are included in the name
+elements.
+
+The metric geometry of space* is the theory of the projective
+relations of certain fixed geometrical forms with all other geo-
+metrical forms, or of the invariant relations of certain fixed
+algebraic forms with all other algebraic forms. The word power
+will be explained as much as is wanted in the sequel; mean-
+while it may be said that these fixed forms (called all together the
+absolute) are given when we know the points, the lines, and the
+planes of the absolute, or say the elements of the absolute; and
+that the power of an element of the absolute in regard to any
+arbitrary element is infinite. In other words, we require in
+general equations of the absolute in point-, line-, and plane-
+coordinates respectively.
+
+A unicursal space the points of which may be represented
+uniquely by value-systems of the coordinates x, y, z, without the
+exception of any point-equations or loci-values, is called a linear
+space. This is merely a projective definition, and leaves the
+absolute, therefore the whole of metric geometry, unde-
+termined.
+
+There is a particular determination of the absolute in a
+linear space which is of the utmost importance. It is that in
+which the points of the absolute are those of a certain quadric
+surface, while the lines and planes of the absolute are those
+which touch this surface; or in which the three equations of
+
+* This theory of metric geometry is due to Prof. Cayley: "Sixth Memoir on
+Quantics," Phil. Trans., 1859.
+
+=== PDF page 281 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  191
+
+the absolute are of the second degree. There are three cases*
+to be considered, as being the only ones of which observed space
+can form a part:--
+
+(1) Elliptic geometry; all the elements of the absolute are
+imaginary.
+
+(2) Hyperbolic geometry; the absolute contains no real
+straight lines, and surrounds us. In this case, real
+points situate on the other side of the surface are
+called ideal.
+
+(3) Parabolic geometry; the surface degenerates into an
+imaginary conic in a real plane. The points of the
+absolute are points in the (real) plane of this conic;
+the lines and planes are the imaginary lines and
+planes which meet and touch the conic respectively.
+
+The first of these suppositions will be made in what follows.
+It may be well here to set down in what it consists.
+
+(1) The space to be considered is such that there is one
+point of it for every set of values of the coordinates x, y, z, and
+one set of values for every point, without any exception what-
+ever.
+
+(2) There is a certain quadric surface, called the absolute,
+all whose points and tangent planes are imaginary. If the line
+joining two points a, b meet the absolute in i, j, the quantity
+
+(ab . ij) / sqrt(ai . aj . bi . bj) === bar(ab),
+
+(which is a function of anharmonic ratios, and therefore an
+invariant,) is called the power of the points a, b in regard to one
+another, or of either in regard to the other. The distance of
+these two points is an angle theta such that
+
+sin theta = bar(ab).
+
+Similarly, if through the line of intersection of the planes
+A, B there be drawn the tangent planes I, J to the absolute,
+
+* On this division see Dr Klein, "Ueber die so-genannte Nicht-Euklidische
+Geometrie," Math. Annalen, Bd. 4. The second case is the geometry of Lo-
+batschewsky and Bolyai.
+
+=== PDF page 282 ===
+192  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+the power of the planes A, B in regard to one another is the
+quantity
+
+(AB . IJ) / sqrt(AI . AJ . BI . BJ) = bar(AB),
+
+and the angle between them is an angle phi such that
+
+sin phi = bar(AB).
+
+(3) If two points are conjugate in regard to the absolute,
+they are distant a quadrant from one another; if two lines or
+planes are conjugate in regard to the absolute, they are at right
+angles. Thus all the points at a quadrant distance from a given
+point are situate on its polar plane in regard to the absolute,
+and every plane through it cuts this polar plane at right angles.
+Every line has a polar line in regard to the absolute, such that
+every point on the polar line is distant a quadrant from every
+point on the line; and every line which is at right angles to
+either meets the other. Through an arbitrary point can in
+general be drawn one line perpendicular to a given plane;
+namely, the line joining the point to the pole of the plane. If,
+however, the point is the pole of the plane, every line through
+it is perpendicular to the plane. Similarly, from a point not on
+the polar of a given line can be drawn one and only one perpen-
+dicular to the line; namely, the line through the point which
+meets the given line and its polar.
+
+(4) In general, two lines can be drawn so that each meets
+two given lines at right angles, and these are polars of one
+another. One line may therefore be converted into another by
+rotation about two polar axes. These axes are determined as
+the lines which meet the two given lines and their polars. If
+we travel continuously along one of these lines and draw per-
+pendiculars on the other, one of these axes determines the
+shortest distance between the lines, and the other the longest.
+If then these two are equal, the lines are equidistant along their
+whole length. Thus there is a case of exception in which two
+lines and their polars belong to the same set of generators of a
+hyperboloid; the lines are then equidistant along their whole
+length, and meet the same two generators of one system of the
+
+=== PDF page 283 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  193
+
+absolute. I shall use the word parallel to denote two lines so
+situated; and they shall be called right parallel or left parallel
+according as one is converted into the other by a right-handed
+or left-handed twist. Through an arbitrary point can be drawn
+one right parallel and one left parallel to a given line; the
+angle between them is twice the distance of the point from the
+line. There are many points of analogy between the parallels
+here defined and those of parabolic geometry. Thus, if a line
+meet two parallel lines, it makes equal angles with them; and
+a series of parallel lines meeting a given line constitute a ruled
+surface of zero curvature. The geometry of this surface is the
+same as that of a finite parallelogram whose opposite sides are
+regarded as identical.
+
+(5) A twist-velocity of a rigid body must be regarded as
+having two axes. For a motion of translation along any axis is
+the same thing as a rotation about the polar axis, and vice versa.
+Hence a twist-velocity is compounded of rotation-velocities
+about two polar axes; say these are theta, phi. Then the motion
+may be regarded either as a twist-velocity about a screw whose
+pitch is phi / theta and whose axis is the first axis, or about a screw
+whose pitch is theta / phi and whose axis is the polar axis. In general,
+then, a motor has two axes, and is expressible in one way only
+as the sum of two polar rotors. There is, however, one case of
+exception in which the axes of a motor are indeterminate; that,
+namely, in which the magnitudes of the two polar rotors are
+equal*. If a rigid body receive at the same time a rotation
+about an axis and an equal translation along it, all the points of
+the body will describe parallel straight lines; and the motion of
+the body is at the same time a rotation about any one of these
+lines combined with an equal translation along it. Such a
+motion may be adequately represented by a line of given length
+drawn through any point whatever parallel to a given line. A
+motor of pitch unity, or which is its own polar, may therefore
+
+* This motion is described in another connection by Drs Klein and Lie,
+Math. Annalen, Bd. 4; it is a transformation of the absolute into itself in which
+two generators remain unaltered.
+CLIF.  13
+
+=== PDF page 284 ===
+194  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+be regarded as having the nature of a vector, and shall in future
+be denoted by that name. For we may define a vector as a
+motor whose axes are indeterminate; and the case we are now
+considering is the only case of such indetermination which
+occurs in elliptic geometry. Vectors will be called right or left
+according as the twist of them is right- or left-handed.
+
+Prop.: Every motor is the sum of a right and a left vector.
+For let A be a motor, and A' the polar motor; then we have
+A = (1/2) (A + A') + (1/2) (A - A'). Now A + A' and A - A' are both
+motors of pitch unity, but one right-handed and the other left-
+handed.
+
+IV.
+
+A fixed point being chosen as origin, let three lines perpen-
+dicular to one another be drawn through it, and let three unit-
+rotors having these lines as axes be denoted by the symbols
+i, j, k. Then every rotor through the origin will be denoted by
+an expression of the form i*x + j*y + k*z, where x, y, z are scalar
+quantities, or the ratios of magnitudes. The symbols i, j, k
+shall have also another meaning; viz., each shall signify the
+rotation through a right angle about its axis of any rotor which
+meets that axis at right angles. When they are performed on
+rotors passing through the origin, these operations satisfy the
+equations i^2 = j^2 = k^2 = i*j*k = -1, by the ordinary rules of quater-
+nions; and it is easy to see that the same equations hold good
+when the operations are performed on rotors not passing through
+the origin. The compound symbol i*x + j*y + k*z is also to have
+an analogous secondary meaning; viz., a rectangular rotation
+about the axis of the rotor which it previously denoted, com-
+bined with a tensor sqrt(x^2 + y^2 + z^2). It can operate only on a
+rotor which meets its axis at right angles. This being so, the
+ratio of any two rotors through the origin is a quaternion of the
+form q === w + i*x + j*y + k*z === w + rho, say. The axis rho of this qua-
+ternion is perpendicular to the plane of the two rotors. If alpha be
+a rotor through the origin and q a quaternion, the product q*alpha
+can be formed according to the Hamiltonian rules of multipli-
+cation, and is in general a quaternion r. In this general case
+
+=== PDF page 285 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  195
+
+the equation q*alpha = r can only be interpreted by giving to alpha its
+secondary meaning; and the translation of this statement into
+words is as follows:--If a rotor be capable of being successively
+operated upon by the rectangular versor alpha and the quaternion q,
+the final result will be the same as if it had been originally
+operated upon by the quaternion r. If, however, the axes of q
+and alpha are at right angles, the scalar part of r will be wanting,
+and we may write the equation q*alpha = rho. This equation is now
+susceptible of a primary interpretation; viz., the quaternion q
+operating on the rotor alpha produces the rotor rho; although the
+secondary interpretation does not cease to be true.
+
+With such conventions, the two sides of the equation
+(q + r) s = q*s + r*s
+(in which q, r, s are quaternions) have always the same meaning
+when both are interpretable; which is what is meant by saying
+that the distributive law holds good for these symbols.
+
+The ratio of two rotors which do not meet is a twist which in
+general has perfectly definite axes. But when the rotors are
+polars of one another, the axes of the twist are indeterminate;
+for any line meeting both meets them at right angles, and will
+serve for an axis. It is therefore always possible to find a twist
+which shall simultaneously convert two given rotors into their
+polars; and any two rectangular twists with pitch 1 or -1 have
+a pair of common rotors on which they can operate, and which
+they convert into one another. Hence we may consider that
+
+All rectangular twists of pitch 1 are equivalent to one
+another; and all rectangular twists of pitch -1 are equivalent to
+one another.
+
+The rectangular twist of pitch 1 shall be denoted by the
+symbol omega; the expression omega*alpha will denote the rotor polar to alpha
+and equal to it in magnitude, obtained from it by a left-handed
+twist. During the operation of this twist, every point of the
+rotor describes a straight line; if therefore the twist be con-
+tinued through two right angles, the rotor will be replaced in
+its original position, not reversed; we have therefore
+omega^2 = 1.
+13--2
+
+=== PDF page 286 ===
+196  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+Every motor can be expressed as the sum of two rotors, one
+passing through the origin and the other being polar to a rotor
+through the origin. The general expression for a motor is
+therefore
+alpha + omega*beta.
+
+This will represent a rotor if the two rotor constituents
+intersect, or if each is perpendicular to the polar of the other;
+or if S*alpha*beta = 0.
+
+Let now  xi = (1 + omega) / 2 ,  eta = (1 - omega) / 2 ;
+then
+xi^2 = (1 + 2*omega + omega^2) / 4 = (2 + 2*omega) / 4 = xi,
+eta^2 = (1 - 2*omega + omega^2) / 4 = (2 - 2*omega) / 4 = eta,
+xi*eta = (1 - omega^2) / 4 = 0.
+
+Any motor alpha + omega*beta can also be expressed in the form xi*gamma + eta*delta.
+It is clear that xi*gamma is the right vector part of this motor, and
+that eta*delta is the left vector part. If we multiply xi*gamma + eta*delta by xi,
+the result is merely xi*gamma; so the effect of multiplying a motor by xi
+is merely to pick out the right vector part of it. The symbols
+xi, eta are thus in a certain sense selective symbols, and are analo-
+gous to the S and V of quaternions.
+
+Ratio of two motors.--We can find immediately now the
+operation which converts a motor xi*gamma + eta*delta into a motor xi*alpha + eta*beta.
+For if we perform the operation
+(xi * (alpha / gamma) + eta * (beta / delta)) (xi*gamma + eta*delta),
+remembering the laws of multiplication of xi, eta, we obtain the
+result xi*alpha + eta*beta. If then alpha / gamma = q, beta / delta = r, we may write
+(xi*alpha + eta*beta) / (xi*gamma + eta*delta) = xi * (alpha / gamma) + eta * (beta / delta) = xi*q + eta*r,
+and the latter may be written in the form
+(q + r) / 2 + omega . (q - r) / 2 = s + omega*t,
+showing that the ratio of two motors is a biquaternion.
+
+=== PDF page 287 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  197
+
+The motor xi*alpha + eta*beta will be a rotor if
+S (alpha + beta) (alpha - beta) = 0,
+or if  T*alpha = T*beta;
+and it is easy to see from this that the biquaternion xi*q + eta*r
+will be a twist, or the ratio of two rotors, if T*q = T*r.
+
+V.
+
+1. Position-Rotor of a Point.--The coordinates of a point
+in regard to a quadrantal tetrahedron 1234 being x_1, x_2, x_3, x_4,
+the equation to the absolute is Sum(x^2) = 0. The rotor from the
+origin (the point 4) to the point x is represented by
+
+i_1 * (x_1 / x_4) + i_2 * (x_2 / x_4) + i_3 * (x_3 / x_4), or Sum(i_k * (x_k / x_4)) (k = 1, 2, 3),
+
+where i_1, i_2, i_3 are rotors along the edges of the tetrahedron
+from the origin to the middle points of the edges. The tensor
+of this rotor is the tangent of the angular distance from the
+origin to the point it represents. For if
+
+rho = i_1 * (x_1 / x_4) + i_2 * (x_2 / x_4) + i_3 * (x_3 / x_4),
+
+(T*rho)^2 = (x_1^2 + x_2^2 + x_3^2) / x_4^2 = tan^2 arc(ox), where o is the origin.
+
+The angular distance from the origin to a point has an
+infinite number of values, which differ by multiples of pi. If
+therefore a rotor be considered to have this angular distance as
+its length, the rotor of a point can only be defined by such an
+equation as arc(rho) === arc(alpha) (mod. arc(pi_alpha)). To obviate this indetermination,
+there is required a one-valued unicursal function having the
+period pi; the tangent of the angular distance is hereby com-
+pletely singled out.
+
+2. Equation of a Straight Line.--Let OM [fig. 25] be the
+perpendicular from the origin O upon the straight line MP;
+
+=== PDF page 288 ===
+198  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+and let ON be a line perpendicular to OM in the plane MOP.
+Then from the triangle MOP we have
+
+tan OM / tan OP = cos MOP;
+
+or if  OM = alpha,  OP = rho,  ON = beta,  T*alpha = T*rho cos MOP;
+so that alpha is the component of rho in the direction OM, and we
+have rho = alpha + beta*x, where x is some scalar.
+
+By varying x, then, we get all the points in the line MP.
+But if alpha_1 is any particular value of rho, the equation may just as
+well be written  rho = alpha_1 + beta*x,
+where now alpha_1 is not necessarily perpendicular to beta.
+
+This form may be reduced to the preceding as follows:
+To find the perpendicular from O, put delta*T*rho = 0; this gives
+S*alpha_1*beta + beta^2*x = 0,
+and the equation becomes
+rho = alpha_1 - beta*S(alpha_1 / beta) - beta*x,
+where alpha_1 - beta*S(alpha_1 / beta) = alpha of the former equation.
+
+3. Rotor along Straight Line whose Equation is given.
+
+Let OR [fig. 26] be the rotor through the origin which has
+right parallelism with MP. Then angle NOR = OM. Let OK be
+perpendicular to ON and OM, and of such length that
+tan OK / tan ON = tan NOR.
+Then, if  gamma = OK,  OR = beta + gamma.
+Now T*gamma / T*beta = T*alpha, and U*gamma = U*alpha*beta, since gamma is perpendicular to alpha and
+beta. Hence gamma = alpha*beta; and if R be a rotor along MP, m a scalar,
+right vector of R = xi*R = m*xi (beta + gamma) = m*xi (beta + alpha*beta),
+so  left vector of R = eta*R = m*eta (beta - gamma) = m*eta (beta - alpha*beta);
+therefore  R = m (beta + omega*alpha*beta).
+
+=== PDF page 289 ===
+PRELIMINARY SKETCH OF BIQUATERNIONS.  199
+
+Now if R have the same length as beta, we have
+beta^2 = R^2 = m^2 (beta^2 + bar(alpha*beta)^2) = m^2*beta^2 (1 - alpha^2);
+therefore  R = (beta + omega*alpha*beta) / sqrt(1 - alpha^2) .
+
+Conversely, equation to axis of rotor gamma + omega*delta is
+rho = delta / gamma + gamma*x.
+
+This finds the rotor in the case in which rho = alpha + beta*x, where
+S*alpha*beta = 0. But in the general case we have only to write the
+equation in the form
+rho = alpha - beta*S(alpha / beta) + beta*x,
+whence  R = (beta + omega (alpha - beta*S(alpha / beta)) beta) / sqrt(1 - alpha^2 - beta^2*S^2(alpha / beta) + 2*S*alpha*beta*S(alpha / beta))
+= (beta + omega*V*alpha*beta) / sqrt(1 + S*alpha*beta*S(alpha / beta) - alpha^2) .
+
+4. Rotor ab joining Points whose Position-Rotors are alpha, beta.
+
+The equation of this rotor is
+rho = alpha + (beta - alpha) x,
+whence  m*R = beta - alpha + omega*V*alpha*beta.
+
+Now if a_1, a_2, a_3, a_4; b_1, b_2, b_3, b_4 are the coordinates of the
+points, we have
+(T*R)^2 = tan^2 ab = Sum(a_h*b_k - a_k*b_h)^2 / (Sum(a_h*b_h))^2 = - ((alpha - beta)^2 + (V*alpha*beta)^2) / (1 - S*alpha*beta)^2 ,
+therefore  R = (beta - alpha + omega*V*alpha*beta) / (1 - S*alpha*beta) .
+
+COR.--If rho [fig. 27] be the rotor of a variable point on a
+curve, d*lambda a rotor along the tangent of length equal to the arc of
+the curve between rho and rho + d*rho, we have
+d*lambda = (d*rho + omega*V*rho*d*rho) / (1 - rho^2) .
+
+=== PDF page 290 ===
+200  PRELIMINARY SKETCH OF BIQUATERNIONS.
+
+5. Rotor parallel to beta through Point whose Position-Rotor
+is alpha.
+
+The general equation to a line through the point alpha is
+rho = alpha + lambda*x, where lambda is any rotor through the origin. A rotor
+along this line is lambda + omega*V*alpha*lambda; if this is right parallel to beta, we have
+xi (lambda + V*alpha*lambda) = xi*beta,  (xi*omega = xi)
+or  lambda + V*alpha*lambda = beta.
+
+Operating by S*alpha, we have, since S . alpha*V*alpha*lambda = 0,
+S*alpha*lambda = S*alpha*beta,
+whence, by addition,  lambda + alpha*lambda = beta + S*alpha*beta,
+and  lambda = (1 + alpha)^-1 (beta + S*alpha*beta) = beta - (1 + alpha)^-1 V*alpha*beta.
+
+The rotor required is
+lambda + omega*V*alpha*lambda, or lambda + omega (beta - lambda).
+
+This becomes, then,
+beta - (1 + alpha)^-1 V*alpha*beta + omega (1 + alpha)^-1 V*alpha*beta = beta - 2*eta (1 + alpha)^-1 V*alpha*beta.
+
+Instead of operating by S*alpha on the equation
+lambda + V*alpha*lambda = beta,
+we might have operated with V*alpha, and got
+V*alpha*lambda + alpha*V*alpha*lambda = V*alpha*beta, since V . alpha*V*alpha*lambda = alpha*V*alpha*lambda,
+therefore  V*alpha*lambda = (1 + alpha)^-1 V*alpha*beta,
+and  lambda = beta - V*alpha*lambda = beta - (1 + alpha)^-1 V*alpha*beta.
+
+Similarly, we have for the rotor left parallel to beta,
+lambda = beta + (1 - alpha)^-1 V*alpha*beta,
+and the rotor is
+lambda + omega (lambda - beta) = beta + (1 - alpha)^-1 V*alpha*beta + omega (1 - alpha)^-1 V*alpha*beta
+= beta + 2*xi (1 - alpha)^-1 V*alpha*beta.
+
+=== PDF page 479 ===
+
+*XLII.
+
+[FURTHER NOTE ON BIQUATERNIONS.]
+
+I.
+
+THE two expressions "twice three are six" and "six is the
+product of two and three," represent two different views of mul-
+tiplication, although they are written down by the same short-
+hand formula
+2 x 3 = 6.
+
+Accordingly they give two different interpretations of this
+formula.
+
+In the first interpretation 3 is a concrete number of things,
+say three marbles, while 2 is not a number but an operation,
+namely the operation of doubling; and we may read the equa-
+tion "doubling three marbles makes six marbles."
+
+The second interpretation regards 2 and 3 as abstract num-
+bers, and affirms the existence of a third number 6 having a
+definite relation to them which it is convenient to study, this
+third number so related being called their product; and various
+meanings given to the numbers 2 and 3 may lead to various
+concrete interpretations of the formula. Each of these views of
+multiplication may be extended to other things besides numbers;
+I propose at present to consider certain extensions of the first
+view.
+
+In this we have regarded 2 as a symbol of operation, 3 as a
+concrete number, and 6 as a concrete number. But we may
+also regard all three symbols as symbols of operation, and so
+read the formula "doubling the triple of anything makes the
+CLIF.  25
+
+=== PDF page 480 ===
+386  FURTHER NOTE ON BIQUATERNIONS.
+
+sextuple of it." Such an equation as a*b*c = d will then always
+have two meanings:--
+
+1. a times b times c things makes d things;
+2. a times b times c times anything makes d times that
+thing.
+
+That is to say, we may regard the last symbol in each term of
+the equation as either a concrete number or a symbol of
+operation; but all the others must be regarded as symbols of
+operation.
+
+To extend this from concrete numbers to steps of addition
+or subtraction is not difficult; but it requires us to give a double
+meaning to the signs + and -, as well as to all numerical
+symbols. The first meaning is to indicate the direction of the
+step; thus + 3 means a step of 3 forward, i.e. an addition, and
+- 3 means a step of 3 backward, i.e. a subtraction. But when
+these symbols are attached to an operation performed upon
+steps, they mean retaining and reversing respectively. Thus
+the equation
+(- 2) (+ 3) = - 6
+has two meanings:--
+
+1. Doubling a step of 3 forward and reversing it makes a
+step of 6 backward.
+2. To triple a step and retain its direction, then to double
+and reverse it, is the same as to sextuple and reverse it.
+
+These steps of addition and subtraction may be regarded as
+changes of position, or vectors, on a straight line, along which
+all numbers are supposed to be ranged; and by exchanging
+numbers for continuous quantities we may deal in this way with
+all vectors in a straight line. In every equation we may regard
+the last symbol in every term as either a vector or an operation;
+but all the others must be regarded as operations.
+
+Assuming the law of addition of vectors in a plane,
+AB + BC = AC, we find at once the interpretation of so-called
+imaginary or impossible quantities in the operators which con-
+vert one vector into another. Thus [Fig. 53] if I operating on
+
+=== PDF page 481 ===
+FURTHER NOTE ON BIQUATERNIONS.  387
+
+a vector turns it counter-clockwise through a right angle, so
+that I . OA = OA', and if
+a = OM / OA , b = MB / OA' ,
+a and b being ratios of vectors in a line as just previously
+defined, then
+OB = OM + MB = a . OA + b . OA' = (a + b*I) OA,
+and it is clear that I^2 = - 1. Thus every expression of the
+form a + b*I is the ratio of two vectors.
+
+Every vector in the plane may be represented by
+a . OA + b . OA' by giving to a and b proper values. For
+shortness we may write OA = j, OA' = k; then I*j = k, I*k = - j,
+and we shall have
+(a + b*I) (c*j + d*k) = (a*c - b*d) j + (a*d + b*c) k.
+
+In this way we may have to consider two classes of expres-
+sions, those in which the last symbol in every product is a
+vector, and all the others are ratios of vectors; and those in
+which all the symbols represent ratios of vectors. But, observ-
+ing that
+c*j + d*k = (c + d*I) j;
+we may make the useful convention that j is, if convenient, to
+be understood as written after every term; so that the complex
+symbol c + d*I will now mean either a ratio of two vectors as
+above, or the vector c*j + d*k. And then every expression will
+have a double meaning as before, and we shall have only one
+kind to deal with.
+
+This artifice amounts to taking a definite vector as the unit,
+and representing all others by means of their ratios to the unit.
+The success of the artifice depends on the fact that the product
+of two such ratios is another ratio of the same kind.
+
+Passing now to vectors in space, we shall find again that
+the operation which makes one into another is of the form
+a + b*Q, where Q turns through a right angle in the plane of the
+two vectors. It will not, therefore, operate on any vector out of
+that plane; and the variety of these operators Q is the same as
+the variety of planes, or is doubly infinite. We may represent Q
+25--2
+
+=== PDF page 482 ===
+388  FURTHER NOTE ON BIQUATERNIONS.
+
+as a sort of handle or axis of unit length perpendicular to the
+plane; and the compound operation b*Q, which turns through a
+right angle and increases in the ratio 1 : b, may be represented
+by an axis of length b. This being so, let Q, R be two such
+compound operations; there is one vector alpha on which they
+will both operate, namely, the intersection of their planes. It
+is found that Q*alpha + R*alpha is a vector at right angles to alpha, and that
+if S is the rectangular versor which converts alpha into Q*alpha + R*alpha, so
+that S*alpha = Q*alpha + R*alpha, then the axis of S is got by adding the axes
+of Q and R as if they were vectors. So we write S = Q + R,
+and we have the equation
+(Q + R) alpha = Q*alpha + R*alpha.
+
+By the law of formation of Q + R it is clear that
+P + (Q + R) = (P + Q) + R = (P + R) + Q = etc.,
+this being a rectangular versor whose axis is the vector-sum of
+the axes of P, Q, R. Accordingly it is called P + Q + R;
+although the equation
+(P + Q + R) alpha = P*alpha + Q*alpha + R*alpha
+does not admit of interpretation in general, because there is
+no vector alpha which is capable of being operated on by P, Q,
+and R.
+
+Thus every rectangular versor may be represented by the
+form x*I + y*J + z*K, where IJK are the three rectangular versors
+whose axes are the unit-vectors ijk. And we have two kinds
+of complex quantities to consider; vectors, of the form
+rho = a*i + b*j + c*k, and quaternions, of the form q = w + x*I + y*J + z*K.
+The product of any number of quaternions is itself a quaternion,
+the units IJK being multiplied by the rules
+I*J = K = - J*I, K*I = J = - I*K, J*K = I = - K*J,
+I^2 = J^2 = K^2 = - 1.
+
+But we cannot multiply a vector by a quaternion in general;
+q*rho will only have a meaning if rho is perpendicular to the axis of
+q, or, which is the same thing, if a*x + b*y + c*z = 0. And even
+then, although we have the formulae
+I*j = k = - J*i, K*i = j = - I*k, J*k = i = - K*j,
+
+=== PDF page 483 ===
+FURTHER NOTE ON BIQUATERNIONS.  389
+
+we cannot find the value of q*rho by direct multiplication, for the
+symbols I*i, J*j, K*k are unmeaning. If, however, we assume
+that they have the same value, the result of direct multiplica-
+tion will come out right whenever q*rho is interpretable.
+
+The artifice, by which in the geometry of two dimensions
+the two kinds of complex quantities were reduced to one, is not
+applicable here. For although we may write
+a*i + b*j + c*k = (a + b*K - c*J) i,
+and so represent every vector by its ratio to the unit i, yet it
+no longer remains true that the product of two such ratios is
+another ratio of the same sort. But we may attain the desired
+reduction by a simpler method; viz., by using the symbols ijk
+in a double sense, as vectors and as versors. Thus in the pro-
+duct q*rho, if rho be regarded as a rectangular versor, the true value
+may be obtained by direct multiplication
+(w + x*i + y*j + z*k) (a*i + b*j + c*k),
+the ijk now standing for what was denoted by IJK. In certain
+cases, namely, when a*x + b*y + c*z = 0, the expression may have
+another meaning, and a*i + b*j + c*k may be regarded as a vector.
+Here the first i being a versor and the second a vector, the assump-
+tion i*i = - 1 is unmeaning, but it is without effect on the result.
+Similarly an expression p*q*rho is always interpretable if all the
+symbols are regarded as operations on vectors; it is sometimes
+interpretable when rho is regarded as a vector, namely, when it is
+perpendicular to the axis of (p*q), provided we make the formal
+assumption that i^2 = j^2 = k^2 = - 1 just as in the other interpre-
+tation.
+
+Observe that the artifice by which one symbol is made to
+do duty for two meanings is the same in quaternions, which
+deal with three dimensions, and in scalars, which deal with one
+dimension. Namely, the signs + and -, which are originally
+unit-vectors, indicating the direction of a step forward or back-
+ward, receive the additional meaning of versors, retaining or
+reversing the direction of a vector; just as the symbols ijk mean
+vectors originally, and afterwards are made to mean versors too.
+
+=== PDF page 484 ===
+390  FURTHER NOTE ON BIQUATERNIONS.
+
+But in complex numbers, which deal with two dimensions, the
+artifice is essentially different; and that which, by a convenient
+inaccuracy, may be called the product of two vectors, has very
+different geometrical relations to its components. It will be
+shewn further on that all geometric algebras dealing with an
+odd number of dimensions resemble scalars and quaternions in
+this respect; while those dealing with an even number of dimen-
+sions resemble complex numbers.
+
+It is clear that the versors IJK may be represented on great
+circles of a sphere whose centre is the origin; and if these be
+regarded as steps on the surface of the sphere, it will be found
+that the consideration of their ratios leads to the whole theory
+of quaternions. In this interpretation vectors can only be
+represented by points on the sphere supposed to have definite
+weights attached to them, proportional to the length of the
+corresponding vectors. Here then we have the geometric
+algebra of three dimensions interpreted by means of a space of
+two dimensions which has constant positive curvature, namely
+the surface of a sphere.
+
+In the same way we may interpret the algebra of a space of
+four dimensions, which cannot be imaged, by means of a space of
+three dimensions having constant positive curvature, of which
+a clear mental picture may be formed.
+
+Consider any vertical line, and a series of horizontal planes
+cutting it at right angles. In ordinary or Euclidian geometry
+these planes intersect on the horizon, which is a straight line
+infinitely distant. In the geometry of a space of constant
+positive curvature, or elliptic geometry, the horizon is at a
+certain finite distance in all directions from the vertical line
+with which we started; it belongs to that particular line,
+which is called its polar, and is not the same for all vertical
+lines. Although it appears to be a great circle when viewed
+from the neighbourhood of its polar, yet if we were to go to it
+and examine it we should find it straight. Points of it which
+are in opposite directions from a point on the polar are really
+identical; and every straight line in this space resembles a circle
+in being of finite length, so that if we travel far enough along
+it we shall arrive at our starting point. Every straight line
+
+=== PDF page 485 ===
+FURTHER NOTE ON BIQUATERNIONS.  391
+
+has a polar line, which is the intersection of all planes at right
+angles to it.
+
+Let us take a very small circle on a sphere, and suppose it
+to expand, keeping always the same centre. At the beginning
+the circle will be concave inside and convex outside; but when
+the expansion has gone on far enough it will become a great
+circle of the sphere, which is of the same shape on both sides,
+or is straight so far as the surface of the sphere is concerned. So
+if in Euclidian space we take a sphere and suppose it to expand,
+keeping always the same centre, it will continue to be concave
+inside and convex outside so long as it is finite; but when the
+radius has become infinite, the inside in one direction is the
+same as the outside in the opposite direction, opposite points
+being identical; thus the sphere is of the same shape on both
+sides, or is a plane, viz., the plane at infinity. In elliptic space,
+just as in geometry on the surface of a sphere, this takes place
+for a finite length of the radius, not for an infinite length; for
+every point there is a sphere having its centre at that point,
+which is also a plane. Or, which is the same thing, every
+point has a polar plane which is the locus of all points situate
+at a certain distance from it; this distance is called a quadrant.
+So also every plane has a certain point, called its pole, which is
+distant a quadrant from every point in the plane. All lines and
+planes perpendicular to the plane pass through its pole, and
+conversely. The polar lines of all lines in the plane pass through
+its pole, and so do the polar planes of all points in the plane.
+
+When two lines are polars of one another, every point of one
+is distant a quadrant from every point of the other; hence the
+polar planes of all points on one pass through the other. Every
+line which is at right angles to one meets the other, and
+conversely.
+
+In the Proceedings of the London Mathematical Society,
+[Vol. IV. p. 381--395*] I have given a sketch of a geometric
+algebra adapted to this elliptic geometry of space, which I
+have there called Biquaternions.
+
+In the interpretation of quaternions on the surface of a
+sphere, rectangular versors are represented by quadrants of
+
+* [XX. supra.]
+
+=== PDF page 486 ===
+392  FURTHER NOTE ON BIQUATERNIONS.
+
+great circles. We may represent such a versor accompanied by
+a tensor, for example x*i, by an arc AB measured on the great
+circle i, so that tan AB = x. This being so, AB differs from a
+vector in a plane in a most important way; for while a vector in
+a plane is unaltered by being moved parallel to itself in any
+direction, AB can only be slid along its great circle, and must
+not be moved out of it. We shall have to consider similar
+quantities in the elliptic geometry of three dimensions; namely
+quantities represented by a length marked off on a certain
+straight line, which are unaltered when the length is slid
+along the line but not in any other case. They are as it were
+vectors having position. A vector represents the translation-
+velocity of a rigid body, which is everywhere the same; these
+quantities will represent the rotation-velocity of a rigid body,
+which is about a certain definite axis. For this reason I have
+called them rotors (short for rotators) by analogy with Hamilton's
+word vector. They are added together according to the law of
+composition of forces and rotations. That is to say, if a rotor
+P [fig. 54] along OA added to a rotor Q along OB gives a
+rotor R along OC making angles alpha, beta with them, then OC is in
+the plane of OA, OB, and
+P : Q : R = sin beta : sin alpha : sin (alpha + beta);
+this determines the position and magnitude of the resultant.
+We cannot use the parallelogram construction as in the addi-
+tion of vectors, for the (elliptic) geometry of the plane AOB
+is the same as that of the surface of a sphere when opposite
+points are regarded as identical, and no parallelogram can be
+drawn on it.
+
+Since any two great circles of a sphere meet one another
+(in one point, according to our present convention) it follows
+that any two rotors have a single rotor which is their resultant
+or sum. But in three dimensions this is not the case; if the
+axes of two rotors do not meet their sum is not equal to any
+one rotor. We may however find two other rotors which have
+the same sum, and that in an infinite number of ways. Of
+these ways one is of the greatest importance, namely, that in
+which the axes of the two rotors are polars of one another. If
+
+=== PDF page 487 ===
+FURTHER NOTE ON BIQUATERNIONS.  393
+
+we regard each rotor as representing rotation about its axis,
+each of these rotations is equivalent to a translation along the
+other axis. Thus rotation about a vertical line is translation
+along the horizon, and vice versa. Hence the resultant of the
+two rotations may be regarded as a screw motion about either of
+the axes. As this describes the most general motion of a rigid
+body, I have proposed to call the quantity which represents it a
+motor. We shall say then that the sum of two rotors which do
+not meet is a motor, and that every motor has two axes which
+are polars of one another.
+
+This being so, let three planes at right angles be drawn
+through a point O, and let unit rotors along their intersections
+be denoted by ijk. Then any rotor through the point O is
+denoted by a*i + b*j + c*k. The ratio of two such rotors is a
+quantity of the form w + x*i + y*j + z*k, if we let ijk mean also
+rectangular versors whose axes are the rotors ijk. In fact
+we are merely applying the results of quaternions to vectors
+passing through a fixed point and their ratios.
+
+Let now omega be the operation which converts any rotor into
+an equal rotor along the polar line of its axis. Then omega*i, omega*j, omega*k
+[fig. 55] will be rotors along the lines of intersection of the polar
+plane of O with the three rectangular planes through O. And
+since (as it is easy to see) any rotor may be resolved into two, one
+passing through O, and the other lying in the plane PQR,
+whereof the former is compounded of ijk, and the latter of
+omega*i, omega*j, omega*k, it follows that the expression for the sum of any
+number of rotors (i.e. for a motor) is of the form
+a*i + b*j + c*k + omega (f*i + g*j + h*k) = alpha + omega*beta, say.
+
+Suppose now that the versors ijk are allowed to operate,
+not only on rotors through O which meet their axes, but on
+any rotors which meet them at right angles. Then we shall
+have
+i (omega*j) = omega*k = omega*i*j ; j (omega*k) = omega*i = omega*j*k ; k (omega*i) = omega*j = omega*k*i,
+which equations shew that omega is commutative with the symbols
+i, j, k.
+
+Moreover, if omega turns a rectangular versor into a similar
+
+=== PDF page 488 ===
+394  FURTHER NOTE ON BIQUATERNIONS.
+
+versor about the polar line of its axis, we shall have the equa-
+tions
+omega*i . j = omega*k, omega*j . k = omega*i, omega*k . i = omega*j,
+which shew that the two meanings thus attributed to omega lead to
+no contradiction. Lastly, we have
+omega*i . omega*j = k, omega*k . omega*i = j, omega*j . omega*k = i
+from which we get omega^2 = 1.
+
+From this equation we may draw a very important conse-
+quence. Writing
+xi = (1/2) (1 + omega),  eta = (1/2) (1 - omega),
+and therefore
+1 = xi + eta,  omega = xi - eta,
+we find
+xi^2 = (1/4) (1 + 2*omega + omega^2) = xi ;  eta^2 = (1/4) (1 + 2*omega + omega^2) = eta,
+xi*eta = (1/4) (1 - omega^2) = 0.
+
+Hence every motor alpha + omega*beta may be written in the form
+(xi + eta) alpha + (xi - eta) beta or xi (alpha + beta) + eta (alpha - beta).
+
+Consider two motors
+xi*alpha + eta*beta, xi*gamma + eta*delta, and let gamma*alpha^-1 = p, delta*beta^-1 = q,
+so that p and q are known quaternions; then we have
+(xi*p + eta*q) (xi*alpha + eta*beta) = xi*p*alpha + eta*q*beta
+= xi*gamma + eta*delta.
+
+Thus the ratio of two motors is a quantity of the form
+xi*p + eta*q, or, which is the same thing,
+s + omega*t (if 2*s = p + q, t = 2*p - q),
+where p, q, s, t, are quaternions. This combination of two
+quaternions I have called a Biquaternion*.
+
+* [I am indebted to Dr Spottiswoode for the title I have given to this paper.
+It is designated as I by Prof. Clifford, but I have not come across any other
+papers of the series.]
+
+=== PDF page 489 ===
+
+*NOTES ON BIQUATERNIONS*.
+
+1. AXES of motor alpha + omega*beta, or xi*gamma + eta*delta.
+
+If mu be an axis of a motor, the motor is a multiple of the
+rotor mu together with a multiple of the polar rotor omega*mu. Thus
+we may write
+xi*gamma + eta*delta = (h + omega*k) mu.
+
+Operating by xi, eta, we have
+xi*gamma = (h + k) xi*mu,
+eta*delta = (h - k) eta*mu,
+whence
+mu = (xi*gamma) / (h + k) + (eta*delta) / (h - k) .
+
+Thus we have an indeterminate representation of any motor as
+the sum of two polar motors. But if mu is a rotor, we have
+T*gamma / (h + k) = T*delta / (h - k) ,
+whence
+h / k = (T*gamma + T*delta) / (T*gamma - T*delta) ,
+so that  mu = xi . U*gamma + eta . U*delta,
+and  omega*mu = xi . U*gamma - eta . U*delta.
+
+But the component rotors along the axes are
+(T*gamma +- T*delta) (xi . U*gamma +- eta . U*delta).
+For the sum of these is easily seen to be equal to the original
+motor xi*gamma + eta*delta.
+
+* [These "Notes" were apparently written when Prof. Clifford was in the
+enjoyment of vigorous health, and occupy three pages of MS. pinned together.
+They are, I should say, intended to be supplementary to his London Mathe-
+matical Society paper, XX. supra.]
+
+=== PDF page 490 ===
+396  NOTES ON BIQUATERNIONS.
+
+2. Sum of motors of different pitches whose axes meet at
+right angles.
+
+Let the motors be (a + omega*b) j and (c + omega*d) k; the sum
+is of course
+a*j + c*k + omega (b*j + d*k)
+or
+(1/2) xi (bar(a + b) . j + bar(c + d) . k) + (1/2) eta (bar(a - b) . j + bar(c - d) . k).
+
+Thus an axis of the sum is
+xi * (bar(a + b) . j + bar(c + d) . k) / sqrt(bar(a + b)^2 + bar(c + d)^2) + eta * (bar(a - b) . j + bar(c - d) . k) / sqrt(bar(a - b)^2 + bar(c - d)^2) .
+
+Now this is a rotor at right angles to i and at an angular
+distance theta from the origin such that
+cos 2*theta = (a^2 - b^2 + c^2 - d^2) / sqrt((bar(a + b)^2 + bar(c + d)^2) (bar(a - b)^2 + bar(c - d)^2))
+tan 2*theta = 2 (b*c - a*d) / (a^2 - b^2 + c^2 - d^2) .
+
+=== PDF page 491 ===
+
+*XLIII.
+
+ON THE CLASSIFICATION OF GEOMETRIC ALGEBRAS*.
+
+1806  Argand, Maniere de representer les quantites imaginaires.
+      Buee, Mem. sur les qu. imag.
+1827  Mobius, Barycentrischer Calcul.
+1831  Gauss.
+1834  Peacock, Doctrine of Operations in Algebra.
+1843  Hamilton, Quaternions.
+1844  Grassmann, Lineale Ausdehnungslehre.
+1845  Saint-Venant, Multiplication of vectors.
+1848  Kirkman, Pluquaternions and Homoid Products.
+1853  Cauchy, Clefs Algebriques.
+1862  Grassmann, Ausdehnungslehre.
+1870  Peirce, Linear Associative Algebra.
+
+In the Barycentric Calculus a point is represented by a complex number
+which is a linear syzygy of symbols each representing a fixed point; the co-
+efficients are coordinates. By regarding a*b the ordinary symbol for a line
+joining two points, as of the nature of a product, and so distributive, we
+arrive at Grassmann's extensive quantities. For then we must put a*a = 0, i.e.
+(a_1*iota_1 + a_2*iota_2)^2 = 0, which requires iota_1*iota_2 = - iota_2*iota_1, and then a*b = - b*a always. If there
+are n independent units, we may consider in such an algebra scalars or
+quantities of order 0, n of order 1, (1/2) n . (n - 1) of order 2, etc., 1 of order n; in all 2^n
+vids, to borrow Peirce's term. Every intelligible expression is however homo-
+geneous; if a product of points, the coefficients are determinants.
+
+In the theory of Quaternions the symbols ijk, when used as multipliers,
+represent not things but operations of turning; thus i^2 = - 1 and not 0. But
+regarding them as vectors, we may use them to represent the geometry of
+the plane passing through the ends of ijk, on the principles of the barycentric
+calculus. Thus rho = i*x + j*y + k*z will represent the point where it cuts the plane,
+with a weight x + y + z. The Grassmann algebra will be reproduced if we attend
+only to the vector part of binary products, and the scalar part of ternary.
+Physical considerations however lead us to regard i^2 as a scalar (not zero) even
+
+* [The "forewords" are the abstract which Prof. Clifford communicated to
+the London Mathematical Society, on March 10th, 1876 (Proceedings, Vol. VII.
+p. 135). The paper, which is unfinished, was found amongst his MSS.]
+
+=== PDF page 492 ===
+398  THE CLASSIFICATION OF GEOMETRIC ALGEBRAS.
+
+when i is regarded as a vector (not a versor). For these purposes it does not
+matter whether it is put = - 1 or + 1.
+
+I propose here to extend this assumption to the Grassmann representation in
+general: i.e., I take n units iota_1 iota_2 ... iota_n such that iota_r^2 = + 1, and iota_r*iota_s = - iota_s*iota_r. All
+products of linear factors must therefore contain either terms of odd order only,
+or terms of even order only. There can be no term of higher order than the nth,
+and the whole number of terms is 2^n as with Grassmann; i.e. in both cases
+we have a linear associative algebra of 2^n units, but the Grassmann algebra
+is nilpotent, and only homogeneous forms occur; while this is idempotent, and
+admits of odd forms and even forms, which are not in general homogeneous.
+It is convenient to use selective symbols V_0, V_1 ... V_n analogous to Hamilton's
+S and V, for picking out those parts of any expression which are of order 0, 1 ... n
+respectively.
+
+The Quaternion symbols satisfy the equation i*j*k = - 1, and this together
+with the assumption rho^2 = scalar gives all the laws of their multiplication. If
+we put omega = iota_1*iota_2 ... iota_n, this means that in the case n = 3 we may take omega to be a
+scalar. There is here a very important distinction between the cases n odd
+and n even; in the former case omega is commutative with the symbols iota, or omega*iota = iota*omega,
+in the latter case omega*iota = - iota*omega. Hence when n is odd omega acts as a scalar, when n
+is even it acts as a vector. In putting omega = to a scalar in the former case we
+are conveniently representing two different things by the same symbols, because
+they have the same laws of combination. We thus reduce the algebra to 2^(n-1)
+units when n is odd. When n is even the symbol omega is of even order. In all
+cases we may if we like consider separately the even units and the odd units;
+the former make an algebra by themselves, and by restricting ourselves to these
+we get the same result as by putting omega = +- 1. Thus, n = 3, the even algebra gives
+quaternions at once. When n is even we may still further simplify; for the
+symbol omega belongs to the even algebra, and this consists of 2^(n-2) terms (i.e. the even
+terms up to order n - 2 and half of these) together with the products of these
+terms by omega, which is commutative with them. Thus n = 4, the even algebra
+gives biquaternions, and the general expression is q + omega*r where q, r are quater-
+nions. For n odd, we may represent the odd algebra by the even algebra; this
+amounts to making omega = +- 1.
+
+THE extensive quantities of Grassmann, which Hankel has
+called alternate numbers, namely symbols which have the
+property of polar multiplication a*b = - b*a and whose square
+vanishes, a^2 = 0, serve to conveniently represent the projective
+geometry of n dimensions. In plane geometry, for example,
+let the symbols iota_1, iota_2, iota_3 represent three points; then
+a = a_1*iota_1 + a_2*iota_2 + a_3*iota_3
+will represent a point which is the centre of inertia of masses
+a_1, a_2, a_3 placed at the fundamental points respectively. If the
+
+=== PDF page 493 ===
+THE CLASSIFICATION OF GEOMETRIC ALGEBRAS.  399
+
+products iota_2*iota_3, iota_3*iota_1, iota_1*iota_2 be taken to mean the lines joining the
+fundamental points, then the product
+a*b = (a_1*iota_1 + a_2*iota_2 + a_3*iota_3) (b_1*iota_1 + b_2*iota_2 + b_3*iota_3)
+= (a_2*b_3 - a_3*b_2) iota_2*iota_3 + (a_3*b_1 - a_1*b_3) iota_3*iota_1 + (a_1*b_2 - a_2*b_1) iota_1*iota_2
+represents the line joining the points a, b; for the coefficients
+of the binary products iota_2*iota_3, ... are clearly the coefficients in the
+equation of that line referred to the fundamental triangle.
+
+In like manner the ternary product
+a*b*c = | a_1, a_2, a_3 | iota_1*iota_2*iota_3
+        | b_1, b_2, b_3 |
+        | c_1, c_2, c_3 |
+is proportional to the area of the triangle abc, and vanishes when
+the three points are collinear. And so on.
+
+The system of quaternions differs from this, first in that the
+squares of the units, instead of being zero, are made equal
+to - 1; and secondly in that the ternary product iota_1*iota_2*iota_3 is
+made equal to - 1. The interpretation is at the same time
+extended to three dimensions, but with this restriction: that
+whereas the alternate units represent any three points in a
+plane, and the system deals primarily with projective relations,
+Hamiltonian units represent three vectors at right angles, and
+the system is the natural language of metrical geometry and
+of physics.
+
+I shall now examine the consequence of making, in a system
+of n alternate numbers iota_1, iota_2, ... iota_n, the first of the modifications
+just named; namely I shall suppose that the square of each
+of the units is - 1. I shall then enquire whether any assump-
+tion can be made which is analogous to the second Hamiltonian
+law, iota_1*iota_2*iota_3 = - 1.
+
+In the system of Grassmann every product of linear factors
+is homogeneous in the units; namely the product of m linear
+factors is a linear function of the m-ary products when m is not
+greater than n, and is zero when m > n. But if we make the
+square of every unit equal to - 1, it is clear that the product
+of m factors (m not greater than n) may contain terms of the
+
+=== PDF page 494 ===
+400  THE CLASSIFICATION OF GEOMETRIC ALGEBRAS.
+
+order m, m - 2, m - 4, ... m - 2*r, ..., since the order is reduced
+by 2 for every substitution of - 1 for iota^2. Consequently every
+such product consists of terms which are either all of odd order
+or all of even order. The same thing is true when m is greater
+than n, except that the highest order which can occur is either
+n or n - 1, according as m - n is even or odd. The products
+of an even number of the units will therefore form an algebra
+complete in itself. We have altogether one term of order 0, n
+of order 1, (1/2) n (n - 1) of order 2, ... one of order n; that is
+to say 1 + n + (1/2) n (n - 1) ... + n + 1 = 2^n terms. Moreover we
+have
+terms of even order - terms of odd order
+= 1 - n + (1/2) n (n - 1) - ... + (- 1)^n = (1 - 1)^n = 0,
+or the number of terms in the even algebra is equal to the
+number of terms in the odd algebra, namely 2^(n-1).
+
+Let us now write omega for the product of all the units,
+omega = iota_1*iota_2 ... iota_n, and enquire into the value of omega^2. This is
+omega^2 = iota_1*iota_2 ... iota_n*iota_1*iota_2 ... iota_n,
+which after p interchanges of contiguous symbols can be trans-
+formed into
+omega^2 = (-)^p iota_1^2*iota_2^2 ... iota_n^2 = (-)^(p+n).
+
+To find the value of p, we observe that it takes n - 1
+changes to bring the second iota_1 between the first iota_1 and iota_2, then
+n - 2 changes to bring the second iota_2 between the first iota_2 and iota_3,
+and so on. Therefore p + n = 1 + 2 + ... + n = (1/2) n (n + 1); and
+it follows that omega^2 = +- 1 according as (1/2) n (n + 1) is even or odd,
+or according as n belongs to the forms 4*m, 4*m + 3 or 4*m + 1,
+4*m + 2.
+
+Next let us observe that iota_1*omega = - iota_2*iota_3 ... iota_n, but
+omega*iota_n = (-)^n iota_2*iota_3 ... iota_n; that is to say, iota_1*omega = +- omega*iota_1 according as
+n is odd or even. Thus the multiplication of omega with the units
+is polar or commutative according as n is even or odd.
+
+We are thus led to distinguish four classes of geometric
+algebra, which are characterized by the sign of omega^2 and the
+nature of the multiplication omega*iota.
+
+=== PDF page 495 ===
+THE CLASSIFICATION OF GEOMETRIC ALGEBRAS.  401
+
+Class I. n === 0 (mod. 4). omega^2 = 1, omega*iota = - iota*omega. The even
+algebra contains the symbol omega, which is commutative with
+all even terms. Since every term of order r > (1/2) n can be
+expressed as the product of omega into a term of order n - r, while
+the terms of order (1/2) n divide themselves into complementary
+pairs, each of which is omega multiplied by the other, this algebra
+contains 2^(n-2) symbols, together with their products by omega. Thus
+for n = 4, the most general expression in the even algebra is
+w + x*iota_2*iota_3 + y*iota_3*iota_1 + z*iota_1*iota_2 + omega (w' + x'*iota_2*iota_3 + y'*iota_3*iota_1 + z'*iota_1*iota_2) = q + omega*r,
+which is precisely what I have elsewhere called a biquaternion,
+because the products iota_2*iota_3, iota_3*iota_1, iota_1*iota_2, satisfy the laws of the Hamil-
+tonian symbols i, j, k, and therefore the quantities q, r are
+quaternions in the ordinary sense.
+
+The most general expression in the odd algebra consists also
+of eight terms, namely it is
+x*iota_1 + y*iota_2 + z*iota_3 + w'*iota_4 - omega (x'*iota_1 + y'*iota_2 + z'*iota_3 + w*iota_4).
+
+The coefficients are purposely so arranged as to bring out
+the fact that this expression may be derived from the preceding
+by multiplying it by iota_4*omega. It does not, however, follow that
+we may always represent the vector x*iota_1 + y*iota_2 + z*iota_3 + w'*iota_4 by the
+proportional quantity of the even algebra
+x*iota_2*iota_3 + y*iota_3*iota_1 + z*iota_1*iota_2 + w'*omega.
+For if alpha, beta be any two vectors, the quantity iota_4*omega*alpha . iota_4*omega*beta is not
+in general proportional to alpha*beta. This would require that the
+multiplication of alpha or beta with iota_4*omega should be either polar or
+commutative; whereas in general it is neither.
+
+Class II. n === 1 (mod. 4) omega^2 = - 1, omega*iota = iota*omega. The odd and
+even algebras may be included in the same formulae by putting
+omega equal to the scalar sqrt(- 1); the case is thus closely analogous
+to that of n === 3 (mod. 4).
+
+Class III. n === 2 (mod. 4), omega^2 = - 1, omega*iota = - iota*omega. Here omega has
+clearly the properties of a unit vector, and the system may
+always be treated as a degenerate case of the next. The general
+expression of the even algebra may be got from the general
+expression of the odd algebra by multiplying it by omega*iota_n.
+CLIF.  26

@@ -1,0 +1,8 @@
+all certificate checks pass
+wrote 22 dev worlds and 22 fingerprints
+VALID
+  "verdict_accuracy": 1.0,
+  "drop_set_accuracy": 1.0,
+  "marks_accuracy": 1.0,
+  "decision_accuracy": 1.0,
+every corruption caught

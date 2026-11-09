@@ -1,0 +1,82 @@
+ok    clean witness accepted
+ok    witness: a changed structure constant
+ok    witness: a wrong generator value
+ok    witness: a norm that is not positive definite
+ok    witness: claims q14 in dimension > 1
+ok    witness: claims a smaller candidate than it has
+ok    clean refutation accepted
+ok    refutation: a changed coefficient
+ok    refutation: used for a candidate that drops the units it needs
+ok    refutation: positivity with c <= 0
+ok    clean known-kind solution accepted
+ok    known: a wrong value
+ok    known: theta's interval holds two roots
+ok    IMPOSSIBLE accepted on an impossible world
+ok    IMPOSSIBLE rejected on a possible world
+ok    clean mirror accepted
+ok    mirror: a twin that is not the mirror
+ok    mirror: on a world that is not mirror-invariant
+ok    clean output: decision correct
+ok    clean output: marks correct
+ok    output: one branch dropped is a silent choice
+ok    output: a wrong mark
+ok    output: a FORCED unit without a proof
+ok    output: a false witness is counted
+ok    output: an added branch that a proof refutes
+ok    output: a wrong status
+ok    clean world and key: no validity error
+ok    key: a wrong verdict (V9)
+ok    key: a corrupted witness (V9)
+ok    key: a declared trap that does not hold (V12)
+ok    world: a one-letter name (V2)
+ok    world: a product of more than P2 factors (V2)
+ok    world: a number above 100 (V2)
+ok    world: ^-1 on a new generator (V2)
+ok    world: two builds (V2 or the reader)
+ok    world: a FREEDOM role that is not definitions (V3)
+ok    key: a NO_WITNESS world without its top witness (V8)
+ok    world: a dev world is rejected (V11)
+ok    world: a world of test 5 is rejected (V11)
+ok    reuse: some key certificate refutes a candidate outside its own subsets
+      (example: batch_dev W-11, written for ['q14'], accepted for ['q5'])
+ok    reuse: the classifier refutes that candidate with the certificate offered
+ok    reuse: test 5's rule alone does not
+ok    reuse: never for a candidate that drops a unit the certificate cites
+ok    reuse: a corrupted certificate is never offered
+ok    V15: renaming and another nonzero number give the same shape
+ok    V15: a zero in place of a nonzero number is another shape
+ok    V15: a sign change is another shape
+ok    V11: another number is another world (V11 is up to renaming only)
+ok    variant: a refutation exists in the framed test world
+ok    variant: with the frame, re-bracketing keeps the certificate valid (T9 is not a renumbering)
+ok    variant: a refutation exists without the frame, q5 kept
+ok    variant: q5 kept, the certificate carries over too
+ok    variant: an unchanged world maps every relator to itself
+ok    variant: a relator added by a case node keeps its place after the role's
+ok    units: kept q5[onn] gives relators in the non-associative ambient
+ok    units: kept q5[onn] also takes the role's product xa*xb as an argument
+ok    units: kept q5[non] gives relators in the non-associative ambient
+ok    units: kept q5[non] also takes the role's product xa*xb as an argument
+ok    units: kept q5[nno] gives relators in the non-associative ambient
+ok    units: kept q5[nno] also takes the role's product xa*xb as an argument
+ok    units: kept q5[oon] gives relators in the non-associative ambient
+ok    units: kept q5[oon] also takes the role's product xa*xb as an argument
+ok    units: kept q5[ono] gives relators in the non-associative ambient
+ok    units: kept q5[ono] also takes the role's product xa*xb as an argument
+ok    units: kept q5[noo] gives relators in the non-associative ambient
+ok    units: kept q5[noo] also takes the role's product xa*xb as an argument
+ok    units: kept q6[on] gives relators in the non-associative ambient
+ok    units: kept q6[on] also takes the role's product xa*xb as an argument
+ok    units: kept q6[on] gives relators in the associative ambient
+ok    units: a certificate citing q12 fails once q12 is dropped (batch_dev W-11)
+ok    units: a certificate citing q14 fails once q14 is dropped (batch_dev W-11)
+ok    units: a certificate citing q13 fails once q13 is dropped (batch_dev W-15)
+ok    units: a certificate citing q6[on] fails once q6[on] is dropped (batch_dev W-17)
+ok    units: a certificate citing q5[onn] fails once q5[onn] is dropped (batch_dev W-17)
+ok    units: a certificate citing q5[non] fails once q5[non] is dropped (batch_dev W-17)
+ok    units: a certificate citing q5[nno] fails once q5[nno] is dropped (batch_dev W-17)
+ok    units: a certificate citing q5[oon] fails once q5[oon] is dropped (batch_dev W-17)
+ok    units: a certificate citing q5[noo] fails once q5[noo] is dropped (batch_dev W-17)
+      (units cited by some certificate in the dev data: ['q12', 'q13', 'q14', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[oon]', 'q6[on]'])
+
+every corruption caught

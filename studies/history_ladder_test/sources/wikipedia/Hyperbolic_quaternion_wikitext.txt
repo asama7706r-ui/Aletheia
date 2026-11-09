@@ -1,0 +1,158 @@
+{{short description|Mutation of quaternions where unit vectors square to +1}}
+{|class="wikitable" align="right" style="text-align:center"
+|+Hyperbolic quaternion multiplication
+|-
+!width=15|×
+!width=15|1
+!width=15|i
+!width=15|j
+!width=15|k
+|-
+!1
+|1
+|''i''
+|''j''
+|''k''
+|-
+!''i''
+|''i''
+| +1
+|''k''
+| −''j''
+|-
+!''j''
+|''j''
+| −''k''
+| +1
+|''i''
+|-
+!''k''
+|''k''
+|''j''
+| −''i''
+| +1
+|}
+
+In [[abstract algebra]], the [[algebra over a field|algebra]] of '''hyperbolic quaternions''' is a [[nonassociative algebra]] over the [[real numbers]] with elements of the form
+:<math>q = a + bi + cj + dk, \quad a,b,c,d \in \mathbb{R} \!</math>
+where the squares of i, j, and k are +1 and distinct elements of {i, j, k} multiply with the [[anti-commutative]] property.
+
+The four-dimensional algebra of hyperbolic quaternions incorporates some of the features of the older and larger algebra of [[biquaternion]]s. They both contain subalgebras isomorphic to the [[split-complex number]] plane. Furthermore, just as the quaternion algebra '''H''' can be viewed as a [[quaternion#As a union of complex planes|union of complex planes]], so the hyperbolic quaternion algebra is a [[pencil of planes]] of split-complex numbers sharing the same real line.
+
+It was [[Alexander Macfarlane]] who promoted this concept in the 1890s as his ''Algebra of Physics'', first through the [[American Association for the Advancement of Science]] in 1891, then through his 1894 book of five ''Papers in Space Analysis'', and in a series of lectures at [[Lehigh University]] in 1900.
+
+==Algebraic structure==
+Like the [[quaternions]], the set of hyperbolic quaternions form a [[vector space]] over the [[real numbers]] of [[dimension]] 4.  A [[linear combination]]
+
+:<math>q = a+bi+cj+dk</math>
+
+is a '''hyperbolic quaternion''' when  <math>a, b, c,</math> and <math>d</math> are real numbers and the basis set <math>\{1,i,j,k\}</math> has these products:
+
+:<math>ij=k=-ji</math>
+:<math>jk=i=-kj</math>
+:<math>ki=j=-ik</math>
+:<math>i^2=j^2=k^2=+1</math>
+
+Using the [[distributive property]], these relations can be used to multiply any two hyperbolic quaternions.
+
+Unlike the ordinary quaternions, the hyperbolic quaternions are not [[associative]]. For example, <math>(ij)j = kj = -i</math>, while <math>i(jj) = i</math>. In fact, this example shows that the hyperbolic quaternions are not even an [[alternative algebra]].
+
+The first three relations show that products of the (non-real) basis elements are [[anti-commutative]].  Although this basis set does not form a [[group (mathematics)|group]], the set
+
+:<math>\{1,i,j,k,-1,-i,-j,-k\}</math>
+
+forms a [[Quasigroup#Loops|loop]], that is, a [[quasigroup]] with an identity element. One also notes that any subplane of the set ''M'' of hyperbolic quaternions that contains the real axis forms a plane of [[split-complex number]]s. If
+
+:<math>q^*=a-bi-cj-dk</math>
+
+is the conjugate of <math>q</math>, then the product
+
+:<math>q(q^*)=a^2-b^2-c^2-d^2</math>
+
+is the [[quadratic form]] used in [[spacetime]] theory. In fact, for events ''p'' and ''q'', the [[bilinear form]] 
+: <math>\eta (p,q) = -p_0q_0 + p_1q_1 + p_2q_2 + p_3q_3 </math>
+arises as the negative of the real part of the hyperbolic quaternion product ''pq''*, and is used in [[Minkowski space#Minkowski metric|Minkowski space]].
+
+Note that the set of [[unit (ring theory)|units]] U = {''q'' : ''qq''* ≠ 0 } is ''not'' closed under multiplication. See the references (external link) for details.
+
+==Discussion==
+
+The hyperbolic quaternions form a [[nonassociative ring]]; the failure of [[associativity]] in this algebra curtails the facility of this algebra in transformation theory. Nevertheless, 
+this algebra put a focus on analytical kinematics by suggesting a [[mathematical model]]:
+When one selects a unit vector ''r'' in the hyperbolic quaternions, then ''r'' <sup>2</sup> = +1. The plane <math>D_r = \lbrace t + x r : t, x \in R \rbrace </math> with hyperbolic quaternion multiplication is a commutative and associative subalgebra isomorphic to the split-complex number plane.
+The [[versor#Hyperbolic versor|hyperbolic versor]] <math>\exp(a r) = \cosh(a)  + r \sinh(a) </math> transforms D<sub>r</sub> by
+:<math>\begin{align}
+t + x r && \mapsto \quad & \exp(a r) (t + x r)\\
+&&=\quad&  (\cosh(a) t + x \sinh(a)) + (\sinh(a) t + x \cosh(a)) r .
+\end{align}</math>
+Since the direction ''r'' in space is arbitrary, this hyperbolic quaternion multiplication can express any [[Lorentz boost]] using the parameter ''a'' called [[rapidity]]. However, the hyperbolic quaternion algebra is deficient for representing the full [[Lorentz group]] (see [[biquaternion]] instead).
+
+Writing in 1967 about the dialogue on vector methods in the 1890s, historian [[Michael J. Crowe]] commented
+:''The introduction of another system of vector analysis, even a sort of compromise system such as Macfarlane's, could scarcely be well received by the advocates of the already existing systems and moreover probably acted to broaden the question beyond the comprehension of the as-yet uninitiated reader.''<ref name=Crowe>{{cite book |first=M.J. |last=Crowe |title=A History of Vector Analysis |publisher=University of Notre Dame |year=1967 |page=191 |title-link=A History of Vector Analysis }}</ref>
+
+==Geometry==
+Later, Macfarlane published an article in the ''Proceedings of the Royal Society of Edinburgh'' in 1900. In it he treats a model for [[hyperbolic space]] H<sup>3</sup> on the [[hyperboloid]]
+
+:<math>H^3 = \{ q \in M: q(q^*)=1 \} .</math>
+
+This [[isotropic]] model is called the [[hyperboloid model]] and consists of all the [[versor#Hyperbolic versor|hyperbolic versors]] in the ring of hyperbolic quaternions.
+
+==Historical review==<!-- This section is linked from [[Quasigroup]] -->
+The 1890s felt the influence of the ''continuous groups'' of [[Sophus Lie]]. An example of a [[one-parameter group]] is the [[versor#Hyperbolic versor|hyperbolic versor]] with the [[hyperbolic angle]] parameter. This parameter is part of the [[polar decomposition#Alternative planar decompositions|polar decomposition]] of a split-complex number. But it is a startling aspect of finite mathematics that makes the hyperbolic quaternion ring different:
+
+The basis <math>\{1,\,i,\,j,\,k\}</math> of the vector space of hyperbolic quaternions is not [[closure (mathematics)|closed]] under multiplication: for example, <math>ji=-\!k</math>. Nevertheless, the set <math>\{1,\,i,\,j,\,k,\,-\!1,\,-\!i,\,-\!j,\,-\!k\}</math> is closed under multiplication. It satisfies all the properties of an abstract group except the associativity property; being finite, it is a [[Latin square]] or [[quasigroup]], a peripheral [[mathematical structure]]. Loss of  the associativity property of multiplication as found in quasigroup theory is not consistent with [[linear algebra]] since all linear transformations compose in an associative manner. Yet physical scientists were calling in the 1890s for mutation of the squares of <math>i</math>,<math>j</math>, and <math>k</math> to be <math>+1</math> instead of <math>-1</math> :
+The [[Yale University]] physicist [[Willard Gibbs]] had pamphlets with the plus one square in his three-dimensional vector system.<ref>Gibbs (1881–4) [https://archive.org/details/elementsvectora00gibb ''Elements of Vector Analysis: arranged for students in physics''] via Internet Archive</ref> [[Oliver Heaviside]] in England wrote columns in the ''Electrician'', a trade paper, advocating the positive square. In 1892 he brought his work together in ''Transactions of the Royal Society A''<ref>{{harvnb|Heaviside|1892|pp=427–430}}</ref> where he says his vector system is
+:simply the elements of Quaternions without quaternions, with the notation simplified to the uttermost, and with the very inconvenient ''minus'' sign before scalar product done away with.
+
+So the appearance of Macfarlane's hyperbolic quaternions had some motivation, but the disagreeable non-associativity precipitated a reaction. [[Cargill Gilston Knott]] was moved to offer the following:
+
+'''Theorem''' (Knott<ref>{{cite journal |first=C.G. |last=Knott |title=Recent Innovations in Vector Theory |journal=Nature |volume=47 |issue=1225 |pages=590–3 |year=1893 |doi=10.1038/047590b0 |bibcode=1893Natur..47R.590. |doi-access=free }} read before the [[Royal Society of Edinburgh]] 19 December 1892 and published in ''Proceedings''</ref> 1892)
+:If a 4-algebra on basis <math>\{1,\,i,\,j,\,k\}</math> is associative and off-diagonal products are given by Hamilton's rules, then <math>i^2=-\!1=j^2=k^2</math>.
+
+'''Proof:'''
+:<math>j = ki = (-ji)i = -j(ii)</math>, so <math>i^2 = -1</math>. Cycle the letters <math>i</math>, <math>j</math>, <math>k</math> to obtain <math>i^2=-1=j^2=k^2</math>. ''QED''.
+
+This theorem revealed a flaw in ''[[Elements of Dynamic]]'' (1978) by [[W. K. Clifford]] who described products in 2x2 real matrices.<ref>W. K. Clifford (1878) ''[https://archive.org/details/elementsofdynami01clifiala/page/170/mode/2up Elements of Dynamic]'', page 170</ref> In that system some basis squares are positive identity, yet Clifford had distinct basis elements multiplying as in the quaternion group rather that the symmetry group of a square. The theorem justified resistance to the call of the physicists and the ''Electrician''. The quasigroup stimulated a considerable stir in the 1890s: the journal ''[[Nature (journal)|Nature]]'' was especially conducive to an exhibit of what was known by giving two digests of Knott's work as well as those of several other vector theorists. Michael J. Crowe devotes chapter six of his book ''[[A History of Vector Analysis]]'' to the various published views, and notes the hyperbolic quaternion:
+
+:''Macfarlane constructed a new system of vector analysis more in harmony with Gibbs–Heaviside system than with the quaternion system. ...he...defined a full product of two vectors which was comparable to the full quaternion product except that the scalar part was positive, not negative as in the older system.''<ref name=Crowe/>
+
+In 1899 [[Charles Jasper Joly]] noted the hyperbolic quaternion and the non-associativity property<ref>{{cite book |last=Hamilton |title=Elements of Quaternions |year=1899 |page=163 |url= https://archive.org/details/elementsquatern01hamigoog/page/n200 |edition=2nd |editor-first=C.J. |editor-last=Joly |place=London |publisher=Longmans, Green, and Co. }}</ref> while ascribing its origin to Oliver Heaviside.
+
+The hyperbolic quaternions, as the ''Algebra of Physics'', undercut the claim that ordinary quaternions made on physics. As for mathematics, the hyperbolic quaternion is another [[hypercomplex number]], as such structures were called at the time. By the 1890s [[Richard Dedekind]] had introduced the [[ring (mathematics)|ring]] concept into commutative algebra, and the [[vector space]] concept was being abstracted by [[Giuseppe Peano]]. In 1899 [[Alfred North Whitehead]] promoted [[Universal algebra]], advocating for inclusivity. The concepts of quasigroup and [[algebra over a field]] are examples of [[mathematical structure]]s describing hyperbolic quaternions.
+
+==Macfarlane's hyperbolic quaternion paper of 1900==
+The ''Proceedings of the Royal Society of Edinburgh'' published "Hyperbolic Quaternions" 
+in 1900, a paper in which Macfarlane regains associativity for multiplication by reverting 
+to [[biquaternion|complexified quaternions]]. While there he used some expressions later 
+made famous by [[Wolfgang Pauli]]: where Macfarlane wrote
+:<math>ij=k\sqrt{-1}</math> 
+:<math>jk=i\sqrt{-1}</math>
+:<math>ki=j\sqrt{-1},</math>
+the [[Pauli matrices]] satisfy
+:<math>\sigma_1\sigma_2=\sigma_3\sqrt{-1}</math>
+:<math>\sigma_2\sigma_3=\sigma_1\sqrt{-1}</math>
+:<math>\sigma_3\sigma_1=\sigma_2\sqrt{-1}</math>
+while referring to the same complexified quaternions.
+
+The opening sentence of the paper is "It is well known that quaternions are intimately connected with [[spherical trigonometry]] and in fact they reduce the subject to a branch of algebra." This statement may be verified by reference to the contemporary work ''[[Vector Analysis]]'' which works with a reduced quaternion system based on [[dot product]] and [[cross product]]. In Macfarlane's paper there is an effort to produce "trigonometry on the surface of the equilateral hyperboloids" through the algebra of hyperbolic quaternions, now re-identified in an associative ring of eight real dimensions. The effort is reinforced by a plate of nine figures on page 181.  They illustrate the descriptive power of his "space analysis" method. For example, figure 7 is the 
+common [[Minkowski diagram]] used today in [[special relativity]] to discuss change of velocity of a frame of reference and [[relativity of simultaneity]].
+
+On page 173 Macfarlane expands on his greater theory of quaternion variables. By way of contrast he notes that [[Felix Klein]] appears not to look beyond the theory of [[Quaternions and spatial rotation]].
+
+==References==
+{{reflist}}
+{{refbegin}}
+
+*{{cite journal |author-link=Oliver Heaviside |first=Oliver |last=Heaviside  |title=On the forces, stresses, and fluxes of energy in the electromagnetic field |journal=Philosophical Transactions of the Royal Society of London A |volume=183 |pages=423–480 |year=1892 |doi= 10.1098/rsta.1892.0011|url= https://zenodo.org/record/1432100|jstor=90590 |bibcode=1892RSPTA.183..423H|doi-access=free }}
+*{{cite journal |first=A. |last=Macfarlane |title=Principles of the Algebra of Physics |journal=Proceedings of the American Association for the Advancement of Science |volume=40 |pages=65–117 |year=1891 }}
+*{{cite book |first=A. |last=Macfarlane |chapter=Paper 2: The Imaginary of the Algebra |title=Papers on Space Analysis |url=https://archive.org/details/cu31924001506769 |publisher=B. Westerman |location=New York |year=1894 |chapter-url=https://archive.org/details/principlesalgeb01macfgoog}}
+*{{cite web |first=A. |last=Macfarlane |title=Space-Analysis: a brief of twelve lectures |date=1900 |publisher=[[Lehigh University]] |url=http://digital.lib.lehigh.edu/cdm4/eb_viewer.php?DMTHUMB=1&ptr=1088}}
+*{{cite journal |first=A. |last=Macfarlane |title=Hyperbolic Quaternions |journal=Proceedings of the Royal Society of Edinburgh |volume=23 |pages=169–180 |date=January 1902 |doi=10.1017/S0370164600010385 |url=https://zenodo.org/record/2154076 }} [https://archive.org/details/proceedingsroya37edingoog Internet Archive] (free), or [https://books.google.com/books?id=-DhrXa1ZX38C&oe=UTF-8 Google Books] (free). (Note: P. 177 and figures plate incompletely scanned in free versions.)
+*{{cite journal |author-link=G. B. Mathews |first=G.B.M. |last=Mathews  |title=An Algebra for Physicists |journal=Nature |volume=91 |issue=2284 |pages=595–6 |year=1913 |doi=10.1038/091595b0 |bibcode=1913Natur..91..595G |doi-access=free }}
+* [https://web.archive.org/web/20091027012440/http://ca.geocities.com/macfarlanebio/hypquat.html Alexander Macfarlane and the Ring of Hyperbolic Quaternions]
+{{refend}}
+{{Number systems}}
+
+[[Category:Non-associative algebra]]
+[[Category:History of quaternions]]
+[[Category:Minkowski space]]

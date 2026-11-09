@@ -1,0 +1,676 @@
+1899-1900.] Prof. Macfarlane on Hyperbolic Quaternions. 169
+
+Hyperbolic Quaternions.. By Alexander Macfarlane,
+     Lehigh University, South Bethlehem, Pennsylvania. (With
+     a Plate.)
+
+                                    (Read July 16, 1900.)
+
+   It is well known that quaternions are intimately connected with
+spherical trigonometry, and in fact they reduce that subject to a
+branch of algebra. The question is suggested whether there is
+not a system of quaternions complementary to that of Hamilton,
+which is capable of expressing trigonometry on the surface of the
+equilateral hyperboloids. The rules of vector-analysts are approxi-
+mately complementary to those of quaternions. In this paper I
+propose to show how they can be made completely complemen-
+tary, and that, when so rectified, they yield the hyperbolic counter-
+part of the spherical quaternions.
+
+  The celebrated rules discovered by Hamilton are :--
+
+ij= k     jk= i                           ki= j
+ji= --h   kj= - i                         ik = --j.
+
+This is the statement of the rules as enunciated by Hamilton; it
+supposes an order of the symbols from right to left. When the
+order is changed to that from left to right, they become:--
+
+IJ == -k  jk -- -i                        ki = -J
+ji =-- k  kj= i                           ik-- k.
+
+The rules used by vector-analysts are:--
+
+i* =+ 1   fz=+l                           /,;2 = + 1
+ij = /,;                                  ki = i
+ji =: -k  jk- i ·
+                                          ik = -j,
+          kj= -i
+
+and they suppose an order from left to right. They lead to pro-
+ducts in which the manner of associating the factors is essential,
+in this respect differing from the rules of quaternions. Can they
+be modified so that the order of the factors will be preserved,
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+170  Proceedings of' Boyal Society ofEdinburgh.          [SESS.
+
+while the products become associative 1 I find that the desired
+modification is accomplished by introducing «/ -- 1 before the second
+and third sets. The rules then become
+
+              V = N/ - 1* Jk = *J- It /ci=J-- Ij
+             ji=-J-U hj---J-li ik=-s/-lj.
+
+As the quaternion ijk are quadrantal unit-vectors, they can be
+analysed into J - li0, J -- \j0, J - l*0, where iojo k0 are unit-vectors.
+
+The quaternion rules, modified for order, then become
+
+  These rules are in perfect harmony with the vector rules when
+made associative as above; for, on dividing the left hand by J - 1
+J - 1, and the right hand side by the equivalent - , they yield
+
+     ^o -- ·*·  Jo -- L          "-o -- x
+
+     Vo= J - 1*0 joK=J - 1*0 Kio--J - l/o
+
+     io*'o = - V - l^o h-jo= - J- l«0 «o*o = - V - l/o-
+
+  Let p denote any real unit axis; then p 2 = l . Similarly for
+any imaginary unit axis (N/- lp)2= - 1. It is evident that p 2 = l
+
+is in nature a principle of reduction. But there is also the principle
+
+of reduction p/p=l or J-- lp/>J- l p = l . This latter is a more
+
+absolute principle, and the reduction specified can be made at any
+
+time; whereas the former is legitimate only under certain con-
+
+ditions. The rules of the form ij=J- 1 k are also principles of
+
+reduction of a relative nature.
+
+A more general statement of these rules is as follows:--For any
+
+two real unit axes /3 and y.
+
+                /?y = cosfiy+ sin j3y J - 1 fty
+
+wherefiydenotes in the simplest case the axis perpendicular to
+/3 and y, but more correctly the axis conjugate to the plane of
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+         1899-1900.] , Prof. Macfarlane on Hyperbolic Quaternions. 171
+
+         ft and y. Similarly for any two imaginary axes J - 1/3 and J - ly
+         ( VZ~l/3)( N/"ly) = - cos Py - sin /?y V ^ W
+
+            I proceed now to apply these principles to the investigation
+         of the fundamental theorems of hyperboloidal trigonometry. I
+         shall consider only the hyperboloid of equal axes, but the results
+         can easily be extended to the general hyperboloid.
+
+            On account of the symmetry of the sphere with respect to its
+         centre, spherical quaternions are independent of rectangular axes.
+        It is otherwise with hyperboloidal quaternions, for the equilateral
+         hyperboloid has an axis of revolution. Iu order to treat of
+        trigonometry on the hyperboloid, it is necessary first to treat the
+         trigonometry of the sphere with reference to the same axis of
+         revolution. In the figure (fig. 1) OA is the axis of revolution,
+         and the surfaces considered are those generated by the circle and
+         by the equilateral hyperbolas. From this point of view the circle
+         appears as consisting of a real part PQ corresponding to the real
+         hyperbola P'Q', and an imaginary part.QE corresponding to the
+         imaginary hyperbola Q'E'. Consequently the sphere appears
+         broken up into a double sheet traced out by PQ and US, and
+         a single sheet traced out by QR.
+
+            The algebraic expression for a circular angle is eb^~l. As the
+         axis of the plane is not specified, the denotation of the expression
+         is necessarily limited to angles in a constant plane. Let fi be
+        introduced to denote the axis, then e6V~i£ is the proper expression
+         for an angle in any plane. We have
+
+         Let the principle of reduction be introduced, which reduces
+         ( J - 1/3)2 = - 1; then the right hand member becomes
+
+                                                        J^
+
+                           1 + hsj - 1/3 - Y\ - 31 "J ~ lP + etc-
+                                   52 b*
+
+                            ~ * ~ 2~! + 3~1 ~
+
+                                 = SUq + Y~Uq
+                                = cos b + sin b ( J - 1/3,.
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+172  Proceedings of Royal Society of Edinburgh.  [SESS.
+
+  Note that the expression SUg' + VUg' is not the complete
+equivalent of JJq; the binomial is a reduced equivalent. For,
+if p is variable, the result of differentiating e'^-1^ will be different
+from the result of differentiating cos b + sin b (J - 1/3).
+
+  If we enquire for the analogous expression for a hyperbolic
+angle, we find that there is none furnished by Algebra. It is
+not e", for
+
+and there is here no ground for breaking up the series into two
+components; all the terms are real, and so add directly. For the
+same reason it cannot be e~b. But we know that
+
+                          cosh &=l + 2~i + 4-j + ,
+                                         68 b5
+
+                          sinh & = & + «-[ + g-j + ;
+
+there must therefore be some proper way of expressing a hyperbolic
+angle by means of an exponential function. Try the effect of
+dropping «/--l from the circular expression e6^"1^. We get
+
+   Now introduce the corresponding principle of reduction, namely,
+/ 3 2 = + l ; then
+
+                                         Ifi
+
+         if q' denotes a hyperbolic quaternion. Hence it appears that ebP
+         is the proper expression for the angle of an equilateral hyperbola.
+
+            It follows that the expression for the spherical quaternion is
+         j.gV-10, which, after expansion and reduction, gives the spherical
+         complex quantity of the form x + y^j -- \f$. Similarly the ex-
+         pression for the equilateral hyperbolic quaternion is rebP, which,
+         after expansion and reduction, gives the hyperbolic complex
+         quantity of the form x + y/3- In the former case we have
+
+                          in the latter, r = ^x2-yi. Suppose the objection
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+        1899-1900.] Prof. Macfarlane on Hyperbolic Quaternions. 173
+
+        made, x may be equal to y, what then becomes of the modulus?
+
+        The answer is, the cosine is then --., which shows that the angle
+
+        is infinitely great, and this is the geometrical truth. Suppose
+        that the objection is made, x may be less than y, what then
+        becomes of the modulus? The modulus then takes on a form
+        appropriate to the conjugate hyperbola, and by the hypothesis the
+        angle lies in the conjugate hyperbola;
+
+           The above expression for a spherical quaternion has a resem-
+        blance to the Drehstteckung of Professor Klein. But r does not
+        mean an expansion and e&v/-i£ a rotation; the former is a multi-
+        plier simply, and the latter a circular angle. The existence of the
+        analogous expression re*?, and the application of these expressions
+        to develop the trigonometry of surfaces of the second order
+        show that his theory of quaternions is inadequate, and the
+        sphere of applicability which he assigns them too narrow.
+        According to his idea, quaternions will be in place when we wish
+        to have a convenient algorithm for the combination of rotations and
+        dilatations; the true idea is that quaternions contains the elements
+        of the algebra of space.
+
+           In investigating the fundamental principles of hyperboloidal
+         trigonometry, the first problem is to find the general expression
+        for a spherical versor, when reference is made to the axis of
+        revolution.
+
+           Let OA (fig. 2) represent the axis of revolution, and let it be
+        denoted by a. Any versor, POA, passing through the axis of
+        revolution, may be denoted by e^-1^, where (3 denotes a unit axis
+        perpendicular to a. Similarly AOQ, another versor, passing
+        through the axis of revolution, may be denoted by e°v/~1i') where y
+        denotes a unit axis perpendicular to a. The product versor POQ
+        is circular, but it will not in general pass through OA; let it be
+         denoted by e"/-1?-
+
+           Now e*^-*£ = eV-i/Vv'3!?
+
+                                 = (S + V)(S'
+
+   = cos b cos c + cos c sin bj _ \f3 + cos b sin e <j -- \y + sin b sin c J -Ifi j'ZT\y;
+         = cos b cos a -- sin b sin c cos /3y
+         + >J - 1 {cos e sin b-j3 + cos 5 sin e.y - sin b sin c sin /3y./fy}.
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+174  Proceedings of Royal Society of Edinburyh.         [SESS.
+
+   We ohserve that the directed sine may be broken up into two
+components--namely, cos c sin b.fi + cos b sin c-y, which is per-
+pendicular to the axis of revolution, and -sin& sine sin/3y,/?y,
+which has the direction of the negative of the axis of revolution,
+for /3y is identical with a.
+
+   Draw OS to represent the first component cos c sin b-fi, OT to
+represent the second component cos b sin e-y, and OU to represent
+the third component -cos& cose sin/3ya Draw OV, the result-
+ant of the first two, and OE, the resultant of all three; then
+
+     cos a = cos b cos c - sin b sin c cos /3y
+
+     OK _ cose sin &·/? + cos b sin c-y -- sin b sin e sin f3ya
+
+     sin a    J\ -- (cos b cos c -- sin b sin c cos /3y)2.
+
+   The plane of OA and OV passes through OR, which is normal
+to the plane POQ; hence these planes cut orthogonally in a line
+OX, and the angle between OA and OX is equal to that between
+OV and OR, for OV is perpendicular to OA and OR to OX. Let
+6 denote the angle AOX ; then
+
+     sin $ =  sin 5 sin c sin /3y
+
+            «/l - (cos b cos c - sin b sin c sin/?y)2.
+
+   The figure (fig. 3) represents a section through the plane of OA
+and OV; MX represents sin 6. Hence the axis £ can be put
+in the form cos 6-e -- sin 0-a, where e denotes a unit axis per-
+pendicular to a. The unit axis e may be expressed in terms of two
+axes j and Jc, forming an orthogonal system with the axis of
+revolution, which may be denoted by i. Hence a perfectly
+general expression for any spherical versor is ea^-^, where
+
+               £=J - l{cos 0"(cos <f>'j + sin <£·&)-sin 6'i}.
+
+   We observe that if ea^-^ is an angle in the double sheet,
+
+ «/ - 1$ is a vector to the surface of the single sheet.
+   It is now easy to find the solution of the analogous problem,
+
+namely, the product of two diplanar hyperbolic versors when the
+plane of each passes through the axis of revolution.
+
+   The axis of the versor is perpendicular to the plane of the versor
+when the latter passes through the axis of revolution; and we shall
+assume that it is of unit length, an assumption which is afterwards
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+1899-1900.] Prof. Macfarlane on Hyperbolic Quaternions. 175
+
+completely justified. Let the two versors POA and AOQ (fig. 4)
+be denoted by ebP and e°v, the axes /3 and y being both perpen-
+dicular to the axis of revolution a, and of unit length.
+
+   Then eW ecv = (S 4- V)(S' + V )
+
+       = cosh b cosh c + cosh c sinh b'fi + cosh b sinh e'y
+
+       + sinh b sinh c'fBy.
+
+Now    /?y = cos /?y + %/ - 1 sin J3y'f3y
+
+Hence         = cos /?y + V - 1 sin fiy'a.
+       e^eey=cosh b cosh c + sinh b sinh c cos jQy
+
++ cosh c sinh &·/? + cosh b sinh c*y + J - lsinh & sinh c sin /Jy'a.
+
+Hence cosh «*%T = cosh & cosh c + sinh 6 sinh c cos /3y
+
+and    Sinh d>Pecv = cosh c sinh b'/3 + cosh 6 siuh c'y
+
+       + \/ - 1 sinh 6 sinh c sin /8y*a.
+
+   The first and second components of the directed sinh (denoted
+by Sinh) are perpendicular to the axis of revolution, hence their
+resultant cosh c sinh b'fl + cosh b sinh c'y is also perpendicular to the
+principal axis. Let it be represented by OV jn the figure. The
+difficulty consists in finding the true direction of the third com-
+ponent J -i sinh b sinh c sin /?y-a on account of the presence of
+V - 1. It will be found that V - 1 has here nothing to do with
+the direction; and as the term is otherwise in the positive direc-
+tion of a, we represent it by OTJ in the figure. In the case of the
+sphere OU is drawn in the direction opposite to a. Let OE be
+the resultant of OU and OV; it represents the directed Sinh both
+in magnitude and direction.
+
+   The square of the length of OE is
+
+cosh 2c sinh % + cosh 2b sinh 2c + 2 cosh c cosh b sinh c sinh b cos /3y
+                 + sinh 2b sinh 2c sin 2/3y.
+
+            But the square of the modulus of OE is the same with a nega-
+         tive sign before the last term; added to the square of cosh d>PePi it
+          yields 1.
+
+             The directed sinh OR is not normal to the plane POQ; how is
+          it related to that plane? If we draw OU'= - O U and find OE'
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+176  Proceedings of Boyal Society of Edinburgh,                     [ssss.
+
+the resultant, it is OR' and not OR which is normal to the plane
+of OP and OQ. The expressions for the three vectors OR', OP,
+OQare
+
+      OR' = cosh c sinh b-fi + cosh b sinh c'y - sinh b sinh c sin /3y"a
+
+     OP = - sinh bs-i.n-£py*.0 + sinh bB--inLp-y.v' + cosh b-a
+
+     OQ = - sinh c-sJin--P.By     -  sinh  cco   s^.  v  + cosh c>
+                                            sin  /?y
+
+from which it follows that S(OR')(OP) = 0 and S(OR')(OQ) = 0.
+Hence OR' is normal to the plane of POQ. How is the direction
+of OR related to that plane 1 The plane of OA and OV (fig. 5)
+cuts the equilateral hyperboloid in an equilateral hyperbola; and
+as it passes through the normal OR', it must cut the plane POQ
+orthogonally.
+
+   Let OX be the line of intersection. Draw XM perpendicular to
+OA, draw XD a tangent to the equilateral hyperbola at X (fig. 5),
+and XA' parallel to OA. Let 6 denote the hyperbolic angle AOX.
+As OR' is normal to the plane POQ, it is perpendicular to OX;
+but OV is perpendicular to OA, therefore the angle AOX is equal
+to the angle VOR'. Now the angle AOR is the complement of
+ROV, and A'XD the complement of AOX; therefore the line OR
+is parallel to the tangent XD. Thus the direction of the directed
+sinh is that of the conjugate axis to the plane of OP and OQ.
+This idea of conjugate instead of normal also applies to the spherical
+case, from which it follows that ij=»J-Ik means that kis the
+axis conjugate to i and/.
+
+     N,Tow  sm. h,  6.  =M-^X-.-  =       VR  VR2
+                          OA         VOV2 -
+
+                        _                  sinh b sinh c sin fly
+
+                           «/(cosh b cosh c + sinh b sinh c cos /6y)2 - 1
+
+           The above analysis shows that the product versor POQ may be
+        specified by the following three elements:--First, e, a unit axis
+        drawn perpendicular to 0 A in the plane of OA and the normal to
+        the plane POQ; second, 0, the hyperbolic angle determined by OA
+        and OX, which is drawn at right angles to the normal in the plane
+        of OA and the normal; third, a, the angle of the hyperbolic sector
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+1899-1900.] Prof. Macfarlane on Hyperbolic Quaternions. 177
+
+OPXQ, which is a sector of the hyperbola having OX for semi-
+
+major axis, and for semi-minor axis OB which is equal to OA and
+
+perpendicular to OA and OV. This hyperbola is not an equilateral
+
+hyperbola; PXQ is the curve of intersection of the hyperboloid
+
+with a plane through the points 0, P, Q. An angle of this hyper-
+
+bola is specified by the ratio of the sector to half of the rectangle
+
+formed by OX and OB. Thus a is the ratio of the sector POQ to
+
+half of the rectangle formed by OX and OB.
+
+  Hence the product versor may be expressed by means of a
+hyberbolic angle a and a hyberbolic axis of the form
+
+                      cosh 6't+ v -- 1 sinh 6'a,
+
+where, as before, e denotes a unit axis normal to a, the axis of
+
+revolution. Let £ denote the above axis; the actual components
+
+from which it is constructed are cosh 6'c and sinh 6'a It is not
+
+of unit length, but it has a unit modulus, The former is
+«/cosh 20 + sinh '26, the latter is Vcosh '20 - sinh '26.
+
+Hence the product versor may be expressed by
+
+                              eai = ea (oosh 0'e+sinhfl'a).
+
+And to determine these quantities we have the three analogous
+
+equations
+
+           cosh a -- cosh b cosh c + sinh b sinh e cos /3y (1)
+
+              sinh b sinh c sin By
+                      lIO l
+           =
+
+                      cosh c sinh b'B + cosh b sinh &y
+
+           £~         sinh a sinh $.
+
+  As e is of unit length, it may be expressed as cos <f>j +sin 4>'k>
+and if i denotes the axis of revolution
+
+           f =cosh 6 (cos <j>j +sin <£·&) + J - 1 sinh 0-i.
+
+The axis i is evidently a vector to a point in the conjugate hyper-
+
+boloid of one sheet.
+
+In the above investigation it is assumed that the magnitude
+
+of the perpendicular component of the Sinh is necessarily greater
+
+than the component parallel to the axis of revolution. This means
+
+that
+cosh 2c sinh 2b + cosh % sinh 2c + 2 cosh b cosh c sinh b sinh c cos /?y
+
+                         >sinh 26 sinh 2c sin 2/Jy.
+
+Let sin /3y=l, cos By -- 0; then each of the two terms on the
+
+left is greater than the term on the right of the inequality. Let
+
+VOL. XXIII. M Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+
+https://doi.org/10.1017/S0370164600010385
+178     Proceedings of 'Royal Society of Edinburgh.  [SESS.
+
+sin /3y = 0 and cos fty = - 1, then the above expression reduces to
+the well known inequality a2 + b2 > 2 ah. Hence the terms on the
+left are always greater than the term on the right.
+
+   In the case when the two versors are equal, we can verify t^jat
+it is the line of intersection of the central plane with the equi-
+lateral hyperboloid which is indicated by the product of the
+versors.
+
+  As the two versors are equal they might be denoted by ebP and
+e*T. Let cosh b = x, sinh h = y. Then according to the theorem
+
+        ebp eby ==x2 + y2 cos fiy + xy (/3 + y) + J - \y2 sin fiya
+
+  As (fig. 6), OB the semi-transverse axis of the hyperbola PXQ
+is 1, NQ represents the sinh of half of the product angle. Now
+by the geometry of the construction
+
+                        JSTQ
+
+AAgam.  ON
+        ox
+
+               x J (x2 + y2 cos /3y)2 - 1
+
+         =7 Y( 1+ ( 1 + C O S fh).
+
+Now cosh 2X0Q = (cosh XOQ)2 + (sinh XOQ)2
+
+               OB; +\OX
+
+            2  2
+
+            = y ( l + COS /3y) + 1 + y ( l + COS
+
+                                     cos ^y
+         which agrees with the above theorem.
+
+            We have seen that the general spherical versor is denoted by
+         guv'-if, where
+
+                                    £ = - sin 8-a + cos 6'e,
+         a denoting the axis of revolution and e an axis in the perpen-
+         dicular plane. Similarly a general versor for the equilateral
+         hyperboloid of two sheets is denoted by e"f, where
+
+                              £= J -- 1 sinh 6'a + cosh 0-c,
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+1899-1900.] Prof. Macfarlane on Hyperbolic Quaternions. 179
+
+a and e denoting the same kind of axes as before. This leads
+
+us to the consideration of hyperboloidal axes. Let £t denote a
+radius to the double sheet (fig. 7);
+
+                       ^ = cosh 0-a+J- 1 sinh#fe.
+
+The length of ^ is
+                            J cosh 2$ + sinh 20
+
+but its modulus is J cosh W -- sinh 26, which is 1. Let £2 denote a
+radius to the single sheet;
+
+                     f2 = J - 1 sinh O'a + cosh 0'e.
+
+The corresponding axes for the unit sphere are
+                          fj= cos 0-a + sin &-e
+
+                     and £2= -sin 0-a + cos #'e.
+
+Just as a spherical vector is expressed by rj -- If, so a hyper-
+
+boloidal vector is expressed by r£, where r denotes the modulus
+
+and i the axis. The principal difference is that in the case of the
+
+sphere $ is of constant length, whereas in the case of the hyper-
+
+boloid the length of the axis depends on its position relative to the
+
+axis of revolution.
+
+Consider now a general triangle on the hyperboloid of two
+
+sheets (fig. 8). Let the axes to the three points be denoted by
+
+f=cosh 6-a+^/^Tsinh 6-fl
+
+?7 = cosh &'a+ J -- 1 sinh ffy
+
+£=cosh e"-a + J~l sinh 6"S.
+
+Then f?;=cosh 6 cosh ff -- sinh 0 sinh 0' cos /?y                (1)
+
+- cosh 6 sinh 6''ay - sinh 0 cosh O'-fia                         (2)
+
+- *] - 1 sinh 6 sinh 6' sin /3ya                                 (3)
+
+Hence cosh £rj = (l)
+
+and Sinh ^ = (2)+ (3).
+
+We have proved that the length of (3) is always less than the
+
+length of (2); hence ^ has the form
+
+                     sinh 4>'a + si - 1 cosh <£·£.
+
+And the same is true for t]t, and tfe. The central section is always
+
+hyperbolic.
+
+           Therefore cosh f£=cosh £q cosh ^ + cosh (Sinh irj S i n h ^ ) and
+        Sinh f£=cos i)£ Sinh £r) + cosh £-q Sinh £17
+
+                                  + Sinh {Sinh to Sinh VZ}.
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+180        Proceedings of Royal Society of Edinburgh.    [suss.
+
+Consider now a general triangle on the hyberboloid of one sheet
+
+(fig. 9).
+
+Let the three axes be
+
+           £=cosh 6-p+ V - 1 smb. 0'a
+
+           ?7 = cosh 6''y + J- 1 sinh ff'a
+
+           £=cosh er-h+J^l sinh ff'-a.
+
+Then £17 = cosh 0 cosh & cos /Jy-sinh 6 sinh &           (1)
+
+           - cosh 6 sinh ff-fa - cosh 6' sinh 6-^y       (2)
+
+           + J~^l cosh 6 cosh 6' sin /?ya                (3)
+
+In this case the length of the normal part of the Sinh may be
+
+greater than, equal to, or less than the length of the components
+
+along the axis of revolution. For we have to compare--
+  cosh 20 sinh 20' + cosh 20' sinh W - 2 cosh 6 cosh 6' sinh 6 sinh ff
+
+cos /3y with cosh 20 cosh W sin 2j3y. Let sin /3y=0, cos /?y=
+
+- 1; then the former term is the greater. Let cos /?y=0, sin /?y
+
+= 1; then the former term is the less. And the terms may be
+
+equal. In the former case the axis of £q has the form
+
+              cosh <£-e+ J - I sinh <f>'a
+
+and the section is hyperbolic. In the latter case the axis of £rj
+
+has the form
+
+J --1 {cosh $ cosh & sin /2y"a + \J - 1 (cosh 6 sinh ff'fia + cosh 0'
+
+                       sinh 6'ay)}.
+
+The axis inside the brackets denotes an axis of the equilateral
+
+hyperboloid of two sheets, and the section is elliptic.
+
+As before
+
+therefore cosh f£ = cosh £?/ cosh ?7£ + cosh {Sinh frj Sinh rjt,}
+and
+Sinh £rj = cosh ij£ Sinh £q + cosh £q Sinh »7£ + Sinh {Sinh£q S i n h ^ } .
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+Proc. Roy. Soc. Edin.                             Vol. XXIII.
+
+                    HYPERBOLIC      QUATERNIONS.
+
+   R1
+
+                                            R  V
+
+          FIG. 1
+
+R      v                        R'       V
+
+       FIG. 7.                  FIG. 8.
+
+Downloaded from https:/www.cambridge.org/core. Columbia University Libraries, on 15 Jun 2017 at 08:39:41,
+subject to the Cambridge Core terms of use, available at https:/www.cambridge.org/core/terms.
+https://doi.org/10.1017/S0370164600010385
+

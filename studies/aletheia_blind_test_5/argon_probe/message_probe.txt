@@ -1,0 +1,14 @@
+Hello. This is a short environment check, not the real task.
+
+I have attached two files: probe.py and probe_input.txt.
+
+Please:
+1. Use your code-execution tool to run probe.py exactly as written. Do not edit it, and do not rewrite it in your own words.
+2. The script must open probe_input.txt from code. If it cannot find the file, do not type the file's content yourself. Instead, report exactly what the script printed, and tell me how uploaded files can be made available to your code.
+3. Paste the full output of the run verbatim, with nothing removed.
+4. Then answer three short questions:
+   a. Can your code read files that I upload, and from which path?
+   b. Is there a time limit for one code run? If yes, how long is it?
+   c. Can your code write files, and can I download them afterwards? If not, can you print their full content as text?
+
+Please run nothing else. Thank you.

@@ -1,0 +1,18 @@
+A W-01: decision = truth; marks ok; forced proofs all valid; witnesses valid; 95.1 s
+A W-02: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.2 s
+A W-04: decision = truth; marks ok; forced proofs all valid; witnesses valid; 36.5 s
+A W-07: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.4 s
+A W-12: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.0 s
+A W-17: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.6 s
+A W-19: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.0 s
+A W-20: decision = truth; marks ok; forced proofs all valid; witnesses valid; 376.0 s
+A W-21: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.0 s
+A W-22: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.1 s
+B W-15: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.1 s
+B W-19: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.2 s
+B W-21: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.0 s
+B W-22: decision = truth; marks ok; forced proofs all valid; witnesses valid; 136.3 s
+B W-25: decision = truth; marks ok; forced proofs all valid; witnesses valid; 109.4 s
+B W-26: decision = truth; marks ok; forced proofs all valid; witnesses valid; 0.4 s
+B W-27: decision = truth; marks ok; forced proofs all valid; witnesses valid; 84.7 s
+exit 0

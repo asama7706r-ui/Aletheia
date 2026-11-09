@@ -1,0 +1,12 @@
+worlds 60
+verdict accuracy 50/60
+drop-set accuracy 21/38
+marks accuracy 21/38
+decision accuracy 43/60
+baseline COUNT: decision 40/60, b=8, c=5, one-sided McNemar p=0.2905
+baseline MAXCON: decision 31/60, b=23, c=11, one-sided McNemar p=0.0288
+baseline ORDER: decision 31/60, b=15, c=3, one-sided McNemar p=0.0038
+baseline ASSOC: decision 37/60, b=9, c=3, one-sided McNemar p=0.0730
+baseline FIRST: decision 34/60, b=14, c=5, one-sided McNemar p=0.0318
+baseline COARSE: decision 43/60, b=8, c=8, one-sided McNemar p=0.5982
+baseline SPLIT_ORDER: decision 37/60, b=13, c=7, one-sided McNemar p=0.1316

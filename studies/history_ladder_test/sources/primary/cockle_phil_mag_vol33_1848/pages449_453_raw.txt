@@ -1,0 +1,413 @@
+[ 4-35 ]
+
+LXIV. On certain Functions resembling Quaternions, and on a new Imaginary in Algebra. By James Cockle, Esq.,
+M.A., Barrister- at-Law. In a Letter to T. S. Davies, Esq.,
+F.R.S.L.$E.$c*
+
+To Richard Taylor, Esq., F.S.A. $c.
+
+My DEAR Sir,
+
+Royal Military Academy, Woolwich, October 27, 1848.
+
+BELIEVE that Mr. Horner's attention was first directed
+
+I"
+
+by me to the
+congeneric surd
+
+consideration of what he has happily termed equations." This was done in consequence
+
+of a difficulty that I had found in discussing such an equation
+
+which was accidentally brought before me ; a difficulty which,
+
+from the friendship that had long subsisted between us, I very
+
+naturally referred to him. His reply was printed in the Phi-
+
+losophical Magazine about a dozen years ago; and it has received proper attention from those algebraists who look
+with due care to the fundamental principles of their science.
+Almost every new difficulty in algebra is the precursor of more extended views respecting its principles ; and often out
+
+of a case which may, at first sight, appear to be little more than
+
+a conundrum, very important improvements in our general
+
+theories often to include the
+
+a"ricsoe.nunAdlrlumef,f"ordtes steorvgee,netrhaerleifzoeroe,uratvtieenwtsi,vescoona-s
+
+sideration ;
+
+and for this reason I send you for publication the
+
+accompanying letter, which I have just received from your
+correspondent and my friend, Mr. James Cockle, of the
+
+Middle Temple.
+
+I hope you will be able to give Mr. Cockle's letter an early place in your valuable Magazine, as it contains much that is
+
+suggestive of inquiry.
+
+I remain,
+
+Yours very truly,
+
+T. S. Davies.
+
+My DEAR Sir,
+
+2 Church -Yard Court, Temple, October 26, 1848.
+
+are aware that the new algebraical symbol, which I
+YOUhave recently discovered, was suggested to my mind by re-
+-- flecting on the structure of congeneric surd equations a sub-
+ject on which I have lately been much engaged. Did I require
+
+any excuse for throwing the present investigations into the
+
+form of a letter to you, I should find it in the fact that the
+
+remarks of Horner on congenerics were put into a similar
+
+shape. (See Phil. Mag., S. 3, vol. viii. p. 43-50.)
+
+* Communicated by Mr. Davies.
+
+436 Mr. James Cockle on a new Imaginary in Algebra.
+In what follows, I propose to confine the term unreal to the
+imaginary quantities of ordinary algebra. When the word
+impossible is used, it must be understood as referring exclusively to expressions involving the new symbol. So that imaginary quantities constitute a genus which includes two species, viz. unreal quantities and impossible quantities.
+Let
+l+*2 =0,
+
+then / is the simplest representation of unreal quantity : and, if
+i + v7=o,
+
+then j is the simplest representation of impossible quantity. It is to be borne in mind that, in the latter equation, the ra-
+
++ dical is to be considered as essentially affected with the sign .
+
+Let iv, x, y, z be any real quantities, positive, negative, or
+
+zero j also let
+
+w + ix+jy + ijz=t,
+
+The then t I call a tessarine, and ?c, .r, y, z its constituents.
+latter term I have adopted from the quaternion theory of Sir
+W. R. Hamilton.
+
+This being premised, I shall first proceed to prove, that,
+
+when a tessarine vanishes, its constituents are simultaneously
+
+zero.
+= Suppose then that / 0, and solve this last equation with
+
+respect toj; the result is
+
+= - j
+
++ + (w ix) +(y iz) ;
+
+that is to say, y is capable of being linearly expressed in terms of i and of real quantities, for we may readily reduce the above expression for j to the form
+j=u + ip.
+
+But, as may be proved from the principles of my theory of
+congeneric surd equations*, there is no linear relation between
+= i and j. Hence a and /3 must each be of the form 0-^-0 ; and
+we see, in consequence, that when t 0, we have, necessarily,
+w>=o, x=0, y=0f and #=0.
+
+The symbol 7 is not capable of being identified with any of
+the imaginaries of the quaternion theory. It is a deduction from the principles of algebra rather than an invention. I shall
+not repeat my argument in favour of its admission as a new
+and independent symbol, because I think that I have put the question of the propriety of such admission beyond dispute at
+* Mechanics' Magazine, vol. xlvii. pp. 151,307,331,409; vol. xlviii. p. 181 ; vol. xlix. p. 364.
+
+Mr. James Cockle on a new Imaginary in Algebra. 437
+
+pp. 364--367 of the current (49th) volume of the Mechanics'
+
+Magazine ; I shall rather go on with the development of the
+
+properties of expressions which involve it.
+
+For convenience, I shall denote the product of i and j by k;
+
+I
+
+shall
+
+assume
+
+2
+that,/
+
+is
+
+equal
+
+to
+
+unity.
+
+I say assume because,
+
+although I have reasons (not, however, free from objection,)
+
+for making such a supposition, yet I wish to reserve to myself
+
+full liberty to modify the assumption, and to discuss ab initio the symbol/4 and its symbolic relation toj. Then the follow-
+
+ing system of relations will, together with the second equation
+
+given in this letter, furnish us with all the conditions requi-
+
+-- site for the formation of a theory of these three imaginaries.
+That system is
+
+{/=£> j^-h ld----j.
+
+Almost the first thing that strikes us, in examining the expression for a tessarine, is, that, under the above system, the product of two or more tessarines is a tessarine. Let us confine our attention to the case in which two only are multiplied together, and let the factors be t and t\ where
+
+t="w + ix+jy + kzt
+
+and iuvh no i
+
+= + + t'
+
+«/
+
+*V +jy'
+
+1
+Icz .
+
+= W By actual multiplication, we obtain
+
+tt'
+
+ww'
+
+-f
+
+S
+«
+
++J2
+j/y
+
+4-
+
+k*zz'
+
+"J
+
++ + +l
+ifpud nix/) +jk(yz zy' )
+
++ + +i(wy +^tt/) ik{xz' zaf)
+
++ + k(wz' -f zw') y(xy' +yx') .
+-- -- = Suppose that
+ww' xx1 +yy* zzf «/',"*]
+wx' + x'w'+yz' + zy'=x", I
+
+and also that
+
+--zx ivy' -i-y>w'--xz,
+
+,
+=y", j
+
++ + loz' zw1 xy' +yx' == z", J
+
++ = + id"
+
+ix" +jy"
+
+kz"
+
+t" ;
+
+then we have, under the foregoing system of relations,
+= tt' t";
+
+and, if we had three or more such factors as t, the result would
+
+-- still be a tessarine. The next point that arises is,
+
+what is the tessarine law of
+
+moduli ? or, more generally, what modular or quasi-modular
+
+438 Mr. James Cockle on a new Imaginary in Algebra.
+relation or relations exist between the constituents of the fac-
+tors and those of the product? Seeing that the operations of algebra necessarily and inevitably conduct us to tessarine for-
+mulae, I cannot doubt but that some relations may be found,
+such as to enable us to extend the boundaries of analysis.
+--I have not, however, time to pursue this inquiry further now more particularly as I wish to make one or two remarks upon other parts of the subject of this new imaginary j.
+For instance, I would observe that the product of two or more factors of the form
+
+is of the same form thus ;
+
+where and
+
+= (w +jy)(wl +jj/) «/' +jy",
+
++ w" ^-Wurf
+
+1
+yy ,
+
+f
+i/'=.'wy'-{-yiio .
+
+There are cases in which the impossible quantity j altogether disappears from a result. Thus, if e be the base of the Na-
+pierian logarithms, we have
+
+w2
+
+3
+. fr
+
+v4
+
+and
+
+hence
+
+·)>
+and
+l.(s*_ s-«) =^ + JC+&C..
+
+This
+
+last
+
+is
+
+a
+
+very
+
+simple
+
+case ;
+
+but the
+
+nature of such a
+
+letter as this obliges me to have recourse to illustration rather
+
+than extensive investigation.
+
+-- I need not tell you how to read the second equation which
+occurs in this communication; still, I cannot help saying to
+
+-- use words adopted on another occasion, by our friend Professor
+J. R. Young (Alg. 4th edit. p. 131), that we must read that
+
+equation as meaning that unity together with the plus \_square-~]
+
+root of/ is equal to zero, and not that unity together with a square-root ofj is equal to zero. The whole discussion is in-
+
+volved in the correct reading of that fundamental equation.
+
+By way of conclusion, I will add that, if we had three inde-
+
+Prof. E. Wartmann's Seventh Memoir on Induction. 439
+
+pendent imaginaries i,Jt k, we should have to deal, not with tessarines, but with what might be called octrines. These lastmentioned expressions would be of the form
+
+w + ix +jy + kz + ijp + ikq +jkr + ijks,
+
+where w, x, y, z, p, q, r, s are any real quantities. These quantities might be termed the constituents of the octrine, which could not vanish unless all its constituents were zero.
+
+So if we had four independent imaginaries (that is to say,
+imaginaries unconnected by any linear relation), the corresponding expression would consist of sixteen terms, and would have properties analogous to those of the tessarine and the
+octrine. I must here break off, but I remain, always,
+My dear Sir,
+Yours most truly, James Cockle.
+
+To
+
+T.
+
+S.
+
+Davies,
+
+Esq.,
+
+F.E.S.
+
+L.
+
+$
+
+E. 9
+
+fyc. Sj-c. fyc.y Woolwich.
+
+LXV. Seventh Memoir on Induction. ByM. Elie Wartmann,
+Professor of Natural Philosophy in the Academy of Geneva*.
+
+[Continued from p. 278.]
+
+§ XIX. On the relations of Electricity with bodies in the sphe-
+
+roidal state, and on some properties of those bodies.
+
+ATT 178.
+
+is a well-known fact that liquids are incapable of moistening solid surfaces sufficiently heated, or of
+
+mixing, in certain cases, with other liquids raised to a high
+
+temperature. The first accurate observation of this fact is
+
+attributed to Eller: it dates from 1746"f\ Ten years later,
+
+this phaenomenon was studied by Leidenfrost, by whose name
+
+it is still designated {. Since then a number of experiments
+
+little known have been made in Germany § ; afterwards Italy ||
+
+* Communicated by the Author.
+
+if Histoire de P'Academic de Berlin, 1746, p. 42.
+\ De aquce communis nonnullis qualitatibus : Duisburg, 1756.
+
+§ Among others we may cite Ziegler, Specimen de digestore Papini,\765.
+
+-- -- Link, Beitrcige zur Physik und Chemie, No. 2, p. 11. Kastner, Troms-
+
+-- dorff's Journal, vol. ix. p. 270. (Ersted, Gehlen's N. Allgem. Journ.,\o\. iii.
+
+-- p. 324. Klaproth, Scherer's Allg. Journal de Chemie, vol. vii. p. 646 ; and
+
+-- Journal de Physique, 1802, p. 62. Dobereiner, Schweig. Journ., vol. xxix.
+
+-- W. p. 43. N.
+
+Fischer, Poggend. Annalen, vol. xix. p. 514, and vol. xxi.
+
+-- -- p. 163. Buff, Pogg. Ann., vol. xxv. p. 591. A. H. Emsmann, Pogg. Ann.,
+
+-- -- vol. li. p. 444. Frei, Kastner's Archiv, vol. iv. p. 57- Erdmann, Journal
+
+-- fiir Praklische Chemie, vol. x. p. 334. Bollger, Eine Sammlung eigener Er-
+
+fahrungen, Versuche und Beobachtungen,No. 18, Francfort-sur-Mein, 1838.
+
+|| Bellani, Giornale di Fisica di Brugnatelli, 1808, p. 779; Giornale di
+
+

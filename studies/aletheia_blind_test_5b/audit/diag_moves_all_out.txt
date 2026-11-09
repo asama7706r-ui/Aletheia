@@ -1,0 +1,266 @@
+{"set": "test 5", "batch": "A", "world": "W-01", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-01", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 6, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-03", "drop": ["q13", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 12, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-03", "drop": ["q12", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 12, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-03", "drop": ["q12", "q13", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 8, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-04", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-04", "drop": ["q13", "q14", "q5"], "root": "split", "sealed": true, "built": true, "moves": 4, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-04", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-07", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-07", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-07", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 9, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-07", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": false, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": false, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": false, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": false, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-10", "drop": ["q13", "q14", "q6"], "root": "split", "sealed": true, "built": true, "moves": 6, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-10", "drop": ["q12", "q13", "q6"], "root": "split", "sealed": true, "built": true, "moves": 6, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-10", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 6, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-12", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-13", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-13", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 9, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-14", "drop": ["q13", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 21, "seconds": 0.3}
+{"set": "test 5", "batch": "A", "world": "W-14", "drop": ["q12", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 21, "seconds": 0.3}
+{"set": "test 5", "batch": "A", "world": "W-16", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-16", "drop": ["q12", "q13", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-16", "drop": ["q12", "q13", "q14", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-18", "drop": ["q12", "q13", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-18", "drop": ["q13", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 9, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-18", "drop": ["q12", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 9, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-18", "drop": ["q12", "q13", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-19", "drop": ["q13", "q14", "q6"], "root": "split", "sealed": true, "built": true, "moves": 6, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-19", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 6, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-19", "drop": ["q12", "q13", "q6"], "root": "split", "sealed": true, "built": true, "moves": 6, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-19", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-21", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-21", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-21", "drop": ["q12", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 10, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-22", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 3, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-22", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 3, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-22", "drop": ["q12", "q13", "q14", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-22", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 4, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-24", "drop": ["q13", "q14", "q5"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-24", "drop": ["q12", "q13", "q5"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-24", "drop": ["q12", "q14"], "root": "inverse", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.3}
+{"set": "test 5", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 6, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "split", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-30", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-30", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5", "batch": "A", "world": "W-30", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 10, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-30", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 6, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-30", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 4, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-30", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 10, "seconds": 0.1}
+{"set": "test 5", "batch": "A", "world": "W-30", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 4, "seconds": 0.1}
+{"set": "test 5", "batch": "B", "world": "W-28", "drop": ["q6", "q13"], "root": "split", "sealed": true, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5", "batch": "B", "world": "W-28", "drop": ["q6", "q12"], "root": "inverse", "sealed": true, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5", "batch": "B", "world": "W-29", "drop": ["q6", "q13"], "root": "split", "sealed": true, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5", "batch": "B", "world": "W-29", "drop": ["q6", "q12"], "root": "inverse", "sealed": true, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5", "batch": "B", "world": "W-30", "drop": ["q6", "q13"], "root": "split", "sealed": true, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5", "batch": "B", "world": "W-30", "drop": ["q6", "q12"], "root": "inverse", "sealed": true, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-01", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "split", "sealed": false, "built": true, "moves": 2, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-01", "drop": ["q12", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "inverse", "sealed": false, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-01", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 2, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-02", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.4}
+{"set": "test 5b", "batch": "A", "world": "W-02", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-02", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-02", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-02", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-02", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-04", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-04", "drop": ["q13", "q14", "q6"], "root": "split", "sealed": false, "built": true, "moves": 4, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-04", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 4, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-04", "drop": ["q12", "q13", "q6"], "root": "split", "sealed": false, "built": true, "moves": 4, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q14", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-06", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-06", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-07", "drop": ["q13", "q14", "q6"], "root": "split", "sealed": false, "built": true, "moves": 2, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-07", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": false, "built": true, "moves": 2, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-07", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 9, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-07", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-09", "drop": ["q12", "q13", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 6, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-09", "drop": ["q13", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 6, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-09", "drop": ["q12", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 6, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-11", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-12", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-12", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-12", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 17, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-13", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-13", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-15", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-15", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-15", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-15", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-15", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-15", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-15", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-17", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-17", "drop": ["q13", "q14", "q6"], "root": "split", "sealed": false, "built": true, "moves": 12, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-17", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 12, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-17", "drop": ["q12", "q13", "q6"], "root": "split", "sealed": false, "built": true, "moves": 12, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-19", "drop": ["q12", "q13", "q14", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-19", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-19", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-19", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-20", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-20", "drop": ["q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": false, "built": true, "moves": 12, "seconds": 0.3}
+{"set": "test 5b", "batch": "A", "world": "W-20", "drop": ["q12", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 12, "seconds": 0.3}
+{"set": "test 5b", "batch": "A", "world": "W-21", "drop": ["q13", "q6"], "root": "split", "sealed": false, "built": true, "moves": 0, "seconds": 0.4}
+{"set": "test 5b", "batch": "A", "world": "W-21", "drop": ["q12", "q6"], "root": "inverse", "sealed": false, "built": true, "moves": 0, "seconds": 25.0}
+{"set": "test 5b", "batch": "A", "world": "W-21", "drop": ["q12", "q13", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-22", "drop": ["q12", "q13", "q14", "q6"], "root": "close", "sealed": true, "built": true, "moves": 16, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-22", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-22", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "split", "sealed": true, "built": false, "moves": 2, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "split", "sealed": true, "built": false, "moves": 2, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-26", "drop": ["q13", "q14", "q6"], "root": "split", "sealed": true, "built": true, "moves": 14, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-26", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 14, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-26", "drop": ["q12", "q13", "q6"], "root": "split", "sealed": true, "built": true, "moves": 14, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-28", "drop": ["q12", "q13", "q5", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.2}
+{"set": "test 5b", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 4, "seconds": 0.1}
+{"set": "test 5b", "batch": "A", "world": "W-29", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 4, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-12", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 17, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-12", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-13", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 13, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-13", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-14", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-14", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-15", "drop": ["q12", "q13", "q14", "q5"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-15", "drop": ["q12", "q13", "q5", "q6"], "root": "split", "sealed": false, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-16", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-16", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-17", "drop": ["q13", "q14", "q6"], "root": "split", "sealed": true, "built": true, "moves": 14, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-17", "drop": ["q12", "q13", "q6"], "root": "split", "sealed": true, "built": true, "moves": 14, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-17", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 14, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-18", "drop": ["q12", "q13", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-18", "drop": ["q13", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 18, "seconds": 0.3}
+{"set": "test 5b", "batch": "B", "world": "W-18", "drop": ["q12", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 18, "seconds": 0.4}
+{"set": "test 5b", "batch": "B", "world": "W-19", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-19", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-19", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 2, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-19", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-19", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 1, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-19", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 1, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-20", "drop": ["q12", "q13", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-20", "drop": ["q13", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 14, "seconds": 0.3}
+{"set": "test 5b", "batch": "B", "world": "W-20", "drop": ["q12", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 14, "seconds": 0.4}
+{"set": "test 5b", "batch": "B", "world": "W-21", "drop": ["q12", "q13", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-21", "drop": ["q13", "q6"], "root": "split", "sealed": false, "built": true, "moves": 12, "seconds": 1.1}
+{"set": "test 5b", "batch": "B", "world": "W-21", "drop": ["q12", "q6"], "root": "inverse", "sealed": false, "built": true, "moves": 12, "seconds": 1.0}
+{"set": "test 5b", "batch": "B", "world": "W-22", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 1, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-22", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "split", "sealed": false, "built": true, "moves": 4, "seconds": 0.2}
+{"set": "test 5b", "batch": "B", "world": "W-22", "drop": ["q12", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 19, "seconds": 0.7}
+{"set": "test 5b", "batch": "B", "world": "W-23", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-23", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-23", "drop": ["q13", "q14", "q5"], "root": "split", "sealed": true, "built": true, "moves": 2, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-24", "drop": ["q12", "q13", "q6"], "root": "split", "sealed": true, "built": true, "moves": 22, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-24", "drop": ["q13", "q14"], "root": "split", "sealed": true, "built": true, "moves": 30, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-24", "drop": ["q12", "q14"], "root": "inverse", "sealed": true, "built": true, "moves": 30, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 2, "seconds": 0.2}
+{"set": "test 5b", "batch": "B", "world": "W-25", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 6, "seconds": 0.3}
+{"set": "test 5b", "batch": "B", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 6, "seconds": 0.3}
+{"set": "test 5b", "batch": "B", "world": "W-25", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "close", "sealed": true, "built": true, "moves": 6, "seconds": 0.3}
+{"set": "test 5b", "batch": "B", "world": "W-25", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6"], "root": "split", "sealed": false, "built": true, "moves": 2, "seconds": 0.2}
+{"set": "test 5b", "batch": "B", "world": "W-26", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": false, "built": true, "moves": 4, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-26", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 4, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-26", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-26", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 10, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-27", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 4, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-27", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-27", "drop": ["q12", "q13", "q5", "q5[non]", "q5[noo]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-27", "drop": ["q12", "q13", "q5", "q5[nno]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 10, "seconds": 0.3}
+{"set": "test 5b", "batch": "B", "world": "W-27", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": false, "built": true, "moves": 2, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-28", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-28", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-28", "drop": ["q13", "q14", "q5"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-29", "drop": ["q13", "q14", "q5", "q6"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-29", "drop": ["q12", "q13", "q5", "q6"], "root": "positive", "sealed": true, "built": true, "moves": 1, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-29", "drop": ["q12", "q13", "q14"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-29", "drop": ["q12", "q14", "q6"], "root": "inverse", "sealed": true, "built": true, "moves": 12, "seconds": 0.2}
+{"set": "test 5b", "batch": "B", "world": "W-30", "drop": ["q13", "q5", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "split", "sealed": true, "built": true, "moves": 1, "seconds": 0.1}
+{"set": "test 5b", "batch": "B", "world": "W-30", "drop": ["q12", "q13", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6[on]"], "root": "close", "sealed": true, "built": true, "moves": 0, "seconds": 0.0}
+{"set": "test 5b", "batch": "B", "world": "W-30", "drop": ["q12", "q5[nno]", "q5[non]", "q5[noo]", "q5[onn]", "q5[ono]", "q5[oon]", "q6", "q6[on]"], "root": "inverse", "sealed": true, "built": true, "moves": 13, "seconds": 0.5}
+test 5, case node at the root: 40 proofs; sealed procedure reached 40; builder reached 36; builder only 0; sealed only 4; neither 0; moves at the root: max 21, mean 4.9; mean seconds 0.1
+test 5, no case node: 72 proofs; sealed procedure reached 72; builder reached 72; builder only 0; sealed only 0; neither 0; moves at the root: max 10, mean 1.0; mean seconds 0.1
+test 5b, case node at the root: 51 proofs; sealed procedure reached 33; builder reached 49; builder only 18; sealed only 2; neither 0; moves at the root: max 30, mean 8.7; mean seconds 0.7
+test 5b, no case node: 98 proofs; sealed procedure reached 98; builder reached 98; builder only 0; sealed only 0; neither 0; moves at the root: max 17, mean 1.3; mean seconds 0.1
+exit 0
