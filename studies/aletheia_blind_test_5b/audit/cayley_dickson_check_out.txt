@@ -1,0 +1,7 @@
+dimension 2: x*conj(x) = conj(x)*x = |x|^2 on 12 random rational x: True
+dimension 4: x*conj(x) = conj(x)*x = |x|^2 on 12 random rational x: True
+dimension 8: x*conj(x) = conj(x)*x = |x|^2 on 12 random rational x: True
+dimension 16: x*conj(x) = conj(x)*x = |x|^2 on 12 random rational x: True
+dimension 32: x*conj(x) = conj(x)*x = |x|^2 on 12 random rational x: True
+dimension 64: x*conj(x) = conj(x)*x = |x|^2 on 12 random rational x: True
+dimension 16: (e3 + e10) * (e6 - e15) = 0, with both factors nonzero

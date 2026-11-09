@@ -1,0 +1,8 @@
+A W-07 drop ['q14', 'q6']: 15 normal words up to length 4
+  factored one-word relations give 2 pairs
+  pair 1 closes: [['-21', '1'], ['1', [[['da', 'ke'], 'lu'], 'mi']]] * [['21', '1'], ['1', [[['da', 'ke'], 'lu'], 'mi']]]; sealed checker accepts: True; 0.1 s
+A W-21 drop ['q6']: 29 normal words up to length 4
+  factored one-word relations give 0 pairs
+  no factored pair closes; trying exact roots
+  roots of word ('vo',) over Q(sqrt 2) close: [[['0', '1/2'], '1'], [['0', '1/2'], 'e1'], ['1', 'vo']] * [[['0', '-1/2'], '1'], [['0', '-1/2'], 'e1'], ['1', 'vo']]; sealed checker accepts: (True, ''); 0.3 s
+exit 0

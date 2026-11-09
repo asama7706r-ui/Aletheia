@@ -1,0 +1,21 @@
+{
+ "procedure": {
+  "bounds": {
+   "P2": 4,
+   "P3": 16,
+   "S": 4,
+   "list": "1"
+  },
+  "branches": [],
+  "deciders": [],
+  "freedom": {
+   "fate": "undecided",
+   "slot": "0^-1"
+  },
+  "impossible": null,
+  "known": null,
+  "refutations": [],
+  "verdict": "FREEDOM"
+ },
+ "seconds": 0.0
+}

@@ -1,0 +1,16 @@
+truth branch candidates, tests 5 and 5b, as published (twins counted one by one):
+  A q14 kept: 3 (witnessed 0, no_witness 3)
+  B q12 kept: 52 (witnessed 33, no_witness 19)
+  D associative, commutative, no conditions: 6 (witnessed 6, no_witness 0)
+  E associative, not commutative, no conditions: 26 (witnessed 22, no_witness 4)
+  F not associative, q13 only: 37 (witnessed 17, no_witness 20)
+  total 124, no_witness 46
+key refutation candidates:
+  A q14 kept: 28
+  B q12 kept: 52
+  C q13 kept, associative: 29
+  D associative, commutative, no conditions: 18
+  E associative, not commutative, no conditions: 20
+  G not associative, no conditions: 114
+  total 261
+sealed run of 5b, phase 1: groups tried 1269, refuted 134; example search for a group: 1309 tries, 40 examples found

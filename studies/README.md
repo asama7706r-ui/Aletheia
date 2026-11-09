@@ -10,6 +10,9 @@ Each folder is one self-contained study with all of its materials: protocol, pro
 | [`aletheia_blind_test_3`](aletheia_blind_test_3/README.md) | 2026-10-02 | The nebulium check: look for a registered relation whose coverage lets it return before inventing a new kind; decide, fork or declare NEW with proofs (A). Reopen exactly the files that depend on a new datum (B). | PASS / PASS |
 | [`aletheia_llm_compare_2`](aletheia_llm_compare_2/REPORT.md) | 2026-10-03 | Do frontier LLMs reach the blind-test-3 Part A answers with the question only, without the method? | I1 as registered (Claude 27/27). Erratum: Claude, the generator's family, should not have counted; without it, open (MIXED) without the method, and matched by Qwen with it |
 | [`aletheia_blind_test_4`](aletheia_blind_test_4/README.md) | 2026-10-07 | Fill each filler's identity card (dimensions, symmetry, old observations) from a registry sealed before the worlds, label it, and branch with a decisive observation when an action is unknown. | PASS (39/39 with proofs; best baseline 30/39, p = 1/512) |
+| [`history_ladder_test`](history_ladder_test/README.md) | 2026-10-22 | Does the ladder theory (drop a containment-minimal set of old rules, protect two, branch on ties) agree with history better than five rival rules, on hypercomplex number systems coded by an independent model? | Qualitative probe, 4 cases: ours 4/4, rivals 0/4 to 4/4; one case discriminates. Hypothesis H1 not supported. The checks rerun identically |
+| [`aletheia_blind_test_5`](aletheia_blind_test_5/README.md) | 2026-10-23 | The new-kind ladder: build a new kind by the smallest relaxation of a sealed list of old rules, with marks, proofs, witnesses and branches, and no silent collapse or silent choice. | FAIL (decision accuracy 0.63 and 0.83; best baseline 0.73). Audit: the search missed evidence; given the key's certificates, the rules give the truth in 16/16 wrong worlds. The procedure stops on time limits, so its outputs are not reproducible byte for byte |
+| [`aletheia_blind_test_5b`](aletheia_blind_test_5b/README.md) | 2026-10-31 | The same claim with a wider search, on new worlds. | FAIL (decision accuracy 0.67 and 0.77; best baselines 0.70 and 0.73). Audit: 17/17 given the key's certificates. Outputs not reproducible byte for byte (time limits) |
 | [`checks`](checks/README.md) | - | Scratch scripts from design discussions | not evidence |
 
 ## How the studies protect themselves
@@ -54,6 +57,43 @@ Each folder is one self-contained study with all of its materials: protocol, pro
 | `aletheia_blind_test_4/key/key.json` | `33e7ce8ba4194d27898374da3b38bd6c6c11731bb41f5e54ecba342ebf7a3ecf` |
 | `aletheia_blind_test_4/results/outputs.json` | `b1141207d391c4cfd5fec8737d5f8ad5a6d8c4ebbd46ad3186180fcae3eae618` |
 | `aletheia_blind_test_4/results/report.json` | `1d6fc968511ff7320a1abc420fa3348f91f9c4c629712efd06bf0e1a5a9a8e5c` |
+| `history_ladder_test/PREREG.md` | `64cb957b049f208b238bc77012d9e955a0b67d71e0193d98c65268b452947cc7` |
+| `history_ladder_test/predictions/PREDICTIONS_SHA256.txt` | `260af655108c2b32e790002ee183f94727e5cbead96ad6f5ae3e317105722667` |
+| `history_ladder_test/RESULTS.md` | `9581a29fa4fbc6ee46b2c23b68db9e7b6c2315df7bd401cbacac5e4409b7331a` |
+| `aletheia_blind_test_5/SEALED_HASHES.txt` | `c77230661230d57b54f4b1e2179cb602edfeefd799e851ee796a470575c7d159` |
+| `aletheia_blind_test_5/PROTOCOL_ADDENDUM_1.md` | `56ff3c17ff09889d20915b96db4d9e4de3cec7a641af4c418b49c99a426b4cb3` |
+| `aletheia_blind_test_5/batch_A/worlds/` (combined hash) | `61d0ea686a40ea8cd0a6ce31a0a026ded295263f045ebd3c374624827c3ed234` |
+| `aletheia_blind_test_5/batch_A/key/key.json` | `f3e8abde213520a0ebbc34b5d014091bb1f13938ce072425b334f5041578f969` |
+| `aletheia_blind_test_5/batch_B/worlds/` (combined hash) | `1ac7666e92296f9d82adb6bcf73a80856a902c25e727293488197d144b739eea` |
+| `aletheia_blind_test_5/batch_B/key/key.json` | `eea7894bb62b051417b4ed2ebccb258c44608f745bac344b6f046678c8b5e31f` |
+| `aletheia_blind_test_5/run/run_batches.py` | `40dc9f01b13d5b024b5dbeb193857c5c8bba1919835e88fbbc613066c8dc4f04` |
+| `aletheia_blind_test_5/results/outputs_A.json` | `f29f45a09b9584566b6f04982c36989c3896f02155a5e6093f567ad0fbd20546` |
+| `aletheia_blind_test_5/results/outputs_B.json` | `af55c1ecfb61cf18e091d0bff184341ce602d48467a48ae7b438a85d42a1b721` |
+| `aletheia_blind_test_5/results/report_A.json` | `bb19233d9f444bc8aa8a0e71af9bcfaca1abda008e6cbbba5c7bea364da0e690` |
+| `aletheia_blind_test_5/results/report_B.json` | `d61c630a00be9386483d05bf0899e883409bbe85ff0aa124bf105457f579434d` |
+| `aletheia_blind_test_5/audit/audit.md` | `1bbb8e63fca6d84f8d95dffdd4291ca0403caec4243d11a94ce3ce362fca1bd8` |
+| `aletheia_blind_test_5b/SEALED_HASHES.txt` | `4c2fe881a5df6c4db50c7253123cf4971b71058143d0729b6f42a7fa558c4185` |
+| `aletheia_blind_test_5b/batch_A/worlds/` (combined hash) | `f8e08e2ad65a10b535242c21ee9a039fa3fe87baba88fcf05c3b28d19a1cfb2e` |
+| `aletheia_blind_test_5b/batch_A/key/key.json` | `499aefe6af8c98ae6df89cc8da595abd3385bf8cfe323c048f0fa6a1c59b2b6e` |
+| `aletheia_blind_test_5b/batch_B/worlds/` (combined hash) | `45ba8e1204eda250467fbf7f191ce8d50fbfd4aee327d72eb8b1cd149599df70` |
+| `aletheia_blind_test_5b/batch_B/key/key.json` | `5f5721b2fa2bb4e359d9b1ad883407e56353521e75ddee0896221d00e18c64e8` |
+| `aletheia_blind_test_5b/run/run_batches_5b.py` | `aeba39495aedbccd40489e94002740c180d4db5f0866edda62572c74a067a4c3` |
+| `aletheia_blind_test_5b/results/outputs_A.json` | `6ebf322719c03be009c02d9e1729270f495aa26ba96e73ea1442005ec2c58825` |
+| `aletheia_blind_test_5b/results/outputs_B.json` | `f7b0b9f46c50339091e2222392ce10d0c5ca56867697265128d86707a5d40b9a` |
+| `aletheia_blind_test_5b/results/report_A.json` | `24a7d206c05a6cf9e2a8acf0e685a2213a1f29bf7a89a9894eb9fc7c1fcd63a3` |
+| `aletheia_blind_test_5b/results/report_B.json` | `2e0c8da41ac4aeed4d7426b0aa980a326cc943e1ccb571d48404436b2006e9d2` |
+| `aletheia_blind_test_5b/audit/audit.md` | `3018bbba872d88798d6fa7b916220f7cfeabf4f5f16bcd16e5942bf0ae0717d3` |
+| `aletheia_blind_test_5b/audit/audit_correction_1.md` | `89c0a95c693c1c5c1be7ef50e6f5b0b7923a813a5c0aba159f603c204a674752` |
+| `aletheia_blind_test_5b/audit/diag_moves_all.py` | `9c8736902c6bd38bc4b32d0800d1fba4725ef79a7bb8adfbe0d89d6ffa09ff22` |
+| `aletheia_blind_test_5b/audit/diag_moves_all_out.txt` | `83fbcd4d90486d7b3868b93687b447980834a75c6ab5f7935aaa047b3071e855` |
+| `aletheia_blind_test_5b/audit/slices_map.py` | `598b82594129a4fd021c4ce3d0cbcf2c61f23f13503c2d7e80c1fa67b340cfcc` |
+| `aletheia_blind_test_5b/audit/slices_map_out.txt` | `f178d84df76870b4d2e4265173ebdc39a9d251a17896cb9e0facf04fb797dfac` |
+| `aletheia_blind_test_5b/audit/cayley_dickson_check.py` | `564f562ccf1fc3ba5ab273332341413af0d49f69b9d13e758f8dccd3db1faa12` |
+| `aletheia_blind_test_5b/audit/cayley_dickson_check_out.txt` | `81b55ba101794bcd13248a22644a7f271a589300adc57e54aa03223cd66443d3` |
+
+The combined hash of a batch's worlds is the SHA-256 of the lines "name sha256", one per world in name order, joined by newlines: `python tools/hash_files.py --worlds batch_A/worlds` in that study's folder prints it.
+
+**Reproducibility.** The six studies through blind test 4 reproduce byte for byte from this repository. Blind tests 5 and 5b do not: their procedures stop on wall-clock time limits, so a rerun's outputs depend on the machine and its load. Their scorers have no time limit; the commands are in each study's README. The history test's two checks were rerun for this publication with identical results.
 
 ## Requirements
 Python 3 and sympy (developed with sympy 1.14). There are no other dependencies.

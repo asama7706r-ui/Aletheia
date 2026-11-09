@@ -1,0 +1,261 @@
+SOURCE: J. Cockle, "On the Symbols of Algebra, and on the Theory of Tessarines", Phil. Mag. series 3, vol. 34 (1849), pp. 406-410. Extracted from londonedinburghp34lond.pdf (SHA-256 0fdf9e7ed5dda3f90f0bdf2814187950a894614aabc2531fdb34889cdb3a7687) by pdftotext (reading order), PDF pages 420-424 (1-based), cut before "LX. Remarkable Solar Halos". The volume was downloaded by the project owner in an ordinary browser from the Biodiversity Heritage Library item cited by Wikipedia (item 20121). OCR errors kept as they are.
+========================================================================
+[ 406 ]
+LIX. On the Sy7nhols of Algebra, and on the Theory of Tessarines. By James Cockle, Esq., M.A., of Trinity Col-
+lege, Cambridge, and Barrisier-at-Law of the Middle
+Temple*.
+AT page 436 of the last (33rd) volume of this Journal, I proposed to include under the genus imaginary two independent species of quantity which I distinguished by the respective terms unreal and impossible. But, if we extend the meaning of the word "imaginary" so as to make it comprehend all quantity that is not real, a third species of quantity,
+for which I would suggest the name of ideal, must be added to the two already included in the common genus of imaginaries. And perhaps it will be conducive to distinctness of conception and to convenience if we admit a fourth species of
+imaginaries, which I propose to call typal, from their squares, &c. running into certain types.
+W. The peculiar symbols of the quaternion theory of Sir
+R. Hamilton, of the octave theory of Mr. John T. Graves
+and Mr. Cayley, of the triple algebra of Professor De Morgan,
+and of the pluquaternion theory of the Rev. T. P. Kirkman,
+all belong to the species ideal. It may be stated as the cha-
+racteristic of ideal quantities, that, in their combinations, they
+do not follow the laws of that ordinary algebra to which Mr.
+De Morgan applies the term Double Algebra. The imagi-
+naries in some of the systems of Mr. Cayley's theory of couples (the systems marked C, D, C, and D', Phil. Mag., S. 3,
+vol. xxvii. pp. 39-40) are ideal. And so, in general, are those
+of the last two systems (E and E', lb. p. 40) in Mr. Cayley's paper. Mr. J. T. Graves would call the couples involved in the above systems anomalous.
+But in other of the systems of Mr. Cayley (those marked A, B, A', B', lb. p. 38 et seq.) the imaginaries axe typal', and this is also the case in Mr. J. T. Graves's theory of couples {lb. vol. xxvi.). Borrowing a term from the learned writer last mentioned, we may call all the couples mentioned in this paragraph normal. The characteristic of typal quantities is, that, although in their laws of combination they follow the rules of ordinary algebra, yet the types or conditions by which they are defined are not consistent with that algebra. Ktypal differs from an impossible quantity in this : that the ordinary algebra /orcf-s impossible quantity upon our notice, and defines it by means as purely algebraic as those by which unreal quantity is defined ; while on the other hand, typal (as well as
+* Communicated by Dr. John Cockle, FJl.C.S.
+
+Mr, Cockle on the Symbols of Algebra,
+
+407
+
+ideal) quantity is the oiFspring of arbitrary ultra-algebraic
+definition*.
+I should propose to apply the term hyper-algebraic to typal and ideal quantities, and to confine it to those quantities.
+Ought we to apply the word hyper-algebraic to impossible quantity ? I think not. If I may be permitted to use the term possible so as to include under it not only real quantities but also the unreal quantities of ordinary algebra, I would suggest that it is only in respect of certain anomalous resultsf (results, however, that do not defy explanation J) that impossible differs from possible quantity, and consequently that impossible quantity must be regarded as algebraic. It is unquestionably
+
+* I must not be understood as desiring to underrate these symbolic
+
+children of definition. So far from it, I think it within the limits of pos-
+
+sibility so to define symbols as that they may have their prototypes in na-
+
+ture, and serve to expound other of her phaenomena than those to which
+
+symbols have been yet applied. For instance, might not arbitrary symbols be made the representatives of chemical phaenomena ? Mr. Boole's Ma-
+
+thematical Analysis of Logic is a step out of the beaten track which sym-
+
+bolic
+
+science
+
+has
+
+hitherto
+
+persevered
+
+in j
+
+and although to pass from mental
+
+to chemical phaenomena may not authorise us to hope that such sciences
+
+as chemistry may be rendered symbolic, yet I cannot help thinking, that by
+
+a proper notation for affinity, &c. chemical decompositions might be repre-
+
+sented : at any rate it may be worth a trial.
+
+t Vide supra, pp. 41, 42. It is not a little singular, that if we abandon
+
+the principle laid down, supra, p. 39, note -j-, we have
+
+(i+Vi)a-Vi)=i-v'/=i-i=0;
+
+and also that if we preserve that principle, we derive from the equation (1.),
+supra, p. 39, the following :
+
+(-1)4=(+ ^jf={ /;X ^j)x(Vjx VJ)=JxJ,
+or
+
+1=/. On the other hand, although from the relation
+
+we may deduce
+
+il+k)^=2k=z2ij
+
+still, seeing, from the relation {supra, p. 40)
+the anomalous nature of the evolution of impossibles, we must not attempt
+to express \/J as a linear function of i,J, k.
+I may add, that in previous papers (supra, pp. 45, and 135,) the radius
+of the (larger) sphere is supposed to be unity. I See paragraph 8 (and 10) of the Rev. Prof. Charles Graves's paper on
+Triple Algebra (supra, p. 119-126). I propose to call Mr. C. Graves's
+system a trinar, and Mr. De Morgan's a ternary algebra; the latter form of name being given to the quadratic system, in which the square of the imaginary is negative. And hence the respective terras trine and temion
+suggest themselves as distinctive^
+
+408
+
+Mr. Cockle on the Symbols of Algebra^
+
+algebraic in its origin, nor is it to be considered as other than algebraic in its laws of combination with other symbols ; and if in first approaching the subject of impossible quantity some mysteries present themselves and some difficulties arise, it
+may be worth considering whether our estimate of the range
+of ordinary algebra has not been too limited, and whether its own inherent powers, when sufficiently developed, may not
+explain the mystery and clear away the difficulty. With these
+views it will not excite surprise if I state here, that I regard
+paragraph 8 of the Rev. Charles Graves's paper on Triple Algebra {supra, pp. 123, 124) as a valuable contribution to
+ordinary algebra. I take the opportunity of adding one or two remarks on
+f ^ tessarines, premising that I shall use i' and to denote the
+imaginaries which enter into those expressions.
+1. The product of two tessarines of the form
+
++ Yi'x -\-j'y k'z
+
+is of the same form, and the moduli and amplitudes of the factors and product are related in the same manner, and the latter
+may be constructed as readily, as if the factors and the product
+were quaternions.
+2. The product of the two tessarines
++ 2'^i +/j/i A'zi, and i'x^-^j'yc^+Wzcif
+will be of the form
+
+provided that
+
+But, if the two systems of values ^-j, yj, ^j, and oe^^y^, z^, re-
+spectively satisfy the condition
+
+and if, moreover,
+
+f-a:^-z^=0,
+
+(w.)
+
+^1
+
+"^a
+
+then (w.) may be satisfied*. But (w.) represents a right-
+� If we multiply the two equations that result from substituting the two systems of values of .r i/ and z respectively, we shall have after reduction, &c.
+
+which suggests matter for future observation. With reference to the sub-
+
+ject of Imaginary Geometry {supj-a, p. 132-135), and indeed of analytical
+
+geometry in general, I may remark that I propose to call the real primary
+
+axis
+
+Cthat
+
+of jr)
+
+the
+
+axe,
+
+the
+
+unreal
+
+secondary
+
+axis
+
+(that
+
+of 5^)
+
+the^erp^, and
+
+the impossible tertiary axis (that of 2) the norme. Thus, in the equation
+
+and on the Theory of Tessarines.
+
+409
+
+angled cone, whose axis is the axis of y, and whose vertex is the origin, the axes being rectangular. Hence, taking i'x+j'y-\-k'z to denote a point whose rectangular co-ordinates we are .r, ?/, 2, see that if two points be taken in the same
+generatrix of the cone (w.), their tessarine product, considering the vertex as origin, will be the point* whose co-ordinates are
+
+(1.) (supi'h, ]). 133) A is the axe, B the perpe, and C the norme. Let me
+add that the equations
+
+a--x--0, a2_j_y-- 0, //�+ '/�=0,
+
+(of which the respective solutions are
+
+x=:a, i/=i'a, z=j'a,)
+
+denote, when considered separately, three points, each at a distance a from
+
+the origin, but in axes at right angles to each other.
+
+My *
+
+friend Professor Davies has {supra, p. 37, and vol. xxix. p. 171-
+
+-- 175) intimated or expressed an opinion adverse to the interpretability of
+the symbol \/ i in geometry. If eminence in geometric science can confer a right, not only to express such an opinion, but to have that ex-
+
+pression duly weighed, then I think that there are few, if any, English geo-
+meters who possess those rights more unquestionably. I must however confess that I do not see the force of the reasoning employed in Mr. Davies's
+
+-- proposition {lb. p. 174). The inconsistency alluded to in paragraph 4 of the
+proposition could never arise at least 1 am unable to perceive how itcould.
+
+In saying that a rectangle is equal to the product of its sides, we mean that
+
+the numbers of linear units in the sides, when multiplied together, give a
+
+number equal to the number of square units in the rectangle. But the
+
+signs are not elements in the consideration when we multiply the sides.
+
+Unless I am mistaken, the inconsistency in question must arise in some such
+
+-- A manner as the following : Take in BB'; and let it be required that the
+
+We rectangle B' A X AB shall equal half the square on BB'.
+
+should then (as
+
+to this vide supra, p. 43) find AC=4:a'V/- 1, and that would be a solution of the problem. I consider, then, that my much-valued friend's argument
+
+rests solely on the inductive ground previously assigned (vol. xxix. p. 172).
+-- But there are strong inductive reasons on the other side of the question.
+The symbol V' 1 appears to indicate that move dimensions o? the subject-matter must be taken into consideration than are stated in the data of
+-- a question. If we are dealing with a two-dimensioned subject, and meet
+with the symbol s/ 1, that symbol indicates impossibility or not according to the fact of our having or not having two dimensions given in our data. Thus, in that spherical geometry with which Mr. Davies's name must ever
+be associated, and in which a point may be determined by its longitude (<p)
+
+and its latitude (^^) (see Camb. Math. Journ., vol. i. p. 193; ii.p. 37, &c.),
+
+such an expression as
+
+--
+cos (p -f cos;^V 1
+
+-- is unmeaning; while in plane analytical geometry the expression x-\-yV 1
+
+indicates possibility in space. I may here observe, that if we regard space
+
+under a purely graphic aspect, and consider all lines drawn through a point
+
+as determined by their inclination to two fixed lines, then we have a strictly
+
+two-dimensioned science. With reference to the add that " Symbolical Geometry " may be made
+
+subject to take
+
+of an
+
+space, I would almost infinite
+
+410
+
+Mr. E. J. Lowe on Remarkable
+
+This will readily be verified by multiplication, or by substitution in the formulae of page 437 of the last volume of this Journal. So, we might have considered the conditions requi-
+site in order that the product
+
+may have the same form as its factors ; and the same of other
+forms. These concluding remarks are not offered as continuations of the general development of the tessarine theory, but as individual instances not perhaps altogether unworthy of
+notice.
+2 Church Yard Court, Temple,
+May 8, 1849.
+

@@ -1,0 +1,127 @@
+{
+ "procedure": {
+  "bounds": {
+   "P2": 4,
+   "P3": 16,
+   "S": 4,
+   "list": "1"
+  },
+  "branches": [
+   {
+    "drop": [
+     "q6"
+    ],
+    "marks": {
+     "q1": "PROTECTED",
+     "q10": "WORKSHOP",
+     "q11": "WORKSHOP",
+     "q12": "ASSUMED",
+     "q13": "ASSUMED",
+     "q2": "PROTECTED",
+     "q3": "WORKSHOP",
+     "q4": "WORKSHOP",
+     "q5": "FRAME",
+     "q5[nno]": "FRAME",
+     "q5[non]": "FRAME",
+     "q5[noo]": "FRAME",
+     "q5[onn]": "FRAME",
+     "q5[ono]": "FRAME",
+     "q5[oon]": "FRAME",
+     "q6": "FORCED",
+     "q6[on]": "ASSUMED",
+     "q7": "WORKSHOP",
+     "q8": "WORKSHOP",
+     "q9": "WORKSHOP"
+    },
+    "mirror": null,
+    "proofs": {
+     "q6": {
+      "theta": null,
+      "tree": {
+       "node": "close",
+       "target": {
+        "ineq": 0
+       },
+       "terms": []
+      }
+     }
+    },
+    "searched": {
+     "assoc_complete_to_dim": 2,
+     "assoc_partial_from": 3,
+     "nonassoc_complete_to_dim": 4,
+     "nonassoc_partial_from": null,
+     "stopped": null
+    },
+    "status": "no_witness",
+    "witness": null
+   }
+  ],
+  "conflicts": [
+   {
+    "found_size": 1,
+    "keep": [
+     "q6"
+    ],
+    "source": "group"
+   }
+  ],
+  "deciders": [],
+  "freedom": null,
+  "impossible": null,
+  "known": null,
+  "phase1": {
+   "before_limit": true,
+   "conflict_sizes": {
+    "1": 1
+   },
+   "conflict_sources": {
+    "group": 1
+   },
+   "conflicts": 1,
+   "cut_candidates": 0,
+   "group_seconds": 41.0,
+   "group_witnesses": {
+    "cut": 0,
+    "found": 0,
+    "seconds": 0.1,
+    "tried": 9
+   },
+   "groups_cut": 2,
+   "groups_refuted": 1,
+   "groups_tried": 9,
+   "limit": 2700,
+   "seconds": 41.1,
+   "shape_seconds": 349.1,
+   "shrunk": 0,
+   "tested": 2
+  },
+  "refutations": [
+   {
+    "drop": [
+     "q12",
+     "q13",
+     "q6[on]"
+    ],
+    "proof": {
+     "theta": null,
+     "tree": {
+      "node": "close",
+      "target": {
+       "ineq": 0
+      },
+      "terms": []
+     }
+    }
+   }
+  ],
+  "tested": [
+   [],
+   [
+    "q6"
+   ]
+  ],
+  "verdict": "NO_WITNESS"
+ },
+ "seconds": 390.28132677078247
+}

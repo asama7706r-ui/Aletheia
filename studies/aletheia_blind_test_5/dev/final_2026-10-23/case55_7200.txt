@@ -1,0 +1,2 @@
+procedure ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q12', 'q5'], 'no_witness']]) 1145.5 s
+recorded truth: BRANCHES {q12,q13,q6} witnessed, {q12,q5} no_witness

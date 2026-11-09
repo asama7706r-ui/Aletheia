@@ -1,0 +1,46 @@
+ok  W-01: FREEDOM  traps=['T12']  baselines wrong=['FIRST']
+ok  W-02: FREEDOM  traps=['T12']  baselines wrong=['FIRST']
+ok  W-03: FREEDOM  traps=['T12']  baselines wrong=['FIRST']
+ok  W-04: IMPOSSIBLE  traps=['T2']  baselines wrong=['MAXCON']
+ok  W-05: IMPOSSIBLE  traps=[]  baselines wrong=[]
+ok  W-06: IMPOSSIBLE  traps=['T2']  baselines wrong=['MAXCON']
+ok  W-07: KNOWN_SUFFICES  traps=['T2', 'T7']  baselines wrong=['MAXCON']
+ok  W-08: KNOWN_SUFFICES  traps=['T7']  baselines wrong=[]
+ok  W-09: KNOWN_SUFFICES  traps=['T15']  baselines wrong=[]
+ok  W-10: KNOWN_SUFFICES  traps=['T15', 'T2']  baselines wrong=['MAXCON']
+ok  W-11: KNOWN_SUFFICES  traps=[]  baselines wrong=[]
+BAD W-12: NO_WITNESS  traps=['T4', 'T6']  baselines wrong=['ASSOC', 'COARSE', 'COUNT', 'FIRST', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+      V9: the key disagrees with the reference truth: key ('NO_WITNESS', [[['q5', 'q5[nno]', 'q6'], ['q5', 'q5[onn]', 'q6'], 'no_witness']]) vs truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q5[non]', 'q6'], ['q5', 'q5[non]', 'q5[onn]', 'q6'], 'no_witness'], [['q5', 'q5[nno]', 'q6', 'q6[on]'], ['q5', 'q5[onn]', 'q6', 'q6[on]'], 'no_witness']])
+      undecided candidates (no witness, no refutation found): ['q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[ono],q5[oon],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[ono],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[ono],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[oon],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[oon],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q5[oon],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q5[oon],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[oon],q6']
+BAD W-13: NO_WITNESS  traps=['T4', 'T6']  baselines wrong=['ASSOC', 'COARSE', 'COUNT', 'FIRST', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+      V9: the key disagrees with the reference truth: key ('NO_WITNESS', [[['q5', 'q5[nno]', 'q6'], ['q5', 'q5[onn]', 'q6'], 'no_witness']]) vs truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q5[non]', 'q6'], ['q5', 'q5[non]', 'q5[onn]', 'q6'], 'no_witness'], [['q5', 'q5[nno]', 'q6', 'q6[on]'], ['q5', 'q5[onn]', 'q6', 'q6[on]'], 'no_witness']])
+      undecided candidates (no witness, no refutation found): ['q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[ono],q5[oon],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[ono],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[ono],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[oon],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q5[oon],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[onn],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q5[oon],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q5[oon],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q6', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[ono],q6,q6[on]', 'q12,q13,q5,q5[nno],q5[non],q5[noo],q5[oon],q6']
+ok  W-14: NO_WITNESS  traps=['T11', 'T5']  baselines wrong=['ASSOC', 'FIRST', 'ORDER', 'SPLIT_ORDER']
+      undecided candidates (no witness, no refutation found): ['q12,q14,q5', 'q12,q14,q5,q6']
+ok  W-15: NO_WITNESS  traps=['T11', 'T5']  baselines wrong=['ASSOC', 'FIRST', 'ORDER', 'SPLIT_ORDER']
+      undecided candidates (no witness, no refutation found): ['q12,q14,q5', 'q12,q14,q5,q6']
+ok  W-16: NEW_KIND  traps=['T1', 'T5', 'T9']  baselines wrong=['MAXCON', 'SPLIT_ORDER']
+ok  W-17: NEW_KIND  traps=['T1', 'T5', 'T9']  baselines wrong=['MAXCON', 'SPLIT_ORDER']
+ok  W-18: NEW_KIND  traps=['T1', 'T14', 'T5']  baselines wrong=['MAXCON', 'SPLIT_ORDER']
+ok  W-19: NEW_KIND  traps=['T1', 'T14', 'T5']  baselines wrong=['MAXCON', 'SPLIT_ORDER']
+ok  W-20: NEW_KIND  traps=['T11', 'T2', 'T5']  baselines wrong=['ASSOC', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+ok  W-21: NEW_KIND  traps=['T10', 'T11', 'T13', 'T4']  baselines wrong=['COARSE', 'ORDER']
+ok  W-22: NEW_KIND  traps=['T1', 'T10', 'T11', 'T13', 'T4']  baselines wrong=['COARSE', 'MAXCON', 'ORDER']
+ok  W-23: NEW_KIND  traps=['T10', 'T11', 'T4']  baselines wrong=['COARSE', 'ORDER']
+ok  W-24: NEW_KIND  traps=['T11', 'T2']  baselines wrong=['ASSOC', 'COARSE', 'MAXCON', 'ORDER']
+ok  W-25: BRANCHES  traps=['T1', 'T2', 'T3', 'T5', 'T8']  baselines wrong=['ASSOC', 'COUNT', 'FIRST', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+ok  W-26: BRANCHES  traps=['T1', 'T3', 'T5', 'T8']  baselines wrong=['ASSOC', 'COUNT', 'FIRST', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+ok  W-27: BRANCHES  traps=['T1', 'T3', 'T5', 'T8']  baselines wrong=['ASSOC', 'COUNT', 'FIRST', 'MAXCON', 'ORDER', 'SPLIT_ORDER']
+ok  W-28: BRANCHES  traps=['T1', 'T10', 'T13', 'T14', 'T2', 'T3', 'T4']  baselines wrong=['COARSE', 'COUNT', 'FIRST', 'MAXCON', 'ORDER']
+ok  W-29: BRANCHES  traps=['T1', 'T10', 'T13', 'T14', 'T2', 'T3', 'T4']  baselines wrong=['COARSE', 'COUNT', 'FIRST', 'MAXCON', 'ORDER']
+ok  W-30: BRANCHES  traps=['T1', 'T10', 'T13', 'T14', 'T2', 'T3', 'T4']  baselines wrong=['COARSE', 'COUNT', 'FIRST', 'MAXCON', 'ORDER']
+BATCH: 2 worlds are invalid
+BATCH: composition: 2 NO_WITNESS worlds, 4 required
+BATCH: composition: trap T6 holds in 0 worlds, at least 2 required
+BATCH: composition: baseline COUNT is wrong in 6 worlds, at least 8 required
+BATCH: composition: baseline ASSOC is wrong in 7 worlds, at least 8 required
+BATCH: composition: baseline COARSE is wrong in 7 worlds, at least 8 required
+BATCH: V15: W-18, W-19 have the same role up to renaming and the nonzero numbers
+BATCH: V15: W-26, W-27 have the same role up to renaming and the nonzero numbers
+BATCH: V15: W-28, W-29, W-30 have the same role up to renaming and the nonzero numbers
+NOT VALID

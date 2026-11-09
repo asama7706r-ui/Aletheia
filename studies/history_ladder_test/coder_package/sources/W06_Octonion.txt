@@ -1,0 +1,423 @@
+{{short description|Hypercomplex number system}}
+{{CS1 config|mode=cs2}}
+{{Infobox number system
+| official_name = Octonions
+| symbol = <math>\mathbb O</math>
+| type = [[Hypercomplex number|Hypercomplex]] [[algebra over a field|algebra]]
+| units = e<sub>0</sub>, ..., e<sub>7</sub>
+| identity = e<sub>0</sub>
+| properties = {{ubl|[[alternative algebra|Alternativity]]|
+[[Commutative property|Non-commutative]]|
+[[Associative|Non-associative]]}}
+| hide_common = true
+}}
+In [[mathematics]], the '''octonions''' are a [[normed division algebra]] over the [[real number]]s, a kind of [[Hypercomplex number|hypercomplex]] [[Number#Classification|number system]]. The octonions are usually represented by the capital letter O, using boldface {{math|'''O'''}} or [[blackboard bold]] <math>\mathbb O</math>. Octonions have eight [[dimension (vector space)|dimensions]]; twice the number of dimensions of the [[quaternion]]s, of which they are an extension. They are [[commutative property|noncommutative]] and [[associative property|nonassociative]], but satisfy weaker forms of associativity; they are [[alternative algebra|alternative]] and [[Power associativity|power associative]].
+
+Octonions are much less widely studied or used than the quaternions and [[complex number]]s. Octonions are related to exceptional structures{{what|date=November 2024}} in mathematics, among them the [[Simple Lie group#Exceptional cases|exceptional Lie group]]s. Octonions have applications in fields such as [[string theory]], [[special relativity]] and [[quantum logic]].
+
+The [[Cayley–Dickson construction]] builds the octonions from the quaternions and in turn builds the [[sedenion]]s from the octonions. 
+
+== History ==
+The octonions were discovered in December 1843 by [[John T. Graves]], inspired by his friend [[William Rowan Hamilton]]'s discovery of quaternions. Shortly before Graves' discovery of octonions, Graves wrote in a letter addressed to Hamilton on 26 October 1843, "If with your alchemy you can make three pounds of gold, why should you stop there?"<ref name="Baez 2002 loc=p. 1">{{harv|Baez|2002|loc=p. 1}}</ref>
+
+Graves called his discovery "octaves", and mentioned them in a letter to Hamilton dated 26 December 1843.<ref>{{cite book |last1=Sabadini |first1=Irene |url=https://books.google.com/books?id=H-5v6pPpyb4C&dq=december%2026,%201843%20octonion&pg=PA168 |title=Hypercomplex Analysis |last2=Shapiro |first2=Michael |last3=Sommen |first3=Franciscus |date=2009-04-21 |publisher=Springer Science & Business Media |isbn=978-3-7643-9893-4 |language=en}}</ref> He first published his result slightly later than [[Arthur Cayley]]'s article.<ref>{{harv|Graves|1845}}</ref> The octonions were discovered independently by Cayley<ref>{{citation |first=Arthur |last=Cayley|title=On Jacobi's Elliptic functions, in reply to the Rev. Brice Bronwin; and on Quaternions |journal=[[Philosophical Magazine]] |volume=26 |year=1845 |issue=172 |pages=208–211 |doi=10.1080/14786444508645107 |url=https://zenodo.org/record/1431049}}. Appendix reprinted in ''The Collected Mathematical Papers'', Johnson Reprint Co., New York, 1963, p.&nbsp;127</ref> and are sometimes referred to as '''Cayley numbers''' or the '''Cayley algebra'''. Hamilton described the early history of Graves's discovery.<ref>{{citation |last=Hamilton |author-link=William Rowan Hamilton |journal=Transactions of the Royal Irish Academy |volume= 21 |year=1848 |pages= 338–341 |title=Note, by Sir W. R. Hamilton, respecting the researches of John T. Graves, Esq. |url=https://archive.org/details/transactionsofro21iris}}</ref>
+
+== Definition ==
+The octonions can be thought of as octets (or 8-tuples) of real numbers. Every octonion is a real [[linear combination]] of the '''unit octonions''':
+: <math>\{ e_0, e_1, e_2, e_3, e_4, e_5, e_6, e_7 \}</math>
+where {{Math|''e''<sub>0</sub>}} is the scalar or real element; it may be identified with the real number {{math|1}}. That is, every octonion <math>x</math> can be written in the form
+: <math> x = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3 + x_4 e_4 + x_5 e_5 + x_6 e_6 + x_7 e_7</math>
+with real coefficients <math>x_i</math>.
+
+=== Cayley–Dickson construction ===
+{{main|Cayley–Dickson construction}}
+A more systematic way of defining the octonions is via the Cayley–Dickson construction. Applying the Cayley–Dickson construction to the quaternions produces the octonions, which can be expressed as {{nowrap|<math>\mathbb{O}=\mathcal{CD}(\mathbb{H},1)</math>.}}<ref name="Ensembles">{{cite web |url=https://mathsci.kaist.ac.kr/~tambour/fichiers/publications/Ensembles_de_nombres.pdf |date=6 September 2011 |title=Ensembles de nombre|publisher=Forum Futura-Science |access-date=11 October 2024 |language=fr}}</ref>
+
+Much as quaternions can be defined as pairs of complex numbers, the octonions can be defined as pairs of quaternions. Addition is defined pairwise. The product of two pairs of quaternions {{math|(''a'', ''b'')}} and {{math|(''c'', ''d'')}} is defined by
+: <math> ( a, b )( c, d ) = ( a c - d^{*}b, da + bc^{*} )</math>
+where {{math|''z''*}} denotes the [[Quaternion#Conjugation, the norm, and reciprocal|conjugate of the quaternion]] {{mvar|z}}. This definition is equivalent to the one given above when the eight unit octonions are identified with the pairs
+: {{nowrap|<math>(1, 0), (i, 0), (j, 0), (k, 0), (0, 1), (0, i), (0, j), (0, k)</math>.}}
+
+== Arithmetic and operations ==
+=== Addition and subtraction ===
+Addition and subtraction of octonions is done by adding and subtracting corresponding terms and hence their coefficients, like quaternions.
+
+=== Multiplication ===
+Multiplication of octonions is more complex. Multiplication is [[Distributive property|distributive]] over addition, so the product of two octonions can be calculated by summing the products of all the terms, again like quaternions. The product of each pair of terms can be given by multiplication of the coefficients and a [[multiplication table]] of the unit octonions, like this one (given both by [[Arthur Cayley]] in 1845 and [[John T. Graves]] in 1843):<ref name=GSSV>
+{{cite book
+ |first1=G.   |last1=Gentili          |first2=C.  |last2=Stoppato
+ |first3=D.C. |last3=Struppa          |first4=F.  |last4=Vlacci
+ |year=2009
+ |chapter=Recent developments for regular functions of a hypercomplex variable
+ |editor1-first=I. |editor1-last=Sabadini |editor1-link=Irene Sabadini
+ |editor2-first=M. |editor2-last=Shapiro
+ |editor3-first=F. |editor3-last=Sommen
+ |title=Hypercomplex Analysis
+ |publisher=[[Birkhäuser]]
+ |isbn=978-3-7643-9892-7
+ |page=168
+ |chapter-url=https://books.google.com/books?id=H-5v6pPpyb4C&pg=PA168 |via=Google books
+}}
+</ref>
+
+{|class="wikitable" style="text-align: center; margin:0.5em auto"
+|-
+  !colspan="2" rowspan="2"| <math>e_ie_j</math>
+  !colspan="8" | <math>e_j</math>
+|-
+  ! width="30pt" | <math>e_0</math>
+  ! width="30pt" | <math>e_1</math>
+  ! width="30pt" | <math>e_2</math>
+  ! width="30pt" | <math>e_3</math>
+  ! width="30pt" | <math>e_4</math>
+  ! width="30pt" | <math>e_5</math>
+  ! width="30pt" | <math>e_6</math>
+  ! width="30pt" | <math>e_7</math>
+|-
+  !rowspan="8" | <math>e_i</math>
+  ! <math>e_0</math>
+  | <math>e_0</math>
+  | <math>e_1</math>
+  | <math>e_2</math>
+  | <math>e_3</math>
+  | <math>e_4</math>
+  | <math>e_5</math>
+  | <math>e_6</math>
+  | <math>e_7</math>
+|-
+  ! <math>e_1</math>
+  | <math>e_1</math>
+  | <math>-e_0</math>
+  | <math>e_3</math>
+  | <math>-e_2</math>
+  | <math>e_5</math>
+  | <math>-e_4</math>
+  | <math>-e_7</math>
+  | <math>e_6</math>
+|-
+  ! <math>e_2</math>
+  | <math>e_2</math>
+  | <math>-e_3</math>
+  | <math>-e_0</math>
+  | <math>e_1</math>
+  | <math>e_6</math>
+  | <math>e_7</math>
+  | <math>-e_4</math>
+  | <math>-e_5</math>
+|-
+  ! <math>e_3</math>
+  | <math>e_3</math>
+  | <math>e_2</math>
+  | <math>-e_1</math>
+  | <math>-e_0</math>
+  | <math>e_7</math>
+  | <math>-e_6</math>
+  | <math>e_5</math>
+  | <math>-e_4</math>
+|-
+  ! <math>e_4</math>
+  | <math>e_4</math>
+  | <math>-e_5</math>
+  | <math>-e_6</math>
+  | <math>-e_7</math>
+  | <math>-e_0</math>
+  | <math>e_1</math>
+  | <math>e_2</math>
+  | <math>e_3</math>
+|-
+  ! <math>e_5</math>
+  | <math>e_5</math>
+  | <math>e_4</math>
+  | <math>-e_7</math>
+  | <math>e_6</math>
+  | <math>-e_1</math>
+  | <math>-e_0</math>
+  | <math>-e_3</math>
+  | <math>e_2</math>
+|-
+  ! <math>e_6</math>
+  | <math>e_6</math>
+  | <math>e_7</math>
+  | <math>e_4</math>
+  | <math>-e_5</math>
+  | <math>-e_2</math>
+  | <math>e_3</math>
+  | <math>-e_0</math>
+  | <math>-e_1</math>
+|-
+  ! <math>e_7</math>
+  | <math>e_7</math>
+  | <math>-e_6</math>
+  | <math>e_5</math>
+  | <math>e_4</math>
+  | <math>-e_3</math>
+  | <math>-e_2</math>
+  | <math>e_1</math>
+  | <math>-e_0</math>
+|}
+
+Most off-diagonal elements of the table are antisymmetric, making it almost a [[skew-symmetric matrix]] except for the elements on the main diagonal, as well as the row and column for which {{math|''e''<sub>0</sub>}} is an operand.
+
+The table can be summarized as follows:<ref name= Shestakov>
+{{cite book |first1=L.V. |last1=Sabinin |first2=L. |last2=Sbitneva |first3=I.P. |last3=Shestakov |year=2006 |chapter=§17.2 Octonion algebra and its regular bimodule representation |title=Non-Associative Algebra and its Applications |place=Boca Raton, FL |publisher=CRC Press |isbn=0-8247-2669-3 |page=235 |chapter-url=https://books.google.com/books?id=_PEWt18egGgC&pg=PA235 |via=Google books }}</ref>
+: <math>
+e_\ell e_m  =
+\begin{cases}
+e_m , & \text{if }\ell = 0 \\
+e_\ell , & \text{if }m = 0 \\
+- e_0, & \text{if }\ell = m, m \neq 0 \\
+\varepsilon _{\ell m n} e_n, & \text{otherwise}
+\end{cases}
+</math>
+where {{mvar|ε<sub>ℓmn</sub>}} is a [[completely antisymmetric tensor]] with value {{math|+1}} when {{math|{{nobr| ''ℓmn''}} {{=}} {{nobr|123}}, {{nobr|145}}, {{nobr|176}}, {{nobr|246}}, {{nobr|257}}, {{nobr|347}}, {{nobr|365}}}}, or any [[Parity of a permutation|even permutation]] of these, and {{math|−1}} for any odd permutation (e.g., {{math|1=''ε''<sub>123</sub> = +1}}; {{math|1=''ε''<sub>132</sub> = ''ε''<sub>213</sub> = -1}}; {{math|1=''ε''<sub>312</sub> = ''ε''<sub>231</sub> = +1}}). Whenever any two of the three indices are the same, {{math|1=''ε''<sub>''ℓmn''</sub> = 0}}.
+
+The above definition is not unique: it is one of 480&nbsp;possible definitions for octonion multiplication with {{math|''e''<sub>0</sub> {{=}} 1}}. The others can be obtained by permuting and changing the signs of the non-scalar basis elements {{math|{{big|{}}''e''<sub>1</sub>, ''e''<sub>2</sub>, ''e''<sub>3</sub>, ''e''<sub>4</sub>, ''e''<sub>5</sub>, ''e''<sub>6</sub>, ''e''<sub>7</sub>{{big|}<nowiki/>}}}}. The 480&nbsp;different algebras are [[isomorphism|isomorphic]], and there is rarely a need to consider which particular multiplication rule is used.
+
+Each of these 480 definitions is invariant up to signs under some 7&nbsp;cycle of the points {{math|(1 2 3 4 5 6 7)}}, and for each 7&nbsp;cycle there are four definitions, differing by signs and reversal of order. A common choice is to use the definition invariant under the 7&nbsp;cycle {{math|(1 2 3 4 5 6 7)}} with {{math|''e''<sub>1</sub>''e''<sub>2</sub> {{=}} ''e''<sub>4</sub>}} by using the triangular multiplication diagram, or Fano plane below that also shows the sorted list of {{nobr|1 2 4}} based 7-cycle triads and its associated multiplication matrices in both {{math|''e''<sub>''n''</sub>}} and {{Math|IJKL}} format. 
+: {{Wide image|FanoPlane_with_GeometricAlgebra.svg|900px|Octonion triads, Fano plane, and multiplication matrices|border=no}}
+
+A variant of this sometimes used is to label the elements of the basis by the elements {{math|∞}}, 0, 1, 2, ..., 6, of the [[projective line]] over the [[finite field]] of order 7. The multiplication is then given by {{math|''e''<sub>∞</sub> {{=}} 1}} and {{math|''e''<sub>1</sub>''e''<sub>2</sub> {{=}} ''e''<sub>4</sub>}}, and all equations obtained from this one by adding a constant ([[modular arithmetic|modulo]] 7) to all subscripts: In other words using the seven triples {{nobr|(1 2 4)}}, {{nobr|(2 3 5)}}, {{nobr|(3 4 6)}}, {{nobr|(4 5 0)}}, {{nobr|(5 6 1)}}, {{nobr|(6 0 2)}}, {{nobr|(0 1 3)}}. These are the nonzero codewords of the [[quadratic residue code]] of length&nbsp;7 over the [[Finite field|Galois field]] of two elements, {{math|[[GF(2)|''GF''(2)]]}}. There is a symmetry of order&nbsp;7 given by adding a constant [[modulo arithmetic|mod]]&nbsp;7 to all subscripts, and also a symmetry of order 3 given by multiplying, modulo&nbsp;7, all subscripts by one of the quadratic residues 1, 2, and 4.<ref name=Parra>
+{{cite book
+ |first1=Rafał    |last1=Abłamowicz
+ |first2=Pertti   |last2=Lounesto
+ |first3=Josep M. |last3=Parra
+ |year=1996
+ |chapter=§&nbsp;Four ocotonionic basis numberings
+ |title=Clifford Algebras with Numeric and Symbolic Computations
+ |publisher=Birkhäuser
+ |isbn=0-8176-3907-1
+ |page=202
+ |chapter-url=https://books.google.com/books?id=OpbY_abijtwC&pg=PA202 |via=Google books
+}}
+</ref><ref name=Manogue>
+{{cite journal
+ |first1=Jörg       |last1=Schray
+ |first2=Corinne A. |last2=Manogue
+ |date=January 1996
+ |title=Octonionic representations of Clifford algebras and triality
+ |journal=Foundations of Physics
+ |volume=26 |issue=1 |pages=17–70
+ |doi=10.1007/BF02058887 |arxiv=hep-th/9407179
+ |bibcode=1996FoPh...26...17S |s2cid=119604596
+}}
+: Available as {{cite journal |title=Octonionic representations of Clifford algebras and triality |date=1996 |doi=10.1007/BF02058887 |arxiv=hep-th/9407179 |last1=Schray |first1=Jörg |last2=Manogue |first2=Corinne A. |journal=Foundations of Physics |volume=26 |issue=1 |pages=17–70 |bibcode=1996FoPh...26...17S }}, in particular [https://arxiv.org/PS_cache/hep-th/ps/9407/9407179v1.fig1-1.png Figure&nbsp;1].</ref>
+These seven triples can also be considered as the seven translates of the set {{mset|1,2,4}} of non-zero squares 
+forming a cyclic (7,3,1)-[[difference set]] in the finite field {{math|[[GF(7)]]}} of seven elements. 
+
+The Fano plane shown above with <math>e_n</math> and {{Math|IJKL}} multiplication matrices also includes the [[geometric algebra]] basis with signature {{nobr|{{math|(− − − −)}}}} and is given in terms of the following 7&nbsp;[[quaternion]]ic triples (omitting the scalar identity element):
+: <math>(I, j, k), (i, J, k), (i, j, K), (I, J, K), (\bigstar I, i, l), (\bigstar J, j, l), (\bigstar K, k, l)</math>
+or alternatively
+: <math>(\sigma_1, j, k), (i, \sigma_2, k), (i, j, \sigma_3), (\sigma_1, \sigma_2, \sigma_3), (\bigstar \sigma_1, i, l), (\bigstar \sigma_2, j, l), (\bigstar \sigma_3, k, l)</math>
+in which the lower case items <nowiki>{</nowiki>{{Math|''i'', ''j'', ''k'', ''l''}}<nowiki>}</nowiki> are [[vector (mathematics and physics)|vector]]s (e.g. {<math>\gamma_{0},\gamma_{1},\gamma_{2},\gamma_{3}</math>}, respectively) and the upper case ones <nowiki>{</nowiki>{{Math|''I'', ''J'', ''K''}}<nowiki>}</nowiki> = {<math>\sigma_1, \sigma_2, \sigma_3</math>} are [[bivector]]s (e.g. <math>\gamma_{\{1,2,3\}}\gamma_{0}</math>, respectively) and the [[Hodge star operator]] {{math|★ {{=}} ''i'' ''j'' ''k'' ''l''}} is the pseudo-scalar element. If the {{math|★}} is forced to be equal to the identity, then the multiplication ceases to be associative, but the {{math|★}} may be removed from the multiplication table resulting in an octonion multiplication table.
+
+In keeping {{math|★ {{=}} ''i'' ''j'' ''k'' ''l''}} associative and thus not reducing the 4-dimensional geometric algebra to an octonion one, the whole multiplication table can be derived from the equation for {{math|★}}. Consider the [[gamma matrices]] in the examples given above. The formula defining the fifth gamma matrix (<math>\gamma_{5}</math>) shows that it is the {{math|★}} of a four-dimensional geometric algebra of the gamma matrices.
+
+
+=== Fano plane mnemonic ===
+[[File:FanoPlane.svg|thumb|A mnemonic for the products of the unit octonions<ref name="Baez 2002 loc=p. 6">{{harv|Baez|2002|loc=p. 6}}</ref>]]
+[[File:Octonion-Fano Cube.gif|thumb|A 3D mnemonic visualization showing the 7 triads as [[hyperplane]]s through the real ({{math|''e''<sub>0</sub>}}) vertex of the octonion example given above<ref name="Baez 2002 loc=p. 6"/>]]
+A convenient [[mnemonic]] for remembering the products of unit octonions is given by the diagram, which represents the multiplication table of Cayley and Graves.<ref name=GSSV/><ref name=Ablamowicz>
+{{cite book
+ |first1=Tevian     |last1=Dray
+ |first2=Corinne A. |last2=Manogue
+ |name-list-style=amp
+ |year=2004
+ |chapter=Chapter&nbsp;29: Using octonions to describe fundamental particles
+ |title=Clifford Algebras: Applications to mathematics, physics, and engineering
+ |editor1-first=Rafał |editor1-last=Abłamowicz
+ |publisher=[[Birkhäuser]]
+ |isbn=0-8176-3525-4
+ |at=Figure&nbsp;29.1: Representation of multiplication table on projective plane. p.&nbsp;452
+ |chapter-url=https://books.google.com/books?id=b6mbSCv_MHMC&pg=PA452 |via=Google books
+}}
+</ref>
+This diagram with seven points and seven lines (the circle through 1, 2, and 3 is considered a line) is called the [[Fano plane]]. The lines are directional. The seven points correspond to the seven standard basis elements of <math>\operatorname\mathcal{I_m}\bigl[\mathbb{O}\bigr]</math> (see definition under ''{{slink|#Conjugate, norm, and inverse}}'' below). Each pair of distinct points lies on a unique line and each line runs through exactly three points.
+
+Let {{math|(''a'', ''b'', ''c'')}} be an ordered triple of points lying on a given line with the order specified by the direction of the arrow. Then multiplication is given by {{math|''ab'' {{=}} ''c''}} and {{math|''ba'' {{=}} −''c''}} together with [[cyclic permutation]]s. These rules together with
+* {{math|1}} is the multiplicative identity,
+* <math>{e_i}^2 = -1\ </math> for each point in the diagram
+
+completely defines the multiplicative structure of the octonions. Each of the seven lines generates a [[Subalgebra#Subalgebras for algebras over a ring or field|subalgebra]] of <math>\mathbb{O}</math> isomorphic to the quaternions {{math|ℍ}}.
+
+=== Conjugate, norm, and inverse ===
+The ''conjugate'' of an octonion
+: <math> x = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3 + x_4 e_4 + x_5 e_5 + x_6 e_6 + x_7 e_7</math>
+is given by
+: {{nowrap|<math> x^\ast = x_0 e_0 - x_1 e_1 - x_2 e_2 - x_3 e_3 - x_4 e_4 - x_5 e_5 - x_6 e_6 - x_7 e_7</math>.}}
+Conjugation is an [[involution (mathematics)|involution]] of <math>\ \mathbb{O}\ </math> and satisfies {{math|(''xy'')* {{=}} ''y''*''x''*}} (note the change in order).
+
+The ''real part'' of {{mvar|x}} is given by
+: <math>\frac{x + x^*}{2} = x_0e_0</math>
+and the ''imaginary part'' (sometimes called the ''pure part'') by
+: {{nowrap|<math>\frac{x - x^*}{2} = x_1e_1 + x_2e_2 + x_3e_3 + x_4e_4 + x_5e_5 + x_6e_6 + x_7e_7</math>.}}
+
+The set of all purely imaginary octonions [[linear span|spans]] a 7-[[dimension (vector space)|dimensional]] [[linear subspace|subspace]] of <math>\mathbb{O},</math> denoted <math>\operatorname\mathcal{I_m}\bigl[\mathbb{O}\bigr]</math>.
+
+Conjugation of octonions satisfies the equation
+: {{nowrap|<math> -6 x^* = x + (e_1x)e_1 + (e_2x)e_2 + (e_3x)e_3 + (e_4x)e_4 + (e_5x)e_5 + (e_6x)e_6 + (e_7x)e_7</math>.}}
+
+The product of an octonion with its conjugate, {{nobr| {{math|''x''*''x'' {{=}} ''xx''*}} ,}} is always a nonnegative real number:
+: {{nowrap|<math>x^*x = {x_0}^2 + {x_1}^2 + {x_2}^2 + {x_3}^2 + {x_4}^2 + {x_5}^2 + {x_6}^2 + {x_7}^2</math>.}}
+
+Using this, the norm of an octonion is defined as
+: {{nowrap|<math>\|x\| = \sqrt{x^*x}</math>.}}
+
+This norm agrees with the standard 8-dimensional [[Euclidean norm]] on {{math|ℝ<sup>8</sup>}}.
+
+The existence of a norm on <math>\mathbb{O}</math> implies the existence of [[inverse element|inverses]] for every nonzero element of <math>\mathbb{O}.</math> The inverse of {{math|''x'' ≠ 0}}, which is the unique octonion {{math|''x''<sup>−1</sup>}} satisfying {{math| ''x x''<sup>−1</sup> {{=}} ''x''<sup>−1</sup>''x'' {{=}} 1}}, is given by
+: {{nowrap|<math>x^{-1} = \frac {x^*}{\|x\|^2}</math>.}}
+
+=== Exponentiation and polar form ===
+Any octonion {{mvar|x}} can be decomposed into its real part and imaginary part:
+: <math>x=\mathfrak{R}(x)+\mathfrak{I}(x)</math>
+also sometimes called scalar and vector parts.
+
+We define the ''unit vector'' {{mvar|u}} corresponding to {{mvar|x}} as
+: {{nowrap|<math>u=\frac{\mathfrak{I}(x)}{\|\mathfrak{I}(x)\|}</math>.}} It is a pure octonion of norm 1.
+
+It can be proved<ref>{{cite web|url=https://mathsci.kaist.ac.kr/~tambour/fichiers/publications/Ensembles_de_nombres.pdf|date=6 September 2011|title=Ensembles de nombres|publisher=Forum Futura-Science|access-date=24 February 2025|language=fr}}</ref> that any non-zero octonion can be written as:
+: <math>o=\|o\|(\cos\theta+u\sin\theta)=\|o\|e^{u\theta}</math>
+thus providing a polar form.
+
+== Properties ==
+Octonionic multiplication is neither [[commutative]]:
+: <math>e_i e_j = -e_j e_i\ne e_j e_i</math> (if {{mvar|i}}, {{mvar|j}} are distinct and non-zero)
+nor [[associative]]:
+: <math>(e_i e_j) e_k = -e_i (e_j e_k) \ne e_i (e_j e_k)</math> (if {{mvar|i}}, {{mvar|j}}, {{mvar|k}} are distinct, non-zero and {{math|''e{{sub|i}} e{{sub|j}}'' ≠ ±''e{{sub|k}}''}}).
+The octonions do satisfy a weaker form of associativity: they are [[alternative algebra|alternative]]. This means that the subalgebra generated by any two elements is associative. Actually, one can show that the subalgebra generated by any two elements of <math>\ \mathbb{O}\ </math> is [[isomorphic]] to [[real numbers|{{math|ℝ}}]], [[complex numbers|{{math|ℂ}}]], or [[quaternions|{{math|ℍ}}]], all of which are associative. Because of their non-associativity, octonions cannot be represented by a subalgebra of a [[matrix ring]] over {{math|ℝ}}, unlike the real numbers, complex numbers, and quaternions.
+
+The octonions do retain one important property shared by {{math|ℝ}}, {{math|ℂ}}, and {{math|ℍ}}: the norm on <math>\mathbb{O}</math> satisfies
+: {{nowrap|<math> \| x y \| = \| x \|\| y \|</math>.}}
+
+This equation means that the octonions form a [[composition algebra]]. The higher-dimensional algebras defined by the Cayley–Dickson construction (starting with the [[sedenion]]s) all fail to satisfy this property. They all have [[zero divisor]]s.
+
+Wider number systems exist which have a multiplicative modulus (for example, 16-dimensional conic sedenions). Their modulus is defined differently from their norm, and they also contain zero divisors.
+
+As shown by [[Adolf Hurwitz|Hurwitz]], {{math|ℝ}}, {{math|ℂ}}, or {{math|ℍ}}, and <math>\mathbb{O}</math> are the only normed division algebras over the real numbers. These four algebras also form the only alternative, finite-dimensional [[division algebra]]s over the real numbers ([[up to]] an isomorphism).
+
+Not being associative, the nonzero elements of <math>\mathbb{O}</math> do not form a [[Group (mathematics)|group]]. They do, however, form a [[loop (algebra)|loop]], specifically a [[Moufang loop]].
+
+=== Commutator and cross product ===
+The [[commutator]] of two octonions {{mvar|x}} and {{mvar|y}} is given by
+: {{nowrap|<math>[x, y] = xy - yx</math>.}}
+
+This is antisymmetric and imaginary. If it is considered only as a product on the imaginary subspace <math>\operatorname\mathcal{I_m}\bigl[\mathbb{O}\bigr]</math> it defines a product on that space, the [[seven-dimensional cross product]], given by
+: {{nowrap|<math>x \times y = \tfrac{1}{2}(xy - yx)</math>.}}
+
+Like the [[cross product]] in three dimensions this is a vector orthogonal to {{mvar|x}} and {{mvar|y}} with magnitude
+: {{nowrap|<math>\|x \times y\| = \|x\|\|y\|\sin \theta</math>.}}
+
+But like the octonion product it is not uniquely defined. Instead there are many different cross products, each one dependent on the choice of octonion product.<ref>{{harvp|Baez|2002|pp=37–38}}</ref>
+
+=== Automorphisms ===
+An [[automorphism]], {{mvar|A}}, of the octonions is an invertible [[linear transformation]] of <math>\mathbb{O}</math> that satisfies
+: {{nowrap|<math>A(xy) = A(x) A(y)</math>.}}
+
+The set of all automorphisms of <math>\mathbb{O}</math> forms a group called {{math|[[G2 (mathematics)|''G''{{sub|2}}]]}}.<ref>{{harv|Conway|Smith|2003|loc=ch&nbsp;8.6}}</ref> The group {{math|''G''{{sub|2}} }} is a [[simply connected]], [[Compact group|compact]], real [[Lie group]] of dimension&nbsp;14. This group is the smallest of the exceptional Lie groups and is isomorphic to the [[subgroup]] of {{math|Spin(7)}} that preserves any chosen particular vector in its 8-dimensional real spinor representation. The group {{math|Spin(7)}} is in turn a subgroup of the group of isotopies described below.
+
+''See also'': {{math|[[PSL(2,7)]]}} – the [[automorphism group]] of the Fano plane.
+
+=== Isotopies ===
+An [[isotopy of an algebra]] is a triple of [[bijection|bijective]] linear maps {{mvar|a}}, {{mvar|b}}, {{mvar|c}} such that if {{math|''xy'' {{=}} ''z''}} then {{math|''a''(''x'')''b''(''y'') {{=}} ''c''(''z'')}}. For {{math|''a'' {{=}} ''b'' {{=}} ''c''}} this is the same as an automorphism. The isotopy group of an algebra is the group of all isotopies, which contains the group of automorphisms as a subgroup.
+
+The isotopy group of the octonions is the group {{math|Spin<sub>8</sub>(ℝ)}}, with {{mvar|a}}, {{mvar|b}}, {{mvar|c}} acting as the three 8-dimensional representations.<ref>{{harv|Conway|Smith|2003|loc=ch&nbsp;8}}</ref> The subgroup of elements where {{mvar|c}} fixes the identity is the subgroup {{math|Spin<sub>7</sub>(ℝ)}}, and the subgroup where {{mvar|a}}, {{mvar|b}}, {{mvar|c}} all fix the identity is the automorphism group {{nobr|{{math|''G''{{sub|2}} }} .}}
+
+=== Matrix representation ===
+Just as quaternions can be [[Quaternion#Matrix_representations|represented as matrices]], octonions can be represented as tables of quaternions. Specifically, because any octonion can be defined a pair of quaternions, we represent the octonion <math> ( q_0, q_1 )</math> as:
+<math display=block>\begin{bmatrix}
+         q_0 & q_1 \\
+        -q_1^* & q_0^*
+\end{bmatrix}</math>
+
+Using a slightly modified (non-associative) quaternionic matrix multiplication:
+<math display=block>\begin{bmatrix}
+         \alpha_0 & \alpha_1 \\
+        \alpha_2 & \alpha_3
+\end{bmatrix}\circ\begin{bmatrix}
+         \beta_0 & \beta_1 \\
+        \beta_2 & \beta_3
+\end{bmatrix}=\begin{bmatrix}
+         \alpha_0\beta_0+\beta_2\alpha_1 & \beta_1\alpha_0+\alpha_1\beta_3\\
+        \beta_0\alpha_2+\alpha_3\beta_2 & \alpha_2\beta_1+\alpha_3\beta_3
+\end{bmatrix}</math>
+we can translate octonion addition and multiplication to the respective operations on quaternionic matrices.<ref name="Ensembles"></ref>
+
+== Applications ==
+The octonions play a significant role in the classification and construction of other mathematical entities. For example, the [[exceptional Lie group]] {{math|[[G2 (mathematics)|G<sub>2</sub>]]}} is the automorphism group of the octonions, and the other exceptional Lie groups {{math|[[F4 (mathematics)|F<sub>4</sub>]]}}, {{math|[[E6 (mathematics)|E<sub>6</sub>]]}}, {{math|[[E7 (mathematics)|E<sub>7</sub>]]}} and {{math|[[E8 (mathematics)|E<sub>8</sub>]]}} can be understood as the isometries of certain [[projective plane]]s defined using the octonions.<ref>Baez (2002), section 4.</ref> The set of [[self-adjoint]] {{nowrap|3 × 3}} octonionic [[matrix (mathematics)|matrices]], equipped with a symmetrized matrix product, defines the [[Albert algebra]]. In [[discrete mathematics]], the octonions provide an elementary derivation of the [[Leech lattice]], and thus they are closely related to the [[sporadic simple groups]].<ref>{{cite journal|last=Wilson |first=Robert A. |author-link=Robert Arnott Wilson |title=Octonions and the Leech lattice |journal=[[Journal of Algebra]] |volume=322 |issue=6 |date=2009-09-15 |pages=2186–2190 |doi=10.1016/j.jalgebra.2009.03.021 |url=http://www.maths.qmul.ac.uk/%7Eraw/pubs_files/octoLeech1rev.pdf}}</ref><ref>{{cite journal |last=Wilson |first=Robert A. |author-link=Robert Arnott Wilson |title=Conway's group and octonions |journal=Journal of Group Theory |date=2010-08-13 |doi=10.1515/jgt.2010.038 |volume=14 |pages=1–8 |s2cid=16590883 |url=http://www.maths.qmul.ac.uk/~raw/pubs_files/octoConway.pdf}}</ref>
+
+Applications of the octonions to physics have largely been conjectural. For example, in the 1970s, attempts were made to understand [[quark]]s by way of an octonionic [[Hilbert space]].<ref>{{cite journal |last1=Günaydin |first1=M. |last2=Gürsey |first2=F. |author-link2=Feza Gürsey |year=1973 |title=Quark structure and octonions |journal=[[Journal of Mathematical Physics]] |volume=14 |issue=11 |pages=1651–1667 |doi=10.1063/1.1666240 |bibcode=1973JMP....14.1651G }}<br />{{cite journal|last1=Günaydin |first1=M. |last2=Gürsey |first2=F. |author-link2=Feza Gürsey |year=1974 |title=Quark statistics and octonions |journal=[[Physical Review D]] |volume=9 |issue=12 |pages=3387–3391 |doi=10.1103/PhysRevD.9.3387 |bibcode=1974PhRvD...9.3387G }}</ref> It is known that the octonions, and the fact that only four normed division algebras can exist, relates to the [[spacetime]] dimensions in which [[supersymmetry|supersymmetric]] [[quantum field theory|quantum field theories]] can be constructed.<ref>{{cite journal |last1=Kugo |first1=Taichiro |last2=Townsend |first2=Paul |title=Supersymmetry and the division algebras |journal=[[Nuclear Physics B]] |volume=221 |issue=2 |date=1983-07-11 |pages=357–380 |doi=10.1016/0550-3213(83)90584-9 |bibcode=1983NuPhB.221..357K |url=https://cds.cern.ch/record/140183 }}</ref><ref>{{cite encyclopedia|last1=Baez |first1=John C. |author-link1=John C. Baez |last2=Huerta |first2=John |title=Division Algebras and Supersymmetry I |arxiv=0909.0551 |encyclopedia=Superstrings, Geometry, Topology, and C*-algebras |publisher=[[American Mathematical Society]] |year=2010 |editor-last1=Doran |editor-first1=R. |editor-last2=Friedman |editor-first2=G. |editor-last3=Rosenberg |editor-first3=J.}}</ref> Also, attempts have been made to obtain the [[Standard Model]] of elementary particle physics from octonionic constructions, for example using the "Dixon algebra" {{nowrap|<math>\mathbb C \otimes \mathbb H \otimes \mathbb O</math>.}}<ref name=wolchover>{{cite magazine |last=Wolchover |first=Natalie |author-link=Natalie Wolchover |date=2018-07-20 |title=The peculiar math that could underlie the laws of nature |website=[[Quanta Magazine]] |url=https://www.quantamagazine.org/the-octonion-math-that-could-underpin-physics-20180720/ |access-date=2018-10-30}}</ref><ref>{{cite journal |last=Furey |first=Cohl |author-link=Cohl Furey |date=2012-07-20 |title=Unified theory of ideals |journal=[[Physical Review D]] |volume=86 |issue=2 |article-number=025024 |doi=10.1103/PhysRevD.86.025024 |arxiv=1002.1497 |bibcode=2012PhRvD..86b5024F |s2cid=118458623 }}<br />{{cite journal|last=Furey |first=Cohl |author-link=Cohl Furey |date=2018-10-10 |title=Three generations, two unbroken gauge symmetries, and one eight-dimensional algebra |journal=[[Physics Letters B]] |volume=785 |pages=84–89 |doi=10.1016/j.physletb.2018.08.032 |bibcode=2018PhLB..785...84F |arxiv=1910.08395 |s2cid=126205768 }}<br/>{{cite journal|last=Stoica |first=O.C. |title=Leptons, quarks, and gauge from the complex Clifford algebra <math>\mathbb{C}\ell_6</math> |journal=[[Advances in Applied Clifford Algebras]] |year=2018 |doi=10.1007/s00006-018-0869-4 |volume=28 |page=52 |arxiv=1702.04336 |s2cid=125913482 }}<br />{{cite conference |last=Gresnigt |first=Niels G. |title=Quantum groups and braid groups as fundamental symmetries |conference=European Physical Society conference on High Energy Physics, 5–12 July 2017, Venice, Italy |date=2017-11-21 |arxiv=1711.09011}}<br />{{cite book |last=Dixon |first=Geoffrey M. |year=1994 |title=Division Algebras: Octonions, quaternions, complex numbers, and the algebraic design of physics |publisher=[[Springer-Verlag]] |doi=10.1007/978-1-4757-2315-1 |isbn=978-0-7923-2890-2 |oclc=30399883 }}<br/>{{cite web |last=Baez |first=John C. |author-link=John C. Baez |date=2011-01-29 |title=The Three-Fold Way (part 4) |access-date=2018-11-02 |website=[[The n-Category Café]] |url=https://golem.ph.utexas.edu/category/2011/01/the_threefold_way_part_4_1.html}}</ref>
+
+Octonions have also arisen in the study of [[black hole entropy]], [[quantum information science]],<ref>{{cite journal |last1=Borsten |first1=Leron |last2=Dahanayake |first2=Duminda |last3=Duff |first3=Michael J. |author-link3=Michael Duff (physicist) |last4=Ebrahim |first4=Hajar |last5=Rubens |first5=Williams |title=Black holes, qubits and octonions |journal=[[Physics Reports]] |volume=471 |issue=3–4 |year=2009 |pages=113–219 |arxiv=0809.4685 |doi=10.1016/j.physrep.2008.11.002 |bibcode=2009PhR...471..113B |s2cid=118488578 }}</ref><ref>{{cite journal |last1=Stacey |first1=Blake C. |title=Sporadic SICs and the Normed Division Algebras |journal=[[Foundations of Physics]] |year=2017 |volume=47 |issue=8 |pages=1060–1064 |doi=10.1007/s10701-017-0087-2 |arxiv=1605.01426 |bibcode=2017FoPh...47.1060S |s2cid=118438232 }}</ref> [[string theory]],<ref>{{cite web |url=https://www.newscientist.com/article/mg20327232-100-beyond-space-and-time-8d-surfers-paradise/|title=Beyond space and time: 8D – Surfer's paradise|website=New Scientist}}</ref> and [[Digital image processing|image processing]].<ref>{{cite journal | doi=10.1109/LSP.2024.3411934 | bibcode=2024ISPL...31.1615J | title=Octonion Phase Retrieval | last1=Jacome | first1=Roman | last2=Mishra | first2=Kumar Vijay | last3=Sadler | first3=Brian M. | last4=Arguello | first4=Henry | journal=IEEE Signal Processing Letters | date=2024 | volume=31 | page=1615 | arxiv=2308.15784 }}</ref>
+
+Octonions have been used in solutions to the [[hand eye calibration problem]] in [[robotics]].<ref>{{cite journal |first1=J. |last1=Wu |first2=Y. |last2=Sun |first3=M. |last3=Wang and |first4=M. |last4=Liu |title=Hand-Eye Calibration: 4-D Procrustes Analysis Approach |journal=IEEE Transactions on Instrumentation and Measurement |volume=69 |issue=6 |pages=2966–81 |date=June 2020 |doi=10.1109/TIM.2019.2930710 |bibcode=2020ITIM...69.2966W |s2cid=201245901 }}</ref>
+
+Deep octonion networks provide a means of efficient and compact expression in machine learning applications.<ref>{{cite journal |first1=J. |last1=Wu |first2=L. |last2=Xu |first3=F. |last3=Wu |first4=Y. |last4=Kong |first5=L. |last5=Senhadji |first6=H. |last6=Shu |title=Deep octonion networks |journal=Neurocomputing |volume=397 |issue= |pages=179–191 |date=2020 |doi=10.1016/j.neucom.2020.02.053 |s2cid=84186686 |id=hal-02865295 |doi-access=free |arxiv=1903.08478 }}</ref><ref>{{cite journal |title=Marine Debris Segmentation Using a Parameter Efficient Octonion-Based Architecture  |date=2023 |doi=10.1109/lgrs.2023.3321177 |last1=Bojesomo |first1=Alabi |last2=Liatsis |first2=Panos |last3=Almarzouqi |first3=Hasan |journal=IEEE Geoscience and Remote Sensing Letters |volume=20 |pages=1–5 |bibcode=2023IGRSL..2021177B |doi-access=free }}</ref>
+
+== Integral octonions ==
+There are several natural ways to choose an integral form of the octonions. The simplest is just to take the octonions whose coordinates are [[integer]]s. This gives a nonassociative algebra over the integers called the Gravesian octonions. However it is not a [[Order (ring theory)|maximal order]] (in the sense of ring theory); there are exactly seven maximal orders containing it. These seven maximal orders are all equivalent under automorphisms. The phrase "integral octonions" usually refers to a fixed choice of one of these seven orders.
+
+These maximal orders were constructed by {{harvtxt|Kirmse|1924}}, Dickson and Bruck as follows. Label the eight basis vectors by the points of the projective line over the field with seven elements. First form the "Kirmse integers" : these consist of octonions whose coordinates are integers or half integers, and that are half integers (that is, halves of odd integers) on one of the 16 sets
+: {{nowrap|{{math|∅}},}} {{nowrap|{{math|(∞124)}},}} {{nowrap|{{math|(∞235)}},}} {{nowrap|{{math|(∞346)}},}} {{nowrap|{{math|(∞450)}},}} {{nowrap|{{math|(∞561)}},}} {{nowrap|{{math|(∞602)}},}} {{nowrap|{{math|(∞013)}},}} {{nowrap|{{math|(∞0123456)}},}} {{nowrap|{{math|(0356)}},}} {{nowrap|{{math|(1460)}},}} {{nowrap|{{math|(2501)}},}} {{nowrap|{{math|(3612)}},}} {{nowrap|{{math|(4023)}},}} {{nowrap|{{math|(5134)}},}} {{math|(6245)}}
+of the extended [[quadratic residue code]] of length 8 over the field of two elements, given by {{math|∅}}, {{math|(∞124)}} and its images under adding a constant [[modular arithmetic|modulo]] 7, and the complements of these eight sets. Then switch infinity and any one other coordinate; this operation creates a bijection of the Kirmse integers onto a different set, which is a maximal order. There are seven ways to do this, giving seven maximal orders, which are all equivalent under cyclic permutations of the seven coordinates 0123456. (Kirmse incorrectly claimed that the Kirmse integers also form a maximal order, so he thought there were eight maximal orders rather than seven, but as {{harvtxt|Coxeter|1946}} pointed out they are not closed under multiplication; this mistake occurs in several published papers.)
+
+The Kirmse integers and the seven maximal orders are all isometric to the [[E8 lattice|{{math|E<sub>8</sub>}} lattice]] rescaled by a factor of 1/{{radic|2}}. In particular there are 240 elements of minimum nonzero norm 1 in each of these orders, forming a Moufang loop of order 240.
+
+The integral octonions have a "division with remainder" property: given integral octonions {{mvar|a}} and {{math|''b'' ≠ 0}}, we can find {{mvar|q}} and {{mvar|r}} with {{math|''a'' {{=}} ''qb'' + ''r''}}, where the remainder {{mvar|r}} has norm less than that of {{mvar|b}}.
+
+In the integral octonions, all left [[ideal (ring theory)|ideals]] and right ideals are 2-sided ideals, and the only 2-sided ideals are the [[principal ideal]]s {{mvar|nO}} where {{mvar|n}} is a non-negative integer.
+
+The integral octonions have a version of factorization into primes, though it is not straightforward to state because the octonions are not associative so the product of octonions depends on the order in which one does the products. The irreducible integral octonions are exactly those of prime norm, and every integral octonion can be written as a product of irreducible octonions. More precisely an integral octonion of norm {{mvar|mn}} can be written as a product of integral octonions of norms {{mvar|m}} and {{mvar|n}}.
+
+The automorphism group of the integral octonions is the group {{math|G<sub>2</sub>('''F'''<sub>2</sub>)}} of [[order (group theory)|order]] 12,096, which has a [[simple group|simple]] subgroup of [[index of a subgroup|index]] 2 isomorphic to the unitary group {{math|<sup>2</sup>''A''<sub>2</sub>(3<sup>2</sup>)}}. The isotopy group of the integral octonions is the perfect double cover of the group of rotations of the {{math|E<sub>8</sub>}} lattice.
+
+== See also ==
+{{div col|colwidth=20em}}
+* [[G2 manifold|G<sub>2</sub> manifold]]                  
+* [[Octonion algebra]]
+* [[Okubo algebra]]                 
+* [[Spin(7) manifold]]
+* [[Spin(8)]]
+* [[Split-octonion]]s
+* [[Triality]]
+{{div col end}}
+
+== Notes ==
+{{reflist}}
+
+== References ==
+{{refbegin}}
+* {{cite journal | last1 = Baez | first1 = John C. | author-link = John Baez| title = The Octonions | journal = Bulletin of the American Mathematical Society | issn = 0273-0979 | volume = 39 | issue = 2 | pages = 145–205 | year = 2002 | url = http://math.ucr.edu/home/baez/octonions/ | doi = 10.1090/S0273-0979-01-00934-X | arxiv = math/0105155| mr = 1886087| s2cid = 586512 }}
+* {{cite journal | last1 = Baez | first1 = John C. | author-link = John Baez| doi = 10.1090/S0273-0979-05-01052-9 | title = Errata for ''The Octonions'' | journal = Bulletin of the American Mathematical Society | volume = 42 | issue = 2 | pages = 213–214 | year = 2005 | url = https://www.ams.org/journals/bull/2005-42-02/S0273-0979-05-01052-9/S0273-0979-05-01052-9.pdf | doi-access = free }}
+* {{citation |author-link=John Horton Conway |last1=Conway |first1=John Horton |last2=Smith |first2=Derek A. |year=2003 |title=On Quaternions and Octonions: Their Geometry, Arithmetic, and Symmetry |publisher=A. K. Peters, Ltd. |isbn=1-56881-134-9 |zbl=1098.17001 }}.
+* {{citation |mr=0019111 |last=Coxeter|first= H. S. M. |author-link=H. S. M. Coxeter |title=Integral Cayley numbers. |journal=Duke Math. J. |volume=13 |issue=4 |year=1946 |pages= 561–578 |doi=10.1215/s0012-7094-46-01347-6}}
+* {{citation |last1=Dixon |first1=Geoffrey M. |year=1994 |title=Division Algebras: Octonions, Quaternions, Complex Numbers and the Algebraic Design of Physics |publisher=Kluvwer Academic Publishers |isbn=0-7923-2890-6 }}
+* {{citation |mr=0797151 |last=Freudenthal |first= Hans |title=Oktaven, Ausnahmegruppen und Oktavengeometrie |journal=Geom. Dedicata |volume=19 |year=1985 |issue=1|pages=7–63 |orig-year=1951 |doi=10.1007/BF00233101 |s2cid=121496094 }}
+* {{citation |last=Graves |first=John T. |journal=Phil. Mag. |volume=26 |year=1845 |pages=315–320 |title=On a Connection between the General Theory of Normal Couples and the Theory of Complete Quadratic Functions of Two Variables |url=http://zs.thulb.uni-jena.de/receive/jportal_jparticle_00207304 |doi=10.1080/14786444508645136 }}
+* {{citation |last=Kirmse |title=Über die Darstellbarkeit natürlicher ganzer Zahlen als Summen von acht Quadraten und über ein mit diesem Problem zusammenhängendes nichtkommutatives und nichtassoziatives Zahlensystem |journal=Ber. Verh. Sächs. Akad. Wiss. Leipzig. Math. Phys. Kl. |volume=76 |pages=63–82 |year=1924 }}
+* {{citation
+ | last1=Lahti | first1=Usko
+ | title=Prof. Corvus Adamas: Luvut ja todistusmenetelmät. Johdanto matematiikan perusteisiin innokkaiden opiskelijoiden seurassa.
+ | publisher=Books on Demand
+ | place=Helsinki
+ | date = 2015
+ | isbn =978-952-318-558-6
+}}
+* {{citation |last1=Salzmann |first1=Helmut |last2=Betten |first2=Dieter |last3=Grundhöfer |first3=Theo |last4=Hähl |first4=Hermann |last5=Löwen |first5=Rainer |last6=Stroppel |first6=Markus |year=1995 |title=Compact Projective Planes, With an Introduction to Octonion Geometry |publisher=Walter de Gruyter |isbn=3-11-011480-1 |issn=0938-6572 |oclc=748698685 |series=De Gruyter Expositions in Mathematics }}
+* {{citation |mr=0130283
+|last=van der Blij |first= F.
+|title=History of the octaves.
+|journal=Simon Stevin |volume= 34 |year=1961 |pages= 106–125 }}
+{{refend}}
+
+== External links ==
+{{wikiquote|Octonion}}
+* Koutsoukou-Argyraki, Angeliki. [https://www.isa-afp.org/entries/Octonions.html Octonions (Formal proof development in Isabelle/HOL, Archive of Formal Proofs) ]
+* {{springer|title=Cayley numbers|id=p/c021070}}
+* {{citation |first=R. A. |last=Wilson |url=http://www.maths.qmul.ac.uk/~raw/talks_files/octonions.pdf |title=Octonions |year=2008 |series=Pure Mathematics Seminar notes }}
+
+{{number systems}}
+{{dimension topics}}
+{{authority control}}
+
+[[Category:Composition algebras]]
+[[Category:Octonions| ]]

@@ -1,0 +1,4 @@
+Aletheia test-5 environment probe.
+This file has no meaning. Its only use is to check that code can open an uploaded file
+and that its SHA-256 matches the value computed by the project on its own machine.
+Line 4: 1/3 + 1/6 = 1/2 (exact fractions).

@@ -1,0 +1,6 @@
+dev check session started 2026-10-31T08:55:06Z
+A run: on battery at 2026-10-31T08:55:06Z; waiting for AC power
+A run: AC power back at 2026-10-31T09:02:56Z
+A: exit 0, last start 2380 s, ended 2026-10-31T09:42:37Z
+B: exit 0, last start 1090 s, ended 2026-10-31T10:00:47Z
+dev check session ended 2026-10-31T10:00:47Z

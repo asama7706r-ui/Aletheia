@@ -1,0 +1,36 @@
+ok    tessarines C(x)R[j]: satisfies the C1_tessarines demand
+ok    tessarines C(x)R[j]: associative = True
+ok    tessarines C(x)R[j]: commutative = True
+ok    tessarines C(x)R[j]: zero divisors {(0, 0): 1, (0, 1): 1} * {(0, 0): 1, (0, 1): -1} = 0, so q12 fails
+ok    tessarines C(x)R[j]: {(0, 0): 1, (0, 1): 1} has no right inverse, so q13 fails
+ok    tricomplex numbers: satisfies the C2_multicomplex demand
+ok    tricomplex numbers: associative = True
+ok    tricomplex numbers: commutative = True
+ok    tricomplex numbers: zero divisors {(0, 1, 0): 1, (1, 0, 0): -1} * {(0, 1, 0): 1, (1, 0, 0): 1} = 0, so q12 fails
+ok    tricomplex numbers: {(0, 1, 0): 1, (1, 0, 0): -1} has no right inverse, so q13 fails
+ok    H (quaternions): satisfies the C2_multicomplex demand
+ok    H (quaternions): associative = True
+ok    H (quaternions): commutative = False (e.g. basis ('i', 'j'))
+      (H has no zero divisors and every nonzero element has the two-sided inverse conj(x)/N(x): standard, Frobenius 1877; not recomputed here)
+ok    Macfarlane 1891 hyperbolic quaternions: satisfies the C3_hyperbolic_quaternions demand
+ok    Macfarlane 1891 hyperbolic quaternions: associative = False (e.g. basis ('i', 'i', 'j'))
+ok    Macfarlane 1891 hyperbolic quaternions: commutative = False (e.g. basis ('i', 'j'))
+ok    Macfarlane 1891 hyperbolic quaternions: zero divisors {'1': 1, 'i': 1} * {'1': 1, 'i': -1} = 0, so q12 fails
+ok    Macfarlane 1891 hyperbolic quaternions: {'1': 1, 'i': 1} has no right inverse, so q13 fails
+ok    Macfarlane/Hamilton rules over GF(2): satisfies the C3_hyperbolic_quaternions demand
+ok    Macfarlane/Hamilton rules over GF(2): associative = True
+ok    Macfarlane/Hamilton rules over GF(2): commutative = True
+ok    Macfarlane/Hamilton rules over GF(2): zero divisors {'1': 1, 'i': 1} * {'1': 1, 'i': 1} = 0, so q12 fails
+ok    Macfarlane/Hamilton rules over GF(2): {'1': 1, 'i': 1} has no right inverse, so q13 fails
+ok    Clifford biquaternions H(+)H: satisfies the C4_split_biquaternions demand
+ok    Clifford biquaternions H(+)H: associative = True
+ok    Clifford biquaternions H(+)H: commutative = False (e.g. basis (('i', 0), ('j', 0)))
+ok    Clifford biquaternions H(+)H: zero divisors {('1', 0): 1, ('1', 1): 1} * {('1', 0): 1, ('1', 1): -1} = 0, so q12 fails
+ok    Clifford biquaternions H(+)H: {('1', 0): 1, ('1', 1): 1} has no right inverse, so q13 fails
+ok    Clifford biquaternions H(+)H over GF(2): satisfies the C4_split_biquaternions demand
+ok    Clifford biquaternions H(+)H over GF(2): associative = True
+ok    Clifford biquaternions H(+)H over GF(2): commutative = True
+ok    Clifford biquaternions H(+)H over GF(2): zero divisors {('1', 0): 1, ('i', 0): 1} * {('1', 0): 1, ('i', 0): 1} = 0, so q12 fails
+ok    Clifford biquaternions H(+)H over GF(2): {('1', 0): 1, ('i', 0): 1} has no right inverse, so q13 fails
+
+all facts check

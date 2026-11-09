@@ -1,0 +1,35 @@
+ok    sqrt2: theta^2 = 2 exactly
+ok    sqrt2: theta - 1 certified > 0
+ok    theta interval with two roots is rejected   [theta's interval must hold exactly one real root (Sturm count)]
+ok    x*x = 2: x = sqrt2 in k01
+ok    x*x = 2: x = 1 is rejected   [a role equation fails]
+ok    x*x = -1: x = i in k02
+ok    x*x = -1 has no value in k01   [a role equation fails]
+ok    u*u = e1: u = (1 + i)/sqrt2 in k02
+ok    H witnesses {q6, q14}
+ok    H does not witness {q14} (q6 fails)   [kept unit q6 fails in the witness]
+ok    H does not witness {q6} (q14 needs dimension 1)   [q14 is certified only in dimension 1]
+ok    a wrong conjugation is rejected   [x*C(x) = C(x)*x = N(x)*1 fails]
+      fail units of H: ['q14', 'q6']
+ok    the 3-dim commutative rival witnesses {q5, q12, q14}
+ok    ... but not {q12, q14} (q5 fails)   [kept unit q5 fails in the witness]
+      fail units of the rival: ['q12', 'q14', 'q5']
+ok    {q14} refuted: commutativity and anticommutation give a zero divisor
+ok    ... the same tree is invalid once q12 is dropped   [split: by q12 or q14, which must be kept]
+ok    {q6} refuted: a*a + 1 = 0 against the order bundle
+ok    ... invalid once q14 is dropped   [positive: q14 must be kept]
+ok    {q12, q14} refuted by associativity (no split needed)
+ok    C1-like: {q14} refuted by the split (1 + j)(1 - j) = 0
+ok    ... and {q13, q14} too (q12 still kept)
+ok    ... but not {q12, q14}   [split: by q12 or q14, which must be kept]
+ok    C1-like: {q12, q14} refuted by the inverse of 1 + j (lemma I)
+ok    ... invalid without associativity   [close: the terms do not sum to the target]
+ok    x = 1, x*x = 2 is impossible
+ok    x = y, x != y is impossible
+ok    x*x = 2 is not impossible   [congruence closure finds no contradiction]
+ok    u = e1, u*u = 1 is impossible over k02
+ok    x*x = -1 with x*x*x*x = -1 is impossible (a chain)
+ok    mirror-invariant role
+ok    a one-sided role is not mirror-invariant
+
+all certificate checks pass

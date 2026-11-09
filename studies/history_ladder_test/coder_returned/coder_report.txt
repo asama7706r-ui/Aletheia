@@ -1,0 +1,135 @@
+PLAIN-TEXT REPORT: STEPS 0, 1, AND 2
+========================================================================
+
+1. SUMMARY OF INCLUSION AND EXCLUSION (STEP 2)
+------------------------------------------------------------------------
+* Included (include: true) — 4 cases:
+  - C1 (tessarines): Introduced by James Cockle in 1848–1849 (S01–S03;
+    reintroduced as bicomplex numbers by Corrado Segre in 1892, S04, W01)
+    to symbolize algebraic impossibility from congeneric surd equations
+    (1 + sqrt(j) = 0 => j^2 = +1), isolate hyperbolic series, and bring
+    3D space under commutative ordinary algebra.
+  - C2 (multicomplex numbers): Introduced by Corrado Segre in 1892 (S04,
+    W02; dated Sept. 1891) as s-complex numbers (2^s real dimensions from
+    s commuting imaginary units squaring to -1) to remove geometric
+    exceptions and case distinctions in intersections of (s - 1)-hyper-
+    algebraic varieties while preserving ordinary arithmetic laws.
+  - C3 (hyperbolic quaternions): Introduced by Alexander Macfarlane in
+    1891 (W03, S05) to provide a full vector product with a positive
+    scalar part (i^2 = j^2 = k^2 = +1) in harmony with Gibbs-Heaviside
+    vector analysis and to express trigonometry on equilateral
+    hyperboloids.
+  - C4 (split-biquaternions): Introduced by William Kingdon Clifford in
+    1873 (Paper XX in S06/clifford_transcription.txt, W04; further
+    developed in 1876 Papers *XLII-*XLIII) to represent screws, twists,
+    and rigid-body force/velocity systems ("motors", whose sum depends on
+    axis position) and their ratios q + omega*r (or xi*q + eta*r) in
+    3D elliptic space where omega^2 = 1.
+
+* Excluded (include: false) — 8 cases:
+  - C5 (split-octonions, W00, W05)
+  - C6 (complex octonions, W00, W06)
+  - C7 (tensor product H x H, W00)
+  - C8 (quaternionic matrix H x H x H, W00, W07)
+  - C9 (trigintaduonions, W00, W08)
+  - C10 (sexagintaquatronions, W00, W08)
+  - C11 (centumduodetrigintanions, W00, W08)
+  - C12 (ducentiquinquagintasexions, W00, W08)
+  Reason for exclusion: In all 8 cases, only secondary overview files
+  (W00, W05–W08) were provided. While those files define the basis and
+  multiplication rules (allowing all 14 algebraic properties P1–P14 to be
+  computed and verified by code), they do not identify who first
+  constructed the specific number system, when it was first introduced,
+  or what an identifiable author wanted before constructing it.
+
+2. SUMMARY OF ALGEBRAIC PROPERTIES (P1–P14 COMPUTED BY CODE)
+------------------------------------------------------------------------
+* P1 (add. associativity), P2 (add. commutativity), P3 (add. identity 0),
+  P4 (add. inverses), P7 (mult. identity 1 != 0), P8 (left distributivity),
+  P9 (right distributivity), P10 (closure of multiplication), and
+  P11 (0*a = a*0 = 0):
+  - HOLD in all 12 cases (C1–C12).
+
+* P12 (no nonzero zero divisors), P13 (multiplicative inverses for all
+  nonzero elements), and P14 (compatible total order):
+  - FAIL in all 12 cases (C1–C12).
+  - Explicit zero-divisor counterexamples verified by code:
+    C1: (1 + j)*(1 - j) = 0
+    C2: (i - h)*(i + h) = 0  [and (1 + i*h)*(1 - i*h) = 0]
+    C3: (1 + i)*(1 - i) = 0
+    C4: (1 + omega)*(1 - omega) = 0  [or xi*eta = 0]
+    C5: (1 + l)*(1 - l) = 0
+    C6: (e_0 + i*e_1)*(e_0 - i*e_1) = 0
+    C7: (1 + i_1*i_2)*(1 - i_1*i_2) = 0
+    C8: (1 + i*I)*(1 - i*I) = 0  [or E_11 * E_22 = 0 in M_4(H)]
+    C9–C12: (e_1 + e_10)*(e_4 - e_15) = 0
+
+* P5 (associativity of multiplication) and P6 (commutativity):
+  - C1 (tessarines) & C2 (multicomplex C_n): P5 HOLDS, P6 HOLDS.
+  - C4 (split-biquaternions), C7 (H x H), & C8 (H x H x H): P5 HOLDS,
+    P6 FAILS.
+  - C5 (split-octonions) & C6 (complex octonions): P5 FAILS (e.g.
+    (i*j)*l = -l*k != l*k = i*(j*l) in C5; (e_1*e_2)*e_4 = e_7 != -e_7 =
+    e_1*(e_2*e_4) in C6), P6 FAILS. Weaker forms of P5 that HOLD:
+    left-alternativity, right-alternativity, flexibility, and
+    power-associativity.
+  - C3 (hyperbolic quaternions, 4D system in W03): P5 FAILS ((i*j)*j = -i
+    != i = i*(j*j)), P6 FAILS. Left-alternativity and right-alternativity
+    also FAIL, whereas flexibility ((a*b)*a = a*(b*a)) and
+    power-associativity ((a*a)*a = a*(a*a)) HOLD. (In Macfarlane's 1900
+    modified 8D complexified algebra in S05 p. 170 with
+    i_0*j_0 = sqrt(-1)*k_0, full associativity P5 HOLDS.)
+  - C9 (32D), C10 (64D), C11 (128D), & C12 (256D): P5 FAILS
+    ((e_1*e_2)*e_4 = e_7 != -e_7 = e_1*(e_2*e_4)), P6 FAILS.
+    Left-alternativity and right-alternativity BOTH FAIL (for
+    a = e_1 + e_10, b = e_4, (a*a)*b = -2*e_4 != -2*e_4 - 2*e_15 =
+    a*(a*b)), whereas flexibility and power-associativity HOLD.
+
+3. DOUBTS, AMBIGUITIES, AND LIMITATIONS IN THE PROVIDED SOURCES
+------------------------------------------------------------------------
+1. OCR Artifacts in Primary Text Files (S01–S05):
+   - S01_Cockle_1848.txt, S02_Cockle_1849a.txt, S03_Cockle_1849b.txt,
+     S04_Segre_1892.txt, and S05_Macfarlane_1900.txt are unedited OCR
+     texts from 19th-century scans. Many inline equations are corrupted
+     by OCR (for instance, in S02 p. 42, "(1+j)(1-j) = 1-1=0" appears as
+     "(H-i)(l-i) = 1-1=0", and on p. 46 Greek letters alpha, beta, gamma
+     appear as "a, /3, and y"; S01 and S02 also contain 0x0c form-feed
+     characters). All quotes in cases_coded.json preserve the exact
+     character sequences of the files as required, while mathematical
+     meaning is cross-verified from the authors' verbal descriptions and
+     secondary sources W01–W03.
+2. Citation Mismatch in W04 for S06 ("page 395" vs Archive.org leaf n493):
+   - W04_Split-biquaternion.txt (line 72) cites Clifford's Mathematical
+     Papers "page 181 to 200" (Paper XX, PDF pp. 271–290) and "page 395"
+     linked to Archive.org ".../page/n493/mode/2up". In S06, Archive.org
+     leaf n493 is PDF page 494 (printed pp. 400–401, inside Paper *XLIII
+     "On the Classification of Geometric Algebras", pp. 397–401), whereas
+     printed p. 395 is PDF page 489 ("*Notes on Biquaternions", pp.
+     395–396), which immediately follows Paper *XLII "[Further Note on
+     Biquaternions]" (pp. 385–394, PDF pp. 479–488). To ensure complete
+     coverage of every page referenced either by printed page number or
+     Archive.org leaf number, clifford_transcription.txt transcribes
+     Paper XX (PDF pp. 271–290) and the full contiguous range from PDF
+     page 479 to PDF page 495 (printed pp. 385–401).
+3. Two Distinct Systems Called "Biquaternions" in Clifford 1873 (C4):
+   - In Paper XX (1873), Clifford first defines omega in flat/parabolic
+     Euclidean 3-space where omega^2 = 0 (PDF pp. 276–278, now called
+     dual quaternions) before moving to Section IV ("On the Geometry of
+     Elliptic Space", PDF pp. 279–290) where omega^2 = 1 (split-
+     biquaternions). Both choices and the elliptic definition omega^2 = 1
+     are documented in C4.
+4. Two Distinct Systems Called "Hyperbolic Quaternions" by Macfarlane (C3):
+   - W03 defines hyperbolic quaternions as Macfarlane's 1891/1894 4D
+     non-associative system (i^2 = j^2 = k^2 = +1, ij = k = -ji).
+     However, the provided primary paper S05_Macfarlane_1900.txt is
+     Macfarlane's 1900 modification in which he rejects the non-
+     associative product (p. 169) and introduces sqrt(-1) into the cross
+     products (i_0*j_0 = sqrt(-1)*k_0 = -j_0*i_0, p. 170) to regain
+     associativity in an 8D complexified algebra. Both stages are
+     documented in C3.
+5. Source Coverage of W08 for C11 and C12:
+   - 01_CASES.md lists W00 and W08 as the sources for C11 (128D
+     centumduodetrigintanions) and C12 (256D ducentiquinquagintasexions).
+     While W00 names and tabulates both (lines 83, 103, 105),
+     W08_Trigintaduonion.txt stops at the 64D sexagintaquatronions (lines
+     27 and 1266) and does not mention C11 or C12 by name.

@@ -1,0 +1,1289 @@
+{{Short description|Hypercomplex number system}}
+{{Infobox number system
+| official_name = Trigintaduonions
+| symbol = <math>\mathbb T</math>
+| type = [[Hypercomplex number|Hypercomplex]] [[algebra over a field|algebra]]
+| units = e<sub>0</sub>, ..., e<sub>31</sub>
+| identity = e<sub>0</sub>
+| properties = {{Plainlist|
+*[[Flexibility (abstract algebra)|Flexibility]]
+*[[Power associativity]]
+*[[Distributivity]]
+}}
+| hide_common = true
+}}
+In [[abstract algebra]], the '''trigintaduonions''', also known as the {{nowrap|'''32-ions'''}}, {{nowrap|'''32-nions'''}}, {{nowrap|'''2<sup>5</sup>-nions'''}} form a {{nowrap|32-[[dimension (vector space)|dimension]]al}} [[commutative property|noncommutative]] and [[associative property|nonassociative]] [[algebra over a field|algebra]] over the [[real number]]s.<ref>{{cite journal | last1=Saini | first1=Kavita | last2=Raj | first2=Kuldip | title=On generalization for Tribonacci Trigintaduonions | journal=Indian Journal of Pure and Applied Mathematics | publisher=Springer Science and Business Media LLC | volume=52 | issue=2 | year=2021 | issn=0019-5588 | doi=10.1007/s13226-021-00067-y | pages=420–428}}</ref><ref>{{cite web | title=Trigintaduonion | website=University of Waterloo | url=https://ece.uwaterloo.ca/~dwharder/Java/doc/ca/uwaterloo/alumni/dwharder/Numbers/Trigintaduonion.html | access-date=2024-10-08}}</ref>
+
+== Names ==
+The word ''trigintaduonion'' is derived from Latin ''{{linktext|triginta|lang=la}}'' 'thirty' + ''{{linktext|duo|lang=la}}'' 'two' + the suffix -''nion'', which is used for [[hypercomplex number]] systems. Other names include {{nowrap|''32-ion''}}, {{nowrap|''32-nion''}}, {{nowrap|''2<sup>5</sup>-ion''}}, and {{nowrap|''2<sup>5</sup>-nion''}}. Trigintaduonions have also been referred to as ''pathions'' (<math>\mathbb P</math>),<ref name=DSP>{{cite journal |last1=Valkova-Jarvis |first1=Zlatka |last2=Nenova |first2=Maria |last3=Mihaylova |first3=Dimitriya |title=Hypercomplex Numbers—A Tool for Enhanced Efficiency and Intelligence in Digital Signal Processing |journal=Mathematics |volume=13 |issue=3 |date=2025-02-03 |issn=2227-7390 |doi=10.3390/math13030504 |doi-access=free |page=504}}</ref><ref>{{cite web |last=Hoppe |first=Travis |title=Irrelevant Topics In Physics |website=thoppe.github.io |url=https://thoppe.github.io/Presentation_Irrelevant_Topics_In_Physics/irr6.html |access-date=2026-06-06}}</ref> which Robert P. C. de Marrais had named in reference to the 32 paths of wisdom from the [[Kabbalah|Kabbalistic]] ([[Jewish mysticism|Jewish mystical]]) text ''[[Sefer Yetzirah]]''. However, this term is not generally accepted as standard terminology.
+
+== Definition ==
+Every trigintaduonion is a [[linear combination]] of the unit trigintaduonions <math>e_0</math>, <math>e_1</math>, <math>e_2</math>, <math>e_3</math>, ..., <math>e_{31}</math>, which form a [[Basis (linear algebra)|basis]] of the [[vector space]] of trigintaduonions. Every trigintaduonion can be represented in the form
+
+:<math>x = x_0 e_0 + x_1 e_1 + x_2 e_2 + \cdots + x_{30} e_{30} + x_{31} e_{31}</math>
+
+with real coefficients {{mvar|x<sub>i</sub>}}.
+
+The trigintaduonions can be obtained by applying the [[Cayley–Dickson construction]] to the [[sedenion]]s.<ref name="Ensembles">{{cite web|url=https://mathsci.kaist.ac.kr/~tambour/fichiers/publications/Ensembles_de_nombres.pdf|date=6 September 2011|title=Ensembles de nombres|publisher=Forum Futura-Science|access-date=11 October 2024|language=fr}}</ref> Applying the Cayley–Dickson construction to the trigintaduonions yields a 64-dimensional algebra called the ''64-ions'', ''64-nions'', ''sexagintaquatronions'', or ''sexagintaquattuornions''.
+
+As a result, the trigintaduonions can also be defined as the following.<ref name="Ensembles" />
+
+An algebra of dimension 4 over the [[octonion]]s <math>\mathbb{O}</math>:
+:<math>\sum_{i=0}^{3} a_i \cdot e_i</math> where <math>a_i \in \mathbb{O}</math> and <math>e_i \notin \mathbb{O}</math>
+
+An algebra of dimension 8 over [[quaternion]]s <math>\mathbb{H}</math>:
+:<math>\sum_{i=0}^{7} a_i \cdot e_i</math> where <math>a_i \in \mathbb{H}</math> and <math>e_i \notin \mathbb{H}</math>
+
+An algebra of dimension 16 over the [[complex number]]s <math>\mathbb{C}</math>:
+:<math>\sum_{i=0}^{15} a_i \cdot e_i</math> where <math>a_i \in \mathbb{C}</math> and <math>e_i \notin \mathbb{C}</math>
+
+An algebra of dimension 32 over the [[real number]]s <math>\mathbb{R}</math>:
+:<math>\sum_{i=0}^{31} a_i \cdot e_i</math> where <math>a_i \in \mathbb{R}</math> and <math>e_i \notin \mathbb{R}</math>
+
+<math>\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}, \mathbb{S}</math> are all [[subset]]s of <math>\mathbb{T}</math>. This relation can be expressed as:
+
+<math display="block">\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O} \subset \mathbb{S} \subset \mathbb{T} \subset \cdots</math>
+
+== Multiplication ==
+=== Properties ===
+Like [[octonion]]s and [[sedenion]]s, [[multiplication]] of trigintaduonions is neither [[commutative]] nor [[associative]]. However, being products of a Cayley–Dickson construction, trigintaduonions have the property of [[power associativity]], which can be stated as that, for any element <math>x</math> of <math>\mathbb{T}</math>, the power <math>x^n</math> is well defined. They are also [[Flexible algebra|flexible]], and multiplication is distributive over addition.<ref>{{cite arXiv | eprint=0907.2047 | last1=Cawagas | first1=Raoul E. | last2=Carrascal | first2=Alexander S. | last3=Bautista | first3=Lincoln A. | last4=Maria | first4=John P. Sta. | last5=Urrutia | first5=Jackie D. | last6=Nobles | first6=Bernadeth | title=The Subalgebra Structure of the Cayley-Dickson Algebra of Dimension 32 (Trigintaduonion) | date=2009 | class=math.RA }}</ref> As with the sedenions, the trigintaduonions contain [[zero divisor]]s and are thus not a [[division algebra]]. Whereas the sedenions have 84 zero divisors,<ref>{{cite arXiv | last=Reggiani | first=Silvio | title=The Geometry of Sedenion Zero Divisors | date=2024 | class=math.DG | eprint=2411.18881 }}</ref> the trigintaduonions have 1,260 zero divisors derived from 147 distinct triples.<ref>{{Cite arXiv| last=Wilmot | first=G. P. | title=Structure of the Cayley-Dickson algebras | date=2025 | eprint=2505.11747 | page=2 | class=math.RA }}</ref> Furthermore, in contrast to the octonions, both algebras do not even have the property of being [[Alternative_algebra|alternative]].
+
+=== Geometric representations ===
+Whereas [[octonion]] unit multiplication patterns can be geometrically represented by [[PG(2,2)]] (also known as the [[Fano plane]]) and [[sedenion]] unit multiplication by [[PG(3,2)]], trigintaduonion unit multiplication can be geometrically represented by PG(4,2).
+
+[[File:Cayley-Salmon configuration g012.png|thumb|right|An illustration of the structure of the (15<sub>4</sub> 20<sub>3</sub>) or Cayley–Salmon configuration]]
+
+=== Multiplication tables ===
+The [[multiplication]] of the unit trigintaduonions is illustrated in the two tables below. Combined, they form a single 32×32 table with 1024 cells.<ref name="Weng_Gauge">{{cite journal | last=Weng | first=Zi-Hua | title=Gauge fields and four interactions in the trigintaduonion spaces | journal=Mathematical Methods in the Applied Sciences | publisher=Wiley | date=2024-07-23 | volume=48 | pages=590–604 | issn=0170-4214 | doi=10.1002/mma.10345 | doi-access=free| arxiv=2407.18265 }}</ref><ref name="Ensembles" />
+
+Below is the trigintaduonion multiplication table for <math>e_j, 0 \leq j \leq 15</math>. The top half of this table, for <math>e_i, 0 \leq i \leq 15</math>, corresponds to the [[multiplication table]] for the [[sedenion]]s. The top left quadrant of the table, for <math>e_i, 0 \leq i \leq 7</math> and <math>e_j, 0 \leq j \leq 7</math>, corresponds to the multiplication table for the [[octonion]]s.
+
+<div class="noresize">
+{| class="wikitable" style="margin:1em auto; text-align: center;"
+  !colspan="2" rowspan="2"| <math>e_ie_j</math>
+  !colspan="16" |<math>e_j</math>
+|-
+  ! <math>e_0</math>
+  ! <math>e_1</math>
+  ! <math>e_2</math>
+  ! <math>e_3</math>
+  ! <math>e_4</math>
+  ! <math>e_5</math>
+  ! <math>e_6</math>
+  ! <math>e_7</math>
+  ! <math>e_8</math>
+  ! <math>e_9</math>
+  ! <math>e_{10}</math>
+  ! <math>e_{11}</math>
+  ! <math>e_{12}</math>
+  ! <math>e_{13}</math>
+  ! <math>e_{14}</math>
+  ! <math>e_{15}</math>
+|-
+  ! rowspan="32" | <math>e_i</math>
+  ! width="30pt" | <math>e_0</math><!-- color: white; when minus sign -->
+  | width="30pt" <!-- style="color: black; background-color: hsla(  0,   0%, 50%, 1);" --> | <math>e_0</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(  0, 100%, 50%, 1);" --> | <math>e_1</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 16, 100%, 50%, 1);" --> | <math>e_2</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 32, 100%, 50%, 1);" --> | <math>e_3</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 48, 100%, 50%, 1);" --> | <math>e_4</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 64, 100%, 50%, 1);" --> | <math>e_5</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 80, 100%, 50%, 1);" --> | <math>e_6</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 96, 100%, 50%, 1);" --> | <math>e_7</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(112, 100%, 50%, 1);" --> | <math>e_8</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(128, 100%, 50%, 1);" --> | <math>e_9</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(144, 100%, 50%, 1);" --> | <math>e_{10}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(160, 100%, 50%, 1);" --> | <math>e_{11}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(176, 100%, 50%, 1);" --> | <math>e_{12}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(192, 100%, 50%, 1);" --> | <math>e_{13}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(208, 100%, 50%, 1);" --> | <math>e_{14}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(224, 100%, 50%, 1);" --> | <math>e_{15}</math>
+|-
+  ! <math>e_{1}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{5}</math>
+  | <math>-e_{4}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+  | <math>e_{9}</math>
+  | <math>-e_{8}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{13}</math>
+  | <math>e_{12}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{14}</math>
+|-
+  ! <math>e_{2}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{4}</math>
+  | <math>-e_{5}</math>
+  | <math>e_{10}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{8}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{14}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{12}</math>
+  | <math>e_{13}</math>
+|-
+  ! <math>e_{3}</math>
+  | <math>e_{3}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+  | <math>e_{5}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{9}</math>
+  | <math>-e_{8}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{13}</math>
+  | <math>e_{12}</math>
+|-
+  ! <math>e_{4}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{7}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+  | <math>e_{2}</math>
+  | <math>e_{3}</math>
+  | <math>e_{12}</math>
+  | <math>e_{13}</math>
+  | <math>e_{14}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{8}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{10}</math>
+  | <math>-e_{11}</math>
+|-
+  ! <math>e_{5}</math>
+  | <math>e_{5}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{3}</math>
+  | <math>e_{2}</math>
+  | <math>e_{13}</math>
+  | <math>-e_{12}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{9}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{10}</math>
+|-
+  ! <math>e_{6}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{1}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{15}</math>
+  | <math>-e_{12}</math>
+  | <math>e_{13}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{11}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{9}</math>
+|-
+  ! <math>e_{7}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+  | <math>e_{5}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{15}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{13}</math>
+  | <math>-e_{12}</math>
+  | <math>e_{11}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{8}</math>
+|-
+  ! <math>e_{8}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{10}</math>
+  | <math>-e_{11}</math>
+  | <math>-e_{12}</math>
+  | <math>-e_{13}</math>
+  | <math>-e_{14}</math>
+  | <math>-e_{15}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+  | <math>e_{2}</math>
+  | <math>e_{3}</math>
+  | <math>e_{4}</math>
+  | <math>e_{5}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+|-
+  ! <math>e_{9}</math>
+  | <math>e_{9}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{13}</math>
+  | <math>e_{12}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{14}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{3}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{5}</math>
+  | <math>e_{4}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+|-
+  ! <math>e_{10}</math>
+  | <math>e_{10}</math>
+  | <math>e_{11}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{14}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{12}</math>
+  | <math>e_{13}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{4}</math>
+  | <math>e_{5}</math>
+|-
+  ! <math>e_{11}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{9}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{13}</math>
+  | <math>e_{12}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+  | <math>-e_{5}</math>
+  | <math>e_{4}</math>
+|-
+  ! <math>e_{12}</math>
+  | <math>e_{12}</math>
+  | <math>e_{13}</math>
+  | <math>e_{14}</math>
+  | <math>e_{15}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{10}</math>
+  | <math>-e_{11}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{5}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{2}</math>
+  | <math>-e_{3}</math>
+|-
+  ! <math>e_{13}</math>
+  | <math>e_{13}</math>
+  | <math>-e_{12}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{9}</math>
+  | <math>e_{8}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{10}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{2}</math>
+|-
+  ! <math>e_{14}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{15}</math>
+  | <math>-e_{12}</math>
+  | <math>e_{13}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{8}</math>
+  | <math>e_{9}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{7}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{5}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+|-
+  ! <math>e_{15}</math>
+  | <math>e_{15}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{13}</math>
+  | <math>-e_{12}</math>
+  | <math>e_{11}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{9}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{3}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+|-
+  ! <math>e_{16}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{20}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{23}</math>
+  | <math>-e_{24}</math>
+  | <math>-e_{25}</math>
+  | <math>-e_{26}</math>
+  | <math>-e_{27}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{30}</math>
+  | <math>-e_{31}</math>
+|-
+  ! <math>e_{17}</math>
+  | <math>e_{17}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{19}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{24}</math>
+  | <math>e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+|-
+  ! <math>e_{18}</math>
+  | <math>e_{18}</math>
+  | <math>e_{19}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{20}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{26}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{29}</math>
+|-
+  ! <math>e_{19}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{17}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{26}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{24}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+|-
+  ! <math>e_{20}</math>
+  | <math>e_{20}</math>
+  | <math>e_{21}</math>
+  | <math>e_{22}</math>
+  | <math>e_{23}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{30}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{26}</math>
+  | <math>e_{27}</math>
+|-
+  ! <math>e_{21}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{20}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>e_{17}</math>
+  | <math>e_{16}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>-e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{24}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{26}</math>
+|-
+  ! <math>e_{22}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{23}</math>
+  | <math>-e_{20}</math>
+  | <math>e_{21}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>e_{16}</math>
+  | <math>e_{17}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>e_{24}</math>
+  | <math>-e_{25}</math>
+|-
+  ! <math>e_{23}</math>
+  | <math>e_{23}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{20}</math>
+  | <math>e_{19}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{17}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{25}</math>
+  | <math>e_{24}</math>
+|-
+  ! <math>e_{24}</math>
+  | <math>e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>e_{28}</math>
+  | <math>e_{29}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{20}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{23}</math>
+|-
+  ! <math>e_{25}</math>
+  | <math>e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+  | <math>e_{17}</math>
+  | <math>e_{16}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{20}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{22}</math>
+|-
+  ! <math>e_{26}</math>
+  | <math>e_{26}</math>
+  | <math>-e_{27}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>e_{16}</math>
+  | <math>e_{17}</math>
+  | <math>e_{22}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{20}</math>
+  | <math>-e_{21}</math>
+|-
+  ! <math>e_{27}</math>
+  | <math>e_{27}</math>
+  | <math>e_{26}</math>
+  | <math>-e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+  | <math>e_{19}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{17}</math>
+  | <math>e_{16}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{20}</math>
+|-
+  ! <math>e_{28}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{30}</math>
+  | <math>-e_{31}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{16}</math>
+  | <math>e_{17}</math>
+  | <math>e_{18}</math>
+  | <math>e_{19}</math>
+|-
+  ! <math>e_{29}</math>
+  | <math>e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+  | <math>-e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{26}</math>
+  | <math>e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{17}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{19}</math>
+  | <math>e_{18}</math>
+|-
+  ! <math>e_{30}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>-e_{24}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{22}</math>
+  | <math>e_{23}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{19}</math>
+  | <math>e_{16}</math>
+  | <math>-e_{17}</math>
+|-
+  ! <math>e_{31}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{17}</math>
+  | <math>e_{16}</math>
+|}
+</div>
+
+Below is the trigintaduonion multiplication table for <math>e_j, 16 \leq j \leq 31</math>.
+
+<div class="noresize">
+{| class="wikitable" style="margin:1em auto; text-align: center;"
+  !colspan="2" rowspan="2"| <math>e_ie_j</math>
+  !colspan="16" |<math>e_j</math>
+|-
+  ! <math>e_{16}</math>
+  ! <math>e_{17}</math>
+  ! <math>e_{18}</math>
+  ! <math>e_{19}</math>
+  ! <math>e_{20}</math>
+  ! <math>e_{21}</math>
+  ! <math>e_{22}</math>
+  ! <math>e_{23}</math>
+  ! <math>e_{24}</math>
+  ! <math>e_{25}</math>
+  ! <math>e_{26}</math>
+  ! <math>e_{27}</math>
+  ! <math>e_{28}</math>
+  ! <math>e_{29}</math>
+  ! <math>e_{30}</math>
+  ! <math>e_{31}</math>
+|-
+  ! rowspan="32" | <math>e_i</math>
+  ! width="30pt" | <math>e_0</math><!-- color: white; when minus sign -->
+  | width="30pt" <!-- style="color: black; background-color: hsla(  0, 100%, 50%, 1);" --> | <math>e_{16}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 16, 100%, 50%, 1);" --> | <math>e_{17}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 32, 100%, 50%, 1);" --> | <math>e_{18}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 48, 100%, 50%, 1);" --> | <math>e_{19}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 64, 100%, 50%, 1);" --> | <math>e_{20}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 80, 100%, 50%, 1);" --> | <math>e_{21}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla( 96, 100%, 50%, 1);" --> | <math>e_{22}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(112, 100%, 50%, 1);" --> | <math>e_{23}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(128, 100%, 50%, 1);" --> | <math>e_{24}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(144, 100%, 50%, 1);" --> | <math>e_{25}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(160, 100%, 50%, 1);" --> | <math>e_{26}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(176, 100%, 50%, 1);" --> | <math>e_{27}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(192, 100%, 50%, 1);" --> | <math>e_{28}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(208, 100%, 50%, 1);" --> | <math>e_{29}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(224, 100%, 50%, 1);" --> | <math>e_{30}</math>
+  | width="30pt" <!-- style="color: black; background-color: hsla(  0,   0%, 50%, 1);" --> | <math>e_{31}</math>
+|-
+  ! <math>e_{1}</math>
+  | <math>e_{17}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{19}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{24}</math>
+  | <math>e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+|-
+  ! <math>e_{2}</math>
+  | <math>e_{18}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{20}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{26}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{29}</math>
+|-
+  ! <math>e_{3}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{17}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{26}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{24}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+|-
+  ! <math>e_{4}</math>
+  | <math>e_{20}</math>
+  | <math>e_{21}</math>
+  | <math>e_{22}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{30}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{26}</math>
+  | <math>e_{27}</math>
+|-
+  ! <math>e_{5}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{20}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>e_{17}</math>
+  | <math>-e_{16}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>-e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{24}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{26}</math>
+|-
+  ! <math>e_{6}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{23}</math>
+  | <math>-e_{20}</math>
+  | <math>e_{21}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{16}</math>
+  | <math>e_{17}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>e_{24}</math>
+  | <math>-e_{25}</math>
+|-
+  ! <math>e_{7}</math>
+  | <math>e_{23}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{20}</math>
+  | <math>e_{19}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{25}</math>
+  | <math>e_{24}</math>
+|-
+  ! <math>e_{8}</math>
+  | <math>e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>e_{28}</math>
+  | <math>e_{29}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{20}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{23}</math>
+|-
+  ! <math>e_{9}</math>
+  | <math>e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+  | <math>e_{17}</math>
+  | <math>-e_{16}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{20}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{22}</math>
+|-
+  ! <math>e_{10}</math>
+  | <math>e_{26}</math>
+  | <math>-e_{27}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{16}</math>
+  | <math>e_{17}</math>
+  | <math>e_{22}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{20}</math>
+  | <math>-e_{21}</math>
+|-
+  ! <math>e_{11}</math>
+  | <math>e_{27}</math>
+  | <math>e_{26}</math>
+  | <math>-e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>-e_{28}</math>
+  | <math>e_{19}</math>
+  | <math>e_{18}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{16}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>e_{21}</math>
+  | <math>-e_{20}</math>
+|-
+  ! <math>e_{12}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{30}</math>
+  | <math>-e_{31}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{25}</math>
+  | <math>e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{22}</math>
+  | <math>-e_{23}</math>
+  | <math>-e_{16}</math>
+  | <math>e_{17}</math>
+  | <math>e_{18}</math>
+  | <math>e_{19}</math>
+|-
+  ! <math>e_{13}</math>
+  | <math>e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{31}</math>
+  | <math>e_{30}</math>
+  | <math>-e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>-e_{27}</math>
+  | <math>e_{26}</math>
+  | <math>e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{23}</math>
+  | <math>e_{22}</math>
+  | <math>-e_{17}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{19}</math>
+  | <math>e_{18}</math>
+|-
+  ! <math>e_{14}</math>
+  | <math>e_{30}</math>
+  | <math>e_{31}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{29}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{27}</math>
+  | <math>-e_{24}</math>
+  | <math>-e_{25}</math>
+  | <math>e_{22}</math>
+  | <math>e_{23}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{21}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{19}</math>
+  | <math>-e_{16}</math>
+  | <math>-e_{17}</math>
+|-
+  ! <math>e_{15}</math>
+  | <math>e_{31}</math>
+  | <math>-e_{30}</math>
+  | <math>e_{29}</math>
+  | <math>e_{28}</math>
+  | <math>-e_{27}</math>
+  | <math>-e_{26}</math>
+  | <math>e_{25}</math>
+  | <math>-e_{24}</math>
+  | <math>e_{23}</math>
+  | <math>-e_{22}</math>
+  | <math>e_{21}</math>
+  | <math>e_{20}</math>
+  | <math>-e_{19}</math>
+  | <math>-e_{18}</math>
+  | <math>e_{17}</math>
+  | <math>-e_{16}</math>
+|-
+  ! <math>e_{16}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+  | <math>e_{2}</math>
+  | <math>e_{3}</math>
+  | <math>e_{4}</math>
+  | <math>e_{5}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+  | <math>e_{8}</math>
+  | <math>e_{9}</math>
+  | <math>e_{10}</math>
+  | <math>e_{11}</math>
+  | <math>e_{12}</math>
+  | <math>e_{13}</math>
+  | <math>e_{14}</math>
+  | <math>e_{15}</math>
+|-
+  ! <math>e_{17}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{3}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{5}</math>
+  | <math>e_{4}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{9}</math>
+  | <math>e_{8}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{13}</math>
+  | <math>-e_{12}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{14}</math>
+|-
+  ! <math>e_{18}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{4}</math>
+  | <math>e_{5}</math>
+  | <math>-e_{10}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{8}</math>
+  | <math>e_{9}</math>
+  | <math>e_{14}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{12}</math>
+  | <math>-e_{13}</math>
+|-
+  ! <math>e_{19}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+  | <math>-e_{5}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{9}</math>
+  | <math>e_{8}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{13}</math>
+  | <math>-e_{12}</math>
+|-
+  ! <math>e_{20}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{5}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{2}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{12}</math>
+  | <math>-e_{13}</math>
+  | <math>-e_{14}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{8}</math>
+  | <math>e_{9}</math>
+  | <math>e_{10}</math>
+  | <math>e_{11}</math>
+|-
+  ! <math>e_{21}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{2}</math>
+  | <math>-e_{13}</math>
+  | <math>e_{12}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{9}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{10}</math>
+|-
+  ! <math>e_{22}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{7}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{5}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{15}</math>
+  | <math>e_{12}</math>
+  | <math>-e_{13}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{11}</math>
+  | <math>e_{8}</math>
+  | <math>-e_{9}</math>
+|-
+  ! <math>e_{23}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{4}</math>
+  | <math>e_{3}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{15}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{13}</math>
+  | <math>e_{12}</math>
+  | <math>-e_{11}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{9}</math>
+  | <math>e_{8}</math>
+|-
+  ! <math>e_{24}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{9}</math>
+  | <math>e_{10}</math>
+  | <math>e_{11}</math>
+  | <math>e_{12}</math>
+  | <math>e_{13}</math>
+  | <math>e_{14}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{2}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{4}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{7}</math>
+|-
+  ! <math>e_{25}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{13}</math>
+  | <math>-e_{12}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{14}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{5}</math>
+  | <math>-e_{4}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+|-
+  ! <math>e_{26}</math>
+  | <math>-e_{10}</math>
+  | <math>-e_{11}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{9}</math>
+  | <math>e_{14}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{12}</math>
+  | <math>-e_{13}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{4}</math>
+  | <math>-e_{5}</math>
+|-
+  ! <math>e_{27}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{10}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{15}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{13}</math>
+  | <math>-e_{12}</math>
+  | <math>e_{3}</math>
+  | <math>e_{2}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+  | <math>e_{5}</math>
+  | <math>-e_{4}</math>
+|-
+  ! <math>e_{28}</math>
+  | <math>-e_{12}</math>
+  | <math>-e_{13}</math>
+  | <math>-e_{14}</math>
+  | <math>-e_{15}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{9}</math>
+  | <math>e_{10}</math>
+  | <math>e_{11}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{6}</math>
+  | <math>-e_{7}</math>
+  | <math>-e_{0}</math>
+  | <math>e_{1}</math>
+  | <math>e_{2}</math>
+  | <math>e_{3}</math>
+|-
+  ! <math>e_{29}</math>
+  | <math>-e_{13}</math>
+  | <math>e_{12}</math>
+  | <math>-e_{15}</math>
+  | <math>e_{14}</math>
+  | <math>-e_{9}</math>
+  | <math>-e_{8}</math>
+  | <math>-e_{11}</math>
+  | <math>e_{10}</math>
+  | <math>e_{5}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{7}</math>
+  | <math>e_{6}</math>
+  | <math>-e_{1}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{3}</math>
+  | <math>e_{2}</math>
+|-
+  ! <math>e_{30}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{15}</math>
+  | <math>e_{12}</math>
+  | <math>-e_{13}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{11}</math>
+  | <math>-e_{8}</math>
+  | <math>-e_{9}</math>
+  | <math>e_{6}</math>
+  | <math>e_{7}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{5}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{3}</math>
+  | <math>-e_{0}</math>
+  | <math>-e_{1}</math>
+|-
+  ! <math>e_{31}</math>
+  | <math>-e_{15}</math>
+  | <math>-e_{14}</math>
+  | <math>e_{13}</math>
+  | <math>e_{12}</math>
+  | <math>-e_{11}</math>
+  | <math>-e_{10}</math>
+  | <math>e_{9}</math>
+  | <math>-e_{8}</math>
+  | <math>e_{7}</math>
+  | <math>-e_{6}</math>
+  | <math>e_{5}</math>
+  | <math>e_{4}</math>
+  | <math>-e_{3}</math>
+  | <math>-e_{2}</math>
+  | <math>e_{1}</math>
+  | <math>-e_{0}</math>
+|}
+</div>
+
+=== Triples ===
+There are 155 distinguished triples (or triads) of imaginary trigintaduonion units in the trigintaduonion multiplication table, which are listed below. In comparison, the octonions have 7 such triples, the sedenions have 35, while the sexagintaquatronions have 651.<ref>{{cite OEIS|A171477}}</ref>
+
+*'''45 triples of type {α, α, β}''': {3, 13, 14}, {3, 21, 22}, {3, 25, 26}, {5, 11, 14}, {5, 19, 22}, {5, 25, 28}, {6, 11, 13}, {6, 19, 21}, {6, 26, 28}, {7, 9, 14}, {7, 10, 13}, {7, 11, 12}, {7, 17, 22}, {7, 18, 21}, {7, 19, 20}, {7, 25, 30}, {7, 26, 29}, {7, 27, 28}, {9, 19, 26}, {9, 21, 28}, {10, 19, 25}, {10, 22, 28}, {11, 17, 26}, {11, 18, 25}, {11, 19, 24}, {11, 21, 30}, {11, 22, 29}, {11, 23, 28}, {12, 21, 25}, {12, 22, 26}, {13, 17, 28}, {13, 19, 30}, {13, 20, 25}, {13, 21, 24}, {13, 22, 27}, {13, 23, 26}, {14, 18, 28}, {14, 19, 29}, {14, 20, 26}, {14, 21, 27}, {14, 22, 24}, {14, 23, 25}, {15, 19, 28}, {15, 21, 26}, {15, 22, 25}
+*'''20 triples of type {β, β, β}''': {3, 5, 6}, {3, 9, 10}, {3, 17, 18}, {3, 29, 30}, {5, 9, 12}, {5, 17, 20}, {5, 27, 30}, {6, 10, 12}, {6, 18, 20}, {6, 27, 29}, {9, 17, 24}, {9, 23, 30}, {10, 18, 24}, {10, 23, 29}, {12, 20, 24}, {12, 23, 27}, {15, 17, 30}, {15, 18, 29}, {15, 20, 27}, {15, 23, 24}
+*'''15 triples of type {β, β, β}''': {3, 12, 15}, {3, 20, 23}, {3, 24, 27}, {5, 10, 15}, {5, 18, 23}, {5, 24, 29}, {6, 9, 15}, {6, 17, 23}, {6, 24, 30}, {9, 18, 27}, {9, 20, 29}, {10, 17, 27}, {10, 20, 30}, {12, 17, 29}, {12, 18, 30}
+*'''60 triples of type {α, β, γ}''': {1, 6, 7}, {1, 10, 11}, {1, 12, 13}, {1, 14, 15}, {1, 18, 19}, {1, 20, 21}, {1, 22, 23}, {1, 24, 25}, {1, 26, 27}, {1, 28, 29}, {2, 5, 7}, {2, 9, 11}, {2, 12, 14}, {2, 13, 15}, {2, 17, 19}, {2, 20, 22}, {2, 21, 23}, {2, 24, 26}, {2, 25, 27}, {2, 28, 30}, {3, 4, 7}, {3, 8, 11}, {3, 16, 19}, {3, 28, 31}, {4, 9, 13}, {4, 10, 14}, {4, 11, 15}, {4, 17, 21}, {4, 18, 22}, {4, 19, 23}, {4, 24, 28}, {4, 25, 29}, {4, 26, 30}, {5, 8, 13}, {5, 16, 21}, {5, 26, 31}, {6, 8, 14}, {6, 16, 22}, {6, 25, 31}, {7, 8, 15}, {7, 16, 23}, {7, 24, 31}, {8, 17, 25}, {8, 18, 26}, {8, 19, 27}, {8, 20, 28}, {8, 21, 29}, {8, 22, 30}, {9, 16, 25}, {9, 22, 31}, {10, 16, 26}, {10, 21, 31}, {11, 16, 27}, {11, 20, 31}, {12, 16, 28}, {12, 19, 31}, {13, 16, 29}, {13, 18, 31}, {14, 16, 30}, {14, 17, 31}
+*'''15 triples of type {β, γ, γ}''': {1, 2, 3}, {1, 4, 5}, {1, 8, 9}, {1, 16, 17}, {1, 30, 31}, {2, 4, 6}, {2, 8, 10}, {2, 16, 18}, {2, 29, 31}, {4, 8, 12}, {4, 16, 20}, {4, 27, 31}, {8, 16, 24}, {8, 23, 31}, {15, 16, 31}
+
+== Applications ==
+The trigintaduonions have applications in [[quantum mechanics|quantum physics]] and other branches of modern physics.<ref name="Weng_Gauge" /> More recently, the trigintaduonions and other hypercomplex numbers have also been used in research on [[neural network]]s<ref>{{cite journal | last1=Baluni | first1=Sapna | last2=Yadav | first2=Vijay K. | last3=Das | first3=Subir | title=Lagrange stability criteria for hypercomplex neural networks with time varying delays | journal=Communications in Nonlinear Science and Numerical Simulation | publisher=Elsevier BV | volume=131 | year=2024 | issn=1007-5704 | doi=10.1016/j.cnsns.2023.107765 | article-number=107765| bibcode=2024CNSNS.13107765B }}</ref> and [[digital signal processing]].<ref name=DSP />
+
+== References ==
+{{reflist}}
+
+== External links ==
+{{wikt|trigintaduonion}}
+* [https://pypi.org/project/hypercomplex/ Hypercomplex Python 3 package]
+
+{{Number systems}}
+{{Dimension topics}}
+{{Authority control}}
+
+[[Category:Hypercomplex numbers]]
+[[Category:Non-associative algebras]]

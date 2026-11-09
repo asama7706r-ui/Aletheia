@@ -4,7 +4,7 @@ Aletheia is a research program on a **deterministic, symbolic "epistemic kernel"
 
 **The idea in one paragraph.** Sometimes known objects cannot satisfy a law. Examples are x² = −1 over the rationals, or anticommuting quantities in a commutative setting. We call this a *deficit*. In that case the kernel should construct the **minimal new kind of object** that satisfies the law, the "freest algebra" or *mold* of the law. If something already known suffices, it should say so instead. While doing this it must never silently drop a role the law gives to a quantity, and never claim more than the givens decide: when the evidence does not settle a question, it lists the alternatives and the observation that would decide between them.
 
-> **Status: early research, not a product.** Parts of the decision machinery have passed pre-registered blind tests on small formal worlds. There is **no evidence yet** of real scientific discovery, of performance on real (noisy) data, or of any advantage over large language models. See the results below, including a hypothesis of ours that failed.
+> **Status: early research, not a product.** Parts of the decision machinery have passed pre-registered blind tests on small formal worlds. There is **no evidence yet** of real scientific discovery, of performance on real (noisy) data, or of any advantage over large language models. See the results below, including a hypothesis of ours that failed and two blind tests that failed.
 
 ## Results so far
 | Study | What was tested | Result |
@@ -15,6 +15,9 @@ Aletheia is a research program on a **deterministic, symbolic "epistemic kernel"
 | [Blind test 3](studies/aletheia_blind_test_3/README.md) (2026-10-02) | The "nebulium check": before inventing a new kind, look for a registered relation whose coverage lets it return where the deficit is; decide, fork or declare NEW, with proofs. Reopen exactly the files that depend on a new datum. | **PASS.** 27/27 with proofs against the best baseline's 12/27 (McNemar p = 1/32768). Reopening: 18/18 exact lists, 0 silent changes. |
 | [LLM comparison 2](studies/aletheia_llm_compare_2/REPORT.md) (2026-10-03) | Do frontier LLMs reach the blind-test-3 answers when given only the question, without the method? | **Registered result I1, with an erratum.** Claude scored 27/27 with the question only; Qwen 25, DeepSeek 24, Gemini 23. With the method, Qwen also scored 27/27. A decision recorded earlier excluded the generator's family (Claude) from this comparison, and the protocol omitted it. With it applied, the question-only result is **open** (MIXED), while **with the method a model from outside that family matches the kernel**. |
 | [Blind test 4](studies/aletheia_blind_test_4/README.md) (2026-10-07) | Filling a law's identity card by the kernel itself (dimensions, symmetry, old observations) from a registry sealed before the worlds; labelling each filler; branching with a decisive observation when the registry does not know an action. | **PASS.** 39/39 fillers with full cards and proofs, against the best baseline's 30/39 (McNemar p = 1/512). 7/7 branches; no silent substitution or silent choice. |
+| [History test](studies/history_ladder_test/README.md) (2026-10-22) | Does the ladder theory (drop a containment-minimal set of old rules, protect two, branch on ties) agree with how hypercomplex number systems were actually built, better than five rival rules? The cases were coded by an independent model with verbatim quotations. | **A qualitative probe on 4 cases.** Ours agreed in 4/4, the rivals in 0/4 to 4/4. Only one case discriminates, and there the registered scoring cannot penalise branching (a correction after the result). Our hypothesis H1 was not supported. |
+| [Blind test 5](studies/aletheia_blind_test_5/README.md) (2026-10-23) | The new-kind ladder: when the old kind cannot hold what a build asks, build the new kind by the smallest relaxation of a sealed list of old rules, with marks, proofs and witnesses, branching on ties, and no silent collapse or silent choice. | **FAIL.** Decision accuracy 0.63 and 0.83 in the two batches, against the best baseline's 0.73. No false witness, silent collapse or silent choice. Post-hoc audit: every error was evidence the search did not find; given the key's certificates, the rules give the truth in 16/16 wrong worlds. |
+| [Blind test 5b](studies/aletheia_blind_test_5b/README.md) (2026-10-31) | The same claim with a wider search, on new worlds from new generator runs. | **FAIL.** Decision accuracy 0.67 and 0.77, against the best baselines' 0.70 and 0.73 (pooled: 43/60 each). Post-hoc audit: again the search, 17/17 given the key's certificates. |
 
 **What these results show**
 - The decision rules can be computed exactly on unseen formal worlds, and every verdict comes with a machine-checkable certificate.
@@ -31,7 +34,7 @@ Aletheia is a research program on a **deterministic, symbolic "epistemic kernel"
 - Whether the registry itself is physically right beyond the 15 laws it was checked against. Blind test 4 cannot see what the registry does not know.
 
 **Shared limitations**
-- The worlds are small and formal, and they were generated by a Claude-family model.
+- The worlds are small and formal, and they were generated by a Claude-family model (in blind tests 5 and 5b, one of the two batches by Gemini).
 - "Correct" is defined by our own rules.
 - The 95% confidence lower bounds for the perfect scores are about 81-88%.
 
@@ -43,7 +46,7 @@ Every study is pre-registered:
 4. Reports are published verbatim.
 5. Post-hoc audits are kept separate from outcomes.
 
-All six studies reproduce **bit for bit** from this repository. See [studies/README.md](studies/README.md) for the hashes and the commands.
+The six studies through blind test 4 reproduce **bit for bit** from this repository. Blind tests 5 and 5b do not: their procedures stop on wall-clock time limits, so a rerun's outputs depend on the machine. See [studies/README.md](studies/README.md) for the hashes, and each study's README for the commands.
 
 ## Repository layout
 ```
@@ -54,6 +57,9 @@ studies/
   aletheia_blind_test_3/    blind test 3: protocol, procedure, independent reference scorer, validator, 27 worlds, 18 Part B items, key, results
   aletheia_llm_compare_2/   LLM comparison 2: protocol, task sheets N and M, raw model replies, report
   aletheia_blind_test_4/    blind test 4: protocol, sealed registry, description language v0.4, procedure, independent reference scorer, validator, 30 worlds, key, results
+  history_ladder_test/      history test: pre-registration, sources, coder package and return, predictions, results
+  aletheia_blind_test_5/    blind test 5: protocol, seed, description language v0.5, procedure, reference, scorer, validator, 2 x 30 worlds, keys, results, audit
+  aletheia_blind_test_5b/   blind test 5b: the same, with the widened procedure, on 2 x 30 new worlds
   checks/                   exploratory scratch scripts (not evidence)
 ```
 The original Rust prototype (8 crates) is **archived**, not deleted. It lives on the branch [`archive/rust-v0`](https://github.com/asama7706r-ui/Aletheia/tree/archive/rust-v0) (tag `legacy-rust-v0`). It is superseded by this research program and will be rebuilt from scratch.
@@ -63,7 +69,7 @@ Python 3 and sympy. There are no other dependencies.
 
 ## Authorship and AI assistance
 - The project is led by **Asama**, who proposed its ideas, research questions and design decisions, and performed the LLM runs.
-- Procedures, scorers, test worlds and reports were implemented by **Claude (Anthropic)** under this direction.
+- Procedures, scorers, test worlds and reports were implemented by **Claude (Anthropic)** under this direction. The exceptions are one batch of worlds in each of blind tests 5 and 5b, generated by Gemini, and the history test's case coding, also done by Gemini.
 - Test worlds and answer keys were generated in separate sessions that could not read the procedures.
 
 ## License

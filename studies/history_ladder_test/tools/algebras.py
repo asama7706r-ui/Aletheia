@@ -1,0 +1,189 @@
+"""Exact finite-dimensional unital algebras given by structure constants, and checks of the
+history test's demands and of the rules q5, q6, q12, q13 on them.
+
+An algebra has a basis (names; the first is the unit 1) and a table mul[(a, b)] = {basis: coef}.
+Coefficients are Fractions (over Q, standing in for R: every table here has rational
+structure constants) or integers mod 2 (char = 2). Multiplication is extended bilinearly, so the
+additive rules, both distributive laws and the unit law hold by construction.
+
+Checks (exact):
+  * role(alg, assignment, role sentences): evaluates v0.5 role sentences (= and !=);
+  * associative / commutative: on all basis triples / pairs (enough, by bilinearity);
+  * zero_divisor_pair: a stated pair (a, b), both nonzero, with a*b = 0 (q12 fails);
+  * no_right_inverse(x): 1 is not in the image of y -> x*y (q13 fails for x), by exact rank.
+"""
+import itertools
+import os
+import sys
+from fractions import Fraction as F
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(HERE)), "aletheia_blind_test_5", "lang"))
+import reader_v0 as R  # noqa: E402
+
+
+class Algebra:
+    def __init__(self, name, basis, table, char=0):
+        self.name, self.basis, self.table, self.char = name, basis, table, char
+
+    def red(self, c):
+        return c % 2 if self.char == 2 else c
+
+    def vec(self, d):
+        return {b: self.red(c) for b, c in d.items() if self.red(c) != 0}
+
+    def add(self, x, y):
+        out = dict(x)
+        for b, c in y.items():
+            out[b] = out.get(b, 0) + c
+        return self.vec(out)
+
+    def scale(self, s, x):
+        return self.vec({b: s * c for b, c in x.items()})
+
+    def mul(self, x, y):
+        out = {}
+        for a, ca in x.items():
+            for b, cb in y.items():
+                for e, ce in self.table[(a, b)].items():
+                    out[e] = out.get(e, 0) + ca * cb * ce
+        return self.vec(out)
+
+    def one(self):
+        return {self.basis[0]: 1}
+
+    def num(self, n):
+        return self.vec({self.basis[0]: n})
+
+    def neg(self, x):
+        return self.scale(-1, x)
+
+    def associative(self):
+        e = lambda b: {b: 1}  # noqa: E731
+        for a, b, c in itertools.product(self.basis, repeat=3):
+            if self.mul(self.mul(e(a), e(b)), e(c)) != self.mul(e(a), self.mul(e(b), e(c))):
+                return False, (a, b, c)
+        return True, None
+
+    def commutative(self):
+        e = lambda b: {b: 1}  # noqa: E731
+        for a, b in itertools.product(self.basis, repeat=2):
+            if self.mul(e(a), e(b)) != self.mul(e(b), e(a)):
+                return False, (a, b)
+        return True, None
+
+    def no_right_inverse(self, x):
+        """True if no y has x*y = 1 (exact linear algebra over Q or GF(2))."""
+        n = len(self.basis)
+        cols = [self.mul(x, {b: 1}) for b in self.basis]          # images of the basis
+        rows = [[cols[j].get(self.basis[i], 0) for j in range(n)] + [1 if i == 0 else 0] for i in range(n)]
+        return rank(rows, self.char, n) < rank(rows, self.char, n + 1)
+
+
+def rank(rows, char, ncols):
+    m = [[(F(v) if char == 0 else v % 2) for v in r[:ncols]] for r in rows]
+    rk, col = 0, 0
+    for col in range(ncols):
+        piv = next((r for r in range(rk, len(m)) if m[r][col] != 0), None)
+        if piv is None:
+            continue
+        m[rk], m[piv] = m[piv], m[rk]
+        for r in range(len(m)):
+            if r != rk and m[r][col] != 0:
+                if char == 0:
+                    f = m[r][col] / m[rk][col]
+                    m[r] = [a - f * b for a, b in zip(m[r], m[rk])]
+                else:
+                    m[r] = [(a + b) % 2 for a, b in zip(m[r], m[rk])]
+        rk += 1
+    return rk
+
+
+# ---------------------------------------------------------------- evaluating v0.5 role sentences
+
+def value(alg, node, env):
+    t = node[0]
+    if t == "num":
+        return alg.num(node[1])
+    if t == "frac":
+        return alg.num(F(node[1], node[2]))
+    if t == "name":
+        return env[node[1]]
+    if t == "neg":
+        return alg.neg(value(alg, node[1], env))
+    if t in ("sum", "prod"):
+        items = [value(alg, x, env) for x in node[1]]
+        acc = items[0]
+        for x in items[1:]:
+            acc = alg.add(acc, x) if t == "sum" else alg.mul(acc, x)
+        if t == "prod" and len(items) > 2:
+            raise ValueError("no chains in these roles")
+        return acc
+    raise ValueError(node)
+
+
+def role_holds(alg, env, sentences):
+    bad = []
+    for s in sentences:
+        ast = R.parse_sentence(s)[0]
+        (_, op, lhs, rhs), = ast[2]
+        x, y = value(alg, lhs, env), value(alg, rhs, env)
+        if (op == "=" and x != y) or (op == "!=" and x == y):
+            bad.append(s)
+    return bad
+
+
+# ---------------------------------------------------------------- the algebras
+
+def commuting_units(name, squares, char=0):
+    """The commutative associative algebra generated by commuting units u_t with u_t^2 = squares[t]
+    (each +1 or -1). Basis: subsets (as exponent tuples); the first basis element is 1."""
+    n = len(squares)
+    basis = [tuple(e) for e in itertools.product((0, 1), repeat=n)]
+    table = {}
+    for a in basis:
+        for b in basis:
+            s = 1
+            for t in range(n):
+                if a[t] and b[t]:
+                    s *= squares[t]
+            table[(a, b)] = {tuple((x + y) % 2 for x, y in zip(a, b)): s}
+    return Algebra(name, basis, table, char)
+
+
+QUAT_TABLE = {("1", x): {x: 1} for x in "1ijk"}
+QUAT_TABLE.update({(x, "1"): {x: 1} for x in "1ijk"})
+QUAT_TABLE.update({("i", "i"): {"1": -1}, ("j", "j"): {"1": -1}, ("k", "k"): {"1": -1},
+                   ("i", "j"): {"k": 1}, ("j", "i"): {"k": -1}, ("j", "k"): {"i": 1}, ("k", "j"): {"i": -1},
+                   ("k", "i"): {"j": 1}, ("i", "k"): {"j": -1}})
+
+
+def quaternions():
+    return Algebra("H (quaternions)", ["1", "i", "j", "k"], dict(QUAT_TABLE))
+
+
+def macfarlane_1891():
+    t = {("1", x): {x: 1} for x in "1ijk"}
+    t.update({(x, "1"): {x: 1} for x in "1ijk"})
+    t.update({("i", "i"): {"1": 1}, ("j", "j"): {"1": 1}, ("k", "k"): {"1": 1},
+              ("i", "j"): {"k": 1}, ("j", "i"): {"k": -1}, ("j", "k"): {"i": 1}, ("k", "j"): {"i": -1},
+              ("k", "i"): {"j": 1}, ("i", "k"): {"j": -1}})
+    return Algebra("Macfarlane 1891 hyperbolic quaternions", ["1", "i", "j", "k"], t)
+
+
+def clifford_biquaternions(char=0):
+    """H tensor R[w]/(w^2 - 1), w central (Clifford's elliptic biquaternions), = H + H. In char 2 the
+    quaternion signs collapse (-1 = 1)."""
+    basis = [(q, w) for w in (0, 1) for q in "1ijk"]
+    table = {}
+    for (q1, w1) in basis:
+        for (q2, w2) in basis:
+            (qq, c), = QUAT_TABLE[(q1, q2)].items()
+            table[((q1, w1), (q2, w2))] = {(qq, (w1 + w2) % 2): c}
+    return Algebra("Clifford biquaternions H(+)H" + (" over GF(2)" if char == 2 else ""), basis, table, char)
+
+
+def char2_quaternion_rules():
+    """The algebra over GF(2) on 1, i, j, k with Macfarlane's (or Hamilton's) rules read mod 2."""
+    alg = macfarlane_1891()
+    return Algebra("Macfarlane/Hamilton rules over GF(2)", alg.basis, alg.table, char=2)

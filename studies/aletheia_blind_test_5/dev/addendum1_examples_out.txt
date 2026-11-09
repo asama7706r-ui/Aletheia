@@ -1,0 +1,30 @@
+numbering example: origin k01, role ['x*y*z = x', 'x*x*x != 0'], candidate [] (q5 and q6 kept)
+  relator 0: {}
+  relator 1: {('x', 'y', 'z'): (Fraction(1, 1),), ('x',): (Fraction(-1, 1),)}
+  relator 2: {}
+  inequation 0: {('x', 'x', 'x'): (Fraction(1, 1),)}
+the same role, candidate ['q5', 'q6'] (bracketed words):
+  relator 0: {('x', ('y', 'z')): (Fraction(1, 1),), (('x', 'y'), 'z'): (Fraction(-1, 1),)}
+  relator 1: {('x', ('y', 'z')): (Fraction(1, 1),), 'x': (Fraction(-1, 1),)}
+  relator 2: {('x', ('x', 'x')): (Fraction(1, 1),), (('x', 'x'), 'x'): (Fraction(-1, 1),)}
+  inequation 0: {('x', ('x', 'x')): (Fraction(1, 1),)}
+ok    E1 positive node refutes [] for x*x = -1
+ok    E1 broken (c = 2) is rejected   [positive: the terms do not sum to the sum of squares plus c]
+ok    E1 used where q14 is dropped is rejected   [positive: q14 must be kept]
+ok    E2 split by q12 refutes ['q14'] (q6 and q12 kept)
+ok    E2 used where q6 is dropped is rejected   [split: proof_ab does not give a*b]
+ok    E3 inverse node refutes ['q12', 'q14']
+ok    E3 broken (v not fresh) is rejected   [inverse: v must be a fresh name]
+ok    E3 used where q5 is dropped is rejected   [close: the terms do not sum to the target]
+ok    E4 split over Q(sqrt 2) refutes []
+ok    E4 without theta is rejected   [an element of Q(theta) needs 1 coefficients]
+
+E1 = {"theta": null, "tree": {"node": "positive", "t": [[["1", "x"]]], "c": "1", "terms": [["1", {"ctx": 0}, []]]}}
+
+E2 = {"theta": null, "tree": {"node": "split", "by": "q12", "a": [["1", "x"]], "b": [["1", "y"]], "proof_ab": [["1/2", {"ctx": 1}, []]], "children": [{"node": "close", "target": {"const": "-2"}, "terms": [["1", {"ctx": 0}, []], ["-1", {"ctx": 2}, [["R", [["1", "x"]]]]]]}, {"node": "close", "target": {"ineq": 0}, "terms": [["1", {"ctx": 2}, []]]}]}}
+
+E3 = {"theta": null, "tree": {"node": "inverse", "a": [["1", "t"]], "v": "tv", "children": [{"node": "close", "target": {"ineq": 0}, "terms": [["1", {"ctx": 1}, []]]}, {"node": "close", "target": {"ineq": 0}, "terms": [["1", {"ctx": 0}, [["R", [["1", "tv"]]]]], ["-1", {"ctx": 1}, [["L", [["1", "t"]]]]]]}]}}
+
+E4 = {"theta": {"poly": ["-2", "0", "1"], "lo": "1", "hi": "2"}, "tree": {"node": "split", "by": "q12", "a": [["1", "x"], [["0", "-1"], "1"]], "b": [["1", "x"], [["0", "1"], "1"]], "proof_ab": [["1", {"ctx": 0}, []]], "children": [{"node": "close", "target": {"ineq": 0}, "terms": [[["0", "1/2"], {"ctx": 1}, []], [["0", "-1/2"], {"ctx": 2}, [["R", [["1", "y"]]]]]]}, {"node": "close", "target": {"ineq": 0}, "terms": [[["0", "-1/2"], {"ctx": 1}, []], [["0", "1/2"], {"ctx": 2}, [["R", [["1", "y"]]]]]]}]}}
+
+all examples behave as stated

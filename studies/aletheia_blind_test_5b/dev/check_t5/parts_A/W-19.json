@@ -1,0 +1,817 @@
+{
+ "procedure": {
+  "bounds": {
+   "P2": 4,
+   "P3": 16,
+   "S": 4,
+   "list": "1"
+  },
+  "branches": [
+   {
+    "drop": [
+     "q12",
+     "q13",
+     "q14",
+     "q6"
+    ],
+    "marks": {
+     "q1": "PROTECTED",
+     "q10": "WORKSHOP",
+     "q11": "WORKSHOP",
+     "q12": "FORCED",
+     "q13": "FORCED",
+     "q14": "FORCED",
+     "q2": "PROTECTED",
+     "q3": "WORKSHOP",
+     "q4": "WORKSHOP",
+     "q5": "FRAME",
+     "q5[nno]": "WORKSHOP",
+     "q5[non]": "WORKSHOP",
+     "q5[noo]": "WORKSHOP",
+     "q5[onn]": "WORKSHOP",
+     "q5[ono]": "WORKSHOP",
+     "q5[oon]": "WORKSHOP",
+     "q6": "FORCED",
+     "q6[on]": "WORKSHOP",
+     "q7": "WORKSHOP",
+     "q8": "WORKSHOP",
+     "q9": "WORKSHOP"
+    },
+    "mirror": null,
+    "proofs": {
+     "q12": {
+      "theta": null,
+      "tree": {
+       "a": [
+        [
+         "1",
+         "kb"
+        ]
+       ],
+       "b": [
+        [
+         "1",
+         "kb"
+        ]
+       ],
+       "by": "q12",
+       "children": [
+        {
+         "node": "close",
+         "target": {
+          "ineq": 0
+         },
+         "terms": [
+          [
+           "1",
+           {
+            "ctx": 2
+           },
+           []
+          ]
+         ]
+        },
+        {
+         "node": "close",
+         "target": {
+          "ineq": 0
+         },
+         "terms": [
+          [
+           "1",
+           {
+            "ctx": 2
+           },
+           []
+          ]
+         ]
+        }
+       ],
+       "node": "split",
+       "proof_ab": [
+        [
+         "-1",
+         {
+          "ctx": 0
+         },
+         [
+          [
+           "L",
+           [
+            [
+             "1",
+             "kb"
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         "1",
+         {
+          "ctx": 1
+         },
+         [
+          [
+           "R",
+           [
+            [
+             "1",
+             "kb"
+            ]
+           ]
+          ]
+         ]
+        ]
+       ]
+      }
+     },
+     "q13": {
+      "theta": null,
+      "tree": {
+       "a": [
+        [
+         "1",
+         "kb"
+        ]
+       ],
+       "children": [
+        {
+         "node": "close",
+         "target": {
+          "ineq": 0
+         },
+         "terms": [
+          [
+           "1",
+           {
+            "ctx": 2
+           },
+           []
+          ]
+         ]
+        },
+        {
+         "node": "close",
+         "target": {
+          "const": "1"
+         },
+         "terms": [
+          [
+           "-1",
+           {
+            "ctx": 0
+           },
+           [
+            [
+             "R",
+             [
+              [
+               "1",
+               "w1"
+              ]
+             ]
+            ]
+           ]
+          ],
+          [
+           "1",
+           {
+            "ctx": 1
+           },
+           [
+            [
+             "L",
+             [
+              [
+               "1",
+               "w1"
+              ]
+             ]
+            ]
+           ]
+          ],
+          [
+           "1",
+           {
+            "ctx": 2
+           },
+           [
+            [
+             "L",
+             [
+              [
+               "1",
+               "ha"
+              ]
+             ]
+            ]
+           ]
+          ],
+          [
+           "-1",
+           {
+            "ctx": 2
+           },
+           []
+          ],
+          [
+           "-1",
+           {
+            "ctx": 3
+           },
+           [
+            [
+             "R",
+             [
+              [
+               "1",
+               "ha"
+              ]
+             ]
+            ]
+           ]
+          ]
+         ]
+        }
+       ],
+       "node": "inverse",
+       "v": "w1"
+      }
+     },
+     "q14": {
+      "theta": null,
+      "tree": {
+       "a": [
+        [
+         "1",
+         "kb"
+        ]
+       ],
+       "b": [
+        [
+         "1",
+         "kb"
+        ]
+       ],
+       "by": "q14",
+       "children": [
+        {
+         "node": "close",
+         "target": {
+          "ineq": 0
+         },
+         "terms": [
+          [
+           "1",
+           {
+            "ctx": 2
+           },
+           []
+          ]
+         ]
+        },
+        {
+         "node": "close",
+         "target": {
+          "ineq": 0
+         },
+         "terms": [
+          [
+           "1",
+           {
+            "ctx": 2
+           },
+           []
+          ]
+         ]
+        }
+       ],
+       "node": "split",
+       "proof_ab": [
+        [
+         "-1",
+         {
+          "ctx": 0
+         },
+         [
+          [
+           "L",
+           [
+            [
+             "1",
+             "kb"
+            ]
+           ]
+          ]
+         ]
+        ],
+        [
+         "1",
+         {
+          "ctx": 1
+         },
+         [
+          [
+           "R",
+           [
+            [
+             "1",
+             "kb"
+            ]
+           ]
+          ]
+         ]
+        ]
+       ]
+      }
+     },
+     "q6": {
+      "theta": null,
+      "tree": {
+       "node": "close",
+       "target": {
+        "ineq": 0
+       },
+       "terms": [
+        [
+         "-1",
+         {
+          "ctx": 0
+         },
+         []
+        ],
+        [
+         "1",
+         {
+          "ctx": 1
+         },
+         []
+        ]
+       ]
+      }
+     }
+    },
+    "status": "witnessed",
+    "witness": {
+     "dim": 3,
+     "gens": {
+      "ha": [
+       "0",
+       "1",
+       "0"
+      ],
+      "kb": [
+       "0",
+       "0",
+       "1"
+      ]
+     },
+     "q12": null,
+     "q13": null,
+     "table": [
+      [
+       1,
+       1,
+       1,
+       "1"
+      ],
+      [
+       1,
+       2,
+       2,
+       "1"
+      ]
+     ],
+     "theta": null
+    },
+    "witness_source": "shape_assoc"
+   }
+  ],
+  "conflicts": [
+   {
+    "found_size": 1,
+    "keep": [
+     "q6"
+    ],
+    "source": "group"
+   },
+   {
+    "found_size": 1,
+    "keep": [
+     "q12"
+    ],
+    "source": "group"
+   },
+   {
+    "found_size": 1,
+    "keep": [
+     "q13"
+    ],
+    "source": "group"
+   },
+   {
+    "found_size": 1,
+    "keep": [
+     "q14"
+    ],
+    "source": "group"
+   }
+  ],
+  "deciders": [],
+  "freedom": null,
+  "impossible": null,
+  "known": null,
+  "phase1": {
+   "before_limit": true,
+   "conflict_sizes": {
+    "1": 4
+   },
+   "conflict_sources": {
+    "group": 4
+   },
+   "conflicts": 4,
+   "cut_candidates": 0,
+   "group_seconds": 0.0,
+   "group_witnesses": {
+    "cut": 0,
+    "found": 0,
+    "seconds": 0.0,
+    "tried": 5
+   },
+   "groups_cut": 0,
+   "groups_refuted": 4,
+   "groups_tried": 5,
+   "limit": 2700,
+   "seconds": 0.0,
+   "shape_seconds": 0.2,
+   "shrunk": 0,
+   "tested": 5
+  },
+  "refutations": [
+   {
+    "drop": [
+     "q12",
+     "q13",
+     "q14"
+    ],
+    "proof": {
+     "theta": null,
+     "tree": {
+      "node": "close",
+      "target": {
+       "ineq": 0
+      },
+      "terms": [
+       [
+        "-1",
+        {
+         "ctx": 0
+        },
+        []
+       ],
+       [
+        "1",
+        {
+         "ctx": 1
+        },
+        []
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "drop": [
+     "q13",
+     "q14",
+     "q6"
+    ],
+    "proof": {
+     "theta": null,
+     "tree": {
+      "a": [
+       [
+        "1",
+        "kb"
+       ]
+      ],
+      "b": [
+       [
+        "1",
+        "kb"
+       ]
+      ],
+      "by": "q12",
+      "children": [
+       {
+        "node": "close",
+        "target": {
+         "ineq": 0
+        },
+        "terms": [
+         [
+          "1",
+          {
+           "ctx": 2
+          },
+          []
+         ]
+        ]
+       },
+       {
+        "node": "close",
+        "target": {
+         "ineq": 0
+        },
+        "terms": [
+         [
+          "1",
+          {
+           "ctx": 2
+          },
+          []
+         ]
+        ]
+       }
+      ],
+      "node": "split",
+      "proof_ab": [
+       [
+        "-1",
+        {
+         "ctx": 0
+        },
+        [
+         [
+          "L",
+          [
+           [
+            "1",
+            "kb"
+           ]
+          ]
+         ]
+        ]
+       ],
+       [
+        "1",
+        {
+         "ctx": 1
+        },
+        [
+         [
+          "R",
+          [
+           [
+            "1",
+            "kb"
+           ]
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    }
+   },
+   {
+    "drop": [
+     "q12",
+     "q14",
+     "q6"
+    ],
+    "proof": {
+     "theta": null,
+     "tree": {
+      "a": [
+       [
+        "1",
+        "kb"
+       ]
+      ],
+      "children": [
+       {
+        "node": "close",
+        "target": {
+         "ineq": 0
+        },
+        "terms": [
+         [
+          "1",
+          {
+           "ctx": 2
+          },
+          []
+         ]
+        ]
+       },
+       {
+        "node": "close",
+        "target": {
+         "const": "1"
+        },
+        "terms": [
+         [
+          "-1",
+          {
+           "ctx": 0
+          },
+          [
+           [
+            "R",
+            [
+             [
+              "1",
+              "w1"
+             ]
+            ]
+           ]
+          ]
+         ],
+         [
+          "1",
+          {
+           "ctx": 1
+          },
+          [
+           [
+            "L",
+            [
+             [
+              "1",
+              "w1"
+             ]
+            ]
+           ]
+          ]
+         ],
+         [
+          "1",
+          {
+           "ctx": 2
+          },
+          [
+           [
+            "L",
+            [
+             [
+              "1",
+              "ha"
+             ]
+            ]
+           ]
+          ]
+         ],
+         [
+          "-1",
+          {
+           "ctx": 2
+          },
+          []
+         ],
+         [
+          "-1",
+          {
+           "ctx": 3
+          },
+          [
+           [
+            "R",
+            [
+             [
+              "1",
+              "ha"
+             ]
+            ]
+           ]
+          ]
+         ]
+        ]
+       }
+      ],
+      "node": "inverse",
+      "v": "w1"
+     }
+    }
+   },
+   {
+    "drop": [
+     "q12",
+     "q13",
+     "q6"
+    ],
+    "proof": {
+     "theta": null,
+     "tree": {
+      "a": [
+       [
+        "1",
+        "kb"
+       ]
+      ],
+      "b": [
+       [
+        "1",
+        "kb"
+       ]
+      ],
+      "by": "q14",
+      "children": [
+       {
+        "node": "close",
+        "target": {
+         "ineq": 0
+        },
+        "terms": [
+         [
+          "1",
+          {
+           "ctx": 2
+          },
+          []
+         ]
+        ]
+       },
+       {
+        "node": "close",
+        "target": {
+         "ineq": 0
+        },
+        "terms": [
+         [
+          "1",
+          {
+           "ctx": 2
+          },
+          []
+         ]
+        ]
+       }
+      ],
+      "node": "split",
+      "proof_ab": [
+       [
+        "-1",
+        {
+         "ctx": 0
+        },
+        [
+         [
+          "L",
+          [
+           [
+            "1",
+            "kb"
+           ]
+          ]
+         ]
+        ]
+       ],
+       [
+        "1",
+        {
+         "ctx": 1
+        },
+        [
+         [
+          "R",
+          [
+           [
+            "1",
+            "kb"
+           ]
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  ],
+  "tested": [
+   [],
+   [
+    "q6"
+   ],
+   [
+    "q12",
+    "q6"
+   ],
+   [
+    "q12",
+    "q13",
+    "q6"
+   ],
+   [
+    "q12",
+    "q13",
+    "q14",
+    "q6"
+   ]
+  ],
+  "verdict": "NEW_KIND"
+ },
+ "seconds": 0.22963762283325195
+}

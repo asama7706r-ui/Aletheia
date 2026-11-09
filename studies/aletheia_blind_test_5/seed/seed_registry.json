@@ -1,0 +1,52 @@
+{
+  "v0": "0.5",
+  "file": "registry",
+  "id": "t5_tower",
+  "catalog": "1",
+  "dimensions": [],
+  "floors": [
+    {"id": "f01", "depends_on": [], "rules_version": "1", "rules": [
+      {"id": "q1", "protected": true, "vars": {}, "sentences": ["1 != 0"], "keeps": [], "src": "seed"},
+      {"id": "q2", "protected": true, "vars": {}, "sentences": [], "keeps": ["0", "1", "+", "-", "*", "^-1", ">"], "src": "seed"},
+      {"id": "q3", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["(a + b) + c = a + (b + c)"], "keeps": [], "src": "seed"},
+      {"id": "q4", "protected": false, "vars": {"a": "new", "b": "new"}, "sentences": ["a + b = b + a"], "keeps": [], "src": "seed"},
+      {"id": "q5", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["(a*b)*c = a*(b*c)"], "keeps": [], "src": "seed"},
+      {"id": "q6", "protected": false, "vars": {"a": "new", "b": "new"}, "sentences": ["a*b = b*a"], "keeps": [], "src": "seed"},
+      {"id": "q7", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["a*(b + c) = a*b + a*c"], "keeps": [], "src": "seed"},
+      {"id": "q8", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["(a + b)*c = a*c + b*c"], "keeps": [], "src": "seed"},
+      {"id": "q9", "protected": false, "vars": {"a": "new"}, "sentences": ["a + 0 = a"], "keeps": [], "src": "seed"},
+      {"id": "q10", "protected": false, "vars": {"a": "new"}, "sentences": ["1*a = a", "a*1 = a"], "keeps": [], "src": "seed"},
+      {"id": "q11", "protected": false, "vars": {"a": "new"}, "sentences": ["a + (-a) = 0"], "keeps": [], "src": "seed"},
+      {"id": "q12", "protected": false, "vars": {"a": "new", "b": "new"}, "sentences": ["a*b = 0 -> a = 0 | b = 0"], "keeps": [], "src": "seed"},
+      {"id": "q13", "protected": false, "vars": {"a": "new"}, "sentences": ["a != 0 -> a*a^-1 = 1", "a != 0 -> a^-1*a = 1"], "keeps": [], "src": "seed"},
+      {"id": "q14", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["a > b -> a != b", "a > b & b > c -> a > c", "a > b | a = b | b > a", "a > b -> a + c > b + c", "a > 0 & b > 0 -> a*b > 0"], "keeps": [], "src": "seed"}
+    ], "src": "seed"},
+    {"id": "f02", "depends_on": ["f01"], "rules_version": "1", "rules": [
+      {"id": "q1", "protected": true, "vars": {}, "sentences": ["1 != 0"], "keeps": [], "src": "seed"},
+      {"id": "q2", "protected": true, "vars": {}, "sentences": [], "keeps": ["0", "1", "+", "-", "*", "^-1"], "src": "seed"},
+      {"id": "q3", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["(a + b) + c = a + (b + c)"], "keeps": [], "src": "seed"},
+      {"id": "q4", "protected": false, "vars": {"a": "new", "b": "new"}, "sentences": ["a + b = b + a"], "keeps": [], "src": "seed"},
+      {"id": "q5", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["(a*b)*c = a*(b*c)"], "keeps": [], "src": "seed"},
+      {"id": "q6", "protected": false, "vars": {"a": "new", "b": "new"}, "sentences": ["a*b = b*a"], "keeps": [], "src": "seed"},
+      {"id": "q7", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["a*(b + c) = a*b + a*c"], "keeps": [], "src": "seed"},
+      {"id": "q8", "protected": false, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["(a + b)*c = a*c + b*c"], "keeps": [], "src": "seed"},
+      {"id": "q9", "protected": false, "vars": {"a": "new"}, "sentences": ["a + 0 = a"], "keeps": [], "src": "seed"},
+      {"id": "q10", "protected": false, "vars": {"a": "new"}, "sentences": ["1*a = a", "a*1 = a"], "keeps": [], "src": "seed"},
+      {"id": "q11", "protected": false, "vars": {"a": "new"}, "sentences": ["a + (-a) = 0"], "keeps": [], "src": "seed"},
+      {"id": "q12", "protected": false, "vars": {"a": "new", "b": "new"}, "sentences": ["a*b = 0 -> a = 0 | b = 0"], "keeps": [], "src": "seed"},
+      {"id": "q13", "protected": false, "vars": {"a": "new"}, "sentences": ["a != 0 -> a*a^-1 = 1", "a != 0 -> a^-1*a = 1"], "keeps": [], "src": "seed"}
+    ], "src": "seed"},
+    {"id": "f03", "depends_on": [], "rules_version": "1", "rules": [
+      {"id": "t1", "protected": true, "vars": {"a": "new", "b": "new", "c": "new"}, "sentences": ["(a*b)*c = a*(b*c)"], "keeps": [], "src": "seed"}
+    ], "src": "seed"}
+  ],
+  "kinds": [
+    {"id": "k01", "floor": "f01", "over": "reals", "shape": [], "generators": [], "relations": [], "under": {}, "src": "seed"},
+    {"id": "k02", "floor": "f02", "over": "reals", "shape": [2], "generators": ["e1"], "relations": ["e1*e1 = -1"], "under": {}, "src": "seed"}
+  ],
+  "transformations": [],
+  "instruments": [],
+  "meanings": [],
+  "definitions": [],
+  "body_types": []
+}

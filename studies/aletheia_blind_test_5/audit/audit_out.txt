@@ -1,0 +1,109 @@
+
+==================== batch A
+
+2. Wrong worlds:
+   W-04: missing witness (same drop sets, a witnessed branch reported as no_witness); time 2.5 s; traps ['T2', 'T3', 'T5', 'T8', 'T14']
+   W-06: missing refutation: the output keeps 1 candidate(s) the truth refutes; time 209.7 s; traps ['T1', 'T2', 'T3', 'T8', 'T14']
+   W-09: missing refutation: the output keeps 2 candidate(s) the truth refutes; time 11.6 s; traps ['T3', 'T6']
+   W-10: missing refutation: the output keeps 1 candidate(s) the truth refutes; time 0.1 s; traps ['T5', 'T10', 'T11']
+   W-18: missing refutation: the output keeps 1 candidate(s) the truth refutes; time 0.1 s; traps ['T1', 'T10', 'T11']
+   W-19: missing witness (same drop sets, a witnessed branch reported as no_witness); time 0.0 s; traps ['T5', 'T10', 'T11']
+   W-21: missing witness (same drop sets, a witnessed branch reported as no_witness); time 7.1 s; traps ['T4', 'T8', 'T11', 'T13']
+   W-22: missing witness (same drop sets, a witnessed branch reported as no_witness); time 0.7 s; traps ['T1', 'T2', 'T5', 'T11']
+   W-24: missing witness (same drop sets, a witnessed branch reported as no_witness); time 0.1 s; traps ['T3', 'T5', 'T8']
+   W-28: missing refutation: the output keeps 3 candidate(s) the truth refutes; time 3603.5 s; traps ['T3', 'T6']
+   W-29: missing refutation: the output keeps 1 candidate(s) the truth refutes; time 137.1 s; traps ['T1', 'T2', 'T3']
+
+3. Candidates the procedure kept but the truth refutes:
+   W-06 ['q12', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[oon]', 'q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-09 ['q12', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[ono]', 'q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-09 ['q12', 'q5', 'q5[nno]', 'q5[non]', 'q5[onn]', 'q5[ono]', 'q5[oon]', 'q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-10 []: the reference's own search does NOT refute it either (only the key's certificate)
+   W-18 ['q12', 'q13', 'q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-28 ['q5', 'q5[nno]', 'q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-28 ['q5', 'q5[onn]', 'q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-29 ['q5', 'q6', 'q6[on]']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-28 ['q5', 'q6[on]']: the reference's own search refutes it (the procedure alone missed it)
+
+4. Reported-only counts of Section 8.3 (not printed by the sealed scorer):
+   branches the output adds where a valid proof decides: 9 in 6 worlds ['W-06', 'W-09', 'W-10', 'W-18', 'W-28', 'W-29']
+   unmerged mirror twins: 0 []
+   NO_WITNESS answers where the truth has a witness: 6 ['W-10', 'W-18', 'W-19', 'W-21', 'W-22', 'W-24']
+
+5. Decision accuracy by the truth's verdict:
+   BRANCHES        1 of 6
+   FREEDOM         3 of 3
+   IMPOSSIBLE      3 of 3
+   KNOWN_SUFFICES  5 of 5
+   NEW_KIND        5 of 9
+   NO_WITNESS      2 of 4
+   by declared trap:
+   T1   3 of 7
+   T2   11 of 15
+   T3   2 of 8
+   T4   2 of 3
+   T5   4 of 9
+   T6   0 of 2
+   T7   2 of 2
+   T8   1 of 5
+   T9   2 of 2
+   T10  2 of 5
+   T11  6 of 11
+   T12  3 of 3
+   T13  2 of 3
+   T14  1 of 3
+   T15  2 of 2
+   worlds over 60 s: [('W-28', 3603.5), ('W-06', 209.7), ('W-29', 137.1)]; total 3984 s
+
+6. Families (same role up to renaming the generators and changing the numbers):
+   30 families for 30 worlds
+
+==================== batch B
+
+2. Wrong worlds:
+   W-18: missing witness (same drop sets, a witnessed branch reported as no_witness); time 0.3 s; traps ['T1', 'T5', 'T14']
+   W-19: missing witness (same drop sets, a witnessed branch reported as no_witness); time 0.3 s; traps ['T5', 'T14']
+   W-28: missing refutation: the output keeps 1 candidate(s) the truth refutes; time 4.3 s; traps ['T1', 'T2', 'T3', 'T4', 'T10', 'T13']
+   W-29: missing refutation: the output keeps 1 candidate(s) the truth refutes; time 4.0 s; traps ['T1', 'T2', 'T3', 'T4', 'T10', 'T13']
+   W-30: missing refutation: the output keeps 1 candidate(s) the truth refutes; time 4.2 s; traps ['T1', 'T2', 'T3', 'T4', 'T10', 'T13']
+
+3. Candidates the procedure kept but the truth refutes:
+   W-28 ['q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-29 ['q6']: the reference's own search does NOT refute it either (only the key's certificate)
+   W-30 ['q6']: the reference's own search does NOT refute it either (only the key's certificate)
+
+4. Reported-only counts of Section 8.3 (not printed by the sealed scorer):
+   branches the output adds where a valid proof decides: 3 in 3 worlds ['W-28', 'W-29', 'W-30']
+   unmerged mirror twins: 0 []
+   NO_WITNESS answers where the truth has a witness: 5 ['W-18', 'W-19', 'W-28', 'W-29', 'W-30']
+
+5. Decision accuracy by the truth's verdict:
+   BRANCHES        3 of 6
+   FREEDOM         3 of 3
+   IMPOSSIBLE      3 of 3
+   KNOWN_SUFFICES  5 of 5
+   NEW_KIND        7 of 9
+   NO_WITNESS      4 of 4
+   by declared trap:
+   T1   4 of 8
+   T2   7 of 10
+   T3   3 of 6
+   T4   3 of 6
+   T5   8 of 10
+   T6   2 of 2
+   T7   2 of 2
+   T8   3 of 3
+   T9   2 of 2
+   T10  3 of 6
+   T11  7 of 7
+   T12  3 of 3
+   T13  2 of 5
+   T14  0 of 2
+   T15  2 of 2
+   worlds over 60 s: []; total 28 s
+
+6. Families (same role up to renaming the generators and changing the numbers):
+   26 families for 30 worlds
+   W-12 OK, W-13 OK
+   W-18 WRONG, W-19 WRONG
+   W-28 WRONG, W-29 WRONG, W-30 WRONG

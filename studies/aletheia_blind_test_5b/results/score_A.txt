@@ -1,0 +1,102 @@
+W-01: truth ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q12', 'q5', 'q6'], 'no_witness'], [['q6', 'q6[on]'], 'witnessed']])  output WRONG
+W-02: truth ('NEW_KIND', [[['q5', 'q5[nno]', 'q5[non]', 'q5[onn]', 'q6', 'q6[on]'], 'witnessed']])  output WRONG
+W-03: truth ('KNOWN_SUFFICES', 'k01')  output OK
+W-04: truth ('NO_WITNESS', [[['q12', 'q13', 'q14', 'q6'], 'no_witness'], [['q5', 'q6'], 'no_witness']])  output WRONG
+W-05: truth ('FREEDOM', None)  output OK
+W-06: truth ('NEW_KIND', [[['q12', 'q14', 'q5'], 'witnessed']])  output OK
+W-07: truth ('BRANCHES', [[['q12', 'q13', 'q14', 'q6'], 'witnessed'], [['q14', 'q5', 'q6'], 'witnessed']])  output WRONG
+W-08: truth ('IMPOSSIBLE', None)  output OK
+W-09: truth ('NEW_KIND', [[['q12', 'q13', 'q6'], 'witnessed']])  output OK
+W-10: truth ('KNOWN_SUFFICES', 'k02')  output OK
+W-11: truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[oon]', 'q6'], 'no_witness'], [['q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q6', 'q6[on]'], ['q5', 'q5[non]', 'q5[onn]', 'q5[oon]', 'q6', 'q6[on]'], 'no_witness']])  output OK
+W-12: truth ('BRANCHES', [[['q12', 'q13', 'q14', 'q6'], 'witnessed'], [['q12', 'q14', 'q5'], 'witnessed']])  output WRONG
+W-13: truth ('NEW_KIND', [[['q14', 'q6'], 'witnessed']])  output OK
+W-14: truth ('FREEDOM', None)  output OK
+W-15: truth ('NEW_KIND', [[['q12', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[oon]'], 'witnessed']])  output OK
+W-16: truth ('IMPOSSIBLE', None)  output OK
+W-17: truth ('BRANCHES', [[['q12', 'q13', 'q14', 'q6'], 'witnessed'], [['q5', 'q6'], 'no_witness']])  output WRONG
+W-18: truth ('KNOWN_SUFFICES', 'k01')  output OK
+W-19: truth ('NEW_KIND', [[['q12', 'q14', 'q5', 'q6'], 'witnessed']])  output WRONG
+W-20: truth ('NO_WITNESS', [[['q12', 'q13', 'q6'], 'no_witness'], [['q5', 'q6'], 'no_witness']])  output WRONG
+W-21: truth ('BRANCHES', [[['q12', 'q13', 'q6'], 'witnessed'], [['q6', 'q6[on]'], 'witnessed']])  output WRONG
+W-22: truth ('NEW_KIND', [[['q14', 'q5', 'q6'], 'witnessed']])  output WRONG
+W-23: truth ('KNOWN_SUFFICES', 'k02')  output OK
+W-24: truth ('FREEDOM', None)  output OK
+W-25: truth ('BRANCHES', [[['q12', 'q5', 'q5[nno]', 'q5[non]', 'q5[noo]', 'q5[onn]', 'q5[oon]'], 'witnessed'], [['q6', 'q6[on]'], 'witnessed']])  output OK
+W-26: truth ('NEW_KIND', [[['q12', 'q13', 'q14'], 'witnessed']])  output OK
+W-27: truth ('IMPOSSIBLE', None)  output OK
+W-28: truth ('NO_WITNESS', [[['q5', 'q5[nno]', 'q5[non]', 'q6'], ['q5', 'q5[non]', 'q5[onn]', 'q6'], 'no_witness'], [['q5', 'q5[nno]', 'q5[onn]', 'q6'], 'no_witness'], [['q5', 'q5[nno]', 'q6', 'q6[on]'], ['q5', 'q5[onn]', 'q6', 'q6[on]'], 'no_witness']])  output OK
+W-29: truth ('NEW_KIND', [[['q6', 'q6[on]'], 'witnessed']])  output OK
+W-30: truth ('KNOWN_SUFFICES', 'k02')  output OK
+{
+ "outcome": "FAIL",
+ "valid_worlds": 30,
+ "metrics": {
+  "verdict_accuracy": 0.7666666666666667,
+  "drop_set_accuracy": 0.47368421052631576,
+  "marks_accuracy": 0.47368421052631576,
+  "decision_accuracy": 0.6666666666666666,
+  "baseline_decision_accuracy": {
+   "COUNT": 0.6666666666666666,
+   "MAXCON": 0.5666666666666667,
+   "ORDER": 0.5,
+   "ASSOC": 0.5333333333333333,
+   "FIRST": 0.5666666666666667,
+   "COARSE": 0.7,
+   "SPLIT_ORDER": 0.6333333333333333
+  },
+  "best_baseline": "COARSE",
+  "mcnemar_p": 0.7255859375,
+  "false_witness": 0,
+  "silent_collapse": 0,
+  "silent_choice": 0,
+  "truth_changed_by_output": [],
+  "reported_only": {
+   "branches_added_where_a_proof_decides": {
+    "count": 6,
+    "worlds": [
+     "W-01",
+     "W-04",
+     "W-07",
+     "W-17",
+     "W-20",
+     "W-21"
+    ]
+   },
+   "unmerged_mirror_twins": {
+    "count": 0,
+    "worlds": []
+   },
+   "no_witness_branches_the_truth_witnesses": {
+    "count": 4,
+    "worlds": [
+     "W-02",
+     "W-12",
+     "W-19",
+     "W-22"
+    ]
+   },
+   "no_witness_verdicts_where_the_truth_has_a_witness": {
+    "count": 7,
+    "worlds": [
+     "W-01",
+     "W-02",
+     "W-07",
+     "W-17",
+     "W-19",
+     "W-21",
+     "W-22"
+    ]
+   }
+  }
+ },
+ "criteria": {
+  "C1 verdict accuracy >= 0.70": true,
+  "C2 drop-set accuracy >= 0.70": false,
+  "C3 marks accuracy >= 0.70": false,
+  "C4 beats the best baseline by >= 0.15 with p < 0.05": false,
+  "C5 silent collapse in 0 worlds": true,
+  "C6 silent choice in at most 1 world": true,
+  "C7 false witness in 0 worlds": true
+ }
+}

@@ -1,0 +1,10 @@
+01_lang_tests: PASS (53 s)
+02_lang_copy: PASS (0 s)
+03_check_seed: PASS (1 s)
+04_test_certs: PASS (0 s)
+05_make_dev: PASS (37 s)
+06_validate_dev: FAIL (exit 1) (17 s)
+07_procedure_cli: PASS (40 s)
+08_score_cli: PASS (33 s)
+09_mutation: PASS (3 s)
+done
